@@ -1,0 +1,140 @@
+﻿{
+  "api_detection": {
+    "f1": 0.9714285714285714,
+    "false_negative": 8,
+    "false_positive": 0,
+    "precision": 1.0,
+    "recall": 0.9444444444444444,
+    "true_positive": 136
+  },
+  "by_mutation_type": {
+    "hallucinated_class": {
+      "count": 24,
+      "final_execution_success_rate": 0.041666666666666664,
+      "final_execution_success_wilson_95": {
+        "high": 0.20241806478655938,
+        "low": 0.0073934561655057685,
+        "successes": 1,
+        "total": 24
+      },
+      "final_execution_successes": 1
+    },
+    "hallucinated_function": {
+      "count": 24,
+      "final_execution_success_rate": 0.3333333333333333,
+      "final_execution_success_wilson_95": {
+        "high": 0.5329368316186824,
+        "low": 0.1797219032729775,
+        "successes": 8,
+        "total": 24
+      },
+      "final_execution_successes": 8
+    },
+    "hallucinated_method_or_attribute": {
+      "count": 24,
+      "final_execution_success_rate": 0.0,
+      "final_execution_success_wilson_95": {
+        "high": 0.13797620467498017,
+        "low": 1.3877787807814457e-17,
+        "successes": 0,
+        "total": 24
+      },
+      "final_execution_successes": 0
+    },
+    "hallucinated_module": {
+      "count": 24,
+      "final_execution_success_rate": 0.625,
+      "final_execution_success_wilson_95": {
+        "high": 0.7884063244045122,
+        "low": 0.42709962442674276,
+        "successes": 15,
+        "total": 24
+      },
+      "final_execution_successes": 15
+    },
+    "hallucinated_package": {
+      "count": 24,
+      "final_execution_success_rate": 0.0,
+      "final_execution_success_wilson_95": {
+        "high": 0.13797620467498017,
+        "low": 1.3877787807814457e-17,
+        "successes": 0,
+        "total": 24
+      },
+      "final_execution_successes": 0
+    },
+    "incorrect_argument_count": {
+      "count": 24,
+      "final_execution_success_rate": 0.20833333333333334,
+      "final_execution_success_wilson_95": {
+        "high": 0.40470453253188665,
+        "low": 0.09244825352851857,
+        "successes": 5,
+        "total": 24
+      },
+      "final_execution_successes": 5
+    },
+    "incorrect_argument_name": {
+      "count": 24,
+      "final_execution_success_rate": 0.25,
+      "final_execution_success_wilson_95": {
+        "high": 0.44899444005154004,
+        "low": 0.11999366228595004,
+        "successes": 6,
+        "total": 24
+      },
+      "final_execution_successes": 6
+    },
+    "valid_control": {
+      "count": 42,
+      "final_execution_success_rate": 1.0,
+      "final_execution_success_wilson_95": {
+        "high": 0.9999999999999999,
+        "low": 0.916201209134296,
+        "successes": 42,
+        "total": 42
+      },
+      "final_execution_successes": 42
+    }
+  },
+  "confidence_intervals_95": {
+    "final_execution_success": {
+      "high": 0.4336945958195563,
+      "low": 0.3044291510495859,
+      "successes": 77,
+      "total": 210
+    },
+    "repair_success": {
+      "high": 0.2889870122315721,
+      "low": 0.1617014725523996,
+      "successes": 35,
+      "total": 160
+    },
+    "unit_test_pass": {
+      "high": 0.4336945958195563,
+      "low": 0.3044291510495859,
+      "successes": 77,
+      "total": 210
+    }
+  },
+  "final_execution_success_rate": 0.36666666666666664,
+  "final_syntax_valid_rate": 0.6857142857142857,
+  "first_attempt_execution_success_rate": 0.2,
+  "initial_syntax_valid_rate": 1.0,
+  "overall_repair_success_rate": 0.20833333333333334,
+  "package_detection": {
+    "f1": 1.0,
+    "false_negative": 0,
+    "false_positive": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "true_positive": 24
+  },
+  "repair_attempt_rate": 0.9523809523809523,
+  "repair_attempts": 160,
+  "repair_required": 168,
+  "repair_success_rate": 0.21875,
+  "repair_successes": 35,
+  "task_count": 210,
+  "unit_test_pass_rate": 0.36666666666666664
+}

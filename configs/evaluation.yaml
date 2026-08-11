@@ -1,0 +1,45 @@
+generation:
+  kind: hf
+  hf:
+    model_name: Qwen/Qwen2.5-Coder-0.5B-Instruct
+    max_new_tokens: 128
+    temperature: 0.0
+    top_p: 1.0
+    repetition_penalty: 1.0
+    seed: 42
+    device_map: cpu
+    torch_dtype: float32
+    trust_remote_code: false
+    local_files_only: true
+    use_chat_template: true
+
+repair:
+  kind: hf
+  lora_adapter_path: checkpoints/api_repair_lora_cpu/adapter
+  hf:
+    model_name: Qwen/Qwen2.5-Coder-0.5B-Instruct
+    max_new_tokens: 128
+    temperature: 0.0
+    top_p: 1.0
+    repetition_penalty: 1.0
+    seed: 42
+    device_map: cpu
+    torch_dtype: float32
+    trust_remote_code: false
+    local_files_only: true
+    use_chat_template: true
+
+validation:
+  api: true
+
+execution:
+  enabled: true
+  timeout_seconds: 8
+  memory_limit_mb: null
+  repair_on_execution_error: false
+
+benchmark:
+  name: controlled_api_repair_v1
+  dataset_path: data/processed/repair_test.jsonl
+  output_dir: results/controlled_api_repair_v1
+  generate: false

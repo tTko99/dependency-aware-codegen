@@ -1,0 +1,33 @@
+﻿{
+  "api_validation_enabled": true,
+  "benchmark": "controlled_api_repair_v2",
+  "config_path": "configs\\evaluation_expanded.yaml",
+  "config_sha256": "3f5513b1bc2dae94816d01353800a0e1af03a8e4b26131b8acee06e757d9839f",
+  "dataset_path": "data\\processed\\expanded_v2\\benchmark_test.jsonl",
+  "dataset_sha256": "2c9be18c99ea62ae428d3eabd19ad86f0c5610abe3710f97dbc8805547c34eb8",
+  "library_versions": {
+    "accelerate": "1.14.0",
+    "datasets": "5.0.0",
+    "peft": "0.20.0",
+    "torch": "2.13.0",
+    "transformers": "5.15.0"
+  },
+  "method": "api_aware_lora",
+  "python_version": "3.13.8",
+  "repair_generation_config": {
+    "adapter_path": "checkpoints/expanded_full_r8_e1/adapter",
+    "device_map": "cpu",
+    "max_new_tokens": 64,
+    "repetition_penalty": 1.0,
+    "seed": 42,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "torch_dtype": "float32",
+    "use_chat_template": true
+  },
+  "repair_model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+  "repair_on_execution_error": false,
+  "resolved_config_sha256": "775dae2d024dda6a151451939c0e27e199171bc2408694f3faa06303f98e59f4",
+  "schema_version": 1,
+  "wall_time_seconds": 448.1893382072449
+}

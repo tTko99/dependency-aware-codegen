@@ -1,0 +1,4 @@
+{"id":"valid_json","requirement":"Parse a JSON string and print one field.","code":"import json\n\nobj = json.loads('{\"x\": 1}')\nprint(obj['x'])\n","expected_invalid_packages":[],"expected_invalid_apis":[]}
+{"id":"invalid_math_api","requirement":"Compute the square root of four.","code":"import math\n\nprint(math.square_root(4))\n","expected_invalid_packages":[],"expected_invalid_apis":["math.square_root"]}
+{"id":"invalid_package","requirement":"Import a package and print a marker.","code":"import definitely_not_a_real_pkg_9900\n\nprint('done')\n","expected_invalid_packages":["definitely_not_a_real_pkg_9900"],"expected_invalid_apis":[]}
+{"id":"incorrect_arguments","requirement":"Compute the square root of a number.","code":"import math\n\nprint(math.sqrt())\n","expected_invalid_packages":[],"expected_invalid_apis":["math.sqrt"]}

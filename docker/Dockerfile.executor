@@ -1,0 +1,7 @@
+FROM python:3.11-slim
+
+RUN useradd --create-home --shell /usr/sbin/nologin sandbox
+WORKDIR /work
+USER sandbox
+
+CMD ["python"]

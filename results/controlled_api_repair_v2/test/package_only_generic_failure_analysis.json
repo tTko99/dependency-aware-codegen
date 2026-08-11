@@ -1,0 +1,2323 @@
+﻿{
+  "case_count": 210,
+  "cases": [
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "esult\nsolution.py:3: in <module>\n    result = (api.gettz('UTC', 'extra') is not None, v)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: __get_gettz.<locals>.GettzFunc.__call__() takes from 1 to 2 positional arguments but 3 were given\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: __get_gettz.<locals>.GettzFunc.__call__()...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": false,
+      "task_id": "argc_dateutil_gettz_v01"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "esult\nsolution.py:3: in <module>\n    result = (api.gettz('UTC', 'extra') is not None, v)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: __get_gettz.<locals>.GettzFunc.__call__() takes from 1 to 2 positional arguments but 3 were given\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: __get_gettz.<locals>.GettzFunc.__call__()...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.07s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": false,
+      "task_id": "argc_dateutil_gettz_v02"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "esult\nsolution.py:3: in <module>\n    result = (api.gettz('UTC', 'extra') is not None, v)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: __get_gettz.<locals>.GettzFunc.__call__() takes from 1 to 2 positional arguments but 3 were given\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: __get_gettz.<locals>.GettzFunc.__call__()...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": false,
+      "task_id": "argc_dateutil_gettz_v03"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "esult\nsolution.py:3: in <module>\n    result = (api.gettz('UTC', 'extra') is not None, v)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: __get_gettz.<locals>.GettzFunc.__call__() takes from 1 to 2 positional arguments but 3 were given\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: __get_gettz.<locals>.GettzFunc.__call__()...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": false,
+      "task_id": "argc_dateutil_gettz_v04"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "esult\nsolution.py:3: in <module>\n    result = (api.gettz('UTC', 'extra') is not None, v)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: __get_gettz.<locals>.GettzFunc.__call__() takes from 1 to 2 positional arguments but 3 were given\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: __get_gettz.<locals>.GettzFunc.__call__()...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": false,
+      "task_id": "argc_dateutil_gettz_v05"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "esult\nsolution.py:3: in <module>\n    result = (api.gettz('UTC', 'extra') is not None, v)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: __get_gettz.<locals>.GettzFunc.__call__() takes from 1 to 2 positional arguments but 3 were given\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: __get_gettz.<locals>.GettzFunc.__call__()...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": false,
+      "task_id": "argc_dateutil_gettz_v06"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "esult\nsolution.py:3: in <module>\n    result = (api.gettz('UTC', 'extra') is not None, v)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: __get_gettz.<locals>.GettzFunc.__call__() takes from 1 to 2 positional arguments but 3 were given\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: __get_gettz.<locals>.GettzFunc.__call__()...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.07s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": false,
+      "task_id": "argc_dateutil_gettz_v07"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "esult\nsolution.py:3: in <module>\n    result = (api.gettz('UTC', 'extra') is not None, v)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: __get_gettz.<locals>.GettzFunc.__call__() takes from 1 to 2 positional arguments but 3 were given\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: __get_gettz.<locals>.GettzFunc.__call__()...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.07s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": false,
+      "task_id": "argc_dateutil_gettz_v08"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "1: in <module>\n    from solution import result\nsolution.py:4: in <module>\n    result = api.JSONDecoder.decode()\n             ^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: JSONDecoder.decode() missing 2 required positional arguments: 'self' and 's'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: JSONDecoder.decode() missing 2 required p...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": false,
+      "task_id": "argc_json_decoder_v01"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "1: in <module>\n    from solution import result\nsolution.py:4: in <module>\n    result = api.JSONDecoder.decode()\n             ^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: JSONDecoder.decode() missing 2 required positional arguments: 'self' and 's'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: JSONDecoder.decode() missing 2 required p...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": false,
+      "task_id": "argc_json_decoder_v02"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "1: in <module>\n    from solution import result\nsolution.py:4: in <module>\n    result = api.JSONDecoder.decode()\n             ^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: JSONDecoder.decode() missing 2 required positional arguments: 'self' and 's'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: JSONDecoder.decode() missing 2 required p...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": false,
+      "task_id": "argc_json_decoder_v03"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "1: in <module>\n    from solution import result\nsolution.py:4: in <module>\n    result = api.JSONDecoder.decode()\n             ^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: JSONDecoder.decode() missing 2 required positional arguments: 'self' and 's'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: JSONDecoder.decode() missing 2 required p...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": false,
+      "task_id": "argc_json_decoder_v04"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "1: in <module>\n    from solution import result\nsolution.py:4: in <module>\n    result = api.JSONDecoder.decode()\n             ^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: JSONDecoder.decode() missing 2 required positional arguments: 'self' and 's'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: JSONDecoder.decode() missing 2 required p...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": false,
+      "task_id": "argc_json_decoder_v05"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "1: in <module>\n    from solution import result\nsolution.py:4: in <module>\n    result = api.JSONDecoder.decode()\n             ^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: JSONDecoder.decode() missing 2 required positional arguments: 'self' and 's'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: JSONDecoder.decode() missing 2 required p...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": false,
+      "task_id": "argc_json_decoder_v06"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "1: in <module>\n    from solution import result\nsolution.py:4: in <module>\n    result = api.JSONDecoder.decode()\n             ^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: JSONDecoder.decode() missing 2 required positional arguments: 'self' and 's'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: JSONDecoder.decode() missing 2 required p...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": false,
+      "task_id": "argc_json_decoder_v07"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "1: in <module>\n    from solution import result\nsolution.py:4: in <module>\n    result = api.JSONDecoder.decode()\n             ^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: JSONDecoder.decode() missing 2 required positional arguments: 'self' and 's'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: JSONDecoder.decode() missing 2 required p...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": false,
+      "task_id": "argc_json_decoder_v08"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "oat(api.gmean())\n                   ^^^^^^^^^^^\n<PYTHON_HOME>\\Lib\\site-packages\\scipy\\stats\\_axis_nan_policy.py:516: in axis_nan_policy_wrapper\n    hypotest_fun_in(*args, **kwds)\nE   TypeError: gmean() missing 1 required positional argument: 'a'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: gmean() missing 1 required positional arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.64s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": false,
+      "task_id": "argc_scipy_gmean_v01"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "oat(api.gmean())\n                   ^^^^^^^^^^^\n<PYTHON_HOME>\\Lib\\site-packages\\scipy\\stats\\_axis_nan_policy.py:516: in axis_nan_policy_wrapper\n    hypotest_fun_in(*args, **kwds)\nE   TypeError: gmean() missing 1 required positional argument: 'a'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: gmean() missing 1 required positional arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.62s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": false,
+      "task_id": "argc_scipy_gmean_v02"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "oat(api.gmean())\n                   ^^^^^^^^^^^\n<PYTHON_HOME>\\Lib\\site-packages\\scipy\\stats\\_axis_nan_policy.py:516: in axis_nan_policy_wrapper\n    hypotest_fun_in(*args, **kwds)\nE   TypeError: gmean() missing 1 required positional argument: 'a'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: gmean() missing 1 required positional arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.63s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": false,
+      "task_id": "argc_scipy_gmean_v03"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "oat(api.gmean())\n                   ^^^^^^^^^^^\n<PYTHON_HOME>\\Lib\\site-packages\\scipy\\stats\\_axis_nan_policy.py:516: in axis_nan_policy_wrapper\n    hypotest_fun_in(*args, **kwds)\nE   TypeError: gmean() missing 1 required positional argument: 'a'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: gmean() missing 1 required positional arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.63s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": false,
+      "task_id": "argc_scipy_gmean_v04"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "oat(api.gmean())\n                   ^^^^^^^^^^^\n<PYTHON_HOME>\\Lib\\site-packages\\scipy\\stats\\_axis_nan_policy.py:516: in axis_nan_policy_wrapper\n    hypotest_fun_in(*args, **kwds)\nE   TypeError: gmean() missing 1 required positional argument: 'a'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: gmean() missing 1 required positional arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.62s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": false,
+      "task_id": "argc_scipy_gmean_v05"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "oat(api.gmean())\n                   ^^^^^^^^^^^\n<PYTHON_HOME>\\Lib\\site-packages\\scipy\\stats\\_axis_nan_policy.py:516: in axis_nan_policy_wrapper\n    hypotest_fun_in(*args, **kwds)\nE   TypeError: gmean() missing 1 required positional argument: 'a'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: gmean() missing 1 required positional arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.64s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": false,
+      "task_id": "argc_scipy_gmean_v06"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "oat(api.gmean())\n                   ^^^^^^^^^^^\n<PYTHON_HOME>\\Lib\\site-packages\\scipy\\stats\\_axis_nan_policy.py:516: in axis_nan_policy_wrapper\n    hypotest_fun_in(*args, **kwds)\nE   TypeError: gmean() missing 1 required positional argument: 'a'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: gmean() missing 1 required positional arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.62s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": false,
+      "task_id": "argc_scipy_gmean_v07"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "oat(api.gmean())\n                   ^^^^^^^^^^^\n<PYTHON_HOME>\\Lib\\site-packages\\scipy\\stats\\_axis_nan_policy.py:516: in axis_nan_policy_wrapper\n    hypotest_fun_in(*args, **kwds)\nE   TypeError: gmean() missing 1 required positional argument: 'a'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: gmean() missing 1 required positional arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.63s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": false,
+      "task_id": "argc_scipy_gmean_v08"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "olution.py:1: in <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = str(api.PreciseNumber04(f'{v}.5'))\n                 ^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'decimal' has no attribute 'PreciseNumber04'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'decimal' has no attribute 'P...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": false,
+      "task_id": "class_decimal_decimal_v01"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "olution.py:1: in <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = str(api.PreciseNumber04(f'{v}.5'))\n                 ^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'decimal' has no attribute 'PreciseNumber04'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'decimal' has no attribute 'P...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": false,
+      "task_id": "class_decimal_decimal_v02"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "olution.py:1: in <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = str(api.PreciseNumber04(f'{v}.5'))\n                 ^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'decimal' has no attribute 'PreciseNumber04'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'decimal' has no attribute 'P...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": false,
+      "task_id": "class_decimal_decimal_v03"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "olution.py:1: in <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = str(api.PreciseNumber04(f'{v}.5'))\n                 ^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'decimal' has no attribute 'PreciseNumber04'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'decimal' has no attribute 'P...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": false,
+      "task_id": "class_decimal_decimal_v04"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "olution.py:1: in <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = str(api.PreciseNumber04(f'{v}.5'))\n                 ^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'decimal' has no attribute 'PreciseNumber04'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'decimal' has no attribute 'P...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": false,
+      "task_id": "class_decimal_decimal_v05"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "olution.py:1: in <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = str(api.PreciseNumber04(f'{v}.5'))\n                 ^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'decimal' has no attribute 'PreciseNumber04'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'decimal' has no attribute 'P...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": false,
+      "task_id": "class_decimal_decimal_v06"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "olution.py:1: in <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = str(api.PreciseNumber04(f'{v}.5'))\n                 ^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'decimal' has no attribute 'PreciseNumber04'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'decimal' has no attribute 'P...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": false,
+      "task_id": "class_decimal_decimal_v07"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "olution.py:1: in <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = str(api.PreciseNumber04(f'{v}.5'))\n                 ^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'decimal' has no attribute 'PreciseNumber04'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'decimal' has no attribute 'P...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": false,
+      "task_id": "class_decimal_decimal_v08"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "n.py:1: in <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = api.RationalNumber05(v, v + 1).numerator\n             ^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'fractions' has no attribute 'RationalNumber05'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'fractions' has no attribute ...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": false,
+      "task_id": "class_fractions_fraction_v01"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "n.py:1: in <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = api.RationalNumber05(v, v + 1).numerator\n             ^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'fractions' has no attribute 'RationalNumber05'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'fractions' has no attribute ...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": false,
+      "task_id": "class_fractions_fraction_v02"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "n.py:1: in <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = api.RationalNumber05(v, v + 1).numerator\n             ^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'fractions' has no attribute 'RationalNumber05'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'fractions' has no attribute ...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": false,
+      "task_id": "class_fractions_fraction_v03"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "n.py:1: in <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = api.RationalNumber05(v, v + 1).numerator\n             ^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'fractions' has no attribute 'RationalNumber05'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'fractions' has no attribute ...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": false,
+      "task_id": "class_fractions_fraction_v04"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "n.py:1: in <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = api.RationalNumber05(v, v + 1).numerator\n             ^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'fractions' has no attribute 'RationalNumber05'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'fractions' has no attribute ...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": false,
+      "task_id": "class_fractions_fraction_v05"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "n.py:1: in <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = api.RationalNumber05(v, v + 1).numerator\n             ^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'fractions' has no attribute 'RationalNumber05'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'fractions' has no attribute ...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": false,
+      "task_id": "class_fractions_fraction_v06"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "n.py:1: in <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = api.RationalNumber05(v, v + 1).numerator\n             ^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'fractions' has no attribute 'RationalNumber05'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'fractions' has no attribute ...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": false,
+      "task_id": "class_fractions_fraction_v07"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "n.py:1: in <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = api.RationalNumber05(v, v + 1).numerator\n             ^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'fractions' has no attribute 'RationalNumber05'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'fractions' has no attribute ...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": false,
+      "task_id": "class_fractions_fraction_v08"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "ule>\n    from solution import result\nsolution.py:3: in <module>\n    rotation = api.SpatialRotation10([0, 0, 0, 1])\n               ^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'scipy.spatial.transform' has no attribute 'SpatialRotation10'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'scipy.spatial.transform' has...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.33s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": false,
+      "task_id": "class_scipy_rotation_v01"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "ule>\n    from solution import result\nsolution.py:3: in <module>\n    rotation = api.SpatialRotation10([0, 0, 0, 1])\n               ^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'scipy.spatial.transform' has no attribute 'SpatialRotation10'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'scipy.spatial.transform' has...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.32s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": false,
+      "task_id": "class_scipy_rotation_v02"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "ule>\n    from solution import result\nsolution.py:3: in <module>\n    rotation = api.SpatialRotation10([0, 0, 0, 1])\n               ^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'scipy.spatial.transform' has no attribute 'SpatialRotation10'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'scipy.spatial.transform' has...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.34s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": false,
+      "task_id": "class_scipy_rotation_v03"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "ule>\n    from solution import result\nsolution.py:3: in <module>\n    rotation = api.SpatialRotation10([0, 0, 0, 1])\n               ^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'scipy.spatial.transform' has no attribute 'SpatialRotation10'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'scipy.spatial.transform' has...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.33s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": false,
+      "task_id": "class_scipy_rotation_v04"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "ule>\n    from solution import result\nsolution.py:3: in <module>\n    rotation = api.SpatialRotation10([0, 0, 0, 1])\n               ^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'scipy.spatial.transform' has no attribute 'SpatialRotation10'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'scipy.spatial.transform' has...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.35s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": false,
+      "task_id": "class_scipy_rotation_v05"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "ule>\n    from solution import result\nsolution.py:3: in <module>\n    rotation = api.SpatialRotation10([0, 0, 0, 1])\n               ^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'scipy.spatial.transform' has no attribute 'SpatialRotation10'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'scipy.spatial.transform' has...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.33s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": false,
+      "task_id": "class_scipy_rotation_v06"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "ule>\n    from solution import result\nsolution.py:3: in <module>\n    rotation = api.SpatialRotation10([0, 0, 0, 1])\n               ^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'scipy.spatial.transform' has no attribute 'SpatialRotation10'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'scipy.spatial.transform' has...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.34s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": false,
+      "task_id": "class_scipy_rotation_v07"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "ule>\n    from solution import result\nsolution.py:3: in <module>\n    rotation = api.SpatialRotation10([0, 0, 0, 1])\n               ^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'scipy.spatial.transform' has no attribute 'SpatialRotation10'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'scipy.spatial.transform' has...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.34s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": false,
+      "task_id": "class_scipy_rotation_v08"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "on import result\nsolution.py:3: in <module>\n    result = api.iso_parse_09(f'2024-01-{v:02d}T00:00:00').day\n             ^^^^^^^^^^^^^^^^\nE   AttributeError: module 'dateutil.parser' has no attribute 'iso_parse_09'. Did you mean: 'isoparser'?\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'dateutil.parser' has no attr...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.07s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": false,
+      "task_id": "func_dateutil_isoparse_v01"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "on import result\nsolution.py:3: in <module>\n    result = api.iso_parse_09(f'2024-01-{v:02d}T00:00:00').day\n             ^^^^^^^^^^^^^^^^\nE   AttributeError: module 'dateutil.parser' has no attribute 'iso_parse_09'. Did you mean: 'isoparser'?\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'dateutil.parser' has no attr...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.07s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": false,
+      "task_id": "func_dateutil_isoparse_v02"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "on import result\nsolution.py:3: in <module>\n    result = api.iso_parse_09(f'2024-01-{v:02d}T00:00:00').day\n             ^^^^^^^^^^^^^^^^\nE   AttributeError: module 'dateutil.parser' has no attribute 'iso_parse_09'. Did you mean: 'isoparser'?\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'dateutil.parser' has no attr...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.07s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": false,
+      "task_id": "func_dateutil_isoparse_v03"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "on import result\nsolution.py:3: in <module>\n    result = api.iso_parse_09(f'2024-01-{v:02d}T00:00:00').day\n             ^^^^^^^^^^^^^^^^\nE   AttributeError: module 'dateutil.parser' has no attribute 'iso_parse_09'. Did you mean: 'isoparser'?\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'dateutil.parser' has no attr...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": false,
+      "task_id": "func_dateutil_isoparse_v04"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "on import result\nsolution.py:3: in <module>\n    result = api.iso_parse_09(f'2024-01-{v:02d}T00:00:00').day\n             ^^^^^^^^^^^^^^^^\nE   AttributeError: module 'dateutil.parser' has no attribute 'iso_parse_09'. Did you mean: 'isoparser'?\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'dateutil.parser' has no attr...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": false,
+      "task_id": "func_dateutil_isoparse_v05"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "on import result\nsolution.py:3: in <module>\n    result = api.iso_parse_09(f'2024-01-{v:02d}T00:00:00').day\n             ^^^^^^^^^^^^^^^^\nE   AttributeError: module 'dateutil.parser' has no attribute 'iso_parse_09'. Did you mean: 'isoparser'?\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'dateutil.parser' has no attr...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": false,
+      "task_id": "func_dateutil_isoparse_v06"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "on import result\nsolution.py:3: in <module>\n    result = api.iso_parse_09(f'2024-01-{v:02d}T00:00:00').day\n             ^^^^^^^^^^^^^^^^\nE   AttributeError: module 'dateutil.parser' has no attribute 'iso_parse_09'. Did you mean: 'isoparser'?\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'dateutil.parser' has no attr...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": false,
+      "task_id": "func_dateutil_isoparse_v07"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "on import result\nsolution.py:3: in <module>\n    result = api.iso_parse_09(f'2024-01-{v:02d}T00:00:00').day\n             ^^^^^^^^^^^^^^^^\nE   AttributeError: module 'dateutil.parser' has no attribute 'iso_parse_09'. Did you mean: 'isoparser'?\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'dateutil.parser' has no attr...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.07s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": false,
+      "task_id": "func_dateutil_isoparse_v08"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "^^^^^^^^^\n<PYTHON_HOME>\\Lib\\site-packages\\numpy\\__init__.py:805: in __getattr__\n    raise AttributeError(f\"module {__name__!r} has no attribute {attr!r}\")\nE   AttributeError: module 'numpy' has no attribute 'average_05'. Did you mean: 'average'?\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'numpy' has no attribute 'ave...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": false,
+      "task_id": "func_numpy_mean_v01"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "^^^^^^^^^\n<PYTHON_HOME>\\Lib\\site-packages\\numpy\\__init__.py:805: in __getattr__\n    raise AttributeError(f\"module {__name__!r} has no attribute {attr!r}\")\nE   AttributeError: module 'numpy' has no attribute 'average_05'. Did you mean: 'average'?\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'numpy' has no attribute 'ave...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": false,
+      "task_id": "func_numpy_mean_v02"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "^^^^^^^^^\n<PYTHON_HOME>\\Lib\\site-packages\\numpy\\__init__.py:805: in __getattr__\n    raise AttributeError(f\"module {__name__!r} has no attribute {attr!r}\")\nE   AttributeError: module 'numpy' has no attribute 'average_05'. Did you mean: 'average'?\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'numpy' has no attribute 'ave...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": false,
+      "task_id": "func_numpy_mean_v03"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "^^^^^^^^^\n<PYTHON_HOME>\\Lib\\site-packages\\numpy\\__init__.py:805: in __getattr__\n    raise AttributeError(f\"module {__name__!r} has no attribute {attr!r}\")\nE   AttributeError: module 'numpy' has no attribute 'average_05'. Did you mean: 'average'?\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'numpy' has no attribute 'ave...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": false,
+      "task_id": "func_numpy_mean_v04"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "^^^^^^^^^\n<PYTHON_HOME>\\Lib\\site-packages\\numpy\\__init__.py:805: in __getattr__\n    raise AttributeError(f\"module {__name__!r} has no attribute {attr!r}\")\nE   AttributeError: module 'numpy' has no attribute 'average_05'. Did you mean: 'average'?\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'numpy' has no attribute 'ave...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": false,
+      "task_id": "func_numpy_mean_v05"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "^^^^^^^^^\n<PYTHON_HOME>\\Lib\\site-packages\\numpy\\__init__.py:805: in __getattr__\n    raise AttributeError(f\"module {__name__!r} has no attribute {attr!r}\")\nE   AttributeError: module 'numpy' has no attribute 'average_05'. Did you mean: 'average'?\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'numpy' has no attribute 'ave...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": false,
+      "task_id": "func_numpy_mean_v06"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "^^^^^^^^^\n<PYTHON_HOME>\\Lib\\site-packages\\numpy\\__init__.py:805: in __getattr__\n    raise AttributeError(f\"module {__name__!r} has no attribute {attr!r}\")\nE   AttributeError: module 'numpy' has no attribute 'average_05'. Did you mean: 'average'?\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'numpy' has no attribute 'ave...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.12s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": false,
+      "task_id": "func_numpy_mean_v07"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "^^^^^^^^^\n<PYTHON_HOME>\\Lib\\site-packages\\numpy\\__init__.py:805: in __getattr__\n    raise AttributeError(f\"module {__name__!r} has no attribute {attr!r}\")\nE   AttributeError: module 'numpy' has no attribute 'average_05'. Did you mean: 'average'?\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'numpy' has no attribute 'ave...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": false,
+      "task_id": "func_numpy_mean_v08"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": " <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = api.normalized_exp_08([0, 0]).tolist() + [v]\n             ^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'scipy.special' has no attribute 'normalized_exp_08'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'scipy.special' has no attrib...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.27s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": false,
+      "task_id": "func_scipy_softmax_v01"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": " <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = api.normalized_exp_08([0, 0]).tolist() + [v]\n             ^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'scipy.special' has no attribute 'normalized_exp_08'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'scipy.special' has no attrib...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.26s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": false,
+      "task_id": "func_scipy_softmax_v02"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": " <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = api.normalized_exp_08([0, 0]).tolist() + [v]\n             ^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'scipy.special' has no attribute 'normalized_exp_08'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'scipy.special' has no attrib...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.26s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": false,
+      "task_id": "func_scipy_softmax_v03"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": " <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = api.normalized_exp_08([0, 0]).tolist() + [v]\n             ^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'scipy.special' has no attribute 'normalized_exp_08'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'scipy.special' has no attrib...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.27s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": false,
+      "task_id": "func_scipy_softmax_v04"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": " <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = api.normalized_exp_08([0, 0]).tolist() + [v]\n             ^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'scipy.special' has no attribute 'normalized_exp_08'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'scipy.special' has no attrib...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.27s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": false,
+      "task_id": "func_scipy_softmax_v05"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": " <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = api.normalized_exp_08([0, 0]).tolist() + [v]\n             ^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'scipy.special' has no attribute 'normalized_exp_08'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'scipy.special' has no attrib...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.26s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": false,
+      "task_id": "func_scipy_softmax_v06"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": " <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = api.normalized_exp_08([0, 0]).tolist() + [v]\n             ^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'scipy.special' has no attribute 'normalized_exp_08'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'scipy.special' has no attrib...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.26s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": false,
+      "task_id": "func_scipy_softmax_v07"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": " <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = api.normalized_exp_08([0, 0]).tolist() + [v]\n             ^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'scipy.special' has no attribute 'normalized_exp_08'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'scipy.special' has no attrib...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.26s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": false,
+      "task_id": "func_scipy_softmax_v08"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "n import result\nsolution.py:4: in <module>\n    result = api.datetime.isoformat(value, separator_09=' ')\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: isoformat() got an unexpected keyword argument 'separator_09'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: isoformat() got an unexpected keyword arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_datetime_isoformat_v01"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "n import result\nsolution.py:4: in <module>\n    result = api.datetime.isoformat(value, separator_09=' ')\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: isoformat() got an unexpected keyword argument 'separator_09'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: isoformat() got an unexpected keyword arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_datetime_isoformat_v02"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "n import result\nsolution.py:4: in <module>\n    result = api.datetime.isoformat(value, separator_09=' ')\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: isoformat() got an unexpected keyword argument 'separator_09'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: isoformat() got an unexpected keyword arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_datetime_isoformat_v03"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "n import result\nsolution.py:4: in <module>\n    result = api.datetime.isoformat(value, separator_09=' ')\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: isoformat() got an unexpected keyword argument 'separator_09'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: isoformat() got an unexpected keyword arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_datetime_isoformat_v04"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "n import result\nsolution.py:4: in <module>\n    result = api.datetime.isoformat(value, separator_09=' ')\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: isoformat() got an unexpected keyword argument 'separator_09'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: isoformat() got an unexpected keyword arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_datetime_isoformat_v05"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "n import result\nsolution.py:4: in <module>\n    result = api.datetime.isoformat(value, separator_09=' ')\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: isoformat() got an unexpected keyword argument 'separator_09'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: isoformat() got an unexpected keyword arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_datetime_isoformat_v06"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "n import result\nsolution.py:4: in <module>\n    result = api.datetime.isoformat(value, separator_09=' ')\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: isoformat() got an unexpected keyword argument 'separator_09'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: isoformat() got an unexpected keyword arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_datetime_isoformat_v07"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "n import result\nsolution.py:4: in <module>\n    result = api.datetime.isoformat(value, separator_09=' ')\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: isoformat() got an unexpected keyword argument 'separator_09'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: isoformat() got an unexpected keyword arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_datetime_isoformat_v08"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "result\nsolution.py:3: in <module>\n    result = np.concatenate([[v], [v + 1]], dimension_05=0).tolist()\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: concatenate() got an unexpected keyword argument 'dimension_05'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: concatenate() got an unexpected keyword a...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.10s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_numpy_concatenate_v01"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "result\nsolution.py:3: in <module>\n    result = np.concatenate([[v], [v + 1]], dimension_05=0).tolist()\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: concatenate() got an unexpected keyword argument 'dimension_05'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: concatenate() got an unexpected keyword a...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_numpy_concatenate_v02"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "result\nsolution.py:3: in <module>\n    result = np.concatenate([[v], [v + 1]], dimension_05=0).tolist()\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: concatenate() got an unexpected keyword argument 'dimension_05'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: concatenate() got an unexpected keyword a...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_numpy_concatenate_v03"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "result\nsolution.py:3: in <module>\n    result = np.concatenate([[v], [v + 1]], dimension_05=0).tolist()\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: concatenate() got an unexpected keyword argument 'dimension_05'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: concatenate() got an unexpected keyword a...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_numpy_concatenate_v04"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "result\nsolution.py:3: in <module>\n    result = np.concatenate([[v], [v + 1]], dimension_05=0).tolist()\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: concatenate() got an unexpected keyword argument 'dimension_05'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: concatenate() got an unexpected keyword a...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_numpy_concatenate_v05"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "result\nsolution.py:3: in <module>\n    result = np.concatenate([[v], [v + 1]], dimension_05=0).tolist()\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: concatenate() got an unexpected keyword argument 'dimension_05'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: concatenate() got an unexpected keyword a...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_numpy_concatenate_v06"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "result\nsolution.py:3: in <module>\n    result = np.concatenate([[v], [v + 1]], dimension_05=0).tolist()\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: concatenate() got an unexpected keyword argument 'dimension_05'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: concatenate() got an unexpected keyword a...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_numpy_concatenate_v07"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "result\nsolution.py:3: in <module>\n    result = np.concatenate([[v], [v + 1]], dimension_05=0).tolist()\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: concatenate() got an unexpected keyword argument 'dimension_05'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: concatenate() got an unexpected keyword a...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_numpy_concatenate_v08"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "3: in <module>\n    result = len(api.quantiles([v, v + 1, v + 2, v + 3], partitions_10=4))\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: quantiles() got an unexpected keyword argument 'partitions_10'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: quantiles() got an unexpected keyword arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_statistics_quantiles_v01"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "3: in <module>\n    result = len(api.quantiles([v, v + 1, v + 2, v + 3], partitions_10=4))\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: quantiles() got an unexpected keyword argument 'partitions_10'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: quantiles() got an unexpected keyword arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_statistics_quantiles_v02"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "3: in <module>\n    result = len(api.quantiles([v, v + 1, v + 2, v + 3], partitions_10=4))\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: quantiles() got an unexpected keyword argument 'partitions_10'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: quantiles() got an unexpected keyword arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_statistics_quantiles_v03"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "3: in <module>\n    result = len(api.quantiles([v, v + 1, v + 2, v + 3], partitions_10=4))\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: quantiles() got an unexpected keyword argument 'partitions_10'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: quantiles() got an unexpected keyword arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_statistics_quantiles_v04"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "3: in <module>\n    result = len(api.quantiles([v, v + 1, v + 2, v + 3], partitions_10=4))\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: quantiles() got an unexpected keyword argument 'partitions_10'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: quantiles() got an unexpected keyword arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_statistics_quantiles_v05"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "3: in <module>\n    result = len(api.quantiles([v, v + 1, v + 2, v + 3], partitions_10=4))\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: quantiles() got an unexpected keyword argument 'partitions_10'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: quantiles() got an unexpected keyword arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_statistics_quantiles_v06"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "3: in <module>\n    result = len(api.quantiles([v, v + 1, v + 2, v + 3], partitions_10=4))\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: quantiles() got an unexpected keyword argument 'partitions_10'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: quantiles() got an unexpected keyword arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_statistics_quantiles_v07"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "3: in <module>\n    result = len(api.quantiles([v, v + 1, v + 2, v + 3], partitions_10=4))\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: quantiles() got an unexpected keyword argument 'partitions_10'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: quantiles() got an unexpected keyword arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_statistics_quantiles_v08"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "____\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:4: in <module>\n    result = api.date.to_iso_02(day)\n             ^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 'datetime.date' has no attribute 'to_iso_02'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 'datetime.date' has no a...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_method_or_attribute",
+      "repair_attempted": false,
+      "task_id": "method_date_isoformat_v01"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "____\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:4: in <module>\n    result = api.date.to_iso_02(day)\n             ^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 'datetime.date' has no attribute 'to_iso_02'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 'datetime.date' has no a...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_method_or_attribute",
+      "repair_attempted": false,
+      "task_id": "method_date_isoformat_v02"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "____\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:4: in <module>\n    result = api.date.to_iso_02(day)\n             ^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 'datetime.date' has no attribute 'to_iso_02'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 'datetime.date' has no a...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_method_or_attribute",
+      "repair_attempted": false,
+      "task_id": "method_date_isoformat_v03"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "____\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:4: in <module>\n    result = api.date.to_iso_02(day)\n             ^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 'datetime.date' has no attribute 'to_iso_02'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 'datetime.date' has no a...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_method_or_attribute",
+      "repair_attempted": false,
+      "task_id": "method_date_isoformat_v04"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "____\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:4: in <module>\n    result = api.date.to_iso_02(day)\n             ^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 'datetime.date' has no attribute 'to_iso_02'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 'datetime.date' has no a...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_method_or_attribute",
+      "repair_attempted": false,
+      "task_id": "method_date_isoformat_v05"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "____\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:4: in <module>\n    result = api.date.to_iso_02(day)\n             ^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 'datetime.date' has no attribute 'to_iso_02'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 'datetime.date' has no a...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_method_or_attribute",
+      "repair_attempted": false,
+      "task_id": "method_date_isoformat_v06"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "____\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:4: in <module>\n    result = api.date.to_iso_02(day)\n             ^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 'datetime.date' has no attribute 'to_iso_02'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 'datetime.date' has no a...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_method_or_attribute",
+      "repair_attempted": false,
+      "task_id": "method_date_isoformat_v07"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "____\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:4: in <module>\n    result = api.date.to_iso_02(day)\n             ^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 'datetime.date' has no attribute 'to_iso_02'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 'datetime.date' has no a...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_method_or_attribute",
+      "repair_attempted": false,
+      "task_id": "method_date_isoformat_v08"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "solution import result\nsolution.py:4: in <module>\n    result = str(api.Decimal.round_to_09(number, api.Decimal('0.1')))\n                 ^^^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 'decimal.Decimal' has no attribute 'round_to_09'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 'decimal.Decimal' has no...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_method_or_attribute",
+      "repair_attempted": false,
+      "task_id": "method_decimal_quantize_v01"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "solution import result\nsolution.py:4: in <module>\n    result = str(api.Decimal.round_to_09(number, api.Decimal('0.1')))\n                 ^^^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 'decimal.Decimal' has no attribute 'round_to_09'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 'decimal.Decimal' has no...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_method_or_attribute",
+      "repair_attempted": false,
+      "task_id": "method_decimal_quantize_v02"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "solution import result\nsolution.py:4: in <module>\n    result = str(api.Decimal.round_to_09(number, api.Decimal('0.1')))\n                 ^^^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 'decimal.Decimal' has no attribute 'round_to_09'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 'decimal.Decimal' has no...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_method_or_attribute",
+      "repair_attempted": false,
+      "task_id": "method_decimal_quantize_v03"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "solution import result\nsolution.py:4: in <module>\n    result = str(api.Decimal.round_to_09(number, api.Decimal('0.1')))\n                 ^^^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 'decimal.Decimal' has no attribute 'round_to_09'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 'decimal.Decimal' has no...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_method_or_attribute",
+      "repair_attempted": false,
+      "task_id": "method_decimal_quantize_v04"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "solution import result\nsolution.py:4: in <module>\n    result = str(api.Decimal.round_to_09(number, api.Decimal('0.1')))\n                 ^^^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 'decimal.Decimal' has no attribute 'round_to_09'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 'decimal.Decimal' has no...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_method_or_attribute",
+      "repair_attempted": false,
+      "task_id": "method_decimal_quantize_v05"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "solution import result\nsolution.py:4: in <module>\n    result = str(api.Decimal.round_to_09(number, api.Decimal('0.1')))\n                 ^^^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 'decimal.Decimal' has no attribute 'round_to_09'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 'decimal.Decimal' has no...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_method_or_attribute",
+      "repair_attempted": false,
+      "task_id": "method_decimal_quantize_v06"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "solution import result\nsolution.py:4: in <module>\n    result = str(api.Decimal.round_to_09(number, api.Decimal('0.1')))\n                 ^^^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 'decimal.Decimal' has no attribute 'round_to_09'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 'decimal.Decimal' has no...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_method_or_attribute",
+      "repair_attempted": false,
+      "task_id": "method_decimal_quantize_v07"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "solution import result\nsolution.py:4: in <module>\n    result = str(api.Decimal.round_to_09(number, api.Decimal('0.1')))\n                 ^^^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 'decimal.Decimal' has no attribute 'round_to_09'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 'decimal.Decimal' has no...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_method_or_attribute",
+      "repair_attempted": false,
+      "task_id": "method_decimal_quantize_v08"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "on import result\nsolution.py:4: in <module>\n    result = api.Pattern.complete_match_05(pattern, 'a' * v) is not None\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 're.Pattern' has no attribute 'complete_match_05'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 're.Pattern' has no attr...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_method_or_attribute",
+      "repair_attempted": false,
+      "task_id": "method_pattern_fullmatch_v01"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "on import result\nsolution.py:4: in <module>\n    result = api.Pattern.complete_match_05(pattern, 'a' * v) is not None\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 're.Pattern' has no attribute 'complete_match_05'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 're.Pattern' has no attr...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_method_or_attribute",
+      "repair_attempted": false,
+      "task_id": "method_pattern_fullmatch_v02"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "on import result\nsolution.py:4: in <module>\n    result = api.Pattern.complete_match_05(pattern, 'a' * v) is not None\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 're.Pattern' has no attribute 'complete_match_05'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 're.Pattern' has no attr...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_method_or_attribute",
+      "repair_attempted": false,
+      "task_id": "method_pattern_fullmatch_v03"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "on import result\nsolution.py:4: in <module>\n    result = api.Pattern.complete_match_05(pattern, 'a' * v) is not None\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 're.Pattern' has no attribute 'complete_match_05'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 're.Pattern' has no attr...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_method_or_attribute",
+      "repair_attempted": false,
+      "task_id": "method_pattern_fullmatch_v04"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "on import result\nsolution.py:4: in <module>\n    result = api.Pattern.complete_match_05(pattern, 'a' * v) is not None\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 're.Pattern' has no attribute 'complete_match_05'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 're.Pattern' has no attr...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_method_or_attribute",
+      "repair_attempted": false,
+      "task_id": "method_pattern_fullmatch_v05"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "on import result\nsolution.py:4: in <module>\n    result = api.Pattern.complete_match_05(pattern, 'a' * v) is not None\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 're.Pattern' has no attribute 'complete_match_05'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 're.Pattern' has no attr...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_method_or_attribute",
+      "repair_attempted": false,
+      "task_id": "method_pattern_fullmatch_v06"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "on import result\nsolution.py:4: in <module>\n    result = api.Pattern.complete_match_05(pattern, 'a' * v) is not None\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 're.Pattern' has no attribute 'complete_match_05'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 're.Pattern' has no attr...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_method_or_attribute",
+      "repair_attempted": false,
+      "task_id": "method_pattern_fullmatch_v07"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "on import result\nsolution.py:4: in <module>\n    result = api.Pattern.complete_match_05(pattern, 'a' * v) is not None\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 're.Pattern' has no attribute 'complete_match_05'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 're.Pattern' has no attr...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_method_or_attribute",
+      "repair_attempted": false,
+      "task_id": "method_pattern_fullmatch_v08"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "mport(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import dateutil.magicparser_09 as api\nE   ModuleNotFoundError: No module named 'dateutil.magicparser_09'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_module",
+      "repair_attempted": false,
+      "task_id": "mod_dateutil_parser_v01"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "mport(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import dateutil.magicparser_09 as api\nE   ModuleNotFoundError: No module named 'dateutil.magicparser_09'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_module",
+      "repair_attempted": false,
+      "task_id": "mod_dateutil_parser_v02"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "mport(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import dateutil.magicparser_09 as api\nE   ModuleNotFoundError: No module named 'dateutil.magicparser_09'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_module",
+      "repair_attempted": false,
+      "task_id": "mod_dateutil_parser_v03"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "mport(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import dateutil.magicparser_09 as api\nE   ModuleNotFoundError: No module named 'dateutil.magicparser_09'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_module",
+      "repair_attempted": false,
+      "task_id": "mod_dateutil_parser_v04"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "mport(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import dateutil.magicparser_09 as api\nE   ModuleNotFoundError: No module named 'dateutil.magicparser_09'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_module",
+      "repair_attempted": false,
+      "task_id": "mod_dateutil_parser_v05"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "mport(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import dateutil.magicparser_09 as api\nE   ModuleNotFoundError: No module named 'dateutil.magicparser_09'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_module",
+      "repair_attempted": false,
+      "task_id": "mod_dateutil_parser_v06"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "mport(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import dateutil.magicparser_09 as api\nE   ModuleNotFoundError: No module named 'dateutil.magicparser_09'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_module",
+      "repair_attempted": false,
+      "task_id": "mod_dateutil_parser_v07"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "mport(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import dateutil.magicparser_09 as api\nE   ModuleNotFoundError: No module named 'dateutil.magicparser_09'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_module",
+      "repair_attempted": false,
+      "task_id": "mod_dateutil_parser_v08"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:2: in <module>\n    from solution import result\nsolution.py:2: in <module>\n    import scipy.magic_special_07 as api\nE   ModuleNotFoundError: No module named 'scipy.magic_special_07'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.12s\n"
+      },
+      "mutation_type": "hallucinated_module",
+      "repair_attempted": false,
+      "task_id": "mod_scipy_special_v01"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:2: in <module>\n    from solution import result\nsolution.py:2: in <module>\n    import scipy.magic_special_07 as api\nE   ModuleNotFoundError: No module named 'scipy.magic_special_07'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.12s\n"
+      },
+      "mutation_type": "hallucinated_module",
+      "repair_attempted": false,
+      "task_id": "mod_scipy_special_v02"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:2: in <module>\n    from solution import result\nsolution.py:2: in <module>\n    import scipy.magic_special_07 as api\nE   ModuleNotFoundError: No module named 'scipy.magic_special_07'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.12s\n"
+      },
+      "mutation_type": "hallucinated_module",
+      "repair_attempted": false,
+      "task_id": "mod_scipy_special_v03"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:2: in <module>\n    from solution import result\nsolution.py:2: in <module>\n    import scipy.magic_special_07 as api\nE   ModuleNotFoundError: No module named 'scipy.magic_special_07'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n"
+      },
+      "mutation_type": "hallucinated_module",
+      "repair_attempted": false,
+      "task_id": "mod_scipy_special_v04"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:2: in <module>\n    from solution import result\nsolution.py:2: in <module>\n    import scipy.magic_special_07 as api\nE   ModuleNotFoundError: No module named 'scipy.magic_special_07'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.12s\n"
+      },
+      "mutation_type": "hallucinated_module",
+      "repair_attempted": false,
+      "task_id": "mod_scipy_special_v05"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:2: in <module>\n    from solution import result\nsolution.py:2: in <module>\n    import scipy.magic_special_07 as api\nE   ModuleNotFoundError: No module named 'scipy.magic_special_07'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n"
+      },
+      "mutation_type": "hallucinated_module",
+      "repair_attempted": false,
+      "task_id": "mod_scipy_special_v06"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:2: in <module>\n    from solution import result\nsolution.py:2: in <module>\n    import scipy.magic_special_07 as api\nE   ModuleNotFoundError: No module named 'scipy.magic_special_07'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.12s\n"
+      },
+      "mutation_type": "hallucinated_module",
+      "repair_attempted": false,
+      "task_id": "mod_scipy_special_v07"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:2: in <module>\n    from solution import result\nsolution.py:2: in <module>\n    import scipy.magic_special_07 as api\nE   ModuleNotFoundError: No module named 'scipy.magic_special_07'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n"
+      },
+      "mutation_type": "hallucinated_module",
+      "repair_attempted": false,
+      "task_id": "mod_scipy_special_v08"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "_gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import urllib.magicparse_01 as api\nE   ModuleNotFoundError: No module named 'urllib.magicparse_01'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_module",
+      "repair_attempted": false,
+      "task_id": "mod_urllib_parse_v01"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "_gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import urllib.magicparse_01 as api\nE   ModuleNotFoundError: No module named 'urllib.magicparse_01'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_module",
+      "repair_attempted": false,
+      "task_id": "mod_urllib_parse_v02"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "_gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import urllib.magicparse_01 as api\nE   ModuleNotFoundError: No module named 'urllib.magicparse_01'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_module",
+      "repair_attempted": false,
+      "task_id": "mod_urllib_parse_v03"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "_gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import urllib.magicparse_01 as api\nE   ModuleNotFoundError: No module named 'urllib.magicparse_01'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_module",
+      "repair_attempted": false,
+      "task_id": "mod_urllib_parse_v04"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "_gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import urllib.magicparse_01 as api\nE   ModuleNotFoundError: No module named 'urllib.magicparse_01'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_module",
+      "repair_attempted": false,
+      "task_id": "mod_urllib_parse_v05"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "_gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import urllib.magicparse_01 as api\nE   ModuleNotFoundError: No module named 'urllib.magicparse_01'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.07s\n"
+      },
+      "mutation_type": "hallucinated_module",
+      "repair_attempted": false,
+      "task_id": "mod_urllib_parse_v06"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "_gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import urllib.magicparse_01 as api\nE   ModuleNotFoundError: No module named 'urllib.magicparse_01'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_module",
+      "repair_attempted": false,
+      "task_id": "mod_urllib_parse_v07"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "_gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import urllib.magicparse_01 as api\nE   ModuleNotFoundError: No module named 'urllib.magicparse_01'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_module",
+      "repair_attempted": false,
+      "task_id": "mod_urllib_parse_v08"
+    },
+    {
+      "category": "repaired_syntax_error",
+      "final_error": {
+        "error_category": "syntax_error",
+        "error_type": "SyntaxError",
+        "status": "failed",
+        "stderr_tail": ", module.__dict__)\ntest_solution.py:1: in <module>\n    from solution import result\nE     File \"<USER_HOME>\\AppData\\Local\\Temp\\depguard_exec_uhnr5vz7\\solution.py\", line 9\nE       print(\"The package 'math_phantom_01' is\nE             ^\nE   SyntaxError: unterminated string literal (detected at line 9)\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.10s\n"
+      },
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "ootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import math_phantom_01 as math\nE   ModuleNotFoundError: No module named 'math_phantom_01'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_package",
+      "repair_attempted": true,
+      "task_id": "pkg_math_cos_v01"
+    },
+    {
+      "category": "repaired_syntax_error",
+      "final_error": {
+        "error_category": "syntax_error",
+        "error_type": "SyntaxError",
+        "status": "failed",
+        "stderr_tail": ", module.__dict__)\ntest_solution.py:1: in <module>\n    from solution import result\nE     File \"<USER_HOME>\\AppData\\Local\\Temp\\depguard_exec_2ioo6i78\\solution.py\", line 9\nE       print(\"The package 'math_phantom_01' is\nE             ^\nE   SyntaxError: unterminated string literal (detected at line 9)\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n"
+      },
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "ootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import math_phantom_01 as math\nE   ModuleNotFoundError: No module named 'math_phantom_01'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_package",
+      "repair_attempted": true,
+      "task_id": "pkg_math_cos_v02"
+    },
+    {
+      "category": "repaired_syntax_error",
+      "final_error": {
+        "error_category": "syntax_error",
+        "error_type": "SyntaxError",
+        "status": "failed",
+        "stderr_tail": ", module.__dict__)\ntest_solution.py:1: in <module>\n    from solution import result\nE     File \"<USER_HOME>\\AppData\\Local\\Temp\\depguard_exec_x1lov0aq\\solution.py\", line 9\nE       print(\"The package 'math_phantom_01' is\nE             ^\nE   SyntaxError: unterminated string literal (detected at line 9)\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n"
+      },
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "ootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import math_phantom_01 as math\nE   ModuleNotFoundError: No module named 'math_phantom_01'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_package",
+      "repair_attempted": true,
+      "task_id": "pkg_math_cos_v03"
+    },
+    {
+      "category": "repaired_syntax_error",
+      "final_error": {
+        "error_category": "syntax_error",
+        "error_type": "SyntaxError",
+        "status": "failed",
+        "stderr_tail": ", module.__dict__)\ntest_solution.py:1: in <module>\n    from solution import result\nE     File \"<USER_HOME>\\AppData\\Local\\Temp\\depguard_exec_el2kauvk\\solution.py\", line 9\nE       print(\"The package 'math_phantom_01' is\nE             ^\nE   SyntaxError: unterminated string literal (detected at line 9)\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n"
+      },
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "ootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import math_phantom_01 as math\nE   ModuleNotFoundError: No module named 'math_phantom_01'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_package",
+      "repair_attempted": true,
+      "task_id": "pkg_math_cos_v04"
+    },
+    {
+      "category": "repaired_syntax_error",
+      "final_error": {
+        "error_category": "syntax_error",
+        "error_type": "SyntaxError",
+        "status": "failed",
+        "stderr_tail": ", module.__dict__)\ntest_solution.py:1: in <module>\n    from solution import result\nE     File \"<USER_HOME>\\AppData\\Local\\Temp\\depguard_exec_vmsq9puj\\solution.py\", line 9\nE       print(\"The package 'math_phantom_01' is\nE             ^\nE   SyntaxError: unterminated string literal (detected at line 9)\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n"
+      },
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "ootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import math_phantom_01 as math\nE   ModuleNotFoundError: No module named 'math_phantom_01'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_package",
+      "repair_attempted": true,
+      "task_id": "pkg_math_cos_v05"
+    },
+    {
+      "category": "repaired_syntax_error",
+      "final_error": {
+        "error_category": "syntax_error",
+        "error_type": "SyntaxError",
+        "status": "failed",
+        "stderr_tail": ", module.__dict__)\ntest_solution.py:1: in <module>\n    from solution import result\nE     File \"<USER_HOME>\\AppData\\Local\\Temp\\depguard_exec_6eej1f8d\\solution.py\", line 9\nE       print(\"The package 'math_phantom_01' is\nE             ^\nE   SyntaxError: unterminated string literal (detected at line 9)\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n"
+      },
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "ootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import math_phantom_01 as math\nE   ModuleNotFoundError: No module named 'math_phantom_01'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_package",
+      "repair_attempted": true,
+      "task_id": "pkg_math_cos_v06"
+    },
+    {
+      "category": "repaired_syntax_error",
+      "final_error": {
+        "error_category": "syntax_error",
+        "error_type": "SyntaxError",
+        "status": "failed",
+        "stderr_tail": ", module.__dict__)\ntest_solution.py:1: in <module>\n    from solution import result\nE     File \"<USER_HOME>\\AppData\\Local\\Temp\\depguard_exec_ud_b3rrq\\solution.py\", line 9\nE       print(\"The package 'math_phantom_01' is\nE             ^\nE   SyntaxError: unterminated string literal (detected at line 9)\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n"
+      },
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "ootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import math_phantom_01 as math\nE   ModuleNotFoundError: No module named 'math_phantom_01'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_package",
+      "repair_attempted": true,
+      "task_id": "pkg_math_cos_v07"
+    },
+    {
+      "category": "repaired_syntax_error",
+      "final_error": {
+        "error_category": "syntax_error",
+        "error_type": "SyntaxError",
+        "status": "failed",
+        "stderr_tail": ", module.__dict__)\ntest_solution.py:1: in <module>\n    from solution import result\nE     File \"<USER_HOME>\\AppData\\Local\\Temp\\depguard_exec_hdxec8ce\\solution.py\", line 9\nE       print(\"The package 'math_phantom_01' is\nE             ^\nE   SyntaxError: unterminated string literal (detected at line 9)\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n"
+      },
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "ootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import math_phantom_01 as math\nE   ModuleNotFoundError: No module named 'math_phantom_01'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_package",
+      "repair_attempted": true,
+      "task_id": "pkg_math_cos_v08"
+    },
+    {
+      "category": "repaired_syntax_error",
+      "final_error": {
+        "error_category": "syntax_error",
+        "error_type": "SyntaxError",
+        "status": "failed",
+        "stderr_tail": "co, module.__dict__)\ntest_solution.py:1: in <module>\n    from solution import result\nE     File \"<USER_HOME>\\AppData\\Local\\Temp\\depguard_exec_kwooe217\\solution.py\", line 9\nE       print(\"The package 'regex_phantom_04'\nE             ^\nE   SyntaxError: unterminated string literal (detected at line 9)\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n"
+      },
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "ootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import regex_phantom_04 as re\nE   ModuleNotFoundError: No module named 'regex_phantom_04'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_package",
+      "repair_attempted": true,
+      "task_id": "pkg_re_split_v01"
+    },
+    {
+      "category": "repaired_syntax_error",
+      "final_error": {
+        "error_category": "syntax_error",
+        "error_type": "SyntaxError",
+        "status": "failed",
+        "stderr_tail": "co, module.__dict__)\ntest_solution.py:1: in <module>\n    from solution import result\nE     File \"<USER_HOME>\\AppData\\Local\\Temp\\depguard_exec_bj_oqq6x\\solution.py\", line 9\nE       print(\"The package 'regex_phantom_04'\nE             ^\nE   SyntaxError: unterminated string literal (detected at line 9)\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n"
+      },
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "ootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import regex_phantom_04 as re\nE   ModuleNotFoundError: No module named 'regex_phantom_04'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_package",
+      "repair_attempted": true,
+      "task_id": "pkg_re_split_v02"
+    },
+    {
+      "category": "repaired_syntax_error",
+      "final_error": {
+        "error_category": "syntax_error",
+        "error_type": "SyntaxError",
+        "status": "failed",
+        "stderr_tail": "co, module.__dict__)\ntest_solution.py:1: in <module>\n    from solution import result\nE     File \"<USER_HOME>\\AppData\\Local\\Temp\\depguard_exec_rynxx1ko\\solution.py\", line 9\nE       print(\"The package 'regex_phantom_04'\nE             ^\nE   SyntaxError: unterminated string literal (detected at line 9)\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n"
+      },
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "ootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import regex_phantom_04 as re\nE   ModuleNotFoundError: No module named 'regex_phantom_04'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_package",
+      "repair_attempted": true,
+      "task_id": "pkg_re_split_v03"
+    },
+    {
+      "category": "repaired_syntax_error",
+      "final_error": {
+        "error_category": "syntax_error",
+        "error_type": "SyntaxError",
+        "status": "failed",
+        "stderr_tail": "co, module.__dict__)\ntest_solution.py:1: in <module>\n    from solution import result\nE     File \"<USER_HOME>\\AppData\\Local\\Temp\\depguard_exec_fumvxotj\\solution.py\", line 9\nE       print(\"The package 'regex_phantom_04'\nE             ^\nE   SyntaxError: unterminated string literal (detected at line 9)\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n"
+      },
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "ootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import regex_phantom_04 as re\nE   ModuleNotFoundError: No module named 'regex_phantom_04'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_package",
+      "repair_attempted": true,
+      "task_id": "pkg_re_split_v04"
+    },
+    {
+      "category": "repaired_syntax_error",
+      "final_error": {
+        "error_category": "syntax_error",
+        "error_type": "SyntaxError",
+        "status": "failed",
+        "stderr_tail": "co, module.__dict__)\ntest_solution.py:1: in <module>\n    from solution import result\nE     File \"<USER_HOME>\\AppData\\Local\\Temp\\depguard_exec_xyg6mc3h\\solution.py\", line 9\nE       print(\"The package 'regex_phantom_04'\nE             ^\nE   SyntaxError: unterminated string literal (detected at line 9)\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n"
+      },
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "ootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import regex_phantom_04 as re\nE   ModuleNotFoundError: No module named 'regex_phantom_04'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_package",
+      "repair_attempted": true,
+      "task_id": "pkg_re_split_v05"
+    },
+    {
+      "category": "repaired_syntax_error",
+      "final_error": {
+        "error_category": "syntax_error",
+        "error_type": "SyntaxError",
+        "status": "failed",
+        "stderr_tail": "co, module.__dict__)\ntest_solution.py:1: in <module>\n    from solution import result\nE     File \"<USER_HOME>\\AppData\\Local\\Temp\\depguard_exec_agcya76p\\solution.py\", line 9\nE       print(\"The package 'regex_phantom_04'\nE             ^\nE   SyntaxError: unterminated string literal (detected at line 9)\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n"
+      },
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "ootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import regex_phantom_04 as re\nE   ModuleNotFoundError: No module named 'regex_phantom_04'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_package",
+      "repair_attempted": true,
+      "task_id": "pkg_re_split_v06"
+    },
+    {
+      "category": "repaired_syntax_error",
+      "final_error": {
+        "error_category": "syntax_error",
+        "error_type": "SyntaxError",
+        "status": "failed",
+        "stderr_tail": "co, module.__dict__)\ntest_solution.py:1: in <module>\n    from solution import result\nE     File \"<USER_HOME>\\AppData\\Local\\Temp\\depguard_exec_a_99esfm\\solution.py\", line 9\nE       print(\"The package 'regex_phantom_04'\nE             ^\nE   SyntaxError: unterminated string literal (detected at line 9)\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n"
+      },
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "ootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import regex_phantom_04 as re\nE   ModuleNotFoundError: No module named 'regex_phantom_04'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_package",
+      "repair_attempted": true,
+      "task_id": "pkg_re_split_v07"
+    },
+    {
+      "category": "repaired_syntax_error",
+      "final_error": {
+        "error_category": "syntax_error",
+        "error_type": "SyntaxError",
+        "status": "failed",
+        "stderr_tail": "co, module.__dict__)\ntest_solution.py:1: in <module>\n    from solution import result\nE     File \"<USER_HOME>\\AppData\\Local\\Temp\\depguard_exec_84glcmfi\\solution.py\", line 9\nE       print(\"The package 'regex_phantom_04'\nE             ^\nE   SyntaxError: unterminated string literal (detected at line 9)\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n"
+      },
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "ootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import regex_phantom_04 as re\nE   ModuleNotFoundError: No module named 'regex_phantom_04'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_package",
+      "repair_attempted": true,
+      "task_id": "pkg_re_split_v08"
+    },
+    {
+      "category": "repaired_syntax_error",
+      "final_error": {
+        "error_category": "syntax_error",
+        "error_type": "SyntaxError",
+        "status": "failed",
+        "stderr_tail": "le\n    exec(co, module.__dict__)\ntest_solution.py:1: in <module>\n    from solution import result\nE     File \"<USER_HOME>\\AppData\\Local\\Temp\\depguard_exec_rr3mxz4n\\solution.py\", line 9\nE       print(\"The scipy_phantom_\nE             ^\nE   SyntaxError: unterminated string literal (detected at line 9)\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n"
+      },
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import scipy_phantom_09.special as special\nE   ModuleNotFoundError: No module named 'scipy_phantom_09'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_package",
+      "repair_attempted": true,
+      "task_id": "pkg_scipy_logit_v01"
+    },
+    {
+      "category": "repaired_syntax_error",
+      "final_error": {
+        "error_category": "syntax_error",
+        "error_type": "SyntaxError",
+        "status": "failed",
+        "stderr_tail": "le\n    exec(co, module.__dict__)\ntest_solution.py:1: in <module>\n    from solution import result\nE     File \"<USER_HOME>\\AppData\\Local\\Temp\\depguard_exec_b30y41h_\\solution.py\", line 9\nE       print(\"The scipy_phantom_\nE             ^\nE   SyntaxError: unterminated string literal (detected at line 9)\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n"
+      },
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import scipy_phantom_09.special as special\nE   ModuleNotFoundError: No module named 'scipy_phantom_09'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_package",
+      "repair_attempted": true,
+      "task_id": "pkg_scipy_logit_v02"
+    },
+    {
+      "category": "repaired_syntax_error",
+      "final_error": {
+        "error_category": "syntax_error",
+        "error_type": "SyntaxError",
+        "status": "failed",
+        "stderr_tail": "le\n    exec(co, module.__dict__)\ntest_solution.py:1: in <module>\n    from solution import result\nE     File \"<USER_HOME>\\AppData\\Local\\Temp\\depguard_exec_dkj6lzbu\\solution.py\", line 9\nE       print(\"The scipy_phantom_\nE             ^\nE   SyntaxError: unterminated string literal (detected at line 9)\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n"
+      },
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import scipy_phantom_09.special as special\nE   ModuleNotFoundError: No module named 'scipy_phantom_09'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_package",
+      "repair_attempted": true,
+      "task_id": "pkg_scipy_logit_v03"
+    },
+    {
+      "category": "repaired_syntax_error",
+      "final_error": {
+        "error_category": "syntax_error",
+        "error_type": "SyntaxError",
+        "status": "failed",
+        "stderr_tail": "le\n    exec(co, module.__dict__)\ntest_solution.py:1: in <module>\n    from solution import result\nE     File \"<USER_HOME>\\AppData\\Local\\Temp\\depguard_exec_0ej5a2a9\\solution.py\", line 9\nE       print(\"The scipy_phantom_\nE             ^\nE   SyntaxError: unterminated string literal (detected at line 9)\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n"
+      },
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import scipy_phantom_09.special as special\nE   ModuleNotFoundError: No module named 'scipy_phantom_09'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_package",
+      "repair_attempted": true,
+      "task_id": "pkg_scipy_logit_v04"
+    },
+    {
+      "category": "repaired_syntax_error",
+      "final_error": {
+        "error_category": "syntax_error",
+        "error_type": "SyntaxError",
+        "status": "failed",
+        "stderr_tail": "le\n    exec(co, module.__dict__)\ntest_solution.py:1: in <module>\n    from solution import result\nE     File \"<USER_HOME>\\AppData\\Local\\Temp\\depguard_exec_wkwqrkoc\\solution.py\", line 9\nE       print(\"The scipy_phantom_\nE             ^\nE   SyntaxError: unterminated string literal (detected at line 9)\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n"
+      },
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import scipy_phantom_09.special as special\nE   ModuleNotFoundError: No module named 'scipy_phantom_09'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_package",
+      "repair_attempted": true,
+      "task_id": "pkg_scipy_logit_v05"
+    },
+    {
+      "category": "repaired_syntax_error",
+      "final_error": {
+        "error_category": "syntax_error",
+        "error_type": "SyntaxError",
+        "status": "failed",
+        "stderr_tail": "le\n    exec(co, module.__dict__)\ntest_solution.py:1: in <module>\n    from solution import result\nE     File \"<USER_HOME>\\AppData\\Local\\Temp\\depguard_exec_7vl4x7i4\\solution.py\", line 9\nE       print(\"The scipy_phantom_\nE             ^\nE   SyntaxError: unterminated string literal (detected at line 9)\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n"
+      },
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import scipy_phantom_09.special as special\nE   ModuleNotFoundError: No module named 'scipy_phantom_09'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_package",
+      "repair_attempted": true,
+      "task_id": "pkg_scipy_logit_v06"
+    },
+    {
+      "category": "repaired_syntax_error",
+      "final_error": {
+        "error_category": "syntax_error",
+        "error_type": "SyntaxError",
+        "status": "failed",
+        "stderr_tail": "le\n    exec(co, module.__dict__)\ntest_solution.py:1: in <module>\n    from solution import result\nE     File \"<USER_HOME>\\AppData\\Local\\Temp\\depguard_exec_40irq98o\\solution.py\", line 9\nE       print(\"The scipy_phantom_\nE             ^\nE   SyntaxError: unterminated string literal (detected at line 9)\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n"
+      },
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import scipy_phantom_09.special as special\nE   ModuleNotFoundError: No module named 'scipy_phantom_09'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_package",
+      "repair_attempted": true,
+      "task_id": "pkg_scipy_logit_v07"
+    },
+    {
+      "category": "repaired_syntax_error",
+      "final_error": {
+        "error_category": "syntax_error",
+        "error_type": "SyntaxError",
+        "status": "failed",
+        "stderr_tail": "le\n    exec(co, module.__dict__)\ntest_solution.py:1: in <module>\n    from solution import result\nE     File \"<USER_HOME>\\AppData\\Local\\Temp\\depguard_exec_3jih1vxx\\solution.py\", line 9\nE       print(\"The scipy_phantom_\nE             ^\nE   SyntaxError: unterminated string literal (detected at line 9)\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n"
+      },
+      "initial_error": {
+        "error_category": "import_error",
+        "error_type": "ModuleNotFoundError",
+        "status": "failed",
+        "stderr_tail": "_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import scipy_phantom_09.special as special\nE   ModuleNotFoundError: No module named 'scipy_phantom_09'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.06s\n"
+      },
+      "mutation_type": "hallucinated_package",
+      "repair_attempted": true,
+      "task_id": "pkg_scipy_logit_v08"
+    }
+  ],
+  "categories": {
+    "repair_not_triggered": 144,
+    "repaired_syntax_error": 24
+  },
+  "failed_case_count": 168,
+  "failures_by_mutation": {
+    "hallucinated_class": 24,
+    "hallucinated_function": 24,
+    "hallucinated_method_or_attribute": 24,
+    "hallucinated_module": 24,
+    "hallucinated_package": 24,
+    "incorrect_argument_count": 24,
+    "incorrect_argument_name": 24
+  }
+}

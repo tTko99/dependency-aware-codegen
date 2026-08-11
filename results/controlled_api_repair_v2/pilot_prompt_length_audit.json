@@ -1,0 +1,50 @@
+{
+  "audit_type": "post_hoc_token_length_audit",
+  "base_model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+  "expanded_compact_prompt": {
+    "configured_max_sequence_length": 320,
+    "maximum_raw_tokens": 283,
+    "median_raw_tokens": 220,
+    "minimum_raw_tokens": 184,
+    "records": 392,
+    "records_exceeding_limit": 0
+  },
+  "pilot_prompt": {
+    "configured_max_sequence_length": 384,
+    "maximum_raw_tokens": 452,
+    "median_raw_tokens": 345,
+    "minimum_raw_tokens": 290,
+    "raw_token_lengths": [
+      306,
+      290,
+      297,
+      343,
+      323,
+      330,
+      389,
+      328,
+      317,
+      345,
+      326,
+      370,
+      452,
+      408,
+      398,
+      431,
+      431,
+      439,
+      310,
+      316,
+      323,
+      367,
+      411,
+      425
+    ],
+    "records": 24,
+    "records_exceeding_limit": 9,
+    "training_records": 18,
+    "validation_records": 6
+  },
+  "schema_version": 1,
+  "tokenization_behavior": "Targets are retained; prompt tokens beyond the limit are dropped from the left."
+}

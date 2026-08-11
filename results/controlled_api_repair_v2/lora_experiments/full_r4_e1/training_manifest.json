@@ -1,0 +1,73 @@
+﻿{
+  "adapter_path": "checkpoints\\expanded_full_r4_e1\\adapter",
+  "base_model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+  "base_model_commit": "ea3f2471cf1b1f0db85067f1ef93848e38e88c25",
+  "config": {
+    "data": {
+      "test_path": "data/processed/expanded_v2/repair_test.jsonl",
+      "train_path": "data/processed/expanded_v2/repair_train.jsonl",
+      "validation_path": "data/processed/expanded_v2/repair_validation.jsonl"
+    },
+    "lora": {
+      "alpha": 8,
+      "dropout": 0.05,
+      "rank": 4,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ]
+    },
+    "model": {
+      "local_files_only": true,
+      "name": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+      "torch_dtype": "float32",
+      "trust_remote_code": false
+    },
+    "training": {
+      "batch_size": 1,
+      "bf16": false,
+      "epochs": 1,
+      "eval_batch_size": 1,
+      "evaluation_strategy": "epoch",
+      "fp16": false,
+      "gradient_accumulation_steps": 4,
+      "learning_rate": 0.0005,
+      "logging_steps": 10,
+      "max_sequence_length": 320,
+      "optim": "adamw_torch",
+      "output_dir": "checkpoints/expanded_full_r4_e1",
+      "report_to": "none",
+      "results_dir": "results/controlled_api_repair_v2/lora_experiments/full_r4_e1",
+      "save_strategy": "no",
+      "save_total_limit": 1,
+      "seed": 42
+    }
+  },
+  "device": "cpu",
+  "library_versions": {
+    "accelerate": "1.14.0",
+    "datasets": "5.0.0",
+    "peft": "0.20.0",
+    "torch": "2.13.0",
+    "transformers": "5.15.0"
+  },
+  "metrics_path": "checkpoints\\expanded_full_r4_e1\\metrics.json",
+  "python_version": "3.13.8",
+  "schema_version": 1,
+  "sequence_lengths": {
+    "max_configured": 320,
+    "train_max": 278,
+    "train_raw_max": 278,
+    "train_truncated_records": 0,
+    "validation_max": 283,
+    "validation_raw_max": 283,
+    "validation_truncated_records": 0
+  },
+  "total_parameters": 494303104,
+  "train_file_sha256": "73948e426d07574ef6b1c7b471c8ca92fc1de8dbfa4c159110888e485b7539e7",
+  "train_records": 280,
+  "trainable_parameters": 270336,
+  "trainable_percent": 0.05469033024724846,
+  "validation_file_sha256": "eeabe509a9aa11c5d875de499b67dce24f543a0dced0af04dc3dce90b9b6ebe1",
+  "validation_records": 112
+}

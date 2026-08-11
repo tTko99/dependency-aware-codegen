@@ -1,0 +1,36 @@
+metric,value
+task_count,210
+package_detection.precision,1.0
+package_detection.recall,1.0
+package_detection.f1,1.0
+package_detection.true_positive,24
+package_detection.false_positive,0
+package_detection.false_negative,0
+api_detection.precision,1.0
+api_detection.recall,0.9444444444444444
+api_detection.f1,0.9714285714285714
+api_detection.true_positive,136
+api_detection.false_positive,0
+api_detection.false_negative,8
+initial_syntax_valid_rate,1.0
+final_syntax_valid_rate,0.9619047619047619
+first_attempt_execution_success_rate,0.2
+final_execution_success_rate,0.6047619047619047
+unit_test_pass_rate,0.6047619047619047
+repair_attempt_rate,0.9523809523809523
+repair_success_rate,0.53125
+overall_repair_success_rate,0.5059523809523809
+repair_attempts,160
+repair_required,168
+repair_successes,85
+confidence_intervals_95.final_execution_success,"{'successes': 127, 'total': 210, 'low': 0.537325414842862, 'high': 0.6684344983313834}"
+confidence_intervals_95.unit_test_pass,"{'successes': 127, 'total': 210, 'low': 0.537325414842862, 'high': 0.6684344983313834}"
+confidence_intervals_95.repair_success,"{'successes': 85, 'total': 160, 'low': 0.45410272037299715, 'high': 0.6069318924287838}"
+by_mutation_type.hallucinated_class,"{'count': 24, 'final_execution_successes': 8, 'final_execution_success_rate': 0.3333333333333333, 'final_execution_success_wilson_95': {'successes': 8, 'total': 24, 'low': 0.1797219032729775, 'high': 0.5329368316186824}}"
+by_mutation_type.hallucinated_function,"{'count': 24, 'final_execution_successes': 16, 'final_execution_success_rate': 0.6666666666666666, 'final_execution_success_wilson_95': {'successes': 16, 'total': 24, 'low': 0.4670631683813174, 'high': 0.8202780967270225}}"
+by_mutation_type.hallucinated_method_or_attribute,"{'count': 24, 'final_execution_successes': 16, 'final_execution_success_rate': 0.6666666666666666, 'final_execution_success_wilson_95': {'successes': 16, 'total': 24, 'low': 0.4670631683813174, 'high': 0.8202780967270225}}"
+by_mutation_type.hallucinated_module,"{'count': 24, 'final_execution_successes': 24, 'final_execution_success_rate': 1.0, 'final_execution_success_wilson_95': {'successes': 24, 'total': 24, 'low': 0.8620237953250198, 'high': 1.0}}"
+by_mutation_type.hallucinated_package,"{'count': 24, 'final_execution_successes': 8, 'final_execution_success_rate': 0.3333333333333333, 'final_execution_success_wilson_95': {'successes': 8, 'total': 24, 'low': 0.1797219032729775, 'high': 0.5329368316186824}}"
+by_mutation_type.incorrect_argument_count,"{'count': 24, 'final_execution_successes': 5, 'final_execution_success_rate': 0.20833333333333334, 'final_execution_success_wilson_95': {'successes': 5, 'total': 24, 'low': 0.09244825352851857, 'high': 0.40470453253188665}}"
+by_mutation_type.incorrect_argument_name,"{'count': 24, 'final_execution_successes': 8, 'final_execution_success_rate': 0.3333333333333333, 'final_execution_success_wilson_95': {'successes': 8, 'total': 24, 'low': 0.1797219032729775, 'high': 0.5329368316186824}}"
+by_mutation_type.valid_control,"{'count': 42, 'final_execution_successes': 42, 'final_execution_success_rate': 1.0, 'final_execution_success_wilson_95': {'successes': 42, 'total': 42, 'low': 0.916201209134296, 'high': 0.9999999999999999}}"

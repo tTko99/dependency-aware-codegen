@@ -1,0 +1,39 @@
+{
+  "adapter_path": "checkpoints/expanded_full_r8_e1/adapter",
+  "base_model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+  "base_model_commit": "ea3f2471cf1b1f0db85067f1ef93848e38e88c25",
+  "files": [
+    {
+      "bytes": 1131,
+      "name": "adapter_config.json",
+      "sha256": "0884518012d5b2066bbab56b0ce3211f0736efe676dc5bfe3b9cf9b49ec01217"
+    },
+    {
+      "bytes": 2175168,
+      "name": "adapter_model.safetensors",
+      "sha256": "4f6ed444cd18a36285640146783c85263243143190e69d1b1ebcf3feb26b0cf7"
+    },
+    {
+      "bytes": 2561,
+      "name": "chat_template.jinja",
+      "sha256": "8aa40ce145adb73cb3a75194dc0224702a95850ec5275cabb728496bbd749fc6"
+    },
+    {
+      "bytes": 5218,
+      "name": "README.md",
+      "sha256": "d7c731722ff317b92d3b2c7714f22315244176c80d2f0dbd26ab3d48db3c461e"
+    },
+    {
+      "bytes": 11421892,
+      "name": "tokenizer.json",
+      "sha256": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8"
+    },
+    {
+      "bytes": 722,
+      "name": "tokenizer_config.json",
+      "sha256": "421faf34672feeb6c6129dbf011e81bd55780f959dca41e45ed1a2c261559f1e"
+    }
+  ],
+  "schema_version": 1,
+  "selected_by": "maximum validation unit-test pass rate"
+}

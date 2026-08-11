@@ -1,0 +1,4 @@
+experiment,train_records,rank,alpha,epochs,learning_rate,trainable_parameters,train_loss,validation_loss,train_truncated_records,validation_truncated_records,validation_task_count,validation_syntax_valid_rate,validation_execution_success_rate,validation_unit_test_pass_rate,validation_repair_success_rate,validation_repair_successes,validation_repair_attempts
+small_r4_e1,112,4,8,1,0.0005,270336,0.09972014504351787,0.14371442794799805,0,0,140,1.0,0.42857142857142855,0.42857142857142855,0.2857142857142857,32,112
+full_r4_e1,280,4,8,1,0.0005,270336,0.07340757931981767,0.1171494796872139,0,0,140,1.0,0.5785714285714286,0.5785714285714286,0.4732142857142857,53,112
+full_r8_e1,280,8,16,1,0.0005,540672,0.04683167580515146,0.14238055050373077,0,0,140,1.0,0.6428571428571429,0.6428571428571429,0.5535714285714286,62,112

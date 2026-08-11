@@ -1,0 +1,32 @@
+model:
+  name: Qwen/Qwen2.5-Coder-0.5B-Instruct
+  torch_dtype: float32
+  trust_remote_code: false
+  local_files_only: true
+data:
+  train_path: data/processed/expanded_v2/repair_train.jsonl
+  validation_path: data/processed/expanded_v2/repair_validation.jsonl
+  test_path: data/processed/expanded_v2/repair_test.jsonl
+lora:
+  rank: 4
+  alpha: 8
+  dropout: 0.05
+  target_modules: [q_proj, v_proj]
+training:
+  output_dir: checkpoints/expanded_full_r4_e1
+  results_dir: results/controlled_api_repair_v2/lora_experiments/full_r4_e1
+  seed: 42
+  learning_rate: 0.0005
+  batch_size: 1
+  eval_batch_size: 1
+  gradient_accumulation_steps: 4
+  epochs: 1
+  max_sequence_length: 320
+  logging_steps: 10
+  evaluation_strategy: epoch
+  save_strategy: "no"
+  save_total_limit: 1
+  optim: adamw_torch
+  fp16: false
+  bf16: false
+  report_to: none
