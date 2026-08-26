@@ -1,0 +1,29 @@
+# Isolated Phase 2 benchmark condition. The supplied buggy candidates are never regenerated.
+repair:
+  kind: ollama
+  ollama:
+    model_name: qwen2.5-coder:7b
+    base_url: http://127.0.0.1:11434
+    timeout_seconds: 180
+    max_new_tokens: 64
+    temperature: 0.0
+    top_p: 1.0
+    repetition_penalty: 1.0
+    seed: 42
+    keep_alive: 10m
+    context_length: 4096
+
+validation:
+  api: true
+
+execution:
+  enabled: true
+  timeout_seconds: 10
+  memory_limit_mb: null
+  repair_on_execution_error: false
+
+benchmark:
+  name: controlled_api_repair_7b_ollama
+  dataset_path: data/processed/expanded_v2/benchmark_test.jsonl
+  output_dir: results/controlled_api_repair_7b_ollama/test
+  generate: false

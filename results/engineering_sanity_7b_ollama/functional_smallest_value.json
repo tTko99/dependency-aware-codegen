@@ -1,0 +1,58 @@
+{
+  "analysis": {
+    "alias_table": {},
+    "api_references": [],
+    "imports": [],
+    "syntax_error": null
+  },
+  "api_results": [],
+  "execution_result": {
+    "error_category": "unknown",
+    "error_type": null,
+    "execution_time": 0.2217367999983253,
+    "return_code": 1,
+    "status": "failed",
+    "stderr": "",
+    "stdout": "F                                                                        [100%]\n================================== FAILURES ===================================\n_________________________________ test_result _________________________________\n\n    def test_result():\n>       assert result == 2\nE       assert 9 == 2\n\ntest_solution.py:5: AssertionError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_result - assert 9 == 2\n1 failed in 0.03s\n",
+    "timed_out": false
+  },
+  "final_status": "PASS",
+  "generated_code": "values = [7, 2, 9, 4]\nresult = max(values)\n",
+  "generation_config": {},
+  "latency_seconds": 0.8947081999940565,
+  "model_name": "provided-code",
+  "package_results": [],
+  "repair_attempted": true,
+  "repair_backend_metadata": {
+    "done_reason": "stop",
+    "eval_count": 24,
+    "eval_duration": 282896000,
+    "load_duration": 89133200,
+    "prompt_eval_count": 153,
+    "prompt_eval_duration": 63233000,
+    "total_duration": 444573100
+  },
+  "repair_method": "ollama",
+  "repair_model_name": "qwen2.5-coder:7b",
+  "repair_prompt": "Repair the Python program. Preserve its requirement and return the complete corrected program only, without Markdown or explanation.\n\nRequirement: Find the smallest value in 7, 2, 9, and 4 and expose it as result.\n\nProgram:\nvalues = [7, 2, 9, 4]\nresult = max(values)\n\nPackage findings: none\nAPI findings: none\nSuspicious API: none\nCandidate APIs: none\nRuntime evidence: unknown:     assert 9 == 2 | test_solution.py:5: AssertionError | FAILED test_solution.py::test_result - assert 9 == 2\n",
+  "repaired_analysis": {
+    "alias_table": {},
+    "api_references": [],
+    "imports": [],
+    "syntax_error": null
+  },
+  "repaired_api_results": [],
+  "repaired_code": "values = [7, 2, 9, 4]\nresult = min(values)",
+  "repaired_execution_result": {
+    "error_category": "unknown",
+    "error_type": null,
+    "execution_time": 0.20309609999821987,
+    "return_code": 0,
+    "status": "passed",
+    "stderr": "",
+    "stdout": ".                                                                        [100%]\n1 passed in 0.01s\n",
+    "timed_out": false
+  },
+  "repaired_package_results": [],
+  "requirement": "Find the smallest value in 7, 2, 9, and 4 and expose it as result."
+}

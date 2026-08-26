@@ -1,4 +1,5 @@
 from depguard.models.base import CodeGenerator, CodeRepairModel
+from depguard.models.ollama import OllamaRepairModel
 from depguard.models.smoke import HeuristicRepairModel, HeuristicSmokeCodeGenerator
 
 __all__ = [
@@ -6,4 +7,5 @@ __all__ = [
     "CodeRepairModel",
     "HeuristicRepairModel",
     "HeuristicSmokeCodeGenerator",
+    "OllamaRepairModel",
 ]

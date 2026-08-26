@@ -1,0 +1,212 @@
+{
+  "case_count": 210,
+  "cases": [
+    {
+      "category": "runtime_error",
+      "final_error": {
+        "error_category": "runtime_error",
+        "error_type": "AssertionError",
+        "status": "failed",
+        "stderr_tail": "                       [100%]\n================================== FAILURES ===================================\n_________________________________ test_result _________________________________\n\n    def test_result():\n>       assert result == 6\nE       AssertionError: assert {'key': 6} == 6\n\ntest_solution.py:4: AssertionError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_result - AssertionError: assert {'key': 6} == 6\n1 failed in 0.03s\n"
+      },
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "1: in <module>\n    from solution import result\nsolution.py:4: in <module>\n    result = api.JSONDecoder.decode()\n             ^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: JSONDecoder.decode() missing 2 required positional arguments: 'self' and 's'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: JSONDecoder.decode() missing 2 required p...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.07s\n"
+      },
+      "mutation_type": "incorrect_argument_count",
+      "repair_attempted": true,
+      "task_id": "argc_json_decoder_v06"
+    },
+    {
+      "category": "unresolved_api",
+      "final_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "___________\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = api.Rational(v, v + 1).numerator\n             ^^^^^^^^^^^^\nE   AttributeError: module 'fractions' has no attribute 'Rational'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'fractions' has no attribute ...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.07s\n"
+      },
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": "n.py:1: in <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = api.RationalNumber05(v, v + 1).numerator\n             ^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'fractions' has no attribute 'RationalNumber05'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'fractions' has no attribute ...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.07s\n"
+      },
+      "mutation_type": "hallucinated_class",
+      "repair_attempted": true,
+      "task_id": "class_fractions_fraction_v01"
+    },
+    {
+      "category": "value_error",
+      "final_error": {
+        "error_category": "value_error",
+        "error_type": "ValueError",
+        "status": "failed",
+        "stderr_tail": "=======================\n_________________________________ test_result _________________________________\n\n    def test_result():\n>       assert result == [0.5, 0.5, 3]\n               ^^^^^^^^^^^^^^^^^^^^^^^\nE       ValueError: operands could not be broadcast together with shapes (2,) (3,)\n\ntest_solution.py:4: ValueError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_result - ValueError: operands could not be broa...\n1 failed in 0.08s\n"
+      },
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": " <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = api.normalized_exp_08([0, 0]).tolist() + [v]\n             ^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'scipy.special' has no attribute 'normalized_exp_08'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'scipy.special' has no attrib...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.31s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": true,
+      "task_id": "func_scipy_softmax_v03"
+    },
+    {
+      "category": "value_error",
+      "final_error": {
+        "error_category": "value_error",
+        "error_type": "ValueError",
+        "status": "failed",
+        "stderr_tail": "=======================\n_________________________________ test_result _________________________________\n\n    def test_result():\n>       assert result == [0.5, 0.5, 4]\n               ^^^^^^^^^^^^^^^^^^^^^^^\nE       ValueError: operands could not be broadcast together with shapes (2,) (3,)\n\ntest_solution.py:4: ValueError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_result - ValueError: operands could not be broa...\n1 failed in 0.08s\n"
+      },
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": " <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = api.normalized_exp_08([0, 0]).tolist() + [v]\n             ^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'scipy.special' has no attribute 'normalized_exp_08'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'scipy.special' has no attrib...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.32s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": true,
+      "task_id": "func_scipy_softmax_v04"
+    },
+    {
+      "category": "value_error",
+      "final_error": {
+        "error_category": "value_error",
+        "error_type": "ValueError",
+        "status": "failed",
+        "stderr_tail": "=======================\n_________________________________ test_result _________________________________\n\n    def test_result():\n>       assert result == [0.5, 0.5, 7]\n               ^^^^^^^^^^^^^^^^^^^^^^^\nE       ValueError: operands could not be broadcast together with shapes (2,) (3,)\n\ntest_solution.py:4: ValueError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_result - ValueError: operands could not be broa...\n1 failed in 0.09s\n"
+      },
+      "initial_error": {
+        "error_category": "attribute_error",
+        "error_type": "AttributeError",
+        "status": "failed",
+        "stderr_tail": " <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = api.normalized_exp_08([0, 0]).tolist() + [v]\n             ^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'scipy.special' has no attribute 'normalized_exp_08'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'scipy.special' has no attrib...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.32s\n"
+      },
+      "mutation_type": "hallucinated_function",
+      "repair_attempted": true,
+      "task_id": "func_scipy_softmax_v07"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "n import result\nsolution.py:4: in <module>\n    result = api.datetime.isoformat(value, separator_09=' ')\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: isoformat() got an unexpected keyword argument 'separator_09'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: isoformat() got an unexpected keyword arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.08s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_datetime_isoformat_v01"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "n import result\nsolution.py:4: in <module>\n    result = api.datetime.isoformat(value, separator_09=' ')\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: isoformat() got an unexpected keyword argument 'separator_09'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: isoformat() got an unexpected keyword arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.08s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_datetime_isoformat_v02"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "n import result\nsolution.py:4: in <module>\n    result = api.datetime.isoformat(value, separator_09=' ')\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: isoformat() got an unexpected keyword argument 'separator_09'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: isoformat() got an unexpected keyword arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.08s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_datetime_isoformat_v03"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "n import result\nsolution.py:4: in <module>\n    result = api.datetime.isoformat(value, separator_09=' ')\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: isoformat() got an unexpected keyword argument 'separator_09'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: isoformat() got an unexpected keyword arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.08s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_datetime_isoformat_v04"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "n import result\nsolution.py:4: in <module>\n    result = api.datetime.isoformat(value, separator_09=' ')\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: isoformat() got an unexpected keyword argument 'separator_09'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: isoformat() got an unexpected keyword arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.08s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_datetime_isoformat_v05"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "n import result\nsolution.py:4: in <module>\n    result = api.datetime.isoformat(value, separator_09=' ')\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: isoformat() got an unexpected keyword argument 'separator_09'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: isoformat() got an unexpected keyword arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.08s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_datetime_isoformat_v06"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "n import result\nsolution.py:4: in <module>\n    result = api.datetime.isoformat(value, separator_09=' ')\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: isoformat() got an unexpected keyword argument 'separator_09'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: isoformat() got an unexpected keyword arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.08s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_datetime_isoformat_v07"
+    },
+    {
+      "category": "repair_not_triggered",
+      "final_error": null,
+      "initial_error": {
+        "error_category": "incorrect_arguments",
+        "error_type": "TypeError",
+        "status": "failed",
+        "stderr_tail": "n import result\nsolution.py:4: in <module>\n    result = api.datetime.isoformat(value, separator_09=' ')\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: isoformat() got an unexpected keyword argument 'separator_09'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: isoformat() got an unexpected keyword arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.08s\n"
+      },
+      "mutation_type": "incorrect_argument_name",
+      "repair_attempted": false,
+      "task_id": "kw_datetime_isoformat_v08"
+    }
+  ],
+  "categories": {
+    "repair_not_triggered": 8,
+    "runtime_error": 1,
+    "unresolved_api": 1,
+    "value_error": 3
+  },
+  "failed_case_count": 13,
+  "failures_by_mutation": {
+    "hallucinated_class": 1,
+    "hallucinated_function": 3,
+    "incorrect_argument_count": 1,
+    "incorrect_argument_name": 8
+  }
+}

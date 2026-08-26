@@ -1,0 +1,32 @@
+{
+  "benchmark": {
+    "dataset_path": "data/processed/expanded_v2/benchmark_test.jsonl",
+    "generate": false,
+    "name": "controlled_api_repair_7b_ollama",
+    "output_dir": "results/controlled_api_repair_7b_ollama/test"
+  },
+  "execution": {
+    "enabled": true,
+    "memory_limit_mb": null,
+    "repair_on_execution_error": false,
+    "timeout_seconds": 10
+  },
+  "repair": {
+    "kind": "ollama",
+    "ollama": {
+      "base_url": "http://127.0.0.1:11434",
+      "context_length": 4096,
+      "keep_alive": "10m",
+      "max_new_tokens": 64,
+      "model_name": "qwen2.5-coder:7b",
+      "repetition_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0.0,
+      "timeout_seconds": 180,
+      "top_p": 1.0
+    }
+  },
+  "validation": {
+    "api": true
+  }
+}

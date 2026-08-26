@@ -1,0 +1,183 @@
+{
+  "analysis": {
+    "alias_table": {
+      "collections": {
+        "canonical_path": "collections",
+        "import_type": "import",
+        "line_number": 1,
+        "local_name": "collections"
+      }
+    },
+    "api_references": [
+      {
+        "arg_count": 1,
+        "call_type": "function_or_attribute",
+        "canonical_path": "collections.CountMap",
+        "is_call": true,
+        "keyword_names": [],
+        "line_number": 3,
+        "module": "collections",
+        "object_path": "CountMap",
+        "package": "collections",
+        "receiver": "collections",
+        "source": "collections.CountMap"
+      }
+    ],
+    "imports": [
+      {
+        "alias": null,
+        "is_from_import": false,
+        "level": 0,
+        "line_number": 1,
+        "module": "collections",
+        "name": null
+      }
+    ],
+    "syntax_error": null
+  },
+  "api_results": [
+    {
+      "api_valid": false,
+      "module_valid": true,
+      "package_valid": true,
+      "reason": "attribute_not_found:CountMap",
+      "reference": {
+        "arg_count": 1,
+        "call_type": "function_or_attribute",
+        "canonical_path": "collections.CountMap",
+        "is_call": true,
+        "keyword_names": [],
+        "line_number": 3,
+        "module": "collections",
+        "object_path": "CountMap",
+        "package": "collections",
+        "receiver": "collections",
+        "source": "collections.CountMap"
+      },
+      "resolved_module": "collections",
+      "status": "hallucinated_class",
+      "suggestions": [
+        "collections.Counter",
+        "collections.ChainMap"
+      ]
+    }
+  ],
+  "execution_result": {
+    "error_category": "attribute_error",
+    "error_type": "AttributeError",
+    "execution_time": 0.26819679999607615,
+    "return_code": 2,
+    "status": "failed",
+    "stderr": "",
+    "stdout": "\n=================================== ERRORS ====================================\n______________________ ERROR collecting test_solution.py ______________________\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:3: in <module>\n    counts = collections.CountMap(\"banana\")\n             ^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'collections' has no attribute 'CountMap'. Did you mean: 'Counter'?\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'collections' has no attribut...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.08s\n",
+    "timed_out": false
+  },
+  "final_status": "PASS",
+  "generated_code": "import collections\n\ncounts = collections.CountMap(\"banana\")\nresult = counts.most_common(1)[0]\n",
+  "generation_config": {},
+  "latency_seconds": 1.0294435000032536,
+  "model_name": "provided-code",
+  "package_results": [
+    {
+      "exists": true,
+      "package": "collections",
+      "reason": null,
+      "status": "valid",
+      "version": null
+    }
+  ],
+  "repair_attempted": true,
+  "repair_backend_metadata": {
+    "done_reason": "stop",
+    "eval_count": 29,
+    "eval_duration": 335452000,
+    "load_duration": 89861200,
+    "prompt_eval_count": 195,
+    "prompt_eval_duration": 82460000,
+    "total_duration": 517694900
+  },
+  "repair_method": "ollama",
+  "repair_model_name": "qwen2.5-coder:7b",
+  "repair_prompt": "Repair the Python program. Preserve its requirement and return the complete corrected program only, without Markdown or explanation.\n\nRequirement: Count letters in banana and expose the most common letter and count as result.\n\nProgram:\nimport collections\n\ncounts = collections.CountMap(\"banana\")\nresult = counts.most_common(1)[0]\n\nPackage findings: none\nAPI findings: collections.CountMap: hallucinated_class; attribute_not_found:CountMap\nSuspicious API: collections.CountMap\nCandidate APIs: collections.Counter, collections.ChainMap\nRuntime evidence: AttributeError: test_solution.py:1: in <module> | solution.py:3: in <module> | AttributeError: module 'collections' has no attribute 'CountMap'. Did you mean: 'Counter'? | ERROR test_solution.py - AttributeError: module 'collections' has no attribut...\n",
+  "repaired_analysis": {
+    "alias_table": {
+      "collections": {
+        "canonical_path": "collections",
+        "import_type": "import",
+        "line_number": 1,
+        "local_name": "collections"
+      }
+    },
+    "api_references": [
+      {
+        "arg_count": 1,
+        "call_type": "function_or_attribute",
+        "canonical_path": "collections.Counter",
+        "is_call": true,
+        "keyword_names": [],
+        "line_number": 3,
+        "module": "collections",
+        "object_path": "Counter",
+        "package": "collections",
+        "receiver": "collections",
+        "source": "collections.Counter"
+      }
+    ],
+    "imports": [
+      {
+        "alias": null,
+        "is_from_import": false,
+        "level": 0,
+        "line_number": 1,
+        "module": "collections",
+        "name": null
+      }
+    ],
+    "syntax_error": null
+  },
+  "repaired_api_results": [
+    {
+      "api_valid": true,
+      "module_valid": true,
+      "package_valid": true,
+      "reason": null,
+      "reference": {
+        "arg_count": 1,
+        "call_type": "function_or_attribute",
+        "canonical_path": "collections.Counter",
+        "is_call": true,
+        "keyword_names": [],
+        "line_number": 3,
+        "module": "collections",
+        "object_path": "Counter",
+        "package": "collections",
+        "receiver": "collections",
+        "source": "collections.Counter"
+      },
+      "resolved_module": "collections",
+      "status": "valid",
+      "suggestions": []
+    }
+  ],
+  "repaired_code": "import collections\n\ncounts = collections.Counter(\"banana\")\nresult = counts.most_common(1)[0]\n\nprint(result)",
+  "repaired_execution_result": {
+    "error_category": "unknown",
+    "error_type": null,
+    "execution_time": 0.2040558999942732,
+    "return_code": 0,
+    "status": "passed",
+    "stderr": "",
+    "stdout": ".                                                                        [100%]\n1 passed in 0.01s\n",
+    "timed_out": false
+  },
+  "repaired_package_results": [
+    {
+      "exists": true,
+      "package": "collections",
+      "reason": null,
+      "status": "valid",
+      "version": null
+    }
+  ],
+  "requirement": "Count letters in banana and expose the most common letter and count as result."
+}

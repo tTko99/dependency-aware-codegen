@@ -1,0 +1,113 @@
+{
+  "by_mutation_type": {
+    "hallucinated_class": {
+      "exact_target": 15,
+      "execution_passed": 23,
+      "failure:unresolved_api": 1,
+      "syntax_valid": 24
+    },
+    "hallucinated_function": {
+      "exact_target": 13,
+      "execution_passed": 21,
+      "failure:value_error": 3,
+      "syntax_valid": 24
+    },
+    "hallucinated_method_or_attribute": {
+      "execution_passed": 24,
+      "syntax_valid": 24
+    },
+    "hallucinated_module": {
+      "exact_target": 24,
+      "execution_passed": 24,
+      "syntax_valid": 24
+    },
+    "hallucinated_package": {
+      "exact_target": 24,
+      "execution_passed": 24,
+      "syntax_valid": 24
+    },
+    "incorrect_argument_count": {
+      "exact_target": 8,
+      "execution_passed": 23,
+      "failure:runtime_error": 1,
+      "syntax_valid": 24
+    },
+    "incorrect_argument_name": {
+      "exact_target": 16,
+      "execution_passed": 16,
+      "syntax_valid": 16
+    }
+  },
+  "case_count": 210,
+  "counts": {
+    "exact_target": 100,
+    "execution_passed": 155,
+    "failure:runtime_error": 1,
+    "failure:unresolved_api": 1,
+    "failure:value_error": 3,
+    "syntax_valid": 160
+  },
+  "failed_cases": [
+    {
+      "contains_markdown_fence": false,
+      "exact_target": false,
+      "execution_passed": false,
+      "failure": "runtime_error",
+      "leakage_group": "argc_json_decoder",
+      "longer_than_2x_input": false,
+      "mutation_type": "incorrect_argument_count",
+      "syntax_valid": true,
+      "task_id": "argc_json_decoder_v06",
+      "unchanged": false
+    },
+    {
+      "contains_markdown_fence": false,
+      "exact_target": false,
+      "execution_passed": false,
+      "failure": "unresolved_api",
+      "leakage_group": "class_fractions_fraction",
+      "longer_than_2x_input": false,
+      "mutation_type": "hallucinated_class",
+      "syntax_valid": true,
+      "task_id": "class_fractions_fraction_v01",
+      "unchanged": false
+    },
+    {
+      "contains_markdown_fence": false,
+      "exact_target": false,
+      "execution_passed": false,
+      "failure": "value_error",
+      "leakage_group": "func_scipy_softmax",
+      "longer_than_2x_input": false,
+      "mutation_type": "hallucinated_function",
+      "syntax_valid": true,
+      "task_id": "func_scipy_softmax_v03",
+      "unchanged": false
+    },
+    {
+      "contains_markdown_fence": false,
+      "exact_target": false,
+      "execution_passed": false,
+      "failure": "value_error",
+      "leakage_group": "func_scipy_softmax",
+      "longer_than_2x_input": false,
+      "mutation_type": "hallucinated_function",
+      "syntax_valid": true,
+      "task_id": "func_scipy_softmax_v04",
+      "unchanged": false
+    },
+    {
+      "contains_markdown_fence": false,
+      "exact_target": false,
+      "execution_passed": false,
+      "failure": "value_error",
+      "leakage_group": "func_scipy_softmax",
+      "longer_than_2x_input": false,
+      "mutation_type": "hallucinated_function",
+      "syntax_valid": true,
+      "task_id": "func_scipy_softmax_v07",
+      "unchanged": false
+    }
+  ],
+  "repair_attempt_count": 160
+}

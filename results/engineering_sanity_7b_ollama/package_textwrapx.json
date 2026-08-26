@@ -1,0 +1,180 @@
+{
+  "analysis": {
+    "alias_table": {
+      "textwrap": {
+        "canonical_path": "textwrapx",
+        "import_type": "import",
+        "line_number": 1,
+        "local_name": "textwrap"
+      }
+    },
+    "api_references": [
+      {
+        "arg_count": 1,
+        "call_type": "function_or_attribute",
+        "canonical_path": "textwrapx.dedent",
+        "is_call": true,
+        "keyword_names": [],
+        "line_number": 3,
+        "module": "textwrapx",
+        "object_path": "dedent",
+        "package": "textwrapx",
+        "receiver": "textwrap",
+        "source": "textwrap.dedent"
+      }
+    ],
+    "imports": [
+      {
+        "alias": "textwrap",
+        "is_from_import": false,
+        "level": 0,
+        "line_number": 1,
+        "module": "textwrapx",
+        "name": null
+      }
+    ],
+    "syntax_error": null
+  },
+  "api_results": [
+    {
+      "api_valid": false,
+      "module_valid": false,
+      "package_valid": false,
+      "reason": "not_importable_in_environment",
+      "reference": {
+        "arg_count": 1,
+        "call_type": "function_or_attribute",
+        "canonical_path": "textwrapx.dedent",
+        "is_call": true,
+        "keyword_names": [],
+        "line_number": 3,
+        "module": "textwrapx",
+        "object_path": "dedent",
+        "package": "textwrapx",
+        "receiver": "textwrap",
+        "source": "textwrap.dedent"
+      },
+      "resolved_module": null,
+      "status": "hallucinated_package",
+      "suggestions": []
+    }
+  ],
+  "execution_result": {
+    "error_category": "import_error",
+    "error_type": "ModuleNotFoundError",
+    "execution_time": 0.2594604000041727,
+    "return_code": 2,
+    "status": "failed",
+    "stderr": "",
+    "stdout": "\n=================================== ERRORS ====================================\n______________________ ERROR collecting test_solution.py ______________________\nImportError while importing test module 'C:\\Users\\pc\\AppData\\Local\\Temp\\depguard_exec_66dzjhgs\\test_solution.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\nD:\\python\\Lib\\importlib\\__init__.py:88: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import textwrapx as textwrap\nE   ModuleNotFoundError: No module named 'textwrapx'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.07s\n",
+    "timed_out": false
+  },
+  "final_status": "PASS",
+  "generated_code": "import textwrapx as textwrap\n\nresult = textwrap.dedent(\"    ready\").strip()\n",
+  "generation_config": {},
+  "latency_seconds": 6.082675199999358,
+  "model_name": "provided-code",
+  "package_results": [
+    {
+      "exists": false,
+      "package": "textwrapx",
+      "reason": "not_importable_in_environment",
+      "status": "hallucinated_package",
+      "version": null
+    }
+  ],
+  "repair_attempted": true,
+  "repair_backend_metadata": {
+    "done_reason": "stop",
+    "eval_count": 22,
+    "eval_duration": 261531000,
+    "load_duration": 5114643400,
+    "prompt_eval_count": 181,
+    "prompt_eval_duration": 185568000,
+    "total_duration": 5564379900
+  },
+  "repair_method": "ollama",
+  "repair_model_name": "qwen2.5-coder:7b",
+  "repair_prompt": "Repair the Python program. Preserve its requirement and return the complete corrected program only, without Markdown or explanation.\n\nRequirement: Dedent the indented word ready and expose the stripped text as result.\n\nProgram:\nimport textwrapx as textwrap\n\nresult = textwrap.dedent(\"    ready\").strip()\n\nPackage findings: textwrapx: hallucinated_package; not_importable_in_environment\nAPI findings: textwrapx.dedent: hallucinated_package; not_importable_in_environment\nSuspicious API: textwrapx.dedent\nCandidate APIs: none\nRuntime evidence: ModuleNotFoundError: test_solution.py:1: in <module> | solution.py:1: in <module> | ModuleNotFoundError: No module named 'textwrapx'\n",
+  "repaired_analysis": {
+    "alias_table": {
+      "textwrap": {
+        "canonical_path": "textwrap",
+        "import_type": "import",
+        "line_number": 1,
+        "local_name": "textwrap"
+      }
+    },
+    "api_references": [
+      {
+        "arg_count": 1,
+        "call_type": "function_or_attribute",
+        "canonical_path": "textwrap.dedent",
+        "is_call": true,
+        "keyword_names": [],
+        "line_number": 3,
+        "module": "textwrap",
+        "object_path": "dedent",
+        "package": "textwrap",
+        "receiver": "textwrap",
+        "source": "textwrap.dedent"
+      }
+    ],
+    "imports": [
+      {
+        "alias": null,
+        "is_from_import": false,
+        "level": 0,
+        "line_number": 1,
+        "module": "textwrap",
+        "name": null
+      }
+    ],
+    "syntax_error": null
+  },
+  "repaired_api_results": [
+    {
+      "api_valid": true,
+      "module_valid": true,
+      "package_valid": true,
+      "reason": null,
+      "reference": {
+        "arg_count": 1,
+        "call_type": "function_or_attribute",
+        "canonical_path": "textwrap.dedent",
+        "is_call": true,
+        "keyword_names": [],
+        "line_number": 3,
+        "module": "textwrap",
+        "object_path": "dedent",
+        "package": "textwrap",
+        "receiver": "textwrap",
+        "source": "textwrap.dedent"
+      },
+      "resolved_module": "textwrap",
+      "status": "valid",
+      "suggestions": []
+    }
+  ],
+  "repaired_code": "import textwrap\n\nresult = textwrap.dedent(\"    ready\").strip()",
+  "repaired_execution_result": {
+    "error_category": "unknown",
+    "error_type": null,
+    "execution_time": 0.22958859999926062,
+    "return_code": 0,
+    "status": "passed",
+    "stderr": "",
+    "stdout": ".                                                                        [100%]\n1 passed in 0.02s\n",
+    "timed_out": false
+  },
+  "repaired_package_results": [
+    {
+      "exists": true,
+      "package": "textwrap",
+      "reason": null,
+      "status": "valid",
+      "version": null
+    }
+  ],
+  "requirement": "Dedent the indented word ready and expose the stripped text as result."
+}

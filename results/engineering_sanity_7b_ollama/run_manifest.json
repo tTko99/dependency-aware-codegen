@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "name": "phase3_small_engineering_sanity_set",
+  "claim_scope": "A small engineering sanity set for external-file CLI validation; not a statistically representative real-world benchmark.",
+  "completed_at_utc": "2026-08-26T21:41:50.2211319Z",
+  "case_manifest": "data/engineering_sanity/manifest.json",
+  "case_manifest_sha256": "3f24e9f6285144b49846409d88d538f6da7308a1ec0e64930bf349d514c05bb7",
+  "source_hashes": "data/engineering_sanity/source_hashes.json",
+  "source_hashes_sha256": "d64f6989f59a201645b543e66945d184ef8f2fbb75dc1642f0b740a62dbb80ac",
+  "config": "configs/engineering_7b_ollama.yaml",
+  "config_sha256": "bf9936abd0d75bc65124801ecf47f3100c1f18f554011bcdc2a4824ea1de0bf8",
+  "command_template": [
+    "python",
+    "-m",
+    "depguard.cli",
+    "run",
+    "--config",
+    "configs/engineering_7b_ollama.yaml",
+    "--requirement",
+    "<case requirement>",
+    "--code-file",
+    "<case input.py>",
+    "--test-file",
+    "<case test_input.py>",
+    "--output",
+    "<case raw result.json>"
+  ],
+  "run_policy": {
+    "cli_invocations_per_case": 1,
+    "repair_attempts_per_triggered_case": 1,
+    "multi_round_repair": false,
+    "model_quality_retries": 0,
+    "transport_retries": 0
+  },
+  "repair_backend": {
+    "backend": "ollama",
+    "endpoint": "http://127.0.0.1:11434",
+    "ollama_version": "0.32.5",
+    "model_tag": "qwen2.5-coder:7b",
+    "model_digest": "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364",
+    "parameter_size": "7.6B",
+    "quantization": "Q4_K_M",
+    "requested_context_length": 4096,
+    "runtime_context_length": 4096,
+    "max_new_tokens": 256,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "repetition_penalty": 1.0,
+    "seed": 42,
+    "runtime_size_bytes": 4748056984,
+    "runtime_size_vram_bytes": 4748056984,
+    "processor_placement": "gpu"
+  },
+  "aggregate": {
+    "case_count": 10,
+    "passing_cases": 10,
+    "failing_cases": 0,
+    "repair_calls": 8,
+    "successful_repairs": 8,
+    "controls": 2,
+    "controls_preserved_without_repair": 2,
+    "raw_result_count": 10,
+    "normal_cli_exit_count": 10,
+    "repair_latency_seconds": {
+      "count": 8,
+      "total": 8.8598866,
+      "mean": 1.107485825,
+      "median": 0.47761825
+    }
+  },
+  "source_safety": {
+    "all_source_and_test_hashes_unchanged": true,
+    "input_files_overwritten": 0,
+    "repaired_code_written_to_input_files": false
+  }
+}

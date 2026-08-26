@@ -1,0 +1,180 @@
+{
+  "analysis": {
+    "alias_table": {
+      "statistics": {
+        "canonical_path": "statistics",
+        "import_type": "import",
+        "line_number": 1,
+        "local_name": "statistics"
+      }
+    },
+    "api_references": [
+      {
+        "arg_count": 1,
+        "call_type": "function_or_attribute",
+        "canonical_path": "statistics.average",
+        "is_call": true,
+        "keyword_names": [],
+        "line_number": 3,
+        "module": "statistics",
+        "object_path": "average",
+        "package": "statistics",
+        "receiver": "statistics",
+        "source": "statistics.average"
+      }
+    ],
+    "imports": [
+      {
+        "alias": null,
+        "is_from_import": false,
+        "level": 0,
+        "line_number": 1,
+        "module": "statistics",
+        "name": null
+      }
+    ],
+    "syntax_error": null
+  },
+  "api_results": [
+    {
+      "api_valid": false,
+      "module_valid": true,
+      "package_valid": true,
+      "reason": "attribute_not_found:average",
+      "reference": {
+        "arg_count": 1,
+        "call_type": "function_or_attribute",
+        "canonical_path": "statistics.average",
+        "is_call": true,
+        "keyword_names": [],
+        "line_number": 3,
+        "module": "statistics",
+        "object_path": "average",
+        "package": "statistics",
+        "receiver": "statistics",
+        "source": "statistics.average"
+      },
+      "resolved_module": "statistics",
+      "status": "hallucinated_function",
+      "suggestions": []
+    }
+  ],
+  "execution_result": {
+    "error_category": "attribute_error",
+    "error_type": "AttributeError",
+    "execution_time": 0.3097942000022158,
+    "return_code": 2,
+    "status": "failed",
+    "stderr": "",
+    "stdout": "\n=================================== ERRORS ====================================\n______________________ ERROR collecting test_solution.py ______________________\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = statistics.average([2, 5, 8])\n             ^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'statistics' has no attribute 'average'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'statistics' has no attribute...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.07s\n",
+    "timed_out": false
+  },
+  "final_status": "PASS",
+  "generated_code": "import statistics\n\nresult = statistics.average([2, 5, 8])\n",
+  "generation_config": {},
+  "latency_seconds": 0.977322799997637,
+  "model_name": "provided-code",
+  "package_results": [
+    {
+      "exists": true,
+      "package": "statistics",
+      "reason": null,
+      "status": "valid",
+      "version": null
+    }
+  ],
+  "repair_attempted": true,
+  "repair_backend_metadata": {
+    "done_reason": "stop",
+    "eval_count": 21,
+    "eval_duration": 241373000,
+    "load_duration": 90779700,
+    "prompt_eval_count": 177,
+    "prompt_eval_duration": 81449000,
+    "total_duration": 423462000
+  },
+  "repair_method": "ollama",
+  "repair_model_name": "qwen2.5-coder:7b",
+  "repair_prompt": "Repair the Python program. Preserve its requirement and return the complete corrected program only, without Markdown or explanation.\n\nRequirement: Compute the arithmetic mean of 2, 5, and 8 and expose it as result.\n\nProgram:\nimport statistics\n\nresult = statistics.average([2, 5, 8])\n\nPackage findings: none\nAPI findings: statistics.average: hallucinated_function; attribute_not_found:average\nSuspicious API: statistics.average\nCandidate APIs: none\nRuntime evidence: AttributeError: test_solution.py:1: in <module> | solution.py:3: in <module> | AttributeError: module 'statistics' has no attribute 'average' | ERROR test_solution.py - AttributeError: module 'statistics' has no attribute...\n",
+  "repaired_analysis": {
+    "alias_table": {
+      "statistics": {
+        "canonical_path": "statistics",
+        "import_type": "import",
+        "line_number": 1,
+        "local_name": "statistics"
+      }
+    },
+    "api_references": [
+      {
+        "arg_count": 1,
+        "call_type": "function_or_attribute",
+        "canonical_path": "statistics.mean",
+        "is_call": true,
+        "keyword_names": [],
+        "line_number": 3,
+        "module": "statistics",
+        "object_path": "mean",
+        "package": "statistics",
+        "receiver": "statistics",
+        "source": "statistics.mean"
+      }
+    ],
+    "imports": [
+      {
+        "alias": null,
+        "is_from_import": false,
+        "level": 0,
+        "line_number": 1,
+        "module": "statistics",
+        "name": null
+      }
+    ],
+    "syntax_error": null
+  },
+  "repaired_api_results": [
+    {
+      "api_valid": true,
+      "module_valid": true,
+      "package_valid": true,
+      "reason": null,
+      "reference": {
+        "arg_count": 1,
+        "call_type": "function_or_attribute",
+        "canonical_path": "statistics.mean",
+        "is_call": true,
+        "keyword_names": [],
+        "line_number": 3,
+        "module": "statistics",
+        "object_path": "mean",
+        "package": "statistics",
+        "receiver": "statistics",
+        "source": "statistics.mean"
+      },
+      "resolved_module": "statistics",
+      "status": "valid",
+      "suggestions": []
+    }
+  ],
+  "repaired_code": "import statistics\n\nresult = statistics.mean([2, 5, 8])",
+  "repaired_execution_result": {
+    "error_category": "unknown",
+    "error_type": null,
+    "execution_time": 0.20972070000425447,
+    "return_code": 0,
+    "status": "passed",
+    "stderr": "",
+    "stdout": ".                                                                        [100%]\n1 passed in 0.02s\n",
+    "timed_out": false
+  },
+  "repaired_package_results": [
+    {
+      "exists": true,
+      "package": "statistics",
+      "reason": null,
+      "status": "valid",
+      "version": null
+    }
+  ],
+  "requirement": "Compute the arithmetic mean of 2, 5, and 8 and expose it as result."
+}

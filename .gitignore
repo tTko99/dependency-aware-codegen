@@ -20,6 +20,18 @@ results/*
 !results/controlled_api_repair_v2/**/*.json
 !results/controlled_api_repair_v2/**/*.csv
 !results/controlled_api_repair_v2/**/*.yaml
+
+# Final 7B evidence (keep the temporary six-row preflight local/ignored)
+!results/controlled_api_repair_7b_ollama/
+results/controlled_api_repair_7b_ollama/preflight/
+!results/controlled_api_repair_7b_ollama/test/
+!results/controlled_api_repair_7b_ollama/test/*.json
+!results/controlled_api_repair_7b_ollama/test/*.csv
+
+# Final external-file engineering evaluation
+!results/engineering_sanity_7b_ollama/
+!results/engineering_sanity_7b_ollama/*.json
+!results/engineering_sanity_7b_ollama/*.md
 checkpoints/*
 !checkpoints/.gitkeep
 

@@ -1,0 +1,180 @@
+{
+  "analysis": {
+    "alias_table": {
+      "json": {
+        "canonical_path": "json",
+        "import_type": "import",
+        "line_number": 1,
+        "local_name": "json"
+      }
+    },
+    "api_references": [
+      {
+        "arg_count": 0,
+        "call_type": "function_or_attribute",
+        "canonical_path": "json.loads",
+        "is_call": true,
+        "keyword_names": [],
+        "line_number": 3,
+        "module": "json",
+        "object_path": "loads",
+        "package": "json",
+        "receiver": "json",
+        "source": "json.loads"
+      }
+    ],
+    "imports": [
+      {
+        "alias": null,
+        "is_from_import": false,
+        "level": 0,
+        "line_number": 1,
+        "module": "json",
+        "name": null
+      }
+    ],
+    "syntax_error": null
+  },
+  "api_results": [
+    {
+      "api_valid": false,
+      "module_valid": true,
+      "package_valid": true,
+      "reason": "missing_required_positional_argument",
+      "reference": {
+        "arg_count": 0,
+        "call_type": "function_or_attribute",
+        "canonical_path": "json.loads",
+        "is_call": true,
+        "keyword_names": [],
+        "line_number": 3,
+        "module": "json",
+        "object_path": "loads",
+        "package": "json",
+        "receiver": "json",
+        "source": "json.loads"
+      },
+      "resolved_module": "json",
+      "status": "incorrect_arguments",
+      "suggestions": []
+    }
+  ],
+  "execution_result": {
+    "error_category": "incorrect_arguments",
+    "error_type": "TypeError",
+    "execution_time": 0.2647731999968528,
+    "return_code": 2,
+    "status": "failed",
+    "stderr": "",
+    "stdout": "\n=================================== ERRORS ====================================\n______________________ ERROR collecting test_solution.py ______________________\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = json.loads()[\"value\"]\n             ^^^^^^^^^^^^\nE   TypeError: loads() missing 1 required positional argument: 's'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: loads() missing 1 required positional arg...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.07s\n",
+    "timed_out": false
+  },
+  "final_status": "PASS",
+  "generated_code": "import json\n\nresult = json.loads()[\"value\"]\n",
+  "generation_config": {},
+  "latency_seconds": 0.985423099999025,
+  "model_name": "provided-code",
+  "package_results": [
+    {
+      "exists": true,
+      "package": "json",
+      "reason": null,
+      "status": "valid",
+      "version": null
+    }
+  ],
+  "repair_attempted": true,
+  "repair_backend_metadata": {
+    "done_reason": "stop",
+    "eval_count": 26,
+    "eval_duration": 307669000,
+    "load_duration": 90953800,
+    "prompt_eval_count": 168,
+    "prompt_eval_duration": 70415000,
+    "total_duration": 478409400
+  },
+  "repair_method": "ollama",
+  "repair_model_name": "qwen2.5-coder:7b",
+  "repair_prompt": "Repair the Python program. Preserve its requirement and return the complete corrected program only, without Markdown or explanation.\n\nRequirement: Parse a JSON object containing value 7 and expose that value as result.\n\nProgram:\nimport json\n\nresult = json.loads()[\"value\"]\n\nPackage findings: none\nAPI findings: json.loads: incorrect_arguments; missing_required_positional_argument\nSuspicious API: json.loads\nCandidate APIs: none\nRuntime evidence: TypeError: test_solution.py:1: in <module> | solution.py:3: in <module> | TypeError: loads() missing 1 required positional argument: 's' | ERROR test_solution.py - TypeError: loads() missing 1 required positional arg...\n",
+  "repaired_analysis": {
+    "alias_table": {
+      "json": {
+        "canonical_path": "json",
+        "import_type": "import",
+        "line_number": 1,
+        "local_name": "json"
+      }
+    },
+    "api_references": [
+      {
+        "arg_count": 1,
+        "call_type": "function_or_attribute",
+        "canonical_path": "json.loads",
+        "is_call": true,
+        "keyword_names": [],
+        "line_number": 4,
+        "module": "json",
+        "object_path": "loads",
+        "package": "json",
+        "receiver": "json",
+        "source": "json.loads"
+      }
+    ],
+    "imports": [
+      {
+        "alias": null,
+        "is_from_import": false,
+        "level": 0,
+        "line_number": 1,
+        "module": "json",
+        "name": null
+      }
+    ],
+    "syntax_error": null
+  },
+  "repaired_api_results": [
+    {
+      "api_valid": true,
+      "module_valid": true,
+      "package_valid": true,
+      "reason": null,
+      "reference": {
+        "arg_count": 1,
+        "call_type": "function_or_attribute",
+        "canonical_path": "json.loads",
+        "is_call": true,
+        "keyword_names": [],
+        "line_number": 4,
+        "module": "json",
+        "object_path": "loads",
+        "package": "json",
+        "receiver": "json",
+        "source": "json.loads"
+      },
+      "resolved_module": "json",
+      "status": "valid",
+      "suggestions": []
+    }
+  ],
+  "repaired_code": "import json\n\njson_data = '{\"value\": 7}'\nresult = json.loads(json_data)[\"value\"]",
+  "repaired_execution_result": {
+    "error_category": "unknown",
+    "error_type": null,
+    "execution_time": 0.21305530000245199,
+    "return_code": 0,
+    "status": "passed",
+    "stderr": "",
+    "stdout": ".                                                                        [100%]\n1 passed in 0.02s\n",
+    "timed_out": false
+  },
+  "repaired_package_results": [
+    {
+      "exists": true,
+      "package": "json",
+      "reason": null,
+      "status": "valid",
+      "version": null
+    }
+  ],
+  "requirement": "Parse a JSON object containing value 7 and expose that value as result."
+}

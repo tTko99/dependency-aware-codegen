@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "purpose": "Pre-run SHA-256 fingerprints used to prove that Phase 3 source and test inputs remain unchanged.",
+  "cases": {
+    "package_textwrapx": {
+      "code_sha256": "81420b654d9ef29f8f445aa0a4daa896d156488e6820883ff460eb5a1c2ffba2",
+      "test_sha256": "b7523973719fb6c66bec7b7dd37a91542c5c479e16f6313095c45693e9b8dc26"
+    },
+    "function_statistics_average": {
+      "code_sha256": "659725dcfe6f88c563e0d2589b92fd793b702263ab19d6d87a4e114edb1bd5af",
+      "test_sha256": "e183ad760b56476e17ee377ff2b50125a55eab1f8b4bddaa509bfb91031f364b"
+    },
+    "class_collections_countmap": {
+      "code_sha256": "acc4459f6a283a736c4111020479775bb734a962185c85c3048464d770ed8b4c",
+      "test_sha256": "f4ea54fab6dc3b77d8bbc995f7f941aef9844077e74fc1e6326796cb6fbd2e2d"
+    },
+    "method_pathlib_get_suffix": {
+      "code_sha256": "b3b84fd3c9b3a4f475c1703f0f2ce89313e6b14eee7322c802a6498b06659534",
+      "test_sha256": "5e2fccf5e01e31e8cc5cc9fd070882cf47fc72fc47da665fd15911c96b306b1f"
+    },
+    "keyword_json_sort": {
+      "code_sha256": "93bc35c51396a398916ae3690b8406af2dad215641ea7f345748a47b94b02c67",
+      "test_sha256": "f67d6175f8b1b8eedcf8745f9c42a8d9a28eefa6c81006cdb53fa3409a6f0ec0"
+    },
+    "arguments_json_loads": {
+      "code_sha256": "b23e4495db6ff4298a16aa279e2a23ab7938cf117279aee8f1e1f8a935571664",
+      "test_sha256": "092cd03d7914c380942c7179ce14081cdb7cddcdf03f3fdf513efbb560babe5e"
+    },
+    "functional_smallest_value": {
+      "code_sha256": "7ca02a825124f14206cc7557942f33478e2522ff1accb21324d2f125d1ae8cd9",
+      "test_sha256": "8a473f2467397283d874a734f1424a51cdbf8cc88582a5c7e750064a6101c3ea"
+    },
+    "module_urllib_magicparse": {
+      "code_sha256": "01147c11b1f9a194356dbf0def3fea6a188e86163ec0132ec8e8c972af0b01bf",
+      "test_sha256": "88a5bfe98cb6b0b32d7ede26051c5cf167122a1df9ede394a25461cd9014ed96"
+    },
+    "control_math_hypot": {
+      "code_sha256": "4dc7ea67b89b79fc9285025f32a0b1c2870877047fbb874b21bf3ec6c6f69170",
+      "test_sha256": "6ba59bd2d8baad18841716990d35035aadb2ffeaf97ca423dda06a1f848a2742"
+    },
+    "control_json_boolean": {
+      "code_sha256": "71901738aa3e597b91c037f66f41696f3eece372620eff4feef414d9c92caa86",
+      "test_sha256": "9ec30ad7a40478887edb54e369d5b7979401a1ec8588463d1791ba7e14fd3ba6"
+    }
+  }
+}

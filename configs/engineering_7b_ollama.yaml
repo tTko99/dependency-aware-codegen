@@ -1,0 +1,21 @@
+# Engineering workflow for externally supplied Python code. No generator is configured or loaded.
+repair:
+  kind: ollama
+  ollama:
+    model_name: qwen2.5-coder:7b
+    base_url: http://127.0.0.1:11434
+    timeout_seconds: 180
+    max_new_tokens: 256
+    temperature: 0.0
+    top_p: 1.0
+    repetition_penalty: 1.0
+    seed: 42
+    keep_alive: 5m
+
+validation:
+  api: true
+
+execution:
+  enabled: true
+  timeout_seconds: 10
+  memory_limit_mb: null

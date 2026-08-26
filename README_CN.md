@@ -1,223 +1,206 @@
 # 面向 LLM 生成 Python 代码的依赖感知幻觉检测与修复
 
-本仓库是一个可复现的 AI 工程实验，用于检测和修复 Python 代码中的依赖与 API
-幻觉。项目结合了 AST 分析、包/API 验证、可执行单元测试、Hugging Face 推理以及
-PEFT LoRA 微调。
+这是一个面向实际工程流程的 AI/LLM 项目：用户可以提交外部 Python 文件，系统以确定性方式检查依赖与 API、运行代码及可选单元测试，并把结构化失败证据交给本地 Qwen2.5-Coder 7B 进行一次修复。修复代码随后会重新验证和执行，CLI 最终返回 `PASS`、`FAIL` 或 `NO_REPAIR_NEEDED`。
 
-本项目主要用于探索和验证 Dependency-Aware Code Generation 的实现思路，不以追求 SOTA 性能为目标。目前的测试主要评估模型对人为破坏代码的修复效果，不代表其在通用代码生成任务中的实际表现。
+本项目不主张学术创新、SOTA 性能或生产级安全沙箱。受控数据集和历史 0.5B LoRA 实验用于证明方案可行；当前面向用户的修复后端是通过 Ollama 运行的 Qwen2.5-Coder 7B。
 
-## 已实现的流程
+## 问题
 
-- 从 Python AST 中提取导入、别名、API 引用、接收者类型和调用参数。
-- 通过导入元数据验证包，并通过解析、反射、近似匹配和保守的签名绑定验证 API。
-- 在带超时限制的隔离子进程中执行候选代码和 pytest 测试。
-- 生成七类受控破坏，同时保留正确的目标代码和变异元数据。
-- 验证每个源程序和破坏样本，按模板/API 标识进行划分，并审计多种泄漏指纹。
-- 使用可配置的基础模型和可选 LoRA 适配器运行确定性的 Hugging Face 推理。
-- 将逐样本预测、清单、汇总指标、置信区间和失败分析保存为 JSON/CSV。
+包可以导入，并不代表 API 使用正确。LLM 生成的 Python 代码可能包含：
 
-## 模型与环境
+- 不存在的包或子模块；
+- 不存在的函数、类、方法或属性；
+- 错误的参数名或参数数量；
+- 包与 API 合法但仍发生的运行时错误；
+- 只有单元测试才能发现的功能错误。
 
-已完成的实验使用
-[Qwen/Qwen2.5-Coder-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct)，
-这是一个采用 Apache-2.0 许可证、参数量为 0.49B 的代码大语言模型。记录的模型提交为
-`ea3f2471cf1b1f0db85067f1ef93848e38e88c25`。
+如果再询问另一个 LLM 某个 API 是否存在，只是转移了幻觉问题。本系统使用 Python AST、导入元数据、运行时解析、反射、保守签名绑定、受控执行和 pytest 证据完成验证；LLM 只在获得确定性证据后负责修复。
 
-实验在本地 Windows 环境完成，使用 Python 3.13.8、PyTorch 2.13.0、Transformers
-5.15.0、PEFT 0.20.0、Datasets 5.0.0，并以 CPU float32 运行。模型仍可通过
-`configs/` 下的 YAML 文件进行配置。由于本机仅有 CPU，因此没有运行 1.5B 模型对比；
-保留 0.5B 模型是为了完成全部受控训练和留出集评估。
+## 最终系统
 
-使用以下命令安装项目：
+```mermaid
+flowchart LR
+    A[外部 .py 文件 + 需求]
+
+    subgraph V1[确定性验证层]
+        B[AST 与别名分析]
+        C[包与 API 验证]
+        D[受控执行 / pytest]
+    end
+
+    subgraph L[LLM 修复层]
+        E[结构化错误证据]
+        F[Qwen2.5-Coder 7B<br/>一次修复]
+    end
+
+    subgraph V2[确定性重新验证]
+        G[重新分析与验证]
+        H[重新执行 / 测试]
+    end
+
+    A --> B --> C --> D
+    D -- 无问题且测试通过 --> I[NO_REPAIR_NEEDED]
+    D -- 发现问题 --> E --> F --> G --> H
+    H --> J[PASS 或 FAIL]
+```
+
+提供 `--code-file` 后不会构造代码生成模型。工程 CLI 会在发现无效包/API 或执行/测试失败时触发修复。每个输入最多调用模型一次；即使修复失败，系统也会直接返回修复后的验证与执行证据，不会自动进行第二轮修复。
+
+## CLI 快速开始
+
+安装项目，并确保 Ollama 中存在准确的模型标签：
 
 ```bash
 python -m pip install -e ".[dev]"
+ollama pull qwen2.5-coder:7b
 ```
 
-模型缓存后，仓库中的实验配置使用 `local_files_only: true`。
+运行仓库中无害的外部文件修复示例：
 
-## 扩展数据集
-
-扩展后的目录包含 70 个独立 API 模板，每个模板渲染八个参数变体，共形成 560 对
-经过验证的破坏代码与目标代码。数据覆盖 20 个 Python 库或模块系列，包括 NumPy、
-pandas、Requests、SciPy、PyYAML、python-dateutil 以及常见标准库模块。
-
-七类均衡的代码破坏如下：
-
-- 幻觉包
-- 幻觉模块
-- 幻觉类
-- 幻觉函数
-- 幻觉方法或属性
-- 错误参数名
-- 错误参数数量或签名
-
-使用以下命令重新构建数据集：
-
-```bash
-python -m training.generate_expanded_catalog \
-  --output data/raw/expanded_api_examples.jsonl \
-  --variants 8
-
-python -m training.prepare_dataset \
-  --input data/raw/expanded_api_examples.jsonl \
-  --output-dir data/processed/expanded_v2 \
-  --seed 42 \
-  --train-ratio 0.5 \
-  --validation-ratio 0.2 \
-  --controls-per-group 2 \
-  --small-train-groups-per-type 2
+```powershell
+python -m depguard.cli run --config configs/engineering_7b_ollama.yaml --requirement "Compute the arithmetic mean of 2, 5, and 8 and expose it as result." --code-file data/engineering_sanity/cases/function_statistics_average/input.py --test-file data/engineering_sanity/cases/function_statistics_average/test_input.py --output results/demo_result.json
 ```
 
-已完成的构建生成了 280 个训练、112 个验证和 168 个留出测试破坏样本。每个正确源
-程序都通过了测试，每个变异样本都在修复前按预期执行失败。验证和测试基准分别加入
-28 个和 42 个正确对照样本，因此总样本数分别为 140 和 210。
+CLI 会打印完整 JSON，也可以通过 `--output` 保存。关键字段包括原始代码、初始包/API 发现、初始执行证据、是否触发修复、修复代码、修复后验证/执行结果、Ollama 延迟元数据和 `final_status`。
 
-### 泄漏控制
+| `final_status` | 实际含义 |
+| --- | --- |
+| `PASS` | 已执行一次修复，修复代码通过验证和执行/测试。 |
+| `FAIL` | 最终代码未通过验证或执行/测试；JSON 中保留失败证据。 |
+| `NO_REPAIR_NEEDED` | 原始代码无需修复且直接通过。这是成功结果，不是失败。 |
 
-同一模板的八个变体全部保留在同一数据划分中。训练、验证和测试集分别包含 35、14
-和 21 个独立模板。构建过程确认以下项目在不同划分之间均无重叠：
+系统不会修改原始源文件和测试文件。如果 JSON `--output` 与任一输入文件路径相同，CLI 会拒绝执行。修复代码只返回在结果 JSON 中，不支持自动原地覆盖。
 
-- 泄漏/模板组 ID
-- 正确目标代码的精确哈希
-- 破坏代码的精确哈希
-- 归一化 AST 结构指纹
-- 原始 API 标识
-- 变异签名
+## 模型策略
 
-精确的划分 ID、哈希、分布和空重叠集合记录在
-[`dataset_manifest.json`](results/controlled_api_repair_v2/dataset_manifest.json) 中。168 个
-测试行包含来自 21 个模板的相关变体；下文的 Wilson 区间以行为单位，应结合样本行数
-和模板数量共同解读。
+模型路线服务于工程验证：
 
-## LoRA 实验
+1. 先构建确定性的检测、证据、修复、重新验证流水线。
+2. 使用 Qwen2.5-Coder 0.5B 在 CPU 上低成本验证受控方案。
+3. 训练 LoRA，确认任务适配能改善较弱的小模型修复基线。
+4. 将实际 CLI 修复模型升级为 Ollama 上的通用 Qwen2.5-Coder 7B。
+5. 停止继续训练：通用 7B 已解决绝大多数被触发的修复，当前没有足够证据支持 7B LoRA/QLoRA 的成本。
 
-三个 CPU 实验只改变了训练集大小和适配器秩。所有实验均使用一个 epoch、学习率
-`5e-4`、随机种子 42、批大小 1、梯度累积 4、dropout 0.05，以及 `q_proj`/`v_proj`
-目标模块。紧凑修复提示在 320 token 限制下没有发生截断。
+历史 0.5B/LoRA 路线仍展示了 Hugging Face Transformers、PyTorch、PEFT、数据集构建、防泄漏划分、仅基于验证集选择检查点和失败分析，但最终 CLI 不依赖该小模型或适配器。
 
-| 实验 | 训练行数 | 秩 / alpha | 训练损失 | 验证损失 | 验证修复数 | 墙钟时间 |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Small R4 | 112 | 4 / 8 | 0.09972 | 0.14371 | 32/112 (28.57%) | 345.2 秒 |
-| Full R4 | 280 | 4 / 8 | 0.07341 | 0.11715 | 53/112 (47.32%) | 607.1 秒 |
-| Full R8 | 280 | 8 / 16 | 0.04683 | 0.14238 | 62/112 (55.36%) | 605.1 秒 |
+## 受控评估
 
-在查看测试集性能之前，项目根据验证集单元测试通过率选择了完整的 rank-8 适配器。
-其验证损失高于完整 rank-4 的事实也被如实报告；按 token 计算的损失与可执行正确性
-对这些适配器给出了不同排序。选中的适配器包含 540,672 个可训练参数，保存在
-`checkpoints/expanded_full_r8_e1/adapter`。
+留出评估包含 168 个破坏程序和 42 个正确对照。所有条件共享同一批错误候选代码、检测器行为、修复提示、单元测试、单轮触发策略和 64 token 输出上限。
 
-使用以下命令运行一个实验：
+| 条件 | 最终语法有效 | 最终执行 / 单元测试 | 成功修复尝试 | 所有需要修复的样本 |
+| --- | ---: | ---: | ---: | ---: |
+| 原始候选代码 | 210/210 | 42/210 | 不适用 | 0/168 |
+| 0.5B API 感知通用模型 | 144/210 | 77/210 | 35/160 | 35/168 |
+| 0.5B API 感知 LoRA | 202/210 | 127/210 | 85/160 | 85/168 |
+| **7B API 感知通用模型** | **210/210** | **197/210** | **155/160** | **155/168** |
 
-```bash
-python -m training.train_lora --config configs/experiments/lora_full_r8_e1.yaml
-```
+7B 条件保留了全部 42 个正确对照，且没有多余修复。包检测结果为 TP 24、FP 0、FN 0；API 检测结果为 TP 136、FP 0、FN 8。
 
-实际训练清单、损失历史、验证集预测和选择表位于
-[`results/controlled_api_repair_v2/lora_experiments`](results/controlled_api_repair_v2/lora_experiments)，
-以及
-[`lora_experiment_comparison.json`](results/controlled_api_repair_v2/lora_experiment_comparison.json)
-中。
+该表是实际工程系统证据，不是严格的模型规模单变量消融。历史 0.5B 条件使用 Hugging Face、FP32 和 CPU；7B 条件使用 Ollama、GGUF Q4_K_M 量化，并由 Ollama 报告为完全驻留 GPU。后端、精度、硬件位置和模型容量同时发生了变化。
 
-## 留出集基准测试
+## 工程健全性评估
 
-基准测试使用 168 个破坏测试样本和 42 个正确对照样本。所有条件共享相同的模型版本、
-测试数据、环境、提示格式、检测器设置、随机种子 42、贪心解码方式和 64 token 输出
-上限。执行错误会被测量，但不会触发修复。
+独立的**小型工程健全性集合**用于验证真实外部文件 CLI。它包含 10 个明确标注为人工准备的短程序及可执行测试，不应被称为具有统计代表性的真实世界基准。
 
-- A，`raw_base`：直接执行破坏后的候选代码，不进行修复。
-- B，`package_only_generic`：包检测加基础模型修复。
-- C，`api_aware_generic`：包/API 证据加基础模型修复。
-- D，`api_aware_lora`：使用与 C 相同的证据和提示，并加载选中的 LoRA 适配器。
+- 6 个案例直接触发包/API 发现；
+- 1 个错误 JSON 关键字没有被静态验证发现，但被执行阶段捕获；
+- 1 个 API 合法但功能错误的程序只被单元测试发现；
+- 8 个需修复案例均在一次 7B 修复后通过；
+- 2 个正确对照均返回 `NO_REPAIR_NEEDED`，且没有调用 Ollama；
+- 冻结的 SHA-256 证明所有输入源文件和测试文件均未变化。
 
-| 条件 | 语法有效 | 单元测试 / 执行 | 95% Wilson 置信区间 | 成功的修复尝试 | 所有需要修复的样本 |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| A. 原始候选代码 | 210/210 (100.00%) | 42/210 (20.00%) | 15.15%-25.93% | 不适用 | 0/168 |
-| B. 仅包检测 + 通用修复 | 186/210 (88.57%) | 42/210 (20.00%) | 15.15%-25.93% | 0/24 (0.00%) | 0/168 |
-| C. API 感知 + 通用修复 | 144/210 (68.57%) | 77/210 (36.67%) | 30.44%-43.37% | 35/160 (21.88%) | 35/168 (20.83%) |
-| D. API 感知 + LoRA 修复 | 202/210 (96.19%) | 127/210 (60.48%) | 53.73%-66.84% | 85/160 (53.13%) | 85/168 (50.60%) |
-
-对于已尝试的修复，C 的 95% Wilson 置信区间为 16.17%-28.90%，D 的区间为
-45.41%-60.69%。在本实验中，LoRA 确实优于通用修复，但该结果仅适用于这个由模板
-生成的受控基准和单个训练随机种子。
-
-使用以下命令运行一种条件：
-
-```bash
-python -m evaluation.run_benchmark \
-  --config configs/evaluation_expanded_selected.yaml \
-  --method api_aware_lora
-```
-
-汇总表位于
-[`comparison.json`](results/controlled_api_repair_v2/test/comparison.json)。逐样本输出、
-汇总 JSON/CSV、解析后的配置清单和数据集 SHA-256 哈希位于同一目录。
-
-## 检测器结果
-
-在留出基准上，包检测记录了 24 个真正例、0 个假正例和 0 个假负例：精确率、召回率
-和 F1 均为 1.00。API 检测记录了 136 个真正例、0 个假正例和 8 个假负例：精确率
-为 1.00，召回率为 0.9444，F1 为 0.9714。42 个正确对照样本没有产生检测器假正例。
-
-八个 API 漏检全部来自 `datetime.datetime.isoformat` 的错误关键字参数；当前反射路径
-无法检查这个内置方法的签名。这些受控结果不能证明检测器在任意动态 Python 代码上
-都具有完美精确率。
+详见[工程评估报告](results/engineering_sanity_7b_ollama/engineering_report.md)、[机器可读报告](results/engineering_sanity_7b_ollama/engineering_report.json)和[运行清单](results/engineering_sanity_7b_ollama/run_manifest.json)。
 
 ## 失败分析
 
-选中的 LoRA 适配器修复了全部 24 个模块破坏、16/24 个函数破坏、16/24 个方法/属性
-破坏、8/24 个类破坏、8/24 个包破坏、8/24 个参数名破坏，以及 5/24 个参数数量破坏。
+7B 受控评估共有 13 个最终失败：
 
-其余 83 个破坏样本的失败分类如下：
+- **8 个检测器漏检：**当前反射路径无法检查 `datetime.datetime.isoformat` 的错误关键字参数，因此没有触发修复。
+- **5 个已尝试修复但失败：**1 个 JSON 值形状错误、1 个未解决的 `fractions` 类，以及 3 个重复的 NumPy 广播/列表拼接错误。
 
-| 失败类别 | 数量 |
-| --- | ---: |
-| 未解决的 API | 40 |
-| 未解决的包 | 16 |
-| 语法有效的修复代码未通过单元测试 | 11 |
-| 修复后代码存在语法错误 | 8 |
-| 因检测器假负例而未触发修复 | 8 |
+160 个修复输出全部语法有效。目前最大的单一失败来源是检测器覆盖率，而不是修复模型容量。完整证据位于 [7B 受控结果目录](results/controlled_api_repair_7b_ollama/test)。
 
-API 感知通用模型留下了 133 个失败，其中包括 66 个修复后代码语法错误和 36 个未解决
-API。因此，LoRA 同时改善了输出规范性和功能修复能力，但参数签名、未见过的类/包映射
-以及检测器覆盖率仍是主要缺口。完整的逐样本报告和修复诊断以
-`*_failure_analysis.json` 和 `*_repair_diagnosis.json` 的形式保存在
-`results/controlled_api_repair_v2/test` 下。
+## 为什么不训练 7B LoRA / QLoRA
 
-## 试点 LoRA 失败的原因
+通用 7B 在受控评估中成功修复 155/160 个已尝试案例，在工程健全性集合中修复 8/8 个触发案例。微调无法解决检测器根本没有调用模型的 8 个案例，而真正调用模型后只剩 5 个受控失败。考虑额外训练和评估成本，当前证据不支持 7B 适配；只有未来更广泛的真实外部工作负载出现可重复的模型侧失败模式时，才值得重新评估。
 
-里程碑二的第一次 LoRA 运行只有 18 个训练样本和 6 个验证样本。运行后的 token 审计
-发现，24 个训练/验证样本中有 9 个超过了 384 token 限制，最大长度为 452，因此分词器
-丢弃了提示左侧的上下文。每种破坏类型所覆盖的 API 也非常少。其可能结果是模型学会了
-输出形式和语法，却没有足够的样本或保留的上下文来学习语义修复。
+## 架构与实现
 
-扩展后的紧凑提示在训练/验证集中的长度为 184-283 token，中位数为 220，没有发生
-截断。将 rank-4 的训练集从 112 行增加到 280 行，使验证修复成功数从 32/112 提升到
-53/112；rank 8 达到 62/112。这些观察说明试点实验受到数据和上下文限制，但并不能
-证明 0.5B 基础模型不存在容量限制。
+- **AST 分析：**导入、别名、API 引用、接收者类型、调用形式、参数和语法错误。
+- **包验证：**当前环境中的导入元数据和实际可导入性。
+- **API 验证：**模块/对象解析、反射、近似候选和保守签名检查。
+- **执行/测试：**带超时的临时子进程和可选 pytest 代码。
+- **结构化修复上下文：**需求、原始代码、检测证据、可疑引用、候选 API 和运行时回溯。
+- **Ollama 后端：**使用标准库 HTTP 客户端调用本地 7B 并进行一次修复。
+- **Hugging Face 路线：**用于历史受控生成与修复实验。
+- **LoRA 路线：**PEFT 适配器和基于验证集选择的历史检查点。
+- **制品层：**原始记录、汇总、解析配置、哈希、清单、延迟元数据和失败报告。
+
+主要系统模块位于 `src/depguard/`，数据/训练工具位于 `training/`，受控评估工具位于 `evaluation/`。
+
+## 历史 0.5B 与 LoRA 证据
+
+扩展目录包含 70 个模板，每个模板 8 个变体，共 560 对经过验证的破坏/目标代码，覆盖 20 个库或模块系列。按模板/API 隔离的划分生成 280 个训练、112 个验证和 168 个留出破坏样本；最终测试基准另加 42 个正确对照。
+
+| 实验 | 训练行数 | Rank / alpha | 验证修复 |
+| --- | ---: | ---: | ---: |
+| Small R4 | 112 | 4 / 8 | 32/112 |
+| Full R4 | 280 | 4 / 8 | 53/112 |
+| Full R8 | 280 | 8 / 16 | 62/112 |
+
+项目在查看测试结果之前，根据验证集执行/单元测试表现选择 Full R8。该适配器含 540,672 个可训练参数。划分指纹、训练清单、指标、选择证据和历史逐案例结果均保留在 `results/controlled_api_repair_v2/`。
+
+## 可复现性
+
+| 用途 | 配置 / 制品 |
+| --- | --- |
+| 外部文件 7B CLI | [`configs/engineering_7b_ollama.yaml`](configs/engineering_7b_ollama.yaml) |
+| 7B 受控评估 | [`configs/evaluation_7b_ollama.yaml`](configs/evaluation_7b_ollama.yaml) |
+| 7B 原始记录、汇总、清单、失败分析 | [`results/controlled_api_repair_7b_ollama/test`](results/controlled_api_repair_7b_ollama/test) |
+| 工程健全性案例 | [`data/engineering_sanity/manifest.json`](data/engineering_sanity/manifest.json) |
+| 工程健全性结果 | [`results/engineering_sanity_7b_ollama`](results/engineering_sanity_7b_ollama) |
+| 历史 0.5B/LoRA 实验 | [`results/controlled_api_repair_v2`](results/controlled_api_repair_v2) |
+
+最终工程模型记录：
+
+- 标签：`qwen2.5-coder:7b`
+- Ollama digest：`dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364`
+- 格式/系列：GGUF / Qwen2
+- 参数量：7.6B
+- 量化：Q4_K_M
+- Ollama：0.32.5
+- 受控运行请求/实际上下文：4,096 token
+- 环境：Windows、Python 3.13.8；Ollama 报告模型完全驻留 GPU
 
 ## 验证
 
 ```bash
+python -m pytest
 python -m ruff check .
-python -m pytest -q
+git diff --check
 ```
 
-测试覆盖分析、验证、执行分类、修复编排、按出现次数计算的指标、置信区间、AST 变异
-以及防泄漏的数据划分。
-
-## 已完成与计划中的工作
-
-已完成：560 个经过验证的样本、严格的模板/API 不相交划分、检测器评估、三个真实 CPU
-LoRA 运行、仅使用验证集选择适配器、受控 A-D 留出评估、置信区间、原始计数和失败分析。
-
-计划中但未报告为已完成：使用多个随机种子重复训练、引入外部来源且许可证明确的样本、
-模板聚类置信区间、自由形式生成基准、独立的检测器标注，以及 1.5B 模型对比。
+自动化测试覆盖 AST 分析、包/API 验证、执行分类、修复编排、Ollama 请求和错误处理、配置驱动的后端选择、评估指标、防泄漏划分、CLI 测试文件、最终状态语义和源文件安全。
 
 ## 局限性
 
-- 样本由 70 个精选模板以程序化方式生成，而不是从生产代码中抽样。
-- 同一模板内的参数变体彼此相关，但没有任何模板跨越不同的数据划分。
-- 检测器精确率根据受控标签和 42 个正确对照样本进行测量。
-- 反射可能漏检或误判惰性属性、猴子补丁、可选依赖和 C 扩展签名。
-- Windows 子进程运行器只提供超时边界，并不是经过加固的安全沙箱。
+- 主要目标是 Python 单文件任务，不是复杂的多文件仓库。
+- 反射可能漏检动态属性、猴子补丁、惰性导出、可选依赖和 C 扩展签名。
+- 包有效性依赖当前安装环境。
+- API 存在不等于语义正确；需求和测试仍然重要。
+- 功能正确性受限于用户提供的测试或可观察任务评估。
+- Windows 子进程执行器只提供超时/进程边界，不是用于不可信代码的生产级强化沙箱。
+- 当前检测器在受控评估中漏掉 8 个 API 错误。
+- 工程健全性集合规模小且由人工准备。
+- 受控破坏分布不同于生产环境中的自然 LLM 输出。
+- 修复刻意保持单轮；失败会被报告而不是自动重试。
+
+## 未来工作
+
+- 评估更广泛、真正外部来源的 LLM 生成 Python 程序。
+- 针对难检查的签名和动态 API 改进检测覆盖率。
+- 在生产执行不可信代码前使用更强的 OS/容器隔离。
+- 仅在用户确有需求时增加多文件/仓库上下文。
+- 仅当未来工作负载证明存在重复且可测量的模型侧缺口时，重新考虑 7B 适配。
+
+面试准备可参考 [`docs/PROJECT_SUMMARY.md`](docs/PROJECT_SUMMARY.md)。英文说明见 [`README.md`](README.md)。

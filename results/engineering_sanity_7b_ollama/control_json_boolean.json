@@ -1,0 +1,96 @@
+{
+  "analysis": {
+    "alias_table": {
+      "json": {
+        "canonical_path": "json",
+        "import_type": "import",
+        "line_number": 1,
+        "local_name": "json"
+      }
+    },
+    "api_references": [
+      {
+        "arg_count": 1,
+        "call_type": "function_or_attribute",
+        "canonical_path": "json.loads",
+        "is_call": true,
+        "keyword_names": [],
+        "line_number": 3,
+        "module": "json",
+        "object_path": "loads",
+        "package": "json",
+        "receiver": "json",
+        "source": "json.loads"
+      }
+    ],
+    "imports": [
+      {
+        "alias": null,
+        "is_from_import": false,
+        "level": 0,
+        "line_number": 1,
+        "module": "json",
+        "name": null
+      }
+    ],
+    "syntax_error": null
+  },
+  "api_results": [
+    {
+      "api_valid": true,
+      "module_valid": true,
+      "package_valid": true,
+      "reason": null,
+      "reference": {
+        "arg_count": 1,
+        "call_type": "function_or_attribute",
+        "canonical_path": "json.loads",
+        "is_call": true,
+        "keyword_names": [],
+        "line_number": 3,
+        "module": "json",
+        "object_path": "loads",
+        "package": "json",
+        "receiver": "json",
+        "source": "json.loads"
+      },
+      "resolved_module": "json",
+      "status": "valid",
+      "suggestions": []
+    }
+  ],
+  "execution_result": {
+    "error_category": "unknown",
+    "error_type": null,
+    "execution_time": 0.20559959999809507,
+    "return_code": 0,
+    "status": "passed",
+    "stderr": "",
+    "stdout": ".                                                                        [100%]\n1 passed in 0.02s\n",
+    "timed_out": false
+  },
+  "final_status": "NO_REPAIR_NEEDED",
+  "generated_code": "import json\n\nresult = json.loads('{\"active\": true}')[\"active\"]\n",
+  "generation_config": {},
+  "latency_seconds": 0.21130709999852115,
+  "model_name": "provided-code",
+  "package_results": [
+    {
+      "exists": true,
+      "package": "json",
+      "reason": null,
+      "status": "valid",
+      "version": null
+    }
+  ],
+  "repair_attempted": false,
+  "repair_method": "ollama",
+  "repair_model_name": "qwen2.5-coder:7b",
+  "repair_prompt": null,
+  "repaired_analysis": null,
+  "repaired_api_results": [],
+  "repaired_code": null,
+  "repaired_execution_result": null,
+  "repaired_package_results": [],
+  "requirement": "Parse a JSON boolean and expose it as result."
+}

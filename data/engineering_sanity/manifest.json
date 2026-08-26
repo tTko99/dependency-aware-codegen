@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "name": "phase3_small_engineering_sanity_set",
+  "description": "Ten manually prepared external-file workflow cases; this is not a statistically representative benchmark.",
+  "provenance_policy": "No suitable external or naturally model-generated examples were present locally. Every case is explicitly labeled manually prepared and is not claimed as natural LLM output.",
+  "config": "configs/engineering_7b_ollama.yaml",
+  "cases": [
+    {
+      "id": "package_textwrapx",
+      "provenance": "manually_prepared",
+      "provenance_detail": "Prepared for Phase 3 to exercise a plausible nonexistent-package import.",
+      "requirement": "Dedent the indented word ready and expose the stripped text as result.",
+      "initial_problem_category": "nonexistent_package",
+      "code_file": "data/engineering_sanity/cases/package_textwrapx/input.py",
+      "test_file": "data/engineering_sanity/cases/package_textwrapx/test_input.py"
+    },
+    {
+      "id": "function_statistics_average",
+      "provenance": "manually_prepared",
+      "provenance_detail": "Prepared for Phase 3 to exercise a realistic nonexistent statistics API.",
+      "requirement": "Compute the arithmetic mean of 2, 5, and 8 and expose it as result.",
+      "initial_problem_category": "nonexistent_function_api",
+      "code_file": "data/engineering_sanity/cases/function_statistics_average/input.py",
+      "test_file": "data/engineering_sanity/cases/function_statistics_average/test_input.py"
+    },
+    {
+      "id": "class_collections_countmap",
+      "provenance": "manually_prepared",
+      "provenance_detail": "Prepared for Phase 3 to exercise a plausible nonexistent collections class.",
+      "requirement": "Count letters in banana and expose the most common letter and count as result.",
+      "initial_problem_category": "nonexistent_class",
+      "code_file": "data/engineering_sanity/cases/class_collections_countmap/input.py",
+      "test_file": "data/engineering_sanity/cases/class_collections_countmap/test_input.py"
+    },
+    {
+      "id": "method_pathlib_get_suffix",
+      "provenance": "manually_prepared",
+      "provenance_detail": "Prepared for Phase 3 to exercise a nonexistent pathlib method.",
+      "requirement": "Use pathlib to expose the suffix of report.csv as result.",
+      "initial_problem_category": "nonexistent_method",
+      "code_file": "data/engineering_sanity/cases/method_pathlib_get_suffix/input.py",
+      "test_file": "data/engineering_sanity/cases/method_pathlib_get_suffix/test_input.py"
+    },
+    {
+      "id": "keyword_json_sort",
+      "provenance": "manually_prepared",
+      "provenance_detail": "Prepared for Phase 3 to exercise an incorrect but plausible keyword argument.",
+      "requirement": "Serialize the dictionary with keys sorted and expose the JSON string as result.",
+      "initial_problem_category": "incorrect_api_argument_name",
+      "code_file": "data/engineering_sanity/cases/keyword_json_sort/input.py",
+      "test_file": "data/engineering_sanity/cases/keyword_json_sort/test_input.py"
+    },
+    {
+      "id": "arguments_json_loads",
+      "provenance": "manually_prepared",
+      "provenance_detail": "Prepared for Phase 3 to exercise a missing required API argument.",
+      "requirement": "Parse a JSON object containing value 7 and expose that value as result.",
+      "initial_problem_category": "incorrect_api_argument_count",
+      "code_file": "data/engineering_sanity/cases/arguments_json_loads/input.py",
+      "test_file": "data/engineering_sanity/cases/arguments_json_loads/test_input.py"
+    },
+    {
+      "id": "functional_smallest_value",
+      "provenance": "manually_prepared",
+      "provenance_detail": "Prepared for Phase 3 to show a functionally wrong program exposed only by its test.",
+      "requirement": "Find the smallest value in 7, 2, 9, and 4 and expose it as result.",
+      "initial_problem_category": "functional_test_failure",
+      "code_file": "data/engineering_sanity/cases/functional_smallest_value/input.py",
+      "test_file": "data/engineering_sanity/cases/functional_smallest_value/test_input.py"
+    },
+    {
+      "id": "module_urllib_magicparse",
+      "provenance": "manually_prepared",
+      "provenance_detail": "Prepared for Phase 3 to exercise a plausible nonexistent standard-library submodule.",
+      "requirement": "URL-encode the query value hello world and expose the encoded text as result.",
+      "initial_problem_category": "nonexistent_module",
+      "code_file": "data/engineering_sanity/cases/module_urllib_magicparse/input.py",
+      "test_file": "data/engineering_sanity/cases/module_urllib_magicparse/test_input.py"
+    },
+    {
+      "id": "control_math_hypot",
+      "provenance": "manually_prepared",
+      "provenance_detail": "Prepared as an already-correct no-repair control.",
+      "requirement": "Compute the hypotenuse of a 3-4 triangle and expose it as result.",
+      "initial_problem_category": "correct_control",
+      "code_file": "data/engineering_sanity/cases/control_math_hypot/input.py",
+      "test_file": "data/engineering_sanity/cases/control_math_hypot/test_input.py"
+    },
+    {
+      "id": "control_json_boolean",
+      "provenance": "manually_prepared",
+      "provenance_detail": "Prepared as an already-correct no-repair control.",
+      "requirement": "Parse a JSON boolean and expose it as result.",
+      "initial_problem_category": "correct_control",
+      "code_file": "data/engineering_sanity/cases/control_json_boolean/input.py",
+      "test_file": "data/engineering_sanity/cases/control_json_boolean/test_input.py"
+    }
+  ]
+}
