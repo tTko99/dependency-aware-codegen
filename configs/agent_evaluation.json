@@ -1,0 +1,28 @@
+{
+  "repair": {
+    "kind": "ollama",
+    "ollama": {
+      "model_name": "qwen2.5-coder:7b",
+      "base_url": "http://127.0.0.1:11434",
+      "timeout_seconds": 180,
+      "max_new_tokens": 256,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "repetition_penalty": 1.0,
+      "seed": 42,
+      "keep_alive": "5m",
+      "context_length": 4096
+    }
+  },
+  "validation": {"api": true},
+  "execution": {"enabled": true, "timeout_seconds": 10},
+  "agent": {"max_steps": 24, "timeout_seconds": 180, "recent_steps": 6},
+  "comparison_policy": {
+    "same_model_and_generation_options": true,
+    "same_original_input_and_tests": true,
+    "same_environment": true,
+    "prompts": "one-shot complete program versus agent single tool action",
+    "token_budget": "256 per model call for both arms; loop can make multiple calls",
+    "rescue": "current one-shot attempted repair fails, loop changes code and real current-version tests/checks PASS after finish; mocks excluded"
+  }
+}

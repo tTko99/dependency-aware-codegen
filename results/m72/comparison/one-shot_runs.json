@@ -1,0 +1,281 @@
+{
+  "case_id": "runs",
+  "cohort": "hard",
+  "is_control": false,
+  "mode": "live",
+  "condition": "one-shot",
+  "attempted": true,
+  "started": "2026-09-16T12:41:48.829056+00:00",
+  "required_checks": [
+    "validate_packages",
+    "validate_apis",
+    "execute",
+    "run_pytest"
+  ],
+  "before_hashes": {
+    "code_file": "c16a466606bbe4d94544f325044450870b67199406b4f44cf1626d59372545b2",
+    "test_file": "3e451d9d772be5691eab5be42ce45ae9b5a1d1c65635bb6b399177ff35b9faec"
+  },
+  "capability_probe": {},
+  "repair_attempted": true,
+  "model_calls": 1,
+  "status": "PASS",
+  "termination_reason": "one_shot_complete",
+  "trajectory": [],
+  "final_verification": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "1:ab8303a9c3202091676af5ecd2a56416c6c43feecd63edaedd0906ba87316b7b",
+    "context_version": "8dec25295fc0a4913bd34beccfa190c31f3065195b80a7990a84767bf5f0ab43",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 2,
+      "changed_files": 1,
+      "heuristic": true
+    },
+    "host_status": "PASS",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.02445840003201738,
+            "timed_out": false
+          }
+        },
+        "candidate_version": "1:ab8303a9c3202091676af5ecd2a56416c6c43feecd63edaedd0906ba87316b7b",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": ".                                                                        [100%]\n1 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.26428399997530505,
+            "timed_out": false
+          }
+        },
+        "candidate_version": "1:ab8303a9c3202091676af5ecd2a56416c6c43feecd63edaedd0906ba87316b7b",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": []
+        },
+        "candidate_version": "1:ab8303a9c3202091676af5ecd2a56416c6c43feecd63edaedd0906ba87316b7b",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": []
+        },
+        "candidate_version": "1:ab8303a9c3202091676af5ecd2a56416c6c43feecd63edaedd0906ba87316b7b",
+        "cached": false
+      }
+    }
+  },
+  "apply": false,
+  "rollback": {
+    "attempted": false
+  },
+  "initial_verification": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [
+      "run_pytest"
+    ],
+    "candidate_version": "0:c16a466606bbe4d94544f325044450870b67199406b4f44cf1626d59372545b2",
+    "context_version": "8dec25295fc0a4913bd34beccfa190c31f3065195b80a7990a84767bf5f0ab43",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "FAIL",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.024801000021398067,
+            "timed_out": false
+          }
+        },
+        "candidate_version": "0:c16a466606bbe4d94544f325044450870b67199406b4f44cf1626d59372545b2",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": false,
+          "execution": {
+            "status": "failed",
+            "return_code": 1,
+            "stdout": "F                                                                        [100%]\n================================== FAILURES ===================================\n__________________________________ test_runs __________________________________\n\n    def test_runs():\n>       assert runs('aabbc') == [('a',2),('b',2),('c',1)]\nE       AssertionError: assert [('a', 2), ('b', 2)] == [('a', 2), ('b', 2), ('c', 1)]\nE         \nE         Right contains one more item: ('c', 1)\nE         Use -v to get more diff\n\ntest_solution.py:3: AssertionError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_runs - AssertionError: assert [('a', 2), ('b', ...\n1 failed in 0.06s\n",
+            "stderr": "",
+            "error_type": "AssertionError",
+            "error_category": "runtime_error",
+            "execution_time": 0.3274383000098169,
+            "timed_out": false
+          }
+        },
+        "candidate_version": "0:c16a466606bbe4d94544f325044450870b67199406b4f44cf1626d59372545b2",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": []
+        },
+        "candidate_version": "0:c16a466606bbe4d94544f325044450870b67199406b4f44cf1626d59372545b2",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": []
+        },
+        "candidate_version": "0:c16a466606bbe4d94544f325044450870b67199406b4f44cf1626d59372545b2",
+        "cached": false
+      }
+    }
+  },
+  "model_response": {
+    "content": "```python\ndef runs(text):\n    result = []\n    count = 1\n    for i in range(1,len(text)):\n        if text[i] == text[i-1]:\n            count += 1\n        else:\n            result.append((text[i-1],count))\n            count = 1\n    if text:  # Handle the last run\n        result.append((text[-1],count))\n    return result\n```",
+    "usage": {
+      "prompt_eval_count": 1155,
+      "eval_count": 91
+    },
+    "provider_model": "qwen3-coder:30b"
+  },
+  "patch_submission": {
+    "status": "success",
+    "message": "Memory candidate updated (dry-run; target file unchanged)",
+    "evidence": {
+      "preview": "--- a/input.py\n+++ b/input.py\n@@ -7,4 +7,6 @@\n         else:\n             result.append((text[i-1],count))\n             count = 1\n+    if text:  # Handle the last run\n+        result.append((text[-1],count))\n     return result\n",
+      "normalized_patch": "--- a/input.py\n+++ b/input.py\n@@ -7,4 +7,6 @@\n         else:\n             result.append((text[i-1],count))\n             count = 1\n+    if text:  # Handle the last run\n+        result.append((text[-1],count))\n     return result\n",
+      "written": false,
+      "before": {
+        "version": "0:c16a466606bbe4d94544f325044450870b67199406b4f44cf1626d59372545b2",
+        "sha256": "c16a466606bbe4d94544f325044450870b67199406b4f44cf1626d59372545b2",
+        "lines": 10
+      },
+      "after": {
+        "version": "1:ab8303a9c3202091676af5ecd2a56416c6c43feecd63edaedd0906ba87316b7b",
+        "sha256": "ab8303a9c3202091676af5ecd2a56416c6c43feecd63edaedd0906ba87316b7b",
+        "lines": 12
+      },
+      "regression_guard": {
+        "blocked": false,
+        "findings": [],
+        "changed_lines": 2,
+        "changed_files": 1,
+        "heuristic": true
+      }
+    },
+    "candidate_version": "1:ab8303a9c3202091676af5ecd2a56416c6c43feecd63edaedd0906ba87316b7b",
+    "cached": false
+  },
+  "ended": "2026-09-16T12:41:52.884810+00:00",
+  "latency": 4.045999999972992,
+  "after_hashes": {
+    "code_file": "c16a466606bbe4d94544f325044450870b67199406b4f44cf1626d59372545b2",
+    "test_file": "3e451d9d772be5691eab5be42ce45ae9b5a1d1c65635bb6b399177ff35b9faec"
+  },
+  "unchanged": true,
+  "candidate_changed": true,
+  "candidate_code": "def runs(text):\n    result = []\n    count = 1\n    for i in range(1,len(text)):\n        if text[i] == text[i-1]:\n            count += 1\n        else:\n            result.append((text[i-1],count))\n            count = 1\n    if text:  # Handle the last run\n        result.append((text[-1],count))\n    return result\n",
+  "candidate_version": "1:ab8303a9c3202091676af5ecd2a56416c6c43feecd63edaedd0906ba87316b7b",
+  "candidate_versions": [],
+  "patches": [
+    "--- a/input.py\n+++ b/input.py\n@@ -7,4 +7,6 @@\n         else:\n             result.append((text[i-1],count))\n             count = 1\n+    if text:  # Handle the last run\n+        result.append((text[-1],count))\n     return result\n"
+  ],
+  "patch_count": 1,
+  "verification_count": 0,
+  "tokens": {
+    "input": 1155,
+    "output": 91
+  },
+  "failure_classification": null,
+  "run_id": "existing-bc960c490a4c",
+  "comparison_identity": "bc960c490a4cb5052db0a5cbbec33e5e1abf0bc7efd4a8fa1f1ea5be943b1c96",
+  "provider": "ollama",
+  "model": "qwen3-coder:30b",
+  "resolved_config": {
+    "provider": "ollama",
+    "model": {
+      "model_name": "qwen3-coder:30b",
+      "base_url": "http://localhost:11434",
+      "max_new_tokens": 2048,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "repetition_penalty": 1.0,
+      "seed": 42,
+      "context_length": 16384,
+      "keep_alive": "10m"
+    },
+    "agent": {
+      "max_steps": 24,
+      "timeout_seconds": 300,
+      "recent_steps": 6,
+      "output_limit": 6000,
+      "protocol_limit": 3,
+      "probe_cache": false,
+      "probe_timeout": 90
+    },
+    "execution_timeout_seconds": 10,
+    "shared_initial_evidence": true,
+    "comparison": "Pure local same digest, parameters, frozen tests and M6 host checks; 2048 tokens per model call, not equal total token budgets. Formal deadline 300 seconds plus independent final host audit up to 30 seconds."
+  },
+  "raw_results_ref": "one-shot_runs.json#/trajectory"
+}

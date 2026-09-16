@@ -1,0 +1,232 @@
+{
+  "id": "method_pathlib_get_suffix",
+  "cohort": "sanity",
+  "mode": "live",
+  "is_control": false,
+  "before_hashes": {
+    "code_file": "474c216ede64fe19f352e0c6b0a8a81648b0a7bd1c9b4e00df13785b306252a4",
+    "test_file": "116b033434280eb30dfca0ea3b9beb29bb961a90685d05d580b6951389078b09"
+  },
+  "after_hashes": {
+    "code_file": "474c216ede64fe19f352e0c6b0a8a81648b0a7bd1c9b4e00df13785b306252a4",
+    "test_file": "116b033434280eb30dfca0ea3b9beb29bb961a90685d05d580b6951389078b09"
+  },
+  "unchanged": true,
+  "historical_lf_match": {
+    "code_file": true,
+    "test_file": true
+  },
+  "one_shot": {
+    "status": "PASS",
+    "result": {
+      "requirement": "Use pathlib to expose the suffix of report.csv as result.",
+      "generated_code": "import pathlib\n\npath = pathlib.Path(\"report.csv\")\nresult = pathlib.Path.get_suffix(path)\n",
+      "analysis": {
+        "imports": [
+          {
+            "module": "pathlib",
+            "name": null,
+            "alias": null,
+            "line_number": 1,
+            "is_from_import": false,
+            "level": 0
+          }
+        ],
+        "alias_table": {
+          "pathlib": {
+            "local_name": "pathlib",
+            "canonical_path": "pathlib",
+            "import_type": "import",
+            "line_number": 1
+          }
+        },
+        "api_references": [
+          {
+            "canonical_path": "pathlib.Path",
+            "package": "pathlib",
+            "module": "pathlib",
+            "object_path": "Path",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "pathlib.Path",
+            "receiver": "pathlib",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          },
+          {
+            "canonical_path": "pathlib.Path.get_suffix",
+            "package": "pathlib",
+            "module": "pathlib.Path",
+            "object_path": "get_suffix",
+            "call_type": "function_or_attribute",
+            "line_number": 4,
+            "source": "pathlib.Path.get_suffix",
+            "receiver": "pathlib",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          }
+        ],
+        "syntax_error": null
+      },
+      "package_results": [
+        {
+          "package": "pathlib",
+          "exists": true,
+          "status": "valid",
+          "version": null,
+          "reason": null
+        }
+      ],
+      "api_results": [
+        {
+          "reference": {
+            "canonical_path": "pathlib.Path",
+            "package": "pathlib",
+            "module": "pathlib",
+            "object_path": "Path",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "pathlib.Path",
+            "receiver": "pathlib",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          },
+          "package_valid": true,
+          "module_valid": true,
+          "api_valid": true,
+          "status": "valid",
+          "reason": null,
+          "resolved_module": "pathlib",
+          "suggestions": []
+        },
+        {
+          "reference": {
+            "canonical_path": "pathlib.Path.get_suffix",
+            "package": "pathlib",
+            "module": "pathlib.Path",
+            "object_path": "get_suffix",
+            "call_type": "function_or_attribute",
+            "line_number": 4,
+            "source": "pathlib.Path.get_suffix",
+            "receiver": "pathlib",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          },
+          "package_valid": true,
+          "module_valid": true,
+          "api_valid": false,
+          "status": "hallucinated_function",
+          "reason": "attribute_not_found:get_suffix",
+          "resolved_module": "pathlib",
+          "suggestions": [
+            "pathlib.Path.with_suffix",
+            "pathlib.Path.suffix",
+            "pathlib.Path.suffixes"
+          ]
+        }
+      ],
+      "execution_result": {
+        "status": "failed",
+        "return_code": 2,
+        "stdout": "\n=================================== ERRORS ====================================\n______________________ ERROR collecting test_solution.py ______________________\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:4: in <module>\n    result = pathlib.Path.get_suffix(path)\n             ^^^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: type object 'Path' has no attribute 'get_suffix'. Did you mean: 'with_suffix'?\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: type object 'Path' has no attribute ...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.12s\n",
+        "stderr": "",
+        "error_type": "AttributeError",
+        "error_category": "attribute_error",
+        "execution_time": 0.4002926999819465,
+        "timed_out": false
+      },
+      "repaired_code": "import pathlib\n\npath = pathlib.Path(\"report.csv\")\nresult = path.suffix",
+      "repair_prompt": "Repair the Python program. Preserve its requirement and return the complete corrected program only, without Markdown or explanation.\n\nRequirement: Use pathlib to expose the suffix of report.csv as result.\n\nProgram:\nimport pathlib\n\npath = pathlib.Path(\"report.csv\")\nresult = pathlib.Path.get_suffix(path)\n\nPackage findings: none\nAPI findings: pathlib.Path.get_suffix: hallucinated_function; attribute_not_found:get_suffix\nSuspicious API: pathlib.Path.get_suffix\nCandidate APIs: pathlib.Path.with_suffix, pathlib.Path.suffix, pathlib.Path.suffixes\nRuntime evidence: AttributeError: test_solution.py:1: in <module> | solution.py:4: in <module> | AttributeError: type object 'Path' has no attribute 'get_suffix'. Did you mean: 'with_suffix'? | ERROR test_solution.py - AttributeError: type object 'Path' has no attribute ...\n",
+      "repaired_analysis": {
+        "imports": [
+          {
+            "module": "pathlib",
+            "name": null,
+            "alias": null,
+            "line_number": 1,
+            "is_from_import": false,
+            "level": 0
+          }
+        ],
+        "alias_table": {
+          "pathlib": {
+            "local_name": "pathlib",
+            "canonical_path": "pathlib",
+            "import_type": "import",
+            "line_number": 1
+          }
+        },
+        "api_references": [
+          {
+            "canonical_path": "pathlib.Path",
+            "package": "pathlib",
+            "module": "pathlib",
+            "object_path": "Path",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "pathlib.Path",
+            "receiver": "pathlib",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          }
+        ],
+        "syntax_error": null
+      },
+      "repaired_package_results": [
+        {
+          "package": "pathlib",
+          "exists": true,
+          "status": "valid",
+          "version": null,
+          "reason": null
+        }
+      ],
+      "repaired_api_results": [
+        {
+          "reference": {
+            "canonical_path": "pathlib.Path",
+            "package": "pathlib",
+            "module": "pathlib",
+            "object_path": "Path",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "pathlib.Path",
+            "receiver": "pathlib",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          },
+          "package_valid": true,
+          "module_valid": true,
+          "api_valid": true,
+          "status": "valid",
+          "reason": null,
+          "resolved_module": "pathlib",
+          "suggestions": []
+        }
+      ],
+      "repaired_execution_result": {
+        "status": "passed",
+        "return_code": 0,
+        "stdout": ".                                                                        [100%]\n1 passed in 0.01s\n",
+        "stderr": "",
+        "error_type": null,
+        "error_category": "unknown",
+        "execution_time": 0.29071250004926696,
+        "timed_out": false
+      },
+      "model_name": "provided-code",
+      "generation_config": {},
+      "repair_method": "ollama",
+      "latency_seconds": 0.9791131999809295
+    },
+    "repair_attempted": true,
+    "termination_reason": "one_shot_complete",
+    "elapsed_seconds": 0.9839999999967404
+  }
+}

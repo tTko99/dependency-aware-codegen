@@ -32,6 +32,10 @@ results/controlled_api_repair_7b_ollama/preflight/
 !results/engineering_sanity_7b_ollama/
 !results/engineering_sanity_7b_ollama/*.json
 !results/engineering_sanity_7b_ollama/*.md
+!results/agent_evaluation/
+!results/agent_evaluation/**/
+!results/agent_evaluation/**/*.json
+!results/agent_evaluation/*.md
 checkpoints/*
 !checkpoints/.gitkeep
 

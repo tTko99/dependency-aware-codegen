@@ -1,0 +1,2617 @@
+{
+  "case_id": "mean_edges",
+  "cohort": "hard",
+  "is_control": false,
+  "mode": "live",
+  "condition": "loop",
+  "attempted": true,
+  "started": "2026-09-16T13:10:54.077835+00:00",
+  "required_checks": [
+    "validate_packages",
+    "validate_apis",
+    "execute",
+    "run_pytest"
+  ],
+  "before_hashes": {
+    "code_file": "c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+    "test_file": "70c0e7a742b07c33dc946ce642d8d5c5ecfc7be17cee234b0e5a581021b7f89f"
+  },
+  "capability_probe": {
+    "status": "passed",
+    "stage": "complete",
+    "reason": "Native calls, observation followup and finish verified",
+    "model_response_kind": "tool_call",
+    "cached": false,
+    "elapsed_seconds": 1.7030000000377186,
+    "transcript": [
+      {
+        "stage": "first_call",
+        "kind": "tool_call",
+        "decision_summary": "Selected tool probe_echo",
+        "tool_call": {
+          "name": "probe_echo",
+          "arguments": {
+            "token": "start"
+          },
+          "call_id": "call_d5rt2kd8",
+          "function_index": 0
+        },
+        "error_code": null,
+        "usage": {
+          "prompt_eval_count": 375,
+          "eval_count": 23
+        },
+        "response_model": "qwen3-coder:30b",
+        "argument_type": "object",
+        "tool_call_id": "call_d5rt2kd8",
+        "termination_reason": "continue",
+        "observation": {
+          "challenge": "1245287d40dbe74faaeaa7a3",
+          "next_action": "echo this challenge"
+        }
+      },
+      {
+        "stage": "observation_followup",
+        "kind": "tool_call",
+        "decision_summary": "Selected tool probe_echo",
+        "tool_call": {
+          "name": "probe_echo",
+          "arguments": {
+            "token": "1245287d40dbe74faaeaa7a3"
+          },
+          "call_id": "call_uked7x8v",
+          "function_index": 0
+        },
+        "error_code": null,
+        "usage": {
+          "prompt_eval_count": 451,
+          "eval_count": 41
+        },
+        "response_model": "qwen3-coder:30b",
+        "argument_type": "object",
+        "tool_call_id": "call_uked7x8v",
+        "termination_reason": "continue",
+        "observation": {
+          "acknowledged": true,
+          "next_action": "finish"
+        }
+      },
+      {
+        "stage": "finish",
+        "kind": "tool_call",
+        "decision_summary": "Selected tool finish",
+        "tool_call": {
+          "name": "finish",
+          "arguments": {
+            "success": true,
+            "conclusion": "Challenge acknowledged and echoed successfully."
+          },
+          "call_id": "call_6xbb302b",
+          "function_index": 0
+        },
+        "error_code": null,
+        "usage": {
+          "prompt_eval_count": 523,
+          "eval_count": 41
+        },
+        "response_model": "qwen3-coder:30b",
+        "argument_type": "object",
+        "tool_call_id": "call_6xbb302b",
+        "termination_reason": "finish",
+        "observation": {
+          "finished": true,
+          "arguments": {
+            "success": true,
+            "conclusion": "Challenge acknowledged and echoed successfully."
+          }
+        }
+      }
+    ],
+    "termination_reason": "finish"
+  },
+  "repair_attempted": true,
+  "model_calls": 10,
+  "status": "PASS",
+  "termination_reason": "finish",
+  "trajectory": [
+    {
+      "step": 1,
+      "thought": "Selected tool validate_apis",
+      "tool_call": {
+        "name": "validate_apis",
+        "arguments": {},
+        "call_id": "call_jn5cldqt",
+        "function_index": 0
+      },
+      "tool_result": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": false,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "statistics.average",
+                "package": "statistics",
+                "module": "statistics",
+                "object_path": "average",
+                "call_type": "function_or_attribute",
+                "line_number": 3,
+                "source": "statistics.average",
+                "receiver": "statistics",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": false,
+              "status": "hallucinated_function",
+              "reason": "attribute_not_found:average",
+              "resolved_module": "statistics",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "failed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+        "cached": false
+      },
+      "timestamp": "2026-09-16T13:10:59.008655+00:00",
+      "elapsed_seconds": 2.155999999959022,
+      "raw_response": {
+        "content": "Selected tool validate_apis",
+        "tool_calls": [
+          {
+            "id": "call_jn5cldqt",
+            "function": {
+              "index": 0,
+              "name": "validate_apis",
+              "arguments": {}
+            }
+          }
+        ],
+        "argument_type": "object",
+        "usage": {
+          "prompt_eval_count": 2878,
+          "eval_count": 14
+        },
+        "provider_model": "qwen3-coder:30b"
+      },
+      "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+      "decision_summary": "Selected tool validate_apis",
+      "observation": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": false,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "statistics.average",
+                "package": "statistics",
+                "module": "statistics",
+                "object_path": "average",
+                "call_type": "function_or_attribute",
+                "line_number": 3,
+                "source": "statistics.average",
+                "receiver": "statistics",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": false,
+              "status": "hallucinated_function",
+              "reason": "attribute_not_found:average",
+              "resolved_module": "statistics",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "failed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+        "cached": false
+      },
+      "raw_result_ref": "#/trajectory/0/tool_result",
+      "state_transition": {
+        "from_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+        "to_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+        "checks_before": {
+          "execute": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+          "validate_packages": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe"
+        },
+        "checks_after": {
+          "execute": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+          "validate_packages": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe"
+        },
+        "outcome": "observation"
+      },
+      "cached": false,
+      "observed_steps": []
+    },
+    {
+      "step": 2,
+      "thought": "The API validation failed because `statistics.average` does not exist. I need to fix the implementation to use the correct function for calculating the mean.",
+      "tool_call": {
+        "name": "apply_patch",
+        "arguments": {
+          "patch": "--- a/input.py\n+++ b/input.py\n@@ -1,3 +1,3 @@\n import statistics\n def mean(xs):\n-    return statistics.average(xs)\n+    return statistics.mean(xs) if xs else 0",
+          "path": "input.py"
+        },
+        "call_id": "call_wxgh5nqq",
+        "function_index": 0
+      },
+      "tool_result": {
+        "status": "success",
+        "message": "Memory candidate updated (dry-run; target file unchanged)",
+        "evidence": {
+          "preview": "--- a/input.py\n+++ b/input.py\n@@ -1,3 +1,3 @@\n import statistics\n def mean(xs):\n-    return statistics.average(xs)\n+    return statistics.mean(xs) if xs else 0\n",
+          "normalized_patch": "--- a/input.py\n+++ b/input.py\n@@ -1,3 +1,3 @@\n import statistics\n def mean(xs):\n-    return statistics.average(xs)\n+    return statistics.mean(xs) if xs else 0\n",
+          "written": false,
+          "before": {
+            "version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+            "sha256": "c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+            "lines": 3
+          },
+          "after": {
+            "version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "sha256": "36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "lines": 3
+          },
+          "regression_guard": {
+            "blocked": false,
+            "findings": [],
+            "changed_lines": 2,
+            "changed_files": 1,
+            "heuristic": true
+          },
+          "validation_state": {
+            "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "required_checks": {
+              "execute": "stale",
+              "run_pytest": "stale",
+              "validate_apis": "stale",
+              "validate_packages": "stale"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "cached": false
+      },
+      "timestamp": "2026-09-16T13:11:01.863870+00:00",
+      "elapsed_seconds": 2.860000000044238,
+      "raw_response": {
+        "content": "The API validation failed because `statistics.average` does not exist. I need to fix the implementation to use the correct function for calculating the mean.",
+        "tool_calls": [
+          {
+            "id": "call_wxgh5nqq",
+            "function": {
+              "index": 0,
+              "name": "apply_patch",
+              "arguments": {
+                "patch": "--- a/input.py\n+++ b/input.py\n@@ -1,3 +1,3 @@\n import statistics\n def mean(xs):\n-    return statistics.average(xs)\n+    return statistics.mean(xs) if xs else 0",
+                "path": "input.py"
+              }
+            }
+          }
+        ],
+        "argument_type": "object",
+        "usage": {
+          "prompt_eval_count": 3254,
+          "eval_count": 107
+        },
+        "provider_model": "qwen3-coder:30b"
+      },
+      "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+      "decision_summary": "The API validation failed because `statistics.average` does not exist. I need to fix the implementation to use the correct function for calculating the mean.",
+      "observation": {
+        "status": "success",
+        "message": "Memory candidate updated (dry-run; target file unchanged)",
+        "evidence": {
+          "preview": "--- a/input.py\n+++ b/input.py\n@@ -1,3 +1,3 @@\n import statistics\n def mean(xs):\n-    return statistics.average(xs)\n+    return statistics.mean(xs) if xs else 0\n",
+          "normalized_patch": "--- a/input.py\n+++ b/input.py\n@@ -1,3 +1,3 @@\n import statistics\n def mean(xs):\n-    return statistics.average(xs)\n+    return statistics.mean(xs) if xs else 0\n",
+          "written": false,
+          "before": {
+            "version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+            "sha256": "c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+            "lines": 3
+          },
+          "after": {
+            "version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "sha256": "36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "lines": 3
+          },
+          "regression_guard": {
+            "blocked": false,
+            "findings": [],
+            "changed_lines": 2,
+            "changed_files": 1,
+            "heuristic": true
+          },
+          "validation_state": {
+            "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "required_checks": {
+              "execute": "stale",
+              "run_pytest": "stale",
+              "validate_apis": "stale",
+              "validate_packages": "stale"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "cached": false
+      },
+      "raw_result_ref": "#/trajectory/1/tool_result",
+      "state_transition": {
+        "from_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+        "to_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "checks_before": {
+          "execute": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+          "validate_packages": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe"
+        },
+        "checks_after": {},
+        "outcome": "observation"
+      },
+      "cached": false,
+      "observed_steps": [
+        1
+      ]
+    },
+    {
+      "step": 3,
+      "thought": "Selected tool execute",
+      "tool_call": {
+        "name": "execute",
+        "arguments": {},
+        "call_id": "call_o7iodjft",
+        "function_index": 0
+      },
+      "tool_result": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.03942889999598265,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "stale",
+              "validate_apis": "stale",
+              "validate_packages": "stale"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "cached": false
+      },
+      "timestamp": "2026-09-16T13:11:04.452248+00:00",
+      "elapsed_seconds": 2.5939999999827705,
+      "raw_response": {
+        "content": "Selected tool execute",
+        "tool_calls": [
+          {
+            "id": "call_o7iodjft",
+            "function": {
+              "index": 0,
+              "name": "execute",
+              "arguments": {}
+            }
+          }
+        ],
+        "argument_type": "object",
+        "usage": {
+          "prompt_eval_count": 3883,
+          "eval_count": 12
+        },
+        "provider_model": "qwen3-coder:30b"
+      },
+      "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+      "decision_summary": "Selected tool execute",
+      "observation": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.03942889999598265,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "stale",
+              "validate_apis": "stale",
+              "validate_packages": "stale"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "cached": false
+      },
+      "raw_result_ref": "#/trajectory/2/tool_result",
+      "state_transition": {
+        "from_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "to_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "checks_before": {},
+        "checks_after": {
+          "execute": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a"
+        },
+        "outcome": "observation"
+      },
+      "cached": false,
+      "observed_steps": [
+        1,
+        2
+      ]
+    },
+    {
+      "step": 4,
+      "thought": "Selected tool run_pytest",
+      "tool_call": {
+        "name": "run_pytest",
+        "arguments": {},
+        "call_id": "call_1xgsl7k0",
+        "function_index": 0
+      },
+      "tool_result": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": ".                                                                        [100%]\n1 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.2587943999678828,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "stale",
+              "validate_packages": "stale"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "cached": false
+      },
+      "timestamp": "2026-09-16T13:11:08.839894+00:00",
+      "elapsed_seconds": 4.375,
+      "raw_response": {
+        "content": "Selected tool run_pytest",
+        "tool_calls": [
+          {
+            "id": "call_1xgsl7k0",
+            "function": {
+              "index": 0,
+              "name": "run_pytest",
+              "arguments": {}
+            }
+          }
+        ],
+        "argument_type": "object",
+        "usage": {
+          "prompt_eval_count": 4246,
+          "eval_count": 20
+        },
+        "provider_model": "qwen3-coder:30b"
+      },
+      "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+      "decision_summary": "Selected tool run_pytest",
+      "observation": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": ".                                                                        [100%]\n1 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.2587943999678828,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "stale",
+              "validate_packages": "stale"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "cached": false
+      },
+      "raw_result_ref": "#/trajectory/3/tool_result",
+      "state_transition": {
+        "from_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "to_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "checks_before": {
+          "execute": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a"
+        },
+        "checks_after": {
+          "execute": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "run_pytest": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a"
+        },
+        "outcome": "observation"
+      },
+      "cached": false,
+      "observed_steps": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "step": 5,
+      "thought": "Selected tool validate_apis",
+      "tool_call": {
+        "name": "validate_apis",
+        "arguments": {},
+        "call_id": "call_mhsh72r6",
+        "function_index": 0
+      },
+      "tool_result": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "statistics.mean",
+                "package": "statistics",
+                "module": "statistics",
+                "object_path": "mean",
+                "call_type": "function_or_attribute",
+                "line_number": 3,
+                "source": "statistics.mean",
+                "receiver": "statistics",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "statistics",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "stale"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "cached": false
+      },
+      "timestamp": "2026-09-16T13:11:12.738832+00:00",
+      "elapsed_seconds": 3.9060000000172295,
+      "raw_response": {
+        "content": "Selected tool validate_apis",
+        "tool_calls": [
+          {
+            "id": "call_mhsh72r6",
+            "function": {
+              "index": 0,
+              "name": "validate_apis",
+              "arguments": {}
+            }
+          }
+        ],
+        "argument_type": "object",
+        "usage": {
+          "prompt_eval_count": 4633,
+          "eval_count": 20
+        },
+        "provider_model": "qwen3-coder:30b"
+      },
+      "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+      "decision_summary": "Selected tool validate_apis",
+      "observation": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "statistics.mean",
+                "package": "statistics",
+                "module": "statistics",
+                "object_path": "mean",
+                "call_type": "function_or_attribute",
+                "line_number": 3,
+                "source": "statistics.mean",
+                "receiver": "statistics",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "statistics",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "stale"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "cached": false
+      },
+      "raw_result_ref": "#/trajectory/4/tool_result",
+      "state_transition": {
+        "from_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "to_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "checks_before": {
+          "execute": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "run_pytest": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a"
+        },
+        "checks_after": {
+          "execute": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "run_pytest": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "validate_apis": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a"
+        },
+        "outcome": "observation"
+      },
+      "cached": false,
+      "observed_steps": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "step": 6,
+      "thought": "Selected tool validate_packages",
+      "tool_call": {
+        "name": "validate_packages",
+        "arguments": {},
+        "call_id": "call_nf11569j",
+        "function_index": 0
+      },
+      "tool_result": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "statistics",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": true,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "cached": false
+      },
+      "timestamp": "2026-09-16T13:11:16.530840+00:00",
+      "elapsed_seconds": 3.7969999999622814,
+      "raw_response": {
+        "content": "Selected tool validate_packages",
+        "tool_calls": [
+          {
+            "id": "call_nf11569j",
+            "function": {
+              "index": 0,
+              "name": "validate_packages",
+              "arguments": {}
+            }
+          }
+        ],
+        "argument_type": "object",
+        "usage": {
+          "prompt_eval_count": 5060,
+          "eval_count": 18
+        },
+        "provider_model": "qwen3-coder:30b"
+      },
+      "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+      "decision_summary": "Selected tool validate_packages",
+      "observation": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "statistics",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": true,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "cached": false
+      },
+      "raw_result_ref": "#/trajectory/5/tool_result",
+      "state_transition": {
+        "from_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "to_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "checks_before": {
+          "execute": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "run_pytest": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "validate_apis": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a"
+        },
+        "checks_after": {
+          "execute": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "run_pytest": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "validate_apis": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "validate_packages": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a"
+        },
+        "outcome": "observation"
+      },
+      "cached": false,
+      "observed_steps": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "step": 7,
+      "thought": "The implementation has been successfully updated to use `statistics.mean` instead of the non-existent `statistics.average`. All required checks (execute, run_pytest, validate_apis, validate_packages) are now passing. The solution correctly returns the mean for a list of numbers and returns 0 for an empty list, retaining fractional values as required.",
+      "tool_call": {
+        "name": "finish",
+        "arguments": {
+          "success": true,
+          "conclusion": "The implementation has been fixed to use statistics.mean instead of statistics.average, which resolves the AttributeError. The solution now correctly handles all test cases: returning the mean for non-empty lists and 0 for empty lists, while preserving fractional values."
+        },
+        "call_id": "call_ur7ypenn",
+        "function_index": 0
+      },
+      "tool_result": {
+        "status": "success",
+        "message": "Model submitted conclusion",
+        "evidence": {
+          "required_checks": [
+            "execute",
+            "run_pytest",
+            "validate_apis",
+            "validate_packages"
+          ],
+          "missing_checks": [],
+          "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "context_version": "9622a805b17f13518d2251397e5d5b9ee6b38b05041bbc52342fd362c5538504",
+          "regression_guard": {
+            "blocked": false,
+            "findings": [],
+            "changed_lines": 2,
+            "changed_files": 1,
+            "heuristic": true
+          },
+          "host_status": "PASS",
+          "conclusion": "The implementation has been fixed to use statistics.mean instead of statistics.average, which resolves the AttributeError. The solution now correctly handles all test cases: returning the mean for non-empty lists and 0 for empty lists, while preserving fractional values.",
+          "claimed_success": true,
+          "outcome": "success",
+          "validation_state": {
+            "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": true,
+            "regression_blocked": false
+          },
+          "false_success": false
+        },
+        "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "cached": false
+      },
+      "timestamp": "2026-09-16T13:11:24.298374+00:00",
+      "elapsed_seconds": 7.76500000001397,
+      "raw_response": {
+        "content": "The implementation has been successfully updated to use `statistics.mean` instead of the non-existent `statistics.average`. All required checks (execute, run_pytest, validate_apis, validate_packages) are now passing. The solution correctly returns the mean for a list of numbers and returns 0 for an empty list, retaining fractional values as required.",
+        "tool_calls": [
+          {
+            "id": "call_ur7ypenn",
+            "function": {
+              "index": 0,
+              "name": "finish",
+              "arguments": {
+                "success": true,
+                "conclusion": "The implementation has been fixed to use statistics.mean instead of statistics.average, which resolves the AttributeError. The solution now correctly handles all test cases: returning the mean for non-empty lists and 0 for empty lists, while preserving fractional values."
+              }
+            }
+          }
+        ],
+        "argument_type": "object",
+        "usage": {
+          "prompt_eval_count": 5391,
+          "eval_count": 146
+        },
+        "provider_model": "qwen3-coder:30b"
+      },
+      "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+      "decision_summary": "The implementation has been successfully updated to use `statistics.mean` instead of the non-existent `statistics.average`. All required checks (execute, run_pytest, validate_apis, validate_packages) are now passing. The solution correctly returns the mean for a list of numbers and returns 0 for an empty list, retaining fractional values as required.",
+      "observation": {
+        "status": "success",
+        "message": "Model submitted conclusion",
+        "evidence": {
+          "required_checks": [
+            "execute",
+            "run_pytest",
+            "validate_apis",
+            "validate_packages"
+          ],
+          "missing_checks": [],
+          "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "context_version": "9622a805b17f13518d2251397e5d5b9ee6b38b05041bbc52342fd362c5538504",
+          "regression_guard": {
+            "blocked": false,
+            "findings": [],
+            "changed_lines": 2,
+            "changed_files": 1,
+            "heuristic": true
+          },
+          "host_status": "PASS",
+          "conclusion": "The implementation has been fixed to use statistics.mean instead of statistics.average, which resolves the AttributeError. The solution now correctly handles all test cases: returning the mean for non-empty lists and 0 for empty lists, while preserving fractional values.",
+          "claimed_success": true,
+          "outcome": "success",
+          "validation_state": {
+            "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": true,
+            "regression_blocked": false
+          },
+          "false_success": false
+        },
+        "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "cached": false
+      },
+      "raw_result_ref": "#/trajectory/6/tool_result",
+      "state_transition": {
+        "from_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "to_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "checks_before": {
+          "execute": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "run_pytest": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "validate_apis": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "validate_packages": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a"
+        },
+        "checks_after": {
+          "execute": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "run_pytest": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "validate_apis": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "validate_packages": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a"
+        },
+        "outcome": "finish"
+      },
+      "cached": false,
+      "observed_steps": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "final_verification": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+    "context_version": "9622a805b17f13518d2251397e5d5b9ee6b38b05041bbc52342fd362c5538504",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 2,
+      "changed_files": 1,
+      "heuristic": true
+    },
+    "host_status": "PASS",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.04088889999547973,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "failed",
+              "validate_packages": "failed"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": ".                                                                        [100%]\n1 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.25779400003375486,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "failed",
+              "validate_packages": "failed"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "statistics.mean",
+                "package": "statistics",
+                "module": "statistics",
+                "object_path": "mean",
+                "call_type": "function_or_attribute",
+                "line_number": 3,
+                "source": "statistics.mean",
+                "receiver": "statistics",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "statistics",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "failed"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "statistics",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": true,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "cached": false
+      }
+    }
+  },
+  "apply": false,
+  "rollback": {
+    "attempted": false
+  },
+  "agent_invoked": true,
+  "rejected_finish_count": 0,
+  "initial_verification": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [
+      "run_pytest",
+      "validate_apis"
+    ],
+    "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+    "context_version": "9622a805b17f13518d2251397e5d5b9ee6b38b05041bbc52342fd362c5538504",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "FAIL",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.040226200013421476,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": false,
+          "execution": {
+            "status": "failed",
+            "return_code": 1,
+            "stdout": "F                                                                        [100%]\n================================== FAILURES ===================================\n__________________________________ test_mean __________________________________\n\n    def test_mean():\n>       assert mean([1, 2]) == 1.5\n               ^^^^^^^^^^^^\n\ntest_solution.py:3: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nxs = [1, 2]\n\n    def mean(xs):\n>       return statistics.average(xs)\n               ^^^^^^^^^^^^^^^^^^\nE       AttributeError: module 'statistics' has no attribute 'average'\n\nsolution.py:3: AttributeError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_mean - AttributeError: module 'statistics' has ...\n1 failed in 0.07s\n",
+            "stderr": "",
+            "error_type": "AttributeError",
+            "error_category": "attribute_error",
+            "execution_time": 0.31260740000288934,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": false,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "statistics.average",
+                "package": "statistics",
+                "module": "statistics",
+                "object_path": "average",
+                "call_type": "function_or_attribute",
+                "line_number": 3,
+                "source": "statistics.average",
+                "receiver": "statistics",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": false,
+              "status": "hallucinated_function",
+              "reason": "attribute_not_found:average",
+              "resolved_module": "statistics",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "failed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "statistics",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "failed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+        "cached": false
+      }
+    }
+  },
+  "loop_result": {
+    "final_status": "PASS",
+    "termination_reason": "finish",
+    "candidate_code": "import statistics\ndef mean(xs):\n    return statistics.mean(xs) if xs else 0\n",
+    "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+    "trajectory": [
+      {
+        "step": 1,
+        "thought": "Selected tool validate_apis",
+        "tool_call": {
+          "name": "validate_apis",
+          "arguments": {},
+          "call_id": "call_jn5cldqt",
+          "function_index": 0
+        },
+        "tool_result": {
+          "status": "success",
+          "message": "API validation",
+          "evidence": {
+            "passed": false,
+            "syntax_error": null,
+            "results": [
+              {
+                "reference": {
+                  "canonical_path": "statistics.average",
+                  "package": "statistics",
+                  "module": "statistics",
+                  "object_path": "average",
+                  "call_type": "function_or_attribute",
+                  "line_number": 3,
+                  "source": "statistics.average",
+                  "receiver": "statistics",
+                  "arg_count": 1,
+                  "keyword_names": [],
+                  "is_call": true
+                },
+                "package_valid": true,
+                "module_valid": true,
+                "api_valid": false,
+                "status": "hallucinated_function",
+                "reason": "attribute_not_found:average",
+                "resolved_module": "statistics",
+                "suggestions": []
+              }
+            ],
+            "validation_state": {
+              "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "failed",
+                "validate_apis": "failed",
+                "validate_packages": "passed"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+          "cached": false
+        },
+        "timestamp": "2026-09-16T13:10:59.008655+00:00",
+        "elapsed_seconds": 2.155999999959022,
+        "raw_response": {
+          "content": "Selected tool validate_apis",
+          "tool_calls": [
+            {
+              "id": "call_jn5cldqt",
+              "function": {
+                "index": 0,
+                "name": "validate_apis",
+                "arguments": {}
+              }
+            }
+          ],
+          "argument_type": "object",
+          "usage": {
+            "prompt_eval_count": 2878,
+            "eval_count": 14
+          },
+          "provider_model": "qwen3-coder:30b"
+        },
+        "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+        "decision_summary": "Selected tool validate_apis",
+        "observation": {
+          "status": "success",
+          "message": "API validation",
+          "evidence": {
+            "passed": false,
+            "syntax_error": null,
+            "results": [
+              {
+                "reference": {
+                  "canonical_path": "statistics.average",
+                  "package": "statistics",
+                  "module": "statistics",
+                  "object_path": "average",
+                  "call_type": "function_or_attribute",
+                  "line_number": 3,
+                  "source": "statistics.average",
+                  "receiver": "statistics",
+                  "arg_count": 1,
+                  "keyword_names": [],
+                  "is_call": true
+                },
+                "package_valid": true,
+                "module_valid": true,
+                "api_valid": false,
+                "status": "hallucinated_function",
+                "reason": "attribute_not_found:average",
+                "resolved_module": "statistics",
+                "suggestions": []
+              }
+            ],
+            "validation_state": {
+              "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "failed",
+                "validate_apis": "failed",
+                "validate_packages": "passed"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+          "cached": false
+        },
+        "raw_result_ref": "#/trajectory/0/tool_result",
+        "state_transition": {
+          "from_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+          "to_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+          "checks_before": {
+            "execute": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+            "validate_packages": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe"
+          },
+          "checks_after": {
+            "execute": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+            "validate_packages": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe"
+          },
+          "outcome": "observation"
+        },
+        "cached": false,
+        "observed_steps": []
+      },
+      {
+        "step": 2,
+        "thought": "The API validation failed because `statistics.average` does not exist. I need to fix the implementation to use the correct function for calculating the mean.",
+        "tool_call": {
+          "name": "apply_patch",
+          "arguments": {
+            "patch": "--- a/input.py\n+++ b/input.py\n@@ -1,3 +1,3 @@\n import statistics\n def mean(xs):\n-    return statistics.average(xs)\n+    return statistics.mean(xs) if xs else 0",
+            "path": "input.py"
+          },
+          "call_id": "call_wxgh5nqq",
+          "function_index": 0
+        },
+        "tool_result": {
+          "status": "success",
+          "message": "Memory candidate updated (dry-run; target file unchanged)",
+          "evidence": {
+            "preview": "--- a/input.py\n+++ b/input.py\n@@ -1,3 +1,3 @@\n import statistics\n def mean(xs):\n-    return statistics.average(xs)\n+    return statistics.mean(xs) if xs else 0\n",
+            "normalized_patch": "--- a/input.py\n+++ b/input.py\n@@ -1,3 +1,3 @@\n import statistics\n def mean(xs):\n-    return statistics.average(xs)\n+    return statistics.mean(xs) if xs else 0\n",
+            "written": false,
+            "before": {
+              "version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+              "sha256": "c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+              "lines": 3
+            },
+            "after": {
+              "version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+              "sha256": "36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+              "lines": 3
+            },
+            "regression_guard": {
+              "blocked": false,
+              "findings": [],
+              "changed_lines": 2,
+              "changed_files": 1,
+              "heuristic": true
+            },
+            "validation_state": {
+              "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+              "required_checks": {
+                "execute": "stale",
+                "run_pytest": "stale",
+                "validate_apis": "stale",
+                "validate_packages": "stale"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "cached": false
+        },
+        "timestamp": "2026-09-16T13:11:01.863870+00:00",
+        "elapsed_seconds": 2.860000000044238,
+        "raw_response": {
+          "content": "The API validation failed because `statistics.average` does not exist. I need to fix the implementation to use the correct function for calculating the mean.",
+          "tool_calls": [
+            {
+              "id": "call_wxgh5nqq",
+              "function": {
+                "index": 0,
+                "name": "apply_patch",
+                "arguments": {
+                  "patch": "--- a/input.py\n+++ b/input.py\n@@ -1,3 +1,3 @@\n import statistics\n def mean(xs):\n-    return statistics.average(xs)\n+    return statistics.mean(xs) if xs else 0",
+                  "path": "input.py"
+                }
+              }
+            }
+          ],
+          "argument_type": "object",
+          "usage": {
+            "prompt_eval_count": 3254,
+            "eval_count": 107
+          },
+          "provider_model": "qwen3-coder:30b"
+        },
+        "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "decision_summary": "The API validation failed because `statistics.average` does not exist. I need to fix the implementation to use the correct function for calculating the mean.",
+        "observation": {
+          "status": "success",
+          "message": "Memory candidate updated (dry-run; target file unchanged)",
+          "evidence": {
+            "preview": "--- a/input.py\n+++ b/input.py\n@@ -1,3 +1,3 @@\n import statistics\n def mean(xs):\n-    return statistics.average(xs)\n+    return statistics.mean(xs) if xs else 0\n",
+            "normalized_patch": "--- a/input.py\n+++ b/input.py\n@@ -1,3 +1,3 @@\n import statistics\n def mean(xs):\n-    return statistics.average(xs)\n+    return statistics.mean(xs) if xs else 0\n",
+            "written": false,
+            "before": {
+              "version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+              "sha256": "c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+              "lines": 3
+            },
+            "after": {
+              "version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+              "sha256": "36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+              "lines": 3
+            },
+            "regression_guard": {
+              "blocked": false,
+              "findings": [],
+              "changed_lines": 2,
+              "changed_files": 1,
+              "heuristic": true
+            },
+            "validation_state": {
+              "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+              "required_checks": {
+                "execute": "stale",
+                "run_pytest": "stale",
+                "validate_apis": "stale",
+                "validate_packages": "stale"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "cached": false
+        },
+        "raw_result_ref": "#/trajectory/1/tool_result",
+        "state_transition": {
+          "from_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+          "to_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "checks_before": {
+            "execute": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+            "validate_packages": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe"
+          },
+          "checks_after": {},
+          "outcome": "observation"
+        },
+        "cached": false,
+        "observed_steps": [
+          1
+        ]
+      },
+      {
+        "step": 3,
+        "thought": "Selected tool execute",
+        "tool_call": {
+          "name": "execute",
+          "arguments": {},
+          "call_id": "call_o7iodjft",
+          "function_index": 0
+        },
+        "tool_result": {
+          "status": "success",
+          "message": "Execution completed",
+          "evidence": {
+            "passed": true,
+            "execution": {
+              "status": "passed",
+              "return_code": 0,
+              "stdout": "",
+              "stderr": "",
+              "error_type": null,
+              "error_category": "unknown",
+              "execution_time": 0.03942889999598265,
+              "timed_out": false
+            },
+            "validation_state": {
+              "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "stale",
+                "validate_apis": "stale",
+                "validate_packages": "stale"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "cached": false
+        },
+        "timestamp": "2026-09-16T13:11:04.452248+00:00",
+        "elapsed_seconds": 2.5939999999827705,
+        "raw_response": {
+          "content": "Selected tool execute",
+          "tool_calls": [
+            {
+              "id": "call_o7iodjft",
+              "function": {
+                "index": 0,
+                "name": "execute",
+                "arguments": {}
+              }
+            }
+          ],
+          "argument_type": "object",
+          "usage": {
+            "prompt_eval_count": 3883,
+            "eval_count": 12
+          },
+          "provider_model": "qwen3-coder:30b"
+        },
+        "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "decision_summary": "Selected tool execute",
+        "observation": {
+          "status": "success",
+          "message": "Execution completed",
+          "evidence": {
+            "passed": true,
+            "execution": {
+              "status": "passed",
+              "return_code": 0,
+              "stdout": "",
+              "stderr": "",
+              "error_type": null,
+              "error_category": "unknown",
+              "execution_time": 0.03942889999598265,
+              "timed_out": false
+            },
+            "validation_state": {
+              "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "stale",
+                "validate_apis": "stale",
+                "validate_packages": "stale"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "cached": false
+        },
+        "raw_result_ref": "#/trajectory/2/tool_result",
+        "state_transition": {
+          "from_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "to_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "checks_before": {},
+          "checks_after": {
+            "execute": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a"
+          },
+          "outcome": "observation"
+        },
+        "cached": false,
+        "observed_steps": [
+          1,
+          2
+        ]
+      },
+      {
+        "step": 4,
+        "thought": "Selected tool run_pytest",
+        "tool_call": {
+          "name": "run_pytest",
+          "arguments": {},
+          "call_id": "call_1xgsl7k0",
+          "function_index": 0
+        },
+        "tool_result": {
+          "status": "success",
+          "message": "Execution completed",
+          "evidence": {
+            "passed": true,
+            "execution": {
+              "status": "passed",
+              "return_code": 0,
+              "stdout": ".                                                                        [100%]\n1 passed in 0.01s\n",
+              "stderr": "",
+              "error_type": null,
+              "error_category": "unknown",
+              "execution_time": 0.2587943999678828,
+              "timed_out": false
+            },
+            "validation_state": {
+              "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "stale",
+                "validate_packages": "stale"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "cached": false
+        },
+        "timestamp": "2026-09-16T13:11:08.839894+00:00",
+        "elapsed_seconds": 4.375,
+        "raw_response": {
+          "content": "Selected tool run_pytest",
+          "tool_calls": [
+            {
+              "id": "call_1xgsl7k0",
+              "function": {
+                "index": 0,
+                "name": "run_pytest",
+                "arguments": {}
+              }
+            }
+          ],
+          "argument_type": "object",
+          "usage": {
+            "prompt_eval_count": 4246,
+            "eval_count": 20
+          },
+          "provider_model": "qwen3-coder:30b"
+        },
+        "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "decision_summary": "Selected tool run_pytest",
+        "observation": {
+          "status": "success",
+          "message": "Execution completed",
+          "evidence": {
+            "passed": true,
+            "execution": {
+              "status": "passed",
+              "return_code": 0,
+              "stdout": ".                                                                        [100%]\n1 passed in 0.01s\n",
+              "stderr": "",
+              "error_type": null,
+              "error_category": "unknown",
+              "execution_time": 0.2587943999678828,
+              "timed_out": false
+            },
+            "validation_state": {
+              "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "stale",
+                "validate_packages": "stale"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "cached": false
+        },
+        "raw_result_ref": "#/trajectory/3/tool_result",
+        "state_transition": {
+          "from_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "to_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "checks_before": {
+            "execute": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a"
+          },
+          "checks_after": {
+            "execute": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "run_pytest": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a"
+          },
+          "outcome": "observation"
+        },
+        "cached": false,
+        "observed_steps": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "step": 5,
+        "thought": "Selected tool validate_apis",
+        "tool_call": {
+          "name": "validate_apis",
+          "arguments": {},
+          "call_id": "call_mhsh72r6",
+          "function_index": 0
+        },
+        "tool_result": {
+          "status": "success",
+          "message": "API validation",
+          "evidence": {
+            "passed": true,
+            "syntax_error": null,
+            "results": [
+              {
+                "reference": {
+                  "canonical_path": "statistics.mean",
+                  "package": "statistics",
+                  "module": "statistics",
+                  "object_path": "mean",
+                  "call_type": "function_or_attribute",
+                  "line_number": 3,
+                  "source": "statistics.mean",
+                  "receiver": "statistics",
+                  "arg_count": 1,
+                  "keyword_names": [],
+                  "is_call": true
+                },
+                "package_valid": true,
+                "module_valid": true,
+                "api_valid": true,
+                "status": "valid",
+                "reason": null,
+                "resolved_module": "statistics",
+                "suggestions": []
+              }
+            ],
+            "validation_state": {
+              "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "passed",
+                "validate_packages": "stale"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "cached": false
+        },
+        "timestamp": "2026-09-16T13:11:12.738832+00:00",
+        "elapsed_seconds": 3.9060000000172295,
+        "raw_response": {
+          "content": "Selected tool validate_apis",
+          "tool_calls": [
+            {
+              "id": "call_mhsh72r6",
+              "function": {
+                "index": 0,
+                "name": "validate_apis",
+                "arguments": {}
+              }
+            }
+          ],
+          "argument_type": "object",
+          "usage": {
+            "prompt_eval_count": 4633,
+            "eval_count": 20
+          },
+          "provider_model": "qwen3-coder:30b"
+        },
+        "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "decision_summary": "Selected tool validate_apis",
+        "observation": {
+          "status": "success",
+          "message": "API validation",
+          "evidence": {
+            "passed": true,
+            "syntax_error": null,
+            "results": [
+              {
+                "reference": {
+                  "canonical_path": "statistics.mean",
+                  "package": "statistics",
+                  "module": "statistics",
+                  "object_path": "mean",
+                  "call_type": "function_or_attribute",
+                  "line_number": 3,
+                  "source": "statistics.mean",
+                  "receiver": "statistics",
+                  "arg_count": 1,
+                  "keyword_names": [],
+                  "is_call": true
+                },
+                "package_valid": true,
+                "module_valid": true,
+                "api_valid": true,
+                "status": "valid",
+                "reason": null,
+                "resolved_module": "statistics",
+                "suggestions": []
+              }
+            ],
+            "validation_state": {
+              "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "passed",
+                "validate_packages": "stale"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "cached": false
+        },
+        "raw_result_ref": "#/trajectory/4/tool_result",
+        "state_transition": {
+          "from_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "to_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "checks_before": {
+            "execute": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "run_pytest": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a"
+          },
+          "checks_after": {
+            "execute": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "run_pytest": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "validate_apis": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a"
+          },
+          "outcome": "observation"
+        },
+        "cached": false,
+        "observed_steps": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "step": 6,
+        "thought": "Selected tool validate_packages",
+        "tool_call": {
+          "name": "validate_packages",
+          "arguments": {},
+          "call_id": "call_nf11569j",
+          "function_index": 0
+        },
+        "tool_result": {
+          "status": "success",
+          "message": "Package validation",
+          "evidence": {
+            "passed": true,
+            "syntax_error": null,
+            "results": [
+              {
+                "package": "statistics",
+                "exists": true,
+                "status": "valid",
+                "version": null,
+                "reason": null
+              }
+            ],
+            "validation_state": {
+              "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "passed",
+                "validate_packages": "passed"
+              },
+              "ready_to_finish_successfully": true,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "cached": false
+        },
+        "timestamp": "2026-09-16T13:11:16.530840+00:00",
+        "elapsed_seconds": 3.7969999999622814,
+        "raw_response": {
+          "content": "Selected tool validate_packages",
+          "tool_calls": [
+            {
+              "id": "call_nf11569j",
+              "function": {
+                "index": 0,
+                "name": "validate_packages",
+                "arguments": {}
+              }
+            }
+          ],
+          "argument_type": "object",
+          "usage": {
+            "prompt_eval_count": 5060,
+            "eval_count": 18
+          },
+          "provider_model": "qwen3-coder:30b"
+        },
+        "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "decision_summary": "Selected tool validate_packages",
+        "observation": {
+          "status": "success",
+          "message": "Package validation",
+          "evidence": {
+            "passed": true,
+            "syntax_error": null,
+            "results": [
+              {
+                "package": "statistics",
+                "exists": true,
+                "status": "valid",
+                "version": null,
+                "reason": null
+              }
+            ],
+            "validation_state": {
+              "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "passed",
+                "validate_packages": "passed"
+              },
+              "ready_to_finish_successfully": true,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "cached": false
+        },
+        "raw_result_ref": "#/trajectory/5/tool_result",
+        "state_transition": {
+          "from_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "to_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "checks_before": {
+            "execute": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "run_pytest": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "validate_apis": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a"
+          },
+          "checks_after": {
+            "execute": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "run_pytest": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "validate_apis": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "validate_packages": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a"
+          },
+          "outcome": "observation"
+        },
+        "cached": false,
+        "observed_steps": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "step": 7,
+        "thought": "The implementation has been successfully updated to use `statistics.mean` instead of the non-existent `statistics.average`. All required checks (execute, run_pytest, validate_apis, validate_packages) are now passing. The solution correctly returns the mean for a list of numbers and returns 0 for an empty list, retaining fractional values as required.",
+        "tool_call": {
+          "name": "finish",
+          "arguments": {
+            "success": true,
+            "conclusion": "The implementation has been fixed to use statistics.mean instead of statistics.average, which resolves the AttributeError. The solution now correctly handles all test cases: returning the mean for non-empty lists and 0 for empty lists, while preserving fractional values."
+          },
+          "call_id": "call_ur7ypenn",
+          "function_index": 0
+        },
+        "tool_result": {
+          "status": "success",
+          "message": "Model submitted conclusion",
+          "evidence": {
+            "required_checks": [
+              "execute",
+              "run_pytest",
+              "validate_apis",
+              "validate_packages"
+            ],
+            "missing_checks": [],
+            "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "context_version": "9622a805b17f13518d2251397e5d5b9ee6b38b05041bbc52342fd362c5538504",
+            "regression_guard": {
+              "blocked": false,
+              "findings": [],
+              "changed_lines": 2,
+              "changed_files": 1,
+              "heuristic": true
+            },
+            "host_status": "PASS",
+            "conclusion": "The implementation has been fixed to use statistics.mean instead of statistics.average, which resolves the AttributeError. The solution now correctly handles all test cases: returning the mean for non-empty lists and 0 for empty lists, while preserving fractional values.",
+            "claimed_success": true,
+            "outcome": "success",
+            "validation_state": {
+              "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "passed",
+                "validate_packages": "passed"
+              },
+              "ready_to_finish_successfully": true,
+              "regression_blocked": false
+            },
+            "false_success": false
+          },
+          "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "cached": false
+        },
+        "timestamp": "2026-09-16T13:11:24.298374+00:00",
+        "elapsed_seconds": 7.76500000001397,
+        "raw_response": {
+          "content": "The implementation has been successfully updated to use `statistics.mean` instead of the non-existent `statistics.average`. All required checks (execute, run_pytest, validate_apis, validate_packages) are now passing. The solution correctly returns the mean for a list of numbers and returns 0 for an empty list, retaining fractional values as required.",
+          "tool_calls": [
+            {
+              "id": "call_ur7ypenn",
+              "function": {
+                "index": 0,
+                "name": "finish",
+                "arguments": {
+                  "success": true,
+                  "conclusion": "The implementation has been fixed to use statistics.mean instead of statistics.average, which resolves the AttributeError. The solution now correctly handles all test cases: returning the mean for non-empty lists and 0 for empty lists, while preserving fractional values."
+                }
+              }
+            }
+          ],
+          "argument_type": "object",
+          "usage": {
+            "prompt_eval_count": 5391,
+            "eval_count": 146
+          },
+          "provider_model": "qwen3-coder:30b"
+        },
+        "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+        "decision_summary": "The implementation has been successfully updated to use `statistics.mean` instead of the non-existent `statistics.average`. All required checks (execute, run_pytest, validate_apis, validate_packages) are now passing. The solution correctly returns the mean for a list of numbers and returns 0 for an empty list, retaining fractional values as required.",
+        "observation": {
+          "status": "success",
+          "message": "Model submitted conclusion",
+          "evidence": {
+            "required_checks": [
+              "execute",
+              "run_pytest",
+              "validate_apis",
+              "validate_packages"
+            ],
+            "missing_checks": [],
+            "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "context_version": "9622a805b17f13518d2251397e5d5b9ee6b38b05041bbc52342fd362c5538504",
+            "regression_guard": {
+              "blocked": false,
+              "findings": [],
+              "changed_lines": 2,
+              "changed_files": 1,
+              "heuristic": true
+            },
+            "host_status": "PASS",
+            "conclusion": "The implementation has been fixed to use statistics.mean instead of statistics.average, which resolves the AttributeError. The solution now correctly handles all test cases: returning the mean for non-empty lists and 0 for empty lists, while preserving fractional values.",
+            "claimed_success": true,
+            "outcome": "success",
+            "validation_state": {
+              "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "passed",
+                "validate_packages": "passed"
+              },
+              "ready_to_finish_successfully": true,
+              "regression_blocked": false
+            },
+            "false_success": false
+          },
+          "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "cached": false
+        },
+        "raw_result_ref": "#/trajectory/6/tool_result",
+        "state_transition": {
+          "from_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "to_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+          "checks_before": {
+            "execute": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "run_pytest": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "validate_apis": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "validate_packages": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a"
+          },
+          "checks_after": {
+            "execute": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "run_pytest": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "validate_apis": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+            "validate_packages": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a"
+          },
+          "outcome": "finish"
+        },
+        "cached": false,
+        "observed_steps": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "passed_checks": {
+      "execute": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+      "run_pytest": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+      "validate_apis": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+      "validate_packages": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a"
+    },
+    "input_hashes": {
+      "D:\\My Project\\dependency-aware-codegen\\data\\interview_eval\\cases\\mean_edges\\input.py": "c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+      "D:\\My Project\\dependency-aware-codegen\\data\\interview_eval\\cases\\mean_edges\\test_input.py": "70c0e7a742b07c33dc946ce642d8d5c5ecfc7be17cee234b0e5a581021b7f89f"
+    },
+    "elapsed_seconds": 30.21799999999348,
+    "model_name": "qwen3-coder:30b",
+    "applied": false,
+    "rollback_result": "not_needed",
+    "schema_version": 2,
+    "persistence": {},
+    "capability_probe": {
+      "status": "passed",
+      "stage": "complete",
+      "reason": "Native calls, observation followup and finish verified",
+      "model_response_kind": "tool_call",
+      "cached": false,
+      "elapsed_seconds": 1.7030000000377186,
+      "transcript": [
+        {
+          "stage": "first_call",
+          "kind": "tool_call",
+          "decision_summary": "Selected tool probe_echo",
+          "tool_call": {
+            "name": "probe_echo",
+            "arguments": {
+              "token": "start"
+            },
+            "call_id": "call_d5rt2kd8",
+            "function_index": 0
+          },
+          "error_code": null,
+          "usage": {
+            "prompt_eval_count": 375,
+            "eval_count": 23
+          },
+          "response_model": "qwen3-coder:30b",
+          "argument_type": "object",
+          "tool_call_id": "call_d5rt2kd8",
+          "termination_reason": "continue",
+          "observation": {
+            "challenge": "1245287d40dbe74faaeaa7a3",
+            "next_action": "echo this challenge"
+          }
+        },
+        {
+          "stage": "observation_followup",
+          "kind": "tool_call",
+          "decision_summary": "Selected tool probe_echo",
+          "tool_call": {
+            "name": "probe_echo",
+            "arguments": {
+              "token": "1245287d40dbe74faaeaa7a3"
+            },
+            "call_id": "call_uked7x8v",
+            "function_index": 0
+          },
+          "error_code": null,
+          "usage": {
+            "prompt_eval_count": 451,
+            "eval_count": 41
+          },
+          "response_model": "qwen3-coder:30b",
+          "argument_type": "object",
+          "tool_call_id": "call_uked7x8v",
+          "termination_reason": "continue",
+          "observation": {
+            "acknowledged": true,
+            "next_action": "finish"
+          }
+        },
+        {
+          "stage": "finish",
+          "kind": "tool_call",
+          "decision_summary": "Selected tool finish",
+          "tool_call": {
+            "name": "finish",
+            "arguments": {
+              "success": true,
+              "conclusion": "Challenge acknowledged and echoed successfully."
+            },
+            "call_id": "call_6xbb302b",
+            "function_index": 0
+          },
+          "error_code": null,
+          "usage": {
+            "prompt_eval_count": 523,
+            "eval_count": 41
+          },
+          "response_model": "qwen3-coder:30b",
+          "argument_type": "object",
+          "tool_call_id": "call_6xbb302b",
+          "termination_reason": "finish",
+          "observation": {
+            "finished": true,
+            "arguments": {
+              "success": true,
+              "conclusion": "Challenge acknowledged and echoed successfully."
+            }
+          }
+        }
+      ],
+      "termination_reason": "finish"
+    },
+    "capabilities": {
+      "provider": "ollama",
+      "one_shot_repair_supported": true,
+      "native_tool_calling": "supported",
+      "capability_probe": "passed",
+      "agent_loop_recommended": true,
+      "scripted_test_provider": false
+    },
+    "false_success": false,
+    "finish_verification": {
+      "required_checks": [
+        "execute",
+        "run_pytest",
+        "validate_apis",
+        "validate_packages"
+      ],
+      "missing_checks": [],
+      "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+      "context_version": "9622a805b17f13518d2251397e5d5b9ee6b38b05041bbc52342fd362c5538504",
+      "regression_guard": {
+        "blocked": false,
+        "findings": [],
+        "changed_lines": 2,
+        "changed_files": 1,
+        "heuristic": true
+      },
+      "host_status": "PASS",
+      "false_success": false
+    },
+    "candidate_revision": 1,
+    "candidate_sha256": "36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+    "normalized_diff": "--- a/input.py\n+++ b/input.py\n@@ -1,3 +1,3 @@\n import statistics\n def mean(xs):\n-    return statistics.average(xs)\n+    return statistics.mean(xs) if xs else 0\n",
+    "config_hashes": {},
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 2,
+      "changed_files": 1,
+      "heuristic": true
+    },
+    "agent_invoked": true,
+    "initial_verification": {
+      "required_checks": [
+        "execute",
+        "run_pytest",
+        "validate_apis",
+        "validate_packages"
+      ],
+      "missing_checks": [
+        "run_pytest",
+        "validate_apis"
+      ],
+      "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+      "context_version": "9622a805b17f13518d2251397e5d5b9ee6b38b05041bbc52342fd362c5538504",
+      "regression_guard": {
+        "blocked": false,
+        "findings": [],
+        "changed_lines": 0,
+        "changed_files": 0,
+        "heuristic": true
+      },
+      "host_status": "FAIL",
+      "checks": {
+        "execute": {
+          "status": "success",
+          "message": "Execution completed",
+          "evidence": {
+            "passed": true,
+            "execution": {
+              "status": "passed",
+              "return_code": 0,
+              "stdout": "",
+              "stderr": "",
+              "error_type": null,
+              "error_category": "unknown",
+              "execution_time": 0.040226200013421476,
+              "timed_out": false
+            },
+            "validation_state": {
+              "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "missing",
+                "validate_apis": "missing",
+                "validate_packages": "missing"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+          "cached": false
+        },
+        "run_pytest": {
+          "status": "success",
+          "message": "Execution completed",
+          "evidence": {
+            "passed": false,
+            "execution": {
+              "status": "failed",
+              "return_code": 1,
+              "stdout": "F                                                                        [100%]\n================================== FAILURES ===================================\n__________________________________ test_mean __________________________________\n\n    def test_mean():\n>       assert mean([1, 2]) == 1.5\n               ^^^^^^^^^^^^\n\ntest_solution.py:3: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nxs = [1, 2]\n\n    def mean(xs):\n>       return statistics.average(xs)\n               ^^^^^^^^^^^^^^^^^^\nE       AttributeError: module 'statistics' has no attribute 'average'\n\nsolution.py:3: AttributeError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_mean - AttributeError: module 'statistics' has ...\n1 failed in 0.07s\n",
+              "stderr": "",
+              "error_type": "AttributeError",
+              "error_category": "attribute_error",
+              "execution_time": 0.31260740000288934,
+              "timed_out": false
+            },
+            "validation_state": {
+              "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "failed",
+                "validate_apis": "missing",
+                "validate_packages": "missing"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+          "cached": false
+        },
+        "validate_apis": {
+          "status": "success",
+          "message": "API validation",
+          "evidence": {
+            "passed": false,
+            "syntax_error": null,
+            "results": [
+              {
+                "reference": {
+                  "canonical_path": "statistics.average",
+                  "package": "statistics",
+                  "module": "statistics",
+                  "object_path": "average",
+                  "call_type": "function_or_attribute",
+                  "line_number": 3,
+                  "source": "statistics.average",
+                  "receiver": "statistics",
+                  "arg_count": 1,
+                  "keyword_names": [],
+                  "is_call": true
+                },
+                "package_valid": true,
+                "module_valid": true,
+                "api_valid": false,
+                "status": "hallucinated_function",
+                "reason": "attribute_not_found:average",
+                "resolved_module": "statistics",
+                "suggestions": []
+              }
+            ],
+            "validation_state": {
+              "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "failed",
+                "validate_apis": "failed",
+                "validate_packages": "missing"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+          "cached": false
+        },
+        "validate_packages": {
+          "status": "success",
+          "message": "Package validation",
+          "evidence": {
+            "passed": true,
+            "syntax_error": null,
+            "results": [
+              {
+                "package": "statistics",
+                "exists": true,
+                "status": "valid",
+                "version": null,
+                "reason": null
+              }
+            ],
+            "validation_state": {
+              "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "failed",
+                "validate_apis": "failed",
+                "validate_packages": "passed"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+          "cached": false
+        }
+      }
+    },
+    "rejected_finish_count": 0
+  },
+  "ended": "2026-09-16T13:11:25.304842+00:00",
+  "latency": 31.21799999999348,
+  "after_hashes": {
+    "code_file": "c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+    "test_file": "70c0e7a742b07c33dc946ce642d8d5c5ecfc7be17cee234b0e5a581021b7f89f"
+  },
+  "unchanged": true,
+  "candidate_changed": true,
+  "candidate_code": "import statistics\ndef mean(xs):\n    return statistics.mean(xs) if xs else 0\n",
+  "candidate_version": "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+  "candidate_versions": [
+    "0:c8146af2b22a0feca69a9b02365413bc2d68518dff22a6d598f35e12e9f3f0fe",
+    "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+    "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+    "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+    "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+    "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a",
+    "1:36685e516aedee4c8477f455e69675f1cd6619b01b5ce946a42b4bf3bfdede0a"
+  ],
+  "patches": [
+    "--- a/input.py\n+++ b/input.py\n@@ -1,3 +1,3 @@\n import statistics\n def mean(xs):\n-    return statistics.average(xs)\n+    return statistics.mean(xs) if xs else 0\n"
+  ],
+  "patch_count": 1,
+  "verification_count": 5,
+  "tokens": {
+    "input": 30694,
+    "output": 442
+  },
+  "failure_classification": null,
+  "run_id": "comparison-bc960c490a4c",
+  "comparison_identity": "bc960c490a4cb5052db0a5cbbec33e5e1abf0bc7efd4a8fa1f1ea5be943b1c96",
+  "provider": "ollama",
+  "model": "qwen3-coder:30b",
+  "resolved_config": {
+    "provider": "ollama",
+    "model": {
+      "model_name": "qwen3-coder:30b",
+      "base_url": "http://localhost:11434",
+      "max_new_tokens": 2048,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "repetition_penalty": 1.0,
+      "seed": 42,
+      "context_length": 16384,
+      "keep_alive": "10m"
+    },
+    "agent": {
+      "max_steps": 24,
+      "timeout_seconds": 300,
+      "recent_steps": 6,
+      "output_limit": 6000,
+      "protocol_limit": 3,
+      "probe_cache": false,
+      "probe_timeout": 90
+    },
+    "execution_timeout_seconds": 10,
+    "shared_initial_evidence": true,
+    "comparison": "Pure local same digest, parameters, frozen tests and M6 host checks; 2048 tokens per model call, not equal total token budgets. Formal deadline 300 seconds plus independent final host audit up to 30 seconds."
+  },
+  "raw_results_ref": "loop_mean_edges.json#/trajectory"
+}

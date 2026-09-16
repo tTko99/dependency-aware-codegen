@@ -1,0 +1,201 @@
+{
+  "id": "keyword_json_sort",
+  "cohort": "sanity",
+  "mode": "live",
+  "is_control": false,
+  "before_hashes": {
+    "code_file": "7d28ebd5543dcaf0b9e7e1c6c9be24753a0036a777d754d891814a5fb24d9524",
+    "test_file": "cbfe29794c3f040bd33f682a998917d0b552c0a5a35abf4e0738de7794399b31"
+  },
+  "after_hashes": {
+    "code_file": "7d28ebd5543dcaf0b9e7e1c6c9be24753a0036a777d754d891814a5fb24d9524",
+    "test_file": "cbfe29794c3f040bd33f682a998917d0b552c0a5a35abf4e0738de7794399b31"
+  },
+  "unchanged": true,
+  "historical_lf_match": {
+    "code_file": true,
+    "test_file": true
+  },
+  "one_shot": {
+    "status": "PASS",
+    "result": {
+      "requirement": "Serialize the dictionary with keys sorted and expose the JSON string as result.",
+      "generated_code": "import json\n\nresult = json.dumps({\"b\": 2, \"a\": 1}, sort=True)\n",
+      "analysis": {
+        "imports": [
+          {
+            "module": "json",
+            "name": null,
+            "alias": null,
+            "line_number": 1,
+            "is_from_import": false,
+            "level": 0
+          }
+        ],
+        "alias_table": {
+          "json": {
+            "local_name": "json",
+            "canonical_path": "json",
+            "import_type": "import",
+            "line_number": 1
+          }
+        },
+        "api_references": [
+          {
+            "canonical_path": "json.dumps",
+            "package": "json",
+            "module": "json",
+            "object_path": "dumps",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "json.dumps",
+            "receiver": "json",
+            "arg_count": 1,
+            "keyword_names": [
+              "sort"
+            ],
+            "is_call": true
+          }
+        ],
+        "syntax_error": null
+      },
+      "package_results": [
+        {
+          "package": "json",
+          "exists": true,
+          "status": "valid",
+          "version": null,
+          "reason": null
+        }
+      ],
+      "api_results": [
+        {
+          "reference": {
+            "canonical_path": "json.dumps",
+            "package": "json",
+            "module": "json",
+            "object_path": "dumps",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "json.dumps",
+            "receiver": "json",
+            "arg_count": 1,
+            "keyword_names": [
+              "sort"
+            ],
+            "is_call": true
+          },
+          "package_valid": true,
+          "module_valid": true,
+          "api_valid": true,
+          "status": "valid",
+          "reason": null,
+          "resolved_module": "json",
+          "suggestions": []
+        }
+      ],
+      "execution_result": {
+        "status": "failed",
+        "return_code": 2,
+        "stdout": "\n=================================== ERRORS ====================================\n______________________ ERROR collecting test_solution.py ______________________\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = json.dumps({\"b\": 2, \"a\": 1}, sort=True)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n..\\..\\..\\..\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\json\\__init__.py:234: in dumps\n    return cls(\nE   TypeError: JSONEncoder.__init__() got an unexpected keyword argument 'sort'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: JSONEncoder.__init__() got an unexpected ...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n",
+        "stderr": "",
+        "error_type": "TypeError",
+        "error_category": "incorrect_arguments",
+        "execution_time": 0.3882611999870278,
+        "timed_out": false
+      },
+      "repaired_code": "import json\n\nresult = json.dumps({\"b\": 2, \"a\": 1}, sort_keys=True)",
+      "repair_prompt": "Repair the Python program. Preserve its requirement and return the complete corrected program only, without Markdown or explanation.\n\nRequirement: Serialize the dictionary with keys sorted and expose the JSON string as result.\n\nProgram:\nimport json\n\nresult = json.dumps({\"b\": 2, \"a\": 1}, sort=True)\n\nPackage findings: none\nAPI findings: none\nSuspicious API: none\nCandidate APIs: none\nRuntime evidence: TypeError: test_solution.py:1: in <module> | solution.py:3: in <module> | TypeError: JSONEncoder.__init__() got an unexpected keyword argument 'sort' | ERROR test_solution.py - TypeError: JSONEncoder.__init__() got an unexpected ...\n",
+      "repaired_analysis": {
+        "imports": [
+          {
+            "module": "json",
+            "name": null,
+            "alias": null,
+            "line_number": 1,
+            "is_from_import": false,
+            "level": 0
+          }
+        ],
+        "alias_table": {
+          "json": {
+            "local_name": "json",
+            "canonical_path": "json",
+            "import_type": "import",
+            "line_number": 1
+          }
+        },
+        "api_references": [
+          {
+            "canonical_path": "json.dumps",
+            "package": "json",
+            "module": "json",
+            "object_path": "dumps",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "json.dumps",
+            "receiver": "json",
+            "arg_count": 1,
+            "keyword_names": [
+              "sort_keys"
+            ],
+            "is_call": true
+          }
+        ],
+        "syntax_error": null
+      },
+      "repaired_package_results": [
+        {
+          "package": "json",
+          "exists": true,
+          "status": "valid",
+          "version": null,
+          "reason": null
+        }
+      ],
+      "repaired_api_results": [
+        {
+          "reference": {
+            "canonical_path": "json.dumps",
+            "package": "json",
+            "module": "json",
+            "object_path": "dumps",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "json.dumps",
+            "receiver": "json",
+            "arg_count": 1,
+            "keyword_names": [
+              "sort_keys"
+            ],
+            "is_call": true
+          },
+          "package_valid": true,
+          "module_valid": true,
+          "api_valid": true,
+          "status": "valid",
+          "reason": null,
+          "resolved_module": "json",
+          "suggestions": []
+        }
+      ],
+      "repaired_execution_result": {
+        "status": "passed",
+        "return_code": 0,
+        "stdout": ".                                                                        [100%]\n1 passed in 0.01s\n",
+        "stderr": "",
+        "error_type": null,
+        "error_category": "unknown",
+        "execution_time": 0.289399900007993,
+        "timed_out": false
+      },
+      "model_name": "provided-code",
+      "generation_config": {},
+      "repair_method": "ollama",
+      "latency_seconds": 1.0252293000230566
+    },
+    "repair_attempted": true,
+    "termination_reason": "one_shot_complete",
+    "elapsed_seconds": 1.0320000000065193
+  }
+}

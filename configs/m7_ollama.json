@@ -1,0 +1,7 @@
+{
+  "provider": "ollama",
+  "model": {"model_name": "qwen2.5-coder:7b", "base_url": "http://127.0.0.1:11434", "max_new_tokens": 1024, "temperature": 0.0, "top_p": 1.0, "repetition_penalty": 1.0, "seed": 42, "context_length": 8192},
+  "agent": {"max_steps": 20, "timeout_seconds": 120, "recent_steps": 6, "output_limit": 4000, "protocol_limit": 3, "probe_cache": false},
+  "execution_timeout_seconds": 5,
+  "comparison": "Same model, input, tests, per-call generation parameters and M6 host checks; whole-code one-shot versus native tool loop. Not equal total tokens."
+}

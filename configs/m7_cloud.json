@@ -1,0 +1,7 @@
+{
+  "provider": "cloud",
+  "model": {"model_name": "REPLACE_WITH_EXPLICIT_MODEL_VERSION_BEFORE_NEW_FREEZE", "base_url": "https://api.deepseek.com", "api_key_env": "DEEPSEEK_API_KEY", "max_new_tokens": 1024, "temperature": 0.0},
+  "agent": {"max_steps": 20, "timeout_seconds": 120, "recent_steps": 6, "output_limit": 4000, "protocol_limit": 3, "probe_cache": false},
+  "execution_timeout_seconds": 5,
+  "comparison": "No cloud credentials available at M7 freeze; NOT_RUN_NO_CREDENTIALS. Pin model and freeze a new configuration before live comparison."
+}

@@ -1,0 +1,270 @@
+{
+  "id": "func_scipy_softmax_v04",
+  "cohort": "historical_failures",
+  "mode": "live",
+  "before_hashes": {
+    "code_file": "ed03ec3c730146151745f614d1e507e63ca96c0df309e6cf556b36930101703d",
+    "test_file": "798548901bfabc94151328bc22d6ed983646956bab76d96d8bd5efff3dea48b3"
+  },
+  "after_hashes": {
+    "code_file": "ed03ec3c730146151745f614d1e507e63ca96c0df309e6cf556b36930101703d",
+    "test_file": "798548901bfabc94151328bc22d6ed983646956bab76d96d8bd5efff3dea48b3"
+  },
+  "unchanged": true,
+  "one_shot": {
+    "status": "PASS",
+    "result": {
+      "requirement": "Compute a softmax vector.",
+      "generated_code": "import scipy.special as api\nv = 4\nresult = api.normalized_exp_08([0, 0]).tolist() + [v]\n",
+      "analysis": {
+        "imports": [
+          {
+            "module": "scipy.special",
+            "name": null,
+            "alias": "api",
+            "line_number": 1,
+            "is_from_import": false,
+            "level": 0
+          }
+        ],
+        "alias_table": {
+          "api": {
+            "local_name": "api",
+            "canonical_path": "scipy.special",
+            "import_type": "import",
+            "line_number": 1
+          }
+        },
+        "api_references": [
+          {
+            "canonical_path": "scipy.special.normalized_exp_08",
+            "package": "scipy",
+            "module": "scipy.special",
+            "object_path": "normalized_exp_08",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "api.normalized_exp_08",
+            "receiver": "api",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          }
+        ],
+        "syntax_error": null
+      },
+      "package_results": [
+        {
+          "package": "scipy",
+          "exists": true,
+          "status": "valid",
+          "version": "1.18.1",
+          "reason": null
+        }
+      ],
+      "api_results": [
+        {
+          "reference": {
+            "canonical_path": "scipy.special.normalized_exp_08",
+            "package": "scipy",
+            "module": "scipy.special",
+            "object_path": "normalized_exp_08",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "api.normalized_exp_08",
+            "receiver": "api",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          },
+          "package_valid": true,
+          "module_valid": true,
+          "api_valid": false,
+          "status": "hallucinated_function",
+          "reason": "attribute_not_found:normalized_exp_08",
+          "resolved_module": "scipy.special",
+          "suggestions": [
+            "scipy.special.ndtri_exp"
+          ]
+        }
+      ],
+      "execution_result": {
+        "status": "failed",
+        "return_code": 2,
+        "stdout": "\n=================================== ERRORS ====================================\n______________________ ERROR collecting test_solution.py ______________________\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = api.normalized_exp_08([0, 0]).tolist() + [v]\n             ^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'scipy.special' has no attribute 'normalized_exp_08'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'scipy.special' has no attrib...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.44s\n",
+        "stderr": "",
+        "error_type": "AttributeError",
+        "error_category": "attribute_error",
+        "execution_time": 0.7320327999768779,
+        "timed_out": false
+      },
+      "repaired_code": "import scipy.special as api\nv = 4\nresult = api.softmax([0, 0]).tolist() + [v]",
+      "repair_prompt": "Repair the Python program. Preserve its requirement and return the complete corrected program only, without Markdown or explanation.\n\nRequirement: Compute a softmax vector.\n\nProgram:\nimport scipy.special as api\nv = 4\nresult = api.normalized_exp_08([0, 0]).tolist() + [v]\n\nPackage findings: none\nAPI findings: scipy.special.normalized_exp_08: hallucinated_function; attribute_not_found:normalized_exp_08\nSuspicious API: scipy.special.normalized_exp_08\nCandidate APIs: scipy.special.ndtri_exp\nRuntime evidence: AttributeError: test_solution.py:1: in <module> | solution.py:3: in <module> | AttributeError: module 'scipy.special' has no attribute 'normalized_exp_08' | ERROR test_solution.py - AttributeError: module 'scipy.special' has no attrib...\n",
+      "repaired_analysis": {
+        "imports": [
+          {
+            "module": "scipy.special",
+            "name": null,
+            "alias": "api",
+            "line_number": 1,
+            "is_from_import": false,
+            "level": 0
+          }
+        ],
+        "alias_table": {
+          "api": {
+            "local_name": "api",
+            "canonical_path": "scipy.special",
+            "import_type": "import",
+            "line_number": 1
+          }
+        },
+        "api_references": [
+          {
+            "canonical_path": "scipy.special.softmax",
+            "package": "scipy",
+            "module": "scipy.special",
+            "object_path": "softmax",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "api.softmax",
+            "receiver": "api",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          }
+        ],
+        "syntax_error": null
+      },
+      "repaired_package_results": [
+        {
+          "package": "scipy",
+          "exists": true,
+          "status": "valid",
+          "version": "1.18.1",
+          "reason": null
+        }
+      ],
+      "repaired_api_results": [
+        {
+          "reference": {
+            "canonical_path": "scipy.special.softmax",
+            "package": "scipy",
+            "module": "scipy.special",
+            "object_path": "softmax",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "api.softmax",
+            "receiver": "api",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          },
+          "package_valid": true,
+          "module_valid": true,
+          "api_valid": true,
+          "status": "valid",
+          "reason": null,
+          "resolved_module": "scipy.special",
+          "suggestions": []
+        }
+      ],
+      "repaired_execution_result": {
+        "status": "passed",
+        "return_code": 0,
+        "stdout": ".                                                                        [100%]\n1 passed in 0.28s\n",
+        "stderr": "",
+        "error_type": null,
+        "error_category": "unknown",
+        "execution_time": 0.568642100028228,
+        "timed_out": false
+      },
+      "model_name": "provided-code",
+      "generation_config": {},
+      "repair_method": "ollama",
+      "latency_seconds": 1.6908700000494719
+    },
+    "repair_attempted": true,
+    "termination_reason": "one_shot_complete",
+    "elapsed_seconds": 1.6869999999762513
+  },
+  "loop": {
+    "final_status": "INCOMPLETE",
+    "termination_reason": "protocol_errors",
+    "candidate_code": "import scipy.special as api\nv = 4\nresult = api.normalized_exp_08([0, 0]).tolist() + [v]\n",
+    "candidate_version": "ed03ec3c730146151745f614d1e507e63ca96c0df309e6cf556b36930101703d",
+    "trajectory": [
+      {
+        "step": 1,
+        "thought": "",
+        "tool_call": null,
+        "tool_result": {
+          "status": "error",
+          "message": "Text-only/invalid response. Choose one registered tool.",
+          "evidence": {
+            "kind": "protocol_error"
+          },
+          "candidate_version": "",
+          "cached": false
+        },
+        "timestamp": "2026-09-15T22:07:12.382586+00:00",
+        "elapsed_seconds": 1.2030000000377186,
+        "raw_response": {
+          "content": "{\"name\": \"apply_patch\", \"arguments\": {\"patch\": \"--- a/data/agent_failures/cases/func_scipy_softmax_v04/input.py\\n+++ b/data/agent_failures/cases/func_scipy_softmax_v04/input.py\\n@@ -1,4 +1,4 @@\\n-import scipy.special as api\\n+import scipy.stats as api\\n v = 4\\n result = api.softmax([0, 0]).tolist() + [v]\"}}"
+        }
+      },
+      {
+        "step": 2,
+        "thought": "",
+        "tool_call": null,
+        "tool_result": {
+          "status": "error",
+          "message": "Text-only/invalid response. Choose one registered tool.",
+          "evidence": {
+            "kind": "protocol_error"
+          },
+          "candidate_version": "",
+          "cached": false
+        },
+        "timestamp": "2026-09-15T22:07:13.602892+00:00",
+        "elapsed_seconds": 1.2189999999827705,
+        "raw_response": {
+          "content": "{\"name\": \"apply_patch\", \"arguments\": {\"patch\": \"--- a/data/agent_failures/cases/func_scipy_softmax_v04/input.py\\\\n+++ b/data/agent_failures/cases/func_scipy_softmax_v04/input.py\\\\n@@ -1,4 +1,4 @@\\\\n-import scipy.special as api\\\\n+import scipy.stats as api\\\\n v = 4\\\\n result = api.softmax([0, 0]).tolist() + [v]\"}}"
+        }
+      },
+      {
+        "step": 3,
+        "thought": "",
+        "tool_call": null,
+        "tool_result": {
+          "status": "error",
+          "message": "Text-only/invalid response. Choose one registered tool.",
+          "evidence": {
+            "kind": "protocol_error"
+          },
+          "candidate_version": "",
+          "cached": false
+        },
+        "timestamp": "2026-09-15T22:07:14.770830+00:00",
+        "elapsed_seconds": 1.172000000020489,
+        "raw_response": {
+          "content": "{\"name\": \"apply_patch\", \"arguments\": {\"patch\": \"--- a/data/agent_failures/cases/func_scipy_softmax_v04/input.py\\n+++ b/data/agent_failures/cases/func_scipy_softmax_v04/input.py\\n@@ -1,4 +1,4 @@\\n-import scipy.special as api\\n+import scipy.stats as api\\n v = 4\\n result = api.softmax([0, 0]).tolist() + [v]\"}}"
+        }
+      }
+    ],
+    "passed_checks": {},
+    "input_hashes": {
+      "D:\\My Project\\dependency-aware-codegen\\data\\agent_failures\\cases\\func_scipy_softmax_v04\\input.py": "ed03ec3c730146151745f614d1e507e63ca96c0df309e6cf556b36930101703d",
+      "D:\\My Project\\dependency-aware-codegen\\data\\agent_failures\\cases\\func_scipy_softmax_v04\\test_input.py": "798548901bfabc94151328bc22d6ed983646956bab76d96d8bd5efff3dea48b3"
+    },
+    "elapsed_seconds": 3.594000000040978,
+    "model_name": "qwen2.5-coder:7b",
+    "applied": false,
+    "rollback_result": "not_needed",
+    "schema_version": 1,
+    "persistence": {}
+  },
+  "first_failed": false,
+  "rescued": false,
+  "rescued_at_step": null,
+  "successful_patch_steps": []
+}

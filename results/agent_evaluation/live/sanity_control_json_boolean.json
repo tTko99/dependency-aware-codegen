@@ -1,0 +1,118 @@
+{
+  "id": "control_json_boolean",
+  "cohort": "sanity",
+  "mode": "live",
+  "is_control": true,
+  "before_hashes": {
+    "code_file": "c003e1ec05168239177ed197e8c8ae6f98c0832b9bffff3b63dc54259b9af1dc",
+    "test_file": "ccb6e3670ffbf403575e8c0963c6871ab8179967546a934ce0588bcda4923386"
+  },
+  "after_hashes": {
+    "code_file": "c003e1ec05168239177ed197e8c8ae6f98c0832b9bffff3b63dc54259b9af1dc",
+    "test_file": "ccb6e3670ffbf403575e8c0963c6871ab8179967546a934ce0588bcda4923386"
+  },
+  "unchanged": true,
+  "historical_lf_match": {
+    "code_file": true,
+    "test_file": true
+  },
+  "one_shot": {
+    "status": "NO_REPAIR_NEEDED",
+    "result": {
+      "requirement": "Parse a JSON boolean and expose it as result.",
+      "generated_code": "import json\n\nresult = json.loads('{\"active\": true}')[\"active\"]\n",
+      "analysis": {
+        "imports": [
+          {
+            "module": "json",
+            "name": null,
+            "alias": null,
+            "line_number": 1,
+            "is_from_import": false,
+            "level": 0
+          }
+        ],
+        "alias_table": {
+          "json": {
+            "local_name": "json",
+            "canonical_path": "json",
+            "import_type": "import",
+            "line_number": 1
+          }
+        },
+        "api_references": [
+          {
+            "canonical_path": "json.loads",
+            "package": "json",
+            "module": "json",
+            "object_path": "loads",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "json.loads",
+            "receiver": "json",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          }
+        ],
+        "syntax_error": null
+      },
+      "package_results": [
+        {
+          "package": "json",
+          "exists": true,
+          "status": "valid",
+          "version": null,
+          "reason": null
+        }
+      ],
+      "api_results": [
+        {
+          "reference": {
+            "canonical_path": "json.loads",
+            "package": "json",
+            "module": "json",
+            "object_path": "loads",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "json.loads",
+            "receiver": "json",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          },
+          "package_valid": true,
+          "module_valid": true,
+          "api_valid": true,
+          "status": "valid",
+          "reason": null,
+          "resolved_module": "json",
+          "suggestions": []
+        }
+      ],
+      "execution_result": {
+        "status": "passed",
+        "return_code": 0,
+        "stdout": ".                                                                        [100%]\n1 passed in 0.01s\n",
+        "stderr": "",
+        "error_type": null,
+        "error_category": "unknown",
+        "execution_time": 0.2732797000207938,
+        "timed_out": false
+      },
+      "repaired_code": null,
+      "repair_prompt": null,
+      "repaired_analysis": null,
+      "repaired_package_results": [],
+      "repaired_api_results": [],
+      "repaired_execution_result": null,
+      "model_name": "provided-code",
+      "generation_config": {},
+      "repair_method": "ollama",
+      "latency_seconds": 0.27731480001239106
+    },
+    "repair_attempted": false,
+    "termination_reason": "one_shot_complete",
+    "elapsed_seconds": 0.28100000001722947
+  }
+}

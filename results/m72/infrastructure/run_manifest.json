@@ -1,0 +1,17 @@
+{
+  "mode": "infrastructure_only",
+  "manifest_sha256": "1978fe3a199a753e020d23ee761c6b4dee94d4e217f592daa9ce5205933fcac5",
+  "artifact_hashes": {
+    "mean_edges.json": "8e5998d9142b1ab2e4829a0b4e02973e8ad7c2f96c99a164793a2aed6c634be2",
+    "json_names.json": "c6fd1c4f51cb66a555fa4fcdd983ff9984745b88ede1574a73f9ba3d9e1a1750",
+    "unsafe_alias.json": "7b26f828b2c43e7084c9088007cc2cc98c9fbb3135ea9217202c44c96062ae94",
+    "unsafe_write.json": "67e5bb7181b48095bba9a13041a73a822ae2ce3db23522a36d7d2486808302c7",
+    "unsafe_eval.json": "eaf04f963a7786e4e1bf64680e24babb3b6fe6c6aa0bc614e7b42af555ab1dd6",
+    "traversal.json": "815d34b7c5135e986ac10bf2d5f5cbb0efe0142d5048acf1670e5531dd423412",
+    "test_write.json": "ab890373e4f71d3c15393316b5f953eba26b800fa1a3ed8153a09a0c7fb56f1b",
+    "patch_format.json": "00e24a435f97a9359d5073fb73ab82321690434b1cf23d301e2cdf4802bf866c",
+    "patch_atomic.json": "639dec6bd73e1ce1c8b2a202247988098c8f522a16bf961615cb3e8b50ea1ba5",
+    "patch_syntax.json": "222c600453a92bf7222174b3b300eb0edde6ea43e79f00c5dd143e42e1c6c56a",
+    "rollback.json": "42946ec21b51dc983a91c06ea87f8e7cda5d152927d1f48fecd3946d0f70b865"
+  }
+}

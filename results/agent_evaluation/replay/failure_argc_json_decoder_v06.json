@@ -1,0 +1,227 @@
+{
+  "id": "argc_json_decoder_v06",
+  "cohort": "historical_failures",
+  "mode": "replay",
+  "before_hashes": {
+    "code_file": "2acd648a660292eecda8f75e94f313b2e1782533f7c384b065f418dbdf4b8998",
+    "test_file": "d81929039efdd9b1aedbc7570b9a74f3239687bb3cf488cb4ead34516384eb81"
+  },
+  "after_hashes": {
+    "code_file": "2acd648a660292eecda8f75e94f313b2e1782533f7c384b065f418dbdf4b8998",
+    "test_file": "d81929039efdd9b1aedbc7570b9a74f3239687bb3cf488cb4ead34516384eb81"
+  },
+  "unchanged": true,
+  "one_shot": {
+    "status": "FAIL",
+    "result": {
+      "requirement": "Decode a JSON integer through a decoder.",
+      "generated_code": "import json as api\nv = 6\ndecoder = api.JSONDecoder()\nresult = api.JSONDecoder.decode()\n",
+      "analysis": {
+        "imports": [
+          {
+            "module": "json",
+            "name": null,
+            "alias": "api",
+            "line_number": 1,
+            "is_from_import": false,
+            "level": 0
+          }
+        ],
+        "alias_table": {
+          "api": {
+            "local_name": "api",
+            "canonical_path": "json",
+            "import_type": "import",
+            "line_number": 1
+          }
+        },
+        "api_references": [
+          {
+            "canonical_path": "json.JSONDecoder",
+            "package": "json",
+            "module": "json",
+            "object_path": "JSONDecoder",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "api.JSONDecoder",
+            "receiver": "api",
+            "arg_count": 0,
+            "keyword_names": [],
+            "is_call": true
+          },
+          {
+            "canonical_path": "json.JSONDecoder.decode",
+            "package": "json",
+            "module": "json.JSONDecoder",
+            "object_path": "decode",
+            "call_type": "function_or_attribute",
+            "line_number": 4,
+            "source": "api.JSONDecoder.decode",
+            "receiver": "api",
+            "arg_count": 0,
+            "keyword_names": [],
+            "is_call": true
+          }
+        ],
+        "syntax_error": null
+      },
+      "package_results": [
+        {
+          "package": "json",
+          "exists": true,
+          "status": "valid",
+          "version": null,
+          "reason": null
+        }
+      ],
+      "api_results": [
+        {
+          "reference": {
+            "canonical_path": "json.JSONDecoder",
+            "package": "json",
+            "module": "json",
+            "object_path": "JSONDecoder",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "api.JSONDecoder",
+            "receiver": "api",
+            "arg_count": 0,
+            "keyword_names": [],
+            "is_call": true
+          },
+          "package_valid": true,
+          "module_valid": true,
+          "api_valid": true,
+          "status": "valid",
+          "reason": null,
+          "resolved_module": "json",
+          "suggestions": []
+        },
+        {
+          "reference": {
+            "canonical_path": "json.JSONDecoder.decode",
+            "package": "json",
+            "module": "json.JSONDecoder",
+            "object_path": "decode",
+            "call_type": "function_or_attribute",
+            "line_number": 4,
+            "source": "api.JSONDecoder.decode",
+            "receiver": "api",
+            "arg_count": 0,
+            "keyword_names": [],
+            "is_call": true
+          },
+          "package_valid": true,
+          "module_valid": true,
+          "api_valid": false,
+          "status": "incorrect_arguments",
+          "reason": "missing_required_positional_argument",
+          "resolved_module": "json",
+          "suggestions": []
+        }
+      ],
+      "execution_result": {
+        "status": "failed",
+        "return_code": 2,
+        "stdout": "\n=================================== ERRORS ====================================\n______________________ ERROR collecting test_solution.py ______________________\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:4: in <module>\n    result = api.JSONDecoder.decode()\n             ^^^^^^^^^^^^^^^^^^^^^^^^\nE   TypeError: JSONDecoder.decode() missing 2 required positional arguments: 'self' and 's'\n=========================== short test summary info ===========================\nERROR test_solution.py - TypeError: JSONDecoder.decode() missing 2 required p...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n",
+        "stderr": "",
+        "error_type": "TypeError",
+        "error_category": "incorrect_arguments",
+        "execution_time": 0.3888302000123076,
+        "timed_out": false
+      },
+      "repaired_code": "import json as api\nv = 6\ndecoder = api.JSONDecoder()\nresult = decoder.decode('{\"key\": 6}')\nprint(result)",
+      "repair_prompt": "Repair the Python program. Preserve its requirement and return the complete corrected program only, without Markdown or explanation.\n\nRequirement: Decode a JSON integer through a decoder.\n\nProgram:\nimport json as api\nv = 6\ndecoder = api.JSONDecoder()\nresult = api.JSONDecoder.decode()\n\nPackage findings: none\nAPI findings: json.JSONDecoder.decode: incorrect_arguments; missing_required_positional_argument\nSuspicious API: json.JSONDecoder.decode\nCandidate APIs: none\nRuntime evidence: TypeError: test_solution.py:1: in <module> | solution.py:4: in <module> | TypeError: JSONDecoder.decode() missing 2 required positional arguments: 'self' and 's' | ERROR test_solution.py - TypeError: JSONDecoder.decode() missing 2 required p...\n",
+      "repaired_analysis": {
+        "imports": [
+          {
+            "module": "json",
+            "name": null,
+            "alias": "api",
+            "line_number": 1,
+            "is_from_import": false,
+            "level": 0
+          }
+        ],
+        "alias_table": {
+          "api": {
+            "local_name": "api",
+            "canonical_path": "json",
+            "import_type": "import",
+            "line_number": 1
+          }
+        },
+        "api_references": [
+          {
+            "canonical_path": "json.JSONDecoder",
+            "package": "json",
+            "module": "json",
+            "object_path": "JSONDecoder",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "api.JSONDecoder",
+            "receiver": "api",
+            "arg_count": 0,
+            "keyword_names": [],
+            "is_call": true
+          }
+        ],
+        "syntax_error": null
+      },
+      "repaired_package_results": [
+        {
+          "package": "json",
+          "exists": true,
+          "status": "valid",
+          "version": null,
+          "reason": null
+        }
+      ],
+      "repaired_api_results": [
+        {
+          "reference": {
+            "canonical_path": "json.JSONDecoder",
+            "package": "json",
+            "module": "json",
+            "object_path": "JSONDecoder",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "api.JSONDecoder",
+            "receiver": "api",
+            "arg_count": 0,
+            "keyword_names": [],
+            "is_call": true
+          },
+          "package_valid": true,
+          "module_valid": true,
+          "api_valid": true,
+          "status": "valid",
+          "reason": null,
+          "resolved_module": "json",
+          "suggestions": []
+        }
+      ],
+      "repaired_execution_result": {
+        "status": "failed",
+        "return_code": 1,
+        "stdout": "F                                                                        [100%]\n================================== FAILURES ===================================\n_________________________________ test_result _________________________________\n\n    def test_result():\n>       assert result == 6\nE       AssertionError: assert {'key': 6} == 6\n\ntest_solution.py:4: AssertionError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_result - AssertionError: assert {'key': 6} == 6\n1 failed in 0.06s\n",
+        "stderr": "",
+        "error_type": "AssertionError",
+        "error_category": "runtime_error",
+        "execution_time": 0.3297255999641493,
+        "timed_out": false
+      },
+      "model_name": "provided-code",
+      "generation_config": {},
+      "repair_method": "ollama",
+      "latency_seconds": 0.7282334999763407
+    },
+    "repair_attempted": true,
+    "termination_reason": "one_shot_complete",
+    "elapsed_seconds": 0.7179999999934807
+  },
+  "loop": null,
+  "first_failed": true,
+  "rescued": false,
+  "rescued_at_step": null
+}

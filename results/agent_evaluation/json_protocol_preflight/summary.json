@@ -1,0 +1,193 @@
+{
+  "mode": "live",
+  "timestamp": "2026-09-15T22:02:47.316916+00:00",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.22621-SP0",
+    "packages": {
+      "pytest": "9.1.1",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "pyyaml": "6.0.3"
+    }
+  },
+  "config": {
+    "repair": {
+      "kind": "ollama",
+      "ollama": {
+        "model_name": "qwen2.5-coder:7b",
+        "base_url": "http://127.0.0.1:11434",
+        "timeout_seconds": 180,
+        "max_new_tokens": 256,
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "repetition_penalty": 1.0,
+        "seed": 42,
+        "keep_alive": "5m",
+        "context_length": 4096
+      }
+    },
+    "validation": {
+      "api": true
+    },
+    "execution": {
+      "enabled": true,
+      "timeout_seconds": 10
+    },
+    "agent": {
+      "max_steps": 24,
+      "timeout_seconds": 180,
+      "recent_steps": 6
+    },
+    "comparison_policy": {
+      "same_model_and_generation_options": true,
+      "same_original_input_and_tests": true,
+      "same_environment": true,
+      "prompts": "one-shot complete program versus agent single tool action",
+      "token_budget": "256 per model call for both arms; loop can make multiple calls",
+      "rescue": "current one-shot attempted repair fails, loop changes code and real current-version tests/checks PASS after finish; mocks excluded"
+    }
+  },
+  "config_sha256": "a7face176d7389853c8a0c16dbfa2a4d258a8133a807897d613ad2431d9a0b27",
+  "model_identity": {
+    "backend": "ollama",
+    "endpoint": "http://127.0.0.1:11434",
+    "ollama_version": "0.34.1",
+    "configured_model_tag": "qwen2.5-coder:7b",
+    "installed_model": {
+      "name": "qwen2.5-coder:7b",
+      "model": "qwen2.5-coder:7b",
+      "modified_at": "2026-09-16T06:01:21.9667474+08:00",
+      "size": 4683087561,
+      "digest": "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "7.6B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 32768,
+        "embedding_length": 3584
+      },
+      "capabilities": [
+        "completion",
+        "tools",
+        "insert"
+      ]
+    },
+    "runtime": null
+  },
+  "sanity_config": {
+    "repair": {
+      "kind": "ollama",
+      "ollama": {
+        "model_name": "qwen2.5-coder:7b",
+        "base_url": "http://127.0.0.1:11434",
+        "timeout_seconds": 180,
+        "max_new_tokens": 256,
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "repetition_penalty": 1.0,
+        "seed": 42,
+        "keep_alive": "5m"
+      }
+    },
+    "validation": {
+      "api": true
+    },
+    "execution": {
+      "enabled": true,
+      "timeout_seconds": 10,
+      "memory_limit_mb": null
+    }
+  },
+  "sanity_config_sha256": "c9cb455c20800bac677f186ccf8a62d706d459a8d46e4f40b24b5e40b9f536e9",
+  "failure_manifest_sha256": "b2264315854bc66f5c65e555a242403a9d570a0694403ad358e51d36ebe75287",
+  "comparison_complete": true,
+  "sanity_repaired_pass": 8,
+  "sanity_controls_preserved": 2,
+  "all_inputs_unchanged": true,
+  "rescued": 0,
+  "single_shot_failed": 3,
+  "historical_failure_replay_count": null,
+  "case_results": [
+    {
+      "id": "package_textwrapx",
+      "cohort": "sanity",
+      "one_shot_status": "PASS"
+    },
+    {
+      "id": "function_statistics_average",
+      "cohort": "sanity",
+      "one_shot_status": "PASS"
+    },
+    {
+      "id": "class_collections_countmap",
+      "cohort": "sanity",
+      "one_shot_status": "PASS"
+    },
+    {
+      "id": "method_pathlib_get_suffix",
+      "cohort": "sanity",
+      "one_shot_status": "PASS"
+    },
+    {
+      "id": "keyword_json_sort",
+      "cohort": "sanity",
+      "one_shot_status": "PASS"
+    },
+    {
+      "id": "arguments_json_loads",
+      "cohort": "sanity",
+      "one_shot_status": "PASS"
+    },
+    {
+      "id": "functional_smallest_value",
+      "cohort": "sanity",
+      "one_shot_status": "PASS"
+    },
+    {
+      "id": "module_urllib_magicparse",
+      "cohort": "sanity",
+      "one_shot_status": "PASS"
+    },
+    {
+      "id": "control_math_hypot",
+      "cohort": "sanity",
+      "one_shot_status": "NO_REPAIR_NEEDED"
+    },
+    {
+      "id": "control_json_boolean",
+      "cohort": "sanity",
+      "one_shot_status": "NO_REPAIR_NEEDED"
+    },
+    {
+      "id": "argc_json_decoder_v06",
+      "cohort": "historical_failures",
+      "one_shot_status": "FAIL"
+    },
+    {
+      "id": "class_fractions_fraction_v01",
+      "cohort": "historical_failures",
+      "one_shot_status": "FAIL"
+    },
+    {
+      "id": "func_scipy_softmax_v03",
+      "cohort": "historical_failures",
+      "one_shot_status": "PASS"
+    },
+    {
+      "id": "func_scipy_softmax_v04",
+      "cohort": "historical_failures",
+      "one_shot_status": "PASS"
+    },
+    {
+      "id": "func_scipy_softmax_v07",
+      "cohort": "historical_failures",
+      "one_shot_status": "FAIL"
+    }
+  ]
+}

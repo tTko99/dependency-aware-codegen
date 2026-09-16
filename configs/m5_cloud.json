@@ -1,0 +1,18 @@
+{
+  "agent": {
+    "provider": "cloud",
+    "cloud": {
+      "base_url": "https://api.deepseek.com",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "max_new_tokens": 1024,
+      "temperature": 0
+    },
+    "max_steps": 20,
+    "timeout_seconds": 180,
+    "protocol_limit": 3,
+    "recent_steps": 6,
+    "output_limit": 4000,
+    "capability_probe": true
+  },
+  "execution": {"timeout_seconds": 10}
+}

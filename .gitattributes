@@ -1,0 +1,4 @@
+# Freeze new evaluation inputs byte-for-byte on all platforms.
+data/agent_failures/** -text whitespace=trailing-space,space-before-tab,cr-at-eol
+configs/agent_evaluation.json -text whitespace=trailing-space,space-before-tab,cr-at-eol
+results/agent_evaluation/** -text whitespace=trailing-space,space-before-tab,cr-at-eol

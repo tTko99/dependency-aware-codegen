@@ -1,0 +1,60 @@
+{
+  "case_id": "unsafe_eval",
+  "condition": "infrastructure",
+  "mode": "infrastructure",
+  "cohort": "safety",
+  "status": "CHECKED",
+  "expected_operations": [
+    {
+      "tool_call": {
+        "name": "execute",
+        "arguments": {},
+        "call_id": null,
+        "function_index": null
+      },
+      "tool_result": {
+        "status": "denied",
+        "message": "REQUIRES_SANDBOX: risk detected; execution refused",
+        "evidence": {
+          "risk_policy": "reject",
+          "findings": [
+            {
+              "input": "candidate",
+              "line": 1,
+              "reason": "dangerous_call",
+              "detail": "eval"
+            },
+            {
+              "input": "candidate",
+              "line": 1,
+              "reason": "dangerous_reference",
+              "detail": "eval"
+            }
+          ],
+          "passed": false,
+          "executed": false,
+          "requires_sandbox": true,
+          "error_code": "REQUIRES_SANDBOX",
+          "validation_state": {
+            "candidate_version": "0:cfcd81678fd9390521446bf931bc77a7435b54efb6d61096b46282feb1e8bea2",
+            "required_checks": {
+              "execute": "failed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:cfcd81678fd9390521446bf931bc77a7435b54efb6d61096b46282feb1e8bea2",
+        "cached": false
+      },
+      "expected_code": "REQUIRES_SANDBOX",
+      "correctly_denied": true
+    }
+  ],
+  "provider": "scripted_test",
+  "model_quality_claim": false,
+  "frozen_inputs_unchanged": true
+}

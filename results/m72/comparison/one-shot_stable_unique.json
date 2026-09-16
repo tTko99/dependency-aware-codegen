@@ -1,0 +1,281 @@
+{
+  "case_id": "stable_unique",
+  "cohort": "hard",
+  "is_control": false,
+  "mode": "live",
+  "condition": "one-shot",
+  "attempted": true,
+  "started": "2026-09-16T12:41:33.812275+00:00",
+  "required_checks": [
+    "validate_packages",
+    "validate_apis",
+    "execute",
+    "run_pytest"
+  ],
+  "before_hashes": {
+    "code_file": "d78a30a330411049561c4309b0a9f21a473d5988891afdc403b5707976aa90ee",
+    "test_file": "a5052d6037d7afad9c16f821300cfb730ec3fede6e1cd406656a83914a90c94a"
+  },
+  "capability_probe": {},
+  "repair_attempted": true,
+  "model_calls": 1,
+  "status": "PASS",
+  "termination_reason": "one_shot_complete",
+  "trajectory": [],
+  "final_verification": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "1:3b1d9c06a4af4242485b0f54f250a046053bbfe4c740330c7352cba54ad73c7e",
+    "context_version": "04b6d0bcdfc8b5af7ac9d17ffb78dd04e9878322dd5f2d46b173c1b09fef3362",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 8,
+      "changed_files": 1,
+      "heuristic": true
+    },
+    "host_status": "PASS",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.026596700015943497,
+            "timed_out": false
+          }
+        },
+        "candidate_version": "1:3b1d9c06a4af4242485b0f54f250a046053bbfe4c740330c7352cba54ad73c7e",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": ".                                                                        [100%]\n1 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.28190990001894534,
+            "timed_out": false
+          }
+        },
+        "candidate_version": "1:3b1d9c06a4af4242485b0f54f250a046053bbfe4c740330c7352cba54ad73c7e",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": []
+        },
+        "candidate_version": "1:3b1d9c06a4af4242485b0f54f250a046053bbfe4c740330c7352cba54ad73c7e",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": []
+        },
+        "candidate_version": "1:3b1d9c06a4af4242485b0f54f250a046053bbfe4c740330c7352cba54ad73c7e",
+        "cached": false
+      }
+    }
+  },
+  "apply": false,
+  "rollback": {
+    "attempted": false
+  },
+  "initial_verification": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [
+      "run_pytest"
+    ],
+    "candidate_version": "0:d78a30a330411049561c4309b0a9f21a473d5988891afdc403b5707976aa90ee",
+    "context_version": "04b6d0bcdfc8b5af7ac9d17ffb78dd04e9878322dd5f2d46b173c1b09fef3362",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "FAIL",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.025645699992310256,
+            "timed_out": false
+          }
+        },
+        "candidate_version": "0:d78a30a330411049561c4309b0a9f21a473d5988891afdc403b5707976aa90ee",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": false,
+          "execution": {
+            "status": "failed",
+            "return_code": 1,
+            "stdout": "F                                                                        [100%]\n================================== FAILURES ===================================\n_________________________________ test_unique _________________________________\n\n    def test_unique():\n>       assert unique([3,1,3,2]) == [3,1,2]\nE       assert [1, 2, 3] == [3, 1, 2]\nE         \nE         At index 0 diff: 1 != 3\nE         Use -v to get more diff\n\ntest_solution.py:3: AssertionError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_unique - assert [1, 2, 3] == [3, 1, 2]\n1 failed in 0.06s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.32322159997420385,
+            "timed_out": false
+          }
+        },
+        "candidate_version": "0:d78a30a330411049561c4309b0a9f21a473d5988891afdc403b5707976aa90ee",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": []
+        },
+        "candidate_version": "0:d78a30a330411049561c4309b0a9f21a473d5988891afdc403b5707976aa90ee",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": []
+        },
+        "candidate_version": "0:d78a30a330411049561c4309b0a9f21a473d5988891afdc403b5707976aa90ee",
+        "cached": false
+      }
+    }
+  },
+  "model_response": {
+    "content": "```python\ndef unique(xs):\n    seen = []\n    result = []\n    for x in xs:\n        if x not in seen:\n            seen.append(x)\n            result.append(x)\n    return result\n```",
+    "usage": {
+      "prompt_eval_count": 1067,
+      "eval_count": 44
+    },
+    "provider_model": "qwen3-coder:30b"
+  },
+  "patch_submission": {
+    "status": "success",
+    "message": "Memory candidate updated (dry-run; target file unchanged)",
+    "evidence": {
+      "preview": "--- a/input.py\n+++ b/input.py\n@@ -1,2 +1,8 @@\n def unique(xs):\n-    return sorted(set(xs))\n+    seen = []\n+    result = []\n+    for x in xs:\n+        if x not in seen:\n+            seen.append(x)\n+            result.append(x)\n+    return result\n",
+      "normalized_patch": "--- a/input.py\n+++ b/input.py\n@@ -1,2 +1,8 @@\n def unique(xs):\n-    return sorted(set(xs))\n+    seen = []\n+    result = []\n+    for x in xs:\n+        if x not in seen:\n+            seen.append(x)\n+            result.append(x)\n+    return result\n",
+      "written": false,
+      "before": {
+        "version": "0:d78a30a330411049561c4309b0a9f21a473d5988891afdc403b5707976aa90ee",
+        "sha256": "d78a30a330411049561c4309b0a9f21a473d5988891afdc403b5707976aa90ee",
+        "lines": 2
+      },
+      "after": {
+        "version": "1:3b1d9c06a4af4242485b0f54f250a046053bbfe4c740330c7352cba54ad73c7e",
+        "sha256": "3b1d9c06a4af4242485b0f54f250a046053bbfe4c740330c7352cba54ad73c7e",
+        "lines": 8
+      },
+      "regression_guard": {
+        "blocked": false,
+        "findings": [],
+        "changed_lines": 8,
+        "changed_files": 1,
+        "heuristic": true
+      }
+    },
+    "candidate_version": "1:3b1d9c06a4af4242485b0f54f250a046053bbfe4c740330c7352cba54ad73c7e",
+    "cached": false
+  },
+  "ended": "2026-09-16T12:41:37.245334+00:00",
+  "latency": 3.422000000020489,
+  "after_hashes": {
+    "code_file": "d78a30a330411049561c4309b0a9f21a473d5988891afdc403b5707976aa90ee",
+    "test_file": "a5052d6037d7afad9c16f821300cfb730ec3fede6e1cd406656a83914a90c94a"
+  },
+  "unchanged": true,
+  "candidate_changed": true,
+  "candidate_code": "def unique(xs):\n    seen = []\n    result = []\n    for x in xs:\n        if x not in seen:\n            seen.append(x)\n            result.append(x)\n    return result\n",
+  "candidate_version": "1:3b1d9c06a4af4242485b0f54f250a046053bbfe4c740330c7352cba54ad73c7e",
+  "candidate_versions": [],
+  "patches": [
+    "--- a/input.py\n+++ b/input.py\n@@ -1,2 +1,8 @@\n def unique(xs):\n-    return sorted(set(xs))\n+    seen = []\n+    result = []\n+    for x in xs:\n+        if x not in seen:\n+            seen.append(x)\n+            result.append(x)\n+    return result\n"
+  ],
+  "patch_count": 1,
+  "verification_count": 0,
+  "tokens": {
+    "input": 1067,
+    "output": 44
+  },
+  "failure_classification": null,
+  "run_id": "existing-bc960c490a4c",
+  "comparison_identity": "bc960c490a4cb5052db0a5cbbec33e5e1abf0bc7efd4a8fa1f1ea5be943b1c96",
+  "provider": "ollama",
+  "model": "qwen3-coder:30b",
+  "resolved_config": {
+    "provider": "ollama",
+    "model": {
+      "model_name": "qwen3-coder:30b",
+      "base_url": "http://localhost:11434",
+      "max_new_tokens": 2048,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "repetition_penalty": 1.0,
+      "seed": 42,
+      "context_length": 16384,
+      "keep_alive": "10m"
+    },
+    "agent": {
+      "max_steps": 24,
+      "timeout_seconds": 300,
+      "recent_steps": 6,
+      "output_limit": 6000,
+      "protocol_limit": 3,
+      "probe_cache": false,
+      "probe_timeout": 90
+    },
+    "execution_timeout_seconds": 10,
+    "shared_initial_evidence": true,
+    "comparison": "Pure local same digest, parameters, frozen tests and M6 host checks; 2048 tokens per model call, not equal total token budgets. Formal deadline 300 seconds plus independent final host audit up to 30 seconds."
+  },
+  "raw_results_ref": "one-shot_stable_unique.json#/trajectory"
+}

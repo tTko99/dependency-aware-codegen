@@ -1,0 +1,118 @@
+{
+  "id": "control_math_hypot",
+  "cohort": "sanity",
+  "mode": "replay",
+  "is_control": true,
+  "before_hashes": {
+    "code_file": "f5ff78a2045b851b20e764477a2b767b9296fde131093e2f9680a6c5e3cfd6a1",
+    "test_file": "5bcb76c6154c67be66038c7106fa8ce6725e2a644053b0a182e150044aca30a0"
+  },
+  "after_hashes": {
+    "code_file": "f5ff78a2045b851b20e764477a2b767b9296fde131093e2f9680a6c5e3cfd6a1",
+    "test_file": "5bcb76c6154c67be66038c7106fa8ce6725e2a644053b0a182e150044aca30a0"
+  },
+  "unchanged": true,
+  "historical_lf_match": {
+    "code_file": true,
+    "test_file": true
+  },
+  "one_shot": {
+    "status": "NO_REPAIR_NEEDED",
+    "result": {
+      "requirement": "Compute the hypotenuse of a 3-4 triangle and expose it as result.",
+      "generated_code": "import math\n\nresult = math.hypot(3, 4)\n",
+      "analysis": {
+        "imports": [
+          {
+            "module": "math",
+            "name": null,
+            "alias": null,
+            "line_number": 1,
+            "is_from_import": false,
+            "level": 0
+          }
+        ],
+        "alias_table": {
+          "math": {
+            "local_name": "math",
+            "canonical_path": "math",
+            "import_type": "import",
+            "line_number": 1
+          }
+        },
+        "api_references": [
+          {
+            "canonical_path": "math.hypot",
+            "package": "math",
+            "module": "math",
+            "object_path": "hypot",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "math.hypot",
+            "receiver": "math",
+            "arg_count": 2,
+            "keyword_names": [],
+            "is_call": true
+          }
+        ],
+        "syntax_error": null
+      },
+      "package_results": [
+        {
+          "package": "math",
+          "exists": true,
+          "status": "valid",
+          "version": null,
+          "reason": null
+        }
+      ],
+      "api_results": [
+        {
+          "reference": {
+            "canonical_path": "math.hypot",
+            "package": "math",
+            "module": "math",
+            "object_path": "hypot",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "math.hypot",
+            "receiver": "math",
+            "arg_count": 2,
+            "keyword_names": [],
+            "is_call": true
+          },
+          "package_valid": true,
+          "module_valid": true,
+          "api_valid": true,
+          "status": "valid",
+          "reason": null,
+          "resolved_module": "math",
+          "suggestions": []
+        }
+      ],
+      "execution_result": {
+        "status": "passed",
+        "return_code": 0,
+        "stdout": ".                                                                        [100%]\n1 passed in 0.01s\n",
+        "stderr": "",
+        "error_type": null,
+        "error_category": "unknown",
+        "execution_time": 0.28879820002475753,
+        "timed_out": false
+      },
+      "repaired_code": null,
+      "repair_prompt": null,
+      "repaired_analysis": null,
+      "repaired_package_results": [],
+      "repaired_api_results": [],
+      "repaired_execution_result": null,
+      "model_name": "provided-code",
+      "generation_config": {},
+      "repair_method": "ollama",
+      "latency_seconds": 0.29279370000585914
+    },
+    "repair_attempted": false,
+    "termination_reason": "one_shot_complete",
+    "elapsed_seconds": 0.2970000000204891
+  }
+}

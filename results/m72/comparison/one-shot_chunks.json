@@ -1,0 +1,281 @@
+{
+  "case_id": "chunks",
+  "cohort": "hard",
+  "is_control": false,
+  "mode": "live",
+  "condition": "one-shot",
+  "attempted": true,
+  "started": "2026-09-16T12:41:26.333829+00:00",
+  "required_checks": [
+    "validate_packages",
+    "validate_apis",
+    "execute",
+    "run_pytest"
+  ],
+  "before_hashes": {
+    "code_file": "dd60ffc0cc03e4a2886514162313eca9ff619c9c8737e23081150c7eecd0e314",
+    "test_file": "9713e786f554bd541e22f984784d8853b54a32b12c4f0a3f3bba1e67fa71f4ce"
+  },
+  "capability_probe": {},
+  "repair_attempted": true,
+  "model_calls": 1,
+  "status": "PASS",
+  "termination_reason": "one_shot_complete",
+  "trajectory": [],
+  "final_verification": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "1:daeee04b4b9e62a297756d80bc110b08c826c1c8141d0fc698b54eae96100670",
+    "context_version": "e9e57a92a5f45b0f4e4890c08857a8669b68d07b01f878b8cc5639aa4a192fb0",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 4,
+      "changed_files": 1,
+      "heuristic": true
+    },
+    "host_status": "PASS",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.02568799996515736,
+            "timed_out": false
+          }
+        },
+        "candidate_version": "1:daeee04b4b9e62a297756d80bc110b08c826c1c8141d0fc698b54eae96100670",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": ".                                                                        [100%]\n1 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.28644850000273436,
+            "timed_out": false
+          }
+        },
+        "candidate_version": "1:daeee04b4b9e62a297756d80bc110b08c826c1c8141d0fc698b54eae96100670",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": []
+        },
+        "candidate_version": "1:daeee04b4b9e62a297756d80bc110b08c826c1c8141d0fc698b54eae96100670",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": []
+        },
+        "candidate_version": "1:daeee04b4b9e62a297756d80bc110b08c826c1c8141d0fc698b54eae96100670",
+        "cached": false
+      }
+    }
+  },
+  "apply": false,
+  "rollback": {
+    "attempted": false
+  },
+  "initial_verification": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [
+      "run_pytest"
+    ],
+    "candidate_version": "0:dd60ffc0cc03e4a2886514162313eca9ff619c9c8737e23081150c7eecd0e314",
+    "context_version": "e9e57a92a5f45b0f4e4890c08857a8669b68d07b01f878b8cc5639aa4a192fb0",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "FAIL",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.02486139995744452,
+            "timed_out": false
+          }
+        },
+        "candidate_version": "0:dd60ffc0cc03e4a2886514162313eca9ff619c9c8737e23081150c7eecd0e314",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": false,
+          "execution": {
+            "status": "failed",
+            "return_code": 1,
+            "stdout": "F                                                                        [100%]\n================================== FAILURES ===================================\n_________________________________ test_chunks _________________________________\n\n    def test_chunks():\n>       assert chunks([1,2,3,4,5], 2) == [[1,2],[3,4],[5]]\nE       assert [[1, 2], [3, 4]] == [[1, 2], [3, 4], [5]]\nE         \nE         Right contains one more item: [5]\nE         Use -v to get more diff\n\ntest_solution.py:3: AssertionError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_chunks - assert [[1, 2], [3, 4]] == [[1, 2], [3...\n1 failed in 0.06s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.3306531999842264,
+            "timed_out": false
+          }
+        },
+        "candidate_version": "0:dd60ffc0cc03e4a2886514162313eca9ff619c9c8737e23081150c7eecd0e314",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": []
+        },
+        "candidate_version": "0:dd60ffc0cc03e4a2886514162313eca9ff619c9c8737e23081150c7eecd0e314",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": []
+        },
+        "candidate_version": "0:dd60ffc0cc03e4a2886514162313eca9ff619c9c8737e23081150c7eecd0e314",
+        "cached": false
+      }
+    }
+  },
+  "model_response": {
+    "content": "```python\ndef chunks(xs, size):\n    if size <= 0:\n        raise ValueError(\"Size must be positive\")\n    return [xs[i:i+size] for i in range(0, len(xs), size)]\n```",
+    "usage": {
+      "prompt_eval_count": 1126,
+      "eval_count": 48
+    },
+    "provider_model": "qwen3-coder:30b"
+  },
+  "patch_submission": {
+    "status": "success",
+    "message": "Memory candidate updated (dry-run; target file unchanged)",
+    "evidence": {
+      "preview": "--- a/input.py\n+++ b/input.py\n@@ -1,2 +1,4 @@\n def chunks(xs, size):\n-    return [xs[i:i+size] for i in range(0, len(xs)-size+1, size)]\n+    if size <= 0:\n+        raise ValueError(\"Size must be positive\")\n+    return [xs[i:i+size] for i in range(0, len(xs), size)]\n",
+      "normalized_patch": "--- a/input.py\n+++ b/input.py\n@@ -1,2 +1,4 @@\n def chunks(xs, size):\n-    return [xs[i:i+size] for i in range(0, len(xs)-size+1, size)]\n+    if size <= 0:\n+        raise ValueError(\"Size must be positive\")\n+    return [xs[i:i+size] for i in range(0, len(xs), size)]\n",
+      "written": false,
+      "before": {
+        "version": "0:dd60ffc0cc03e4a2886514162313eca9ff619c9c8737e23081150c7eecd0e314",
+        "sha256": "dd60ffc0cc03e4a2886514162313eca9ff619c9c8737e23081150c7eecd0e314",
+        "lines": 2
+      },
+      "after": {
+        "version": "1:daeee04b4b9e62a297756d80bc110b08c826c1c8141d0fc698b54eae96100670",
+        "sha256": "daeee04b4b9e62a297756d80bc110b08c826c1c8141d0fc698b54eae96100670",
+        "lines": 4
+      },
+      "regression_guard": {
+        "blocked": false,
+        "findings": [],
+        "changed_lines": 4,
+        "changed_files": 1,
+        "heuristic": true
+      }
+    },
+    "candidate_version": "1:daeee04b4b9e62a297756d80bc110b08c826c1c8141d0fc698b54eae96100670",
+    "cached": false
+  },
+  "ended": "2026-09-16T12:41:29.916857+00:00",
+  "latency": 3.577999999979511,
+  "after_hashes": {
+    "code_file": "dd60ffc0cc03e4a2886514162313eca9ff619c9c8737e23081150c7eecd0e314",
+    "test_file": "9713e786f554bd541e22f984784d8853b54a32b12c4f0a3f3bba1e67fa71f4ce"
+  },
+  "unchanged": true,
+  "candidate_changed": true,
+  "candidate_code": "def chunks(xs, size):\n    if size <= 0:\n        raise ValueError(\"Size must be positive\")\n    return [xs[i:i+size] for i in range(0, len(xs), size)]\n",
+  "candidate_version": "1:daeee04b4b9e62a297756d80bc110b08c826c1c8141d0fc698b54eae96100670",
+  "candidate_versions": [],
+  "patches": [
+    "--- a/input.py\n+++ b/input.py\n@@ -1,2 +1,4 @@\n def chunks(xs, size):\n-    return [xs[i:i+size] for i in range(0, len(xs)-size+1, size)]\n+    if size <= 0:\n+        raise ValueError(\"Size must be positive\")\n+    return [xs[i:i+size] for i in range(0, len(xs), size)]\n"
+  ],
+  "patch_count": 1,
+  "verification_count": 0,
+  "tokens": {
+    "input": 1126,
+    "output": 48
+  },
+  "failure_classification": null,
+  "run_id": "existing-bc960c490a4c",
+  "comparison_identity": "bc960c490a4cb5052db0a5cbbec33e5e1abf0bc7efd4a8fa1f1ea5be943b1c96",
+  "provider": "ollama",
+  "model": "qwen3-coder:30b",
+  "resolved_config": {
+    "provider": "ollama",
+    "model": {
+      "model_name": "qwen3-coder:30b",
+      "base_url": "http://localhost:11434",
+      "max_new_tokens": 2048,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "repetition_penalty": 1.0,
+      "seed": 42,
+      "context_length": 16384,
+      "keep_alive": "10m"
+    },
+    "agent": {
+      "max_steps": 24,
+      "timeout_seconds": 300,
+      "recent_steps": 6,
+      "output_limit": 6000,
+      "protocol_limit": 3,
+      "probe_cache": false,
+      "probe_timeout": 90
+    },
+    "execution_timeout_seconds": 10,
+    "shared_initial_evidence": true,
+    "comparison": "Pure local same digest, parameters, frozen tests and M6 host checks; 2048 tokens per model call, not equal total token budgets. Formal deadline 300 seconds plus independent final host audit up to 30 seconds."
+  },
+  "raw_results_ref": "one-shot_chunks.json#/trajectory"
+}

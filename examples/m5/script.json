@@ -1,0 +1,13 @@
+{
+  "actions": [
+    {"name": "run_pytest", "decision_summary": "Check the supplied test against the original candidate."},
+    {"name": "apply_patch", "expect": {"tool": "run_pytest", "passed": false}, "decision_summary": "The test failed; change the returned value to two as a first repair attempt.", "arguments": {"patch": "--- a/examples/m5/input.py\n+++ b/examples/m5/input.py\n@@ -1 +1 @@\n-result = 1\n+result = 2\n"}},
+    {"name": "run_pytest", "expect": {"tool": "apply_patch", "status": "success"}, "decision_summary": "Recheck the first repaired candidate."},
+    {"name": "apply_patch", "expect": {"tool": "run_pytest", "passed": false, "contains": "assert 2 == 3"}, "decision_summary": "The new assertion still shows two instead of three; correct the result.", "arguments": {"patch": "--- a/examples/m5/input.py\n+++ b/examples/m5/input.py\n@@ -1 +1 @@\n-result = 2\n+result = 3\n"}},
+    {"name": "run_pytest", "expect": {"tool": "apply_patch", "status": "success"}, "decision_summary": "Run the test against the second repaired candidate."},
+    {"name": "execute", "expect": {"tool": "run_pytest", "passed": true}, "decision_summary": "The test passed; verify direct execution."},
+    {"name": "validate_apis", "expect": {"tool": "execute", "passed": true}, "decision_summary": "Verify API evidence for the current candidate."},
+    {"name": "validate_packages", "expect": {"tool": "validate_apis", "passed": true}, "decision_summary": "Verify package evidence for the current candidate."},
+    {"name": "finish", "expect": {"tool": "validate_packages", "passed": true}, "decision_summary": "All required checks passed on the second repair; submit the conclusion.", "arguments": {"success": true, "conclusion": "Current candidate passed the required checks."}}
+  ]
+}

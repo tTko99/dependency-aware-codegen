@@ -1,0 +1,71 @@
+{
+  "id": "functional_smallest_value",
+  "cohort": "sanity",
+  "mode": "replay",
+  "is_control": false,
+  "before_hashes": {
+    "code_file": "aa8f65c62ba89c0dd50e4d0b130f0aa464de22c285dc6667d4c85d84af6906fb",
+    "test_file": "31608ab218087df377829fac587b26b7a87c5864c946972028e67522d01069e8"
+  },
+  "after_hashes": {
+    "code_file": "aa8f65c62ba89c0dd50e4d0b130f0aa464de22c285dc6667d4c85d84af6906fb",
+    "test_file": "31608ab218087df377829fac587b26b7a87c5864c946972028e67522d01069e8"
+  },
+  "unchanged": true,
+  "historical_lf_match": {
+    "code_file": true,
+    "test_file": true
+  },
+  "one_shot": {
+    "status": "PASS",
+    "result": {
+      "requirement": "Find the smallest value in 7, 2, 9, and 4 and expose it as result.",
+      "generated_code": "values = [7, 2, 9, 4]\nresult = max(values)\n",
+      "analysis": {
+        "imports": [],
+        "alias_table": {},
+        "api_references": [],
+        "syntax_error": null
+      },
+      "package_results": [],
+      "api_results": [],
+      "execution_result": {
+        "status": "failed",
+        "return_code": 1,
+        "stdout": "F                                                                        [100%]\n================================== FAILURES ===================================\n_________________________________ test_result _________________________________\n\n    def test_result():\n>       assert result == 2\nE       assert 9 == 2\n\ntest_solution.py:5: AssertionError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_result - assert 9 == 2\n1 failed in 0.06s\n",
+        "stderr": "",
+        "error_type": null,
+        "error_category": "unknown",
+        "execution_time": 0.3305030000046827,
+        "timed_out": false
+      },
+      "repaired_code": "values = [7, 2, 9, 4]\nresult = min(values)",
+      "repair_prompt": "Repair the Python program. Preserve its requirement and return the complete corrected program only, without Markdown or explanation.\n\nRequirement: Find the smallest value in 7, 2, 9, and 4 and expose it as result.\n\nProgram:\nvalues = [7, 2, 9, 4]\nresult = max(values)\n\nPackage findings: none\nAPI findings: none\nSuspicious API: none\nCandidate APIs: none\nRuntime evidence: unknown:     assert 9 == 2 | test_solution.py:5: AssertionError | FAILED test_solution.py::test_result - assert 9 == 2\n",
+      "repaired_analysis": {
+        "imports": [],
+        "alias_table": {},
+        "api_references": [],
+        "syntax_error": null
+      },
+      "repaired_package_results": [],
+      "repaired_api_results": [],
+      "repaired_execution_result": {
+        "status": "passed",
+        "return_code": 0,
+        "stdout": ".                                                                        [100%]\n1 passed in 0.01s\n",
+        "stderr": "",
+        "error_type": null,
+        "error_category": "unknown",
+        "execution_time": 0.287094600033015,
+        "timed_out": false
+      },
+      "model_name": "provided-code",
+      "generation_config": {},
+      "repair_method": "ollama",
+      "latency_seconds": 0.6220972000155598
+    },
+    "repair_attempted": true,
+    "termination_reason": "one_shot_complete",
+    "elapsed_seconds": 0.625
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "pytest": {
+    "passed": 241,
+    "skipped": 1,
+    "failed": 0,
+    "skip_reason": "Windows symlink creation privilege",
+    "log": "pytest.txt"
+  },
+  "ruff": {
+    "passed": true,
+    "log": "ruff.txt"
+  },
+  "protected_file_count": 149,
+  "protected_files_unchanged": true,
+  "implementation_frozen_during_run": true,
+  "one_shot_reused_byte_for_byte": true,
+  "all_source_test_hashes_unchanged": true,
+  "all_runs_dry_run": true,
+  "native_formal_calls_verified": 84,
+  "all_observations_include_validation_state": true,
+  "control_zero_model_calls": 5,
+  "forbidden_log_fields": [],
+  "whitespace_findings": [],
+  "git_operations": 0,
+  "cloud_model_calls": 0,
+  "weights_strict_rescue": {
+    "eligible": true,
+    "rescued": true,
+    "first_repair_status": "FAIL",
+    "failure_observation_step": 3,
+    "rescued_patch_step": 4
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "case_id": "test_write",
+  "condition": "infrastructure",
+  "mode": "infrastructure",
+  "cohort": "safety",
+  "status": "CHECKED",
+  "expected_operations": [
+    {
+      "tool_call": {
+        "name": "apply_patch",
+        "arguments": {
+          "path": "test_input.py",
+          "patch": "@@\n-result = 1\n+result = 2"
+        },
+        "call_id": null,
+        "function_index": null
+      },
+      "tool_result": {
+        "status": "denied",
+        "message": "Tests are read-only",
+        "evidence": {
+          "error_code": "TEST_FILE_READ_ONLY",
+          "path": "test_input.py",
+          "validation_state": {
+            "candidate_version": "0:68833fe50c22a93765392cd3e53b25e8a0c7b74e4730e85425e21da46bd69d5c",
+            "required_checks": {
+              "execute": "missing",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:68833fe50c22a93765392cd3e53b25e8a0c7b74e4730e85425e21da46bd69d5c",
+        "cached": false
+      },
+      "expected_code": "TEST_FILE_READ_ONLY",
+      "correctly_denied": true
+    }
+  ],
+  "provider": "scripted_test",
+  "model_quality_claim": false,
+  "frozen_inputs_unchanged": true
+}

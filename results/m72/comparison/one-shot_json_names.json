@@ -1,0 +1,345 @@
+{
+  "case_id": "json_names",
+  "cohort": "hard",
+  "is_control": false,
+  "mode": "live",
+  "condition": "one-shot",
+  "attempted": true,
+  "started": "2026-09-16T12:41:21.536349+00:00",
+  "required_checks": [
+    "validate_packages",
+    "validate_apis",
+    "execute",
+    "run_pytest"
+  ],
+  "before_hashes": {
+    "code_file": "862900f5aa198d79f0b81362fe10dbb8d39912ae7f6b2da572316b4a4777360b",
+    "test_file": "4ca26ad3ae498f0ed8e42cb448bea88d7dddfe3fc7cd9172ed76335b2dd77319"
+  },
+  "capability_probe": {},
+  "repair_attempted": true,
+  "model_calls": 1,
+  "status": "PASS",
+  "termination_reason": "one_shot_complete",
+  "trajectory": [],
+  "final_verification": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "1:e9536cfa2816480fe1683fe472b94fb037c73d303c0e924e872d87b1f6e345d9",
+    "context_version": "b89250c697c4a43669cd0b537618b70c605cd17ee6d879c7cb00eb7ac20f5ade",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 9,
+      "changed_files": 1,
+      "heuristic": true
+    },
+    "host_status": "PASS",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.03510759997880086,
+            "timed_out": false
+          }
+        },
+        "candidate_version": "1:e9536cfa2816480fe1683fe472b94fb037c73d303c0e924e872d87b1f6e345d9",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": ".                                                                        [100%]\n1 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.27702969999518245,
+            "timed_out": false
+          }
+        },
+        "candidate_version": "1:e9536cfa2816480fe1683fe472b94fb037c73d303c0e924e872d87b1f6e345d9",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "json.loads",
+                "package": "json",
+                "module": "json",
+                "object_path": "loads",
+                "call_type": "function_or_attribute",
+                "line_number": 4,
+                "source": "json.loads",
+                "receiver": "json",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "json",
+              "suggestions": []
+            }
+          ]
+        },
+        "candidate_version": "1:e9536cfa2816480fe1683fe472b94fb037c73d303c0e924e872d87b1f6e345d9",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "json",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ]
+        },
+        "candidate_version": "1:e9536cfa2816480fe1683fe472b94fb037c73d303c0e924e872d87b1f6e345d9",
+        "cached": false
+      }
+    }
+  },
+  "apply": false,
+  "rollback": {
+    "attempted": false
+  },
+  "initial_verification": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [
+      "run_pytest"
+    ],
+    "candidate_version": "0:862900f5aa198d79f0b81362fe10dbb8d39912ae7f6b2da572316b4a4777360b",
+    "context_version": "b89250c697c4a43669cd0b537618b70c605cd17ee6d879c7cb00eb7ac20f5ade",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "FAIL",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.03537490003509447,
+            "timed_out": false
+          }
+        },
+        "candidate_version": "0:862900f5aa198d79f0b81362fe10dbb8d39912ae7f6b2da572316b4a4777360b",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": false,
+          "execution": {
+            "status": "failed",
+            "return_code": 1,
+            "stdout": "F                                                                        [100%]\n================================== FAILURES ===================================\n_________________________________ test_names __________________________________\n\n    def test_names():\n>       assert names('{\"users\":[{\"name\":\"Ada\"},{\"id\":2},{\"name\":\"Bo\"}]}') == ['Ada','Bo']\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\ntest_solution.py:3: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nsolution.py:3: in names\n    return list(json.loads(raw, strict_mode=True))\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ns = '{\"users\":[{\"name\":\"Ada\"},{\"id\":2},{\"name\":\"Bo\"}]}'\ncls = <class 'json.decoder.JSONDecoder'>, object_hook = None, parse_float = None\nparse_int = None, parse_constant = None, object_pairs_hook = None\nkw = {'strict_mode': True}\n\n    def loads(s, *, cls=None, object_hook=None, parse_float=None,\n            parse_int=None, parse_constant=None, object_pairs_hook=None, **kw):\n        \"\"\"Deserialize ``s`` (a ``str``, ``bytes`` or ``bytearray`` instance\n        containing a JSON document) to a Python object.\n    \n        ``object_hook`` is an optional function that will be called with the\n        result of any object literal decode (a ``dict``). The return value of\n        ``object_hook`` will be used instead of the ``dict``. This feature\n        can be used to implement custom decoders (e.g. JSON-RPC class hinting).\n    \n        ``object_pairs_hook`` is an optional function that will be called with the\n        result of any object literal decoded with an ordered list of pairs.  The\n        return value of ``object_pairs_hook`` will be used instead of the ``dict``.\n        This feature can be used to implement custom decoders.  If ``object_hook``\n        is also defined, the ``object_pairs_hook`` takes priority.\n    \n        ``parse_float``, if specified, will be called with the string\n        of every JSON float to be decoded. By default this is equivalent to\n        float(num_str). This can be used to use another datatype or parser\n        for JSON floats (e.g. decimal.Decimal).\n    \n        ``parse_int``, if specified, will be called with the string\n        of every JSON int to be decoded. By default this is equivalent to\n        int(num_str). This can be used to use another datatype or parser\n        for JSON integers (e.g. float).\n    \n        ``parse_constant``, if specified, will be called with one of the\n        following strings: -Infinity, Infinity, NaN.\n        This can be used to raise an exception if invalid JSON numbers\n        are encountered.\n    \n        To use a custom ``JSONDecoder`` subclass, specify it with the ``cls``\n        kwarg; otherwise ``JSONDecoder`` is used.\n        \"\"\"\n        if isinstance(s, str):\n            if s.startswith('\\ufeff'):\n                raise JSONDecodeError(\"Unexpected UTF-8 BOM (decode using utf-8-sig)\",\n                                      s, 0)\n        else:\n            if not isinstance(s, (bytes, bytearray)):\n                raise TypeError(f'the JSON object must be str, bytes or bytearray, '\n                                f'not {s.__class__.__name__}')\n            s = s.decode(detect_encoding(s), 'surrogatepass')\n    \n        if (cls is None and object_hook is None and\n                parse_int is None and parse_float is None and\n                parse_constant is None and object_pairs_hook is None and not kw):\n            return _default_decoder.decode(s)\n        if cls is None:\n            cls = JSONDecoder\n        if object_hook is not None:\n            kw['object_hook'] = object_hook\n        if object_pairs_hook is not None:\n            kw['object_pairs_hook'] = object_pairs_hook\n        if parse_float is not None:\n            kw['parse_float'] = parse_float\n        if parse_int is not None:\n            kw['parse_int'] = parse_int\n        if parse_constant is not None:\n            kw['parse_constant'] = parse_constant\n>       return cls(**kw).decode(s)\n               ^^^^^^^^^\nE       TypeError: JSONDecoder.__init__() got an unexpected keyword argument 'strict_mode'\n\n..\\..\\..\\..\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\json\\__init__.py:359: TypeError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_names - TypeError: JSONDecoder.__init__() got a...\n1 failed in 0.06s\n",
+            "stderr": "",
+            "error_type": "TypeError",
+            "error_category": "incorrect_arguments",
+            "execution_time": 0.33159210003213957,
+            "timed_out": false
+          }
+        },
+        "candidate_version": "0:862900f5aa198d79f0b81362fe10dbb8d39912ae7f6b2da572316b4a4777360b",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "json.loads",
+                "package": "json",
+                "module": "json",
+                "object_path": "loads",
+                "call_type": "function_or_attribute",
+                "line_number": 3,
+                "source": "json.loads",
+                "receiver": "json",
+                "arg_count": 1,
+                "keyword_names": [
+                  "strict_mode"
+                ],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "json",
+              "suggestions": []
+            }
+          ]
+        },
+        "candidate_version": "0:862900f5aa198d79f0b81362fe10dbb8d39912ae7f6b2da572316b4a4777360b",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "json",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ]
+        },
+        "candidate_version": "0:862900f5aa198d79f0b81362fe10dbb8d39912ae7f6b2da572316b4a4777360b",
+        "cached": false
+      }
+    }
+  },
+  "model_response": {
+    "content": "```python\nimport json\n\ndef names(raw):\n    data = json.loads(raw)\n    result = []\n    if 'users' in data:\n        for user in data['users']:\n            if 'name' in user:\n                result.append(user['name'])\n    return result\n```",
+    "usage": {
+      "prompt_eval_count": 2195,
+      "eval_count": 58
+    },
+    "provider_model": "qwen3-coder:30b"
+  },
+  "patch_submission": {
+    "status": "success",
+    "message": "Memory candidate updated (dry-run; target file unchanged)",
+    "evidence": {
+      "preview": "--- a/input.py\n+++ b/input.py\n@@ -1,3 +1,10 @@\n import json\n+\n def names(raw):\n-    return list(json.loads(raw, strict_mode=True))\n+    data = json.loads(raw)\n+    result = []\n+    if 'users' in data:\n+        for user in data['users']:\n+            if 'name' in user:\n+                result.append(user['name'])\n+    return result\n",
+      "normalized_patch": "--- a/input.py\n+++ b/input.py\n@@ -1,3 +1,10 @@\n import json\n+\n def names(raw):\n-    return list(json.loads(raw, strict_mode=True))\n+    data = json.loads(raw)\n+    result = []\n+    if 'users' in data:\n+        for user in data['users']:\n+            if 'name' in user:\n+                result.append(user['name'])\n+    return result\n",
+      "written": false,
+      "before": {
+        "version": "0:862900f5aa198d79f0b81362fe10dbb8d39912ae7f6b2da572316b4a4777360b",
+        "sha256": "862900f5aa198d79f0b81362fe10dbb8d39912ae7f6b2da572316b4a4777360b",
+        "lines": 3
+      },
+      "after": {
+        "version": "1:e9536cfa2816480fe1683fe472b94fb037c73d303c0e924e872d87b1f6e345d9",
+        "sha256": "e9536cfa2816480fe1683fe472b94fb037c73d303c0e924e872d87b1f6e345d9",
+        "lines": 10
+      },
+      "regression_guard": {
+        "blocked": false,
+        "findings": [],
+        "changed_lines": 9,
+        "changed_files": 1,
+        "heuristic": true
+      }
+    },
+    "candidate_version": "1:e9536cfa2816480fe1683fe472b94fb037c73d303c0e924e872d87b1f6e345d9",
+    "cached": false
+  },
+  "ended": "2026-09-16T12:41:26.319933+00:00",
+  "latency": 4.7810000000172295,
+  "after_hashes": {
+    "code_file": "862900f5aa198d79f0b81362fe10dbb8d39912ae7f6b2da572316b4a4777360b",
+    "test_file": "4ca26ad3ae498f0ed8e42cb448bea88d7dddfe3fc7cd9172ed76335b2dd77319"
+  },
+  "unchanged": true,
+  "candidate_changed": true,
+  "candidate_code": "import json\n\ndef names(raw):\n    data = json.loads(raw)\n    result = []\n    if 'users' in data:\n        for user in data['users']:\n            if 'name' in user:\n                result.append(user['name'])\n    return result\n",
+  "candidate_version": "1:e9536cfa2816480fe1683fe472b94fb037c73d303c0e924e872d87b1f6e345d9",
+  "candidate_versions": [],
+  "patches": [
+    "--- a/input.py\n+++ b/input.py\n@@ -1,3 +1,10 @@\n import json\n+\n def names(raw):\n-    return list(json.loads(raw, strict_mode=True))\n+    data = json.loads(raw)\n+    result = []\n+    if 'users' in data:\n+        for user in data['users']:\n+            if 'name' in user:\n+                result.append(user['name'])\n+    return result\n"
+  ],
+  "patch_count": 1,
+  "verification_count": 0,
+  "tokens": {
+    "input": 2195,
+    "output": 58
+  },
+  "failure_classification": null,
+  "run_id": "existing-bc960c490a4c",
+  "comparison_identity": "bc960c490a4cb5052db0a5cbbec33e5e1abf0bc7efd4a8fa1f1ea5be943b1c96",
+  "provider": "ollama",
+  "model": "qwen3-coder:30b",
+  "resolved_config": {
+    "provider": "ollama",
+    "model": {
+      "model_name": "qwen3-coder:30b",
+      "base_url": "http://localhost:11434",
+      "max_new_tokens": 2048,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "repetition_penalty": 1.0,
+      "seed": 42,
+      "context_length": 16384,
+      "keep_alive": "10m"
+    },
+    "agent": {
+      "max_steps": 24,
+      "timeout_seconds": 300,
+      "recent_steps": 6,
+      "output_limit": 6000,
+      "protocol_limit": 3,
+      "probe_cache": false,
+      "probe_timeout": 90
+    },
+    "execution_timeout_seconds": 10,
+    "shared_initial_evidence": true,
+    "comparison": "Pure local same digest, parameters, frozen tests and M6 host checks; 2048 tokens per model call, not equal total token budgets. Formal deadline 300 seconds plus independent final host audit up to 30 seconds."
+  },
+  "raw_results_ref": "one-shot_json_names.json#/trajectory"
+}

@@ -1,0 +1,34 @@
+{
+  "source_manifest": "data/agent_failures/manifest.json",
+  "selection": "Current completed one-shot repair FAIL; no selection by loop outcome",
+  "config_sha256": "a7face176d7389853c8a0c16dbfa2a4d258a8133a807897d613ad2431d9a0b27",
+  "cases": [
+    {
+      "id": "argc_json_decoder_v06",
+      "case_result": "live/failure_argc_json_decoder_v06.json",
+      "case_result_sha256": "d45a545eea609fb07170f912c26ec6eedfe071f5d57a14895270224d3454bfa9",
+      "input_hashes": {
+        "code_file": "2acd648a660292eecda8f75e94f313b2e1782533f7c384b065f418dbdf4b8998",
+        "test_file": "d81929039efdd9b1aedbc7570b9a74f3239687bb3cf488cb4ead34516384eb81"
+      }
+    },
+    {
+      "id": "class_fractions_fraction_v01",
+      "case_result": "live/failure_class_fractions_fraction_v01.json",
+      "case_result_sha256": "8484ed3f2572dd3e22758c54aeda484690143ab7445ec21260babcb5e90578fc",
+      "input_hashes": {
+        "code_file": "5834425902bf112143ed2c4ce0adf02adf7fcc9af569da909c8692c4db65c29d",
+        "test_file": "7095693fcec234235010da1c8443593e0f02870e6d90c352c341b97c1ea3eb66"
+      }
+    },
+    {
+      "id": "func_scipy_softmax_v07",
+      "case_result": "live/failure_func_scipy_softmax_v07.json",
+      "case_result_sha256": "469de6d262fe75bb83192adda33b7d19604887cc64da5f6dce02e0824e990ae5",
+      "input_hashes": {
+        "code_file": "6ab9d3273b13b3f9c5ad1286c84b6f3373cf0219d953d2d52f21b92226f143c9",
+        "test_file": "cb9dcc9c59ee0170341d73f21e1126bb31deaf0a791078d16aed1e7e32ffdfa1"
+      }
+    }
+  ]
+}

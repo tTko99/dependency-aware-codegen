@@ -1,0 +1,78 @@
+{
+  "case_id": "unsafe_write",
+  "condition": "infrastructure",
+  "mode": "infrastructure",
+  "cohort": "safety",
+  "status": "CHECKED",
+  "expected_operations": [
+    {
+      "tool_call": {
+        "name": "execute",
+        "arguments": {},
+        "call_id": null,
+        "function_index": null
+      },
+      "tool_result": {
+        "status": "denied",
+        "message": "REQUIRES_SANDBOX: risk detected; execution refused",
+        "evidence": {
+          "risk_policy": "reject",
+          "findings": [
+            {
+              "input": "candidate",
+              "line": 1,
+              "reason": "unresolved_call",
+              "detail": "open('sentinel', 'w').write"
+            },
+            {
+              "input": "candidate",
+              "line": 1,
+              "reason": "side_effect_reference",
+              "detail": "write"
+            },
+            {
+              "input": "candidate",
+              "line": 1,
+              "reason": "dangerous_call",
+              "detail": "open"
+            },
+            {
+              "input": "candidate",
+              "line": 1,
+              "reason": "side_effect_call",
+              "detail": "open"
+            },
+            {
+              "input": "candidate",
+              "line": 1,
+              "reason": "dangerous_reference",
+              "detail": "open"
+            }
+          ],
+          "passed": false,
+          "executed": false,
+          "requires_sandbox": true,
+          "error_code": "REQUIRES_SANDBOX",
+          "validation_state": {
+            "candidate_version": "0:ae29dc972dcf9f5701965f7b334b6c08cf6ca1e99fc86bdf96b3ec55be62b0be",
+            "required_checks": {
+              "execute": "failed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:ae29dc972dcf9f5701965f7b334b6c08cf6ca1e99fc86bdf96b3ec55be62b0be",
+        "cached": false
+      },
+      "expected_code": "REQUIRES_SANDBOX",
+      "correctly_denied": true
+    }
+  ],
+  "provider": "scripted_test",
+  "model_quality_claim": false,
+  "frozen_inputs_unchanged": true
+}

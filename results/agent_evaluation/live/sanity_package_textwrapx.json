@@ -1,0 +1,193 @@
+{
+  "id": "package_textwrapx",
+  "cohort": "sanity",
+  "mode": "live",
+  "is_control": false,
+  "before_hashes": {
+    "code_file": "08089af589ce79e19c3a69ff3fc3d9fd16d68345c64790f983067416d696bbd6",
+    "test_file": "9273eef85e941baee55425562da67d6e0a471d0eaa857e5aec233fc32d574913"
+  },
+  "after_hashes": {
+    "code_file": "08089af589ce79e19c3a69ff3fc3d9fd16d68345c64790f983067416d696bbd6",
+    "test_file": "9273eef85e941baee55425562da67d6e0a471d0eaa857e5aec233fc32d574913"
+  },
+  "unchanged": true,
+  "historical_lf_match": {
+    "code_file": true,
+    "test_file": true
+  },
+  "one_shot": {
+    "status": "PASS",
+    "result": {
+      "requirement": "Dedent the indented word ready and expose the stripped text as result.",
+      "generated_code": "import textwrapx as textwrap\n\nresult = textwrap.dedent(\"    ready\").strip()\n",
+      "analysis": {
+        "imports": [
+          {
+            "module": "textwrapx",
+            "name": null,
+            "alias": "textwrap",
+            "line_number": 1,
+            "is_from_import": false,
+            "level": 0
+          }
+        ],
+        "alias_table": {
+          "textwrap": {
+            "local_name": "textwrap",
+            "canonical_path": "textwrapx",
+            "import_type": "import",
+            "line_number": 1
+          }
+        },
+        "api_references": [
+          {
+            "canonical_path": "textwrapx.dedent",
+            "package": "textwrapx",
+            "module": "textwrapx",
+            "object_path": "dedent",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "textwrap.dedent",
+            "receiver": "textwrap",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          }
+        ],
+        "syntax_error": null
+      },
+      "package_results": [
+        {
+          "package": "textwrapx",
+          "exists": false,
+          "status": "hallucinated_package",
+          "version": null,
+          "reason": "not_importable_in_environment"
+        }
+      ],
+      "api_results": [
+        {
+          "reference": {
+            "canonical_path": "textwrapx.dedent",
+            "package": "textwrapx",
+            "module": "textwrapx",
+            "object_path": "dedent",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "textwrap.dedent",
+            "receiver": "textwrap",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          },
+          "package_valid": false,
+          "module_valid": false,
+          "api_valid": false,
+          "status": "hallucinated_package",
+          "reason": "not_importable_in_environment",
+          "resolved_module": null,
+          "suggestions": []
+        }
+      ],
+      "execution_result": {
+        "status": "failed",
+        "return_code": 2,
+        "stdout": "\n=================================== ERRORS ====================================\n______________________ ERROR collecting test_solution.py ______________________\nImportError while importing test module 'C:\\Users\\Administrator\\AppData\\Local\\Temp\\depguard_exec_kd99whox\\test_solution.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n..\\..\\..\\..\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\importlib\\__init__.py:90: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import textwrapx as textwrap\nE   ModuleNotFoundError: No module named 'textwrapx'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n",
+        "stderr": "",
+        "error_type": "ModuleNotFoundError",
+        "error_category": "import_error",
+        "execution_time": 0.3855984000256285,
+        "timed_out": false
+      },
+      "repaired_code": "import textwrap\n\nresult = textwrap.dedent(\"    ready\").strip()",
+      "repair_prompt": "Repair the Python program. Preserve its requirement and return the complete corrected program only, without Markdown or explanation.\n\nRequirement: Dedent the indented word ready and expose the stripped text as result.\n\nProgram:\nimport textwrapx as textwrap\n\nresult = textwrap.dedent(\"    ready\").strip()\n\nPackage findings: textwrapx: hallucinated_package; not_importable_in_environment\nAPI findings: textwrapx.dedent: hallucinated_package; not_importable_in_environment\nSuspicious API: textwrapx.dedent\nCandidate APIs: none\nRuntime evidence: ModuleNotFoundError: test_solution.py:1: in <module> | solution.py:1: in <module> | ModuleNotFoundError: No module named 'textwrapx'\n",
+      "repaired_analysis": {
+        "imports": [
+          {
+            "module": "textwrap",
+            "name": null,
+            "alias": null,
+            "line_number": 1,
+            "is_from_import": false,
+            "level": 0
+          }
+        ],
+        "alias_table": {
+          "textwrap": {
+            "local_name": "textwrap",
+            "canonical_path": "textwrap",
+            "import_type": "import",
+            "line_number": 1
+          }
+        },
+        "api_references": [
+          {
+            "canonical_path": "textwrap.dedent",
+            "package": "textwrap",
+            "module": "textwrap",
+            "object_path": "dedent",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "textwrap.dedent",
+            "receiver": "textwrap",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          }
+        ],
+        "syntax_error": null
+      },
+      "repaired_package_results": [
+        {
+          "package": "textwrap",
+          "exists": true,
+          "status": "valid",
+          "version": null,
+          "reason": null
+        }
+      ],
+      "repaired_api_results": [
+        {
+          "reference": {
+            "canonical_path": "textwrap.dedent",
+            "package": "textwrap",
+            "module": "textwrap",
+            "object_path": "dedent",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "textwrap.dedent",
+            "receiver": "textwrap",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          },
+          "package_valid": true,
+          "module_valid": true,
+          "api_valid": true,
+          "status": "valid",
+          "reason": null,
+          "resolved_module": "textwrap",
+          "suggestions": []
+        }
+      ],
+      "repaired_execution_result": {
+        "status": "passed",
+        "return_code": 0,
+        "stdout": ".                                                                        [100%]\n1 passed in 0.01s\n",
+        "stderr": "",
+        "error_type": null,
+        "error_category": "unknown",
+        "execution_time": 0.2793894999776967,
+        "timed_out": false
+      },
+      "model_name": "provided-code",
+      "generation_config": {},
+      "repair_method": "ollama",
+      "latency_seconds": 7.079113099956885
+    },
+    "repair_attempted": true,
+    "termination_reason": "one_shot_complete",
+    "elapsed_seconds": 7.078000000037719
+  }
+}

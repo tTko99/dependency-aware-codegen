@@ -1,0 +1,229 @@
+{
+  "id": "func_scipy_softmax_v07",
+  "cohort": "historical_failures",
+  "mode": "replay",
+  "before_hashes": {
+    "code_file": "6ab9d3273b13b3f9c5ad1286c84b6f3373cf0219d953d2d52f21b92226f143c9",
+    "test_file": "cb9dcc9c59ee0170341d73f21e1126bb31deaf0a791078d16aed1e7e32ffdfa1"
+  },
+  "after_hashes": {
+    "code_file": "6ab9d3273b13b3f9c5ad1286c84b6f3373cf0219d953d2d52f21b92226f143c9",
+    "test_file": "cb9dcc9c59ee0170341d73f21e1126bb31deaf0a791078d16aed1e7e32ffdfa1"
+  },
+  "unchanged": true,
+  "one_shot": {
+    "status": "FAIL",
+    "result": {
+      "requirement": "Compute a softmax vector.",
+      "generated_code": "import scipy.special as api\nv = 7\nresult = api.normalized_exp_08([0, 0]).tolist() + [v]\n",
+      "analysis": {
+        "imports": [
+          {
+            "module": "scipy.special",
+            "name": null,
+            "alias": "api",
+            "line_number": 1,
+            "is_from_import": false,
+            "level": 0
+          }
+        ],
+        "alias_table": {
+          "api": {
+            "local_name": "api",
+            "canonical_path": "scipy.special",
+            "import_type": "import",
+            "line_number": 1
+          }
+        },
+        "api_references": [
+          {
+            "canonical_path": "scipy.special.normalized_exp_08",
+            "package": "scipy",
+            "module": "scipy.special",
+            "object_path": "normalized_exp_08",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "api.normalized_exp_08",
+            "receiver": "api",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          }
+        ],
+        "syntax_error": null
+      },
+      "package_results": [
+        {
+          "package": "scipy",
+          "exists": true,
+          "status": "valid",
+          "version": "1.18.1",
+          "reason": null
+        }
+      ],
+      "api_results": [
+        {
+          "reference": {
+            "canonical_path": "scipy.special.normalized_exp_08",
+            "package": "scipy",
+            "module": "scipy.special",
+            "object_path": "normalized_exp_08",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "api.normalized_exp_08",
+            "receiver": "api",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          },
+          "package_valid": true,
+          "module_valid": true,
+          "api_valid": false,
+          "status": "hallucinated_function",
+          "reason": "attribute_not_found:normalized_exp_08",
+          "resolved_module": "scipy.special",
+          "suggestions": [
+            "scipy.special.ndtri_exp"
+          ]
+        }
+      ],
+      "execution_result": {
+        "status": "failed",
+        "return_code": 2,
+        "stdout": "\n=================================== ERRORS ====================================\n______________________ ERROR collecting test_solution.py ______________________\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:3: in <module>\n    result = api.normalized_exp_08([0, 0]).tolist() + [v]\n             ^^^^^^^^^^^^^^^^^^^^^\nE   AttributeError: module 'scipy.special' has no attribute 'normalized_exp_08'\n=========================== short test summary info ===========================\nERROR test_solution.py - AttributeError: module 'scipy.special' has no attrib...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.45s\n",
+        "stderr": "",
+        "error_type": "AttributeError",
+        "error_category": "attribute_error",
+        "execution_time": 0.7364346000249498,
+        "timed_out": false
+      },
+      "repaired_code": "import numpy as np\n\nv = 7\nresult = np.exp([0, 0]) / np.sum(np.exp([0, 0])) + [v]",
+      "repair_prompt": "Repair the Python program. Preserve its requirement and return the complete corrected program only, without Markdown or explanation.\n\nRequirement: Compute a softmax vector.\n\nProgram:\nimport scipy.special as api\nv = 7\nresult = api.normalized_exp_08([0, 0]).tolist() + [v]\n\nPackage findings: none\nAPI findings: scipy.special.normalized_exp_08: hallucinated_function; attribute_not_found:normalized_exp_08\nSuspicious API: scipy.special.normalized_exp_08\nCandidate APIs: scipy.special.ndtri_exp\nRuntime evidence: AttributeError: test_solution.py:1: in <module> | solution.py:3: in <module> | AttributeError: module 'scipy.special' has no attribute 'normalized_exp_08' | ERROR test_solution.py - AttributeError: module 'scipy.special' has no attrib...\n",
+      "repaired_analysis": {
+        "imports": [
+          {
+            "module": "numpy",
+            "name": null,
+            "alias": "np",
+            "line_number": 1,
+            "is_from_import": false,
+            "level": 0
+          }
+        ],
+        "alias_table": {
+          "np": {
+            "local_name": "np",
+            "canonical_path": "numpy",
+            "import_type": "import",
+            "line_number": 1
+          }
+        },
+        "api_references": [
+          {
+            "canonical_path": "numpy.exp",
+            "package": "numpy",
+            "module": "numpy",
+            "object_path": "exp",
+            "call_type": "function_or_attribute",
+            "line_number": 4,
+            "source": "np.exp",
+            "receiver": "np",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          },
+          {
+            "canonical_path": "numpy.sum",
+            "package": "numpy",
+            "module": "numpy",
+            "object_path": "sum",
+            "call_type": "function_or_attribute",
+            "line_number": 4,
+            "source": "np.sum",
+            "receiver": "np",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          }
+        ],
+        "syntax_error": null
+      },
+      "repaired_package_results": [
+        {
+          "package": "numpy",
+          "exists": true,
+          "status": "valid",
+          "version": "2.5.3",
+          "reason": null
+        }
+      ],
+      "repaired_api_results": [
+        {
+          "reference": {
+            "canonical_path": "numpy.exp",
+            "package": "numpy",
+            "module": "numpy",
+            "object_path": "exp",
+            "call_type": "function_or_attribute",
+            "line_number": 4,
+            "source": "np.exp",
+            "receiver": "np",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          },
+          "package_valid": true,
+          "module_valid": true,
+          "api_valid": true,
+          "status": "valid",
+          "reason": null,
+          "resolved_module": "numpy",
+          "suggestions": []
+        },
+        {
+          "reference": {
+            "canonical_path": "numpy.sum",
+            "package": "numpy",
+            "module": "numpy",
+            "object_path": "sum",
+            "call_type": "function_or_attribute",
+            "line_number": 4,
+            "source": "np.sum",
+            "receiver": "np",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          },
+          "package_valid": true,
+          "module_valid": true,
+          "api_valid": true,
+          "status": "valid",
+          "reason": null,
+          "resolved_module": "numpy",
+          "suggestions": []
+        }
+      ],
+      "repaired_execution_result": {
+        "status": "failed",
+        "return_code": 1,
+        "stdout": "F                                                                        [100%]\n================================== FAILURES ===================================\n_________________________________ test_result _________________________________\n\n    def test_result():\n>       assert result == [0.5, 0.5, 7]\n               ^^^^^^^^^^^^^^^^^^^^^^^\nE       ValueError: operands could not be broadcast together with shapes (2,) (3,)\n\ntest_solution.py:4: ValueError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_result - ValueError: operands could not be broa...\n1 failed in 0.14s\n",
+        "stderr": "",
+        "error_type": "ValueError",
+        "error_category": "value_error",
+        "execution_time": 0.42301460000453517,
+        "timed_out": false
+      },
+      "model_name": "provided-code",
+      "generation_config": {},
+      "repair_method": "ollama",
+      "latency_seconds": 1.174364200036507
+    },
+    "repair_attempted": true,
+    "termination_reason": "one_shot_complete",
+    "elapsed_seconds": 1.172000000020489
+  },
+  "loop": null,
+  "first_failed": true,
+  "rescued": false,
+  "rescued_at_step": null
+}

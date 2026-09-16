@@ -1,0 +1,240 @@
+{
+  "files": [
+    {
+      "path": "results/m72/capability_probe.json",
+      "sha256": "31f655691452b6c9bd96311cb9b40f99284d34c47fa6b0417daaf8ffa4807654"
+    },
+    {
+      "path": "results/m72/cases.jsonl",
+      "sha256": "0304720a7038ff818cbf956628beb50b7a895dcf7cb8f1205d296ca500dbbab6"
+    },
+    {
+      "path": "results/m72/checks.json",
+      "sha256": "e1bcea9d6a5f79738cef67e6841d7b29eddfd54e685fc78a08df69837b8d5b68"
+    },
+    {
+      "path": "results/m72/comparison/loop_chunks.json",
+      "sha256": "326f93fb1a1e2a7f8b53e38e0b464376c77ab2d6abe5e43b5a320c00eb86ae82"
+    },
+    {
+      "path": "results/m72/comparison/loop_control_chunks.json",
+      "sha256": "0196929fd8026fcffcf04d99625650766caec70aba141d1ff5c21e4d2538d882"
+    },
+    {
+      "path": "results/m72/comparison/loop_control_json_names.json",
+      "sha256": "dffb489b8a1b932001a4f227e9d050757d41428559e092bc741f4a6f3298fe23"
+    },
+    {
+      "path": "results/m72/comparison/loop_control_mean_edges.json",
+      "sha256": "50cd789a979c7beadad471b1be1322d1708342f166382a1cacc82d95a72be2f4"
+    },
+    {
+      "path": "results/m72/comparison/loop_control_stable_unique.json",
+      "sha256": "4fc364f61d647e2c2e041b614491362d774ffcaf683e1c4e82e4a697dce08c77"
+    },
+    {
+      "path": "results/m72/comparison/loop_control_weights.json",
+      "sha256": "fb3c9794faad166737bd59cd0a1d2b806e3752fbd3cef3c63a8d49d944386586"
+    },
+    {
+      "path": "results/m72/comparison/loop_flatten.json",
+      "sha256": "1af5ea6bbb1fbde634096accbeb0241b49c57dc78b9bf9b380ccf55e9b0f0ec4"
+    },
+    {
+      "path": "results/m72/comparison/loop_intervals.json",
+      "sha256": "d4e446b46ed58be162a74c230f044c2ea807d773141e38fba7a8e69610a53306"
+    },
+    {
+      "path": "results/m72/comparison/loop_json_names.json",
+      "sha256": "ec8fd8e37429503b0e7244f35cdad5495fe714ddf610cd2c7a322cd85cb10e6e"
+    },
+    {
+      "path": "results/m72/comparison/loop_mean_edges.json",
+      "sha256": "11812870ea683c49d24dafa065c47914df6ea6108fc51a6edc5b71975b673b83"
+    },
+    {
+      "path": "results/m72/comparison/loop_median.json",
+      "sha256": "ff8f2fc6418f81f429c9507911cb9662072bd1d9069d2721f7b7dc4697b5f800"
+    },
+    {
+      "path": "results/m72/comparison/loop_merge_counts.json",
+      "sha256": "7fece4cb9548e4152f0ea1d16d9f8999b95f31df45a25081619ec28a7632c502"
+    },
+    {
+      "path": "results/m72/comparison/loop_runs.json",
+      "sha256": "b82b4a604330176e6e7b434b704cf13e2f87f15c01f3ca9b9dbaac581efb9ce6"
+    },
+    {
+      "path": "results/m72/comparison/loop_stable_unique.json",
+      "sha256": "41d53146155874b0f7659a50badf1322bfcfd6dbaf4ed30ff57b11a35800ebfa"
+    },
+    {
+      "path": "results/m72/comparison/loop_weights.json",
+      "sha256": "04cd3c70fa6e94ed3d27a2933e7f41e6fdd5fc4b29ef5e3eba932cbb952b5470"
+    },
+    {
+      "path": "results/m72/comparison/one-shot_chunks.json",
+      "sha256": "915742189a5cddc563e100bea42f5f260d2dd041e8a65df7dd402c42bbe07c0f"
+    },
+    {
+      "path": "results/m72/comparison/one-shot_control_chunks.json",
+      "sha256": "5985849ea5ec3a89a48eda6a1aa760082fc69fc4736bba58368901a15f8dfd3b"
+    },
+    {
+      "path": "results/m72/comparison/one-shot_control_json_names.json",
+      "sha256": "371478720bc5f48aa26f1aaeb9f7047446605392d9b2960ab73293c58553b57d"
+    },
+    {
+      "path": "results/m72/comparison/one-shot_control_mean_edges.json",
+      "sha256": "85b2bd5420eccfb386c1cdf7e796760b90072c9fca01edc7ef500b94a68fab6a"
+    },
+    {
+      "path": "results/m72/comparison/one-shot_control_stable_unique.json",
+      "sha256": "b30f4ba10efc2fac2b345dd5b04244d0d5600795f62d0ff6aa7b2db589317824"
+    },
+    {
+      "path": "results/m72/comparison/one-shot_control_weights.json",
+      "sha256": "6f613cba586523fd7e550e975a4395484bb40a5d50bec6c03000aa08382d70d1"
+    },
+    {
+      "path": "results/m72/comparison/one-shot_flatten.json",
+      "sha256": "f754dfc176559ef26f5f4b43154494da087aa116bd33765f5779eae62cd6b1fa"
+    },
+    {
+      "path": "results/m72/comparison/one-shot_intervals.json",
+      "sha256": "91210eb3473ac0f6b109aec8ef4f3b8ee48df2a6e8b4ac9a030d6608adddd563"
+    },
+    {
+      "path": "results/m72/comparison/one-shot_json_names.json",
+      "sha256": "1844fefdc1c5b201a69cbeec5777b08dd5555e81f300bba02d62b26329ac946d"
+    },
+    {
+      "path": "results/m72/comparison/one-shot_mean_edges.json",
+      "sha256": "ff6dd1e292bbe023682d50ac79436135f4e0e8a3b394be423431d6711260a44e"
+    },
+    {
+      "path": "results/m72/comparison/one-shot_median.json",
+      "sha256": "f8f1200fa2574cfe126742832d415353681087e93ab392835ff882f2f9585825"
+    },
+    {
+      "path": "results/m72/comparison/one-shot_merge_counts.json",
+      "sha256": "bb4e3025b7758f162d230411a5948ac7c6edd41cfcc5b666e76750e0f4fe3df2"
+    },
+    {
+      "path": "results/m72/comparison/one-shot_runs.json",
+      "sha256": "1f396c48b3b57cf8406bdb008e65ae3f567bbf159a1ee0f91dab215531382e7a"
+    },
+    {
+      "path": "results/m72/comparison/one-shot_stable_unique.json",
+      "sha256": "39a2cdeb90f01417d01ff772924cf0d9a9157bba9e1d1b9e844dd9eb96bfdf1b"
+    },
+    {
+      "path": "results/m72/comparison/one-shot_weights.json",
+      "sha256": "cae69c9725dc07fe3196cc82c23f1654124230cfb9a1517dff1196bff2457a29"
+    },
+    {
+      "path": "results/m72/comparison/run_manifest.json",
+      "sha256": "d4fb02c778124403fd3e9cc0ea15dbb1e555010c7271c65082f0290c1d43c83c"
+    },
+    {
+      "path": "results/m72/infrastructure/json_names.json",
+      "sha256": "c6fd1c4f51cb66a555fa4fcdd983ff9984745b88ede1574a73f9ba3d9e1a1750"
+    },
+    {
+      "path": "results/m72/infrastructure/mean_edges.json",
+      "sha256": "8e5998d9142b1ab2e4829a0b4e02973e8ad7c2f96c99a164793a2aed6c634be2"
+    },
+    {
+      "path": "results/m72/infrastructure/patch_atomic.json",
+      "sha256": "639dec6bd73e1ce1c8b2a202247988098c8f522a16bf961615cb3e8b50ea1ba5"
+    },
+    {
+      "path": "results/m72/infrastructure/patch_format.json",
+      "sha256": "00e24a435f97a9359d5073fb73ab82321690434b1cf23d301e2cdf4802bf866c"
+    },
+    {
+      "path": "results/m72/infrastructure/patch_syntax.json",
+      "sha256": "222c600453a92bf7222174b3b300eb0edde6ea43e79f00c5dd143e42e1c6c56a"
+    },
+    {
+      "path": "results/m72/infrastructure/rollback.json",
+      "sha256": "42946ec21b51dc983a91c06ea87f8e7cda5d152927d1f48fecd3946d0f70b865"
+    },
+    {
+      "path": "results/m72/infrastructure/run_manifest.json",
+      "sha256": "2d2d306ff8675e34f249b43fd1056818ff5c5ccd5f91266e53e135b20bf7be0b"
+    },
+    {
+      "path": "results/m72/infrastructure/test_write.json",
+      "sha256": "ab890373e4f71d3c15393316b5f953eba26b800fa1a3ed8153a09a0c7fb56f1b"
+    },
+    {
+      "path": "results/m72/infrastructure/traversal.json",
+      "sha256": "815d34b7c5135e986ac10bf2d5f5cbb0efe0142d5048acf1670e5531dd423412"
+    },
+    {
+      "path": "results/m72/infrastructure/unsafe_alias.json",
+      "sha256": "7b26f828b2c43e7084c9088007cc2cc98c9fbb3135ea9217202c44c96062ae94"
+    },
+    {
+      "path": "results/m72/infrastructure/unsafe_eval.json",
+      "sha256": "eaf04f963a7786e4e1bf64680e24babb3b6fe6c6aa0bc614e7b42af555ab1dd6"
+    },
+    {
+      "path": "results/m72/infrastructure/unsafe_write.json",
+      "sha256": "67e5bb7181b48095bba9a13041a73a822ae2ce3db23522a36d7d2486808302c7"
+    },
+    {
+      "path": "results/m72/protected_before.json",
+      "sha256": "cd9d48a867e7c831e4370094b704119e6b663c01420ed97a62666c75b4ceb080"
+    },
+    {
+      "path": "results/m72/pytest.txt",
+      "sha256": "724d58db685a22c686ef6bd5471f4e28b3183fbbabef9aca42b037a936e45371"
+    },
+    {
+      "path": "results/m72/report.md",
+      "sha256": "31fdd811b4b90fab7c7d3b09cd52bbc99e431cbbd6972639b0c8019c58db51c6"
+    },
+    {
+      "path": "results/m72/resolved_config.json",
+      "sha256": "f93f4eb3b2eae58eea03172a8dde62521a8d00cca740b890d5a5c57f39e8a429"
+    },
+    {
+      "path": "results/m72/ruff.txt",
+      "sha256": "a4443afdcfb6d7363adb285762515ccf7cf50473b1a05c20c1a50f6bed4d26b0"
+    },
+    {
+      "path": "results/m72/runtime_after.json",
+      "sha256": "804da48e72b2fc49ef9def6bef2928892f0ce882d2e3e1a9f8a57d17899e6f53"
+    },
+    {
+      "path": "results/m72/summary.json",
+      "sha256": "7bb531aaf9e6d8cd58833f468734bb83e945a8bcc6f17f41383639edd8dbac6a"
+    },
+    {
+      "path": "results/m72/trajectories/chunks.json",
+      "sha256": "3dfbdc1552bdfd5f022729d93fb01c9dc3b6908f64a3b474823c0996489bc450"
+    },
+    {
+      "path": "results/m72/trajectories/flatten.json",
+      "sha256": "8f86795085c7d2b41c7b5b228b1d2af38639845178cb5e71a43debe0d14cf791"
+    },
+    {
+      "path": "results/m72/trajectories/mean_edges.json",
+      "sha256": "774bda3fabbc5de019a25375e7bf4b320f03f4bffae6e198697aafce6c7803e3"
+    },
+    {
+      "path": "results/m72/trajectories/merge_counts.json",
+      "sha256": "5dd7bb408186457b4bde7d08d6d664ccacd0a172c01dbce5217439a7d9f2bf12"
+    },
+    {
+      "path": "results/m72/trajectories/runs.json",
+      "sha256": "e66d2b56e8b4e62671ebbdd59d75f4b6441f702d31ca7b1783fe1012776df6e0"
+    },
+    {
+      "path": "results/m72/trajectories/weights.json",
+      "sha256": "3f0a53f409973f46f60d13748406dd09de554495132d4f3bf454fbf4415fb056"
+    }
+  ]
+}

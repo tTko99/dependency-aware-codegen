@@ -1,0 +1,18 @@
+{
+  "provider": "ollama",
+  "model": {
+    "model_name": "qwen3-coder:30b",
+    "base_url": "http://localhost:11434",
+    "max_new_tokens": 2048,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "repetition_penalty": 1.0,
+    "seed": 42,
+    "context_length": 16384,
+    "keep_alive": "10m"
+  },
+  "agent": {"max_steps": 24, "timeout_seconds": 300, "recent_steps": 6, "output_limit": 6000, "protocol_limit": 3, "probe_cache": false, "probe_timeout": 90},
+  "execution_timeout_seconds": 10,
+  "shared_initial_evidence": true,
+  "comparison": "Pure local same digest, parameters, frozen tests and M6 host checks; 2048 tokens per model call, not equal total token budgets. Formal deadline 300 seconds plus independent final host audit up to 30 seconds."
+}

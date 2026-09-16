@@ -12,7 +12,12 @@ from depguard.schemas import ErrorCategory, ExecutionResult
 
 
 class SandboxedExecutor:
-    """Run generated Python code in a subprocess with timeout and temp directory isolation."""
+    """Timeout/process boundary with a temporary working directory, NOT a security sandbox.
+
+    Legacy one-shot callers must supply trusted code. The agent adds static risk
+    screening and permissions at its tool boundary; OS isolation is still required
+    for adversarial input.
+    """
 
     def __init__(
         self,
@@ -68,8 +73,10 @@ class SandboxedExecutor:
             return ExecutionResult(
                 status="timeout",
                 return_code=None,
-                stdout=exc.stdout or "",
-                stderr=exc.stderr or "",
+                stdout=(exc.stdout.decode("utf-8", errors="replace")
+                        if isinstance(exc.stdout, bytes) else exc.stdout or ""),
+                stderr=(exc.stderr.decode("utf-8", errors="replace")
+                        if isinstance(exc.stderr, bytes) else exc.stderr or ""),
                 error_type="TimeoutExpired",
                 error_category=ErrorCategory.TIMEOUT.value,
                 execution_time=elapsed,

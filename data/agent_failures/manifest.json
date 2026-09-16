@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "selection": "All historical attempted failures; excludes detector misses and controls",
+  "claim_scope": "Historical failure cohort, not guaranteed to fail a new one-shot run",
+  "source_artifact_sha256": "d40cb76205b019bd69a74eae17fbdeae9dc71b665151bf6123a567d29a3a4ad4",
+  "source_catalog_sha256": "0a49f8f38cb3508fbd7004495f40e5c3cef318ad250cb0a051e1efc7f0c984c7",
+  "comparison_config": "configs/agent_evaluation.json",
+  "comparison_config_sha256": "a7face176d7389853c8a0c16dbfa2a4d258a8133a807897d613ad2431d9a0b27",
+  "cases": [
+    {
+      "id": "argc_json_decoder_v06",
+      "requirement": "Decode a JSON integer through a decoder.",
+      "code_file": "data/agent_failures/cases/argc_json_decoder_v06/input.py",
+      "test_file": "data/agent_failures/cases/argc_json_decoder_v06/test_input.py",
+      "historical_repair_file": "data/agent_failures/cases/argc_json_decoder_v06/historical_repair.py",
+      "reference_file": "data/agent_failures/cases/argc_json_decoder_v06/reference.py",
+      "hashes": {
+        "input.py": "2acd648a660292eecda8f75e94f313b2e1782533f7c384b065f418dbdf4b8998",
+        "test_input.py": "d81929039efdd9b1aedbc7570b9a74f3239687bb3cf488cb4ead34516384eb81",
+        "historical_repair.py": "f88b7ffe035b2ad86fd5045bae8a8d5d1e781ba7f19844c7ea503b941558af66",
+        "reference.py": "0c0a11174654a2a9859179f70f3ae04b0f1569a392630e9d0570869ad8ba4032"
+      },
+      "provenance": {
+        "kind": "historical_observed_one_shot_failure",
+        "artifact": "results/controlled_api_repair_7b_ollama/test/api_aware_generic.json",
+        "task_id": "argc_json_decoder_v06",
+        "catalog": "data/raw/expanded_api_examples.jsonl",
+        "historical_repair_attempted": true,
+        "historical_post_repair_passed": false
+      }
+    },
+    {
+      "id": "class_fractions_fraction_v01",
+      "requirement": "Construct a fraction.",
+      "code_file": "data/agent_failures/cases/class_fractions_fraction_v01/input.py",
+      "test_file": "data/agent_failures/cases/class_fractions_fraction_v01/test_input.py",
+      "historical_repair_file": "data/agent_failures/cases/class_fractions_fraction_v01/historical_repair.py",
+      "reference_file": "data/agent_failures/cases/class_fractions_fraction_v01/reference.py",
+      "hashes": {
+        "input.py": "5834425902bf112143ed2c4ce0adf02adf7fcc9af569da909c8692c4db65c29d",
+        "test_input.py": "7095693fcec234235010da1c8443593e0f02870e6d90c352c341b97c1ea3eb66",
+        "historical_repair.py": "210b28b0e813fdcc63f7f37e484c7234e6e9179f45eaad072515b4b5c0c7fb2b",
+        "reference.py": "17dd76e3c1a273ae6989c2aba329efd973aeed633566077f22a2c35f3b22093a"
+      },
+      "provenance": {
+        "kind": "historical_observed_one_shot_failure",
+        "artifact": "results/controlled_api_repair_7b_ollama/test/api_aware_generic.json",
+        "task_id": "class_fractions_fraction_v01",
+        "catalog": "data/raw/expanded_api_examples.jsonl",
+        "historical_repair_attempted": true,
+        "historical_post_repair_passed": false
+      }
+    },
+    {
+      "id": "func_scipy_softmax_v03",
+      "requirement": "Compute a softmax vector.",
+      "code_file": "data/agent_failures/cases/func_scipy_softmax_v03/input.py",
+      "test_file": "data/agent_failures/cases/func_scipy_softmax_v03/test_input.py",
+      "historical_repair_file": "data/agent_failures/cases/func_scipy_softmax_v03/historical_repair.py",
+      "reference_file": "data/agent_failures/cases/func_scipy_softmax_v03/reference.py",
+      "hashes": {
+        "input.py": "054aa8252a126efcc458c797eb1953b0ae28c9075c14f23b5a6bcdb4a32e5621",
+        "test_input.py": "753738254b9f0c18bb6b311458c861d49534a752321e18eaf06bdb432dd24d87",
+        "historical_repair.py": "c726976f17aa9a17d037f9dd291b7f01f5a1083a2eaaefe85a2605537e710c86",
+        "reference.py": "e50eef7ab6068a46d572367da445357dfab0ea8fccfe78c91bf185651a2cac5d"
+      },
+      "provenance": {
+        "kind": "historical_observed_one_shot_failure",
+        "artifact": "results/controlled_api_repair_7b_ollama/test/api_aware_generic.json",
+        "task_id": "func_scipy_softmax_v03",
+        "catalog": "data/raw/expanded_api_examples.jsonl",
+        "historical_repair_attempted": true,
+        "historical_post_repair_passed": false
+      }
+    },
+    {
+      "id": "func_scipy_softmax_v04",
+      "requirement": "Compute a softmax vector.",
+      "code_file": "data/agent_failures/cases/func_scipy_softmax_v04/input.py",
+      "test_file": "data/agent_failures/cases/func_scipy_softmax_v04/test_input.py",
+      "historical_repair_file": "data/agent_failures/cases/func_scipy_softmax_v04/historical_repair.py",
+      "reference_file": "data/agent_failures/cases/func_scipy_softmax_v04/reference.py",
+      "hashes": {
+        "input.py": "ed03ec3c730146151745f614d1e507e63ca96c0df309e6cf556b36930101703d",
+        "test_input.py": "798548901bfabc94151328bc22d6ed983646956bab76d96d8bd5efff3dea48b3",
+        "historical_repair.py": "a38edf00eb0660a27a4fbd8580b3c4ecc835956e8dc0641992ca4563b7b7bf1a",
+        "reference.py": "0f765d3f60790fd52d59d20df51611379c38e4e33e262b861e86193d4f86c338"
+      },
+      "provenance": {
+        "kind": "historical_observed_one_shot_failure",
+        "artifact": "results/controlled_api_repair_7b_ollama/test/api_aware_generic.json",
+        "task_id": "func_scipy_softmax_v04",
+        "catalog": "data/raw/expanded_api_examples.jsonl",
+        "historical_repair_attempted": true,
+        "historical_post_repair_passed": false
+      }
+    },
+    {
+      "id": "func_scipy_softmax_v07",
+      "requirement": "Compute a softmax vector.",
+      "code_file": "data/agent_failures/cases/func_scipy_softmax_v07/input.py",
+      "test_file": "data/agent_failures/cases/func_scipy_softmax_v07/test_input.py",
+      "historical_repair_file": "data/agent_failures/cases/func_scipy_softmax_v07/historical_repair.py",
+      "reference_file": "data/agent_failures/cases/func_scipy_softmax_v07/reference.py",
+      "hashes": {
+        "input.py": "6ab9d3273b13b3f9c5ad1286c84b6f3373cf0219d953d2d52f21b92226f143c9",
+        "test_input.py": "cb9dcc9c59ee0170341d73f21e1126bb31deaf0a791078d16aed1e7e32ffdfa1",
+        "historical_repair.py": "2909c5606973a8e374756c8777e0a9cc05a6a51ca03832cde53bd4c1ac600ef6",
+        "reference.py": "2be992eeaed21a7c2d5f83b02de0c061a159c8450372fabe57008fd74d568b6f"
+      },
+      "provenance": {
+        "kind": "historical_observed_one_shot_failure",
+        "artifact": "results/controlled_api_repair_7b_ollama/test/api_aware_generic.json",
+        "task_id": "func_scipy_softmax_v07",
+        "catalog": "data/raw/expanded_api_examples.jsonl",
+        "historical_repair_attempted": true,
+        "historical_post_repair_passed": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "id": "module_urllib_magicparse",
+  "cohort": "sanity",
+  "mode": "live",
+  "is_control": false,
+  "before_hashes": {
+    "code_file": "ac5fc35f594b2e26e9fb53c80d817c1b138675dc4cf67fb84edee85ad85fcfb7",
+    "test_file": "d925e5db916d1c1b50876e01f4f6c85e7498b53a545cd386d56c347b3ad233bb"
+  },
+  "after_hashes": {
+    "code_file": "ac5fc35f594b2e26e9fb53c80d817c1b138675dc4cf67fb84edee85ad85fcfb7",
+    "test_file": "d925e5db916d1c1b50876e01f4f6c85e7498b53a545cd386d56c347b3ad233bb"
+  },
+  "unchanged": true,
+  "historical_lf_match": {
+    "code_file": true,
+    "test_file": true
+  },
+  "one_shot": {
+    "status": "PASS",
+    "result": {
+      "requirement": "URL-encode the query value hello world and expose the encoded text as result.",
+      "generated_code": "import urllib.magicparse as urlparse\n\nresult = urlparse.urlencode({\"q\": \"hello world\"})\n",
+      "analysis": {
+        "imports": [
+          {
+            "module": "urllib.magicparse",
+            "name": null,
+            "alias": "urlparse",
+            "line_number": 1,
+            "is_from_import": false,
+            "level": 0
+          }
+        ],
+        "alias_table": {
+          "urlparse": {
+            "local_name": "urlparse",
+            "canonical_path": "urllib.magicparse",
+            "import_type": "import",
+            "line_number": 1
+          }
+        },
+        "api_references": [
+          {
+            "canonical_path": "urllib.magicparse.urlencode",
+            "package": "urllib",
+            "module": "urllib.magicparse",
+            "object_path": "urlencode",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "urlparse.urlencode",
+            "receiver": "urlparse",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          }
+        ],
+        "syntax_error": null
+      },
+      "package_results": [
+        {
+          "package": "urllib",
+          "exists": true,
+          "status": "valid",
+          "version": null,
+          "reason": null
+        }
+      ],
+      "api_results": [
+        {
+          "reference": {
+            "canonical_path": "urllib.magicparse.urlencode",
+            "package": "urllib",
+            "module": "urllib.magicparse",
+            "object_path": "urlencode",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "urlparse.urlencode",
+            "receiver": "urlparse",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          },
+          "package_valid": true,
+          "module_valid": false,
+          "api_valid": false,
+          "status": "hallucinated_module",
+          "reason": "attribute_not_found:magicparse",
+          "resolved_module": "urllib",
+          "suggestions": [
+            "urllib.parse"
+          ]
+        }
+      ],
+      "execution_result": {
+        "status": "failed",
+        "return_code": 2,
+        "stdout": "\n=================================== ERRORS ====================================\n______________________ ERROR collecting test_solution.py ______________________\nImportError while importing test module 'C:\\Users\\Administrator\\AppData\\Local\\Temp\\depguard_exec_mh9tnegj\\test_solution.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n..\\..\\..\\..\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\importlib\\__init__.py:90: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest_solution.py:1: in <module>\n    from solution import result\nsolution.py:1: in <module>\n    import urllib.magicparse as urlparse\nE   ModuleNotFoundError: No module named 'urllib.magicparse'\n=========================== short test summary info ===========================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n",
+        "stderr": "",
+        "error_type": "ModuleNotFoundError",
+        "error_category": "import_error",
+        "execution_time": 0.3788889000425115,
+        "timed_out": false
+      },
+      "repaired_code": "import urllib.parse as urlparse\n\nresult = urlparse.urlencode({\"q\": \"hello world\"})\n\nprint(result)",
+      "repair_prompt": "Repair the Python program. Preserve its requirement and return the complete corrected program only, without Markdown or explanation.\n\nRequirement: URL-encode the query value hello world and expose the encoded text as result.\n\nProgram:\nimport urllib.magicparse as urlparse\n\nresult = urlparse.urlencode({\"q\": \"hello world\"})\n\nPackage findings: none\nAPI findings: urllib.magicparse.urlencode: hallucinated_module; attribute_not_found:magicparse\nSuspicious API: urllib.magicparse.urlencode\nCandidate APIs: urllib.parse\nRuntime evidence: ModuleNotFoundError: test_solution.py:1: in <module> | solution.py:1: in <module> | ModuleNotFoundError: No module named 'urllib.magicparse'\n",
+      "repaired_analysis": {
+        "imports": [
+          {
+            "module": "urllib.parse",
+            "name": null,
+            "alias": "urlparse",
+            "line_number": 1,
+            "is_from_import": false,
+            "level": 0
+          }
+        ],
+        "alias_table": {
+          "urlparse": {
+            "local_name": "urlparse",
+            "canonical_path": "urllib.parse",
+            "import_type": "import",
+            "line_number": 1
+          }
+        },
+        "api_references": [
+          {
+            "canonical_path": "urllib.parse.urlencode",
+            "package": "urllib",
+            "module": "urllib.parse",
+            "object_path": "urlencode",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "urlparse.urlencode",
+            "receiver": "urlparse",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          }
+        ],
+        "syntax_error": null
+      },
+      "repaired_package_results": [
+        {
+          "package": "urllib",
+          "exists": true,
+          "status": "valid",
+          "version": null,
+          "reason": null
+        }
+      ],
+      "repaired_api_results": [
+        {
+          "reference": {
+            "canonical_path": "urllib.parse.urlencode",
+            "package": "urllib",
+            "module": "urllib.parse",
+            "object_path": "urlencode",
+            "call_type": "function_or_attribute",
+            "line_number": 3,
+            "source": "urlparse.urlencode",
+            "receiver": "urlparse",
+            "arg_count": 1,
+            "keyword_names": [],
+            "is_call": true
+          },
+          "package_valid": true,
+          "module_valid": true,
+          "api_valid": true,
+          "status": "valid",
+          "reason": null,
+          "resolved_module": "urllib.parse",
+          "suggestions": []
+        }
+      ],
+      "repaired_execution_result": {
+        "status": "passed",
+        "return_code": 0,
+        "stdout": ".                                                                        [100%]\n1 passed in 0.01s\n",
+        "stderr": "",
+        "error_type": null,
+        "error_category": "unknown",
+        "execution_time": 0.27794810000341386,
+        "timed_out": false
+      },
+      "model_name": "provided-code",
+      "generation_config": {},
+      "repair_method": "ollama",
+      "latency_seconds": 0.9419178999960423
+    },
+    "repair_attempted": true,
+    "termination_reason": "one_shot_complete",
+    "elapsed_seconds": 0.9530000000377186
+  }
+}

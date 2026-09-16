@@ -1,0 +1,669 @@
+{
+  "milestone": "M7.2",
+  "m71": {
+    "capability_probe": {
+      "numerator": 15,
+      "denominator": 15,
+      "rate": 1.0
+    },
+    "tool_protocol": {
+      "numerator": 15,
+      "denominator": 15,
+      "rate": 1.0
+    },
+    "probe_failures": {},
+    "patch_acceptance": {
+      "numerator": 12,
+      "denominator": 12,
+      "rate": 1.0
+    },
+    "patch_failures": {},
+    "strict_rescue": {
+      "numerator": 0,
+      "denominator": 1,
+      "rate": 0.0
+    },
+    "one_shot_failure_count": 1,
+    "false_success": {
+      "numerator": 3,
+      "denominator": 15,
+      "rate": 0.2
+    },
+    "conditions": {
+      "one-shot": {
+        "true_pass": {
+          "numerator": 14,
+          "denominator": 15,
+          "rate": 0.9333333333333333
+        },
+        "hard_pass": {
+          "numerator": 9,
+          "denominator": 10,
+          "rate": 0.9
+        },
+        "controls_unmodified": {
+          "numerator": 5,
+          "denominator": 5,
+          "rate": 1.0
+        },
+        "controls": {
+          "numerator": 5,
+          "denominator": 5,
+          "rate": 1.0
+        },
+        "cost": {
+          "runs": 15,
+          "mean_steps": 0,
+          "median_steps": 0,
+          "mean_model_calls": 0.6666666666666666,
+          "mean_seconds": 2.98640000000208,
+          "p95_seconds": null,
+          "mean_validation_calls": 6.666666666666667,
+          "p95_policy": "nearest rank; at least 20 completed attempts",
+          "input_tokens": 12329,
+          "output_tokens": 663
+        }
+      },
+      "loop": {
+        "true_pass": {
+          "numerator": 12,
+          "denominator": 15,
+          "rate": 0.8
+        },
+        "hard_pass": {
+          "numerator": 7,
+          "denominator": 10,
+          "rate": 0.7
+        },
+        "controls_unmodified": {
+          "numerator": 4,
+          "denominator": 5,
+          "rate": 0.8
+        },
+        "controls": {
+          "numerator": 4,
+          "denominator": 5,
+          "rate": 0.8
+        },
+        "cost": {
+          "runs": 15,
+          "mean_steps": 4.933333333333334,
+          "median_steps": 6,
+          "mean_model_calls": 7.933333333333334,
+          "mean_seconds": 19.391666666666666,
+          "p95_seconds": null,
+          "mean_validation_calls": 11.133333333333333,
+          "p95_policy": "nearest rank; at least 20 completed attempts",
+          "input_tokens": 256192,
+          "output_tokens": 6590
+        }
+      }
+    },
+    "infrastructure_only": {
+      "unauthorized_refusal": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "rollback": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      }
+    },
+    "not_run": {},
+    "case_count": 30,
+    "all_live_inputs_unchanged": true
+  },
+  "m72": {
+    "capability_probe": {
+      "numerator": 10,
+      "denominator": 10,
+      "rate": 1.0
+    },
+    "tool_protocol": {
+      "numerator": 10,
+      "denominator": 10,
+      "rate": 1.0
+    },
+    "probe_failures": {},
+    "patch_acceptance": {
+      "numerator": 11,
+      "denominator": 17,
+      "rate": 0.6470588235294118
+    },
+    "patch_failures": {
+      "PATCH_PARSE_ERROR": 6
+    },
+    "strict_rescue": {
+      "numerator": 1,
+      "denominator": 1,
+      "rate": 1.0
+    },
+    "one_shot_failure_count": 1,
+    "false_success": {
+      "numerator": 0,
+      "denominator": 10,
+      "rate": 0.0
+    },
+    "conditions": {
+      "one-shot": {
+        "true_pass": {
+          "numerator": 14,
+          "denominator": 15,
+          "rate": 0.9333333333333333
+        },
+        "hard_pass": {
+          "numerator": 9,
+          "denominator": 10,
+          "rate": 0.9
+        },
+        "controls_unmodified": {
+          "numerator": 5,
+          "denominator": 5,
+          "rate": 1.0
+        },
+        "controls": {
+          "numerator": 5,
+          "denominator": 5,
+          "rate": 1.0
+        },
+        "cost": {
+          "runs": 15,
+          "mean_steps": 0,
+          "median_steps": 0,
+          "mean_model_calls": 0.6666666666666666,
+          "mean_seconds": 2.98640000000208,
+          "p95_seconds": null,
+          "mean_validation_calls": 6.666666666666667,
+          "p95_policy": "nearest rank; at least 20 completed attempts",
+          "input_tokens": 12329,
+          "output_tokens": 663
+        }
+      },
+      "loop": {
+        "true_pass": {
+          "numerator": 15,
+          "denominator": 15,
+          "rate": 1.0
+        },
+        "hard_pass": {
+          "numerator": 10,
+          "denominator": 10,
+          "rate": 1.0
+        },
+        "controls_unmodified": {
+          "numerator": 5,
+          "denominator": 5,
+          "rate": 1.0
+        },
+        "controls": {
+          "numerator": 5,
+          "denominator": 5,
+          "rate": 1.0
+        },
+        "cost": {
+          "runs": 15,
+          "mean_steps": 5.6,
+          "median_steps": 7,
+          "mean_model_calls": 7.6,
+          "mean_seconds": 27.118666666668528,
+          "p95_seconds": null,
+          "mean_validation_calls": 10.4,
+          "p95_policy": "nearest rank; at least 20 completed attempts",
+          "input_tokens": 411181,
+          "output_tokens": 6602
+        }
+      }
+    },
+    "infrastructure_only": {
+      "unauthorized_refusal": {
+        "numerator": 5,
+        "denominator": 5,
+        "rate": 1.0
+      },
+      "rollback": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0
+      }
+    },
+    "not_run": {},
+    "case_count": 41,
+    "all_live_inputs_unchanged": true
+  },
+  "triggered_repair_cases": 10,
+  "formal_protocol": {
+    "numerator": 10,
+    "denominator": 10,
+    "rate": 1.0
+  },
+  "triggered_capability_probes": {
+    "numerator": 10,
+    "denominator": 10,
+    "rate": 1.0
+  },
+  "false_success_all_tasks": {
+    "numerator": 0,
+    "denominator": 15,
+    "rate": 0.0
+  },
+  "finish_precondition_events": [
+    {
+      "case_id": "runs",
+      "rejected_steps": [
+        4
+      ],
+      "later_actions": [
+        {
+          "step": 5,
+          "tool": "execute"
+        },
+        {
+          "step": 6,
+          "tool": "validate_apis"
+        },
+        {
+          "step": 7,
+          "tool": "validate_packages"
+        },
+        {
+          "step": 8,
+          "tool": "finish"
+        }
+      ],
+      "final_status": "PASS"
+    }
+  ],
+  "case_rescue_evidence": {
+    "mean_edges": {
+      "eligible": false,
+      "rescued": false,
+      "first_repair_status": "PASS",
+      "failure_observation_step": null,
+      "rescued_patch_step": null
+    },
+    "json_names": {
+      "eligible": false,
+      "rescued": false,
+      "first_repair_status": "PASS",
+      "failure_observation_step": null,
+      "rescued_patch_step": null
+    },
+    "chunks": {
+      "eligible": false,
+      "rescued": false,
+      "first_repair_status": "PASS",
+      "failure_observation_step": null,
+      "rescued_patch_step": null
+    },
+    "weights": {
+      "eligible": true,
+      "rescued": true,
+      "first_repair_status": "FAIL",
+      "failure_observation_step": 3,
+      "rescued_patch_step": 4
+    },
+    "stable_unique": {
+      "eligible": false,
+      "rescued": false,
+      "first_repair_status": "PASS",
+      "failure_observation_step": null,
+      "rescued_patch_step": null
+    },
+    "flatten": {
+      "eligible": false,
+      "rescued": false,
+      "first_repair_status": "PASS",
+      "failure_observation_step": null,
+      "rescued_patch_step": null
+    },
+    "merge_counts": {
+      "eligible": false,
+      "rescued": false,
+      "first_repair_status": "PASS",
+      "failure_observation_step": null,
+      "rescued_patch_step": null
+    },
+    "median": {
+      "eligible": false,
+      "rescued": false,
+      "first_repair_status": "PASS",
+      "failure_observation_step": null,
+      "rescued_patch_step": null
+    },
+    "runs": {
+      "eligible": false,
+      "rescued": false,
+      "first_repair_status": "PASS",
+      "failure_observation_step": null,
+      "rescued_patch_step": null
+    },
+    "intervals": {
+      "eligible": false,
+      "rescued": false,
+      "first_repair_status": "PASS",
+      "failure_observation_step": null,
+      "rescued_patch_step": null
+    },
+    "control_mean_edges": {
+      "eligible": false,
+      "rescued": false,
+      "first_repair_status": "NOT_OBSERVED",
+      "failure_observation_step": null,
+      "rescued_patch_step": null
+    },
+    "control_json_names": {
+      "eligible": false,
+      "rescued": false,
+      "first_repair_status": "NOT_OBSERVED",
+      "failure_observation_step": null,
+      "rescued_patch_step": null
+    },
+    "control_chunks": {
+      "eligible": false,
+      "rescued": false,
+      "first_repair_status": "NOT_OBSERVED",
+      "failure_observation_step": null,
+      "rescued_patch_step": null
+    },
+    "control_weights": {
+      "eligible": false,
+      "rescued": false,
+      "first_repair_status": "NOT_OBSERVED",
+      "failure_observation_step": null,
+      "rescued_patch_step": null
+    },
+    "control_stable_unique": {
+      "eligible": false,
+      "rescued": false,
+      "first_repair_status": "NOT_OBSERVED",
+      "failure_observation_step": null,
+      "rescued_patch_step": null
+    }
+  },
+  "protected_inputs_configs_manifests_and_m71_unchanged": true,
+  "one_shot_baseline": "all 15 M7.1 artifacts reused byte-for-byte; no new one-shot inference",
+  "standalone_probe": {
+    "config": {
+      "provider": "ollama",
+      "model": {
+        "model_name": "qwen3-coder:30b",
+        "base_url": "http://localhost:11434",
+        "max_new_tokens": 2048,
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "repetition_penalty": 1.0,
+        "seed": 42,
+        "context_length": 16384,
+        "keep_alive": "10m"
+      },
+      "agent": {
+        "max_steps": 24,
+        "timeout_seconds": 300,
+        "recent_steps": 6,
+        "output_limit": 6000,
+        "protocol_limit": 3,
+        "probe_cache": false,
+        "probe_timeout": 90
+      },
+      "execution_timeout_seconds": 10,
+      "shared_initial_evidence": true,
+      "comparison": "Pure local same digest, parameters, frozen tests and M6 host checks; 2048 tokens per model call, not equal total token budgets. Formal deadline 300 seconds plus independent final host audit up to 30 seconds."
+    },
+    "runtime_before": {
+      "backend": "ollama",
+      "endpoint": "http://localhost:11434",
+      "ollama_version": "0.34.1",
+      "configured_model_tag": "qwen3-coder:30b",
+      "installed_model": {
+        "name": "qwen3-coder:30b",
+        "model": "qwen3-coder:30b",
+        "modified_at": "2026-09-16T19:23:47.9845799+08:00",
+        "size": 18556700761,
+        "digest": "06c1097efce0431c2045fe7b2e5108366e43bee1b4603a7aded8f21689e90bca",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen3moe",
+          "families": [
+            "qwen3moe"
+          ],
+          "parameter_size": "30.5B",
+          "quantization_level": "Q4_K_M",
+          "context_length": 262144,
+          "embedding_length": 2048
+        },
+        "capabilities": [
+          "completion",
+          "tools"
+        ]
+      },
+      "runtime": null
+    },
+    "runtime_after": {
+      "backend": "ollama",
+      "endpoint": "http://localhost:11434",
+      "ollama_version": "0.34.1",
+      "configured_model_tag": "qwen3-coder:30b",
+      "installed_model": {
+        "name": "qwen3-coder:30b",
+        "model": "qwen3-coder:30b",
+        "modified_at": "2026-09-16T19:23:47.9845799+08:00",
+        "size": 18556700761,
+        "digest": "06c1097efce0431c2045fe7b2e5108366e43bee1b4603a7aded8f21689e90bca",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen3moe",
+          "families": [
+            "qwen3moe"
+          ],
+          "parameter_size": "30.5B",
+          "quantization_level": "Q4_K_M",
+          "context_length": 262144,
+          "embedding_length": 2048
+        },
+        "capabilities": [
+          "completion",
+          "tools"
+        ]
+      },
+      "runtime": {
+        "size_bytes": 20091177532,
+        "size_vram_bytes": 20091177532,
+        "context_length": 16384,
+        "expires_at": "2026-09-16T21:20:53.924441+08:00",
+        "processor_placement": "gpu"
+      }
+    },
+    "result": {
+      "status": "passed",
+      "stage": "complete",
+      "reason": "Native calls, observation followup and finish verified",
+      "model_response_kind": "tool_call",
+      "cached": false,
+      "elapsed_seconds": 22.10899999999674,
+      "transcript": [
+        {
+          "stage": "first_call",
+          "kind": "tool_call",
+          "decision_summary": "Selected tool probe_echo",
+          "tool_call": {
+            "name": "probe_echo",
+            "arguments": {
+              "token": "start"
+            },
+            "call_id": "call_8rkvxl32",
+            "function_index": 0
+          },
+          "error_code": null,
+          "usage": {
+            "prompt_eval_count": 375,
+            "eval_count": 23
+          },
+          "response_model": "qwen3-coder:30b",
+          "argument_type": "object",
+          "tool_call_id": "call_8rkvxl32",
+          "termination_reason": "continue",
+          "observation": {
+            "challenge": "8a85d9727cdf5368d5cfbb17",
+            "next_action": "echo this challenge"
+          }
+        },
+        {
+          "stage": "observation_followup",
+          "kind": "tool_call",
+          "decision_summary": "Selected tool probe_echo",
+          "tool_call": {
+            "name": "probe_echo",
+            "arguments": {
+              "token": "8a85d9727cdf5368d5cfbb17"
+            },
+            "call_id": "call_ukiy4ufn",
+            "function_index": 0
+          },
+          "error_code": null,
+          "usage": {
+            "prompt_eval_count": 452,
+            "eval_count": 42
+          },
+          "response_model": "qwen3-coder:30b",
+          "argument_type": "object",
+          "tool_call_id": "call_ukiy4ufn",
+          "termination_reason": "continue",
+          "observation": {
+            "acknowledged": true,
+            "next_action": "finish"
+          }
+        },
+        {
+          "stage": "finish",
+          "kind": "tool_call",
+          "decision_summary": "Selected tool finish",
+          "tool_call": {
+            "name": "finish",
+            "arguments": {
+              "success": true,
+              "conclusion": "Challenge acknowledged and echoed successfully."
+            },
+            "call_id": "call_zj36hjju",
+            "function_index": 0
+          },
+          "error_code": null,
+          "usage": {
+            "prompt_eval_count": 525,
+            "eval_count": 41
+          },
+          "response_model": "qwen3-coder:30b",
+          "argument_type": "object",
+          "tool_call_id": "call_zj36hjju",
+          "termination_reason": "finish",
+          "observation": {
+            "finished": true,
+            "arguments": {
+              "success": true,
+              "conclusion": "Challenge acknowledged and echoed successfully."
+            }
+          }
+        }
+      ],
+      "termination_reason": "finish"
+    }
+  },
+  "resolved_config": {
+    "provider": "ollama",
+    "model": {
+      "model_name": "qwen3-coder:30b",
+      "base_url": "http://localhost:11434",
+      "max_new_tokens": 2048,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "repetition_penalty": 1.0,
+      "seed": 42,
+      "context_length": 16384,
+      "keep_alive": "10m"
+    },
+    "agent": {
+      "max_steps": 24,
+      "timeout_seconds": 300,
+      "recent_steps": 6,
+      "output_limit": 6000,
+      "protocol_limit": 3,
+      "probe_cache": false,
+      "probe_timeout": 90
+    },
+    "execution_timeout_seconds": 10,
+    "shared_initial_evidence": true,
+    "comparison": "Pure local same digest, parameters, frozen tests and M6 host checks; 2048 tokens per model call, not equal total token budgets. Formal deadline 300 seconds plus independent final host audit up to 30 seconds."
+  },
+  "runtime": {
+    "backend": "ollama",
+    "endpoint": "http://localhost:11434",
+    "ollama_version": "0.34.1",
+    "configured_model_tag": "qwen3-coder:30b",
+    "installed_model": {
+      "name": "qwen3-coder:30b",
+      "model": "qwen3-coder:30b",
+      "modified_at": "2026-09-16T19:23:47.9845799+08:00",
+      "size": 18556700761,
+      "digest": "06c1097efce0431c2045fe7b2e5108366e43bee1b4603a7aded8f21689e90bca",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen3moe",
+        "families": [
+          "qwen3moe"
+        ],
+        "parameter_size": "30.5B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 262144,
+        "embedding_length": 2048
+      },
+      "capabilities": [
+        "completion",
+        "tools"
+      ]
+    },
+    "runtime": {
+      "size_bytes": 20091177532,
+      "size_vram_bytes": 20091177532,
+      "context_length": 16384,
+      "expires_at": "2026-09-16T21:27:35.378671+08:00",
+      "processor_placement": "gpu"
+    }
+  },
+  "checks": {
+    "pytest": {
+      "passed": 241,
+      "skipped": 1,
+      "failed": 0,
+      "skip_reason": "Windows symlink creation privilege",
+      "log": "pytest.txt"
+    },
+    "ruff": {
+      "passed": true,
+      "log": "ruff.txt"
+    },
+    "protected_file_count": 149,
+    "protected_files_unchanged": true,
+    "implementation_frozen_during_run": true,
+    "one_shot_reused_byte_for_byte": true,
+    "all_source_test_hashes_unchanged": true,
+    "all_runs_dry_run": true,
+    "native_formal_calls_verified": 84,
+    "all_observations_include_validation_state": true,
+    "control_zero_model_calls": 5,
+    "forbidden_log_fields": [],
+    "whitespace_findings": [],
+    "git_operations": 0,
+    "cloud_model_calls": 0,
+    "weights_strict_rescue": {
+      "eligible": true,
+      "rescued": true,
+      "first_repair_status": "FAIL",
+      "failure_observation_step": 3,
+      "rescued_patch_step": 4
+    }
+  }
+}

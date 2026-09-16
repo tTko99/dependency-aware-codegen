@@ -1,0 +1,7 @@
+........................................................................ [ 29%]
+........................................................................ [ 59%]
+....................s................................................... [ 89%]
+..........................                                               [100%]
+=========================== short test summary info ===========================
+SKIPPED [1] tests\test_m6_patching.py:126: Host does not permit symlink creation: [WinError 1314] �ͻ���û���������Ȩ��: 'C:\\Users\\Administrator\\AppData\\Local\\Temp\\pytest-of-Administrator\\pytest-38\\test_symlink_escape0-outside.py' -> 'C:\\Users\\Administrator\\AppData\\Local\\Temp\\pytest-of-Administrator\\pytest-38\\test_symlink_escape0\\link.py'
+241 passed, 1 skipped in 70.15s (0:01:10)

@@ -1,0 +1,37 @@
+{
+  "case_id": "patch_atomic",
+  "condition": "infrastructure",
+  "mode": "infrastructure",
+  "cohort": "lifecycle",
+  "status": "CHECKED",
+  "expected_operations": [],
+  "provider": "scripted_test",
+  "model_quality_claim": false,
+  "tool_result": {
+    "status": "error",
+    "message": "Hunk context is missing or ambiguous; add unique context",
+    "evidence": {
+      "raw_patch": "@@\n-result = 1\n+result = 2\n@@\n-missing = 1\n+missing = 2",
+      "error_line": 4,
+      "error_code": "PATCH_CONTEXT_MISSING",
+      "format_example": "--- a/path.py\n+++ b/path.py\n@@ -1 +1 @@\n-result = 1\n+result = 2\n",
+      "matches": 0,
+      "validation_state": {
+        "candidate_version": "0:68833fe50c22a93765392cd3e53b25e8a0c7b74e4730e85425e21da46bd69d5c",
+        "required_checks": {
+          "execute": "missing",
+          "run_pytest": "missing",
+          "validate_apis": "missing",
+          "validate_packages": "missing"
+        },
+        "ready_to_finish_successfully": false,
+        "regression_blocked": false
+      }
+    },
+    "candidate_version": "0:68833fe50c22a93765392cd3e53b25e8a0c7b74e4730e85425e21da46bd69d5c",
+    "cached": false
+  },
+  "atomic_unchanged": true,
+  "termination_reason": "expected_patch_refusal",
+  "frozen_inputs_unchanged": true
+}

@@ -1,0 +1,281 @@
+{
+  "case_id": "flatten",
+  "cohort": "hard",
+  "is_control": false,
+  "mode": "live",
+  "condition": "one-shot",
+  "attempted": true,
+  "started": "2026-09-16T12:41:37.262947+00:00",
+  "required_checks": [
+    "validate_packages",
+    "validate_apis",
+    "execute",
+    "run_pytest"
+  ],
+  "before_hashes": {
+    "code_file": "a103d3ecd04ac535aa0a51069b8e58d0745dff6215334e701b32c643d810a0e6",
+    "test_file": "7c39884f7c285e6e6ce6c93b44a2cac8447c153cf4a69ad4924d05aad240b701"
+  },
+  "capability_probe": {},
+  "repair_attempted": true,
+  "model_calls": 1,
+  "status": "PASS",
+  "termination_reason": "one_shot_complete",
+  "trajectory": [],
+  "final_verification": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "1:0eb0aea4daff40e420e6b6a542102f87d9f9d9ca4fd7c44908a56058326d80db",
+    "context_version": "3600692988a7a85334cd4001c3a02e9201f36310514018debf32c496c50dfdf0",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 8,
+      "changed_files": 1,
+      "heuristic": true
+    },
+    "host_status": "PASS",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.02680079999845475,
+            "timed_out": false
+          }
+        },
+        "candidate_version": "1:0eb0aea4daff40e420e6b6a542102f87d9f9d9ca4fd7c44908a56058326d80db",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": ".                                                                        [100%]\n1 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.27639040001668036,
+            "timed_out": false
+          }
+        },
+        "candidate_version": "1:0eb0aea4daff40e420e6b6a542102f87d9f9d9ca4fd7c44908a56058326d80db",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": []
+        },
+        "candidate_version": "1:0eb0aea4daff40e420e6b6a542102f87d9f9d9ca4fd7c44908a56058326d80db",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": []
+        },
+        "candidate_version": "1:0eb0aea4daff40e420e6b6a542102f87d9f9d9ca4fd7c44908a56058326d80db",
+        "cached": false
+      }
+    }
+  },
+  "apply": false,
+  "rollback": {
+    "attempted": false
+  },
+  "initial_verification": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [
+      "run_pytest"
+    ],
+    "candidate_version": "0:a103d3ecd04ac535aa0a51069b8e58d0745dff6215334e701b32c643d810a0e6",
+    "context_version": "3600692988a7a85334cd4001c3a02e9201f36310514018debf32c496c50dfdf0",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "FAIL",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.02571640000678599,
+            "timed_out": false
+          }
+        },
+        "candidate_version": "0:a103d3ecd04ac535aa0a51069b8e58d0745dff6215334e701b32c643d810a0e6",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": false,
+          "execution": {
+            "status": "failed",
+            "return_code": 1,
+            "stdout": "F                                                                        [100%]\n================================== FAILURES ===================================\n________________________________ test_flatten _________________________________\n\n    def test_flatten():\n        assert flatten([[1],[2,3]]) == [1,2,3]\n>       assert flatten([1,[2,[3]],'ab',[]]) == [1,2,3,'ab']\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\ntest_solution.py:4: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nxs = [1, [2, [3]], 'ab', []]\n\n    def flatten(xs):\n>       return [item for group in xs for item in group]\n                                                 ^^^^^\nE       TypeError: 'int' object is not iterable\n\nsolution.py:2: TypeError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_flatten - TypeError: 'int' object is not iterable\n1 failed in 0.06s\n",
+            "stderr": "",
+            "error_type": "TypeError",
+            "error_category": "type_error",
+            "execution_time": 0.33122449996881187,
+            "timed_out": false
+          }
+        },
+        "candidate_version": "0:a103d3ecd04ac535aa0a51069b8e58d0745dff6215334e701b32c643d810a0e6",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": []
+        },
+        "candidate_version": "0:a103d3ecd04ac535aa0a51069b8e58d0745dff6215334e701b32c643d810a0e6",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": []
+        },
+        "candidate_version": "0:a103d3ecd04ac535aa0a51069b8e58d0745dff6215334e701b32c643d810a0e6",
+        "cached": false
+      }
+    }
+  },
+  "model_response": {
+    "content": "```python\ndef flatten(xs):\n    result = []\n    for item in xs:\n        if isinstance(item, list):\n            result.extend(flatten(item))\n        else:\n            result.append(item)\n    return result\n```",
+    "usage": {
+      "prompt_eval_count": 1154,
+      "eval_count": 45
+    },
+    "provider_model": "qwen3-coder:30b"
+  },
+  "patch_submission": {
+    "status": "success",
+    "message": "Memory candidate updated (dry-run; target file unchanged)",
+    "evidence": {
+      "preview": "--- a/input.py\n+++ b/input.py\n@@ -1,2 +1,8 @@\n def flatten(xs):\n-    return [item for group in xs for item in group]\n+    result = []\n+    for item in xs:\n+        if isinstance(item, list):\n+            result.extend(flatten(item))\n+        else:\n+            result.append(item)\n+    return result\n",
+      "normalized_patch": "--- a/input.py\n+++ b/input.py\n@@ -1,2 +1,8 @@\n def flatten(xs):\n-    return [item for group in xs for item in group]\n+    result = []\n+    for item in xs:\n+        if isinstance(item, list):\n+            result.extend(flatten(item))\n+        else:\n+            result.append(item)\n+    return result\n",
+      "written": false,
+      "before": {
+        "version": "0:a103d3ecd04ac535aa0a51069b8e58d0745dff6215334e701b32c643d810a0e6",
+        "sha256": "a103d3ecd04ac535aa0a51069b8e58d0745dff6215334e701b32c643d810a0e6",
+        "lines": 2
+      },
+      "after": {
+        "version": "1:0eb0aea4daff40e420e6b6a542102f87d9f9d9ca4fd7c44908a56058326d80db",
+        "sha256": "0eb0aea4daff40e420e6b6a542102f87d9f9d9ca4fd7c44908a56058326d80db",
+        "lines": 8
+      },
+      "regression_guard": {
+        "blocked": false,
+        "findings": [],
+        "changed_lines": 8,
+        "changed_files": 1,
+        "heuristic": true
+      }
+    },
+    "candidate_version": "1:0eb0aea4daff40e420e6b6a542102f87d9f9d9ca4fd7c44908a56058326d80db",
+    "cached": false
+  },
+  "ended": "2026-09-16T12:41:41.087997+00:00",
+  "latency": 3.8290000000270084,
+  "after_hashes": {
+    "code_file": "a103d3ecd04ac535aa0a51069b8e58d0745dff6215334e701b32c643d810a0e6",
+    "test_file": "7c39884f7c285e6e6ce6c93b44a2cac8447c153cf4a69ad4924d05aad240b701"
+  },
+  "unchanged": true,
+  "candidate_changed": true,
+  "candidate_code": "def flatten(xs):\n    result = []\n    for item in xs:\n        if isinstance(item, list):\n            result.extend(flatten(item))\n        else:\n            result.append(item)\n    return result\n",
+  "candidate_version": "1:0eb0aea4daff40e420e6b6a542102f87d9f9d9ca4fd7c44908a56058326d80db",
+  "candidate_versions": [],
+  "patches": [
+    "--- a/input.py\n+++ b/input.py\n@@ -1,2 +1,8 @@\n def flatten(xs):\n-    return [item for group in xs for item in group]\n+    result = []\n+    for item in xs:\n+        if isinstance(item, list):\n+            result.extend(flatten(item))\n+        else:\n+            result.append(item)\n+    return result\n"
+  ],
+  "patch_count": 1,
+  "verification_count": 0,
+  "tokens": {
+    "input": 1154,
+    "output": 45
+  },
+  "failure_classification": null,
+  "run_id": "existing-bc960c490a4c",
+  "comparison_identity": "bc960c490a4cb5052db0a5cbbec33e5e1abf0bc7efd4a8fa1f1ea5be943b1c96",
+  "provider": "ollama",
+  "model": "qwen3-coder:30b",
+  "resolved_config": {
+    "provider": "ollama",
+    "model": {
+      "model_name": "qwen3-coder:30b",
+      "base_url": "http://localhost:11434",
+      "max_new_tokens": 2048,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "repetition_penalty": 1.0,
+      "seed": 42,
+      "context_length": 16384,
+      "keep_alive": "10m"
+    },
+    "agent": {
+      "max_steps": 24,
+      "timeout_seconds": 300,
+      "recent_steps": 6,
+      "output_limit": 6000,
+      "protocol_limit": 3,
+      "probe_cache": false,
+      "probe_timeout": 90
+    },
+    "execution_timeout_seconds": 10,
+    "shared_initial_evidence": true,
+    "comparison": "Pure local same digest, parameters, frozen tests and M6 host checks; 2048 tokens per model call, not equal total token budgets. Formal deadline 300 seconds plus independent final host audit up to 30 seconds."
+  },
+  "raw_results_ref": "one-shot_flatten.json#/trajectory"
+}

@@ -1,0 +1,46 @@
+{
+  "case_id": "traversal",
+  "condition": "infrastructure",
+  "mode": "infrastructure",
+  "cohort": "safety",
+  "status": "CHECKED",
+  "expected_operations": [
+    {
+      "tool_call": {
+        "name": "apply_patch",
+        "arguments": {
+          "path": "../escape.py",
+          "patch": "@@\n-result = 1\n+result = 2"
+        },
+        "call_id": null,
+        "function_index": null
+      },
+      "tool_result": {
+        "status": "denied",
+        "message": "Only project-relative paths without traversal are allowed",
+        "evidence": {
+          "error_code": "PATH_OUTSIDE_ROOT",
+          "path": "../escape.py",
+          "validation_state": {
+            "candidate_version": "0:68833fe50c22a93765392cd3e53b25e8a0c7b74e4730e85425e21da46bd69d5c",
+            "required_checks": {
+              "execute": "missing",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:68833fe50c22a93765392cd3e53b25e8a0c7b74e4730e85425e21da46bd69d5c",
+        "cached": false
+      },
+      "expected_code": "PATH_OUTSIDE_ROOT",
+      "correctly_denied": true
+    }
+  ],
+  "provider": "scripted_test",
+  "model_quality_claim": false,
+  "frozen_inputs_unchanged": true
+}

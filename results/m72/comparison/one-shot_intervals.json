@@ -1,0 +1,281 @@
+{
+  "case_id": "intervals",
+  "cohort": "hard",
+  "is_control": false,
+  "mode": "live",
+  "condition": "one-shot",
+  "attempted": true,
+  "started": "2026-09-16T12:41:52.898950+00:00",
+  "required_checks": [
+    "validate_packages",
+    "validate_apis",
+    "execute",
+    "run_pytest"
+  ],
+  "before_hashes": {
+    "code_file": "932beb35f339215144d3b6af2debe4636c140c63aa9a6ba2ec3bb6c4ed7cc396",
+    "test_file": "85323ef0e2cf161c98a5fe5aafafb29030130837e792ed3f3b8a9922a3e7d8d3"
+  },
+  "capability_probe": {},
+  "repair_attempted": true,
+  "model_calls": 1,
+  "status": "PASS",
+  "termination_reason": "one_shot_complete",
+  "trajectory": [],
+  "final_verification": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "1:6916fc564ad19c9ee313bd10bd0d90bcab5048536b1b0e5ef7a58ba181dce303",
+    "context_version": "03c474d3998ab41a689caa198e9399ac1213721e8d3639e4c6b8a76d7a9017bb",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 20,
+      "changed_files": 1,
+      "heuristic": true
+    },
+    "host_status": "PASS",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.02642439998453483,
+            "timed_out": false
+          }
+        },
+        "candidate_version": "1:6916fc564ad19c9ee313bd10bd0d90bcab5048536b1b0e5ef7a58ba181dce303",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": ".                                                                        [100%]\n1 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.2774885999970138,
+            "timed_out": false
+          }
+        },
+        "candidate_version": "1:6916fc564ad19c9ee313bd10bd0d90bcab5048536b1b0e5ef7a58ba181dce303",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": []
+        },
+        "candidate_version": "1:6916fc564ad19c9ee313bd10bd0d90bcab5048536b1b0e5ef7a58ba181dce303",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": []
+        },
+        "candidate_version": "1:6916fc564ad19c9ee313bd10bd0d90bcab5048536b1b0e5ef7a58ba181dce303",
+        "cached": false
+      }
+    }
+  },
+  "apply": false,
+  "rollback": {
+    "attempted": false
+  },
+  "initial_verification": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [
+      "run_pytest"
+    ],
+    "candidate_version": "0:932beb35f339215144d3b6af2debe4636c140c63aa9a6ba2ec3bb6c4ed7cc396",
+    "context_version": "03c474d3998ab41a689caa198e9399ac1213721e8d3639e4c6b8a76d7a9017bb",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "FAIL",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.029438900004606694,
+            "timed_out": false
+          }
+        },
+        "candidate_version": "0:932beb35f339215144d3b6af2debe4636c140c63aa9a6ba2ec3bb6c4ed7cc396",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": false,
+          "execution": {
+            "status": "failed",
+            "return_code": 1,
+            "stdout": "F                                                                        [100%]\n================================== FAILURES ===================================\n_______________________________ test_intervals ________________________________\n\n    def test_intervals():\n>       assert intervals([(4,5),(1,2),(2,3)]) == [(1,3),(4,5)]\nE       assert [(1, 5)] == [(1, 3), (4, 5)]\nE         \nE         At index 0 diff: (1, 5) != (1, 3)\nE         Right contains one more item: (4, 5)\nE         Use -v to get more diff\n\ntest_solution.py:3: AssertionError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_intervals - assert [(1, 5)] == [(1, 3), (4, 5)]\n1 failed in 0.06s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.33016389998374507,
+            "timed_out": false
+          }
+        },
+        "candidate_version": "0:932beb35f339215144d3b6af2debe4636c140c63aa9a6ba2ec3bb6c4ed7cc396",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": []
+        },
+        "candidate_version": "0:932beb35f339215144d3b6af2debe4636c140c63aa9a6ba2ec3bb6c4ed7cc396",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": []
+        },
+        "candidate_version": "0:932beb35f339215144d3b6af2debe4636c140c63aa9a6ba2ec3bb6c4ed7cc396",
+        "cached": false
+      }
+    }
+  },
+  "model_response": {
+    "content": "```python\ndef intervals(xs):\n    if not xs:\n        return []\n    \n    # Sort intervals by start time\n    xs.sort()\n    \n    merged = [xs[0]]\n    \n    for current in xs[1:]:\n        last = merged[-1]\n        # If current interval overlaps with the last merged interval\n        if current[0] <= last[1]:\n            # Merge them by extending the end time\n            merged[-1] = (last[0], max(last[1], current[1]))\n        else:\n            # No overlap, add the current interval\n            merged.append(current)\n    \n    return merged\n```",
+    "usage": {
+      "prompt_eval_count": 1100,
+      "eval_count": 131
+    },
+    "provider_model": "qwen3-coder:30b"
+  },
+  "patch_submission": {
+    "status": "success",
+    "message": "Memory candidate updated (dry-run; target file unchanged)",
+    "evidence": {
+      "preview": "--- a/input.py\n+++ b/input.py\n@@ -1,2 +1,20 @@\n def intervals(xs):\n-    return [(min(a for a,b in xs), max(b for a,b in xs))]\n+    if not xs:\n+        return []\n+    \n+    # Sort intervals by start time\n+    xs.sort()\n+    \n+    merged = [xs[0]]\n+    \n+    for current in xs[1:]:\n+        last = merged[-1]\n+        # If current interval overlaps with the last merged interval\n+        if current[0] <= last[1]:\n+            # Merge them by extending the end time\n+            merged[-1] = (last[0], max(last[1], current[1]))\n+        else:\n+            # No overlap, add the current interval\n+            merged.append(current)\n+    \n+    return merged\n",
+      "normalized_patch": "--- a/input.py\n+++ b/input.py\n@@ -1,2 +1,20 @@\n def intervals(xs):\n-    return [(min(a for a,b in xs), max(b for a,b in xs))]\n+    if not xs:\n+        return []\n+    \n+    # Sort intervals by start time\n+    xs.sort()\n+    \n+    merged = [xs[0]]\n+    \n+    for current in xs[1:]:\n+        last = merged[-1]\n+        # If current interval overlaps with the last merged interval\n+        if current[0] <= last[1]:\n+            # Merge them by extending the end time\n+            merged[-1] = (last[0], max(last[1], current[1]))\n+        else:\n+            # No overlap, add the current interval\n+            merged.append(current)\n+    \n+    return merged\n",
+      "written": false,
+      "before": {
+        "version": "0:932beb35f339215144d3b6af2debe4636c140c63aa9a6ba2ec3bb6c4ed7cc396",
+        "sha256": "932beb35f339215144d3b6af2debe4636c140c63aa9a6ba2ec3bb6c4ed7cc396",
+        "lines": 2
+      },
+      "after": {
+        "version": "1:6916fc564ad19c9ee313bd10bd0d90bcab5048536b1b0e5ef7a58ba181dce303",
+        "sha256": "6916fc564ad19c9ee313bd10bd0d90bcab5048536b1b0e5ef7a58ba181dce303",
+        "lines": 20
+      },
+      "regression_guard": {
+        "blocked": false,
+        "findings": [],
+        "changed_lines": 20,
+        "changed_files": 1,
+        "heuristic": true
+      }
+    },
+    "candidate_version": "1:6916fc564ad19c9ee313bd10bd0d90bcab5048536b1b0e5ef7a58ba181dce303",
+    "cached": false
+  },
+  "ended": "2026-09-16T12:41:57.740592+00:00",
+  "latency": 4.844000000040978,
+  "after_hashes": {
+    "code_file": "932beb35f339215144d3b6af2debe4636c140c63aa9a6ba2ec3bb6c4ed7cc396",
+    "test_file": "85323ef0e2cf161c98a5fe5aafafb29030130837e792ed3f3b8a9922a3e7d8d3"
+  },
+  "unchanged": true,
+  "candidate_changed": true,
+  "candidate_code": "def intervals(xs):\n    if not xs:\n        return []\n    \n    # Sort intervals by start time\n    xs.sort()\n    \n    merged = [xs[0]]\n    \n    for current in xs[1:]:\n        last = merged[-1]\n        # If current interval overlaps with the last merged interval\n        if current[0] <= last[1]:\n            # Merge them by extending the end time\n            merged[-1] = (last[0], max(last[1], current[1]))\n        else:\n            # No overlap, add the current interval\n            merged.append(current)\n    \n    return merged\n",
+  "candidate_version": "1:6916fc564ad19c9ee313bd10bd0d90bcab5048536b1b0e5ef7a58ba181dce303",
+  "candidate_versions": [],
+  "patches": [
+    "--- a/input.py\n+++ b/input.py\n@@ -1,2 +1,20 @@\n def intervals(xs):\n-    return [(min(a for a,b in xs), max(b for a,b in xs))]\n+    if not xs:\n+        return []\n+    \n+    # Sort intervals by start time\n+    xs.sort()\n+    \n+    merged = [xs[0]]\n+    \n+    for current in xs[1:]:\n+        last = merged[-1]\n+        # If current interval overlaps with the last merged interval\n+        if current[0] <= last[1]:\n+            # Merge them by extending the end time\n+            merged[-1] = (last[0], max(last[1], current[1]))\n+        else:\n+            # No overlap, add the current interval\n+            merged.append(current)\n+    \n+    return merged\n"
+  ],
+  "patch_count": 1,
+  "verification_count": 0,
+  "tokens": {
+    "input": 1100,
+    "output": 131
+  },
+  "failure_classification": null,
+  "run_id": "existing-bc960c490a4c",
+  "comparison_identity": "bc960c490a4cb5052db0a5cbbec33e5e1abf0bc7efd4a8fa1f1ea5be943b1c96",
+  "provider": "ollama",
+  "model": "qwen3-coder:30b",
+  "resolved_config": {
+    "provider": "ollama",
+    "model": {
+      "model_name": "qwen3-coder:30b",
+      "base_url": "http://localhost:11434",
+      "max_new_tokens": 2048,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "repetition_penalty": 1.0,
+      "seed": 42,
+      "context_length": 16384,
+      "keep_alive": "10m"
+    },
+    "agent": {
+      "max_steps": 24,
+      "timeout_seconds": 300,
+      "recent_steps": 6,
+      "output_limit": 6000,
+      "protocol_limit": 3,
+      "probe_cache": false,
+      "probe_timeout": 90
+    },
+    "execution_timeout_seconds": 10,
+    "shared_initial_evidence": true,
+    "comparison": "Pure local same digest, parameters, frozen tests and M6 host checks; 2048 tokens per model call, not equal total token budgets. Formal deadline 300 seconds plus independent final host audit up to 30 seconds."
+  },
+  "raw_results_ref": "one-shot_intervals.json#/trajectory"
+}
