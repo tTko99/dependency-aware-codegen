@@ -1,0 +1,6 @@
+{
+  "api_url": "https://api.github.com/repos/bigcode-project/octopack/license",
+  "source_blob_sha": "feafaf6c251c6d3b37396ccb09bd42762e60c52f",
+  "source_url": "https://github.com/bigcode-project/octopack/blob/main/LICENSE",
+  "spdx": "MIT"
+}

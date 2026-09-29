@@ -1,0 +1,2006 @@
+[
+  {
+    "id": "hep_000",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_001",
+    "risks": {
+      "source": [
+        {
+          "line": 25,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        }
+      ],
+      "reference": [
+        {
+          "line": 25,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        }
+      ],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": false
+  },
+  {
+    "id": "hep_002",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_003",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_004",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_005",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_006",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_007",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_008",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_009",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_010",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_011",
+    "risks": {
+      "source": [
+        {
+          "line": 16,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        }
+      ],
+      "reference": [
+        {
+          "line": 16,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        }
+      ],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": false
+  },
+  {
+    "id": "hep_012",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_013",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_014",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_015",
+    "risks": {
+      "source": [
+        {
+          "line": 10,
+          "reason": "unresolved_call",
+          "detail": "' '.join"
+        }
+      ],
+      "reference": [
+        {
+          "line": 10,
+          "reason": "unresolved_call",
+          "detail": "' '.join"
+        }
+      ],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": false
+  },
+  {
+    "id": "hep_016",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_017",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_018",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_019",
+    "risks": {
+      "source": [
+        {
+          "line": 23,
+          "reason": "unresolved_call",
+          "detail": "' '.join"
+        }
+      ],
+      "reference": [
+        {
+          "line": 23,
+          "reason": "unresolved_call",
+          "detail": "' '.join"
+        }
+      ],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": false
+  },
+  {
+    "id": "hep_020",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_021",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_022",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_023",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_024",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_025",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_026",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_027",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_028",
+    "risks": {
+      "source": [
+        {
+          "line": 11,
+          "reason": "unresolved_call",
+          "detail": "' '.join"
+        }
+      ],
+      "reference": [
+        {
+          "line": 11,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        }
+      ],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": false
+  },
+  {
+    "id": "hep_029",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_030",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_031",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_032",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": [
+        {
+          "line": 14,
+          "reason": "untrusted_import",
+          "detail": "copy"
+        }
+      ]
+    },
+    "duplicate_history": false,
+    "eligible": false
+  },
+  {
+    "id": "hep_033",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_034",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_035",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_036",
+    "risks": {
+      "source": [
+        {
+          "line": 16,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        }
+      ],
+      "reference": [
+        {
+          "line": 16,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        }
+      ],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": false
+  },
+  {
+    "id": "hep_037",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_038",
+    "risks": {
+      "source": [
+        {
+          "line": 11,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        }
+      ],
+      "reference": [
+        {
+          "line": 11,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        }
+      ],
+      "tests": [
+        {
+          "line": 16,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        }
+      ]
+    },
+    "duplicate_history": false,
+    "eligible": false
+  },
+  {
+    "id": "hep_039",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_040",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_041",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_042",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_043",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_044",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_045",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_046",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_047",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_048",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_049",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_050",
+    "risks": {
+      "source": [
+        {
+          "line": 7,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        },
+        {
+          "line": 14,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        }
+      ],
+      "reference": [
+        {
+          "line": 7,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        },
+        {
+          "line": 14,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        }
+      ],
+      "tests": [
+        {
+          "line": 12,
+          "reason": "untrusted_import",
+          "detail": "copy"
+        },
+        {
+          "line": 17,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        }
+      ]
+    },
+    "duplicate_history": false,
+    "eligible": false
+  },
+  {
+    "id": "hep_051",
+    "risks": {
+      "source": [
+        {
+          "line": 19,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        }
+      ],
+      "reference": [
+        {
+          "line": 19,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        }
+      ],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": false
+  },
+  {
+    "id": "hep_052",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_053",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_054",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_055",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_056",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_057",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_058",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_059",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_060",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_061",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_062",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_063",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_064",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_065",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_066",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_067",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_068",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_069",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_070",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_071",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_072",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_073",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_074",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_075",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_076",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_077",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_078",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_079",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_080",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_081",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_082",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_083",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_084",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_085",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_086",
+    "risks": {
+      "source": [
+        {
+          "line": 15,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        }
+      ],
+      "reference": [
+        {
+          "line": 15,
+          "reason": "unresolved_call",
+          "detail": "' '.join"
+        },
+        {
+          "line": 15,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        }
+      ],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": false
+  },
+  {
+    "id": "hep_087",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_088",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_089",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_090",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_091",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_092",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_093",
+    "risks": {
+      "source": [
+        {
+          "line": 19,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        }
+      ],
+      "reference": [
+        {
+          "line": 19,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        }
+      ],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": false
+  },
+  {
+    "id": "hep_094",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_095",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_096",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_097",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_098",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_099",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_100",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_101",
+    "risks": {
+      "source": [
+        {
+          "line": 22,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        }
+      ],
+      "reference": [
+        {
+          "line": 22,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        }
+      ],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": false
+  },
+  {
+    "id": "hep_102",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_103",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_104",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_105",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_106",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_107",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_108",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_109",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_110",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_111",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_112",
+    "risks": {
+      "source": [
+        {
+          "line": 13,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        }
+      ],
+      "reference": [
+        {
+          "line": 13,
+          "reason": "unresolved_call",
+          "detail": "''.join"
+        }
+      ],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": false
+  },
+  {
+    "id": "hep_113",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_114",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_115",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_116",
+    "risks": {
+      "source": [],
+      "reference": [
+        {
+          "line": 13,
+          "reason": "unresolved_call",
+          "detail": "bin(x)[2:].count"
+        }
+      ],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": false
+  },
+  {
+    "id": "hep_117",
+    "risks": {
+      "source": [
+        {
+          "line": 19,
+          "reason": "unresolved_call",
+          "detail": "word[i].lower"
+        }
+      ],
+      "reference": [
+        {
+          "line": 19,
+          "reason": "unresolved_call",
+          "detail": "word[i].lower"
+        }
+      ],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": false
+  },
+  {
+    "id": "hep_118",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_119",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_120",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_121",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_122",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_123",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_124",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_125",
+    "risks": {
+      "source": [
+        {
+          "line": 15,
+          "reason": "unresolved_call",
+          "detail": "txt.replace(' ', ',').split"
+        },
+        {
+          "line": 15,
+          "reason": "side_effect_call",
+          "detail": "txt.replace"
+        },
+        {
+          "line": 15,
+          "reason": "side_effect_reference",
+          "detail": "txt.replace"
+        }
+      ],
+      "reference": [
+        {
+          "line": 15,
+          "reason": "unresolved_call",
+          "detail": "txt.replace(',', ' ').split"
+        },
+        {
+          "line": 15,
+          "reason": "side_effect_call",
+          "detail": "txt.replace"
+        },
+        {
+          "line": 15,
+          "reason": "side_effect_reference",
+          "detail": "txt.replace"
+        }
+      ],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": false
+  },
+  {
+    "id": "hep_126",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_127",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_128",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_129",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_130",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_131",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_132",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_133",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_134",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_135",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_136",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_137",
+    "risks": {
+      "source": [
+        {
+          "line": 15,
+          "reason": "unresolved_call",
+          "detail": "temp_a.replace(',', '.').replace"
+        },
+        {
+          "line": 16,
+          "reason": "side_effect_call",
+          "detail": "temp_b.replace"
+        },
+        {
+          "line": 15,
+          "reason": "side_effect_reference",
+          "detail": "replace"
+        },
+        {
+          "line": 16,
+          "reason": "side_effect_reference",
+          "detail": "temp_b.replace"
+        },
+        {
+          "line": 15,
+          "reason": "side_effect_call",
+          "detail": "temp_a.replace"
+        },
+        {
+          "line": 15,
+          "reason": "side_effect_reference",
+          "detail": "temp_a.replace"
+        }
+      ],
+      "reference": [
+        {
+          "line": 15,
+          "reason": "side_effect_call",
+          "detail": "temp_a.replace"
+        },
+        {
+          "line": 16,
+          "reason": "side_effect_call",
+          "detail": "temp_b.replace"
+        },
+        {
+          "line": 15,
+          "reason": "side_effect_reference",
+          "detail": "temp_a.replace"
+        },
+        {
+          "line": 16,
+          "reason": "side_effect_reference",
+          "detail": "temp_b.replace"
+        }
+      ],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": false
+  },
+  {
+    "id": "hep_138",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_139",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_140",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_141",
+    "risks": {
+      "source": [
+        {
+          "line": 22,
+          "reason": "unresolved_call",
+          "detail": "lst[0][0].isalpha"
+        }
+      ],
+      "reference": [
+        {
+          "line": 24,
+          "reason": "unresolved_call",
+          "detail": "lst[0][0].isalpha"
+        }
+      ],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": false
+  },
+  {
+    "id": "hep_142",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_143",
+    "risks": {
+      "source": [
+        {
+          "line": 30,
+          "reason": "unresolved_call",
+          "detail": "' '.join"
+        }
+      ],
+      "reference": [
+        {
+          "line": 32,
+          "reason": "unresolved_call",
+          "detail": "' '.join"
+        }
+      ],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": false
+  },
+  {
+    "id": "hep_144",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_145",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_146",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_147",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_148",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_149",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_150",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_151",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_152",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_153",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_154",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_155",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_156",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_157",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_158",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_159",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_160",
+    "risks": {
+      "source": [
+        {
+          "line": 30,
+          "reason": "dangerous_call",
+          "detail": "eval"
+        },
+        {
+          "line": 30,
+          "reason": "dangerous_reference",
+          "detail": "eval"
+        }
+      ],
+      "reference": [
+        {
+          "line": 30,
+          "reason": "dangerous_call",
+          "detail": "eval"
+        },
+        {
+          "line": 30,
+          "reason": "dangerous_reference",
+          "detail": "eval"
+        }
+      ],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": false
+  },
+  {
+    "id": "hep_161",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  },
+  {
+    "id": "hep_162",
+    "risks": {
+      "source": [
+        {
+          "line": 9,
+          "reason": "untrusted_import",
+          "detail": "hashlib"
+        },
+        {
+          "line": 10,
+          "reason": "unresolved_call",
+          "detail": "hashlib.md5('text').hexdigest"
+        }
+      ],
+      "reference": [
+        {
+          "line": 9,
+          "reason": "untrusted_import",
+          "detail": "hashlib"
+        },
+        {
+          "line": 10,
+          "reason": "unresolved_call",
+          "detail": "hashlib.md5(text.encode('ascii')).hexdigest"
+        }
+      ],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": false
+  },
+  {
+    "id": "hep_163",
+    "risks": {
+      "source": [],
+      "reference": [],
+      "tests": []
+    },
+    "duplicate_history": false,
+    "eligible": true
+  }
+]

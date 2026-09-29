@@ -28,7 +28,7 @@ def protocol_entered(row):
 
 
 def strict_rescue(a, b):
-    patches = [s for s in b.get("trajectory", []) if (s.get("tool_call") or {}).get("name") == "apply_patch"
+    patches = [s for s in b.get("trajectory", []) if (s.get("tool_call") or {}).get("name") in {"apply_patch", "replace_candidate"}
                and s["tool_result"]["status"] == "success"]
     detail = {"eligible": False, "rescued": False, "first_repair_status": "NOT_OBSERVED",
               "failure_observation_step": None, "rescued_patch_step": None}
@@ -111,7 +111,7 @@ def summarize(rows):
     rescues = [strict_rescue(pairs[(b["case_id"], "one-shot")], b) for b in loops
                if (b["case_id"], "one-shot") in pairs]
     calls = [s for r in loops for s in r.get("trajectory", []) if s.get("tool_call")
-             and s["tool_call"]["name"] == "apply_patch"]
+             and s["tool_call"]["name"] in {"apply_patch", "replace_candidate"}]
     claims = [r for r in loops if any(s.get("tool_call") and s["tool_call"]["name"] == "finish"
               and (s["tool_call"].get("arguments", {}).get("success") is True
                    or s["tool_call"].get("arguments", {}).get("conclusion", "").strip().upper() == "PASS")

@@ -1,0 +1,9 @@
+Repair the Python function according to this contract. Preserve its signature.
+Write a Python function `fib(n: int)` to solve the following problem:
+Return n-th Fibonacci number.
+>>> fib(10)
+55
+>>> fib(1)
+1
+>>> fib(8)
+21

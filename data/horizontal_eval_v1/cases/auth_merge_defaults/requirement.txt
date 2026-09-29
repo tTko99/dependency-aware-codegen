@@ -1,0 +1,1 @@
+Merge default and supplied options; supplied values win even if False, zero or None. Do not modify either input. Preserve the solve signature; do not mutate caller inputs.

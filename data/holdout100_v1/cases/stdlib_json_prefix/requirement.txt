@@ -1,0 +1,1 @@
+Parse a JSON value starting at character zero, allowing trailing data; return (value, end index). Input has no leading whitespace. Preserve solve signature.

@@ -1,0 +1,1 @@
+Remove common leading whitespace from all nonblank lines using textwrap dedent semantics. Preserve solve signature.

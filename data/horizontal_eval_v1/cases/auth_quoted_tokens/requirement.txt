@@ -1,0 +1,1 @@
+Parse comma-separated fields with double-quoted fields; commas inside quotes are literal and doubled quotes inside quotes denote one quote. Return [""] for empty input. Inputs are well-formed; no multiline records. Preserve the solve signature; do not mutate caller inputs.

@@ -1,0 +1,1 @@
+Subtract right counts from left counts, returning a dict that retains zero and negative counts for every key present in either input. Preserve solve signature.

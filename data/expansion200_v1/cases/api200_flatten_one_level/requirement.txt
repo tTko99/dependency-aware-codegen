@@ -1,0 +1,1 @@
+Flatten exactly one level of a list of iterables, preserving input order. Preserve solve signature.

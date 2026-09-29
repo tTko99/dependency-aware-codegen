@@ -1,0 +1,1 @@
+Partition values into false and true groups. A None predicate means truth testing; mode even means an even-number predicate. Return two lists, preserving order.

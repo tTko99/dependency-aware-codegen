@@ -143,6 +143,10 @@ def apply_patch(state, args, deadline):
         return ToolResult("error", str(exc), {"raw_patch": clip_text(raw, 4000),
                           "error_line": exc.line, "error_code": exc.code,
                           "format_example": FORMAT_EXAMPLE, **exc.details}, state.version)
+    return _update_candidate(state, candidate, target)
+
+
+def _update_candidate(state, candidate, target):
     preview = normalized_diff(state.candidate_code, candidate, target)
     before = {"version": state.version, "sha256": code_hash(state.candidate_code),
               "lines": len(state.candidate_code.splitlines())}
@@ -161,6 +165,40 @@ def apply_patch(state, args, deadline):
                        "before": before, "after": {"version": state.version,
                        "sha256": code_hash(candidate), "lines": len(candidate.splitlines())},
                        "regression_guard": regression_guard(state)}, state.version)
+
+
+def replace_candidate(state, args, deadline):
+    """Replace only the designated in-memory source; never write a caller-selected file."""
+    if "read_source" not in state.permissions:
+        return ToolResult("denied", "Permission denied", {"missing_permissions": ["read_source"]},
+                          state.version)
+    refusal = integrity_guard(state)
+    if refusal:
+        return refusal
+    target = state.source_path.relative_to(state.project_root).as_posix()
+    refusal = path_guard(state, target)
+    if refusal:
+        return refusal
+    if args["expected_version"] != state.version:
+        return ToolResult("error", "Candidate changed; read the current candidate before replacing",
+                          {"error_code": "REPLACEMENT_STALE_VERSION"}, state.version)
+    candidate = args["code"].replace("\r\n", "\n")
+    if "\r\n" in state.candidate_code:
+        candidate = candidate.replace("\n", "\r\n")
+    if not candidate.strip():
+        return ToolResult("error", "Supply the complete Python source",
+                          {"error_code": "REPLACEMENT_EMPTY"}, state.version)
+    try:
+        ast.parse(candidate)
+    except (SyntaxError, ValueError) as exc:
+        return ToolResult("error", "Replacement syntax error; previous candidate retained",
+                          {"error_code": "REPLACEMENT_SYNTAX_ERROR",
+                           "error_line": getattr(exc, "lineno", None),
+                           "context": clip_text(str(exc), 240)}, state.version)
+    if candidate == state.candidate_code:
+        return ToolResult("error", "Replacement makes no change",
+                          {"error_code": "REPLACEMENT_NO_CHANGE"}, state.version)
+    return _update_candidate(state, candidate, target)
 
 
 def rollback(state, args, deadline):

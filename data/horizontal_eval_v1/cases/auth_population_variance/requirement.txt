@@ -1,0 +1,1 @@
+Return population variance, including zero for one observation. Preserve the solve signature; do not mutate caller inputs.

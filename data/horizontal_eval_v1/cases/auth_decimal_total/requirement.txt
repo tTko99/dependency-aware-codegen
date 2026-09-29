@@ -1,0 +1,1 @@
+Sum decimal strings exactly and return a fixed-point decimal string, preserving Decimal arithmetic rather than binary floating point. Preserve the solve signature; do not mutate caller inputs.

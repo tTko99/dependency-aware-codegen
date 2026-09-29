@@ -1,0 +1,1 @@
+Split text on a literal nonempty separator, retaining empty fields; separator metacharacters have no special meaning. Preserve the solve signature; do not mutate caller inputs.

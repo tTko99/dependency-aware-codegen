@@ -1,0 +1,1 @@
+Count whitespace-separated words case-insensitively using casefold; retain punctuation as part of a word and ignore repeated whitespace. Preserve the solve signature; do not mutate caller inputs.

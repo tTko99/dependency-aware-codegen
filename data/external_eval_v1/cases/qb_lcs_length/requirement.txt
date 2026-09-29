@@ -1,0 +1,17 @@
+Repair lcs_length to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.
+
+Longest Common Substring
+longest-common-substring
+
+Input:
+    s: a string
+    t: a string
+
+Output:
+    Length of the longest substring common to s and t
+
+Example:
+    >>> lcs_length('witch', 'sandwich')
+    2
+    >>> lcs_length('meow', 'homeowner')
+    4

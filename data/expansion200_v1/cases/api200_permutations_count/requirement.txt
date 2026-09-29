@@ -1,0 +1,1 @@
+Return the number of ordered k-element arrangements without replacement from n distinct elements. Preserve solve signature.

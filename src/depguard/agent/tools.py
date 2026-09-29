@@ -5,7 +5,7 @@ import time
 from dataclasses import replace
 
 from depguard.agent.contracts import AgentState, ToolCall, ToolResult, ToolSpec, code_hash
-from depguard.agent.patching import apply_patch, rollback
+from depguard.agent.patching import apply_patch, replace_candidate, rollback
 from depguard.agent.safety import guard_tool
 from depguard.analysis import DependencyAnalyzer
 from depguard.execution import SandboxedExecutor
@@ -189,7 +189,7 @@ def finish(state, args, deadline):
             failed_checks=[n for n, value in states.items() if value == "failed"],
             stale_checks=[n for n, value in states.items() if value == "stale"],
             allowed_next_tools=sorted({n for n, value in states.items() if value != "passed"}
-                | {"apply_patch", "rollback", "finish"}))
+                | {"apply_patch", "replace_candidate", "rollback", "finish"}))
         return ToolResult("error", "Success finish rejected; choose validation or repair from the observation. "
                           "Use finish(success=false) to abandon.", evidence)
     return ToolResult("success", "Model submitted conclusion", evidence)
@@ -206,6 +206,9 @@ def default_registry():
          {"rerun_reason": {"type": "string"}}, []),
         ("apply_patch", apply_patch, ("read_source",), False,
          {"patch": {"type": "string"}, "path": {"type": "string"}}, ["patch"]),
+        ("replace_candidate", replace_candidate, ("read_source",), False,
+         {"code": {"type": "string"}, "expected_version": {"type": "string"}},
+         ["code", "expected_version"]),
         ("rollback", rollback, ("read_source",), False, {}, []),
         ("finish", finish, (), False, {"conclusion": {"type": "string"},
                                       "success": {"type": "boolean"},
@@ -215,6 +218,10 @@ def default_registry():
             "regression is unblocked. Missing, failed or stale evidence returns an observation; "
             "choose your next tool. To stop unsuccessfully use success=false or outcome=failure."
             if name == "finish" else handler.__name__)
+        if name == "replace_candidate":
+            description = ("Replace the designated source in memory with complete Python code, "
+                "without Markdown fences or omissions. Pass the current candidate_version as "
+                "expected_version. Atomic syntax check; no disk write. All old checks become stale.")
         registry.register(ToolSpec(name, description, {
             "type": "object", "properties": properties, "required": required,
             "additionalProperties": False,

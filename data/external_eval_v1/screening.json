@@ -1,0 +1,311 @@
+{
+  "selection_before_model_calls": true,
+  "candidates": [
+    {
+      "name": "bitcount",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 9,
+      "omitted_rows": []
+    },
+    {
+      "name": "breadth_first_search",
+      "included": false,
+      "reason": "graph/node fixtures outside single-file adapter scope"
+    },
+    {
+      "name": "bucketsort",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 7,
+      "omitted_rows": []
+    },
+    {
+      "name": "depth_first_search",
+      "included": false,
+      "reason": "graph/node fixtures outside single-file adapter scope"
+    },
+    {
+      "name": "detect_cycle",
+      "included": false,
+      "reason": "graph/node fixtures outside single-file adapter scope"
+    },
+    {
+      "name": "find_first_in_sorted",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 7,
+      "omitted_rows": []
+    },
+    {
+      "name": "find_in_sorted",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 7,
+      "omitted_rows": []
+    },
+    {
+      "name": "flatten",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 7,
+      "omitted_rows": []
+    },
+    {
+      "name": "gcd",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 6,
+      "omitted_rows": []
+    },
+    {
+      "name": "get_factors",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 11,
+      "omitted_rows": []
+    },
+    {
+      "name": "hanoi",
+      "included": false,
+      "reason": "existing risk policy rejects source/reference/test",
+      "risk_findings": {
+        "source": [
+          {
+            "line": 4,
+            "reason": "unresolved_call",
+            "detail": "({1, 2, 3} - {start} - {end}).pop"
+          }
+        ],
+        "reference": [
+          {
+            "line": 5,
+            "reason": "unresolved_call",
+            "detail": "({1, 2, 3} - {start} - {end}).pop"
+          }
+        ],
+        "tests": []
+      }
+    },
+    {
+      "name": "is_valid_parenthesization",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 3,
+      "omitted_rows": []
+    },
+    {
+      "name": "kheapsort",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 4,
+      "omitted_rows": []
+    },
+    {
+      "name": "knapsack",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 9,
+      "omitted_rows": [
+        {
+          "row": 9,
+          "reason": "upstream default slow-test exclusion"
+        }
+      ]
+    },
+    {
+      "name": "kth",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 7,
+      "omitted_rows": []
+    },
+    {
+      "name": "lcs_length",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 9,
+      "omitted_rows": []
+    },
+    {
+      "name": "levenshtein",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 6,
+      "omitted_rows": [
+        {
+          "row": 3,
+          "reason": "upstream default slow-test exclusion"
+        }
+      ]
+    },
+    {
+      "name": "lis",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 12,
+      "omitted_rows": []
+    },
+    {
+      "name": "longest_common_subsequence",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 10,
+      "omitted_rows": []
+    },
+    {
+      "name": "max_sublist_sum",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 6,
+      "omitted_rows": []
+    },
+    {
+      "name": "mergesort",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 14,
+      "omitted_rows": []
+    },
+    {
+      "name": "minimum_spanning_tree",
+      "included": false,
+      "reason": "graph/node fixtures outside single-file adapter scope"
+    },
+    {
+      "name": "next_palindrome",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 5,
+      "omitted_rows": []
+    },
+    {
+      "name": "next_permutation",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 8,
+      "omitted_rows": []
+    },
+    {
+      "name": "pascal",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 5,
+      "omitted_rows": []
+    },
+    {
+      "name": "possible_change",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 10,
+      "omitted_rows": []
+    },
+    {
+      "name": "powerset",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 5,
+      "omitted_rows": []
+    },
+    {
+      "name": "quicksort",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 13,
+      "omitted_rows": []
+    },
+    {
+      "name": "reverse_linked_list",
+      "included": false,
+      "reason": "graph/node fixtures outside single-file adapter scope"
+    },
+    {
+      "name": "rpn_eval",
+      "included": false,
+      "reason": "existing risk policy rejects source/reference/test",
+      "risk_findings": {
+        "source": [
+          {
+            "line": 4,
+            "reason": "unresolved_call",
+            "detail": "{'+': lambda a, b: a + b, '-': lambda a, b: a - b, '*': lambda a, b: a * b, '/': lambda a, b: a / b}[symbol]"
+          }
+        ],
+        "reference": [
+          {
+            "line": 4,
+            "reason": "unresolved_call",
+            "detail": "{'+': lambda a, b: a + b, '-': lambda a, b: a - b, '*': lambda a, b: a * b, '/': lambda a, b: a / b}[symbol]"
+          }
+        ],
+        "tests": []
+      }
+    },
+    {
+      "name": "shortest_path_length",
+      "included": false,
+      "reason": "graph/node fixtures outside single-file adapter scope"
+    },
+    {
+      "name": "shortest_path_lengths",
+      "included": false,
+      "reason": "graph/node fixtures outside single-file adapter scope"
+    },
+    {
+      "name": "shortest_paths",
+      "included": false,
+      "reason": "graph/node fixtures outside single-file adapter scope"
+    },
+    {
+      "name": "shunting_yard",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 6,
+      "omitted_rows": []
+    },
+    {
+      "name": "sieve",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 6,
+      "omitted_rows": []
+    },
+    {
+      "name": "sqrt",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 7,
+      "omitted_rows": []
+    },
+    {
+      "name": "subsequences",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 12,
+      "omitted_rows": []
+    },
+    {
+      "name": "to_base",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 10,
+      "omitted_rows": []
+    },
+    {
+      "name": "topological_ordering",
+      "included": false,
+      "reason": "graph/node fixtures outside single-file adapter scope"
+    },
+    {
+      "name": "wrap",
+      "included": true,
+      "reason": "self-contained; original and reference pass static screening",
+      "test_rows": 5,
+      "omitted_rows": []
+    }
+  ],
+  "repair_count": 29,
+  "control_count": 10,
+  "control_selection": "first ten statically eligible names alphabetically",
+  "note": "Related controls are not independent repair families; not production defects."
+}

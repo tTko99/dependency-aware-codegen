@@ -1,0 +1,1 @@
+Return a sorted copy of values without changing the original list. Preserve the solve signature; do not mutate caller inputs.

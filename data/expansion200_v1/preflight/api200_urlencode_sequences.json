@@ -1,0 +1,370 @@
+{
+  "case_id": "api200_urlencode_sequences",
+  "input_hashes": {
+    "input.py": "0433a0fdd4de0cf87066a8b78a9f8805dc7066d4ac89f20c8b6b9ff35e539b10",
+    "reference.py": "c156dc5bab8f9454d9930722141682b04e5e3378682b1a827312b325d095c6bf",
+    "test_input.py": "79415b1a4fdbba739be9b88699df5079fbeb8a739f9251ffa66a2c98eb3d1881",
+    "requirement.txt": "47c9a7fbac4336f1425c47af58f2e7c2311eb2bd4fb629383bb699005cee321d"
+  },
+  "valid": true,
+  "initial": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [
+      "run_pytest"
+    ],
+    "candidate_version": "0:0433a0fdd4de0cf87066a8b78a9f8805dc7066d4ac89f20c8b6b9ff35e539b10",
+    "context_version": "43102680ef9fe6470656eca88e1a36b51e71cc1b45a83723323e4d38cdfea605",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "FAIL",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.03409359999932349,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:0433a0fdd4de0cf87066a8b78a9f8805dc7066d4ac89f20c8b6b9ff35e539b10",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:0433a0fdd4de0cf87066a8b78a9f8805dc7066d4ac89f20c8b6b9ff35e539b10",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": false,
+          "execution": {
+            "status": "failed",
+            "return_code": 1,
+            "stdout": "FF..                                                                     [100%]\n================================== FAILURES ===================================\n_____________________ test_contract[args0-a=1&a=2&b=x+y] ______________________\n\nargs = ([('a', [1, 2]), ('b', 'x y')],), expected = 'a=1&a=2&b=x+y'\n\n    @pytest.mark.parametrize('args, expected', [(([('a', [1, 2]), ('b', 'x y')],), 'a=1&a=2&b=x+y'), (([('a', [])],), ''), (([],), ''), (([('q', '+')],), 'q=%2B')])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\nE       AssertionError: assert 'a=%5B1%2C+2%5D&b=x+y' == 'a=1&a=2&b=x+y'\nE         \nE         - a=1&a=2&b=x+y\nE         + a=%5B1%2C+2%5D&b=x+y\n\ntest_solution.py:6: AssertionError\n____________________________ test_contract[args1-] ____________________________\n\nargs = ([('a', [])],), expected = ''\n\n    @pytest.mark.parametrize('args, expected', [(([('a', [1, 2]), ('b', 'x y')],), 'a=1&a=2&b=x+y'), (([('a', [])],), ''), (([],), ''), (([('q', '+')],), 'q=%2B')])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\nE       AssertionError: assert 'a=%5B%5D' == ''\nE         \nE         + a=%5B%5D\n\ntest_solution.py:6: AssertionError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_contract[args0-a=1&a=2&b=x+y] - AssertionError:...\nFAILED test_solution.py::test_contract[args1-] - AssertionError: assert 'a=%5...\n2 failed, 2 passed in 0.07s\n",
+            "stderr": "",
+            "error_type": "AssertionError",
+            "error_category": "runtime_error",
+            "execution_time": 0.31949030002579093,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:0433a0fdd4de0cf87066a8b78a9f8805dc7066d4ac89f20c8b6b9ff35e539b10",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:0433a0fdd4de0cf87066a8b78a9f8805dc7066d4ac89f20c8b6b9ff35e539b10",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "urllib.parse.urlencode",
+                "package": "urllib",
+                "module": "urllib.parse",
+                "object_path": "urlencode",
+                "call_type": "import_object",
+                "line_number": 1,
+                "source": "urlencode",
+                "receiver": "urlencode",
+                "arg_count": null,
+                "keyword_names": [],
+                "is_call": false
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "urllib.parse",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "urllib.parse.urlencode",
+                "package": "urllib",
+                "module": "urllib.parse",
+                "object_path": "urlencode",
+                "call_type": "imported_callable",
+                "line_number": 4,
+                "source": "urlencode",
+                "receiver": "urlencode",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "urllib.parse",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:0433a0fdd4de0cf87066a8b78a9f8805dc7066d4ac89f20c8b6b9ff35e539b10",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:0433a0fdd4de0cf87066a8b78a9f8805dc7066d4ac89f20c8b6b9ff35e539b10",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "urllib",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:0433a0fdd4de0cf87066a8b78a9f8805dc7066d4ac89f20c8b6b9ff35e539b10",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:0433a0fdd4de0cf87066a8b78a9f8805dc7066d4ac89f20c8b6b9ff35e539b10",
+        "cached": false
+      }
+    }
+  },
+  "reference": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "0:c156dc5bab8f9454d9930722141682b04e5e3378682b1a827312b325d095c6bf",
+    "context_version": "43339f00d6c3530ed518613ffae586ce364f15da8ff9c77055fe2ab91c065071",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "PASS",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.033477099845185876,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:c156dc5bab8f9454d9930722141682b04e5e3378682b1a827312b325d095c6bf",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:c156dc5bab8f9454d9930722141682b04e5e3378682b1a827312b325d095c6bf",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "....                                                                     [100%]\n4 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.26817339984700084,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:c156dc5bab8f9454d9930722141682b04e5e3378682b1a827312b325d095c6bf",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:c156dc5bab8f9454d9930722141682b04e5e3378682b1a827312b325d095c6bf",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "urllib.parse.urlencode",
+                "package": "urllib",
+                "module": "urllib.parse",
+                "object_path": "urlencode",
+                "call_type": "import_object",
+                "line_number": 1,
+                "source": "urlencode",
+                "receiver": "urlencode",
+                "arg_count": null,
+                "keyword_names": [],
+                "is_call": false
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "urllib.parse",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "urllib.parse.urlencode",
+                "package": "urllib",
+                "module": "urllib.parse",
+                "object_path": "urlencode",
+                "call_type": "imported_callable",
+                "line_number": 4,
+                "source": "urlencode",
+                "receiver": "urlencode",
+                "arg_count": 1,
+                "keyword_names": [
+                  "doseq"
+                ],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "urllib.parse",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:c156dc5bab8f9454d9930722141682b04e5e3378682b1a827312b325d095c6bf",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:c156dc5bab8f9454d9930722141682b04e5e3378682b1a827312b325d095c6bf",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "urllib",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:c156dc5bab8f9454d9930722141682b04e5e3378682b1a827312b325d095c6bf",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": true,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:c156dc5bab8f9454d9930722141682b04e5e3378682b1a827312b325d095c6bf",
+        "cached": false
+      }
+    }
+  }
+}

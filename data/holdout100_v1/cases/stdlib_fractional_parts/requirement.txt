@@ -1,0 +1,1 @@
+Return (fractional part, integer part) as floats, both retaining the input sign. Preserve solve signature.

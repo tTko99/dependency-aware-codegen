@@ -1,0 +1,404 @@
+{
+  "case_id": "qb_kheapsort_control",
+  "valid": true,
+  "initial": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "0:f97bce3d8b0a390c56b826df364c1e2d836b1997a416c3e729b75a61a7640cc7",
+    "context_version": "f24b93117b0a648fb917b791ad34500ba0bffbddf0ea851e07fc5e186d5b199e",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "PASS",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.0243284001480788,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:f97bce3d8b0a390c56b826df364c1e2d836b1997a416c3e729b75a61a7640cc7",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:f97bce3d8b0a390c56b826df364c1e2d836b1997a416c3e729b75a61a7640cc7",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "....                                                                     [100%]\n4 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.26984349987469614,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:f97bce3d8b0a390c56b826df364c1e2d836b1997a416c3e729b75a61a7640cc7",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:f97bce3d8b0a390c56b826df364c1e2d836b1997a416c3e729b75a61a7640cc7",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "heapq.heapify",
+                "package": "heapq",
+                "module": "heapq",
+                "object_path": "heapify",
+                "call_type": "function_or_attribute",
+                "line_number": 6,
+                "source": "heapq.heapify",
+                "receiver": "heapq",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "heapq",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "heapq.heappushpop",
+                "package": "heapq",
+                "module": "heapq",
+                "object_path": "heappushpop",
+                "call_type": "function_or_attribute",
+                "line_number": 9,
+                "source": "heapq.heappushpop",
+                "receiver": "heapq",
+                "arg_count": 2,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "heapq",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "heapq.heappop",
+                "package": "heapq",
+                "module": "heapq",
+                "object_path": "heappop",
+                "call_type": "function_or_attribute",
+                "line_number": 12,
+                "source": "heapq.heappop",
+                "receiver": "heapq",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "heapq",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:f97bce3d8b0a390c56b826df364c1e2d836b1997a416c3e729b75a61a7640cc7",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:f97bce3d8b0a390c56b826df364c1e2d836b1997a416c3e729b75a61a7640cc7",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "heapq",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:f97bce3d8b0a390c56b826df364c1e2d836b1997a416c3e729b75a61a7640cc7",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": true,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:f97bce3d8b0a390c56b826df364c1e2d836b1997a416c3e729b75a61a7640cc7",
+        "cached": false
+      }
+    }
+  },
+  "reference": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "0:f97bce3d8b0a390c56b826df364c1e2d836b1997a416c3e729b75a61a7640cc7",
+    "context_version": "f4fdfcda8a1fc098c504e7c49724d0eaeca3ae9bc1f29513252f227a446877d4",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "PASS",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.02464510011486709,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:f97bce3d8b0a390c56b826df364c1e2d836b1997a416c3e729b75a61a7640cc7",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:f97bce3d8b0a390c56b826df364c1e2d836b1997a416c3e729b75a61a7640cc7",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "....                                                                     [100%]\n4 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.2789991998579353,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:f97bce3d8b0a390c56b826df364c1e2d836b1997a416c3e729b75a61a7640cc7",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:f97bce3d8b0a390c56b826df364c1e2d836b1997a416c3e729b75a61a7640cc7",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "heapq.heapify",
+                "package": "heapq",
+                "module": "heapq",
+                "object_path": "heapify",
+                "call_type": "function_or_attribute",
+                "line_number": 6,
+                "source": "heapq.heapify",
+                "receiver": "heapq",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "heapq",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "heapq.heappushpop",
+                "package": "heapq",
+                "module": "heapq",
+                "object_path": "heappushpop",
+                "call_type": "function_or_attribute",
+                "line_number": 9,
+                "source": "heapq.heappushpop",
+                "receiver": "heapq",
+                "arg_count": 2,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "heapq",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "heapq.heappop",
+                "package": "heapq",
+                "module": "heapq",
+                "object_path": "heappop",
+                "call_type": "function_or_attribute",
+                "line_number": 12,
+                "source": "heapq.heappop",
+                "receiver": "heapq",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "heapq",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:f97bce3d8b0a390c56b826df364c1e2d836b1997a416c3e729b75a61a7640cc7",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:f97bce3d8b0a390c56b826df364c1e2d836b1997a416c3e729b75a61a7640cc7",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "heapq",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:f97bce3d8b0a390c56b826df364c1e2d836b1997a416c3e729b75a61a7640cc7",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": true,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:f97bce3d8b0a390c56b826df364c1e2d836b1997a416c3e729b75a61a7640cc7",
+        "cached": false
+      }
+    }
+  }
+}

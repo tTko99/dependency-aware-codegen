@@ -1,0 +1,1 @@
+Serialize the mapping as JSON with literal Unicode characters and sorted keys, using default JSON spacing. Preserve solve signature.

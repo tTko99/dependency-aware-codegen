@@ -1,0 +1,1 @@
+Return a list of cumulative sums in input order; empty input gives an empty list. Preserve the solve signature; do not mutate caller inputs.

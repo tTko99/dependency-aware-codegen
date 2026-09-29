@@ -1,0 +1,1 @@
+Return the ISO date immediately after a valid input ISO date, including month and leap-year boundaries. Preserve the solve signature; do not mutate caller inputs.

@@ -1,0 +1,1 @@
+Return mantissa and exponent such that x=m*2**e, abs(m) in [0.5,1) for nonzero x; zero gives (0,0). Preserve solve signature.

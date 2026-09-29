@@ -1,0 +1,1 @@
+Return an exact reduced numerator/denominator pair for integer a divided by nonzero integer b; denominator must be positive. Preserve the solve signature; do not mutate caller inputs.

@@ -1,0 +1,329 @@
+{
+  "case_id": "api200_product_identity",
+  "input_hashes": {
+    "input.py": "2c5cfd3bf7e7b7349a589d741e1dafb356be1071f3f6e213096bb2b9556c6eb1",
+    "reference.py": "7da26c6c59b604b3c94d6d85531f60a19d965132827844066bb6ed19ae500200",
+    "test_input.py": "13516541dc50a27afe0d1c6bac9be5bc1b0e662da9265a60356d778b50c89df4",
+    "requirement.txt": "c13e98d4dde4de177b4ff2d86b1598dc9841f1404a50267c7a83a054fe33de67"
+  },
+  "valid": true,
+  "initial": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [
+      "run_pytest",
+      "validate_apis"
+    ],
+    "candidate_version": "0:2c5cfd3bf7e7b7349a589d741e1dafb356be1071f3f6e213096bb2b9556c6eb1",
+    "context_version": "1cf3e83afe8d4ece4d857d8dd77d5e667fbe3d9153f15667e18e96db0f75827b",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "FAIL",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.022595700109377503,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:2c5cfd3bf7e7b7349a589d741e1dafb356be1071f3f6e213096bb2b9556c6eb1",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:2c5cfd3bf7e7b7349a589d741e1dafb356be1071f3f6e213096bb2b9556c6eb1",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": false,
+          "execution": {
+            "status": "failed",
+            "return_code": 1,
+            "stdout": "FFFF                                                                     [100%]\n================================== FAILURES ===================================\n___________________________ test_contract[args0-24] ___________________________\n\nargs = ([2, 3, 4],), expected = 24\n\n    @pytest.mark.parametrize('args, expected', [(([2, 3, 4],), 24), (([],), 1), (([0, 5],), 0), (([-2, 3],), -6)])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nvalues = [2, 3, 4]\n\n    def solve(values):\n>       return math.product(values)\n               ^^^^^^^^^^^^\nE       AttributeError: module 'math' has no attribute 'product'\n\nsolution.py:4: AttributeError\n___________________________ test_contract[args1-1] ____________________________\n\nargs = ([],), expected = 1\n\n    @pytest.mark.parametrize('args, expected', [(([2, 3, 4],), 24), (([],), 1), (([0, 5],), 0), (([-2, 3],), -6)])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nvalues = []\n\n    def solve(values):\n>       return math.product(values)\n               ^^^^^^^^^^^^\nE       AttributeError: module 'math' has no attribute 'product'\n\nsolution.py:4: AttributeError\n___________________________ test_contract[args2-0] ____________________________\n\nargs = ([0, 5],), expected = 0\n\n    @pytest.mark.parametrize('args, expected', [(([2, 3, 4],), 24), (([],), 1), (([0, 5],), 0), (([-2, 3],), -6)])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nvalues = [0, 5]\n\n    def solve(values):\n>       return math.product(values)\n               ^^^^^^^^^^^^\nE       AttributeError: module 'math' has no attribute 'product'\n\nsolution.py:4: AttributeError\n___________________________ test_contract[args3--6] ___________________________\n\nargs = ([-2, 3],), expected = -6\n\n    @pytest.mark.parametrize('args, expected', [(([2, 3, 4],), 24), (([],), 1), (([0, 5],), 0), (([-2, 3],), -6)])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nvalues = [-2, 3]\n\n    def solve(values):\n>       return math.product(values)\n               ^^^^^^^^^^^^\nE       AttributeError: module 'math' has no attribute 'product'\n\nsolution.py:4: AttributeError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_contract[args0-24] - AttributeError: module 'ma...\nFAILED test_solution.py::test_contract[args1-1] - AttributeError: module 'mat...\nFAILED test_solution.py::test_contract[args2-0] - AttributeError: module 'mat...\nFAILED test_solution.py::test_contract[args3--6] - AttributeError: module 'ma...\n4 failed in 0.07s\n",
+            "stderr": "",
+            "error_type": "AttributeError",
+            "error_category": "attribute_error",
+            "execution_time": 0.32554939994588494,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:2c5cfd3bf7e7b7349a589d741e1dafb356be1071f3f6e213096bb2b9556c6eb1",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:2c5cfd3bf7e7b7349a589d741e1dafb356be1071f3f6e213096bb2b9556c6eb1",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": false,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "math.product",
+                "package": "math",
+                "module": "math",
+                "object_path": "product",
+                "call_type": "function_or_attribute",
+                "line_number": 4,
+                "source": "math.product",
+                "receiver": "math",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": false,
+              "status": "hallucinated_function",
+              "reason": "attribute_not_found:product",
+              "resolved_module": "math",
+              "suggestions": [
+                "math.prod",
+                "math.sumprod",
+                "math.hypot"
+              ]
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:2c5cfd3bf7e7b7349a589d741e1dafb356be1071f3f6e213096bb2b9556c6eb1",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "failed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:2c5cfd3bf7e7b7349a589d741e1dafb356be1071f3f6e213096bb2b9556c6eb1",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "math",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:2c5cfd3bf7e7b7349a589d741e1dafb356be1071f3f6e213096bb2b9556c6eb1",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "failed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:2c5cfd3bf7e7b7349a589d741e1dafb356be1071f3f6e213096bb2b9556c6eb1",
+        "cached": false
+      }
+    }
+  },
+  "reference": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "0:7da26c6c59b604b3c94d6d85531f60a19d965132827844066bb6ed19ae500200",
+    "context_version": "4d29d531bad90037d2359992c30eae3ea62302ce78008e954f3880364af679c9",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "PASS",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.023528899997472763,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:7da26c6c59b604b3c94d6d85531f60a19d965132827844066bb6ed19ae500200",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:7da26c6c59b604b3c94d6d85531f60a19d965132827844066bb6ed19ae500200",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "....                                                                     [100%]\n4 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.26633470016531646,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:7da26c6c59b604b3c94d6d85531f60a19d965132827844066bb6ed19ae500200",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:7da26c6c59b604b3c94d6d85531f60a19d965132827844066bb6ed19ae500200",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "math.prod",
+                "package": "math",
+                "module": "math",
+                "object_path": "prod",
+                "call_type": "function_or_attribute",
+                "line_number": 4,
+                "source": "math.prod",
+                "receiver": "math",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "math",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:7da26c6c59b604b3c94d6d85531f60a19d965132827844066bb6ed19ae500200",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:7da26c6c59b604b3c94d6d85531f60a19d965132827844066bb6ed19ae500200",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "math",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:7da26c6c59b604b3c94d6d85531f60a19d965132827844066bb6ed19ae500200",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": true,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:7da26c6c59b604b3c94d6d85531f60a19d965132827844066bb6ed19ae500200",
+        "cached": false
+      }
+    }
+  }
+}

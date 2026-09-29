@@ -1,0 +1,1 @@
+Return (value, run length) pairs for consecutive equal values; separated runs stay separate. Preserve solve signature.

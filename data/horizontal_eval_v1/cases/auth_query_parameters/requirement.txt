@@ -1,0 +1,1 @@
+Parse a URL query into a mapping from keys to lists; preserve duplicates and blank values; decode percent escapes and plus signs. Preserve the solve signature; do not mutate caller inputs.

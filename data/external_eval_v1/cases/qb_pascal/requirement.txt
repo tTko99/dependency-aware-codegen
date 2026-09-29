@@ -1,0 +1,19 @@
+Repair pascal to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.
+
+Pascal's Triangle
+pascal
+
+
+
+Input:
+    n: The number of rows to return
+
+Precondition:
+    n >= 1
+
+Output:
+    The first n rows of Pascal's triangle as a list of n lists
+
+Example:
+    >>> pascal(5)
+    [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1]]

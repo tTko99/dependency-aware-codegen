@@ -1,0 +1,366 @@
+{
+  "valid": true,
+  "evidence": {
+    "bug_visible": {
+      "status": "failed",
+      "return_code": 1,
+      "stdout": "F.                                                                       [100%]\n================================== FAILURES ===================================\n_______________________________ test_contract_0 _______________________________\n\n    def test_contract_0():\n>       assert solution.solve('0.1') == (1, 10)\nE       assert (360287970189...8797018963968) == (1, 10)\nE         \nE         At index 0 diff: 3602879701896397 != 1\nE         Use -v to get more diff\n\ntest_solution.py:4: AssertionError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_contract_0 - assert (360287970189...87970189639...\n1 failed, 1 passed in 0.05s\n",
+      "stderr": "",
+      "error_type": null,
+      "error_category": "unknown",
+      "execution_time": 0.281161000020802,
+      "timed_out": false
+    },
+    "bug_hidden": {
+      "status": "failed",
+      "return_code": 1,
+      "stdout": "F..                                                                      [100%]\n================================== FAILURES ===================================\n_______________________________ test_contract_0 _______________________________\n\n    def test_contract_0():\n>       assert solution.solve('-0.3') == (-3, 10)\nE       assert (-54043195528...4398509481984) == (-3, 10)\nE         \nE         At index 0 diff: -5404319552844595 != -3\nE         Use -v to get more diff\n\ntest_solution.py:4: AssertionError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_contract_0 - assert (-54043195528...43985094819...\n1 failed, 2 passed in 0.05s\n",
+      "stderr": "",
+      "error_type": null,
+      "error_category": "unknown",
+      "execution_time": 0.2736064000055194,
+      "timed_out": false
+    },
+    "reference_visible": {
+      "status": "passed",
+      "return_code": 0,
+      "stdout": "..                                                                       [100%]\n2 passed in 0.01s\n",
+      "stderr": "",
+      "error_type": null,
+      "error_category": "unknown",
+      "execution_time": 0.23643889999948442,
+      "timed_out": false
+    },
+    "reference_hidden": {
+      "status": "passed",
+      "return_code": 0,
+      "stdout": "...                                                                      [100%]\n3 passed in 0.01s\n",
+      "stderr": "",
+      "error_type": null,
+      "error_category": "unknown",
+      "execution_time": 0.2275372000876814,
+      "timed_out": false
+    }
+  },
+  "reference_host": {
+    "visible": {
+      "required_checks": [
+        "execute",
+        "run_pytest",
+        "validate_apis",
+        "validate_packages"
+      ],
+      "missing_checks": [],
+      "candidate_version": "0:5bde96308673a8a0efa88a5755b86a0649df08bb1d0476cc6f606c6bd5399557",
+      "context_version": "ed8a8b53bb54485fa0399db5bd2d1cacecd8f00ee73e0c1854865fd666e69bc8",
+      "regression_guard": {
+        "blocked": false,
+        "findings": [],
+        "changed_lines": 0,
+        "changed_files": 0,
+        "heuristic": true
+      },
+      "host_status": "PASS",
+      "checks": {
+        "execute": {
+          "status": "success",
+          "message": "Execution completed",
+          "evidence": {
+            "passed": true,
+            "execution": {
+              "status": "passed",
+              "return_code": 0,
+              "stdout": "",
+              "stderr": "",
+              "error_type": null,
+              "error_category": "unknown",
+              "execution_time": 0.03016990004107356,
+              "timed_out": false
+            },
+            "validation_state": {
+              "candidate_version": "0:5bde96308673a8a0efa88a5755b86a0649df08bb1d0476cc6f606c6bd5399557",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "missing",
+                "validate_apis": "missing",
+                "validate_packages": "missing"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:5bde96308673a8a0efa88a5755b86a0649df08bb1d0476cc6f606c6bd5399557",
+          "cached": false
+        },
+        "run_pytest": {
+          "status": "success",
+          "message": "Execution completed",
+          "evidence": {
+            "passed": true,
+            "execution": {
+              "status": "passed",
+              "return_code": 0,
+              "stdout": "..                                                                       [100%]\n2 passed in 0.01s\n",
+              "stderr": "",
+              "error_type": null,
+              "error_category": "unknown",
+              "execution_time": 0.22620539995841682,
+              "timed_out": false
+            },
+            "validation_state": {
+              "candidate_version": "0:5bde96308673a8a0efa88a5755b86a0649df08bb1d0476cc6f606c6bd5399557",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "missing",
+                "validate_packages": "missing"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:5bde96308673a8a0efa88a5755b86a0649df08bb1d0476cc6f606c6bd5399557",
+          "cached": false
+        },
+        "validate_apis": {
+          "status": "success",
+          "message": "API validation",
+          "evidence": {
+            "passed": true,
+            "syntax_error": null,
+            "results": [
+              {
+                "reference": {
+                  "canonical_path": "fractions.Fraction",
+                  "package": "fractions",
+                  "module": "fractions",
+                  "object_path": "Fraction",
+                  "call_type": "function_or_attribute",
+                  "line_number": 4,
+                  "source": "fractions.Fraction",
+                  "receiver": "fractions",
+                  "arg_count": 1,
+                  "keyword_names": [],
+                  "is_call": true
+                },
+                "package_valid": true,
+                "module_valid": true,
+                "api_valid": true,
+                "status": "valid",
+                "reason": null,
+                "resolved_module": "fractions",
+                "suggestions": []
+              }
+            ],
+            "validation_state": {
+              "candidate_version": "0:5bde96308673a8a0efa88a5755b86a0649df08bb1d0476cc6f606c6bd5399557",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "passed",
+                "validate_packages": "missing"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:5bde96308673a8a0efa88a5755b86a0649df08bb1d0476cc6f606c6bd5399557",
+          "cached": false
+        },
+        "validate_packages": {
+          "status": "success",
+          "message": "Package validation",
+          "evidence": {
+            "passed": true,
+            "syntax_error": null,
+            "results": [
+              {
+                "package": "fractions",
+                "exists": true,
+                "status": "valid",
+                "version": null,
+                "reason": null
+              }
+            ],
+            "validation_state": {
+              "candidate_version": "0:5bde96308673a8a0efa88a5755b86a0649df08bb1d0476cc6f606c6bd5399557",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "passed",
+                "validate_packages": "passed"
+              },
+              "ready_to_finish_successfully": true,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:5bde96308673a8a0efa88a5755b86a0649df08bb1d0476cc6f606c6bd5399557",
+          "cached": false
+        }
+      }
+    },
+    "hidden": {
+      "required_checks": [
+        "execute",
+        "run_pytest",
+        "validate_apis",
+        "validate_packages"
+      ],
+      "missing_checks": [],
+      "candidate_version": "0:5bde96308673a8a0efa88a5755b86a0649df08bb1d0476cc6f606c6bd5399557",
+      "context_version": "0c845df788be1d69c53373d8ef8ffe9279dccb74e6c609221decc3f1a1c10d99",
+      "regression_guard": {
+        "blocked": false,
+        "findings": [],
+        "changed_lines": 0,
+        "changed_files": 0,
+        "heuristic": true
+      },
+      "host_status": "PASS",
+      "checks": {
+        "execute": {
+          "status": "success",
+          "message": "Execution completed",
+          "evidence": {
+            "passed": true,
+            "execution": {
+              "status": "passed",
+              "return_code": 0,
+              "stdout": "",
+              "stderr": "",
+              "error_type": null,
+              "error_category": "unknown",
+              "execution_time": 0.03134480002336204,
+              "timed_out": false
+            },
+            "validation_state": {
+              "candidate_version": "0:5bde96308673a8a0efa88a5755b86a0649df08bb1d0476cc6f606c6bd5399557",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "missing",
+                "validate_apis": "missing",
+                "validate_packages": "missing"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:5bde96308673a8a0efa88a5755b86a0649df08bb1d0476cc6f606c6bd5399557",
+          "cached": false
+        },
+        "run_pytest": {
+          "status": "success",
+          "message": "Execution completed",
+          "evidence": {
+            "passed": true,
+            "execution": {
+              "status": "passed",
+              "return_code": 0,
+              "stdout": "...                                                                      [100%]\n3 passed in 0.01s\n",
+              "stderr": "",
+              "error_type": null,
+              "error_category": "unknown",
+              "execution_time": 0.22980410000309348,
+              "timed_out": false
+            },
+            "validation_state": {
+              "candidate_version": "0:5bde96308673a8a0efa88a5755b86a0649df08bb1d0476cc6f606c6bd5399557",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "missing",
+                "validate_packages": "missing"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:5bde96308673a8a0efa88a5755b86a0649df08bb1d0476cc6f606c6bd5399557",
+          "cached": false
+        },
+        "validate_apis": {
+          "status": "success",
+          "message": "API validation",
+          "evidence": {
+            "passed": true,
+            "syntax_error": null,
+            "results": [
+              {
+                "reference": {
+                  "canonical_path": "fractions.Fraction",
+                  "package": "fractions",
+                  "module": "fractions",
+                  "object_path": "Fraction",
+                  "call_type": "function_or_attribute",
+                  "line_number": 4,
+                  "source": "fractions.Fraction",
+                  "receiver": "fractions",
+                  "arg_count": 1,
+                  "keyword_names": [],
+                  "is_call": true
+                },
+                "package_valid": true,
+                "module_valid": true,
+                "api_valid": true,
+                "status": "valid",
+                "reason": null,
+                "resolved_module": "fractions",
+                "suggestions": []
+              }
+            ],
+            "validation_state": {
+              "candidate_version": "0:5bde96308673a8a0efa88a5755b86a0649df08bb1d0476cc6f606c6bd5399557",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "passed",
+                "validate_packages": "missing"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:5bde96308673a8a0efa88a5755b86a0649df08bb1d0476cc6f606c6bd5399557",
+          "cached": false
+        },
+        "validate_packages": {
+          "status": "success",
+          "message": "Package validation",
+          "evidence": {
+            "passed": true,
+            "syntax_error": null,
+            "results": [
+              {
+                "package": "fractions",
+                "exists": true,
+                "status": "valid",
+                "version": null,
+                "reason": null
+              }
+            ],
+            "validation_state": {
+              "candidate_version": "0:5bde96308673a8a0efa88a5755b86a0649df08bb1d0476cc6f606c6bd5399557",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "passed",
+                "validate_packages": "passed"
+              },
+              "ready_to_finish_successfully": true,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:5bde96308673a8a0efa88a5755b86a0649df08bb1d0476cc6f606c6bd5399557",
+          "cached": false
+        }
+      }
+    }
+  },
+  "input_hashes": {
+    "input.py": "ba6274a96f358810a4e45e4de548026e2f137198fc4b5dfe2bd524754f8b8579",
+    "reference.py": "5bde96308673a8a0efa88a5755b86a0649df08bb1d0476cc6f606c6bd5399557",
+    "test_visible.py": "f3fab4a8455e35b6610559b586fe5732f87192a0e188cadeffd7aa9a6c92ad9d",
+    "test_hidden.py": "7784905d4770bef7eae77c231725812f8a17f6df8d8d73a77847c829aa0f7542",
+    "requirement.txt": "df60351478656ca54340aa10305fa5c8f8107d22e5bc51b08e21f3cf7c447f49"
+  }
+}

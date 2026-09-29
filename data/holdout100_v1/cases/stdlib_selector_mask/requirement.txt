@@ -1,0 +1,1 @@
+Select data where corresponding selector is truthy. Stop when either input is exhausted. Preserve solve signature.

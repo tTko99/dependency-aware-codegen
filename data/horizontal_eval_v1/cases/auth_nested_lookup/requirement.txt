@@ -1,0 +1,1 @@
+Follow a list of dictionary keys, returning default only when a key is missing or a non-dictionary is reached; preserve present false/zero/None. Preserve the solve signature; do not mutate caller inputs.

@@ -1,0 +1,19 @@
+{
+  "revision": "9a41762f73a8cb23bb5811b73d5aab164efcf378",
+  "fetched_at": "2026-09-28T09:52:11.614684+00:00",
+  "files": {
+    "README.md": {
+      "url": "https://huggingface.co/datasets/bigcode/humanevalpack/resolve/9a41762f73a8cb23bb5811b73d5aab164efcf378/README.md",
+      "sha256": "38c39ae78cf49c548a87082e0317c58681b682b3922d6edbb295abe843342632",
+      "bytes": 12521
+    },
+    "python/test-00000-of-00001.parquet": {
+      "url": "https://huggingface.co/datasets/bigcode/humanevalpack/resolve/9a41762f73a8cb23bb5811b73d5aab164efcf378/python/test-00000-of-00001.parquet",
+      "sha256": "ed5f15d789156e21222bfcd556c425a39042355c84ae1e8b058abd6a3d7f8075",
+      "bytes": 191279
+    }
+  },
+  "source_kind": "public_authored_bug_benchmark",
+  "production_defects": false,
+  "description": "Human-written bugs in HumanEval solutions; not naturally occurring production bugs."
+}

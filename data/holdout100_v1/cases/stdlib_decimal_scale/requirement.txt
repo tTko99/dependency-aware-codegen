@@ -1,0 +1,1 @@
+Scale a decimal string by ten raised to integer exponent n, returning an exact decimal string. Preserve solve signature.

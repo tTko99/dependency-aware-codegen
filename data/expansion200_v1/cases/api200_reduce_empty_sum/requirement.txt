@@ -1,0 +1,1 @@
+Return the sum using an integer-zero identity, including zero for an empty input. Preserve solve signature.

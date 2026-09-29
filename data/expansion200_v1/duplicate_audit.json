@@ -1,0 +1,4 @@
+{
+  "method": "AST without docstrings, locations or identifier spelling; attributes and literals retained. Not proof of semantic independence.",
+  "collisions": []
+}

@@ -1,0 +1,366 @@
+{
+  "valid": true,
+  "evidence": {
+    "bug_visible": {
+      "status": "failed",
+      "return_code": 1,
+      "stdout": "FF                                                                       [100%]\n================================== FAILURES ===================================\n_______________________________ test_contract_0 _______________________________\n\n    def test_contract_0():\n>       assert solution.solve([(2, 3), (3, 2)]) == [8, 9]\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\ntest_solution.py:4: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\npairs = [(2, 3), (3, 2)]\n\n    def solve(pairs):\n>       return list(map(pow, pairs))\n               ^^^^^^^^^^^^^^^^^^^^^\nE       TypeError: pow() missing required argument 'exp' (pos 2)\n\nsolution.py:4: TypeError\n_______________________________ test_contract_1 _______________________________\n\n    def test_contract_1():\n>       assert solution.solve([(5, 0)]) == [1]\n               ^^^^^^^^^^^^^^^^^^^^^^^^\n\ntest_solution.py:7: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\npairs = [(5, 0)]\n\n    def solve(pairs):\n>       return list(map(pow, pairs))\n               ^^^^^^^^^^^^^^^^^^^^^\nE       TypeError: pow() missing required argument 'exp' (pos 2)\n\nsolution.py:4: TypeError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_contract_0 - TypeError: pow() missing required ...\nFAILED test_solution.py::test_contract_1 - TypeError: pow() missing required ...\n2 failed in 0.05s\n",
+      "stderr": "",
+      "error_type": "TypeError",
+      "error_category": "incorrect_arguments",
+      "execution_time": 0.28072079992853105,
+      "timed_out": false
+    },
+    "bug_hidden": {
+      "status": "failed",
+      "return_code": 1,
+      "stdout": ".FF                                                                      [100%]\n================================== FAILURES ===================================\n_______________________________ test_contract_1 _______________________________\n\n    def test_contract_1():\n>       assert solution.solve([(-2, 3), (4, 2)]) == [-8, 16]\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\ntest_solution.py:7: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\npairs = [(-2, 3), (4, 2)]\n\n    def solve(pairs):\n>       return list(map(pow, pairs))\n               ^^^^^^^^^^^^^^^^^^^^^\nE       TypeError: pow() missing required argument 'exp' (pos 2)\n\nsolution.py:4: TypeError\n_______________________________ test_contract_2 _______________________________\n\n    def test_contract_2():\n>       assert solution.solve([(10, -1)]) == [0.1]\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n\ntest_solution.py:10: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\npairs = [(10, -1)]\n\n    def solve(pairs):\n>       return list(map(pow, pairs))\n               ^^^^^^^^^^^^^^^^^^^^^\nE       TypeError: pow() missing required argument 'exp' (pos 2)\n\nsolution.py:4: TypeError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_contract_1 - TypeError: pow() missing required ...\nFAILED test_solution.py::test_contract_2 - TypeError: pow() missing required ...\n2 failed, 1 passed in 0.05s\n",
+      "stderr": "",
+      "error_type": "TypeError",
+      "error_category": "incorrect_arguments",
+      "execution_time": 0.27833610004745424,
+      "timed_out": false
+    },
+    "reference_visible": {
+      "status": "passed",
+      "return_code": 0,
+      "stdout": "..                                                                       [100%]\n2 passed in 0.01s\n",
+      "stderr": "",
+      "error_type": null,
+      "error_category": "unknown",
+      "execution_time": 0.22681939997710288,
+      "timed_out": false
+    },
+    "reference_hidden": {
+      "status": "passed",
+      "return_code": 0,
+      "stdout": "...                                                                      [100%]\n3 passed in 0.01s\n",
+      "stderr": "",
+      "error_type": null,
+      "error_category": "unknown",
+      "execution_time": 0.2269365000538528,
+      "timed_out": false
+    }
+  },
+  "reference_host": {
+    "visible": {
+      "required_checks": [
+        "execute",
+        "run_pytest",
+        "validate_apis",
+        "validate_packages"
+      ],
+      "missing_checks": [],
+      "candidate_version": "0:7c5508a731924e1777fb08f642bc48842c195bc9ad080e3cff9da4e8b362475b",
+      "context_version": "686d0e4bffb0847f03245a621d68ddfe301009924863b42b8ee2ae3a897829c7",
+      "regression_guard": {
+        "blocked": false,
+        "findings": [],
+        "changed_lines": 0,
+        "changed_files": 0,
+        "heuristic": true
+      },
+      "host_status": "PASS",
+      "checks": {
+        "execute": {
+          "status": "success",
+          "message": "Execution completed",
+          "evidence": {
+            "passed": true,
+            "execution": {
+              "status": "passed",
+              "return_code": 0,
+              "stdout": "",
+              "stderr": "",
+              "error_type": null,
+              "error_category": "unknown",
+              "execution_time": 0.02056200010702014,
+              "timed_out": false
+            },
+            "validation_state": {
+              "candidate_version": "0:7c5508a731924e1777fb08f642bc48842c195bc9ad080e3cff9da4e8b362475b",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "missing",
+                "validate_apis": "missing",
+                "validate_packages": "missing"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:7c5508a731924e1777fb08f642bc48842c195bc9ad080e3cff9da4e8b362475b",
+          "cached": false
+        },
+        "run_pytest": {
+          "status": "success",
+          "message": "Execution completed",
+          "evidence": {
+            "passed": true,
+            "execution": {
+              "status": "passed",
+              "return_code": 0,
+              "stdout": "..                                                                       [100%]\n2 passed in 0.01s\n",
+              "stderr": "",
+              "error_type": null,
+              "error_category": "unknown",
+              "execution_time": 0.2211567999329418,
+              "timed_out": false
+            },
+            "validation_state": {
+              "candidate_version": "0:7c5508a731924e1777fb08f642bc48842c195bc9ad080e3cff9da4e8b362475b",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "missing",
+                "validate_packages": "missing"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:7c5508a731924e1777fb08f642bc48842c195bc9ad080e3cff9da4e8b362475b",
+          "cached": false
+        },
+        "validate_apis": {
+          "status": "success",
+          "message": "API validation",
+          "evidence": {
+            "passed": true,
+            "syntax_error": null,
+            "results": [
+              {
+                "reference": {
+                  "canonical_path": "itertools.starmap",
+                  "package": "itertools",
+                  "module": "itertools",
+                  "object_path": "starmap",
+                  "call_type": "function_or_attribute",
+                  "line_number": 4,
+                  "source": "itertools.starmap",
+                  "receiver": "itertools",
+                  "arg_count": 2,
+                  "keyword_names": [],
+                  "is_call": true
+                },
+                "package_valid": true,
+                "module_valid": true,
+                "api_valid": true,
+                "status": "valid",
+                "reason": null,
+                "resolved_module": "itertools",
+                "suggestions": []
+              }
+            ],
+            "validation_state": {
+              "candidate_version": "0:7c5508a731924e1777fb08f642bc48842c195bc9ad080e3cff9da4e8b362475b",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "passed",
+                "validate_packages": "missing"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:7c5508a731924e1777fb08f642bc48842c195bc9ad080e3cff9da4e8b362475b",
+          "cached": false
+        },
+        "validate_packages": {
+          "status": "success",
+          "message": "Package validation",
+          "evidence": {
+            "passed": true,
+            "syntax_error": null,
+            "results": [
+              {
+                "package": "itertools",
+                "exists": true,
+                "status": "valid",
+                "version": null,
+                "reason": null
+              }
+            ],
+            "validation_state": {
+              "candidate_version": "0:7c5508a731924e1777fb08f642bc48842c195bc9ad080e3cff9da4e8b362475b",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "passed",
+                "validate_packages": "passed"
+              },
+              "ready_to_finish_successfully": true,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:7c5508a731924e1777fb08f642bc48842c195bc9ad080e3cff9da4e8b362475b",
+          "cached": false
+        }
+      }
+    },
+    "hidden": {
+      "required_checks": [
+        "execute",
+        "run_pytest",
+        "validate_apis",
+        "validate_packages"
+      ],
+      "missing_checks": [],
+      "candidate_version": "0:7c5508a731924e1777fb08f642bc48842c195bc9ad080e3cff9da4e8b362475b",
+      "context_version": "69d82878d75fcfbf22d0f63b72743c8321f414b3a81bf75b523510fd057eeffe",
+      "regression_guard": {
+        "blocked": false,
+        "findings": [],
+        "changed_lines": 0,
+        "changed_files": 0,
+        "heuristic": true
+      },
+      "host_status": "PASS",
+      "checks": {
+        "execute": {
+          "status": "success",
+          "message": "Execution completed",
+          "evidence": {
+            "passed": true,
+            "execution": {
+              "status": "passed",
+              "return_code": 0,
+              "stdout": "",
+              "stderr": "",
+              "error_type": null,
+              "error_category": "unknown",
+              "execution_time": 0.021443800069391727,
+              "timed_out": false
+            },
+            "validation_state": {
+              "candidate_version": "0:7c5508a731924e1777fb08f642bc48842c195bc9ad080e3cff9da4e8b362475b",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "missing",
+                "validate_apis": "missing",
+                "validate_packages": "missing"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:7c5508a731924e1777fb08f642bc48842c195bc9ad080e3cff9da4e8b362475b",
+          "cached": false
+        },
+        "run_pytest": {
+          "status": "success",
+          "message": "Execution completed",
+          "evidence": {
+            "passed": true,
+            "execution": {
+              "status": "passed",
+              "return_code": 0,
+              "stdout": "...                                                                      [100%]\n3 passed in 0.01s\n",
+              "stderr": "",
+              "error_type": null,
+              "error_category": "unknown",
+              "execution_time": 0.23058440000750124,
+              "timed_out": false
+            },
+            "validation_state": {
+              "candidate_version": "0:7c5508a731924e1777fb08f642bc48842c195bc9ad080e3cff9da4e8b362475b",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "missing",
+                "validate_packages": "missing"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:7c5508a731924e1777fb08f642bc48842c195bc9ad080e3cff9da4e8b362475b",
+          "cached": false
+        },
+        "validate_apis": {
+          "status": "success",
+          "message": "API validation",
+          "evidence": {
+            "passed": true,
+            "syntax_error": null,
+            "results": [
+              {
+                "reference": {
+                  "canonical_path": "itertools.starmap",
+                  "package": "itertools",
+                  "module": "itertools",
+                  "object_path": "starmap",
+                  "call_type": "function_or_attribute",
+                  "line_number": 4,
+                  "source": "itertools.starmap",
+                  "receiver": "itertools",
+                  "arg_count": 2,
+                  "keyword_names": [],
+                  "is_call": true
+                },
+                "package_valid": true,
+                "module_valid": true,
+                "api_valid": true,
+                "status": "valid",
+                "reason": null,
+                "resolved_module": "itertools",
+                "suggestions": []
+              }
+            ],
+            "validation_state": {
+              "candidate_version": "0:7c5508a731924e1777fb08f642bc48842c195bc9ad080e3cff9da4e8b362475b",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "passed",
+                "validate_packages": "missing"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:7c5508a731924e1777fb08f642bc48842c195bc9ad080e3cff9da4e8b362475b",
+          "cached": false
+        },
+        "validate_packages": {
+          "status": "success",
+          "message": "Package validation",
+          "evidence": {
+            "passed": true,
+            "syntax_error": null,
+            "results": [
+              {
+                "package": "itertools",
+                "exists": true,
+                "status": "valid",
+                "version": null,
+                "reason": null
+              }
+            ],
+            "validation_state": {
+              "candidate_version": "0:7c5508a731924e1777fb08f642bc48842c195bc9ad080e3cff9da4e8b362475b",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "passed",
+                "validate_packages": "passed"
+              },
+              "ready_to_finish_successfully": true,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:7c5508a731924e1777fb08f642bc48842c195bc9ad080e3cff9da4e8b362475b",
+          "cached": false
+        }
+      }
+    }
+  },
+  "input_hashes": {
+    "input.py": "207b1e445ff0ca68639a5d844bd8480395d9470e60c70389a0dc831aaab706fe",
+    "reference.py": "7c5508a731924e1777fb08f642bc48842c195bc9ad080e3cff9da4e8b362475b",
+    "test_visible.py": "77662251811a7b7077e2d629febfe41246bfb8e07755484cfefc462cc7e01470",
+    "test_hidden.py": "fa3048d5871c087b91734b45c74b7bf8b547eb2ef6579cb1e795a2c04a33041b",
+    "requirement.txt": "e1bcdd3419b0d8479e9d954125cbf2c19092b83fb25bc743ff7e6dfcba84b34b"
+  }
+}

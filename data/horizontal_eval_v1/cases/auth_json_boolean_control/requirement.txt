@@ -1,0 +1,1 @@
+Read a JSON object and return its enabled boolean, default False when absent. String values true/false must be interpreted case-insensitively, not by nonempty-string truthiness. Preserve the solve signature; do not mutate caller inputs.

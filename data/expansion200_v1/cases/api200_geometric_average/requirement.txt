@@ -1,0 +1,1 @@
+Return the geometric mean of positive values rounded to six decimal places. Preserve solve signature.

@@ -1,0 +1,7 @@
+# Adapted from QuixBugs 4257f44b0ff1181dedaedee6a447e133219fcebf; see ../../upstream/LICENSE.txt
+import pytest
+from solution import find_in_sorted
+
+@pytest.mark.parametrize('input_data,expected', [([[3, 4, 5, 5, 5, 5, 6], 5], 3), ([[1, 2, 3, 4, 6, 7, 8], 5], -1), ([[1, 2, 3, 4, 6, 7, 8], 4], 3), ([[2, 4, 6, 8, 10, 12, 14, 16, 18, 20], 18], 8), ([[3, 5, 6, 7, 8, 9, 12, 13, 14, 24, 26, 27], 0], -1), ([[3, 5, 6, 7, 8, 9, 12, 12, 14, 24, 26, 27], 12], 6), ([[24, 26, 28, 50, 59], 101], -1)])
+def test_contract(input_data, expected):
+    assert find_in_sorted(*input_data) == expected

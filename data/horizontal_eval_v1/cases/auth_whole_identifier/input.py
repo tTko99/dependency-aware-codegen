@@ -1,0 +1,4 @@
+import re
+
+def solve(text):
+    return re.match(r'[A-Za-z_][A-Za-z0-9_]*', text) is not None

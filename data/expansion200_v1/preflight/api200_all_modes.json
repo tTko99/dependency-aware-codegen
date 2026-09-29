@@ -1,0 +1,324 @@
+{
+  "case_id": "api200_all_modes",
+  "input_hashes": {
+    "input.py": "b422e56f304ca850ce9304d838ee8b44b712f4b6948dfb7c519af8290bfba168",
+    "reference.py": "a7f4544ea9a1ea028c4bf01a9f4ef426d6f6fe4dae1a74899f8246a4e6496038",
+    "test_input.py": "43cd50f28d49e030921f50c660ab2d33f0f8bb5dad5dca84a0e7e6c190a78a65",
+    "requirement.txt": "40deef75295ab35f3d188d296542439c6fb2abb90f97eb14f1bc95149c64b970"
+  },
+  "valid": true,
+  "initial": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [
+      "run_pytest"
+    ],
+    "candidate_version": "0:b422e56f304ca850ce9304d838ee8b44b712f4b6948dfb7c519af8290bfba168",
+    "context_version": "0f8a5a39f7675c18a6129678f223abd863b4b9903281ffed47d4c98133a036c7",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "FAIL",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.04358549998141825,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:b422e56f304ca850ce9304d838ee8b44b712f4b6948dfb7c519af8290bfba168",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:b422e56f304ca850ce9304d838ee8b44b712f4b6948dfb7c519af8290bfba168",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": false,
+          "execution": {
+            "status": "failed",
+            "return_code": 1,
+            "stdout": "F.FF                                                                     [100%]\n================================== FAILURES ===================================\n_______________________ test_contract[args0-expected0] ________________________\n\nargs = ([1, 2, 1, 2, 3],), expected = [1, 2]\n\n    @pytest.mark.parametrize('args, expected', [(([1, 2, 1, 2, 3],), [1, 2]), (([3, 2, 3],), [3]), (([],), []), (([4, 5],), [4, 5])])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\nE       assert [1] == [1, 2]\nE         \nE         Right contains one more item: 2\nE         Use -v to get more diff\n\ntest_solution.py:6: AssertionError\n_______________________ test_contract[args2-expected2] ________________________\n\nargs = ([],), expected = []\n\n    @pytest.mark.parametrize('args, expected', [(([1, 2, 1, 2, 3],), [1, 2]), (([3, 2, 3],), [3]), (([],), []), (([4, 5],), [4, 5])])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nsolution.py:4: in solve\n    return [statistics.mode(values)]\n            ^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ndata = []\n\n    def mode(data):\n        \"\"\"Return the most common data point from discrete or nominal data.\n    \n        ``mode`` assumes discrete data, and returns a single value. This is the\n        standard treatment of the mode as commonly taught in schools:\n    \n            >>> mode([1, 1, 2, 3, 3, 3, 3, 4])\n            3\n    \n        This also works with nominal (non-numeric) data:\n    \n            >>> mode([\"red\", \"blue\", \"blue\", \"red\", \"green\", \"red\", \"red\"])\n            'red'\n    \n        If there are multiple modes with same frequency, return the first one\n        encountered:\n    \n            >>> mode(['red', 'red', 'green', 'blue', 'blue'])\n            'red'\n    \n        If *data* is empty, ``mode``, raises StatisticsError.\n    \n        \"\"\"\n        pairs = Counter(iter(data)).most_common(1)\n        try:\n            return pairs[0][0]\n        except IndexError:\n>           raise StatisticsError('no mode for empty data') from None\nE           statistics.StatisticsError: no mode for empty data\n\n..\\..\\..\\..\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\statistics.py:765: StatisticsError\n_______________________ test_contract[args3-expected3] ________________________\n\nargs = ([4, 5],), expected = [4, 5]\n\n    @pytest.mark.parametrize('args, expected', [(([1, 2, 1, 2, 3],), [1, 2]), (([3, 2, 3],), [3]), (([],), []), (([4, 5],), [4, 5])])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\nE       assert [4] == [4, 5]\nE         \nE         Right contains one more item: 5\nE         Use -v to get more diff\n\ntest_solution.py:6: AssertionError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_contract[args0-expected0] - assert [1] == [1, 2]\nFAILED test_solution.py::test_contract[args2-expected2] - statistics.Statisti...\nFAILED test_solution.py::test_contract[args3-expected3] - assert [4] == [4, 5]\n3 failed, 1 passed in 0.08s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.33454510010778904,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:b422e56f304ca850ce9304d838ee8b44b712f4b6948dfb7c519af8290bfba168",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:b422e56f304ca850ce9304d838ee8b44b712f4b6948dfb7c519af8290bfba168",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "statistics.mode",
+                "package": "statistics",
+                "module": "statistics",
+                "object_path": "mode",
+                "call_type": "function_or_attribute",
+                "line_number": 4,
+                "source": "statistics.mode",
+                "receiver": "statistics",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "statistics",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:b422e56f304ca850ce9304d838ee8b44b712f4b6948dfb7c519af8290bfba168",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:b422e56f304ca850ce9304d838ee8b44b712f4b6948dfb7c519af8290bfba168",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "statistics",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:b422e56f304ca850ce9304d838ee8b44b712f4b6948dfb7c519af8290bfba168",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:b422e56f304ca850ce9304d838ee8b44b712f4b6948dfb7c519af8290bfba168",
+        "cached": false
+      }
+    }
+  },
+  "reference": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "0:a7f4544ea9a1ea028c4bf01a9f4ef426d6f6fe4dae1a74899f8246a4e6496038",
+    "context_version": "734e8e0f2a47fcb29939dfe1c727c4ac428a0429fa030e174e15138adf005b6c",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "PASS",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.04124810011126101,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:a7f4544ea9a1ea028c4bf01a9f4ef426d6f6fe4dae1a74899f8246a4e6496038",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:a7f4544ea9a1ea028c4bf01a9f4ef426d6f6fe4dae1a74899f8246a4e6496038",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "....                                                                     [100%]\n4 passed in 0.02s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.2677756999619305,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:a7f4544ea9a1ea028c4bf01a9f4ef426d6f6fe4dae1a74899f8246a4e6496038",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:a7f4544ea9a1ea028c4bf01a9f4ef426d6f6fe4dae1a74899f8246a4e6496038",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "statistics.multimode",
+                "package": "statistics",
+                "module": "statistics",
+                "object_path": "multimode",
+                "call_type": "function_or_attribute",
+                "line_number": 4,
+                "source": "statistics.multimode",
+                "receiver": "statistics",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "statistics",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:a7f4544ea9a1ea028c4bf01a9f4ef426d6f6fe4dae1a74899f8246a4e6496038",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:a7f4544ea9a1ea028c4bf01a9f4ef426d6f6fe4dae1a74899f8246a4e6496038",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "statistics",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:a7f4544ea9a1ea028c4bf01a9f4ef426d6f6fe4dae1a74899f8246a4e6496038",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": true,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:a7f4544ea9a1ea028c4bf01a9f4ef426d6f6fe4dae1a74899f8246a4e6496038",
+        "cached": false
+      }
+    }
+  }
+}

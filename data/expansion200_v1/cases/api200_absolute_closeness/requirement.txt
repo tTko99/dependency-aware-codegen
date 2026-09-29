@@ -1,0 +1,1 @@
+Return whether two numbers differ by at most tolerance, using only absolute tolerance, not relative tolerance. Preserve solve signature.

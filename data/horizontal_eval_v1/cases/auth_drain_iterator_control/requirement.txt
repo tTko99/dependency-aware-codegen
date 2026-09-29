@@ -1,0 +1,1 @@
+Return (count, total) for an iterable of numbers, including one-shot iterators. Preserve the solve signature; do not mutate caller inputs.

@@ -1,0 +1,1 @@
+For each (base, exponent) pair return base raised to exponent, preserving order. Empty input returns empty list. Preserve solve signature.

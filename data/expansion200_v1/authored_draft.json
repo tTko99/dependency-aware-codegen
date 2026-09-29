@@ -1,0 +1,997 @@
+{
+  "cases": [
+    {
+      "id": "api200_binomial",
+      "family": "binomial",
+      "category": "api_name",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return the number of unordered k-element selections from n distinct elements, for integers 0 <= k <= n. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_binomial/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_binomial/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_binomial/reference.py",
+      "hashes": {
+        "input.py": "248370560f891f156135ee471308324ca210e9d4cb414d007fd3fa5f68b83cce",
+        "reference.py": "21fe324eee9922615c72656e4cb2589cb09c748e3f4505b5dac0b8efbff0067f",
+        "test_input.py": "6bbbcf649ba25e11a3ed26e60d8021e4ce3262df006c9bc89bcd7a2042df0569",
+        "requirement.txt": "f235d8c99dfc17c77f900ccb745536de3062f2f2ad023b273a7fd3e7dcb24fc3"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "binomial",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_permutations_count",
+      "family": "permutations_count",
+      "category": "api_name",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return the number of ordered k-element arrangements without replacement from n distinct elements. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_permutations_count/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_permutations_count/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_permutations_count/reference.py",
+      "hashes": {
+        "input.py": "44278eb63987618bd3208a237d4f8c0b47bc7a5ab06e974fafd2fc1758cf3043",
+        "reference.py": "c2153c1bcf50a3508f466fc60de4172cfeef312525e14235bff2bb02b0096d10",
+        "test_input.py": "f3d7c107966d3d351ea1fdf09ccfb6022b642ec4dfde9ea2d6762e55ca931310",
+        "requirement.txt": "a4a62713d158cbd836647c3f7f683cfd9fe82cb1e9bcdb06848886d615228995"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "permutations_count",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_integer_square_root",
+      "family": "integer_square_root",
+      "category": "api_name",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return the exact floor of the square root of a nonnegative integer, including integers too large for reliable float conversion. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_integer_square_root/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_integer_square_root/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_integer_square_root/reference.py",
+      "hashes": {
+        "input.py": "68419d1ff04195dc75d1aa34f1940deb477444a3c8231b71f7208348fe42c48a",
+        "reference.py": "9069fefeab644b9523158d1ba4519a3433697b312c347ea7f6eb32e3027c6c3f",
+        "test_input.py": "1a258c6dea57d03f122499feaf57dea1a2d037c544c4ec92d8c81a172acb1995",
+        "requirement.txt": "c750813d58b8b3aa044b995c85f74d0afa39c7e31984c9091389e12ca2417f30"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "integer_square_root",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_product_identity",
+      "family": "product_identity",
+      "category": "api_name",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return the product of numeric values. The empty product is 1. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_product_identity/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_product_identity/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_product_identity/reference.py",
+      "hashes": {
+        "input.py": "2c5cfd3bf7e7b7349a589d741e1dafb356be1071f3f6e213096bb2b9556c6eb1",
+        "reference.py": "7da26c6c59b604b3c94d6d85531f60a19d965132827844066bb6ed19ae500200",
+        "test_input.py": "13516541dc50a27afe0d1c6bac9be5bc1b0e662da9265a60356d778b50c89df4",
+        "requirement.txt": "c13e98d4dde4de177b4ff2d86b1598dc9841f1404a50267c7a83a054fe33de67"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "product_identity",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_least_common_multiple",
+      "family": "least_common_multiple",
+      "category": "api_name",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return the nonnegative least common multiple of two integers; any zero input yields zero. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_least_common_multiple/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_least_common_multiple/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_least_common_multiple/reference.py",
+      "hashes": {
+        "input.py": "7852d8275c1dce00a91e671be2207621dc446fd0e3b9add403cce80c225c209e",
+        "reference.py": "5ef1d534071de628b74784bb9da8c98bf2dca336e485de0092589f447f29fbd0",
+        "test_input.py": "77628aa1ccee65dff26043d2941aec2975fb1d8a795a7a1be411945384728dfc",
+        "requirement.txt": "f97cd7196b48bfd381c450ad1910ef33861eed798a927ada1899406d16552478"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "least_common_multiple",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_all_modes",
+      "family": "all_modes",
+      "category": "api_contract",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return every most frequent value, ordered by first occurrence; empty input returns an empty list. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_all_modes/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_all_modes/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_all_modes/reference.py",
+      "hashes": {
+        "input.py": "b422e56f304ca850ce9304d838ee8b44b712f4b6948dfb7c519af8290bfba168",
+        "reference.py": "a7f4544ea9a1ea028c4bf01a9f4ef426d6f6fe4dae1a74899f8246a4e6496038",
+        "test_input.py": "43cd50f28d49e030921f50c660ab2d33f0f8bb5dad5dca84a0e7e6c190a78a65",
+        "requirement.txt": "40deef75295ab35f3d188d296542439c6fb2abb90f97eb14f1bc95149c64b970"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "all_modes",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_lower_median",
+      "family": "lower_median",
+      "category": "api_contract",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return the lower middle observed value for even length, ordinary middle value for odd length; input is nonempty. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_lower_median/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_lower_median/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_lower_median/reference.py",
+      "hashes": {
+        "input.py": "b25927e8a0d8b2b241a1b983b73aa711a1a7fcc3a749fd3ef07dd5cc6cb652cd",
+        "reference.py": "eef13b9785bbb0135ff19e436f14165cd2bf86c4b6b22dec4d4343a18c8561e5",
+        "test_input.py": "23da80d835c9ecb00ca858e6cd73b6d3dd58f0663f4f32b561ea6aa5908c833f",
+        "requirement.txt": "c6a6776ee26ac361c5acd8a23fcb1352aeb0ba1e04bac31be9b7e1442b5b6d25"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "lower_median",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_sample_standard_deviation",
+      "family": "sample_standard_deviation",
+      "category": "api_contract",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return the sample standard deviation of at least two numeric values, rounded to six decimal places, using the n-1 denominator. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_sample_standard_deviation/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_sample_standard_deviation/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_sample_standard_deviation/reference.py",
+      "hashes": {
+        "input.py": "74b1a1c386e21312a2ab6b6a2dc29308dd757b7b8769ff04b1d8c492e6458030",
+        "reference.py": "c8dd6882101b5e4e189dbdd1a704db842744c9bc61910e62bc8b196dcf1e6d5f",
+        "test_input.py": "5c69ccbb7a04b2711dbe54609cc18127e66962baceb9a2a446e0978b833b5330",
+        "requirement.txt": "141d6c8a2a665db864d28f03df5e34a450ff4b7f3493259936b503ddc4a32554"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "sample_standard_deviation",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_harmonic_average",
+      "family": "harmonic_average",
+      "category": "api_name",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return the harmonic mean of a nonempty positive numeric sequence. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_harmonic_average/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_harmonic_average/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_harmonic_average/reference.py",
+      "hashes": {
+        "input.py": "c03ca3815c13aa8239186c3484c76033e353ab7b5b3a391f781a755c49494470",
+        "reference.py": "23cb6d9d094597e56f230420dcc19a2f4e4d7a30918f3523de8edb08f4f28bea",
+        "test_input.py": "55534d4e6c43fee08c3e28d32b8a774dd2165d5f07a7e1c2ff239262e3be67cb",
+        "requirement.txt": "94c48191234f805408f7d706bc79de976f41327eed2bdd57f3287327ed46536b"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "harmonic_average",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_geometric_average",
+      "family": "geometric_average",
+      "category": "api_name",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return the geometric mean of positive values rounded to six decimal places. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_geometric_average/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_geometric_average/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_geometric_average/reference.py",
+      "hashes": {
+        "input.py": "cc40ea6839f677a2cc7007a410196d9741d0f1d5d8d5f6ea9bbc8ee349dd5b54",
+        "reference.py": "ac9c9cd964b3246413e9bc1e1e503dd6d590352e33800ff2aa81c0af1697f199",
+        "test_input.py": "0e07030404de24d1bc2ba25021f7be76208508106a773034d7fb59feab4dba14",
+        "requirement.txt": "505f51fecba8bcef26db2e7d354781127e45026dfd79be245de858b1aca3b26a"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "geometric_average",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_adjacent_pairs",
+      "family": "adjacent_pairs",
+      "category": "api_name",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return consecutive overlapping pairs as a list of tuples. Fewer than two inputs yield no pairs. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_adjacent_pairs/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_adjacent_pairs/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_adjacent_pairs/reference.py",
+      "hashes": {
+        "input.py": "b1d21ca1c5241e81baa6215dc492cf1838bea793d532f5a7f0f402e9792e5e9f",
+        "reference.py": "e8975cd985b248f1b5c2cc0ad8150b6fc7c4689e0e4f71a1ad67ec3702f9d8ba",
+        "test_input.py": "de0941c555e1c67086e61bf54ae37a1ec08b5921000db451b1cf52d0f97f2cc7",
+        "requirement.txt": "ccbf3ea67a9cc2c0b812c824ff2a3070ff6e7f6f63ed1c231bf13fd7f0caf9a6"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "adjacent_pairs",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_flatten_one_level",
+      "family": "flatten_one_level",
+      "category": "api_contract",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Flatten exactly one level of a list of iterables, preserving input order. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_flatten_one_level/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_flatten_one_level/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_flatten_one_level/reference.py",
+      "hashes": {
+        "input.py": "20fce169c890634ac07aa6aaef65cb82d2e23179cc0ed5bbdb78266d7b7298a6",
+        "reference.py": "d498b23afd629cbb49ce4cf06b34b9c2299a23bcd4d77c47afad309dd9593892",
+        "test_input.py": "1d048a5c60772d062110e91407e822f3ea36e97a092dca003d56c841e4fa63bb",
+        "requirement.txt": "13b52c16f9610e3c1a3fc25159c20ca851d0b7a02d4fc709cc70ed752a97843e"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "flatten_one_level",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_longest_zip",
+      "family": "longest_zip",
+      "category": "api_keyword",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Pair all items from two lists, filling missing positions with the provided fill value. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_longest_zip/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_longest_zip/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_longest_zip/reference.py",
+      "hashes": {
+        "input.py": "04e705ac109f33c5cd3c89bb934d5c6a94b41a68488ca0d89a581d0593fb54f3",
+        "reference.py": "855d00ed2fc53ebbd703778921297231c5eb995877bc4f12fe3cbc66ee71319a",
+        "test_input.py": "48489433fb0a9b7eba7091cd74855885680baadc57ec5e50bfc2d62292eb20f5",
+        "requirement.txt": "62a4b8ef49e87f6d16d125a9055fac87eb4e6e90f071d35c18af21829d9da6a9"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "longest_zip",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_right_insertion",
+      "family": "right_insertion",
+      "category": "api_contract",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return the insertion index after existing equal elements in an ascending sorted sequence. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_right_insertion/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_right_insertion/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_right_insertion/reference.py",
+      "hashes": {
+        "input.py": "3d168f205fe0a75610e5b05690d95a744c9fe386cbc8e896233df5546f6752e3",
+        "reference.py": "a0125e9c2721a37e1134686563006eed0e352e5b6899f82e5070f071327798e2",
+        "test_input.py": "b71e44b8bda5656d42bffadec3aded63507d64169201ab18d364076f648e37b2",
+        "requirement.txt": "5683bc8b9568b1afb240dd5da6e060813588a9a70ce4855435437bc37573d531"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "right_insertion",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_largest_values",
+      "family": "largest_values",
+      "category": "api_arguments",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return up to n largest values in descending order, retaining duplicates; nonnegative n. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_largest_values/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_largest_values/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_largest_values/reference.py",
+      "hashes": {
+        "input.py": "dcb9ff16ae5f6f99c20c808b9c74f28e33cf9c965e1f9391e6aa3f19802568cd",
+        "reference.py": "ee5c5bfe08bd7ebc24eb4431c665fc60f7953adb5992094d2de95ea08eecd8f8",
+        "test_input.py": "e1e5aa68824919d3e40eeef14bea7cd5dce95b78e3a89caf0f89c16463750bb7",
+        "requirement.txt": "f095d11740778b998242e05e308ebaacdc1de772a0ffabc1c21e5bfc8768fa00"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "largest_values",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_deque_rotation",
+      "family": "deque_rotation",
+      "category": "api_return",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Rotate the sequence to the right by k positions (negative k rotates left); return a list and do not mutate the input. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_deque_rotation/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_deque_rotation/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_deque_rotation/reference.py",
+      "hashes": {
+        "input.py": "6e409b71ca491d081abf70a42695def5fe01386f7e72a9b72e0101b7a6f5ae7c",
+        "reference.py": "f1eba3be242f057e02ce4218891e4c5a549af0a42e0ac0a6c0bbdb0bcef39519",
+        "test_input.py": "b1f6f1287575cb7706627ccf7670f2fd32122c66a96a16c9d64cba2c7da66c55",
+        "requirement.txt": "d8ea418135bcaed2291c0deb832fb015d812cf088d6cb13ed7b678b4d5bc6609"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "deque_rotation",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_signed_counter",
+      "family": "signed_counter",
+      "category": "api_contract",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Subtract right counts from left counts, returning a dict that retains zero and negative counts for every key present in either input. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_signed_counter/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_signed_counter/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_signed_counter/reference.py",
+      "hashes": {
+        "input.py": "e46872d501da03c7daa359929a443d14eb3b54b0861d2a5f57169e845d629cb8",
+        "reference.py": "f107e98483f447bf582eeb1b25c9db4207e9f73f672047cac827a2962046fc13",
+        "test_input.py": "5e3d59e5c2190ff8bb1076058d6562019b3176724c2d049bf1406123f96cc9e7",
+        "requirement.txt": "49072db2de20ab4f14908d41337d4c7781af46a7fa039fa52b97cd5af9b73584"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "signed_counter",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_json_unicode",
+      "family": "json_unicode",
+      "category": "api_keyword",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Serialize the mapping as JSON with literal Unicode characters and sorted keys, using default JSON spacing. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_json_unicode/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_json_unicode/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_json_unicode/reference.py",
+      "hashes": {
+        "input.py": "e6b160d914a91c3ecce5cdc1fc475015e067fa887d68a5e3b08f59a6ceea8480",
+        "reference.py": "417d5b1192a70a0c13a7cd020f7ab125b92e384ac833819c51df4f4c3ae0286b",
+        "test_input.py": "1c641c6b431eb5513f3a97c5ec7b2851b05ff69f41803e2265dad1b36416c684",
+        "requirement.txt": "4d374e3fe3cbf8b86d0ca2f9106ffc3831c3af5340d3fe2d0118fa6c04682205"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "json_unicode",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_json_duplicate_pairs",
+      "family": "json_duplicate_pairs",
+      "category": "api_contract",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Parse a flat JSON object into an ordered list of key/value tuples, retaining duplicate keys. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_json_duplicate_pairs/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_json_duplicate_pairs/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_json_duplicate_pairs/reference.py",
+      "hashes": {
+        "input.py": "db63b238c55b2bcb8664508a1d0f3904c162a3a6c1198f8b690924893b9201d8",
+        "reference.py": "6e309756907d6ba08c2a10e1551f57654d709aec172162b3d3b6376629c3d37a",
+        "test_input.py": "70eee66cde03b7e11c21c52c9b597e7bef345b19e023a491d1dc90b3f14f4d11",
+        "requirement.txt": "ad5d139a3b749f65efb3387fd819fd9476228b63da63c3c23a442c8ddb3fc1f6"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "json_duplicate_pairs",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_urlencode_sequences",
+      "family": "urlencode_sequences",
+      "category": "api_keyword",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Encode a sequence of key/value pairs as a URL query, expanding list values into repeated keys and omitting empty lists. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_urlencode_sequences/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_urlencode_sequences/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_urlencode_sequences/reference.py",
+      "hashes": {
+        "input.py": "0433a0fdd4de0cf87066a8b78a9f8805dc7066d4ac89f20c8b6b9ff35e539b10",
+        "reference.py": "c156dc5bab8f9454d9930722141682b04e5e3378682b1a827312b325d095c6bf",
+        "test_input.py": "79415b1a4fdbba739be9b88699df5079fbeb8a739f9251ffa66a2c98eb3d1881",
+        "requirement.txt": "47c9a7fbac4336f1425c47af58f2e7c2311eb2bd4fb629383bb699005cee321d"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "urlencode_sequences",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_url_defragment",
+      "family": "url_defragment",
+      "category": "api_return",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return just the URL before the fragment separator, preserving the query and encoded characters. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_url_defragment/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_url_defragment/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_url_defragment/reference.py",
+      "hashes": {
+        "input.py": "964c970b7524bbffcfb6d511d5b46449ed04b3ad9ea0201c4e7853a2f481239a",
+        "reference.py": "5b649e2d0dc4c88f08ca5b944d00402927bdbfa324acdf81278447c3786b3dd7",
+        "test_input.py": "eeebe78b19f83078389bd7559e67ff58f15358e7072437282623460933d3b7ed",
+        "requirement.txt": "ac7b19f7ab865e6964d63b903e743964f9674767cb06e2ee696e5fd2fd49f4f2"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "url_defragment",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_regex_split_delimiters",
+      "family": "regex_split_delimiters",
+      "category": "api_contract",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Split on each comma or semicolon, retaining empty fields but not delimiter characters. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_regex_split_delimiters/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_regex_split_delimiters/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_regex_split_delimiters/reference.py",
+      "hashes": {
+        "input.py": "eb0eb56a724b6f3e757dde877885d47f271cac915bb6a73ed33e74ecef1142da",
+        "reference.py": "9a237ea3cbc11d525bacf592656775d7505bfab23c798addde8ca2cf55b37c10",
+        "test_input.py": "ac29afba35467433c24595dae5acbe9fec782f0a25ca04c91897048e2799b125",
+        "requirement.txt": "ef151e17c377a91fc3d77a309f4cfb1962810526fa78125669512ad207831ab3"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "regex_split_delimiters",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_regex_full_matches",
+      "family": "regex_full_matches",
+      "category": "api_return",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return each complete ASCII letter-plus-digit token matched by [A-Za-z]+[0-9]+, in order, not separate capture groups. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_regex_full_matches/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_regex_full_matches/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_regex_full_matches/reference.py",
+      "hashes": {
+        "input.py": "57577ca9d385f9fd607e0284bfe6ea5b68dbce844eaaed11c34f6237bac3ed0d",
+        "reference.py": "c13e50e6efce96979c586074b5aae75e928c647c081d8264c4b35ccf43ac63fc",
+        "test_input.py": "effa80eb87a099bc02b320e2b8fb8c989a3aea2751143a1e2a3d1c275359d1f4",
+        "requirement.txt": "f50959dccebe3dde196ae526b5a88135150ba92eb3f4ef6f9802fba13e469e45"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "regex_full_matches",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_iso_week_year",
+      "family": "iso_week_year",
+      "category": "api_return",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return (ISO week-numbering year, ISO week, ISO weekday) for a Gregorian date, with Monday=1. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_iso_week_year/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_iso_week_year/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_iso_week_year/reference.py",
+      "hashes": {
+        "input.py": "5ac7ca905a8c8ad3e4aa962922622db19b50fe20dab342e7f8f303c5eb7337c4",
+        "reference.py": "423d2ad21048035396d566c7d565e61ee7ff592ec9af43ba08a25e3b1715c461",
+        "test_input.py": "e44cb5f001f9e37cf89012033b6169d26589bd1667b2418f15e7e04ea130c139",
+        "requirement.txt": "140d50a057fe236062c34b4ac76e4a18143a11723433a7e36998c261383cced0"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "iso_week_year",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_bounded_fraction",
+      "family": "bounded_fraction",
+      "category": "api_name",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Approximate a decimal string by a Fraction whose denominator is at most the provided positive bound; return numerator and denominator. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_bounded_fraction/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_bounded_fraction/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_bounded_fraction/reference.py",
+      "hashes": {
+        "input.py": "e15c8a184c13a10a37d39da729ba4667fb291373772cb82e72464d97bb7e5da3",
+        "reference.py": "886cddbb51257b9b098a7e6464f8bd1d92a8f9c4783e47dd4256adab2f691b40",
+        "test_input.py": "705c5d075c940cb5f0242949fd7f81ff2e57b51ade25eca70ea28b21f21593b6",
+        "requirement.txt": "5466e91cee0aaf413a839e9c23dce492152c27bedaffef5ef4781e4b10fef8c7"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "bounded_fraction",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_absolute_closeness",
+      "family": "absolute_closeness",
+      "category": "api_keyword",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return whether two numbers differ by at most tolerance, using only absolute tolerance, not relative tolerance. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_absolute_closeness/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_absolute_closeness/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_absolute_closeness/reference.py",
+      "hashes": {
+        "input.py": "6cc162b657dadb8d358408c0e686e4ba887fa918a31729890b4d8c7b3c056ecf",
+        "reference.py": "921c6a1350d6677c94388dc1676c927c3e3cc575ec87d0314bfc2a6c88068d64",
+        "test_input.py": "ebe298ffe68a2d3e0e32117b9a207b6c05f1f132454450b9516988bfe028a557",
+        "requirement.txt": "4b1dc3df7836e500d1683b0035a4ea89b6b9a15b0e9c17dbb36b6ebe339df354"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "absolute_closeness",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_reduce_empty_sum",
+      "family": "reduce_empty_sum",
+      "category": "api_arguments",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return the sum using an integer-zero identity, including zero for an empty input. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_reduce_empty_sum/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_reduce_empty_sum/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_reduce_empty_sum/reference.py",
+      "hashes": {
+        "input.py": "7e9d08b67309f98c95a6a41d74e40f122c96f1711cf5959232ed48e12f078130",
+        "reference.py": "58f74e497c74a212f97ddbeef4eb98e50b8a5c279d042a1015771104c4722010",
+        "test_input.py": "682b407815d94658e535884fd7d78f688040fe23c2bbc3934b8d42be4bb69177",
+        "requirement.txt": "3d682c4456a7790f52a6f7664d689b8806e8c6022bcc0f849abcde7a1c0f956e"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "reduce_empty_sum",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_multi_itemgetter",
+      "family": "multi_itemgetter",
+      "category": "api_arguments",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Select the values at exactly two given indices, returning a tuple in the requested index order. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_multi_itemgetter/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_multi_itemgetter/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_multi_itemgetter/reference.py",
+      "hashes": {
+        "input.py": "8d74ed96b10bd490b838b5785d32bcdbcca87e93e8425e888c8b7363691ec5d4",
+        "reference.py": "eb4daf67b0bfd49ab34013f7db83d686a4c48cb4f3b4755cdb1239917351faea",
+        "test_input.py": "32a0e5df0c661c9b1aa7e7b69e1882b62de300934e3c26c7283abd56fe8caa50",
+        "requirement.txt": "fd3c6d5a2373fa225013a482ca1ada6acc9f691df6fa38e7d23259811c84f35c"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "multi_itemgetter",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_common_indentation",
+      "family": "common_indentation",
+      "category": "api_name",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Remove common leading whitespace from all nonblank lines using textwrap dedent semantics. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_common_indentation/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_common_indentation/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_common_indentation/reference.py",
+      "hashes": {
+        "input.py": "56e7d0d969738e0ececf81eda8f99178162452fea65bf1674c4cd8e7650ad763",
+        "reference.py": "1655c96e90b9edd5409f629986d9f69e972aa3fc67635de579ce4e66de661ac5",
+        "test_input.py": "3782617104841ab023e320755e3c043ce6abf0fc3415fe01a371ceec8fb87a28",
+        "requirement.txt": "bea7a2a598fdc26e5f94c26edf1b557a342db2f95426a160444da08c6309ff4a"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "common_indentation",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_wrap_long_tokens",
+      "family": "wrap_long_tokens",
+      "category": "api_keyword",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Wrap text to the given positive width, without breaking long words or at hyphens; return a list of lines. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_wrap_long_tokens/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_wrap_long_tokens/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_wrap_long_tokens/reference.py",
+      "hashes": {
+        "input.py": "a63445c1f8f9e2149af5059b073d361bf9ae5074032a1edafd1b7fd1df5c115d",
+        "reference.py": "45244388d86a95bfa4b32f5b0c6e552cf9867eb214447379396ed65d475ad8e8",
+        "test_input.py": "be18ce27c68604bc8ccdd55fcde21cc160d5b41c83055a4ff392d6f7586faf99",
+        "requirement.txt": "08ea7951a48c63c20b3092eb1580a34ba421adee4771cb935bf196942e99dd9d"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "wrap_long_tokens",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "api200_optional_template",
+      "family": "optional_template",
+      "category": "api_contract",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Substitute known dollar-template names and preserve unknown placeholders literally; escaped $$ becomes $. Inputs use valid template syntax. Preserve solve signature.",
+      "code_file": "data/expansion200_v1/cases/api200_optional_template/input.py",
+      "test_file": "data/expansion200_v1/cases/api200_optional_template/test_input.py",
+      "reference_file": "data/expansion200_v1/cases/api200_optional_template/reference.py",
+      "hashes": {
+        "input.py": "197c7181752f986cb90e034ab03a65047ad87db3d49c4f8c0172b15babd15c81",
+        "reference.py": "d6c33148aa246e85b2023365dce4506d2d1359a2038aa09f4e419e7fdef7a17f",
+        "test_input.py": "349904076d3478013238c7ac0d741c0f45b36fc6f6e86d458d99bfa130896d65",
+        "requirement.txt": "086de45d6b452ea21e884cde2a471b5dffe0bb01f2befa8637575b926bd7db7f"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_api_scenario",
+        "production_bug": false,
+        "family": "optional_template",
+        "author": "project evaluation assistant",
+        "method": "Distinct explicit API contract with authored defect, tests and reference before model evaluation.",
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    }
+  ],
+  "configs": {}
+}

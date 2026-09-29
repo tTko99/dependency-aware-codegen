@@ -1,0 +1,1 @@
+Return the lower middle observed value for even length, ordinary middle value for odd length; input is nonempty. Preserve solve signature.

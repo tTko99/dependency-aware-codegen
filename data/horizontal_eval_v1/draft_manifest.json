@@ -1,0 +1,1745 @@
+{
+  "name": "horizontal_mixed_v1",
+  "cases": [
+    {
+      "id": "auth_mean_api",
+      "family": "auth_mean_api",
+      "category": "api",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return the arithmetic mean of a nonempty numeric sequence. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_mean_api/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_mean_api/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_mean_api/reference.py",
+      "hashes": {
+        "input.py": "2fa12f56147ee37bd4e2909ffe7928ec28a176b82f9bc5d3499349aeddc9fe60",
+        "reference.py": "239bfa5aec9a30879dd8f2a9ae642091606cff7c6c7eb37e5d0e86892f7c922e",
+        "test_input.py": "5549331d8e982fb56fd3367fdbc61f05506e92e2a30920934234c02f3113c459",
+        "requirement.txt": "5274435a1d052839af861c9ba559b9f10f9dfbba41a80706360edca792da4676"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "mean_api",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_mean_api_control",
+      "family": "auth_mean_api",
+      "category": "api",
+      "cohort": "control",
+      "is_control": true,
+      "requirement": "Return the arithmetic mean of a nonempty numeric sequence. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_mean_api_control/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_mean_api_control/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_mean_api_control/reference.py",
+      "hashes": {
+        "input.py": "239bfa5aec9a30879dd8f2a9ae642091606cff7c6c7eb37e5d0e86892f7c922e",
+        "reference.py": "239bfa5aec9a30879dd8f2a9ae642091606cff7c6c7eb37e5d0e86892f7c922e",
+        "test_input.py": "5549331d8e982fb56fd3367fdbc61f05506e92e2a30920934234c02f3113c459",
+        "requirement.txt": "5274435a1d052839af861c9ba559b9f10f9dfbba41a80706360edca792da4676"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "mean_api",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": "auth_mean_api"
+    },
+    {
+      "id": "auth_population_variance",
+      "family": "auth_population_variance",
+      "category": "api",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return population variance, including zero for one observation. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_population_variance/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_population_variance/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_population_variance/reference.py",
+      "hashes": {
+        "input.py": "b21ed88486e9ae376fc3de9204e4c44041fe1c0a38bc94cbc375b8c159cd9190",
+        "reference.py": "9220efa69721cfb6b2784933f71679f6676efccf8eacabc877648a423ae15f4c",
+        "test_input.py": "58dadc9966143cfd3dcd57a668460ecc9bc5dcf342ceb6dba027486478c11bbe",
+        "requirement.txt": "399e52efd9b2a74bca8299992d62c7fb4d1d5f381775f1157a93ec8ab599b2ed"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "population_variance",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_prefix_totals",
+      "family": "auth_prefix_totals",
+      "category": "api",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return a list of cumulative sums in input order; empty input gives an empty list. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_prefix_totals/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_prefix_totals/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_prefix_totals/reference.py",
+      "hashes": {
+        "input.py": "c349789b23afabc45fd7c1c787230e444e2575f6015a67e2a77e49717b4b29a5",
+        "reference.py": "5d933bf1f92f5a9bfe10e1f0aafc4e524d8e5d8a3e6f4696047ee9fbd533c3ac",
+        "test_input.py": "b10d241bf96a570df900fb35f969084d1c7f25407ec9d54ae1016cfb119482e0",
+        "requirement.txt": "2bffffe8f150fcf5cfed197752316549ff5535344e185d6818bf38077f519b1c"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "prefix_totals",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_query_parameters",
+      "family": "auth_query_parameters",
+      "category": "api",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Parse a URL query into a mapping from keys to lists; preserve duplicates and blank values; decode percent escapes and plus signs. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_query_parameters/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_query_parameters/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_query_parameters/reference.py",
+      "hashes": {
+        "input.py": "0eb4fe592a06f91d880134eaea921fd6d0f143ed3ec60eb0dbb85f000698efe2",
+        "reference.py": "02ef0174908d681d970d9d6ab8493c7d59b023c9e0cd85190224e9f8f0e3baeb",
+        "test_input.py": "3202ccdc032204cc9ae483ec0568eecaf68f98eb5d824a703b49fa221100b6b9",
+        "requirement.txt": "95a1622bae5291571eb02d28df1f687b1c5f89a404b4ddf79aa7787324df4b8a"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "query_parameters",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_whole_identifier",
+      "family": "auth_whole_identifier",
+      "category": "api",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Accept exactly ASCII letters or underscore followed by ASCII letters, digits or underscore; reject trailing characters and newlines. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_whole_identifier/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_whole_identifier/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_whole_identifier/reference.py",
+      "hashes": {
+        "input.py": "e11fb911f6462b8981adf41747cf305288082b5fc3b9e8aa3680d46a3005462d",
+        "reference.py": "c295e99bac23b4eadeb71cc238ad6774e6d61f705a83db41a42f7b7290acc664",
+        "test_input.py": "6cd4b277e65d4793074dc411ca724c2aa5b743887594f47b967f2d2ffec9a9b5",
+        "requirement.txt": "e5eb6bc12de76e45941b9ff58fdfabfa8756b69712d743af6adba595eb7782bf"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "whole_identifier",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_top_counts",
+      "family": "auth_top_counts",
+      "category": "api",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return up to k (item,count) pairs by descending frequency, preserving first-seen tie order; k=0 returns empty. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_top_counts/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_top_counts/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_top_counts/reference.py",
+      "hashes": {
+        "input.py": "225bbbdfe5ffed564ec4b39924385f94775c5446d9a03d8c96cb60194b22feb0",
+        "reference.py": "f796b7dde059ed52e3f214b0d4defb6fc6e74bc1cf3acfc104a7b8a7a120ef13",
+        "test_input.py": "244fb8663e4d44c21e6a729e7f7ca4827b3ba7a3540a347ff16261bed90f699d",
+        "requirement.txt": "15b22e06d5e926fae3d707f390dbe84b26b86f5bfeaecf27a8a2e2694e45324c"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "top_counts",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_calendar_parse",
+      "family": "auth_calendar_parse",
+      "category": "api",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Parse an ISO calendar date and return its ordinal; reject impossible dates with ValueError. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_calendar_parse/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_calendar_parse/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_calendar_parse/reference.py",
+      "hashes": {
+        "input.py": "4065a5227276f8646dc4ddf9c135653dd4abae59b8e5fad0b197cf20c94f8fe4",
+        "reference.py": "56b96b5e7ac38fa003beb9d076a050ef7de2c423d3eff2cbd600c863747ccfa5",
+        "test_input.py": "173215230eca7e574a45337f276680f4c92976484389d376ddfa56932c814db2",
+        "requirement.txt": "3b8a21a0ebc9881845d01eb47175074c945f69ec949a5dedce4444c155d38941"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "calendar_parse",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_calendar_parse_control",
+      "family": "auth_calendar_parse",
+      "category": "api",
+      "cohort": "control",
+      "is_control": true,
+      "requirement": "Parse an ISO calendar date and return its ordinal; reject impossible dates with ValueError. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_calendar_parse_control/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_calendar_parse_control/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_calendar_parse_control/reference.py",
+      "hashes": {
+        "input.py": "56b96b5e7ac38fa003beb9d076a050ef7de2c423d3eff2cbd600c863747ccfa5",
+        "reference.py": "56b96b5e7ac38fa003beb9d076a050ef7de2c423d3eff2cbd600c863747ccfa5",
+        "test_input.py": "173215230eca7e574a45337f276680f4c92976484389d376ddfa56932c814db2",
+        "requirement.txt": "3b8a21a0ebc9881845d01eb47175074c945f69ec949a5dedce4444c155d38941"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "calendar_parse",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": "auth_calendar_parse"
+    },
+    {
+      "id": "auth_money_rounding",
+      "family": "auth_money_rounding",
+      "category": "api",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Round a decimal string to exactly two decimal places using half-up rounding; return a string. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_money_rounding/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_money_rounding/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_money_rounding/reference.py",
+      "hashes": {
+        "input.py": "f68d8219d2f698acb91129f06463e76990721860ffd207f8b6b2b57f76ba1c65",
+        "reference.py": "d44b0d1e9800ab29662f7b03a1fc7758da18176ae0bb10990f0acc78afe8b463",
+        "test_input.py": "1b4502c90fed1832cafbd04131106357710ca3b51840e85781c1829b1a048daf",
+        "requirement.txt": "a0a15fde7d24c831d1f38c7aa18b0d153364ebce12db4c96e64b51f78f924e3c"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "money_rounding",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_json_boolean",
+      "family": "auth_json_boolean",
+      "category": "data",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Read a JSON object and return its enabled boolean, default False when absent. String values true/false must be interpreted case-insensitively, not by nonempty-string truthiness. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_json_boolean/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_json_boolean/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_json_boolean/reference.py",
+      "hashes": {
+        "input.py": "1144d27b56c428a620584f55b3dbdf600b03eb00146891f7b7b6bb3f03c8c8d0",
+        "reference.py": "09307dfbacdc47d2caae33af761c88e96a385a824ce4cfdb9bd249e24b010bab",
+        "test_input.py": "d43390e408e83019a2ed0aa3d415c891d19024e4480ae48ea4eab340a19d9ba4",
+        "requirement.txt": "2193c9343f9b502f4df4c0301e4abd74d69961eb4fd0805ae927e8cd2fa76370"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "json_boolean",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_json_boolean_control",
+      "family": "auth_json_boolean",
+      "category": "data",
+      "cohort": "control",
+      "is_control": true,
+      "requirement": "Read a JSON object and return its enabled boolean, default False when absent. String values true/false must be interpreted case-insensitively, not by nonempty-string truthiness. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_json_boolean_control/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_json_boolean_control/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_json_boolean_control/reference.py",
+      "hashes": {
+        "input.py": "09307dfbacdc47d2caae33af761c88e96a385a824ce4cfdb9bd249e24b010bab",
+        "reference.py": "09307dfbacdc47d2caae33af761c88e96a385a824ce4cfdb9bd249e24b010bab",
+        "test_input.py": "d43390e408e83019a2ed0aa3d415c891d19024e4480ae48ea4eab340a19d9ba4",
+        "requirement.txt": "2193c9343f9b502f4df4c0301e4abd74d69961eb4fd0805ae927e8cd2fa76370"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "json_boolean",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": "auth_json_boolean"
+    },
+    {
+      "id": "auth_nested_lookup",
+      "family": "auth_nested_lookup",
+      "category": "data",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Follow a list of dictionary keys, returning default only when a key is missing or a non-dictionary is reached; preserve present false/zero/None. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_nested_lookup/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_nested_lookup/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_nested_lookup/reference.py",
+      "hashes": {
+        "input.py": "be1a56f24e889d37e2851dce41dda1fb66eb6df3c52b1a4a4c1f9171c4cd590e",
+        "reference.py": "af833ba5b49aa255ccbc1dadf3b7c2cd2ca129d3d66a96c6ba0b512d377a9bd2",
+        "test_input.py": "df07b6ad50e293b022f94e39ba61f68cc1043c46c6dbbdfabca8820f7502c0ad",
+        "requirement.txt": "5d319a1219124d27a025f0f6f69a643c520f9555b0b282c440c43cf2a12cac77"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "nested_lookup",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_record_grouping",
+      "family": "auth_record_grouping",
+      "category": "data",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Group record dictionaries by their kind field, preserving group and record order; missing kind belongs to None. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_record_grouping/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_record_grouping/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_record_grouping/reference.py",
+      "hashes": {
+        "input.py": "26a6aec0e161d86d7e002d527699976f73913d7611170c87e63673355a910ca9",
+        "reference.py": "8185911e0c9ed453e6070c805cf06da3ad6575dd0d1f0a5836aa57d5c6c883ed",
+        "test_input.py": "6fedf492583e6d055185711fd89479d62bea570b9c746ae01546ab499c405f90",
+        "requirement.txt": "905da1892ae028490cb8c350674e98c939d861948031485ccdac37f60da34a47"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "record_grouping",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_merge_defaults",
+      "family": "auth_merge_defaults",
+      "category": "data",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Merge default and supplied options; supplied values win even if False, zero or None. Do not modify either input. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_merge_defaults/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_merge_defaults/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_merge_defaults/reference.py",
+      "hashes": {
+        "input.py": "80acbb811f1f896b3531a2ebc6ca49c06594570883b1c8a1e3021e56d222ef4b",
+        "reference.py": "9aa7c1160396d97f96da39f2c9a663a93780eef37056ae61cc18e90028527a05",
+        "test_input.py": "779795c4e5c3e29235ba4ac939466bbd25e1d0e7e55b24124215cdffa2255b8a",
+        "requirement.txt": "994c771e8309c62ffea3edb134940a9226499c712af7660add275a6c1258315a"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "merge_defaults",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_numeric_record_order",
+      "family": "auth_numeric_record_order",
+      "category": "data",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return records ordered by numeric score ascending, preserving ties; scores are numeric strings. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_numeric_record_order/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_numeric_record_order/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_numeric_record_order/reference.py",
+      "hashes": {
+        "input.py": "d073df64535e80c7fd328a2454e500415617012e6b05946c74fd33c32f465b84",
+        "reference.py": "f42c08e8e1485c25f9f9ad89a67fc1de32560322c4f1da4dd4b874a08a73c962",
+        "test_input.py": "512d21c014e8dacbc6b8aee4c36cdc2e56dd1d92bd48b1633cdcaffd2b767076",
+        "requirement.txt": "12eca974a4c135872944ff7c6a9ddaa6f17c24d99c8027348fc95d7758ac6c03"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "numeric_record_order",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_unique_records",
+      "family": "auth_unique_records",
+      "category": "data",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Keep the first record for each id, preserving first-seen order. IDs are hashable. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_unique_records/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_unique_records/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_unique_records/reference.py",
+      "hashes": {
+        "input.py": "4f0eff0f6af6a52e033f1d11abbfbb088ee3c923b8b24aaf55fdbd7ff1a3083e",
+        "reference.py": "b056a026180f12e6e38faa2684e4ac12094fb49a1ecca5322d4672ed5372de08",
+        "test_input.py": "e2010666c3a86ec437f03ba055517dfb60eba7c6a8e93e883e0e49fc87a741d1",
+        "requirement.txt": "80bd2c43a4de85e34f041dd465bc55a3e1d1c63f5d67a121aa22a62671116f0b"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "unique_records",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_pair_transpose",
+      "family": "auth_pair_transpose",
+      "category": "data",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Transpose a rectangular list of rows to lists of columns; empty input returns []; reject ragged rows with ValueError. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_pair_transpose/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_pair_transpose/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_pair_transpose/reference.py",
+      "hashes": {
+        "input.py": "504bed6e5497163122d04974571e80cbf8e1cd59512daa3784a62a402df46e7a",
+        "reference.py": "df46e580e794334d6565de76487a0a139815383b1ac902b5c44b9148cf4243a2",
+        "test_input.py": "357cd014988e6082cdda03aa9c1a752d1a0a02959c6381021e3615663bf00785",
+        "requirement.txt": "152d175b3ddf08c115e11a8719ec95a7a62c5019d07cd91d5a628dc07ae38f1d"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "pair_transpose",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_literal_prefix",
+      "family": "auth_literal_prefix",
+      "category": "text",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Remove prefix exactly once only when text starts with that complete prefix; an empty prefix changes nothing. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_literal_prefix/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_literal_prefix/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_literal_prefix/reference.py",
+      "hashes": {
+        "input.py": "26931559cda7e66f646f34c290bdb8e25b7c280263e11d3fd13f80357b07f496",
+        "reference.py": "11fac48fe851cdf08a81e256b8b141816c62582cd6c9e02cdb80c58bc780533a",
+        "test_input.py": "15432621843341ffe6db58985d43cc3d7d6e7700c4e72a8214eda03a8fc56141",
+        "requirement.txt": "420b01f285d734bdc454c8bce80f51049ffdfc383d2802d68c10041c715a07c6"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "literal_prefix",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_literal_separator",
+      "family": "auth_literal_separator",
+      "category": "text",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Split text on a literal nonempty separator, retaining empty fields; separator metacharacters have no special meaning. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_literal_separator/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_literal_separator/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_literal_separator/reference.py",
+      "hashes": {
+        "input.py": "c3a52192411342127990b4c5323448c9cb3554d9e0557f97cdfe35e9592e9333",
+        "reference.py": "0d038e33793096af3414d9598c626f7665bf247b4533b804336137b47880aa47",
+        "test_input.py": "4bb6b03e6593a68cea136c66c8e787e19c0d36ffb971249d79159e1d9ab583db",
+        "requirement.txt": "604a28ae88261ec4bcd8cd98263d9f3f13f36156455e1d24b2932d38412b72b1"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "literal_separator",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_casefold_match",
+      "family": "auth_casefold_match",
+      "category": "text",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Compare two Unicode strings caselessly using Unicode case folding, without trimming whitespace. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_casefold_match/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_casefold_match/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_casefold_match/reference.py",
+      "hashes": {
+        "input.py": "3d54a41ddd43d87ed0775557856e98ff522c9566bc1b7c150e2712043081de03",
+        "reference.py": "132bd774ba63cb00a7e96c89e4bc30a19ca3448cd731e4aa95d62c90cc54ba83",
+        "test_input.py": "8303b344984e8fd1ed71887ea21a3b610e284dc4a76df5eaf8dc7c0b9e8a9836",
+        "requirement.txt": "3c37f84b1cc6c114dc1c6f2a73dd0fa6d021bc4e04456ceb15f9ac1f87e14db2"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "casefold_match",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_casefold_match_control",
+      "family": "auth_casefold_match",
+      "category": "text",
+      "cohort": "control",
+      "is_control": true,
+      "requirement": "Compare two Unicode strings caselessly using Unicode case folding, without trimming whitespace. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_casefold_match_control/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_casefold_match_control/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_casefold_match_control/reference.py",
+      "hashes": {
+        "input.py": "132bd774ba63cb00a7e96c89e4bc30a19ca3448cd731e4aa95d62c90cc54ba83",
+        "reference.py": "132bd774ba63cb00a7e96c89e4bc30a19ca3448cd731e4aa95d62c90cc54ba83",
+        "test_input.py": "8303b344984e8fd1ed71887ea21a3b610e284dc4a76df5eaf8dc7c0b9e8a9836",
+        "requirement.txt": "3c37f84b1cc6c114dc1c6f2a73dd0fa6d021bc4e04456ceb15f9ac1f87e14db2"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "casefold_match",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": "auth_casefold_match"
+    },
+    {
+      "id": "auth_line_endings",
+      "family": "auth_line_endings",
+      "category": "text",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return lines without line terminators, recognizing LF, CRLF and CR; do not add a final empty line for a terminal line ending. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_line_endings/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_line_endings/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_line_endings/reference.py",
+      "hashes": {
+        "input.py": "18ba285857712371dd8a51effcc90306d3026d0ac295934a48a56f7582b7ac67",
+        "reference.py": "4fc475e344564aa2441a9be89718419fbd678b81d5d60959bc1bbfd26b02e724",
+        "test_input.py": "51eb552d44cc92f3029cc7a854706250ba8827e7af2fba2823dc147da1f1254e",
+        "requirement.txt": "1630bd7a55996cef233e38fefe39388887e0944289f25a175ce974d28af1dfde"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "line_endings",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_quoted_tokens",
+      "family": "auth_quoted_tokens",
+      "category": "text",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Parse comma-separated fields with double-quoted fields; commas inside quotes are literal and doubled quotes inside quotes denote one quote. Return [\"\"] for empty input. Inputs are well-formed; no multiline records. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_quoted_tokens/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_quoted_tokens/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_quoted_tokens/reference.py",
+      "hashes": {
+        "input.py": "2dd46fbcc11b6904ae60bb159390dfd8b308c47446a8d6f4e1ba885c20212483",
+        "reference.py": "1d96184d8b92bd9e6c89f87c57aedec28c4c124d1b8a3c5aec1497ad8767a02c",
+        "test_input.py": "c43e712ed93c9cb9d0e0b576db29ee47d501d1d0a67b59e05245df097bb40aa2",
+        "requirement.txt": "4b9d5a0816742c79f829c858c81a9cc9e84d0053be140544fabae6e67e653803"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "quoted_tokens",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_regex_replacement_literal",
+      "family": "auth_regex_replacement_literal",
+      "category": "text",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Replace all occurrences matching a regex with literal replacement text; backslashes in replacement text are not group references. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_regex_replacement_literal/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_regex_replacement_literal/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_regex_replacement_literal/reference.py",
+      "hashes": {
+        "input.py": "b2319b41a32d3809219784fc77f787a2891e231adb69a304e11ddcaf04cc781d",
+        "reference.py": "41c35e21fcb211abbd8d3479e570caa9f13b4dbb0c256d32dd6b5f571baa1524",
+        "test_input.py": "5cfabc28b4ca44c0f01a97e159322a53ad21feaa91a42bca8724c00cba8b3e3b",
+        "requirement.txt": "79ea776a0037f9f9b86f69e3cb0ff3dfde16bc95e991c493ddbe2cb2da69f36f"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "regex_replacement_literal",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_word_frequencies",
+      "family": "auth_word_frequencies",
+      "category": "text",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Count whitespace-separated words case-insensitively using casefold; retain punctuation as part of a word and ignore repeated whitespace. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_word_frequencies/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_word_frequencies/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_word_frequencies/reference.py",
+      "hashes": {
+        "input.py": "114d411f34e5a728c7f98bbf851bc324b0b820864550dd69e04a5c54d03df818",
+        "reference.py": "2d783fef4bc994bf7a3e4fca6e4346a742a7d640d2290149e04417f1f2f0713f",
+        "test_input.py": "5cce7bbb0d06b61e7488fa21e1705a94a4b8fc21fa27a3e290faeefe821a2d1b",
+        "requirement.txt": "c84ea190c6a7d65fb3440f9e3afefffd2074af8b565514f6824f68046824511a"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "word_frequencies",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_elapsed_days",
+      "family": "auth_elapsed_days",
+      "category": "numeric_time",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return elapsed time in seconds between two ISO datetimes, including days and negative differences. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_elapsed_days/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_elapsed_days/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_elapsed_days/reference.py",
+      "hashes": {
+        "input.py": "53a524b392f06d36d031eeedb9b3ca7625c99b76c61566b45404bb18063d56fd",
+        "reference.py": "b8d6b4c3b88cb2a0406aebc5fe27e49542f454cd0140099c12b9964df5fecba2",
+        "test_input.py": "53b3cb33c07a8930bb4f3bc3cbcd3102ac500e309508c6d54f671a5051b6c22b",
+        "requirement.txt": "694432c1ffc8a23ad64f8ae7c68a0d612e3562f4dccecbe8e54b84e4f0175767"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "elapsed_days",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_leap_century",
+      "family": "auth_leap_century",
+      "category": "numeric_time",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return whether a positive Gregorian year is a leap year. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_leap_century/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_leap_century/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_leap_century/reference.py",
+      "hashes": {
+        "input.py": "b92d5142224e5376402b46f5842988b110a074fd35f40849f363f581268b1f56",
+        "reference.py": "6d87dba2b42188646b98e40858a833c8180bf5e0da203dff19f10adcff3bc19a",
+        "test_input.py": "851a6c321c231c393db4432a8d82b8f55ea8cc16870a746c5f572fe8bb9e2186",
+        "requirement.txt": "cab2a4b7cdb2116b8a274c07a485d56f66ae77ba6438a894780adf3b7a4cb71e"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "leap_century",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_next_calendar_day",
+      "family": "auth_next_calendar_day",
+      "category": "numeric_time",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return the ISO date immediately after a valid input ISO date, including month and leap-year boundaries. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_next_calendar_day/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_next_calendar_day/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_next_calendar_day/reference.py",
+      "hashes": {
+        "input.py": "3d56a8f53787c2741783f6ea5bd1693ef09db1bc0e8a6d49003cecaec8f954a2",
+        "reference.py": "362fa7e830fff94f8c0c01d0e31344ceaf87e3df377f3e8328da5e8af547e118",
+        "test_input.py": "1d375f70acf6aad16bed33f45a79f320ed16172e16255545b6716643c51e3bf4",
+        "requirement.txt": "d828c78b260789a27a8a37deb30e505ed7f969801b8f0f75caa5ff754d487518"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "next_calendar_day",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_ceil_batches",
+      "family": "auth_ceil_batches",
+      "category": "numeric_time",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return number of capacity-sized batches required for n items, n >= 0 and capacity > 0, using exact integer arithmetic. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_ceil_batches/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_ceil_batches/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_ceil_batches/reference.py",
+      "hashes": {
+        "input.py": "9b15480b3b98ffa9796b6cae177c0b9f4c07cba7b24f8d26751cf6dca0e2d2c1",
+        "reference.py": "ddf3d5da7a3b63782fa539967989d2015ab00503d274c42cdec7bc1aa06eacdb",
+        "test_input.py": "b9b0cec07d65d41b30967986370e8eda9dee2d16a435609cc7e81cc347dcc872",
+        "requirement.txt": "61d5f4c6e38507df4f067418a31b3b7459e7c47d198446b3a2b6185ce50e1fdf"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "ceil_batches",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_ceil_batches_control",
+      "family": "auth_ceil_batches",
+      "category": "numeric_time",
+      "cohort": "control",
+      "is_control": true,
+      "requirement": "Return number of capacity-sized batches required for n items, n >= 0 and capacity > 0, using exact integer arithmetic. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_ceil_batches_control/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_ceil_batches_control/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_ceil_batches_control/reference.py",
+      "hashes": {
+        "input.py": "ddf3d5da7a3b63782fa539967989d2015ab00503d274c42cdec7bc1aa06eacdb",
+        "reference.py": "ddf3d5da7a3b63782fa539967989d2015ab00503d274c42cdec7bc1aa06eacdb",
+        "test_input.py": "b9b0cec07d65d41b30967986370e8eda9dee2d16a435609cc7e81cc347dcc872",
+        "requirement.txt": "61d5f4c6e38507df4f067418a31b3b7459e7c47d198446b3a2b6185ce50e1fdf"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "ceil_batches",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": "auth_ceil_batches"
+    },
+    {
+      "id": "auth_clamp_bounds",
+      "family": "auth_clamp_bounds",
+      "category": "numeric_time",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Clamp value to the inclusive lower/upper interval; reject lower > upper with ValueError. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_clamp_bounds/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_clamp_bounds/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_clamp_bounds/reference.py",
+      "hashes": {
+        "input.py": "70adc9368d9a40fac866e531e48c6beeabe283859b5ec108948aac5c05be0a03",
+        "reference.py": "f2d735fe43bb4ecf44a2dcdf2661888dd8885deb78e727125a7bfc5ef376a4dc",
+        "test_input.py": "279d6c85fdd78db38bb53437bf121f97a826b20f68cdd27a978a2fd5df339d00",
+        "requirement.txt": "a9be4b581470b7a3e5906b132e95de1572544dae683bc3a5e9ef459ffe66af89"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "clamp_bounds",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_decimal_total",
+      "family": "auth_decimal_total",
+      "category": "numeric_time",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Sum decimal strings exactly and return a fixed-point decimal string, preserving Decimal arithmetic rather than binary floating point. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_decimal_total/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_decimal_total/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_decimal_total/reference.py",
+      "hashes": {
+        "input.py": "d4ea63fbf91324a0728712c5e3dbebb1690e1f925ed2916a39f7d31e2c5b3603",
+        "reference.py": "01869f6d2f91aa1867c6d1989ecc1fb8efde67be061df3e58a37ef7e1eaa11d6",
+        "test_input.py": "194291d20699b8117bf6f2ab89462bee1a7cb49ca6454cd4414238b0c3419bdf",
+        "requirement.txt": "523020dff6afd004550dbab0ab4ab1d1eac333bd42fbdb1fbc7c75dc29811e14"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "decimal_total",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_rational_ratio",
+      "family": "auth_rational_ratio",
+      "category": "numeric_time",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return an exact reduced numerator/denominator pair for integer a divided by nonzero integer b; denominator must be positive. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_rational_ratio/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_rational_ratio/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_rational_ratio/reference.py",
+      "hashes": {
+        "input.py": "6f9f7c61df041fa60a114c439357a8405cf8a34570b5ff705f4bfa3372f13e36",
+        "reference.py": "a3f88abdbe4f61ea9b6e79843512d9b40d7aeb285432bb4f0e66f4ff717076ab",
+        "test_input.py": "1fb59cbe6e5b5d755553d0c8536b36fac8770a1e1fb6256cf46b3c318e76f991",
+        "requirement.txt": "66f59bc5db30c59ce9b7e966153d815087db2af0a402fe515251ec089d7aac61"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "rational_ratio",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_fresh_accumulator",
+      "family": "auth_fresh_accumulator",
+      "category": "state",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return a new list containing the supplied value. Separate calls must be independent; preserve the optional bucket parameter and copy an explicitly supplied bucket. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_fresh_accumulator/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_fresh_accumulator/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_fresh_accumulator/reference.py",
+      "hashes": {
+        "input.py": "ca40425164cda4ee883cd406f6ac021d4515b0a085817c4ebc1a4d9edfefe218",
+        "reference.py": "84c82bfd52fc67c299af74e5ef08a9e58dfff80c795b48f02c89c5a25f505fc2",
+        "test_input.py": "ad009b0732958e4cfb79d51cc4604dff1aef713a12be68c883f6865d81fa1d85",
+        "requirement.txt": "f4e029076ef48f997503426cd0e6bf68dcbe0e997e689822ef49be8e0678071a"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "fresh_accumulator",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_safe_int",
+      "family": "auth_safe_int",
+      "category": "state",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Convert valid integer strings to int; return the supplied default on TypeError or ValueError. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_safe_int/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_safe_int/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_safe_int/reference.py",
+      "hashes": {
+        "input.py": "d42a52dc40cbd9d6ec78bc3eb9c4e13090bb3ce295d1753458139351c45876ea",
+        "reference.py": "bea9230d4ea92e9c364856e00cafcc0ad16a250e828c63ce924ce8fc66eda678",
+        "test_input.py": "9793c52552d8ac9ee99181176e13e24f6c386eabe7d143f3863ac94d21afdc1f",
+        "requirement.txt": "f8cf0213064d1e6c947dc056005f09a94a070829a59490a50fa37a410846b7ce"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "safe_int",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_first_present",
+      "family": "auth_first_present",
+      "category": "state",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return the first value that is not None, retaining zero, False and empty strings; return default when all are None. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_first_present/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_first_present/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_first_present/reference.py",
+      "hashes": {
+        "input.py": "0eb86de77947d3ca886af3d4d2e015488a3489a887197d0e85b93e177d4f97dd",
+        "reference.py": "e38520b1163ea757624bfd31a770390c2603b47248ea0f94ed1704c5493c91b2",
+        "test_input.py": "b896a8830cbf8c4ace5b63d65d3ed7b146681434646e16db7716f931e96cc9f0",
+        "requirement.txt": "184b65e5805b33632a41aaabe35aaf03002cd0b50547b34cf7acabab37d2d0d9"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "first_present",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_immutable_sort",
+      "family": "auth_immutable_sort",
+      "category": "state",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return a sorted copy of values without changing the original list. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_immutable_sort/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_immutable_sort/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_immutable_sort/reference.py",
+      "hashes": {
+        "input.py": "b30a049c8618d8aed3c49f68d730f430996d2444d48bbf918c101596bab42c23",
+        "reference.py": "3a6d5be48cf69a704410d9fc49a99f477bdbeda8b71669643dfa138dc71d4ea2",
+        "test_input.py": "107038b961a6a9f00d12120a63ab60f4e4584406edd7eed062e3af456541a493",
+        "requirement.txt": "be0b0149d757f73ccb7a33e7e57bbc97e2ad9b97fe8dd8b6d9e2f612840e3848"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "immutable_sort",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_independent_rows",
+      "family": "auth_independent_rows",
+      "category": "state",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Build an n by m zero matrix whose rows are independent mutable lists; dimensions are nonnegative. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_independent_rows/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_independent_rows/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_independent_rows/reference.py",
+      "hashes": {
+        "input.py": "f1bac660b2719278f489ff8995d6111300f397d106fcc532e12ef079c4cc9a9d",
+        "reference.py": "dc1729557f1cbee6bc9645c69882f4a04399a70f31cf1adbe1a0eebb10544fd6",
+        "test_input.py": "827083e8bda2db40bd951e08ef9700d649d9154343912944054ed246c13a8b3e",
+        "requirement.txt": "18b2fbc04dae7de5ebd90b21a6ad884005516743571542c9d9a2fba16328ab6a"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "independent_rows",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_drain_iterator",
+      "family": "auth_drain_iterator",
+      "category": "state",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return (count, total) for an iterable of numbers, including one-shot iterators. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_drain_iterator/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_drain_iterator/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_drain_iterator/reference.py",
+      "hashes": {
+        "input.py": "393279ebb47c19d68ffccb6e64db4c386e2888659f5d2516faa5c908ef27397c",
+        "reference.py": "14c2ab704010b4feca41d9776f65b9c06ae4d9884fac6ee4c0aaf45d8f74a659",
+        "test_input.py": "fe8570de6daf8a523a32559298d5a0541019ad0fc6ead54a9ca957b474d3a373",
+        "requirement.txt": "2917af7ce5aa0b4a6f1bafc73391498b28df3969eb5b923312e76eaf9d3b8207"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "drain_iterator",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "auth_drain_iterator_control",
+      "family": "auth_drain_iterator",
+      "category": "state",
+      "cohort": "control",
+      "is_control": true,
+      "requirement": "Return (count, total) for an iterable of numbers, including one-shot iterators. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_drain_iterator_control/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_drain_iterator_control/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_drain_iterator_control/reference.py",
+      "hashes": {
+        "input.py": "14c2ab704010b4feca41d9776f65b9c06ae4d9884fac6ee4c0aaf45d8f74a659",
+        "reference.py": "14c2ab704010b4feca41d9776f65b9c06ae4d9884fac6ee4c0aaf45d8f74a659",
+        "test_input.py": "fe8570de6daf8a523a32559298d5a0541019ad0fc6ead54a9ca957b474d3a373",
+        "requirement.txt": "2917af7ce5aa0b4a6f1bafc73391498b28df3969eb5b923312e76eaf9d3b8207"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "drain_iterator",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": "auth_drain_iterator"
+    },
+    {
+      "id": "auth_filter_mapping",
+      "family": "auth_filter_mapping",
+      "category": "state",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return a new mapping without entries whose values are None, preserving false and zero values and leaving the original unchanged. Preserve the solve signature; do not mutate caller inputs.",
+      "code_file": "data/horizontal_eval_v1/cases/auth_filter_mapping/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/auth_filter_mapping/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/auth_filter_mapping/reference.py",
+      "hashes": {
+        "input.py": "ab9e66b21a5ccf1008af439ee5dbe84b93cb05ceb5d60ee3479343ecdcf5995a",
+        "reference.py": "8277caa09578af7d575843ba9cc92824c1bb482278065463de15855543a929d1",
+        "test_input.py": "b144a9b55fadcec3805ce53bed8ae5158bf7ee1a268feebc48724552405ad3f8",
+        "requirement.txt": "d5b621aca5ce26af8416c833da151659a734450f2975d6e91d8c04157644e918"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_scenario",
+        "production_bug": false,
+        "author": "project evaluation assistant",
+        "method": "Explicit contract, authored reference and defective implementation before model evaluation",
+        "family": "filter_mapping",
+        "license": "project-authored evaluation fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "public_partition",
+      "family": "public_partition",
+      "category": "state",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Partition values into false and true groups. A None predicate means truth testing; mode even means an even-number predicate. Return two lists, preserving order.",
+      "code_file": "data/horizontal_eval_v1/cases/public_partition/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/public_partition/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/public_partition/reference.py",
+      "hashes": {
+        "input.py": "27a756267b28949f7a0223b1336b0ca0e95ec8653c611f11d923cc8dd1a95470",
+        "reference.py": "de0cfd1658aae0a493a763a3e344a17407c303ff33d698096194bdde3533fc4e",
+        "test_input.py": "359f6abc3e918ffffc5f8d3d6e15bd18019de9e615bfecd0881010f56b2a0db5",
+        "requirement.txt": "19f987a7f17e7d77462636df3b5f75475c4d093f6dab46f15b32326540d349bc"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "public_defect_adaptation",
+        "production_bug": false,
+        "upstream_library_defect": true,
+        "project": "more-itertools",
+        "family": "partition",
+        "old_version": "8.0.0",
+        "fixed_version": "8.1.0",
+        "release_notes": "https://more-itertools.readthedocs.io/en/v10.5.0/versions.html",
+        "source_archives": [
+          {
+            "url": "https://files.pythonhosted.org/packages/5a/e7/b7883994ae36a5167214ea573b10dce626c65d9eeea1fa1e853b8e5a3b73/more-itertools-8.0.0.tar.gz",
+            "sha256": "53ff73f186307d9c8ef17a9600309154a6ae27f25579e80af4db8f047ba14bc2"
+          },
+          {
+            "url": "https://files.pythonhosted.org/packages/df/8c/c278395367a46c00d28036143fdc6583db8f98622b83875403f16473509b/more-itertools-8.1.0.tar.gz",
+            "sha256": "c468adec578380b6281a114cb8a5db34eb1116277da92d7c46f904f0b52d3288"
+          }
+        ],
+        "license": "upstream/8.0.0/LICENSE.txt",
+        "adaptation": "Extract target function unchanged except removal of docstring. Add solve wrapper and explicit imports. For zip_broadcast use the same stdlib strict-zip helper and ValueError alias in both versions; test observable ValueError semantics. Tests authored from documented contract, not full upstream integration tests.",
+        "note": "split_after is the changed executable function; release notes call the fix maxsplit. These are adapted library defects, not full repository repairs."
+      },
+      "control_parent": null
+    },
+    {
+      "id": "public_partition_control",
+      "family": "public_partition",
+      "category": "state",
+      "cohort": "control",
+      "is_control": true,
+      "requirement": "Partition values into false and true groups. A None predicate means truth testing; mode even means an even-number predicate. Return two lists, preserving order.",
+      "code_file": "data/horizontal_eval_v1/cases/public_partition_control/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/public_partition_control/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/public_partition_control/reference.py",
+      "hashes": {
+        "input.py": "de0cfd1658aae0a493a763a3e344a17407c303ff33d698096194bdde3533fc4e",
+        "reference.py": "de0cfd1658aae0a493a763a3e344a17407c303ff33d698096194bdde3533fc4e",
+        "test_input.py": "359f6abc3e918ffffc5f8d3d6e15bd18019de9e615bfecd0881010f56b2a0db5",
+        "requirement.txt": "19f987a7f17e7d77462636df3b5f75475c4d093f6dab46f15b32326540d349bc"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "public_defect_adaptation",
+        "production_bug": false,
+        "upstream_library_defect": true,
+        "project": "more-itertools",
+        "family": "partition",
+        "old_version": "8.0.0",
+        "fixed_version": "8.1.0",
+        "release_notes": "https://more-itertools.readthedocs.io/en/v10.5.0/versions.html",
+        "source_archives": [
+          {
+            "url": "https://files.pythonhosted.org/packages/5a/e7/b7883994ae36a5167214ea573b10dce626c65d9eeea1fa1e853b8e5a3b73/more-itertools-8.0.0.tar.gz",
+            "sha256": "53ff73f186307d9c8ef17a9600309154a6ae27f25579e80af4db8f047ba14bc2"
+          },
+          {
+            "url": "https://files.pythonhosted.org/packages/df/8c/c278395367a46c00d28036143fdc6583db8f98622b83875403f16473509b/more-itertools-8.1.0.tar.gz",
+            "sha256": "c468adec578380b6281a114cb8a5db34eb1116277da92d7c46f904f0b52d3288"
+          }
+        ],
+        "license": "upstream/8.0.0/LICENSE.txt",
+        "adaptation": "Extract target function unchanged except removal of docstring. Add solve wrapper and explicit imports. For zip_broadcast use the same stdlib strict-zip helper and ValueError alias in both versions; test observable ValueError semantics. Tests authored from documented contract, not full upstream integration tests.",
+        "note": "split_after is the changed executable function; release notes call the fix maxsplit. These are adapted library defects, not full repository repairs."
+      },
+      "control_parent": "public_partition"
+    },
+    {
+      "id": "public_split_before",
+      "family": "public_split_before",
+      "category": "data",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Split a sequence before each negative number, preserving order and all values. maxsplit limits splits; -1 is unlimited. Empty input yields no groups when maxsplit is not zero; maxsplit zero returns the unsplit sequence as one group.",
+      "code_file": "data/horizontal_eval_v1/cases/public_split_before/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/public_split_before/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/public_split_before/reference.py",
+      "hashes": {
+        "input.py": "dab09d3b8f911da33f18dc68df6811f8b62ef4e14f47610e6752bdaabc3d9d7b",
+        "reference.py": "d9fe79d908da9421f2ec85d3cc5cc03175c45fe92636581ddd229400bf6e719e",
+        "test_input.py": "997b56b9dc6b7c5c3da67b80164eff3f9f331e240db319d5b8a86aa599f3fa39",
+        "requirement.txt": "aba82d2f2a680aea3fbdf48dad6ca9d3b8768f18a376903c86d8b09444d48b2c"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "public_defect_adaptation",
+        "production_bug": false,
+        "upstream_library_defect": true,
+        "project": "more-itertools",
+        "family": "split_before",
+        "old_version": "8.7.0",
+        "fixed_version": "8.8.0",
+        "release_notes": "https://more-itertools.readthedocs.io/en/v10.5.0/versions.html",
+        "source_archives": [
+          {
+            "url": "https://files.pythonhosted.org/packages/fd/2d/90ea8e03076d46166b14c24c87b07ef8cf3d4e0df9a59aefbbd4db3bef7b/more-itertools-8.7.0.tar.gz",
+            "sha256": "c5d6da9ca3ff65220c3bfd2a8db06d698f05d4d2b9be57e1deb2be5a45019713"
+          },
+          {
+            "url": "https://files.pythonhosted.org/packages/03/0a/4769cc0557fbe690f86bc4c183faa116f1050e5c9296f1b7b5806f063cdb/more-itertools-8.8.0.tar.gz",
+            "sha256": "83f0308e05477c68f56ea3a888172c78ed5d5b3c282addb67508e7ba6c8f813a"
+          }
+        ],
+        "license": "upstream/8.7.0/LICENSE.txt",
+        "adaptation": "Extract target function unchanged except removal of docstring. Add solve wrapper and explicit imports. For zip_broadcast use the same stdlib strict-zip helper and ValueError alias in both versions; test observable ValueError semantics. Tests authored from documented contract, not full upstream integration tests.",
+        "note": "split_after is the changed executable function; release notes call the fix maxsplit. These are adapted library defects, not full repository repairs."
+      },
+      "control_parent": null
+    },
+    {
+      "id": "public_split_before_control",
+      "family": "public_split_before",
+      "category": "data",
+      "cohort": "control",
+      "is_control": true,
+      "requirement": "Split a sequence before each negative number, preserving order and all values. maxsplit limits splits; -1 is unlimited. Empty input yields no groups when maxsplit is not zero; maxsplit zero returns the unsplit sequence as one group.",
+      "code_file": "data/horizontal_eval_v1/cases/public_split_before_control/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/public_split_before_control/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/public_split_before_control/reference.py",
+      "hashes": {
+        "input.py": "d9fe79d908da9421f2ec85d3cc5cc03175c45fe92636581ddd229400bf6e719e",
+        "reference.py": "d9fe79d908da9421f2ec85d3cc5cc03175c45fe92636581ddd229400bf6e719e",
+        "test_input.py": "997b56b9dc6b7c5c3da67b80164eff3f9f331e240db319d5b8a86aa599f3fa39",
+        "requirement.txt": "aba82d2f2a680aea3fbdf48dad6ca9d3b8768f18a376903c86d8b09444d48b2c"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "public_defect_adaptation",
+        "production_bug": false,
+        "upstream_library_defect": true,
+        "project": "more-itertools",
+        "family": "split_before",
+        "old_version": "8.7.0",
+        "fixed_version": "8.8.0",
+        "release_notes": "https://more-itertools.readthedocs.io/en/v10.5.0/versions.html",
+        "source_archives": [
+          {
+            "url": "https://files.pythonhosted.org/packages/fd/2d/90ea8e03076d46166b14c24c87b07ef8cf3d4e0df9a59aefbbd4db3bef7b/more-itertools-8.7.0.tar.gz",
+            "sha256": "c5d6da9ca3ff65220c3bfd2a8db06d698f05d4d2b9be57e1deb2be5a45019713"
+          },
+          {
+            "url": "https://files.pythonhosted.org/packages/03/0a/4769cc0557fbe690f86bc4c183faa116f1050e5c9296f1b7b5806f063cdb/more-itertools-8.8.0.tar.gz",
+            "sha256": "83f0308e05477c68f56ea3a888172c78ed5d5b3c282addb67508e7ba6c8f813a"
+          }
+        ],
+        "license": "upstream/8.7.0/LICENSE.txt",
+        "adaptation": "Extract target function unchanged except removal of docstring. Add solve wrapper and explicit imports. For zip_broadcast use the same stdlib strict-zip helper and ValueError alias in both versions; test observable ValueError semantics. Tests authored from documented contract, not full upstream integration tests.",
+        "note": "split_after is the changed executable function; release notes call the fix maxsplit. These are adapted library defects, not full repository repairs."
+      },
+      "control_parent": "public_split_before"
+    },
+    {
+      "id": "public_split_after",
+      "family": "public_split_after",
+      "category": "data",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Split a sequence after each zero. maxsplit limits splits, -1 is unlimited. Do not emit a trailing empty group when the last value ends the last allowed split; maxsplit zero returns one unsplit group.",
+      "code_file": "data/horizontal_eval_v1/cases/public_split_after/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/public_split_after/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/public_split_after/reference.py",
+      "hashes": {
+        "input.py": "1f0745c160b6066e056631c59b371d49fc66b2bfb9e792aa18332e082fbac96b",
+        "reference.py": "21cbb4eded09cf9dc0b50cc61c48c8724f35e618229311c6b7dee588463516ac",
+        "test_input.py": "cb5f7732455d1a2f9c9ca09d4f094ef7a428230235f059d2631ef487b187114a",
+        "requirement.txt": "5830cb3d7765470493644dc0e4f7342ef5b39bf8a5c402cf9f24b43b83d41c62"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "public_defect_adaptation",
+        "production_bug": false,
+        "upstream_library_defect": true,
+        "project": "more-itertools",
+        "family": "split_after",
+        "old_version": "9.0.0",
+        "fixed_version": "9.1.0",
+        "release_notes": "https://more-itertools.readthedocs.io/en/v10.5.0/versions.html",
+        "source_archives": [
+          {
+            "url": "https://files.pythonhosted.org/packages/13/b3/397aa9668da8b1f0c307bc474608653d46122ae0563d1d32f60e24fa0cbd/more-itertools-9.0.0.tar.gz",
+            "sha256": "5a6257e40878ef0520b1803990e3e22303a41b5714006c32a3fd8304b26ea1ab"
+          },
+          {
+            "url": "https://files.pythonhosted.org/packages/2e/d0/bea165535891bd1dcb5152263603e902c0ec1f4c9a2e152cc4adff6b3a38/more-itertools-9.1.0.tar.gz",
+            "sha256": "cabaa341ad0389ea83c17a94566a53ae4c9d07349861ecb14dc6d0345cf9ac5d"
+          }
+        ],
+        "license": "upstream/9.0.0/LICENSE.txt",
+        "adaptation": "Extract target function unchanged except removal of docstring. Add solve wrapper and explicit imports. For zip_broadcast use the same stdlib strict-zip helper and ValueError alias in both versions; test observable ValueError semantics. Tests authored from documented contract, not full upstream integration tests.",
+        "note": "split_after is the changed executable function; release notes call the fix maxsplit. These are adapted library defects, not full repository repairs."
+      },
+      "control_parent": null
+    },
+    {
+      "id": "public_split_after_control",
+      "family": "public_split_after",
+      "category": "data",
+      "cohort": "control",
+      "is_control": true,
+      "requirement": "Split a sequence after each zero. maxsplit limits splits, -1 is unlimited. Do not emit a trailing empty group when the last value ends the last allowed split; maxsplit zero returns one unsplit group.",
+      "code_file": "data/horizontal_eval_v1/cases/public_split_after_control/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/public_split_after_control/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/public_split_after_control/reference.py",
+      "hashes": {
+        "input.py": "21cbb4eded09cf9dc0b50cc61c48c8724f35e618229311c6b7dee588463516ac",
+        "reference.py": "21cbb4eded09cf9dc0b50cc61c48c8724f35e618229311c6b7dee588463516ac",
+        "test_input.py": "cb5f7732455d1a2f9c9ca09d4f094ef7a428230235f059d2631ef487b187114a",
+        "requirement.txt": "5830cb3d7765470493644dc0e4f7342ef5b39bf8a5c402cf9f24b43b83d41c62"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "public_defect_adaptation",
+        "production_bug": false,
+        "upstream_library_defect": true,
+        "project": "more-itertools",
+        "family": "split_after",
+        "old_version": "9.0.0",
+        "fixed_version": "9.1.0",
+        "release_notes": "https://more-itertools.readthedocs.io/en/v10.5.0/versions.html",
+        "source_archives": [
+          {
+            "url": "https://files.pythonhosted.org/packages/13/b3/397aa9668da8b1f0c307bc474608653d46122ae0563d1d32f60e24fa0cbd/more-itertools-9.0.0.tar.gz",
+            "sha256": "5a6257e40878ef0520b1803990e3e22303a41b5714006c32a3fd8304b26ea1ab"
+          },
+          {
+            "url": "https://files.pythonhosted.org/packages/2e/d0/bea165535891bd1dcb5152263603e902c0ec1f4c9a2e152cc4adff6b3a38/more-itertools-9.1.0.tar.gz",
+            "sha256": "cabaa341ad0389ea83c17a94566a53ae4c9d07349861ecb14dc6d0345cf9ac5d"
+          }
+        ],
+        "license": "upstream/9.0.0/LICENSE.txt",
+        "adaptation": "Extract target function unchanged except removal of docstring. Add solve wrapper and explicit imports. For zip_broadcast use the same stdlib strict-zip helper and ValueError alias in both versions; test observable ValueError semantics. Tests authored from documented contract, not full upstream integration tests.",
+        "note": "split_after is the changed executable function; release notes call the fix maxsplit. These are adapted library defects, not full repository repairs."
+      },
+      "control_parent": "public_split_after"
+    },
+    {
+      "id": "public_zip_broadcast",
+      "family": "public_zip_broadcast",
+      "category": "data",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Zip input objects, broadcasting scalar numbers and strings across iterables. All scalars yield one tuple. strict=True must raise ValueError on unequal iterable lengths, regardless of argument order. No objects yields no tuples.",
+      "code_file": "data/horizontal_eval_v1/cases/public_zip_broadcast/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/public_zip_broadcast/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/public_zip_broadcast/reference.py",
+      "hashes": {
+        "input.py": "f4ef199d212ac04197c13109f87bddd485b95906554f5b9859da18f1c611f849",
+        "reference.py": "5f628e2d3f26a560918254585996ccb4527af3906e46a8aa2258449189f73259",
+        "test_input.py": "d58acc4281a95507f9e06716a1716cd244612cd276f959b4dc14de9ff124e562",
+        "requirement.txt": "652a5e1a575930b2189cd2478eb9e45626e1e8e4fa64be76374bf3383529eebb"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "public_defect_adaptation",
+        "production_bug": false,
+        "upstream_library_defect": true,
+        "project": "more-itertools",
+        "family": "zip_broadcast",
+        "old_version": "8.10.0",
+        "fixed_version": "8.11.0",
+        "release_notes": "https://more-itertools.readthedocs.io/en/v10.5.0/versions.html",
+        "source_archives": [
+          {
+            "url": "https://files.pythonhosted.org/packages/8a/f7/93cf3c81629c95f6f40e509f7cd63985a6ddd829181a66c1c8ef101e55f2/more-itertools-8.10.0.tar.gz",
+            "sha256": "1debcabeb1df793814859d64a81ad7cb10504c24349368ccf214c664c474f41f"
+          },
+          {
+            "url": "https://files.pythonhosted.org/packages/14/77/a496c86b4bf9328269b65dc4d97f127cc78af59539a13b49631b36896234/more-itertools-8.11.0.tar.gz",
+            "sha256": "0a2fd25d343c08d7e7212071820e7e7ea2f41d8fb45d6bc8a00cd6ce3b7aab88"
+          }
+        ],
+        "license": "upstream/8.10.0/LICENSE.txt",
+        "adaptation": "Extract target function unchanged except removal of docstring. Add solve wrapper and explicit imports. For zip_broadcast use the same stdlib strict-zip helper and ValueError alias in both versions; test observable ValueError semantics. Tests authored from documented contract, not full upstream integration tests.",
+        "note": "split_after is the changed executable function; release notes call the fix maxsplit. These are adapted library defects, not full repository repairs."
+      },
+      "control_parent": null
+    },
+    {
+      "id": "public_zip_broadcast_control",
+      "family": "public_zip_broadcast",
+      "category": "data",
+      "cohort": "control",
+      "is_control": true,
+      "requirement": "Zip input objects, broadcasting scalar numbers and strings across iterables. All scalars yield one tuple. strict=True must raise ValueError on unequal iterable lengths, regardless of argument order. No objects yields no tuples.",
+      "code_file": "data/horizontal_eval_v1/cases/public_zip_broadcast_control/input.py",
+      "test_file": "data/horizontal_eval_v1/cases/public_zip_broadcast_control/test_input.py",
+      "reference_file": "data/horizontal_eval_v1/cases/public_zip_broadcast_control/reference.py",
+      "hashes": {
+        "input.py": "5f628e2d3f26a560918254585996ccb4527af3906e46a8aa2258449189f73259",
+        "reference.py": "5f628e2d3f26a560918254585996ccb4527af3906e46a8aa2258449189f73259",
+        "test_input.py": "d58acc4281a95507f9e06716a1716cd244612cd276f959b4dc14de9ff124e562",
+        "requirement.txt": "652a5e1a575930b2189cd2478eb9e45626e1e8e4fa64be76374bf3383529eebb"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "public_defect_adaptation",
+        "production_bug": false,
+        "upstream_library_defect": true,
+        "project": "more-itertools",
+        "family": "zip_broadcast",
+        "old_version": "8.10.0",
+        "fixed_version": "8.11.0",
+        "release_notes": "https://more-itertools.readthedocs.io/en/v10.5.0/versions.html",
+        "source_archives": [
+          {
+            "url": "https://files.pythonhosted.org/packages/8a/f7/93cf3c81629c95f6f40e509f7cd63985a6ddd829181a66c1c8ef101e55f2/more-itertools-8.10.0.tar.gz",
+            "sha256": "1debcabeb1df793814859d64a81ad7cb10504c24349368ccf214c664c474f41f"
+          },
+          {
+            "url": "https://files.pythonhosted.org/packages/14/77/a496c86b4bf9328269b65dc4d97f127cc78af59539a13b49631b36896234/more-itertools-8.11.0.tar.gz",
+            "sha256": "0a2fd25d343c08d7e7212071820e7e7ea2f41d8fb45d6bc8a00cd6ce3b7aab88"
+          }
+        ],
+        "license": "upstream/8.10.0/LICENSE.txt",
+        "adaptation": "Extract target function unchanged except removal of docstring. Add solve wrapper and explicit imports. For zip_broadcast use the same stdlib strict-zip helper and ValueError alias in both versions; test observable ValueError semantics. Tests authored from documented contract, not full upstream integration tests.",
+        "note": "split_after is the changed executable function; release notes call the fix maxsplit. These are adapted library defects, not full repository repairs."
+      },
+      "control_parent": "public_zip_broadcast"
+    }
+  ],
+  "configs": {
+    "configs/m7_qwen3_30b.json": "e698013c4528f2d4a9c554681be7b1d69f4f556ff60fe92eb982166f4e4d1916"
+  },
+  "source_groups": {
+    "authored_scenario": 36,
+    "public_defect_adaptation": 4
+  },
+  "categories": {
+    "api": 8,
+    "data": 10,
+    "text": 7,
+    "numeric_time": 7,
+    "state": 8
+  },
+  "limitations": [
+    "Authored tasks are not production defects",
+    "Public adaptations from one library",
+    "Visible formal tests; no independent human acceptance",
+    "Related controls do not enlarge defect denominator"
+  ]
+}

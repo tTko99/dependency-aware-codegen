@@ -1,0 +1,17 @@
+{
+  "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+  "files": {
+    "mbpp/sanitized-mbpp.json": {
+      "url": "https://raw.githubusercontent.com/google-research/google-research/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+      "sha256": "ca95deaa9a01ef0a6f439f88bcf0dd3db3563d22f22aad6cae04ebb9a8d8c8e9"
+    },
+    "mbpp/README.md": {
+      "url": "https://raw.githubusercontent.com/google-research/google-research/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/README.md",
+      "sha256": "a648ec210c94b614b63e0065c5af3f2e8fe144a8d7dbe3a2149baead9d87ff92"
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/google-research/google-research/f82046ba5aabbbb427dbfd38a254d26bff08b533/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    }
+  }
+}

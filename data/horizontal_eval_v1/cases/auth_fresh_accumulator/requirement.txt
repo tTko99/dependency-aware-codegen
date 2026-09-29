@@ -1,0 +1,1 @@
+Return a new list containing the supplied value. Separate calls must be independent; preserve the optional bucket parameter and copy an explicitly supplied bucket. Preserve the solve signature; do not mutate caller inputs.

@@ -1,0 +1,57 @@
+{
+  "cmath.html": {
+    "url": "https://docs.python.org/3.12/library/cmath.html",
+    "sha256": "7bfeacd0fce6db53627704ae97fed0115c5efcd36e9a31d8780d1f6d752b743b",
+    "bytes": 57764
+  },
+  "datetime.html": {
+    "url": "https://docs.python.org/3.12/library/datetime.html",
+    "sha256": "08cc4d961d1367d17f5fedc88618ed9b4151e3e0f361cc1b5d0f8978dd45fb7f",
+    "bytes": 404401
+  },
+  "decimal.html": {
+    "url": "https://docs.python.org/3.12/library/decimal.html",
+    "sha256": "5f253b2ad12eacbb324764152bce33371fc9d69e2402b85e0d28ba4128778e5c",
+    "bytes": 288425
+  },
+  "fractions.html": {
+    "url": "https://docs.python.org/3.12/library/fractions.html",
+    "sha256": "8a3c26440988c1e308e1fef2d832ff4d7486f4b45ef0e20755d003760c9f3556",
+    "bytes": 47530
+  },
+  "heapq.html": {
+    "url": "https://docs.python.org/3.12/library/heapq.html",
+    "sha256": "240e66dd548c23249076e3a49843ae322c2e260b9328c76ed1841c15ebb3794e",
+    "bytes": 46894
+  },
+  "itertools.html": {
+    "url": "https://docs.python.org/3.12/library/itertools.html",
+    "sha256": "75f3ee720be5c8d34699822cfbd0c8997810d362a0f2bbec226f179fcaa57004",
+    "bytes": 161390
+  },
+  "json.html": {
+    "url": "https://docs.python.org/3.12/library/json.html",
+    "sha256": "ccd2d35a0f1da7a5791b972dc8c0ba9b14be7639f4775ece45b9064607a548a7",
+    "bytes": 107855
+  },
+  "math.html": {
+    "url": "https://docs.python.org/3.12/library/math.html",
+    "sha256": "c4040113b889f6423bafd8960be666b0a5b03b60b63f295da62776e925c8fba8",
+    "bytes": 94943
+  },
+  "pathlib.html": {
+    "url": "https://docs.python.org/3.12/library/pathlib.html",
+    "sha256": "354a92800391b7983c782caee8a5d7286679ed4fea299bc520501d3e75b74b52",
+    "bytes": 210418
+  },
+  "re.html": {
+    "url": "https://docs.python.org/3.12/library/re.html",
+    "sha256": "68e2d7f671eaed1fa00010c6225387fb4ad9d8921310cb54bf768a356365cb19",
+    "bytes": 238763
+  },
+  "urllib.parse.html": {
+    "url": "https://docs.python.org/3.12/library/urllib.parse.html",
+    "sha256": "b06ac962eda437dfafaa61b8412bec8e5224004f8f1bc52653d461268ae2b12d",
+    "bytes": 112357
+  }
+}

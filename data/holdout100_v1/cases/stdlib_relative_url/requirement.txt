@@ -1,0 +1,1 @@
+Resolve a relative URL against its base, including parent paths and absolute targets. Preserve solve signature.

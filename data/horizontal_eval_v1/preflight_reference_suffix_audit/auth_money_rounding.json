@@ -1,0 +1,417 @@
+{
+  "case_id": "auth_money_rounding",
+  "input_hashes": {
+    "input.py": "f68d8219d2f698acb91129f06463e76990721860ffd207f8b6b2b57f76ba1c65",
+    "reference.py.txt": "d44b0d1e9800ab29662f7b03a1fc7758da18176ae0bb10990f0acc78afe8b463",
+    "test_input.py": "1b4502c90fed1832cafbd04131106357710ca3b51840e85781c1829b1a048daf",
+    "requirement.txt": "a0a15fde7d24c831d1f38c7aa18b0d153364ebce12db4c96e64b51f78f924e3c"
+  },
+  "valid": false,
+  "initial": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [
+      "run_pytest"
+    ],
+    "candidate_version": "0:f68d8219d2f698acb91129f06463e76990721860ffd207f8b6b2b57f76ba1c65",
+    "context_version": "01dbc21b1e34b88e8f240a37c5518640f250da7ce2e7bbfea8bbb0ffbbcbb1ac",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "FAIL",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.024525900138542056,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:f68d8219d2f698acb91129f06463e76990721860ffd207f8b6b2b57f76ba1c65",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:f68d8219d2f698acb91129f06463e76990721860ffd207f8b6b2b57f76ba1c65",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": false,
+          "execution": {
+            "status": "failed",
+            "return_code": 1,
+            "stdout": "FF..                                                                     [100%]\n================================== FAILURES ===================================\n__________________________ test_contract[args0-1.01] __________________________\n\nargs = ('1.005',), expected = '1.01'\n\n    @pytest.mark.parametrize('args, expected', [(('1.005',), '1.01'), (('-1.005',), '-1.01'), (('3',), '3.00'), (('2.674',), '2.67')])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\nE       AssertionError: assert '1.00' == '1.01'\nE         \nE         - 1.01\nE         ?    ^\nE         + 1.00\nE         ?    ^\n\ntest_solution.py:6: AssertionError\n_________________________ test_contract[args1--1.01] __________________________\n\nargs = ('-1.005',), expected = '-1.01'\n\n    @pytest.mark.parametrize('args, expected', [(('1.005',), '1.01'), (('-1.005',), '-1.01'), (('3',), '3.00'), (('2.674',), '2.67')])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\nE       AssertionError: assert '-1.00' == '-1.01'\nE         \nE         - -1.01\nE         ?     ^\nE         + -1.00\nE         ?     ^\n\ntest_solution.py:6: AssertionError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_contract[args0-1.01] - AssertionError: assert '...\nFAILED test_solution.py::test_contract[args1--1.01] - AssertionError: assert ...\n2 failed, 2 passed in 0.06s\n",
+            "stderr": "",
+            "error_type": "AssertionError",
+            "error_category": "runtime_error",
+            "execution_time": 0.278043300146237,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:f68d8219d2f698acb91129f06463e76990721860ffd207f8b6b2b57f76ba1c65",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:f68d8219d2f698acb91129f06463e76990721860ffd207f8b6b2b57f76ba1c65",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "decimal.Decimal",
+                "package": "decimal",
+                "module": "decimal",
+                "object_path": "Decimal",
+                "call_type": "import_object",
+                "line_number": 1,
+                "source": "Decimal",
+                "receiver": "Decimal",
+                "arg_count": null,
+                "keyword_names": [],
+                "is_call": false
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "decimal",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "decimal.ROUND_HALF_UP",
+                "package": "decimal",
+                "module": "decimal",
+                "object_path": "ROUND_HALF_UP",
+                "call_type": "import_object",
+                "line_number": 1,
+                "source": "ROUND_HALF_UP",
+                "receiver": "ROUND_HALF_UP",
+                "arg_count": null,
+                "keyword_names": [],
+                "is_call": false
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "decimal",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "decimal.Decimal",
+                "package": "decimal",
+                "module": "decimal",
+                "object_path": "Decimal",
+                "call_type": "imported_callable",
+                "line_number": 4,
+                "source": "Decimal",
+                "receiver": "Decimal",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "decimal",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:f68d8219d2f698acb91129f06463e76990721860ffd207f8b6b2b57f76ba1c65",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:f68d8219d2f698acb91129f06463e76990721860ffd207f8b6b2b57f76ba1c65",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "decimal",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:f68d8219d2f698acb91129f06463e76990721860ffd207f8b6b2b57f76ba1c65",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:f68d8219d2f698acb91129f06463e76990721860ffd207f8b6b2b57f76ba1c65",
+        "cached": false
+      }
+    }
+  },
+  "reference": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "0:d44b0d1e9800ab29662f7b03a1fc7758da18176ae0bb10990f0acc78afe8b463",
+    "context_version": "45984ffc153541e8ab2475401d311210f7f9d0d39afff890c42941907f2042e3",
+    "regression_guard": {
+      "blocked": true,
+      "findings": [
+        {
+          "code": "BINARY_FILE_UNSUPPORTED",
+          "severity": "error"
+        }
+      ],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "FAIL",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.02384659997187555,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:d44b0d1e9800ab29662f7b03a1fc7758da18176ae0bb10990f0acc78afe8b463",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": true
+          }
+        },
+        "candidate_version": "0:d44b0d1e9800ab29662f7b03a1fc7758da18176ae0bb10990f0acc78afe8b463",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "....                                                                     [100%]\n4 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.22559399995952845,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:d44b0d1e9800ab29662f7b03a1fc7758da18176ae0bb10990f0acc78afe8b463",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": true
+          }
+        },
+        "candidate_version": "0:d44b0d1e9800ab29662f7b03a1fc7758da18176ae0bb10990f0acc78afe8b463",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "decimal.Decimal",
+                "package": "decimal",
+                "module": "decimal",
+                "object_path": "Decimal",
+                "call_type": "import_object",
+                "line_number": 1,
+                "source": "Decimal",
+                "receiver": "Decimal",
+                "arg_count": null,
+                "keyword_names": [],
+                "is_call": false
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "decimal",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "decimal.ROUND_HALF_UP",
+                "package": "decimal",
+                "module": "decimal",
+                "object_path": "ROUND_HALF_UP",
+                "call_type": "import_object",
+                "line_number": 1,
+                "source": "ROUND_HALF_UP",
+                "receiver": "ROUND_HALF_UP",
+                "arg_count": null,
+                "keyword_names": [],
+                "is_call": false
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "decimal",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "decimal.Decimal",
+                "package": "decimal",
+                "module": "decimal",
+                "object_path": "Decimal",
+                "call_type": "imported_callable",
+                "line_number": 4,
+                "source": "Decimal",
+                "receiver": "Decimal",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "decimal",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:d44b0d1e9800ab29662f7b03a1fc7758da18176ae0bb10990f0acc78afe8b463",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": true
+          }
+        },
+        "candidate_version": "0:d44b0d1e9800ab29662f7b03a1fc7758da18176ae0bb10990f0acc78afe8b463",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "decimal",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:d44b0d1e9800ab29662f7b03a1fc7758da18176ae0bb10990f0acc78afe8b463",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": true
+          }
+        },
+        "candidate_version": "0:d44b0d1e9800ab29662f7b03a1fc7758da18176ae0bb10990f0acc78afe8b463",
+        "cached": false
+      }
+    }
+  }
+}

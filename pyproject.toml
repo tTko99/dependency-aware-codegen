@@ -44,4 +44,4 @@ addopts = "-q"
 line-length = 100
 target-version = "py310"
 # Frozen model outputs include intentional defects; linting must not rewrite evidence.
-extend-exclude = ["data/agent_failures", "data/interview_eval"]
+extend-exclude = ["data/agent_failures", "data/interview_eval", "data/external_eval_v1"]

@@ -1,0 +1,331 @@
+{
+  "case_id": "api200_geometric_average",
+  "input_hashes": {
+    "input.py": "cc40ea6839f677a2cc7007a410196d9741d0f1d5d8d5f6ea9bbc8ee349dd5b54",
+    "reference.py": "ac9c9cd964b3246413e9bc1e1e503dd6d590352e33800ff2aa81c0af1697f199",
+    "test_input.py": "0e07030404de24d1bc2ba25021f7be76208508106a773034d7fb59feab4dba14",
+    "requirement.txt": "505f51fecba8bcef26db2e7d354781127e45026dfd79be245de858b1aca3b26a"
+  },
+  "valid": true,
+  "initial": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [
+      "run_pytest",
+      "validate_apis"
+    ],
+    "candidate_version": "0:cc40ea6839f677a2cc7007a410196d9741d0f1d5d8d5f6ea9bbc8ee349dd5b54",
+    "context_version": "a09bba1b98e0ff20cb8d8ad18e96403d4dc1184105f119c30e0a05ceb56cf8e5",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "FAIL",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.04116999986581504,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:cc40ea6839f677a2cc7007a410196d9741d0f1d5d8d5f6ea9bbc8ee349dd5b54",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:cc40ea6839f677a2cc7007a410196d9741d0f1d5d8d5f6ea9bbc8ee349dd5b54",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": false,
+          "execution": {
+            "status": "failed",
+            "return_code": 1,
+            "stdout": "FFFF                                                                     [100%]\n================================== FAILURES ===================================\n___________________________ test_contract[args0-4] ____________________________\n\nargs = ([1, 16],), expected = 4\n\n    @pytest.mark.parametrize('args, expected', [(([1, 16],), 4), (([2, 8],), 4), (([5],), 5), (([1, 1, 1],), 1)])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nvalues = [1, 16]\n\n    def solve(values):\n>       return round(statistics.gmean(values), 6)\n                     ^^^^^^^^^^^^^^^^\nE       AttributeError: module 'statistics' has no attribute 'gmean'. Did you mean: 'fmean'?\n\nsolution.py:4: AttributeError\n___________________________ test_contract[args1-4] ____________________________\n\nargs = ([2, 8],), expected = 4\n\n    @pytest.mark.parametrize('args, expected', [(([1, 16],), 4), (([2, 8],), 4), (([5],), 5), (([1, 1, 1],), 1)])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nvalues = [2, 8]\n\n    def solve(values):\n>       return round(statistics.gmean(values), 6)\n                     ^^^^^^^^^^^^^^^^\nE       AttributeError: module 'statistics' has no attribute 'gmean'. Did you mean: 'fmean'?\n\nsolution.py:4: AttributeError\n___________________________ test_contract[args2-5] ____________________________\n\nargs = ([5],), expected = 5\n\n    @pytest.mark.parametrize('args, expected', [(([1, 16],), 4), (([2, 8],), 4), (([5],), 5), (([1, 1, 1],), 1)])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nvalues = [5]\n\n    def solve(values):\n>       return round(statistics.gmean(values), 6)\n                     ^^^^^^^^^^^^^^^^\nE       AttributeError: module 'statistics' has no attribute 'gmean'. Did you mean: 'fmean'?\n\nsolution.py:4: AttributeError\n___________________________ test_contract[args3-1] ____________________________\n\nargs = ([1, 1, 1],), expected = 1\n\n    @pytest.mark.parametrize('args, expected', [(([1, 16],), 4), (([2, 8],), 4), (([5],), 5), (([1, 1, 1],), 1)])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nvalues = [1, 1, 1]\n\n    def solve(values):\n>       return round(statistics.gmean(values), 6)\n                     ^^^^^^^^^^^^^^^^\nE       AttributeError: module 'statistics' has no attribute 'gmean'. Did you mean: 'fmean'?\n\nsolution.py:4: AttributeError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_contract[args0-4] - AttributeError: module 'sta...\nFAILED test_solution.py::test_contract[args1-4] - AttributeError: module 'sta...\nFAILED test_solution.py::test_contract[args2-5] - AttributeError: module 'sta...\nFAILED test_solution.py::test_contract[args3-1] - AttributeError: module 'sta...\n4 failed in 0.08s\n",
+            "stderr": "",
+            "error_type": "AttributeError",
+            "error_category": "attribute_error",
+            "execution_time": 0.32997129997238517,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:cc40ea6839f677a2cc7007a410196d9741d0f1d5d8d5f6ea9bbc8ee349dd5b54",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:cc40ea6839f677a2cc7007a410196d9741d0f1d5d8d5f6ea9bbc8ee349dd5b54",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": false,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "statistics.gmean",
+                "package": "statistics",
+                "module": "statistics",
+                "object_path": "gmean",
+                "call_type": "function_or_attribute",
+                "line_number": 4,
+                "source": "statistics.gmean",
+                "receiver": "statistics",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": false,
+              "status": "hallucinated_function",
+              "reason": "attribute_not_found:gmean",
+              "resolved_module": "statistics",
+              "suggestions": [
+                "statistics.mean",
+                "statistics.fmean",
+                "statistics.median",
+                "statistics.median_low",
+                "statistics.geometric_mean"
+              ]
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:cc40ea6839f677a2cc7007a410196d9741d0f1d5d8d5f6ea9bbc8ee349dd5b54",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "failed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:cc40ea6839f677a2cc7007a410196d9741d0f1d5d8d5f6ea9bbc8ee349dd5b54",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "statistics",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:cc40ea6839f677a2cc7007a410196d9741d0f1d5d8d5f6ea9bbc8ee349dd5b54",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "failed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:cc40ea6839f677a2cc7007a410196d9741d0f1d5d8d5f6ea9bbc8ee349dd5b54",
+        "cached": false
+      }
+    }
+  },
+  "reference": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "0:ac9c9cd964b3246413e9bc1e1e503dd6d590352e33800ff2aa81c0af1697f199",
+    "context_version": "2319525f4912eb6e94c37de575ad5ceac7c5a82723d3aac118f3741b3572162b",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "PASS",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.042223599972203374,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:ac9c9cd964b3246413e9bc1e1e503dd6d590352e33800ff2aa81c0af1697f199",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:ac9c9cd964b3246413e9bc1e1e503dd6d590352e33800ff2aa81c0af1697f199",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "....                                                                     [100%]\n4 passed in 0.02s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.26674869982525706,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:ac9c9cd964b3246413e9bc1e1e503dd6d590352e33800ff2aa81c0af1697f199",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:ac9c9cd964b3246413e9bc1e1e503dd6d590352e33800ff2aa81c0af1697f199",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "statistics.geometric_mean",
+                "package": "statistics",
+                "module": "statistics",
+                "object_path": "geometric_mean",
+                "call_type": "function_or_attribute",
+                "line_number": 4,
+                "source": "statistics.geometric_mean",
+                "receiver": "statistics",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "statistics",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:ac9c9cd964b3246413e9bc1e1e503dd6d590352e33800ff2aa81c0af1697f199",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:ac9c9cd964b3246413e9bc1e1e503dd6d590352e33800ff2aa81c0af1697f199",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "statistics",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:ac9c9cd964b3246413e9bc1e1e503dd6d590352e33800ff2aa81c0af1697f199",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": true,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:ac9c9cd964b3246413e9bc1e1e503dd6d590352e33800ff2aa81c0af1697f199",
+        "cached": false
+      }
+    }
+  }
+}

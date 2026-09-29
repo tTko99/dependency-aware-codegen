@@ -1,0 +1,1 @@
+Return whether a positive Gregorian year is a leap year. Preserve the solve signature; do not mutate caller inputs.

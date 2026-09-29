@@ -1,0 +1,5 @@
+Repair the Python function according to this contract. Preserve its signature.
+Write a Python function `all_prefixes(string: str) -> List[str]` to solve the following problem:
+Return list of all prefixes from shortest to longest of the input string
+>>> all_prefixes('abc')
+['a', 'ab', 'abc']

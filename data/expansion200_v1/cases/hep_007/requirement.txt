@@ -1,0 +1,7 @@
+Repair the Python function according to this contract. Preserve its signature.
+Write a Python function `filter_by_substring(strings: List[str], substring: str) -> List[str]` to solve the following problem:
+Filter an input list of strings only for ones that contain given substring
+>>> filter_by_substring([], 'a')
+[]
+>>> filter_by_substring(['abc', 'bacd', 'cde', 'array'], 'a')
+['abc', 'bacd', 'array']

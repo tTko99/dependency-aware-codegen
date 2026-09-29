@@ -1,0 +1,1 @@
+Rotate the sequence to the right by k positions (negative k rotates left); return a list and do not mutate the input. Preserve solve signature.

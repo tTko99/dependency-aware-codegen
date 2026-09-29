@@ -1,0 +1,1357 @@
+{
+  "schema_version": 1,
+  "name": "external_quixbugs_v1",
+  "cases": [
+    {
+      "id": "qb_bitcount",
+      "family": "bitcount",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair bitcount to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nBitcount\nbitcount\n\n\nInput:\n    n: a nonnegative int\n\nOutput:\n    The number of 1-bits in the binary encoding of n\n\nExamples:\n    >>> bitcount(127)\n    7\n    >>> bitcount(128)\n    1\n",
+      "code_file": "data/external_eval_v1/cases/qb_bitcount/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_bitcount/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_bitcount/reference.py",
+      "hashes": {
+        "input.py": "585fc5e7140a87d698574ad74acfd4cf5de4e03e460dea7e87725e2694b60b8c",
+        "reference.py": "debc7dc00e3084e106c388d31e90087b3b86845aa5bae1b848d6bac97ec872b4",
+        "test_input.py": "797168c0a80ecd434e171a4cc7e86ee571b7b1ef26e2eebe14f4444667837f7a",
+        "requirement.txt": "1c240529ab42ca488cfd0a9e4c60a037aa3d6f4a619f855480a41fa02753bc36"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 9,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/bitcount.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_bitcount_control",
+      "family": "bitcount",
+      "cohort": "control",
+      "is_control": true,
+      "requirement": "Repair bitcount to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nBitcount\nbitcount\n\n\nInput:\n    n: a nonnegative int\n\nOutput:\n    The number of 1-bits in the binary encoding of n\n\nExamples:\n    >>> bitcount(127)\n    7\n    >>> bitcount(128)\n    1\n",
+      "code_file": "data/external_eval_v1/cases/qb_bitcount_control/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_bitcount_control/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_bitcount_control/reference.py",
+      "hashes": {
+        "input.py": "debc7dc00e3084e106c388d31e90087b3b86845aa5bae1b848d6bac97ec872b4",
+        "reference.py": "debc7dc00e3084e106c388d31e90087b3b86845aa5bae1b848d6bac97ec872b4",
+        "test_input.py": "797168c0a80ecd434e171a4cc7e86ee571b7b1ef26e2eebe14f4444667837f7a",
+        "requirement.txt": "1c240529ab42ca488cfd0a9e4c60a037aa3d6f4a619f855480a41fa02753bc36"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 9,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/bitcount.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": "qb_bitcount"
+      }
+    },
+    {
+      "id": "qb_bucketsort",
+      "family": "bucketsort",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair bucketsort to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nBucket Sort\n\n\nInput:\n    arr: A list of small ints\n    k: Upper bound of the size of the ints in arr (not inclusive)\n\nPrecondition:\n    all(isinstance(x, int) and 0 <= x < k for x in arr)\n\nOutput:\n    The elements of arr in sorted order\n",
+      "code_file": "data/external_eval_v1/cases/qb_bucketsort/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_bucketsort/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_bucketsort/reference.py",
+      "hashes": {
+        "input.py": "1cc4197c2ee524ec8dd3a45c0e943acf31fa429cb8b179195334f51ff939b9fd",
+        "reference.py": "a83473634c9a9bf43d589e183201ae9d00006b028c2eec403a1e74abe1927ab9",
+        "test_input.py": "d31beee32006f97a9dd978da1b77c3a45bdc21e427a6b6da9ed55fb9705858f2",
+        "requirement.txt": "ba33e9873a0fbfb53ae36fa239888a07f0c29e7ebda2b23c5146a65243fa2b67"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 7,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/bucketsort.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_bucketsort_control",
+      "family": "bucketsort",
+      "cohort": "control",
+      "is_control": true,
+      "requirement": "Repair bucketsort to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nBucket Sort\n\n\nInput:\n    arr: A list of small ints\n    k: Upper bound of the size of the ints in arr (not inclusive)\n\nPrecondition:\n    all(isinstance(x, int) and 0 <= x < k for x in arr)\n\nOutput:\n    The elements of arr in sorted order\n",
+      "code_file": "data/external_eval_v1/cases/qb_bucketsort_control/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_bucketsort_control/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_bucketsort_control/reference.py",
+      "hashes": {
+        "input.py": "a83473634c9a9bf43d589e183201ae9d00006b028c2eec403a1e74abe1927ab9",
+        "reference.py": "a83473634c9a9bf43d589e183201ae9d00006b028c2eec403a1e74abe1927ab9",
+        "test_input.py": "d31beee32006f97a9dd978da1b77c3a45bdc21e427a6b6da9ed55fb9705858f2",
+        "requirement.txt": "ba33e9873a0fbfb53ae36fa239888a07f0c29e7ebda2b23c5146a65243fa2b67"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 7,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/bucketsort.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": "qb_bucketsort"
+      }
+    },
+    {
+      "id": "qb_find_first_in_sorted",
+      "family": "find_first_in_sorted",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair find_first_in_sorted to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nFancy Binary Search\nfancy-binsearch\n\n\nInput:\n    arr: A sorted list of ints\n    x: A value to find\n\nOutput:\n    The lowest index i such that arr[i] == x, or -1 if x not in arr\n\nExample:\n    >>> find_first_in_sorted([3, 4, 5, 5, 5, 5, 6], 5)\n    2\n",
+      "code_file": "data/external_eval_v1/cases/qb_find_first_in_sorted/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_find_first_in_sorted/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_find_first_in_sorted/reference.py",
+      "hashes": {
+        "input.py": "59bdf7033f9b0f0f63aed032d18e89f30e333eee8689354b666d12ef4d7e3fda",
+        "reference.py": "815d382f87c7ccc215305b5c28429c96cd605755d44f466bae3448be298bc17d",
+        "test_input.py": "e8236539f6a2cae20f36b17c9244ac98e9de5f39db6e7c2cd9de5b38d57e0c36",
+        "requirement.txt": "e971f24c6ea4bb02032803a3989f3eb2418d28bab09cf8d38f6ae5da0fbfdc3e"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 7,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/find_first_in_sorted.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_find_first_in_sorted_control",
+      "family": "find_first_in_sorted",
+      "cohort": "control",
+      "is_control": true,
+      "requirement": "Repair find_first_in_sorted to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nFancy Binary Search\nfancy-binsearch\n\n\nInput:\n    arr: A sorted list of ints\n    x: A value to find\n\nOutput:\n    The lowest index i such that arr[i] == x, or -1 if x not in arr\n\nExample:\n    >>> find_first_in_sorted([3, 4, 5, 5, 5, 5, 6], 5)\n    2\n",
+      "code_file": "data/external_eval_v1/cases/qb_find_first_in_sorted_control/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_find_first_in_sorted_control/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_find_first_in_sorted_control/reference.py",
+      "hashes": {
+        "input.py": "815d382f87c7ccc215305b5c28429c96cd605755d44f466bae3448be298bc17d",
+        "reference.py": "815d382f87c7ccc215305b5c28429c96cd605755d44f466bae3448be298bc17d",
+        "test_input.py": "e8236539f6a2cae20f36b17c9244ac98e9de5f39db6e7c2cd9de5b38d57e0c36",
+        "requirement.txt": "e971f24c6ea4bb02032803a3989f3eb2418d28bab09cf8d38f6ae5da0fbfdc3e"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 7,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/find_first_in_sorted.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": "qb_find_first_in_sorted"
+      }
+    },
+    {
+      "id": "qb_find_in_sorted",
+      "family": "find_in_sorted",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair find_in_sorted to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nBinary Search\n\nInput:\n    arr: A sorted list of ints\n    x: A value to find\n\nOutput:\n    An index i such that arr[i] == x, or -1 if x not in arr\n\nExample:\n    >>> find_in_sorted([3, 4, 5, 5, 5, 5, 6], 5)\n    3\n",
+      "code_file": "data/external_eval_v1/cases/qb_find_in_sorted/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_find_in_sorted/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_find_in_sorted/reference.py",
+      "hashes": {
+        "input.py": "b640b4bcb1b2c0f7875de8f13df191f4e61ddf7e6fbdcfc42d477ec60885d3c7",
+        "reference.py": "cce13769543e2972d66ea61c9d1f1751836c719abf336be8f50f2702d19477ea",
+        "test_input.py": "451671ebfc56f2663c12f1e3206ca3c9f99afc7492a9b67f5e8e70731e9e10ab",
+        "requirement.txt": "afbfec628700f065e9d92f937fca8d7ccdfe11ae70c871a43ab26af64688f117"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 7,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/find_in_sorted.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_find_in_sorted_control",
+      "family": "find_in_sorted",
+      "cohort": "control",
+      "is_control": true,
+      "requirement": "Repair find_in_sorted to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nBinary Search\n\nInput:\n    arr: A sorted list of ints\n    x: A value to find\n\nOutput:\n    An index i such that arr[i] == x, or -1 if x not in arr\n\nExample:\n    >>> find_in_sorted([3, 4, 5, 5, 5, 5, 6], 5)\n    3\n",
+      "code_file": "data/external_eval_v1/cases/qb_find_in_sorted_control/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_find_in_sorted_control/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_find_in_sorted_control/reference.py",
+      "hashes": {
+        "input.py": "cce13769543e2972d66ea61c9d1f1751836c719abf336be8f50f2702d19477ea",
+        "reference.py": "cce13769543e2972d66ea61c9d1f1751836c719abf336be8f50f2702d19477ea",
+        "test_input.py": "451671ebfc56f2663c12f1e3206ca3c9f99afc7492a9b67f5e8e70731e9e10ab",
+        "requirement.txt": "afbfec628700f065e9d92f937fca8d7ccdfe11ae70c871a43ab26af64688f117"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 7,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/find_in_sorted.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": "qb_find_in_sorted"
+      }
+    },
+    {
+      "id": "qb_flatten",
+      "family": "flatten",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair flatten to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nFlatten\n\nFlattens a nested list data structure into a single list.\n\n\nInput:\n    arr: A list\n\nPrecondition:\n    The input has no list containment cycles\n\nOutput:\n    A generator for the input's non-list objects\n\nExample:\n    >>> list(flatten([[1, [], [2, 3]], [[4]], 5]))\n    [1, 2, 3, 4, 5]\n",
+      "code_file": "data/external_eval_v1/cases/qb_flatten/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_flatten/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_flatten/reference.py",
+      "hashes": {
+        "input.py": "5023275fe603f1ebade0027073c3d116274d405069ea350076f220f10ff451e2",
+        "reference.py": "9a81d65b8147aa84be75b3345b1ce25d2577335d955e963e10bbef19f986618d",
+        "test_input.py": "591c27dd5e0942d01b494d7135f0dc7bc089e4283db0b39eba2f862f71b73eed",
+        "requirement.txt": "7a54598353417e603d89e8ea7f746ce1981a6b1a20707f6cf6532b4bf6f0e050"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 7,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/flatten.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_flatten_control",
+      "family": "flatten",
+      "cohort": "control",
+      "is_control": true,
+      "requirement": "Repair flatten to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nFlatten\n\nFlattens a nested list data structure into a single list.\n\n\nInput:\n    arr: A list\n\nPrecondition:\n    The input has no list containment cycles\n\nOutput:\n    A generator for the input's non-list objects\n\nExample:\n    >>> list(flatten([[1, [], [2, 3]], [[4]], 5]))\n    [1, 2, 3, 4, 5]\n",
+      "code_file": "data/external_eval_v1/cases/qb_flatten_control/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_flatten_control/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_flatten_control/reference.py",
+      "hashes": {
+        "input.py": "9a81d65b8147aa84be75b3345b1ce25d2577335d955e963e10bbef19f986618d",
+        "reference.py": "9a81d65b8147aa84be75b3345b1ce25d2577335d955e963e10bbef19f986618d",
+        "test_input.py": "591c27dd5e0942d01b494d7135f0dc7bc089e4283db0b39eba2f862f71b73eed",
+        "requirement.txt": "7a54598353417e603d89e8ea7f746ce1981a6b1a20707f6cf6532b4bf6f0e050"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 7,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/flatten.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": "qb_flatten"
+      }
+    },
+    {
+      "id": "qb_gcd",
+      "family": "gcd",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair gcd to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nInput:\n    a: A nonnegative int\n    b: A nonnegative int\n\n\nGreatest Common Divisor\n\nPrecondition:\n    isinstance(a, int) and isinstance(b, int)\n\nOutput:\n    The greatest int that divides evenly into a and b\n\nExample:\n    >>> gcd(35, 21)\n    7\n\n",
+      "code_file": "data/external_eval_v1/cases/qb_gcd/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_gcd/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_gcd/reference.py",
+      "hashes": {
+        "input.py": "d68e155c2af40d787f617f03c596005edabee3d9e33626b9185d83650895636f",
+        "reference.py": "68ed345fa14c13fa0d3b70ebfd3ab3e30ca937a52fd4a7f139630177ca005d9b",
+        "test_input.py": "b2cf2e09300999ad0c7e3710eb4991f3091213076e76cdcc506c016eb42a5a60",
+        "requirement.txt": "f025cc82acac445c7a464a26ac1a6450d39209d88786152475e81283804b87cd"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 6,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/gcd.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_gcd_control",
+      "family": "gcd",
+      "cohort": "control",
+      "is_control": true,
+      "requirement": "Repair gcd to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nInput:\n    a: A nonnegative int\n    b: A nonnegative int\n\n\nGreatest Common Divisor\n\nPrecondition:\n    isinstance(a, int) and isinstance(b, int)\n\nOutput:\n    The greatest int that divides evenly into a and b\n\nExample:\n    >>> gcd(35, 21)\n    7\n\n",
+      "code_file": "data/external_eval_v1/cases/qb_gcd_control/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_gcd_control/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_gcd_control/reference.py",
+      "hashes": {
+        "input.py": "68ed345fa14c13fa0d3b70ebfd3ab3e30ca937a52fd4a7f139630177ca005d9b",
+        "reference.py": "68ed345fa14c13fa0d3b70ebfd3ab3e30ca937a52fd4a7f139630177ca005d9b",
+        "test_input.py": "b2cf2e09300999ad0c7e3710eb4991f3091213076e76cdcc506c016eb42a5a60",
+        "requirement.txt": "f025cc82acac445c7a464a26ac1a6450d39209d88786152475e81283804b87cd"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 6,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/gcd.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": "qb_gcd"
+      }
+    },
+    {
+      "id": "qb_get_factors",
+      "family": "get_factors",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair get_factors to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nPrime Factorization\n\n\nFactors an int using naive trial division.\n\nInput:\n    n: An int to factor\n\nOutput:\n    A list of the prime factors of n in sorted order with repetition\n\nPrecondition:\n    n >= 1\n\nExamples:\n    >>> get_factors(1)\n    []\n    >>> get_factors(100)\n    [2, 2, 5, 5]\n    >>> get_factors(101)\n    [101]\n",
+      "code_file": "data/external_eval_v1/cases/qb_get_factors/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_get_factors/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_get_factors/reference.py",
+      "hashes": {
+        "input.py": "7eff7ef2adbb266142cf20e8fa64b05b16ec7e1536a20fa10f036091b1d3290d",
+        "reference.py": "a2cd419152aa9262e76614bd7fc4834329cb72263c9b9e91afa4037570c2f99f",
+        "test_input.py": "56bcdf7c7197c1a5a067a289d8614bc25bea73ca67c7a665ba018415a827955d",
+        "requirement.txt": "bc6120d810d24ce8ccca6a88ffb317aaa888bea5ea1a7add0ef9a268f6b201b1"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 11,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/get_factors.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_get_factors_control",
+      "family": "get_factors",
+      "cohort": "control",
+      "is_control": true,
+      "requirement": "Repair get_factors to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nPrime Factorization\n\n\nFactors an int using naive trial division.\n\nInput:\n    n: An int to factor\n\nOutput:\n    A list of the prime factors of n in sorted order with repetition\n\nPrecondition:\n    n >= 1\n\nExamples:\n    >>> get_factors(1)\n    []\n    >>> get_factors(100)\n    [2, 2, 5, 5]\n    >>> get_factors(101)\n    [101]\n",
+      "code_file": "data/external_eval_v1/cases/qb_get_factors_control/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_get_factors_control/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_get_factors_control/reference.py",
+      "hashes": {
+        "input.py": "a2cd419152aa9262e76614bd7fc4834329cb72263c9b9e91afa4037570c2f99f",
+        "reference.py": "a2cd419152aa9262e76614bd7fc4834329cb72263c9b9e91afa4037570c2f99f",
+        "test_input.py": "56bcdf7c7197c1a5a067a289d8614bc25bea73ca67c7a665ba018415a827955d",
+        "requirement.txt": "bc6120d810d24ce8ccca6a88ffb317aaa888bea5ea1a7add0ef9a268f6b201b1"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 11,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/get_factors.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": "qb_get_factors"
+      }
+    },
+    {
+      "id": "qb_is_valid_parenthesization",
+      "family": "is_valid_parenthesization",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair is_valid_parenthesization to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nNested Parens\nInput:\n    parens: A string of parentheses\n\nPrecondition:\n    all(paren in '()' for paren in parens)\n\nOutput:\n    Whether the parentheses are properly nested\n\nExamples:\n    >>> is_valid_parenthesization('((()()))()')\n    True\n    >>> is_valid_parenthesization(')()(')\n    False\n",
+      "code_file": "data/external_eval_v1/cases/qb_is_valid_parenthesization/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_is_valid_parenthesization/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_is_valid_parenthesization/reference.py",
+      "hashes": {
+        "input.py": "2340cddfce49b055a5a7a70c3341351bf130702512278bafaed5d5b345d0ba60",
+        "reference.py": "77d7131ce9cadd9876621835bbf18f8299ee52882a1860593409260e41cbb559",
+        "test_input.py": "33c33fb35fe21812809ea2bb61091073e60dfb404c824620a56813ec67d87cea",
+        "requirement.txt": "87c49253166f026e4afebc552d19374396361fbfa2a9db5b11ac88c7b5b63491"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 3,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/is_valid_parenthesization.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_is_valid_parenthesization_control",
+      "family": "is_valid_parenthesization",
+      "cohort": "control",
+      "is_control": true,
+      "requirement": "Repair is_valid_parenthesization to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nNested Parens\nInput:\n    parens: A string of parentheses\n\nPrecondition:\n    all(paren in '()' for paren in parens)\n\nOutput:\n    Whether the parentheses are properly nested\n\nExamples:\n    >>> is_valid_parenthesization('((()()))()')\n    True\n    >>> is_valid_parenthesization(')()(')\n    False\n",
+      "code_file": "data/external_eval_v1/cases/qb_is_valid_parenthesization_control/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_is_valid_parenthesization_control/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_is_valid_parenthesization_control/reference.py",
+      "hashes": {
+        "input.py": "77d7131ce9cadd9876621835bbf18f8299ee52882a1860593409260e41cbb559",
+        "reference.py": "77d7131ce9cadd9876621835bbf18f8299ee52882a1860593409260e41cbb559",
+        "test_input.py": "33c33fb35fe21812809ea2bb61091073e60dfb404c824620a56813ec67d87cea",
+        "requirement.txt": "87c49253166f026e4afebc552d19374396361fbfa2a9db5b11ac88c7b5b63491"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 3,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/is_valid_parenthesization.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": "qb_is_valid_parenthesization"
+      }
+    },
+    {
+      "id": "qb_kheapsort",
+      "family": "kheapsort",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair kheapsort to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nK-Heapsort\nk-heapsort\n\nSorts an almost-sorted array, wherein every element is no more than k units from its sorted position, in O(n log k) time.\n\nInput:\n    arr: A list of ints\n    k: an int indicating the maximum displacement of an element in arr from its final sorted location\n\nPreconditions:\n    The elements of arr are unique.\n    Each element in arr is at most k places from its sorted position.\n\nOutput:\n    A generator that yields the elements of arr in sorted order\n\nExample:\n    >>> list(kheapsort([3, 2, 1, 5, 4], 2))\n    [1, 2, 3, 4, 5]\n    >>> list(kheapsort([5, 4, 3, 2, 1], 4))\n    [1, 2, 3, 4, 5]\n    >>> list(kheapsort([1, 2, 3, 4, 5], 0))\n    [1, 2, 3, 4, 5]\n",
+      "code_file": "data/external_eval_v1/cases/qb_kheapsort/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_kheapsort/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_kheapsort/reference.py",
+      "hashes": {
+        "input.py": "0cabf3d462d941ec01f261f2d794d960ab8ba497c42140cedbc3c872f772cea8",
+        "reference.py": "f97bce3d8b0a390c56b826df364c1e2d836b1997a416c3e729b75a61a7640cc7",
+        "test_input.py": "5191164681b550b69fc2956bd1cfa1f374a48869a39d91328ab1517a6bc43d36",
+        "requirement.txt": "6e8b2c4f752065e9ee4fa0ca8c4969252ae93fc7b030a7d2a5d1910ee5318bec"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 4,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/kheapsort.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_kheapsort_control",
+      "family": "kheapsort",
+      "cohort": "control",
+      "is_control": true,
+      "requirement": "Repair kheapsort to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nK-Heapsort\nk-heapsort\n\nSorts an almost-sorted array, wherein every element is no more than k units from its sorted position, in O(n log k) time.\n\nInput:\n    arr: A list of ints\n    k: an int indicating the maximum displacement of an element in arr from its final sorted location\n\nPreconditions:\n    The elements of arr are unique.\n    Each element in arr is at most k places from its sorted position.\n\nOutput:\n    A generator that yields the elements of arr in sorted order\n\nExample:\n    >>> list(kheapsort([3, 2, 1, 5, 4], 2))\n    [1, 2, 3, 4, 5]\n    >>> list(kheapsort([5, 4, 3, 2, 1], 4))\n    [1, 2, 3, 4, 5]\n    >>> list(kheapsort([1, 2, 3, 4, 5], 0))\n    [1, 2, 3, 4, 5]\n",
+      "code_file": "data/external_eval_v1/cases/qb_kheapsort_control/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_kheapsort_control/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_kheapsort_control/reference.py",
+      "hashes": {
+        "input.py": "f97bce3d8b0a390c56b826df364c1e2d836b1997a416c3e729b75a61a7640cc7",
+        "reference.py": "f97bce3d8b0a390c56b826df364c1e2d836b1997a416c3e729b75a61a7640cc7",
+        "test_input.py": "5191164681b550b69fc2956bd1cfa1f374a48869a39d91328ab1517a6bc43d36",
+        "requirement.txt": "6e8b2c4f752065e9ee4fa0ca8c4969252ae93fc7b030a7d2a5d1910ee5318bec"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 4,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/kheapsort.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": "qb_kheapsort"
+      }
+    },
+    {
+      "id": "qb_knapsack",
+      "family": "knapsack",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair knapsack to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nKnapsack\nknapsack\n\nYou have a knapsack that can hold a maximum weight. You are given a selection of items, each with a weight and a value. You may\nchoose to take or leave each item, but you must choose items whose total weight does not exceed the capacity of your knapsack.\n\nInput:\n    capacity: Max weight the knapsack can hold, an int\n    items: The items to choose from, a list of (weight, value) pairs\n\nOutput:\n    The maximum total value of any combination of items that the knapsack can hold\n\nExample:\n    >>> knapsack(100, [(60, 10), (50, 8), (20, 4), (20, 4), (8, 3), (3, 2)])\n    19\n",
+      "code_file": "data/external_eval_v1/cases/qb_knapsack/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_knapsack/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_knapsack/reference.py",
+      "hashes": {
+        "input.py": "ce8ab048641f73e89cf0f196237a0c13d1e78025f6c44f4e92e4fd834f10123b",
+        "reference.py": "eb77641ea54529f03ca727bf38b3ab6006ffc17d634540c5e831f9f381aef8b4",
+        "test_input.py": "d977e0f782a6c02741086e630506a6eb85e9100f3ce1ea9d64e141cab762ae15",
+        "requirement.txt": "f2bda1ea387195ce3e2cd60943c41735572dfee754bdb5e2dca11eaab9dc8ee5"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 9,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/knapsack.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [
+          {
+            "row": 9,
+            "reason": "upstream default slow-test exclusion"
+          }
+        ],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_knapsack_control",
+      "family": "knapsack",
+      "cohort": "control",
+      "is_control": true,
+      "requirement": "Repair knapsack to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nKnapsack\nknapsack\n\nYou have a knapsack that can hold a maximum weight. You are given a selection of items, each with a weight and a value. You may\nchoose to take or leave each item, but you must choose items whose total weight does not exceed the capacity of your knapsack.\n\nInput:\n    capacity: Max weight the knapsack can hold, an int\n    items: The items to choose from, a list of (weight, value) pairs\n\nOutput:\n    The maximum total value of any combination of items that the knapsack can hold\n\nExample:\n    >>> knapsack(100, [(60, 10), (50, 8), (20, 4), (20, 4), (8, 3), (3, 2)])\n    19\n",
+      "code_file": "data/external_eval_v1/cases/qb_knapsack_control/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_knapsack_control/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_knapsack_control/reference.py",
+      "hashes": {
+        "input.py": "eb77641ea54529f03ca727bf38b3ab6006ffc17d634540c5e831f9f381aef8b4",
+        "reference.py": "eb77641ea54529f03ca727bf38b3ab6006ffc17d634540c5e831f9f381aef8b4",
+        "test_input.py": "d977e0f782a6c02741086e630506a6eb85e9100f3ce1ea9d64e141cab762ae15",
+        "requirement.txt": "f2bda1ea387195ce3e2cd60943c41735572dfee754bdb5e2dca11eaab9dc8ee5"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 9,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/knapsack.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [
+          {
+            "row": 9,
+            "reason": "upstream default slow-test exclusion"
+          }
+        ],
+        "control_parent": "qb_knapsack"
+      }
+    },
+    {
+      "id": "qb_kth",
+      "family": "kth",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair kth to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nQuickSelect\n\nThis is an efficient equivalent to sorted(arr)[k].\n\nInput:\n    arr: A list of ints\n    k: An int\n\nPrecondition:\n    0 <= k < len(arr)\n\nOutput:\n    The kth-lowest element of arr (0-based)\n",
+      "code_file": "data/external_eval_v1/cases/qb_kth/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_kth/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_kth/reference.py",
+      "hashes": {
+        "input.py": "505b7d8079de35173a8371dc40e6064d12f597441e1e7c49b782ed3892c37e7b",
+        "reference.py": "1a744253b219bf9fee54fbe5f612ac3c6d186cd38f442b57c41736d102524252",
+        "test_input.py": "8d0cbf3d7058fce2175b686b6a0f6df3b08b89239a9fbd675dcee9b260c8d76d",
+        "requirement.txt": "d4138d242257ac34725ac9a74d2275b96ab4a267572931a2df96726e22d145e7"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 7,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/kth.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_lcs_length",
+      "family": "lcs_length",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair lcs_length to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nLongest Common Substring\nlongest-common-substring\n\nInput:\n    s: a string\n    t: a string\n\nOutput:\n    Length of the longest substring common to s and t\n\nExample:\n    >>> lcs_length('witch', 'sandwich')\n    2\n    >>> lcs_length('meow', 'homeowner')\n    4\n",
+      "code_file": "data/external_eval_v1/cases/qb_lcs_length/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_lcs_length/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_lcs_length/reference.py",
+      "hashes": {
+        "input.py": "ab35b03aa24601348e41e39b70514c9837d5d029009862c0b1d9c90e09b9f532",
+        "reference.py": "c0c66a9a499e75814743654a7a5403dc9d826ebdd0a151859047f66ddfa0fc27",
+        "test_input.py": "71c0ddb45d357f0fa4b1d83433c9d1849edc8d4c00dbfcb58a22071335313784",
+        "requirement.txt": "acd6c93dbb6dd6239ebf89125d9a99d3128336253646286cb69112423c3c0e54"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 9,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/lcs_length.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_levenshtein",
+      "family": "levenshtein",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair levenshtein to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nLevenshtein Distance\n\n\nCalculates the Levenshtein distance between two strings.  The Levenshtein distance is defined as the minimum amount of single-character edits (either removing a character, adding a character, or changing a character) necessary to transform a source string into a target string.\n\nInput:\n    source: The string you begin with.\n    target: The string to transform into.\n\nOutput:\n    The Levenshtein distance between the source and target.\n\nExample:\n    electron can be transformed into neutron by removing the e, turning the l into n, and turning the c into u.\n    >>> levenshtein(electron, neutron)\n    3\n",
+      "code_file": "data/external_eval_v1/cases/qb_levenshtein/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_levenshtein/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_levenshtein/reference.py",
+      "hashes": {
+        "input.py": "55f92da7c06a1eb1e398b557d18dee92d550a0ccfc72e65007729a83eda36266",
+        "reference.py": "9c44bb70893dbce0af02c54f97dc56cd859cc8dbc08e2985b581d79590abe837",
+        "test_input.py": "f219a4d1e5f8eab0089710fa44f04e204f45eb8dfa2d6e10067ddcbd1b141a49",
+        "requirement.txt": "7d04125068e649a03f61754ecf21145b44f8b650788d8e0e9016ac67aa83219c"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 6,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/levenshtein.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [
+          {
+            "row": 3,
+            "reason": "upstream default slow-test exclusion"
+          }
+        ],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_lis",
+      "family": "lis",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair lis to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nLongest Increasing Subsequence\nlongest-increasing-subsequence\n\n\nInput:\n    arr: A sequence of ints\n\nPrecondition:\n    The ints in arr are unique\n\nOutput:\n    The length of the longest monotonically increasing subsequence of arr\n\nExample:\n    >>> lis([4, 1, 5, 3, 7, 6, 2])\n    3\n",
+      "code_file": "data/external_eval_v1/cases/qb_lis/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_lis/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_lis/reference.py",
+      "hashes": {
+        "input.py": "fe9e751f62674299be95f5026c30c778ec331eb449caaa9a13f6b2908e44a016",
+        "reference.py": "f2f14efdb6b419591d565882734ce05c40cdd3b203b45b5727d2838338063a61",
+        "test_input.py": "bbbff06cbf75b2adcca89e055c5131e5d17066b2673cc36f4eb12ffef6f65a23",
+        "requirement.txt": "a80aa5d3d0f30a574e97b67d493b2d1a2548d20c27dca2410518749a126cfc88"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 12,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/lis.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_longest_common_subsequence",
+      "family": "longest_common_subsequence",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair longest_common_subsequence to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nLongest Common Subsequence\n\n\nCalculates the longest subsequence common to the two input strings. (A subsequence is any sequence of letters in the same order\nthey appear in the string, possibly skipping letters in between.)\n\nInput:\n    a: The first string to consider.\n    b: The second string to consider.\n\nOutput:\n    The longest string which is a subsequence of both strings. (If multiple subsequences of equal length exist, either is OK.)\n\nExample:\n    >>> longest_common_subsequence('headache', 'pentadactyl')\n    'eadac'\n",
+      "code_file": "data/external_eval_v1/cases/qb_longest_common_subsequence/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_longest_common_subsequence/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_longest_common_subsequence/reference.py",
+      "hashes": {
+        "input.py": "93215319e44f895561f14567dd6098e2b8fc04497d4d71f5c21c9267fc2a02da",
+        "reference.py": "e59ea6754bc515a15e00d233ab082b6aa9ff7619656007082e9e439051588f6f",
+        "test_input.py": "6bec47051eebd523af4d32510ed869587376748d7c38a03d5a8f54b9cd96adce",
+        "requirement.txt": "1dc5b203e6dfe1811f9c7aba890fd610f69f9961e1e65ce1bda6a72dd66e900f"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 10,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/longest_common_subsequence.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_max_sublist_sum",
+      "family": "max_sublist_sum",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair max_sublist_sum to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nMax Sublist Sum\nmax-sublist-sum\n\nEfficient equivalent to max(sum(arr[i:j]) for 0 <= i <= j <= len(arr))\n\nAlgorithm source: WordAligned.org by Thomas Guest\n\n\nInput:\n    arr: A list of ints\n\nOutput:\n    The maximum sublist sum\n\nExample:\n    >>> max_sublist_sum([4, -5, 2, 1, -1, 3])\n    5\n",
+      "code_file": "data/external_eval_v1/cases/qb_max_sublist_sum/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_max_sublist_sum/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_max_sublist_sum/reference.py",
+      "hashes": {
+        "input.py": "aab26d9f3984f177adcff110fe72de97e54c5f85ad476c38e49c949a873d85b5",
+        "reference.py": "2f2b119d49fbbe641707020b6e7cbb637affeffe9ae3ca653cccd5a3bee8d798",
+        "test_input.py": "f9c178a55579d736ec9ac6c04f3f7a668d8766addc610ef851b5d98af3c7aeea",
+        "requirement.txt": "862bfa69b82a6d409ed7111ea3533d64d804c169532b3cba1902b0aea89cfdf4"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 6,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/max_sublist_sum.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_mergesort",
+      "family": "mergesort",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair mergesort to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nMerge Sort\n\n\nInput:\n    arr: A list of ints\n\nOutput:\n    The elements of arr in sorted order\n",
+      "code_file": "data/external_eval_v1/cases/qb_mergesort/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_mergesort/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_mergesort/reference.py",
+      "hashes": {
+        "input.py": "9e1911f1da8b7535c52d19f73d32238e72066b859a853c09cbd2644214f79d61",
+        "reference.py": "f4b64e3c49b0a050fa99002be491615708eb532be0b137bbc928af683f4da3f7",
+        "test_input.py": "add95d4283e46309fe92617e9c0c29f855bcfb7f6fd75769aca700c396b52a25",
+        "requirement.txt": "18c9d0627e68a891d777f4b76689fae415c225276ebd0e2ca87749edcaa4dc9a"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 14,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/mergesort.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_next_palindrome",
+      "family": "next_palindrome",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair next_palindrome to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nFinds the next palindromic integer when given the current integer\nIntegers are stored as arrays of base 10 digits from most significant to least significant\n\nInput:\n    digit_list: An array representing the current palindrome\n\nOutput:\n    An array which represents the next palindrome\n\nPreconditions:\n    The initial input array represents a palindrome\n\nExample\n    >>> next_palindrome([1,4,9,4,1])\n    [1,5,0,5,1]\n",
+      "code_file": "data/external_eval_v1/cases/qb_next_palindrome/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_next_palindrome/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_next_palindrome/reference.py",
+      "hashes": {
+        "input.py": "e383f403abe2f85fff232871f691b560d5aadd6cccbfbbf205d25099abe734ce",
+        "reference.py": "6b5b1d10c30ff9277d5a8a881cc0daa19a5c0e6bbca42c3e432f87bd634224b6",
+        "test_input.py": "4d290b260c7f86378148a7599241d391271c0d4ebd5b1a00a6c263b2740fda2a",
+        "requirement.txt": "0e05ed12e9f65f752e7a7948bc560629a44d9384ee4d2401415470cb27bf00e6"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 5,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/next_palindrome.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_next_permutation",
+      "family": "next_permutation",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair next_permutation to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nNext Permutation\nnext-perm\n\n\nInput:\n    perm: A list of unique ints\n\nPrecondition:\n    perm is not sorted in reverse order\n\nOutput:\n    The lexicographically next permutation of the elements of perm\n\nExample:\n    >>> next_permutation([3, 2, 4, 1])\n    [3, 4, 1, 2]\n",
+      "code_file": "data/external_eval_v1/cases/qb_next_permutation/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_next_permutation/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_next_permutation/reference.py",
+      "hashes": {
+        "input.py": "14ffc36c80bf3bba8db91b7e0fa6be14a8011130ddeaccf33ed62638eac1b25b",
+        "reference.py": "93bbb04ed299c44c202ab2eca2aa68318b5ee94fdcb6ce5a3977f24c7ed67957",
+        "test_input.py": "8c336238eeb4a471ede3e0687030a6543d6752608c89803695865e44a0b1733d",
+        "requirement.txt": "8ab40a93728f29c36d29bf1ac46513134687413f3cd9c981e9c57a21cf344538"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 8,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/next_permutation.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_pascal",
+      "family": "pascal",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair pascal to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nPascal's Triangle\npascal\n\n\n\nInput:\n    n: The number of rows to return\n\nPrecondition:\n    n >= 1\n\nOutput:\n    The first n rows of Pascal's triangle as a list of n lists\n\nExample:\n    >>> pascal(5)\n    [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1]]\n",
+      "code_file": "data/external_eval_v1/cases/qb_pascal/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_pascal/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_pascal/reference.py",
+      "hashes": {
+        "input.py": "4445ef075a5f987d005bba5587c58f4697a90675be09171af2ca4009f64824a1",
+        "reference.py": "96b7da947feab99eb7e273c6d1d0e7f1692c04b3f0d9654a1a4253ce57dfcaa8",
+        "test_input.py": "43906587d5270aabfbca7a521d805f482898c395c1b313a062a399e03a890d47",
+        "requirement.txt": "d173444947437ad494efeeaba801ffb272783257c63710ac36d4b788f385903e"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 5,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/pascal.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_possible_change",
+      "family": "possible_change",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair possible_change to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nMaking Change\nchange\n\n\nInput:\n    coins: A list of positive ints representing coin denominations\n    total: An int value to make change for\n\nOutput:\n    The number of distinct ways to make change adding up to total using only coins of the given values.\n    For example, there are exactly four distinct ways to make change for the value 11 using coins [1, 5, 10, 25]:\n        1. {1: 11, 5: 0, 10: 0, 25: 0}\n        2. {1: 6, 5: 1, 10: 0, 25: 0}\n        3. {1: 1, 5: 2, 10: 0, 25: 0}\n        4. {1: 1, 5: 0, 10: 1, 25: 0}\n\nExample:\n    >>> possible_change([1, 5, 10, 25], 11)\n    4\n",
+      "code_file": "data/external_eval_v1/cases/qb_possible_change/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_possible_change/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_possible_change/reference.py",
+      "hashes": {
+        "input.py": "e21854dbb1a8f299bab639e71797a14989ab6bd6b700665a2056c48a70154917",
+        "reference.py": "195f5cdc05e838b4c14553090b95e297c75401a6ce778b2738e7e9f47ec18cd0",
+        "test_input.py": "d02f313d744f573b24d7a5e3bcf518f4bfe1d64c171828a54810556317656f19",
+        "requirement.txt": "fc7158e7e770338f372451983b77d203d9426db1889601d0a346db654ace09fc"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 10,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/possible_change.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_powerset",
+      "family": "powerset",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair powerset to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nPower Set\n\nInput:\n    arr: A list\n\nPrecondition:\n    arr has no duplicate elements\n\nOutput:\n    A list of lists, each representing a different subset of arr. The empty set is always a subset of arr, and arr is always a subset of arr.\n\nExample:\n    >>> powerset(['a', 'b', 'c'])\n    [[], ['c'], ['b'], ['b', 'c'], ['a'], ['a', 'c'], ['a', 'b'], ['a', 'b', 'c']]\n",
+      "code_file": "data/external_eval_v1/cases/qb_powerset/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_powerset/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_powerset/reference.py",
+      "hashes": {
+        "input.py": "3e3deb045ed61fbe82725cd7e7b0fb4d00f411f87f0f91358109ec0204c61ae9",
+        "reference.py": "b53f71a04fec20cbd20c5f0edd64ec1c49796b693677d46b3e7e02b5e3aaf46e",
+        "test_input.py": "d51b3bef7aff6e26d1a699eeba2c5bc728ce3272dc48721b4caa192f8ef02611",
+        "requirement.txt": "17bca9a79a1e357a5c99eea482f037cf11bdf4839bf5e6b73e05886f093928cc"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 5,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/powerset.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_quicksort",
+      "family": "quicksort",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair quicksort to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nQuickSort\n\n\nInput:\n    arr: A list of ints\n\nOutput:\n    The elements of arr in sorted order\n",
+      "code_file": "data/external_eval_v1/cases/qb_quicksort/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_quicksort/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_quicksort/reference.py",
+      "hashes": {
+        "input.py": "4bc023d77dcdaeaaf5b284a03eecf0f73765ff216efecadd1d5ed78382ac89a3",
+        "reference.py": "2b9aa475d442ab534de2f1a5912de4ae3049282db3093f17f2bd88b6b356ba54",
+        "test_input.py": "dc4c7d591795f09516303bd3ea82fba5e2174ca00f1fedb332bcbb812e07d9aa",
+        "requirement.txt": "bd0966bc3894fed1b3843a6f93a2320a7ab8ec71044dbef4c5281318b97aac11"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 13,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/quicksort.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_shunting_yard",
+      "family": "shunting_yard",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair shunting_yard to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nInfix to RPN Conversion\nshunting-yard\n\n\nUses Dijkstra's shunting-yard algorithm to transform infix notation into equivalent Reverse Polish Notation.\n\nInput:\n    tokens: A list of tokens in infix notation\n\nPrecondition:\n    all(isinstance(token, int) or token in '+-*/' for token in tokens)\n\nOutput:\n    The input tokens reordered into Reverse Polish Notation\n\nExamples:\n    >>> shunting_yard([10, '-', 5, '-', 2])\n    [10, 5, '-', 2, '-']\n    >>> shunting_yard([34, '-', 12, '/', 5])\n    [34, 12, 5, '/' ,'-']\n    >>> shunting_yard([4, '+', 9, '*', 9, '-', 10, '+', 13])\n    [4, 9, 9, '*', '+', 10, '-', 13, '+']\n",
+      "code_file": "data/external_eval_v1/cases/qb_shunting_yard/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_shunting_yard/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_shunting_yard/reference.py",
+      "hashes": {
+        "input.py": "b010f04bbfc6158888d97498cc8e0adb323b9f8285fbf5b908c7d4c8c48cfb68",
+        "reference.py": "f24efd158ead068cf2d476eaec3fdd5f58ef19578ee6a7861f7fcdff7d924645",
+        "test_input.py": "bcdeb00e7625f6bdc5f5664d72a16ffb57112bc5bb161760e9e8d32e1e21f9d7",
+        "requirement.txt": "44af2665e829578d76f5c7d38e8a058edcca8659294fe485f78e0a9c0c307edf"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 6,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/shunting_yard.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_sieve",
+      "family": "sieve",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair sieve to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nSieve of Eratosthenes\nprime-sieve\n\nInput:\n    max: A positive int representing an upper bound.\n\nOutput:\n    A list containing all primes up to and including max\n",
+      "code_file": "data/external_eval_v1/cases/qb_sieve/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_sieve/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_sieve/reference.py",
+      "hashes": {
+        "input.py": "577f762267c71617107ca3ec8d509012a7d6b692fb94432f943cd5b694ad5ffc",
+        "reference.py": "624b6480828391cd5316f7418acd9d2654fafa04b3821d07e6c99f062857da44",
+        "test_input.py": "2350a3d0433fa44878bfe90e2f9b549811b7b81524933d9a984d9f1b10dab7d9",
+        "requirement.txt": "014b0e3b343503d301f217f0e43fb5a01291fff1d84693f9f2ab4a6668d5379b"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 6,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/sieve.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_sqrt",
+      "family": "sqrt",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair sqrt to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nSquare Root\n\nNewton-Raphson method implementation.\n\n\nInput:\n    x: A float\n    epsilon: A float\n\nPrecondition:\n    x >= 1 and epsilon > 0\n\nOutput:\n    A float in the interval [sqrt(x) - epsilon, sqrt(x) + epsilon]\n\nExample:\n    >>> sqrt(2, 0.01)\n    1.4166666666666665\n",
+      "code_file": "data/external_eval_v1/cases/qb_sqrt/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_sqrt/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_sqrt/reference.py",
+      "hashes": {
+        "input.py": "e3623a160e6ada452b36ce0bd2370fc031943e2c1ae93aae5f0c82865e083ebf",
+        "reference.py": "8abad14937a9cd1cfe0e1c7f20f92861a0a86c6305e473f184ae813b6120375e",
+        "test_input.py": "b92b17a774db02cd13ee2e919087cd4ba29235d44027f1ee438e0b1f21745205",
+        "requirement.txt": "53f264019591fd44cdba55507ed35cb91bd51ebaca87c7ae1dd09ebbe106a33d"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 7,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/sqrt.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_subsequences",
+      "family": "subsequences",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair subsequences to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nSubsequences\n\n\nInput:\n    a: An int\n    b: An int\n    k: A positive int\n\nOutput:\n    A list of all length-k ascending sequences of ints in range(a, b)\n\nExample:\n    >>> subsequences(a=1, b=5, k=3)\n    [[1, 2, 3], [1, 2, 4], [1, 3, 4], [2, 3, 4]]\n",
+      "code_file": "data/external_eval_v1/cases/qb_subsequences/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_subsequences/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_subsequences/reference.py",
+      "hashes": {
+        "input.py": "0566273a521b768c0f9d8ba33d95bc7a10447b654327ad0d3460500245bef7c3",
+        "reference.py": "cc04b2d74db77bdd93af52c8a0b7ab2c7eb9adc83719ebe739bd74b71d46a185",
+        "test_input.py": "b556d89834a8ef9ff44307283d498d25016fbeac8fe441aea163e7ea0b9d1263",
+        "requirement.txt": "4dc6e8706f9f703c4535b28606f3a00caced4d1567ae687d397ef16a1dc23dd0"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 12,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/subsequences.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_to_base",
+      "family": "to_base",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair to_base to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nInteger Base Conversion\nbase-conversion\n\n\nInput:\n    num: A base-10 integer to convert.\n    b: The target base to convert it to.\n\nPrecondition:\n    num > 0, 2 <= b <= 36.\n\nOutput:\n    A string representing the value of num in base b.\n\nExample:\n    >>> to_base(31, 16)\n    '1F'\n",
+      "code_file": "data/external_eval_v1/cases/qb_to_base/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_to_base/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_to_base/reference.py",
+      "hashes": {
+        "input.py": "e6f2d42474e4e641f08d2e6d5c0e8c8bf8a540e79aaaf1ab903031c163193744",
+        "reference.py": "bebdb1310d6db38977227a0a4c25a8e3861cd67faee92ab66bb7cbd314d92bc0",
+        "test_input.py": "31114cb197726d7895728740ef67220b00ab1f15bd687e4c9a0b89aef1e81ebf",
+        "requirement.txt": "f65706262bd63d6dce6b37c9b93d66c5fbe28b466b841c731677f2301fb46db5"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 10,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/to_base.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    },
+    {
+      "id": "qb_wrap",
+      "family": "wrap",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Repair wrap to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.\n\nWrap Text\n\nGiven a long string and a column width, break the string on spaces into a list of lines such that each line is no longer than the column width.\n\nInput:\n    text: The starting text.\n    cols: The target column width, i.e. the maximum length of any single line after wrapping.\n\nPrecondition:\n    cols > 0.\n\nOutput:\n    An ordered list of strings, each no longer than the column width, such that the concatenation of the strings returns the original text,\nand such that no word in the original text is broken into two parts unless necessary.  The original amount of spaces are preserved (e.g. spaces\nat the start or end of each line aren't trimmed.),Wrapping Text\n",
+      "code_file": "data/external_eval_v1/cases/qb_wrap/input.py",
+      "test_file": "data/external_eval_v1/cases/qb_wrap/test_input.py",
+      "reference_file": "data/external_eval_v1/cases/qb_wrap/reference.py",
+      "hashes": {
+        "input.py": "eb76433536ae58fa2955fbe053a8f9e45e7deb7d3894048acb7cdab13f1f5282",
+        "reference.py": "19dba14cdf9fe3380abf4dd3b2d5726f38bbd4af39e0f19e725f9f3bdd236bc6",
+        "test_input.py": "5cce778338c57c6b91ec72c3fcc81b5ec1c5bfe8afa65139bb1e3265b81acaf5",
+        "requirement.txt": "0ead98f51ba0e921998ffb2649b44c7b78e8a8f26966c0eae727babf069adc81"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "formal_test_count": 5,
+      "provenance": {
+        "kind": "external_algorithm_benchmark_adaptation",
+        "repository": "https://github.com/jkoppel/QuixBugs",
+        "revision": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+        "source_url": "https://github.com/jkoppel/QuixBugs/blob/4257f44b0ff1181dedaedee6a447e133219fcebf/python_programs/wrap.py",
+        "license": "MIT; upstream/LICENSE.txt",
+        "production_bug": false,
+        "adaptation": "Source unchanged; embed upstream JSON tests with solution import. Retain upstream hanoi tuple / generator / sqrt tolerance semantics.",
+        "omitted_rows": [],
+        "control_parent": null
+      }
+    }
+  ],
+  "configs": {
+    "configs/m7_qwen3_30b.json": "e698013c4528f2d4a9c554681be7b1d69f4f556ff60fe92eb982166f4e4d1916"
+  },
+  "role": "new external tasks; historical 15 are development-exposed regression only",
+  "limitations": [
+    "Public algorithms; training contamination unknown",
+    "All formal tests visible to both conditions; no hidden acceptance suite",
+    "Single benchmark and related controls; no population success-rate claim",
+    "Not real-user production defects or model-generated hallucinations"
+  ]
+}

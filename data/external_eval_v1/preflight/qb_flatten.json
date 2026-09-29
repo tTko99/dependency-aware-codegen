@@ -1,0 +1,256 @@
+{
+  "case_id": "qb_flatten",
+  "valid": true,
+  "initial": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [
+      "run_pytest"
+    ],
+    "candidate_version": "0:5023275fe603f1ebade0027073c3d116274d405069ea350076f220f10ff451e2",
+    "context_version": "600c2e105e5b42eb7ff355e6858d8a19368a40ba48906a032a851100426f99be",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "FAIL",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.02399159991182387,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:5023275fe603f1ebade0027073c3d116274d405069ea350076f220f10ff451e2",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:5023275fe603f1ebade0027073c3d116274d405069ea350076f220f10ff451e2",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": false,
+          "execution": {
+            "status": "failed",
+            "return_code": 1,
+            "stdout": "F.FFFFF                                                                  [100%]\n================================== FAILURES ===================================\n____________________ test_contract[input_data0-expected0] _____________________\n\ninput_data = [[[1, [], [2, 3]], [[4]], 5]], expected = [1, 2, 3, 4, 5]\n\n    @pytest.mark.parametrize('input_data,expected', [([[[1, [], [2, 3]], [[4]], 5]], [1, 2, 3, 4, 5]), ([[[], [], [], [], []]], []), ([[[], [], 1, [], 1, [], []]], [1, 1]), ([[1, 2, 3, [[4]]]], [1, 2, 3, 4]), ([[1, 4, 6]], [1, 4, 6]), ([['moe', 'curly', 'larry']], ['moe', 'curly', 'larry']), ([['a', 'b', ['c'], ['d'], [['e']]]], ['a', 'b', 'c', 'd', 'e'])])\n    def test_contract(input_data, expected):\n>       assert list(flatten(*input_data)) == expected\nE       assert [<generator o...01C1F76A4900>] == [1, 2, 3, 4, 5]\nE         \nE         At index 0 diff: <generator object flatten at 0x000001C1F76A49E0> != 1\nE         Use -v to get more diff\n\ntest_solution.py:7: AssertionError\n____________________ test_contract[input_data2-expected2] _____________________\n\ninput_data = [[[], [], 1, [], 1, [], ...]], expected = [1, 1]\n\n    @pytest.mark.parametrize('input_data,expected', [([[[1, [], [2, 3]], [[4]], 5]], [1, 2, 3, 4, 5]), ([[[], [], [], [], []]], []), ([[[], [], 1, [], 1, [], []]], [1, 1]), ([[1, 2, 3, [[4]]]], [1, 2, 3, 4]), ([[1, 4, 6]], [1, 4, 6]), ([['moe', 'curly', 'larry']], ['moe', 'curly', 'larry']), ([['a', 'b', ['c'], ['d'], [['e']]]], ['a', 'b', 'c', 'd', 'e'])])\n    def test_contract(input_data, expected):\n>       assert list(flatten(*input_data)) == expected\nE       assert [<generator o...01C1F76A5620>] == [1, 1]\nE         \nE         At index 0 diff: <generator object flatten at 0x000001C1F76A5540> != 1\nE         Use -v to get more diff\n\ntest_solution.py:7: AssertionError\n____________________ test_contract[input_data3-expected3] _____________________\n\ninput_data = [[1, 2, 3, [[4]]]], expected = [1, 2, 3, 4]\n\n    @pytest.mark.parametrize('input_data,expected', [([[[1, [], [2, 3]], [[4]], 5]], [1, 2, 3, 4, 5]), ([[[], [], [], [], []]], []), ([[[], [], 1, [], 1, [], []]], [1, 1]), ([[1, 2, 3, [[4]]]], [1, 2, 3, 4]), ([[1, 4, 6]], [1, 4, 6]), ([['moe', 'curly', 'larry']], ['moe', 'curly', 'larry']), ([['a', 'b', ['c'], ['d'], [['e']]]], ['a', 'b', 'c', 'd', 'e'])])\n    def test_contract(input_data, expected):\n>       assert list(flatten(*input_data)) == expected\nE       assert [<generator o...01C1F76A6260>] == [1, 2, 3, 4]\nE         \nE         At index 0 diff: <generator object flatten at 0x000001C1F76A5E00> != 1\nE         Use -v to get more diff\n\ntest_solution.py:7: AssertionError\n____________________ test_contract[input_data4-expected4] _____________________\n\ninput_data = [[1, 4, 6]], expected = [1, 4, 6]\n\n    @pytest.mark.parametrize('input_data,expected', [([[[1, [], [2, 3]], [[4]], 5]], [1, 2, 3, 4, 5]), ([[[], [], [], [], []]], []), ([[[], [], 1, [], 1, [], []]], [1, 1]), ([[1, 2, 3, [[4]]]], [1, 2, 3, 4]), ([[1, 4, 6]], [1, 4, 6]), ([['moe', 'curly', 'larry']], ['moe', 'curly', 'larry']), ([['a', 'b', ['c'], ['d'], [['e']]]], ['a', 'b', 'c', 'd', 'e'])])\n    def test_contract(input_data, expected):\n>       assert list(flatten(*input_data)) == expected\nE       assert [<generator o...01C1F76A5540>] == [1, 4, 6]\nE         \nE         At index 0 diff: <generator object flatten at 0x000001C1F76A5700> != 1\nE         Use -v to get more diff\n\ntest_solution.py:7: AssertionError\n____________________ test_contract[input_data5-expected5] _____________________\n\ninput_data = [['moe', 'curly', 'larry']], expected = ['moe', 'curly', 'larry']\n\n    @pytest.mark.parametrize('input_data,expected', [([[[1, [], [2, 3]], [[4]], 5]], [1, 2, 3, 4, 5]), ([[[], [], [], [], []]], []), ([[[], [], 1, [], 1, [], []]], [1, 1]), ([[1, 2, 3, [[4]]]], [1, 2, 3, 4]), ([[1, 4, 6]], [1, 4, 6]), ([['moe', 'curly', 'larry']], ['moe', 'curly', 'larry']), ([['a', 'b', ['c'], ['d'], [['e']]]], ['a', 'b', 'c', 'd', 'e'])])\n    def test_contract(input_data, expected):\n>       assert list(flatten(*input_data)) == expected\nE       AssertionError: assert [<generator o...01C1F76A6B20>] == ['moe', 'curly', 'larry']\nE         \nE         At index 0 diff: <generator object flatten at 0x000001C1F76A6960> != 'moe'\nE         Use -v to get more diff\n\ntest_solution.py:7: AssertionError\n____________________ test_contract[input_data6-expected6] _____________________\n\ninput_data = [['a', 'b', ['c'], ['d'], [['e']]]]\nexpected = ['a', 'b', 'c', 'd', 'e']\n\n    @pytest.mark.parametrize('input_data,expected', [([[[1, [], [2, 3]], [[4]], 5]], [1, 2, 3, 4, 5]), ([[[], [], [], [], []]], []), ([[[], [], 1, [], 1, [], []]], [1, 1]), ([[1, 2, 3, [[4]]]], [1, 2, 3, 4]), ([[1, 4, 6]], [1, 4, 6]), ([['moe', 'curly', 'larry']], ['moe', 'curly', 'larry']), ([['a', 'b', ['c'], ['d'], [['e']]]], ['a', 'b', 'c', 'd', 'e'])])\n    def test_contract(input_data, expected):\n>       assert list(flatten(*input_data)) == expected\nE       AssertionError: assert [<generator o...01C1F76A5380>] == ['a', 'b', 'c', 'd', 'e']\nE         \nE         At index 0 diff: <generator object flatten at 0x000001C1F76A4120> != 'a'\nE         Use -v to get more diff\n\ntest_solution.py:7: AssertionError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_contract[input_data0-expected0] - assert [<gene...\nFAILED test_solution.py::test_contract[input_data2-expected2] - assert [<gene...\nFAILED test_solution.py::test_contract[input_data3-expected3] - assert [<gene...\nFAILED test_solution.py::test_contract[input_data4-expected4] - assert [<gene...\nFAILED test_solution.py::test_contract[input_data5-expected5] - AssertionErro...\nFAILED test_solution.py::test_contract[input_data6-expected6] - AssertionErro...\n6 failed, 1 passed in 0.08s\n",
+            "stderr": "",
+            "error_type": "AssertionError",
+            "error_category": "runtime_error",
+            "execution_time": 0.34592459979467094,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:5023275fe603f1ebade0027073c3d116274d405069ea350076f220f10ff451e2",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:5023275fe603f1ebade0027073c3d116274d405069ea350076f220f10ff451e2",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [],
+          "validation_state": {
+            "candidate_version": "0:5023275fe603f1ebade0027073c3d116274d405069ea350076f220f10ff451e2",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:5023275fe603f1ebade0027073c3d116274d405069ea350076f220f10ff451e2",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [],
+          "validation_state": {
+            "candidate_version": "0:5023275fe603f1ebade0027073c3d116274d405069ea350076f220f10ff451e2",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:5023275fe603f1ebade0027073c3d116274d405069ea350076f220f10ff451e2",
+        "cached": false
+      }
+    }
+  },
+  "reference": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "0:9a81d65b8147aa84be75b3345b1ce25d2577335d955e963e10bbef19f986618d",
+    "context_version": "9b3165a37b6e1ea67fbd4e95d0705ec6cdea5449e9386d3fc90fcf2be2d27a53",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "PASS",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.02328060008585453,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:9a81d65b8147aa84be75b3345b1ce25d2577335d955e963e10bbef19f986618d",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:9a81d65b8147aa84be75b3345b1ce25d2577335d955e963e10bbef19f986618d",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": ".......                                                                  [100%]\n7 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.27239560009911656,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:9a81d65b8147aa84be75b3345b1ce25d2577335d955e963e10bbef19f986618d",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:9a81d65b8147aa84be75b3345b1ce25d2577335d955e963e10bbef19f986618d",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [],
+          "validation_state": {
+            "candidate_version": "0:9a81d65b8147aa84be75b3345b1ce25d2577335d955e963e10bbef19f986618d",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:9a81d65b8147aa84be75b3345b1ce25d2577335d955e963e10bbef19f986618d",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [],
+          "validation_state": {
+            "candidate_version": "0:9a81d65b8147aa84be75b3345b1ce25d2577335d955e963e10bbef19f986618d",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": true,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:9a81d65b8147aa84be75b3345b1ce25d2577335d955e963e10bbef19f986618d",
+        "cached": false
+      }
+    }
+  }
+}

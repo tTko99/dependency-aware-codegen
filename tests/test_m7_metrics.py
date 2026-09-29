@@ -121,3 +121,11 @@ def test_rescue_requires_native_finish_even_if_artifact_claims_pass():
     b["trajectory"].pop()
     assert not strict_rescue(a, b)["rescued"]
     assert summarize([a, b])["capability_probe"] == {"numerator": 1, "denominator": 1, "rate": 1}
+
+
+def test_full_code_replacement_counts_as_repair():
+    a, b = paired()
+    for item in b['trajectory']:
+        if item['tool_call']['name'] == 'apply_patch':
+            item['tool_call']['name'] = 'replace_candidate'
+    assert strict_rescue(a, b)['rescued']

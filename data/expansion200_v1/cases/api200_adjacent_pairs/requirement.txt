@@ -1,0 +1,1 @@
+Return consecutive overlapping pairs as a list of tuples. Fewer than two inputs yield no pairs. Preserve solve signature.

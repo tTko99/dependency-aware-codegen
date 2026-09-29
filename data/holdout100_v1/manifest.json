@@ -1,0 +1,3948 @@
+{
+  "name": "holdout100_v1",
+  "cases": [
+    {
+      "id": "mbpp_412",
+      "family": "remove_odd",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to remove odd numbers from a given list. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_412/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_412/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_412/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_412/test_hidden.py",
+      "hashes": {
+        "input.py": "bccd7be17195affed9a5fe432f66978e5c3d53cd18c0070dfe161dc5d4798593",
+        "reference.py": "eda91eb5b5e4906b8f791300b7053abc903c63e859bf337a03540b2b348ebb05",
+        "test_visible.py": "1f2ec63274afa070c85a301b2c7980ea1b8d799dd7d13ef4280e93234ff4f1e7",
+        "test_hidden.py": "00637c411be5ce711cd7fc299f4fce6b5791ff6a345169dabf8a4c8108f4a56d",
+        "requirement.txt": "09ff114dc155396f8c01e57a00a208ea8ceb5229f611f59d42161b0f2d467e3c"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 412,
+        "family": "remove_odd",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 17,
+          "line": 3
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_74",
+      "family": "is_samepatterns",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to check whether it follows the sequence given in the patterns array. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_74/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_74/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_74/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_74/test_hidden.py",
+      "hashes": {
+        "input.py": "558c554c4fb872933c5b6f5f344495c0db20a484ef6fdf3791c4354ec6115d19",
+        "reference.py": "cd1bbb998bd2d7506d5393b9dc2453a31c67cdce68da7f3539f5955b66ec7791",
+        "test_visible.py": "52869cdb2ddcfd5a8263e0810a1a40fae83ca882dd379f981dddb285a6968f53",
+        "test_hidden.py": "28e44121ecfc89c6c635cc3091b6a776b28693eeccc4882b381ad7e0bb0b87b2",
+        "requirement.txt": "c8d2eb1b43c0f56ad25ebfcc507e4869ca2d25486a01fbb2e8c639b84b98deb2"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 74,
+        "family": "is_samepatterns",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "comparison",
+          "node_index": 13,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_556",
+      "family": "find_Odd_Pair",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to count the number of pairs whose xor value is odd. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_556/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_556/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_556/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_556/test_hidden.py",
+      "hashes": {
+        "input.py": "62f9a178118acf4281415e903f0548f78640e9f0ed4759dafb3d35db601390e6",
+        "reference.py": "5293554e665d6bbfd9aae049945eda31f917bda64a7c8affdc3acdb62b95f0c4",
+        "test_visible.py": "7ea0802caf0af721ef8299a6d310bf6b5c403f81bcc44cd45449cedfb1d44101",
+        "test_hidden.py": "f7b2e919398c6969f6beddc43b5cdd98ba0de8db1627140846b87bc6c69cab61",
+        "requirement.txt": "5a12b40c2dcd6eb179f2ce3898ad5ce8d5b48a4e7f37523c001ed59f6ff671af"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 556,
+        "family": "find_Odd_Pair",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 9,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_401",
+      "family": "add_nested_tuples",
+      "category": "data_processing",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to perform index wise addition of tuple elements in the given two nested tuples. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_401/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_401/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_401/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_401/test_hidden.py",
+      "hashes": {
+        "input.py": "3ef5a362a0174b27c9ef94c40c306b50eff361bf28b5642022860c2e9e83b925",
+        "reference.py": "fd64458708480aa5fec817a99e960bf4f22b01030e8de6e9f714a35d10c799b6",
+        "test_visible.py": "9d2bf8c04df77a4d090b5e26f8d0b9548242414361778b4668c59fafe6fa56a7",
+        "test_hidden.py": "48f003fe4a1e9e4c9733b42fdbf5c144d6bc8d987ed5b18852965d1b0b85322b",
+        "requirement.txt": "33451fb6e89c0a16888918545e4b1c63c6316b907766f6c96d35ac2adb46704d"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 401,
+        "family": "add_nested_tuples",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 22,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_807",
+      "family": "first_odd",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to find the first odd number in a given list of numbers. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_807/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_807/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_807/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_807/test_hidden.py",
+      "hashes": {
+        "input.py": "b127a46a6c38ad994c47b37d0a7aeef9edbac28dda3544c0de7a27ff7d3d92cf",
+        "reference.py": "79da95f2ff7e745af5d04867b9346834b17cbd6c7de8bb8aed6f31d1d15d1cac",
+        "test_visible.py": "919717a49ac31a52a5f017edf323358c674d72ae2ffde79d73a80a0f960bf1ad",
+        "test_hidden.py": "ce92588bd7112ce039579f57375ba8926fd2e612713ddb3556f7c80c7e8e43c7",
+        "requirement.txt": "870203148fe389c2a9878eab77e1a67c9adce1b4046064537a3e88f0e26e3cf2"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 807,
+        "family": "first_odd",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 30,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_295",
+      "family": "sum_div",
+      "category": "api_usage",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to return the sum of all divisors of a number. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_295/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_295/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_295/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_295/test_hidden.py",
+      "hashes": {
+        "input.py": "ca9ac787db0a75ed54a85b5ea2636490ca76a8be6663c252dbf3a22cab4385be",
+        "reference.py": "3a76f23341008f24fb447f70828b7bdc8310df29d91ef85d8e6807bebccdf92d",
+        "test_visible.py": "ced9cf6189adca4070f4adeb67fb5d65a118a838a453580870ccfc1350667ec3",
+        "test_hidden.py": "c0719e263633a18e37536eab717d432ed4aaa843685fea0860c6f3930f0e2525",
+        "requirement.txt": "70e8fdb9506aafbccf9a667a4a0015cbaee8a88768725043febcb7cd42c0778b"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 295,
+        "family": "sum_div",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "api_name",
+          "node_index": 35,
+          "line": 5
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_458",
+      "family": "rectangle_area",
+      "category": "algorithm",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to find the area of a rectangle. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_458/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_458/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_458/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_458/test_hidden.py",
+      "hashes": {
+        "input.py": "ed7abdef51f259eaa81e40b5d2583ec5dc86be575b8b7831418450b7e3269dcc",
+        "reference.py": "4d71b68367cef705b708dde8c0c752103b40563edfbc162610519f9a6c61e6d9",
+        "test_visible.py": "c5eb8fe8323a4d5687c6043141234bd03d48d92dd8d235b088e73dfb4af4ad58",
+        "test_hidden.py": "ec8085dcf8b5179312e70a893488d5ea56f50f76bbdfd77cf720f9afa50c653b",
+        "requirement.txt": "6763f8c60ebe7b5b7a7575242b2e55bcfac3d2b06ba7bed62fab04ae61a23ab7"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 458,
+        "family": "rectangle_area",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 8,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_735",
+      "family": "set_middle_bits,toggle_middle_bits",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to toggle bits of the number except the first and the last bit. https://www.geeksforgeeks.org/toggle-bits-number-expect-first-last-bits/ Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_735/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_735/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_735/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_735/test_hidden.py",
+      "hashes": {
+        "input.py": "c9d144185e715ddb03a6cfa1dd1b45ecaba4622980eef6e2a8bbd5fc9f18a782",
+        "reference.py": "72078a0eb2c7d2c7b61134f20b45cfccfc179b4c3e4c18983b633fd308fcb137",
+        "test_visible.py": "c96f3400ce563d4ef33ae91f8917a9878ff415d5bad4645dda0db7e3a853f94b",
+        "test_hidden.py": "ac47612a2ea9205eec1fd98e2b2ed0d730e71f5675139c21dca1111777e5c877",
+        "requirement.txt": "0cf8c6ab1465a01e9fa8b85011d163dbc4e9250e27ac62e642dd6aeba6ed507e"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 735,
+        "family": "set_middle_bits,toggle_middle_bits",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 56,
+          "line": 7
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_625",
+      "family": "swap_List",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to interchange the first and last element in a given list. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_625/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_625/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_625/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_625/test_hidden.py",
+      "hashes": {
+        "input.py": "54319d0a4be7cab65bbea86666ed816d02625a6ad887d06ea72afc1b25df2926",
+        "reference.py": "4569b1703b56d4bc25248590210baa8f45a8b962ccffbd8293e095146137fae9",
+        "test_visible.py": "205fd736a7d75a9688e2335efcc0a0b0857a1e8c4e86d6e5a90a92151f535fa6",
+        "test_hidden.py": "529844d39e58a7d7196c0267f4d41ebfc9e646bc98eb7d0b7214005e4bebb8d8",
+        "requirement.txt": "aa40f9ef809d92a02b5ecc492500d2639fee099cfc4c2196fa3daa317b40f03d"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 625,
+        "family": "swap_List",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 26,
+          "line": 4
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_280",
+      "family": "sequential_search",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function that takes in an array and element and returns a tuple containing a boolean that indicates if the element is in the array and the index position of the element (or -1 if the element is not found). Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_280/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_280/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_280/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_280/test_hidden.py",
+      "hashes": {
+        "input.py": "3c9e4869e48d7ac1e63912b5cca3f6214d89db800ee3b19ab32e21cc9ccd6ae7",
+        "reference.py": "b0c5c54cf914f2bc2128993fa5d95c471caca7a446e9a3633ae6f798dac506e0",
+        "test_visible.py": "7847da4dd928dd98f46cf574174a3cb996fbe01d8cb8a1c29adf617c9e05e772",
+        "test_hidden.py": "c6c04766bc71f27b3e41108ebc98159bf075f3ac1355a991c832bac8265869ed",
+        "requirement.txt": "f5c93e7721edc4d6edb0e762f684149eb643ae08cdaea5cb0dc2fea980694bf0"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 280,
+        "family": "sequential_search",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "comparison",
+          "node_index": 21,
+          "line": 5
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_162",
+      "family": "sum_series",
+      "category": "algorithm",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to calculate the sum (n - 2*i) from i=0 to n // 2, for instance n + (n-2) + (n-4)... (until n-x =< 0). Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_162/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_162/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_162/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_162/test_hidden.py",
+      "hashes": {
+        "input.py": "e96e0abc2b4b963d24c78c7e6803719fe9be482ecb3a3d1408a86406514d7aba",
+        "reference.py": "ab17fd4c3dee67754d0b71050b7dbe04d061c67a556941f68ccfff8d0ab9a656",
+        "test_visible.py": "2f1c8a9d9a74c339ec86c25682f381b7503a2f1d01c40090ceb6886bbe7e8087",
+        "test_hidden.py": "b4bc59007649a6060f307e995ca113b768c0b4a8ac63582963b6d1faada5a759",
+        "requirement.txt": "36a17d7179b9e6c61257997eac95c9187162485c626b8d2f28c4d634ec490211"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 162,
+        "family": "sum_series",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 19,
+          "line": 5
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_93",
+      "family": "power",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to calculate the value of 'a' to the power 'b'. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_93/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_93/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_93/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_93/test_hidden.py",
+      "hashes": {
+        "input.py": "dbd3bb587fa8d7b5e8caea710c996443511521fb8689ba7264f8362a714684a1",
+        "reference.py": "67cd89cff0a5143c2c869d4caee7691fa5fc35d3684aae240a4c1c5a0262ef42",
+        "test_visible.py": "65cd24efd43d37e9518e2a25ba866ce76957e359f5f5ab7be6ff1dc64d6c5fd1",
+        "test_hidden.py": "f877d142f9fc7e6a50b84dda24be0511778dea4a1ee6a962a46e722277a80013",
+        "requirement.txt": "54658dcdbd24c4cf4b88c743e5201a7721a49fffffef0be2fbd03c41004aa7d8"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 93,
+        "family": "power",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 43,
+          "line": 9
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_126",
+      "family": "sum",
+      "category": "algorithm",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to find the sum of common divisors of two given numbers. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_126/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_126/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_126/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_126/test_hidden.py",
+      "hashes": {
+        "input.py": "301ab3e94b0f55764db94206750fe6f8a86e0c517aeb41a32264e07d60d1d5ec",
+        "reference.py": "088d6e3ec80ca2b75efb0c3fb8eb4ef1a33b4efec60ca5e641335063af910bcb",
+        "test_visible.py": "0b50311e6479b7a98065769ccf410ad7f1393d03f59eebc243f518693b39072b",
+        "test_hidden.py": "f3396aa7478c1071ef7e7410a1e2ca0322d7c2556f5f5e0e70e3c3602c3f83cd",
+        "requirement.txt": "e1a785a4e1503edb1f12a3e3b045b75eec6d2ae3ba04b3d09373b8112246dea6"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 126,
+        "family": "sum",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 35,
+          "line": 4
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_566",
+      "family": "sum_digits",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to get the sum of the digits of a non-negative integer. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_566/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_566/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_566/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_566/test_hidden.py",
+      "hashes": {
+        "input.py": "aa804a421acf207fe7fa8fbd0b2fd119b93942a4b95d2367b041acef398c7e60",
+        "reference.py": "c1e4b7905f18a9bf9070f026957059333a351efe7c23ac451409d5b0347fa245",
+        "test_visible.py": "b562db8adbbac62731a660eab6112b7477ec77bfe2414b4174c7facee0826a92",
+        "test_hidden.py": "a97ca5facd2749f8cc58bcab0d5b7e31a09eb46bb0242a2f3a12a9142f275532",
+        "requirement.txt": "a3e345ed9727598b82120d673f71efd1782165cc353b7edebef5d9ebb04fe908"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 566,
+        "family": "sum_digits",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "comparison",
+          "node_index": 5,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_573",
+      "family": "unique_product",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to calculate the product of the unique numbers in a given list. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_573/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_573/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_573/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_573/test_hidden.py",
+      "hashes": {
+        "input.py": "1ca1562911aa6c43039b409412f92fbd60d7bad32f058c22dc68c04f0d4a26c9",
+        "reference.py": "92d40488aa0e65f9c512755110253962380dae41702aec7783e113b2ba6165a8",
+        "test_visible.py": "313bc6daf616fe283af25ae171b0f9844839ed146025f388b123f9032d9c0893",
+        "test_hidden.py": "9d4d02acf3863630152994f263132b216feff077da9eb64e85739bd63ba4664c",
+        "requirement.txt": "c7516e553bb05fe47f9eb24a664519caad21cdb9f23209fed350e444401a7381"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 573,
+        "family": "unique_product",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 11,
+          "line": 3
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_224",
+      "family": "count_Set_Bits",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to count the number of set bits (binary digits with value 1) in a given number. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_224/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_224/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_224/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_224/test_hidden.py",
+      "hashes": {
+        "input.py": "b429fe53dc97a6423e93a69831fbe168ce4733bdc068ec41875fe19cf3fea2a7",
+        "reference.py": "97774429e4cf4a07eb83e97ae30f0c80ea9cabc5657e85f9821344cde7f1a3c9",
+        "test_visible.py": "c43251ede25cd8ca9665a06848e66bc201bdff54f0ee236d523f05f38c9a1683",
+        "test_hidden.py": "87c10f3f046fba7bc800a0318970e50ffbe15aa960dd63aa594f5d816f21a817",
+        "requirement.txt": "2fb9b912ca43cd919aea504be084af2ced1412903c54699a2fee42494029a07b"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 224,
+        "family": "count_Set_Bits",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 25,
+          "line": 4
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_97",
+      "family": "frequency_lists",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to find frequency of each element in a flattened list of lists, returned in a dictionary. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_97/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_97/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_97/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_97/test_hidden.py",
+      "hashes": {
+        "input.py": "7a097e51efce102c7ba5d9f99baff11e77dd95aa4fc61540c56cc8895f1fc416",
+        "reference.py": "35f5576d9dc9e278d00577d32f5d573bd97ab00928ada3b41c003d25adb7eaff",
+        "test_visible.py": "98589db0ef5dfb27e5536dcf0c57a3af14e0529627852784242b6cbd28c4c98d",
+        "test_hidden.py": "ce00bdd92144f2602cfc9b2bd9c100b9ddf62a02c4d082c99ff9525f81db3317",
+        "requirement.txt": "f63d33770705a85976163bb2798c33c66c19cc511b6d4b2ea7e3d2e5cf7533fa"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 97,
+        "family": "frequency_lists",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 43,
+          "line": 9
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_395",
+      "family": "first_non_repeating_character",
+      "category": "api_usage",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to find the first non-repeated character in a given string. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_395/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_395/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_395/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_395/test_hidden.py",
+      "hashes": {
+        "input.py": "0bb6c9d9b6db923d581ca8c10a24adb544b7e45c728ed7be3b52d7ef1c700922",
+        "reference.py": "8b74299d7cc5181f3a7c1a3368830782487e6f2fe28f9a284d461f074ebdd1aa",
+        "test_visible.py": "a804ea7e5cc1d1959eca5cbdb393f605d6caf6d5e494fa7592634d01a3471ce4",
+        "test_hidden.py": "6768c9c0835e332544c6fbfa352cb88ebd97fe3ac787c99c303a9f7a676e41b7",
+        "requirement.txt": "db224751c677fc7891b4f11b947d16c71745a20fa37330d37367c6c49a10e53c"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 395,
+        "family": "first_non_repeating_character",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "api_name",
+          "node_index": 54,
+          "line": 9
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_226",
+      "family": "odd_values_string",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to remove the characters which have odd index values of a given string. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_226/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_226/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_226/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_226/test_hidden.py",
+      "hashes": {
+        "input.py": "f34e353b25509e991a8632c32c89f0a9161a099fa0704b3f70a3e5cdaaf13cab",
+        "reference.py": "c11e13c75f1b900bc0dd63283d44931d30f00f44365f876732519eaa199ebcbd",
+        "test_visible.py": "450abd2a2e428d60c3a09319bd2efb9d302766c0300b0cde51d41730406ac2fc",
+        "test_hidden.py": "99fca2b4f50475da698d3712afaabd14ba3555ba7ace69372e698dede5b26ca0",
+        "requirement.txt": "70425e3b08ce514f1ff39c779430c84670f6d981ada457c9e7fcfeafcf207e15"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 226,
+        "family": "odd_values_string",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 32,
+          "line": 4
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_69",
+      "family": "is_sublist",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to check whether a list contains the given sublist or not. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_69/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_69/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_69/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_69/test_hidden.py",
+      "hashes": {
+        "input.py": "e24d25f43561f73103fed0bcf31b142c1ed5c4f494fe8fe41f83bf3d4e52099e",
+        "reference.py": "0e415ac803a93caf62e413a8c1716af903260579dc8f3659e4ee90a535ececf4",
+        "test_visible.py": "c26567142290e32cec7bf230566c1f5f69dc4e2fa4f2236f8b4f404b42beac24",
+        "test_hidden.py": "510b94b5d9373181c48f0743477e684ec3ce6b4ed2abed08cd67ade8688fdeb7",
+        "requirement.txt": "12f9c2422fc110beb3014459f6a70f67409e6c7a7d042c6c896b8256729b7575"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 69,
+        "family": "is_sublist",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "comparison",
+          "node_index": 10,
+          "line": 3
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_476",
+      "family": "big_sum",
+      "category": "algorithm",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to find the sum of the largest and smallest value in a given array. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_476/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_476/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_476/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_476/test_hidden.py",
+      "hashes": {
+        "input.py": "4a64cb1858f89d5975867bb5ff32f382d0b3c392a936c2fc76b105f0a86fbddf",
+        "reference.py": "9c2e2759171c996a2dfe5cfdb9cb5d432c82ccc12093c9f8cf11fbc62aa07a05",
+        "test_visible.py": "de0d7b8131b9442336d1ce30f34214e6cfc86a3b2d82de08231382bafe7cb78a",
+        "test_hidden.py": "c61bcb8f72f3309dd201e9611da800163eba48b320567ce9ef9351814f7d722e",
+        "requirement.txt": "ef3f5a13eda5f2d1d25ec2cb591115f1c524d5a285f2b6883207ad3879dcc64c"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 476,
+        "family": "big_sum",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 7,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_721",
+      "family": "maxAverageOfPath",
+      "category": "data_processing",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Given a square matrix of size N*N given as a list of lists, where each cell is associated with a specific cost. A path is defined as a specific sequence of cells that starts from the top-left cell move only right or down and ends on bottom right cell. We want to find a path with the maximum average over all existing paths. Average is computed as total cost divided by the number of cells visited in the path. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_721/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_721/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_721/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_721/test_hidden.py",
+      "hashes": {
+        "input.py": "41017c27f0c122d5e6894bb83a9ca727cf24d705881b5283044c3ec7af4f5e2b",
+        "reference.py": "da8a5f20ccbd0f1bf3f4c6897c48aff62a8e87cf9c0d42329b2e984b4af0b283",
+        "test_visible.py": "ed40dd95b98355048ecf423074b0d54549160e59685b16b72b2fb444b98088dc",
+        "test_hidden.py": "27c94c6368d14c71fc0a0dc69bc81e2ad305548ad27a5e27d1083b5470cf6c6b",
+        "requirement.txt": "4039a1a6c12c57e4eb2f322b01161d6e0ef7bda9a198bceb8a5245ab0d9f4582"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 721,
+        "family": "maxAverageOfPath",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 138,
+          "line": 13
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_170",
+      "family": "sum_range_list",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to find the sum of numbers in a list within a range specified by two indices. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_170/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_170/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_170/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_170/test_hidden.py",
+      "hashes": {
+        "input.py": "1c3a9902a5e1159430c99896e9d3d42e228925eee7af0e6df77b864231c7b1d1",
+        "reference.py": "413dac413451fd75e9e5ab1d4cc33731d8077fa4835b3fe8de91a9fdcf3ece05",
+        "test_visible.py": "4ce99a8b6a860028d62e625ef58177b8bfe56d60280a100a7ba38dc6729469bd",
+        "test_hidden.py": "02fb24f90929d41c5b52adfc687947175dd9234cd79ada2bf2a841e08ed11e1b",
+        "requirement.txt": "99b86f52b9bda6022a9284b6766636d815834ee3bd333b2fd4a530301422f279"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 170,
+        "family": "sum_range_list",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 20,
+          "line": 3
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_284",
+      "family": "check_element",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function that takes in a list and element and checks whether all items in the list are equal to the given element. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_284/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_284/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_284/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_284/test_hidden.py",
+      "hashes": {
+        "input.py": "8fcaebf189a7aa3d7aceeb7fc069cfe65da211687e14b1e5d0c61a17612141ed",
+        "reference.py": "ea8d5e5d8b911b4c9869157f79f05eb74f97a1a5574d1e623e429a3bd5c18a0d",
+        "test_visible.py": "092632a5dd1edc02f1fc315a24614130550cdc7218b0b95c6e2c0356e63bdb8a",
+        "test_hidden.py": "9fb4c99228f9081392b752018e46fc9946e9e98f21c38c93cdbd3a70dc950be4",
+        "requirement.txt": "9ae762f0aeb62b3948d9d0c5b2f225eed084bf618683cb7e71bea8826db120f9"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 284,
+        "family": "check_element",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "comparison",
+          "node_index": 15,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_141",
+      "family": "pancake_sort",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to sort a list of elements. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_141/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_141/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_141/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_141/test_hidden.py",
+      "hashes": {
+        "input.py": "32c27b82280ef6fe2d3a9bb3671e82a767cc755bab52a00e56c6f3ade492a0b7",
+        "reference.py": "c978dafe8df05f60e4ede10ac1d04e3f7068ed456b8edaebf98afb32ef0fad72",
+        "test_visible.py": "78ee62c4721353b57bfc5e112f51442d609b6aa903e80fd4f6637878c43ee2c4",
+        "test_hidden.py": "b3ff2d20ffec7b0ae726af2818bd8a3f5bf06b71f21823cfaed53b77d0feb5f7",
+        "requirement.txt": "f1eb1a2497929840acdc9425b3ef7bc148698333a4fd0b58d20bca4ea25205fc"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 141,
+        "family": "pancake_sort",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 94,
+          "line": 6
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_65",
+      "family": "recursive_list_sum",
+      "category": "data_processing",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to flatten a list and sum all of its elements. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_65/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_65/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_65/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_65/test_hidden.py",
+      "hashes": {
+        "input.py": "e1226ae636b5ace1cf11a1255d2c25c9ebfaef859180ea34ef370cc8fc30d399",
+        "reference.py": "430f43c607da0ff1e301bc425be13f7dac20cba9d396293d67ea89857e224ca5",
+        "test_visible.py": "6b371acb706270bb1b5b1625ccd5bdec7c786a5e743766fe01454f844938c0af",
+        "test_hidden.py": "2157fcb03cb65d6a25239cb232e004e39f1d95abd75d52ab1d5389b497706ba5",
+        "requirement.txt": "c13c5f0691b0ee9296fe126b3c2d6ec2c4be1bb4094e78885be05a29f3c0ca1a"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 65,
+        "family": "recursive_list_sum",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 24,
+          "line": 5
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_256",
+      "family": "count_Primes_nums",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function that takes in a non-negative number and returns the number of prime numbers less than the given non-negative number. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_256/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_256/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_256/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_256/test_hidden.py",
+      "hashes": {
+        "input.py": "224697f25c8b405d3e44ca1e05a4ee030c596400b0451176045596fe635b70cb",
+        "reference.py": "1ed1e158f1a8f2f172c16be376b76cce0ffd32145e982aaf462f8375f648f3e9",
+        "test_visible.py": "8579cc22682fcba6301403db3ce2d8e758d55ffd74896114dc3fc68136385e7a",
+        "test_hidden.py": "35d0e015aa58f2a841d414dc32540c9ee06f2741c70a5a16b9b7096384c0d1ef",
+        "requirement.txt": "083eb7650ad40255435237c5ecc391e7b8f6a5252b5b916b08eb69e36766e095"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 256,
+        "family": "count_Primes_nums",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "comparison",
+          "node_index": 34,
+          "line": 7
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_791",
+      "family": "remove_nested",
+      "category": "data_processing",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to remove tuples from the given tuple. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_791/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_791/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_791/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_791/test_hidden.py",
+      "hashes": {
+        "input.py": "2be2989f266e777030d86b9104abce5ee61a49141c33b715b0c0a8b3e0ff1a55",
+        "reference.py": "b68d3b11021fd33e9eaf7c2fd1af83ddbaad5b2d47df00b5720c9a978bfcd066",
+        "test_visible.py": "e2059e5bac99b355a6dcb12ed98bb357b5c1bb12be0c58dd7485787b29403158",
+        "test_hidden.py": "aa74b2e3380c885a60bf9fe165f08080446cb358931e16038d6dc45df1d2a3cd",
+        "requirement.txt": "01234c3dac76cf740b7e8e7bdb8aa956b1b454b7d9cfb7d76b035da9a6b15f46"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 791,
+        "family": "remove_nested",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 31,
+          "line": 5
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_468",
+      "family": "max_product",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to find the maximum product formed by multiplying numbers of an increasing subsequence of that array. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_468/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_468/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_468/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_468/test_hidden.py",
+      "hashes": {
+        "input.py": "43ea547b7985d1ed3fdfeda01d7cebd8744d0fa93cdb9799b3feb6559416bd82",
+        "reference.py": "995c1b9dd35997329562931a681efc00b0e54cf94051a14cedfbe6dd08d90fb1",
+        "test_visible.py": "a83edc7b693e379f1a236f622779fda36303df5c34ba74c978be9c361820a6a6",
+        "test_hidden.py": "adb1465dffd6305b582623d4b13638c6ccc15c2e26da70ec20754ded7844b4ed",
+        "requirement.txt": "b4722fd438c6bf1a7cabc94d75fecd9da24c18f1370afc191b20773507468943"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 468,
+        "family": "max_product",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 86,
+          "line": 13
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_734",
+      "family": "sum_Of_Subarray_Prod",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to find sum of products of all possible sublists of a given list. https://www.geeksforgeeks.org/sum-of-products-of-all-possible-subarrays/ Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_734/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_734/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_734/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_734/test_hidden.py",
+      "hashes": {
+        "input.py": "4293e57682c82ad3595281b022d2bc517f7c8f57181bf511d89be58e7433a60d",
+        "reference.py": "3e2edb18888642ed5932b7edf01451eb333b2bb67a076aa556a4e9f3faedf5aa",
+        "test_visible.py": "2322eb178633cffc044e2325c1c3eb7e6b7a6316c3027f22816a5de846a034e5",
+        "test_hidden.py": "e87391b41fa3292a3f3105955c0c95c162c86ef846b97780d9f0ab7ed4d6a4cc",
+        "requirement.txt": "de3b20361cf380b3f2d02c6717f77ef07c4c970ef6bcbe3eaa29f2e60f4bc7cc"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 734,
+        "family": "sum_Of_Subarray_Prod",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "comparison",
+          "node_index": 15,
+          "line": 5
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_797",
+      "family": "sum_in_range,sum_odd",
+      "category": "algorithm",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to find the sum of all odd natural numbers within the range l and r. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_797/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_797/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_797/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_797/test_hidden.py",
+      "hashes": {
+        "input.py": "b695aa6d21f207b601a51661a02a866046336076b3d57a2174207aed99d2bde9",
+        "reference.py": "51487f5f1224ac81d7c295ba88666831942473772fde6c49418a2e26f10d661c",
+        "test_visible.py": "1fa59d89c5e77ce051b579da0b6d26ffae84ae9db5609c8ac675b69b6cefd504",
+        "test_hidden.py": "cc26adb03ce9648d707257ff80d1a3eae03bad652c7af6cdb2740ae3b311cf15",
+        "requirement.txt": "dd353ac02cae73b310858c3650bd2080eafd64b62ca1ba85754ad6c48ba799d1"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 797,
+        "family": "sum_in_range,sum_odd",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 17,
+          "line": 6
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_163",
+      "family": "area_polygon",
+      "category": "algorithm",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to calculate the area of a regular polygon given the length and number of its sides. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_163/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_163/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_163/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_163/test_hidden.py",
+      "hashes": {
+        "input.py": "3dca1b37552bc1b1d1d4ec0b6298e543c386f67ae66823eb36196e94e9066bb3",
+        "reference.py": "00d114a9da12cb653e2c35243d5d4b1fd624cc2d24ad817c2d8c2c3274817d39",
+        "test_visible.py": "115967d01da63f478397ca30c781e94b97a742c9ac5ddef6f98d206fa044817f",
+        "test_hidden.py": "46cca7f2f3cddb8838d2e18a47cb487d7eca52fa9ea65fd26a1aff5a540c9521",
+        "requirement.txt": "e927573c86aa651afcc125ff8d2338aea5d469d95fce89a1c75d73a6ef115181"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 163,
+        "family": "area_polygon",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 16,
+          "line": 3
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_463",
+      "family": "max_subarray_product",
+      "category": "algorithm",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to find the maximum product subarray of the given array. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_463/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_463/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_463/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_463/test_hidden.py",
+      "hashes": {
+        "input.py": "c42054a067447646cdd2b8c596160b9b496b858156c8ebc482128e218d3e919f",
+        "reference.py": "9af2fba373c8254959328b86df55461dc6d6751328eb85fa8d821e9947a23264",
+        "test_visible.py": "67afe9372bd11d592807956b57700c6990fce769622a9c2afa7229fe9921d23f",
+        "test_hidden.py": "cce6efe7ea790111f1f187e8f0ef7d67cc41d386af4655087bd5f11ba9cd21e8",
+        "requirement.txt": "af145257ddaea012b2652c3515de995a480d7948d4ec1bd117c21952a7eaa4c3"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 463,
+        "family": "max_subarray_product",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 132,
+          "line": 17
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_741",
+      "family": "all_Characters_Same",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to check whether all the characters are same or not. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_741/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_741/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_741/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_741/test_hidden.py",
+      "hashes": {
+        "input.py": "477948a6a9befa44c62a260e4cc7e2bcc6084dc64dee6388f11fb731b1f91d36",
+        "reference.py": "4cb15f6da61f92ee1137fd121e49c91591f895d9fe8ee5ef4a6c6d4e3750fb06",
+        "test_visible.py": "ba14c81ad7ab07de580ef340e8cc182683172d1279920c30e495ff385b531f61",
+        "test_hidden.py": "f8a87adc846f8edb305b9f4bf1fa24a63fcf1f55f2a9888b4ca805441ec87404",
+        "requirement.txt": "0feb478af373524ef20bcd04c6e015dc2a0f33a1bf1a806857e800b4d0c92df5"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 741,
+        "family": "all_Characters_Same",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "comparison",
+          "node_index": 20,
+          "line": 4
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_638",
+      "family": "wind_chill",
+      "category": "algorithm",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to calculate the wind chill index rounded to the next integer given the wind velocity in km/h and a temperature in celsius. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_638/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_638/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_638/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_638/test_hidden.py",
+      "hashes": {
+        "input.py": "f1b11a12e54586fe615864a1717dee7a014e4153e7a5204f2bedc804bbe9ca5b",
+        "reference.py": "9bd55bd006dc4fdf965a9e761e1b4ff80ad85d6508c20d805c2ce3a9f1ab8ad5",
+        "test_visible.py": "2f334986bbba06a7e01ac52eb8ed16e99089e277f5edc5e35065d10a34157862",
+        "test_hidden.py": "e2015c1373e8db75d4e9aefdac44971641868c113efd3721e9eb6508dd29e072",
+        "requirement.txt": "072cbbbd5048e95bd0c67ecc582c249e1c4ec981fcb5fabb32c0848b9a54fd55"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 638,
+        "family": "wind_chill",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 15,
+          "line": 3
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_448",
+      "family": "cal_sum",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to calculate the sum of perrin numbers. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_448/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_448/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_448/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_448/test_hidden.py",
+      "hashes": {
+        "input.py": "e27056e381b2a482631b9c29903a9a41d0b062957e3ffbd133a2ef1bf63a977e",
+        "reference.py": "24e778ff942c8055a40e95dfc5c53a39d87cb9acbabe98298e86f6da96c0d346",
+        "test_visible.py": "7ee4291fd04d8cdf2be02e57298b9fb04bebe33ba07c9ac385f3d50734c50122",
+        "test_hidden.py": "8477195f748e425192659be5fbe9a230903dee07895b8811c61994a81e8a3708",
+        "requirement.txt": "b20db05e297c6bb830eb6db03fb7fe70c835a0af5ca0b2233b85c870fbbb558a"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 448,
+        "family": "cal_sum",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "comparison",
+          "node_index": 23,
+          "line": 9
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_564",
+      "family": "count_Pairs",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function which takes a list of integers and counts the number of possible unordered pairs where both elements are unequal. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_564/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_564/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_564/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_564/test_hidden.py",
+      "hashes": {
+        "input.py": "33bb80c17f6f5874211bbe68a7b6bf713a3b3512a4be4ce957fcd1768a3b64a2",
+        "reference.py": "91d1eb944d96f435cc455d994b7e2c6b4e6ce9fe148e2cd48264e470837d107e",
+        "test_visible.py": "aa44a3dc3b7ecb42aec9706b09ab12b3f91faa1cbffe86f17c295649b8a4e49d",
+        "test_hidden.py": "cd8a3938da4141a96043631f84df8ae181faadc0d6a89924eb71d85d88e05d38",
+        "requirement.txt": "dd4b40fcef209813edc82e3062e9991d0e7dc182cf3eeca4189a3c3c1517129c"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 564,
+        "family": "count_Pairs",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "comparison",
+          "node_index": 28,
+          "line": 5
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_447",
+      "family": "cube_nums",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to find cubes of individual elements in a list. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_447/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_447/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_447/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_447/test_hidden.py",
+      "hashes": {
+        "input.py": "8a6c815313634c46770bdac12e4f8ec1cf9c8489f264952d2e4c4dbeaec14ded",
+        "reference.py": "1e2be82e1829e7e26389c5d6be7c9e8f5f6f746ecf58794035f056fd073922df",
+        "test_visible.py": "3323e9e75705e48c9f98de2f7bba7c5446cfadd681d398c30347ffb7981dc323",
+        "test_hidden.py": "d0c751866177c11ba08f9b022f31391fa77d0df70dbc4aea771fd01bbe6774a2",
+        "requirement.txt": "00a5fa7863e9ea212fa4db0900bdc1b4bc1834caa23dc2401f67105231956cf9"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 447,
+        "family": "cube_nums",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 24,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_414",
+      "family": "overlapping",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to check whether any value in a sequence exists in a sequence or not. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_414/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_414/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_414/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_414/test_hidden.py",
+      "hashes": {
+        "input.py": "e5de08ab1348c46824669e74248fa2c4414c8d03590dbddc9daa51ac3d971c8e",
+        "reference.py": "13e9c4c5f89720f5cd38c9ada4b17db4da493c8a742e139b7986786df20ca5bd",
+        "test_visible.py": "869d473558d8e7804b8c6fd0a7bd81d8cf29ad2efc18ad75a9e6a0c1acf50d61",
+        "test_hidden.py": "71ad449e312a34db708f39fee44aaaadc7ca68be14f7cedb1a341d04137f4e9f",
+        "requirement.txt": "a1f36cce48d026f119136a5ec5eda74b7c0cc9c9cddc9197b03894ea34e6178f"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 414,
+        "family": "overlapping",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "comparison",
+          "node_index": 23,
+          "line": 4
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_267",
+      "family": "square_Sum",
+      "category": "algorithm",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function that takes in an integer n and returns the sum of the squares of the first n odd natural numbers. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_267/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_267/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_267/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_267/test_hidden.py",
+      "hashes": {
+        "input.py": "0b382e8c11d946652932491b734d0ee6d71d3a2d9bf1a60d3390c5519be57207",
+        "reference.py": "9d38bf9daa8c01a6942269665cb37b270bfc7cc28dc044a80c5b89813afcc693",
+        "test_visible.py": "0c6f45f26dd1f18ef19028d8a736e23d81f57f170264a31d5a08358fa029becf",
+        "test_hidden.py": "d2be12decd3d5aec2289682e6135be2641a000b0feba525726a536fa7105d935",
+        "requirement.txt": "490a60d7ed145e3574e351e15e2f804ca1c6d4f6ced16f75a142b76da36ff8b1"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 267,
+        "family": "square_Sum",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 19,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_777",
+      "family": "find_sum",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to find the sum of non-repeated elements in a given list. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_777/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_777/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_777/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_777/test_hidden.py",
+      "hashes": {
+        "input.py": "7f55d550c07000ba4b73fe06d0fbc0c1ba9d377a13861d4afe49bfd272d57f07",
+        "reference.py": "811a5b3cd016bd76c016ebd723f0ccb9d46e86ea587d08f4ec34319a16b6b645",
+        "test_visible.py": "816f5751ff4c123c29b8659d6bfd8452d9e77735449eb5a7975d8d9731d2b734",
+        "test_hidden.py": "b8f4e89239d7a6adfb89f31dd323e5d53d8afdb0b5a5a37daddbac2b4d931f15",
+        "requirement.txt": "ccc7349ff1eb3bf7b773f345660e76777359c372a364e08baca16830673cb9f1"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 777,
+        "family": "find_sum",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 58,
+          "line": 5
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_456",
+      "family": "reverse_string_list",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to reverse each string in a given list of string values. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_456/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_456/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_456/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_456/test_hidden.py",
+      "hashes": {
+        "input.py": "1e1ae46e99d900f9ab2fca7095961ccc1a005e524b6f69f44e343403ea212868",
+        "reference.py": "d968c40493e5753abdaf5c163b46b1eaf8472fb9f8a0acd154e54e5f7ac1a921",
+        "test_visible.py": "ae447d448dab371919c3e68faaf3f4a1c51ef7494afee6f9df16007793619023",
+        "test_hidden.py": "4fa5c1fa83df857da84b45870e11be9a2d2b7e78271fc03dc0a667d91611ed66",
+        "requirement.txt": "40976c9446bf0eb7beb90db32cd0991df7dd05caabc9f88425e2396837a2f57f"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 456,
+        "family": "reverse_string_list",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 23,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_435",
+      "family": "last_Digit",
+      "category": "algorithm",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to find the last digit of a given number. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_435/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_435/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_435/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_435/test_hidden.py",
+      "hashes": {
+        "input.py": "ec26488c62f92a89c1ba0268b37bebabed26fb4006b7390e55eb46bde3cd142a",
+        "reference.py": "4f984e7ee7c97a46e7e611ac716c0635e65acae62208264e93950c29b65ea04f",
+        "test_visible.py": "4b94a18df7c00305415634d948d55d13e6d148d43e45695f17dc62d9ac6dd153",
+        "test_hidden.py": "d86cdd3b247509df05e03ddf67225e8d031b50bfad5ec87d9a840e18174f0a2e",
+        "requirement.txt": "c9e478f4ad38099585265e27bcbe7b04146878104bf9aff8218f657e64f2e515"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 435,
+        "family": "last_Digit",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 5,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_64",
+      "family": "subject_marks",
+      "category": "api_usage",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to sort a list of tuples using the second value of each tuple. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_64/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_64/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_64/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_64/test_hidden.py",
+      "hashes": {
+        "input.py": "9f62b441d40061812d1e5e42440ce4e74eae7c6a8ad3a5657b1939b1966bd074",
+        "reference.py": "f21994adb02461a59ea8f0582a1dd321a9ac94ccd208c13fa82d57f0ba2fc7c9",
+        "test_visible.py": "d492a72253d55597c2816c56a86619af874e46f08e6ab4d6d17e202908c5fdc2",
+        "test_hidden.py": "161a2ea87c95f58f8636ad85980c0f533d30e0291cc1808fa4288658daf4aacf",
+        "requirement.txt": "444927602f1c069febf0057df8f6e999574f4f4258d1700f496d32fc2770719e"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 64,
+        "family": "subject_marks",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "api_name",
+          "node_index": 8,
+          "line": 3
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_441",
+      "family": "surfacearea_cube",
+      "category": "algorithm",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to find the surface area of a cube of a given size. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_441/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_441/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_441/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_441/test_hidden.py",
+      "hashes": {
+        "input.py": "601143b1ca642240a632f1911c2f6ff163eaa5f6fa9c943756d8bdbb41bd73e2",
+        "reference.py": "cb1a33e0678b5db5ec3989f0956c4d5a2052ddc6a617df5283a7dbab6f8ca0f0",
+        "test_visible.py": "18f872c08d49223fbb78efddf1d54a05091e11eb1a9f2d6e24c876d1a1791ddb",
+        "test_hidden.py": "5085b61811faab5d05f1f983d2a513ce72bed348bc4874cb55a608b71d7ddd36",
+        "requirement.txt": "1b3f21740f2085e8699a4f015d09011c1b62ec94a9936e949060eaa052a7e0ec"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 441,
+        "family": "surfacearea_cube",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 10,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_113",
+      "family": "check_integer",
+      "category": "api_usage",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to check if a string represents an integer or not. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_113/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_113/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_113/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_113/test_hidden.py",
+      "hashes": {
+        "input.py": "46f61b4aac875efb7bf2a04730d226d178d5fd4267c259a33ab2456ea8a67715",
+        "reference.py": "af6b95c86e8a20afb00d618f51db250543a66adae1ed0f6348c6394d89f6a7c5",
+        "test_visible.py": "30e7c08a26d2c5dd6b4b92884b71cfd7f2c11f211bb3623d74311341aad86d6c",
+        "test_hidden.py": "2bc106fc796fcf4a29b73874d709c9c12b743b5c7d1551d6b899d7cfeb44a43e",
+        "requirement.txt": "d52ae9b3910b73813f70b232b750db9ef9dd7859e3824d45f46390490f5b575a"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 113,
+        "family": "check_integer",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "api_name",
+          "node_index": 12,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_747",
+      "family": "lcs_of_three",
+      "category": "data_processing",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to find the longest common subsequence for the given three string sequence. https://www.geeksforgeeks.org/lcs-longest-common-subsequence-three-strings/ Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_747/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_747/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_747/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_747/test_hidden.py",
+      "hashes": {
+        "input.py": "5e906ca36bd2f48de627fc5ea4f4b5e57e66630afc1f68d7d6bd523aee6f135f",
+        "reference.py": "8a304332def8dd15d424bc6a02c1687aa37d8a0c80f383239f6d775d270cc83b",
+        "test_visible.py": "f8b0d00a854c62c36a841e0f2cad807e04220b389e6e5975da93f4b085549865",
+        "test_hidden.py": "14713f8428019d680b8929681d0b91b449c693a0160eb9a250e3da78c8491c21",
+        "requirement.txt": "693519afe90d3c191c5417a45f8c8713e3b82346d0ef117ee2791669e65c3652"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 747,
+        "family": "lcs_of_three",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 95,
+          "line": 5
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_160",
+      "family": "find_solution",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function that returns integers x and y that satisfy ax + by = n as a tuple, or return None if no solution exists. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_160/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_160/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_160/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_160/test_hidden.py",
+      "hashes": {
+        "input.py": "2a7cfdc50f73ae5b133644c8a7163ccb27e961af8f9ce17d2731ca798511055f",
+        "reference.py": "92a1eb13b44b0a0cf8b14920f497f88c6c491212f4e9d3871a8a179ba2318efc",
+        "test_visible.py": "c72d2b71a48415fad76b1bfb6a8c39a2c3abb269ca2517973503399560bac9dc",
+        "test_hidden.py": "c4fdea7fa545711f8723e27ca8b95d732a20b9b5d8d4983768db564d0f82a0ce",
+        "requirement.txt": "8097762781bc0330d0ea009829bde5658b3026899993c5008aef11c2fb78a7b2"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 160,
+        "family": "find_solution",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 29,
+          "line": 4
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_234",
+      "family": "volume_cube",
+      "category": "algorithm",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to find the volume of a cube given its side length. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_234/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_234/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_234/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_234/test_hidden.py",
+      "hashes": {
+        "input.py": "f45361325a632e97430e542403f2c894a8c93503420dace1d11a4cefe5448b53",
+        "reference.py": "eea30aec5453d2bc3112c02ade9da79316dbf0fd3a36e15f67dc82fe9fbdf845",
+        "test_visible.py": "e8a81d9b6c5d593db7e357fedb8b55dc5f2ff14eb96b5f5ce7e0198813c0d409",
+        "test_hidden.py": "82a7367a199b0e4e59354e91ad2741ecdcd0a66cb49a69a5651ef6caf4de730a",
+        "requirement.txt": "2fa0c71913eab4de4c07e5e22fcad5e911495edc8b4ba3c0f14ae97bc0e2c880"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 234,
+        "family": "volume_cube",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 10,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_745",
+      "family": "divisible_by_digits",
+      "category": "algorithm",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to find numbers within a given range from startnum ti endnum where every number is divisible by every digit it contains. https://www.w3resource.com/python-exercises/lambda/python-lambda-exercise-24.php Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_745/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_745/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_745/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_745/test_hidden.py",
+      "hashes": {
+        "input.py": "148297aaf016844746c861a6429dd873ae97f3dc21658109d0f9b2e75ab90cb4",
+        "reference.py": "010dfa9c209cce0ecc53b766bdefd99dd6227c65fc88d105523afc3bc0b7cb4a",
+        "test_visible.py": "b4f257bec6ae8098042de9ccebb049311f07d5ed612dc24b52df8fe166af2ab3",
+        "test_hidden.py": "01f8e5722a7a88c391991ffecc6a6e808ffeaeeca8a6e4721a704aa51415c19c",
+        "requirement.txt": "a18dab1c38ad7f6cda30a4820257717f3b0c264988988537549214ad08e9b159"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 745,
+        "family": "divisible_by_digits",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 45,
+          "line": 3
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_139",
+      "family": "circle_circumference",
+      "category": "algorithm",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to find the circumference of a circle. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_139/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_139/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_139/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_139/test_hidden.py",
+      "hashes": {
+        "input.py": "94bf8d5529d49535acb2b4acfb5ea708bbeb3699931235154074b432d976ca50",
+        "reference.py": "45e9454b44245e4654404888b9533caca691e12d154198d70dfb8a90b6853bce",
+        "test_visible.py": "44afd0bb81c338acd21e944ea8cb35cadcff21a806120934a6b9cfb463b3ddbf",
+        "test_hidden.py": "1b86d48ecf3388f91c8eba06306b3e0971e8875becaf92ba7456f91c5215aa12",
+        "requirement.txt": "13c37dc715883c9b976e6ac6704a149ccacd9e1a7e13ff5ddf7f21a1c98468a2"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 139,
+        "family": "circle_circumference",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 10,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_389",
+      "family": "find_lucas",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to find the n'th lucas number. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_389/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_389/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_389/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_389/test_hidden.py",
+      "hashes": {
+        "input.py": "fe184556e5f0440eaf8e768f76d52dbeba4617a29d43d835a08c493973e5c533",
+        "reference.py": "5b03d2357f3ef86d1e066c052bb38cb4a85143e2d1384d840a3209c51973e8bd",
+        "test_visible.py": "5b8a113a63f5e44077331280f470ea0e6ba6eba91850515feb262bb1f7cb24c6",
+        "test_hidden.py": "e223fbc1e36741387b784c2552df39267c0c7cfc13f68a49145b2d329719af7c",
+        "requirement.txt": "714fda16d78232456c324d687a8de80b9d0d82ae0b6857c2a67842de56b8376d"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 389,
+        "family": "find_lucas",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "comparison",
+          "node_index": 9,
+          "line": 4
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_420",
+      "family": "cube_Sum",
+      "category": "algorithm",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to find the cube sum of first n even natural numbers. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_420/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_420/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_420/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_420/test_hidden.py",
+      "hashes": {
+        "input.py": "c406f2670440b763632de0192060f06b3757b7bea2f6bdf70e6e647e54fb1404",
+        "reference.py": "e90909cff5ffacc6da1ae313e794aa37d05c99a9cb6893f47d85dc5fb62ac70a",
+        "test_visible.py": "f717550f4e7702ed913b595876d919c09ba0f9c417b9c8b067eb70079eb5964e",
+        "test_hidden.py": "d501799d2b6baf15fb9cb11eecec134cceb4d66961335c84143221fa61b28892",
+        "requirement.txt": "7374e5e1b8ca01939c1b22ffd271226a2aa29544972140f0e9fc42722046d198"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 420,
+        "family": "cube_Sum",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 31,
+          "line": 4
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_165",
+      "family": "count_char_position",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to count the number of characters in a string that occur at the same position in the string as in the English alphabet (case insensitive). Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_165/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_165/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_165/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_165/test_hidden.py",
+      "hashes": {
+        "input.py": "2521751f2e2d82737405669c9feec7ac4774daa7b2c097ddbab799082f42f735",
+        "reference.py": "b1f7b5258356381c771a85bd82abbf2bbe510ddbe47515665954f9c4f766371e",
+        "test_visible.py": "af54ef1c10178723b2967ba381bec4af9179a873c6ac3340eebebdb2b969e594",
+        "test_hidden.py": "106c12049cfcb655f68e1eca207565b9023671f3875aab13181cf468137efe9b",
+        "requirement.txt": "c48ee1127f16e1249abf67d6ec5d0ff1b78003738010f8c51bfd84bc03f34445"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 165,
+        "family": "count_char_position",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 8,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_444",
+      "family": "trim_tuple",
+      "category": "data_processing",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to trim each tuple by k in the given tuple list. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_444/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_444/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_444/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_444/test_hidden.py",
+      "hashes": {
+        "input.py": "fea96fcca1edfe39626ac6064e7b77875c78d0ad2b701fcd8dd8a3936a76737e",
+        "reference.py": "345768021f3b7dadfcf13a75c9cba6f8838053d802ed6c947fb3118f147435d0",
+        "test_visible.py": "60b81bcd4d0ec0c1bbd0e79215d561aa2c3febf0aa3c38f189cc6bbe56b8d07e",
+        "test_hidden.py": "73f640abf88d7a18c106f3515aed455488ec1658f5def191b4411385bf8679e2",
+        "requirement.txt": "f5157b3f455d68396dad9ac6fab23195d907b17558e45434c1af56b73a8533fa"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 444,
+        "family": "trim_tuple",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 45,
+          "line": 5
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_617",
+      "family": "min_Jumps",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to check for the number of jumps required of given length to reach a point of form (d, 0) from origin in a 2d plane. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_617/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_617/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_617/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_617/test_hidden.py",
+      "hashes": {
+        "input.py": "ab237fa3c73d4dc6918a83d6e8787546b2d842ca9dbd698ef72efdbfa1ae2f25",
+        "reference.py": "0803b6d1236a733fd894ff0f40b09d610fba2c00d94cdde8e07844437de2659e",
+        "test_visible.py": "5f2c2ee9cb5b909d56c1158d993ac11d345bb7e02c1a0e887401cd4a41e3bac4",
+        "test_hidden.py": "eaee8bc8fabb6b470ac6a1dceb0cfd02a0091c7055c29f32185c7cea13b7de37",
+        "requirement.txt": "06b214d43a20e11d11ff6b92b5223bef6a056fdf90796d2a697ccc1ea602e0f3"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 617,
+        "family": "min_Jumps",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "comparison",
+          "node_index": 22,
+          "line": 8
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_286",
+      "family": "max_sub_array_sum_repeated",
+      "category": "algorithm",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to find the largest sum of a contiguous array in the modified array which is formed by repeating the given array k times. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_286/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_286/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_286/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_286/test_hidden.py",
+      "hashes": {
+        "input.py": "fb760d5012f4c3a27ec07c39aee1802f52a4e07d22f5e7e88b85cf266d1e6032",
+        "reference.py": "e7c19059e9c0fadf672331cd49cc361722aa278349eadcd1aa9eb462baa6109b",
+        "test_visible.py": "77bf6f09df16ca8b3a006c916ed321ad5f19c64bca436da9c3c44bb74396de3a",
+        "test_hidden.py": "f0bb56ff23a4fa67fd755992e076968c8ed6c66c2fbd54f8ddcdf7e2788fb50e",
+        "requirement.txt": "ba4491a5d180490f99a2a9c55cc6d42a2db795b9e76a88fb2e9f4b05d20f7526"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 286,
+        "family": "max_sub_array_sum_repeated",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 28,
+          "line": 5
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_765",
+      "family": "is_polite",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to find nth polite number. geeksforgeeks.org/n-th-polite-number/ Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_765/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_765/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_765/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_765/test_hidden.py",
+      "hashes": {
+        "input.py": "406517e4b38a14a5ef605c85a6f7bd312aeb7b7987d1fc2ed727de18a160be50",
+        "reference.py": "9c41fe091b9ea09d689248632222b7becec10ca7baeebc32f2f7fd6e1fbb8bad",
+        "test_visible.py": "9f300f5fb546b345d8de0197dd1100d7d99cc0bebb339d1e8765632a5339609f",
+        "test_hidden.py": "578105a16cbdfbb717dfc1e40bbe2823a2e993d9942aaa6d9b3274f7c72d4c15",
+        "requirement.txt": "48e7819724c36e02e601df9dc0ad183c5b903e5575796ff5ecdbd1650c5ee0c8"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 765,
+        "family": "is_polite",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 25,
+          "line": 4
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_66",
+      "family": "pos_count",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to count the number of positive numbers in a list. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_66/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_66/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_66/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_66/test_hidden.py",
+      "hashes": {
+        "input.py": "a00115e5443292c40fa64ae84018dd9fac427968a9e8f83ac4e1e1dc194e140b",
+        "reference.py": "719d4c184b2f5f55df03fcdb3c496e424285001e3b31da1c7de333e5ee7109c0",
+        "test_visible.py": "5ed1646fecf5c319165578878f79d7046adfac6d9a886ddb0fbd82342924cc15",
+        "test_hidden.py": "122ebbc673470a16f110b723456a257c96e19dee9c0a996e4661f4ee68885762",
+        "requirement.txt": "39ec0708594eb8ad9364548f3a2c3e3a6e9109f543bdfb67c3c60d34f14ca3b1"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 66,
+        "family": "pos_count",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 24,
+          "line": 5
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_135",
+      "family": "hexagonal_num",
+      "category": "algorithm",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to find the nth hexagonal number. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_135/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_135/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_135/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_135/test_hidden.py",
+      "hashes": {
+        "input.py": "a2ae1baa7305f5ca931431ca0d21617e99e2389423d1bc5adddb31dd4ebbc60d",
+        "reference.py": "fbfcf442882253294a558791cd67406245da287a66446c69e9ce3bd1afe8682e",
+        "test_visible.py": "33e88bdf39d59f8b16de2875a89e681fe01eb037f7dc326c5934678961d4d13e",
+        "test_hidden.py": "33999c294c093bdf5cabd7663a5232ea7c8593e9115095f23f21b78cc41d38aa",
+        "requirement.txt": "ad81a57d6c3178d1aa52754e1654d52914aaff2aca012f94a09403e0f7d6edb3"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 135,
+        "family": "hexagonal_num",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 5,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_291",
+      "family": "count_no_of_ways",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to find out the number of ways of painting the fence such that at most 2 adjacent posts have the same color for the given fence with n posts and k colors. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_291/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_291/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_291/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_291/test_hidden.py",
+      "hashes": {
+        "input.py": "e11a13fac7e20374036fb77b4c883768e222358a69a6e96fdf3ca13ff0baaab7",
+        "reference.py": "b4550b198c0b585dbba229f9c2281108af4ce793907299415cf354cbccd8e010",
+        "test_visible.py": "89c8af66b1a2ff2fd33a444de2d49100ac7ca0a5f76adbfd39884c69732b36b2",
+        "test_hidden.py": "956a030538e39b8d9b910bc44487228e612a9286fc3ba5648ee874d0c755711e",
+        "requirement.txt": "71c7cd6e40fa8aeb9e17195d06386174de16ccfe8158a7907ae873e5cbc0fbfe"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 291,
+        "family": "count_no_of_ways",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 101,
+          "line": 8
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_438",
+      "family": "count_bidirectional",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to count bidirectional tuple pairs. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_438/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_438/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_438/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_438/test_hidden.py",
+      "hashes": {
+        "input.py": "646b8c7895f936e12b0d758c3003fa736852e7030bbf982f96bec423ca6de913",
+        "reference.py": "556fbcd10708db318ebdfa6a4f94359273a86b36aecaad08b3204366c7b6cc59",
+        "test_visible.py": "2e2132e6c86be1e98c252f41ecf2dfe5b7e1f7b8d538397d26b51f514198d82c",
+        "test_hidden.py": "812bb3e0b362efdd2048e6357cce510f7923b5e0346b59f338d94dbc70aba704",
+        "requirement.txt": "d88bf3aa071339bbf66c41431f7148688c3cc5d1998a01710e9f2ec73a6b787c"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 438,
+        "family": "count_bidirectional",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 8,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_94",
+      "family": "index_minimum",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Given a list of tuples, write a function that returns the first value of the tuple with the smallest second value. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_94/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_94/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_94/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_94/test_hidden.py",
+      "hashes": {
+        "input.py": "76f62d30e2427cf26d996fa1327cece78c494e839ab509d85b9c3704c4f42a82",
+        "reference.py": "a134ea614cc1525d16de9fcf1e22a6f62c270fa14f25d0c7cce4f9e719609f3f",
+        "test_visible.py": "2ac8eae5fb0ad9835e1facc3d9b36b948bd408f55056a29a4513a97ee2780e40",
+        "test_hidden.py": "66f6bad88594829f75d932b20671d56892d0165c70775b3753771e092b426b64",
+        "requirement.txt": "7e0a37985d05a102b0bc1754e2fd406b8db298664fded772eeabc436d05adeb4"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 94,
+        "family": "index_minimum",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 13,
+          "line": 3
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_281",
+      "family": "all_unique",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to check if the elements of a given list are unique or not. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_281/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_281/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_281/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_281/test_hidden.py",
+      "hashes": {
+        "input.py": "4ccb6bac2d8f9e9a32eb30b7dbd2ed24ceef681bb850be134056823f58515d48",
+        "reference.py": "a5c2c0e7fbd4d2c50832fea7740ab365d48b76f0032b2a6de39dce1a6cf22806",
+        "test_visible.py": "b0e2af0f43631352f8ff33182e1b94f85a39ce2426365ebaca0062cd4e7cdd8e",
+        "test_hidden.py": "107d95c4fe2661de127e64b6079eca05298426a67e7562c09b387d281b5729ef",
+        "requirement.txt": "2969bb2a34030d08c7e77589312aaa65abc9a2c7e21690532120917187e0d90e"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 281,
+        "family": "all_unique",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "comparison",
+          "node_index": 6,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_560",
+      "family": "union_elements",
+      "category": "data_processing",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to find the union of the elements of two given tuples and output them in sorted order. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_560/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_560/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_560/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_560/test_hidden.py",
+      "hashes": {
+        "input.py": "5767ff5ce53d79f429381171f04d1e8f25df0a381a39b96d56e58883daaf62d6",
+        "reference.py": "998fc9f84f01a392431843bbf8479e02f45bfa2480da217d6d53e1f38794c260",
+        "test_visible.py": "752d11a75018f7085e3f55a08b52ffb0ef90dd624ca08ace14e3362b01569aff",
+        "test_hidden.py": "c4a3faff91be05ed34bd79b5e003cc4bfafd05f265bb99b4df0af80bc2ef3a4c",
+        "requirement.txt": "45d12cc7ba06926cf8b286d5da3160d6e3bd1bd8ba3ec5b566f5d10da786fb61"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 560,
+        "family": "union_elements",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 16,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_764",
+      "family": "number_ctr",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to count number of digits in a given string. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_764/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_764/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_764/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_764/test_hidden.py",
+      "hashes": {
+        "input.py": "aa85c2a016545531bfa135a05c377de3de11e02d94a4214b00c9a53089685521",
+        "reference.py": "c37811905e38f61f2b0e76de9f789d0ec1ae47d4b631d247f4b61aa89a6c3ae4",
+        "test_visible.py": "410d8516c6b467bfcca7722b1544cdab259ead84e39c09ceb9ec308df14eecf6",
+        "test_hidden.py": "2ac8d9802a04191fcb350ce0f12695a6503f3b74f7b0f2a28181ae0af91e23aa",
+        "requirement.txt": "d1d4221b316defeef9d3cb4712786e126b5ad8f1c703f0fc2c283b998fa0c239"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 764,
+        "family": "number_ctr",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 8,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_598",
+      "family": "armstrong_number",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to check whether the given number is armstrong or not. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_598/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_598/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_598/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_598/test_hidden.py",
+      "hashes": {
+        "input.py": "58c15f125505b350de8440370176570e52ff192218c175ad1ac4ab989228658f",
+        "reference.py": "1998633f49e8c05ac51b14c9cd2724c2bbe4d084b47392d4864e40c488ec855a",
+        "test_visible.py": "375ea950a4ae181cfcee3d5b5f74b5ff7b6370b863291bdd19e97621901e7926",
+        "test_hidden.py": "7d566c866d5817913b0322ae6eece1fa96a5967b7a509f1daa9de20c31c399c9",
+        "requirement.txt": "3b1f4b6926e406c7b70aa73b4e60767577651dbb40f3c0ec378fbd5271856096"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 598,
+        "family": "armstrong_number",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "comparison",
+          "node_index": 26,
+          "line": 13
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_616",
+      "family": "tuple_modulo",
+      "category": "data_processing",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function which takes two tuples of the same length and performs the element wise modulo. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_616/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_616/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_616/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_616/test_hidden.py",
+      "hashes": {
+        "input.py": "e58077bddcf041a102eaa2a917de37cf1c51fa80160e5d98436c33e0eea7619e",
+        "reference.py": "2c68e695e7437360b9740dc15aae3c2417ac54f9b05c8c5d066fb83ebda14ae0",
+        "test_visible.py": "3357c6b92eaf6ba541a56dd2486ca6a83db590618384984360ce4e011ebe78ef",
+        "test_hidden.py": "bd03d9195bc0df627dd15f42dd5966fbab9ef319ef5f69e105e269aeef82b945",
+        "requirement.txt": "1ad40c05974024fdeec9534b0602bcd79fea1b481e3a464b63ebc044de15a815"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 616,
+        "family": "tuple_modulo",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 15,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_763",
+      "family": "find_min_diff",
+      "category": "algorithm",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to find the minimum difference between any two elements in a given array. https://www.geeksforgeeks.org/find-minimum-difference-pair/ Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_763/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_763/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_763/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_763/test_hidden.py",
+      "hashes": {
+        "input.py": "44b776eb96c76e0a993ebecf20cc7e256820269f342c65f58a364db36b75cb8e",
+        "reference.py": "11f11da560084b3885d0b28f8419c78a802c2d41c497d0b85c2f060de907ddf3",
+        "test_visible.py": "f9676b24149fe1404e1d834ad4a06717886e9b880f52716d982759765720b36a",
+        "test_hidden.py": "32f42d737a56dd75cf04cdb635fb7c18ccc0e7b2c0c5054d0a83023ec3c3e6aa",
+        "requirement.txt": "4084f12b5761056021469f78f693a2ff063093948b14846e3210acf4e5fc81a4"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 763,
+        "family": "find_min_diff",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 51,
+          "line": 5
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_229",
+      "family": "re_arrange_array",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function that takes in an array and an integer n, and re-arranges the first n elements of the given array so that all negative elements appear before positive ones, and where the relative order among negative and positive elements is preserved. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_229/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_229/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_229/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_229/test_hidden.py",
+      "hashes": {
+        "input.py": "0122d432e867be2e2f8766c1ec7962329e0feceed5680f6824485e50be64f83d",
+        "reference.py": "3ec598f0b9eca6efd6203f628137abfa4730dd06c7dea96ff22b2cf140561d78",
+        "test_visible.py": "29b9c17437e6f8cc67230723669e9eb71ca973d20992baa2fc8881eb04a7a798",
+        "test_hidden.py": "7ac6c7079c191acb08321978aeb82fcdd1c286872ae10eb4d8e9c11f7005bfd6",
+        "requirement.txt": "799f82e7f4f231dc070ecbf2c2c7e6502cd70d6970f46dfc8d5bf6c477ac151e"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 229,
+        "family": "re_arrange_array",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 58,
+          "line": 8
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_461",
+      "family": "upper_ctr",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to count the upper case characters in a given string. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_461/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_461/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_461/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_461/test_hidden.py",
+      "hashes": {
+        "input.py": "188b159d23c39d90d5d4be7676a2e10b84dd643768a2039247df322a4a8f9312",
+        "reference.py": "38173aa9338fa543ae2b214d130c3e0950764fbabec20d09a4dc4cb3a0c0c751",
+        "test_visible.py": "549dd2ce9f8288788bd46beed751c619cec652abded831c031e319a74c1550c9",
+        "test_hidden.py": "e8252e6808bc75913cbdfee7f175f0d814b6db49a62405d9a5db111f640c3a6f",
+        "requirement.txt": "4f24a55892a93eada03c6f62bf83cdb427af2801a9f75be7e01b44715268fbbb"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 461,
+        "family": "upper_ctr",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 7,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_728",
+      "family": "sum_list",
+      "category": "data_processing",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function takes as input two lists [a_1,...,a_n], [b_1,...,b_n] and returns [a_1+b_1,...,a_n+b_n]. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_728/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_728/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_728/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_728/test_hidden.py",
+      "hashes": {
+        "input.py": "42128066776d758fec23390862a24ed1ba326e5a92d5369e8d78d0d311799341",
+        "reference.py": "6e53afbf842548a829c7a8e44f493b6131a2194e51e1a6007b59cf09431043ec",
+        "test_visible.py": "9dc8c07f958ca7ba73e816d8802887b198803b8b26a9c8d8fabf6bf1ecf4d591",
+        "test_hidden.py": "0c787d1cdc0c2ce913368284c1bcbf80a6e8e7f4643e90fe52675b6c5661f5e1",
+        "requirement.txt": "6841eab6eea886cd289ba6fd92e5b6d7d9d71c60bc371fcced45f013490f6397"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 728,
+        "family": "sum_list",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 11,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_6",
+      "family": "differ_At_One_Bit_Pos,is_Power_Of_Two",
+      "category": "algorithm",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to check whether the two numbers differ at one bit position only or not. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_6/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_6/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_6/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_6/test_hidden.py",
+      "hashes": {
+        "input.py": "3dbf15da63f4b163e341d07817fb57a2609f2199a7f90457ab58b252a1c6d798",
+        "reference.py": "da071ad8b430fabfaf0c478b3a34270d5aa751ca3dcb5f878fd9728aad3824c1",
+        "test_visible.py": "741d872b3cd04140f8a1ee473d32f31f850c9ea2951ca30294ecbe90b8c291bc",
+        "test_hidden.py": "e571943527af89ae1ced9bd1ad735006dbe834924217c993e1ea2d2963601a5c",
+        "requirement.txt": "ef0b26fb1caca2f897869145dea5dc333013036336e2a7db99e47a8f6c15d8d1"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 6,
+        "family": "differ_At_One_Bit_Pos,is_Power_Of_Two",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 26,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_726",
+      "family": "multiply_elements",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function that takes as input a tuple of numbers (t_1,...,t_{N+1}) and returns a tuple of length N where the i-th element of the tuple is equal to t_i * t_{i+1}. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_726/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_726/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_726/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_726/test_hidden.py",
+      "hashes": {
+        "input.py": "6ad44a7cea6b48f5c5abad5a7b524aa504570e113aac1202c173ed33a53aa900",
+        "reference.py": "ec2399e567e4e1dc98eec2824b02bd315ec42a46db1af4453d961e9cf0181534",
+        "test_visible.py": "be7034c95ee4a73e91abf422abe9c73d82c623ae3c0881cfd0262905fb5fea61",
+        "test_hidden.py": "574675863bbb8b37daf1400fc7742c6cca0e0e219ba7ec55edeff9f9d29b2135",
+        "requirement.txt": "830d1c7afa10e77a2ba4ab33f57bfa29f6f67566b826f1ecbd53ef6f4a27ba8b"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 726,
+        "family": "multiply_elements",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 37,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_796",
+      "family": "return_sum",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write function to find the sum of all items in the given dictionary. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_796/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_796/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_796/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_796/test_hidden.py",
+      "hashes": {
+        "input.py": "775832cf5b18c5377bb65ec053b445b286dcd2a5b1be3059548df7ced58b5b1f",
+        "reference.py": "4816550684cce8d039137c058e94053ba93d6f094b5b904b1566430c2447f654",
+        "test_visible.py": "024996983e404c9c657301d6d628635423380102973ab99233e02f2435341630",
+        "test_hidden.py": "efd22b96d78d0649563711a183f9369a98aa53b6526a7c1bf81fe81469dff609",
+        "requirement.txt": "10da7ca8dbb3520f673b57a2bb81cfa327dfa405f316ff48d93b48667180e09d"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 796,
+        "family": "return_sum",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 8,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_301",
+      "family": "dict_depth",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to find the depth of a dictionary. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_301/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_301/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_301/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_301/test_hidden.py",
+      "hashes": {
+        "input.py": "07e0c81ed7a5757a71afb9a8075602f7dabc92ec3446814cbad9d91d40b8dc09",
+        "reference.py": "c2e243d26df543c0e8edf7c0b204bb2fa00b1185a90d0dec92be19d88dc8df69",
+        "test_visible.py": "9cef0053da36a0a1a08a3d53fdb713b97189bae86e00e87e19e0fe5a4d27b2ff",
+        "test_hidden.py": "c6c140baf77fcae0893c716a4318b2f25009d70c6beeac82978170196272da07",
+        "requirement.txt": "9a113741e08b40f5941bbe1ed36d2928b381e6105c8484e605211126dd2d559f"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 301,
+        "family": "dict_depth",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 16,
+          "line": 3
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_264",
+      "family": "dog_age",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to calculate a dog's age in dog's years. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_264/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_264/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_264/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_264/test_hidden.py",
+      "hashes": {
+        "input.py": "2fb545785901ffc89390e955885298e8d2d95db250c70daa1e7e5784ed92bb46",
+        "reference.py": "bc76e2ba01368bbc4d8a36f807572afec7ad3c5c41197d0f92bf46d281c29828",
+        "test_visible.py": "bd893ab3797e09aef9f0869bc83cbbc1671f6ae91a6cbb5eb1bae11dcf4db32b",
+        "test_hidden.py": "975853b420806bbca6b91d37286004fec221baa471158b99605d970bf612e4ba",
+        "requirement.txt": "e031e33d0b3c1e3a5f23d5374e97f74d6b7d5fcc0b7c9ea264d3988608591e71"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 264,
+        "family": "dog_age",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "boundary_constant",
+          "node_index": 43,
+          "line": 7
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_731",
+      "family": "lateralsurface_cone",
+      "category": "algorithm",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to find the lateral surface area of a cone given radius r and the height h. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_731/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_731/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_731/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_731/test_hidden.py",
+      "hashes": {
+        "input.py": "fb597bef6ca67f7c8ff5c9e7ec2bab499fa83a8fa293e4c0e9d955e811a931fa",
+        "reference.py": "228ef0f1b7a136c110d05e613fad0d9005486c8a856ae997b6153cf18481c752",
+        "test_visible.py": "3cecb48926adcd05e0d56e78e8b3742c5a4d91cd92b2a3798d46fe964c5839f2",
+        "test_hidden.py": "f4e63df30c4f491dc828eccb6b652b3cc767bf4a2e669d55a85fc7c7f7711cd2",
+        "requirement.txt": "a354947206f1b80a3991e19ab68c9077f8b1233f8ce29807225b875302721ee0"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 731,
+        "family": "lateralsurface_cone",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 27,
+          "line": 3
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_771",
+      "family": "check_expression",
+      "category": "algorithm",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a function to check if the given expression is balanced or not. https://www.geeksforgeeks.org/check-for-balanced-parentheses-in-an-expression/ Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_771/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_771/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_771/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_771/test_hidden.py",
+      "hashes": {
+        "input.py": "75add55e9542bb43e820513daf13a07d5dc02d4fc8e0261c20f0a23c99f93c2e",
+        "reference.py": "5550188d8959f8d783d1bd6693d2a6dcdc78804b6bd594d6517241946a12c975",
+        "test_visible.py": "eaca17bbe4943c0fddf4a8108433593743dd3e8f68b38f40334639fe28f41b73",
+        "test_hidden.py": "ecb1caf246fcf7e8d40f0f7faa4099521e594c54033342168dc58b3a8c21838b",
+        "requirement.txt": "9b5e6846ec6dcdd4adeeff8fab7e3dbba18a7b001b1837d378f42089d873d9d2"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 771,
+        "family": "check_expression",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 101,
+          "line": 13
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "mbpp_558",
+      "family": "digit_distance_nums",
+      "category": "algorithm",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Write a python function to find the sum of the per-digit difference between two integers. Preserve the existing function signatures.",
+      "code_file": "data/holdout100_v1/cases/mbpp_558/input.py",
+      "test_file": "data/holdout100_v1/cases/mbpp_558/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/mbpp_558/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/mbpp_558/test_hidden.py",
+      "hashes": {
+        "input.py": "f92d8509217945eeb11f37f366c837d934263562b16c870912ae4c91fabea124",
+        "reference.py": "ee5a1ec07c7a86f9bb2dd5468b51514797128befd2d9591c539700527da7c477",
+        "test_visible.py": "a01c011222cb9ccff49d4f73a2cd2a48f3d842fe5e2ec408e5b708e448e7c530",
+        "test_hidden.py": "f6cfdb9a55519da3d757d6559d1be7dc1773e2312a06a63685daf1fa5f1384a6",
+        "requirement.txt": "993d9467fa9532bb8bb82a33962fa6af7b2afbf1f29ce59a48b1153b3aa3c7cd"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "mbpp_synthetic_mutation",
+        "task_id": 558,
+        "family": "digit_distance_nums",
+        "revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+        "url": "https://github.com/google-research/google-research/blob/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "production_bug": false,
+        "license": "Apache-2.0 repository license (archived)",
+        "mutation": {
+          "kind": "operator",
+          "node_index": 19,
+          "line": 2
+        },
+        "test_split": "deduplicated upstream assertions, fixed hash split; heldout not shown"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "stdlib_relative_url",
+      "family": "relative_url",
+      "category": "api_usage",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Resolve a relative URL against its base, including parent paths and absolute targets. Preserve solve signature.",
+      "code_file": "data/holdout100_v1/cases/stdlib_relative_url/input.py",
+      "test_file": "data/holdout100_v1/cases/stdlib_relative_url/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/stdlib_relative_url/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/stdlib_relative_url/test_hidden.py",
+      "hashes": {
+        "input.py": "759f4198fb2ca4760ab3186b0cb0485d46266c060d2b74b5d04f87b96874a81d",
+        "reference.py": "7ce1326b10c0e188ca4a0899ffe69c27c69f502a09c78b24ec6bbaf46a52780e",
+        "test_visible.py": "03fabcf43f05fe48e64e97565d2088b96c9bdb96d972e55ef1b3acaf7b65cf6d",
+        "test_hidden.py": "cdee9d84180f5e88151a7c35fc645aeaf1d6c6aa5b211a161b3f57495c355318",
+        "requirement.txt": "e34855cf640a3c138df00b66ff7ee9205f8ec197f7600ecad7524920d3572668"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_documented_contract",
+        "family": "relative_url",
+        "url": "https://docs.python.org/3.12/library/urllib.parse.html",
+        "production_bug": false,
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "stdlib_form_decode",
+      "family": "form_decode",
+      "category": "api_usage",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Decode form-encoded text: plus means space, percent escapes decode as UTF-8. Preserve solve signature.",
+      "code_file": "data/holdout100_v1/cases/stdlib_form_decode/input.py",
+      "test_file": "data/holdout100_v1/cases/stdlib_form_decode/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/stdlib_form_decode/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/stdlib_form_decode/test_hidden.py",
+      "hashes": {
+        "input.py": "5ce9bcd0dfea3d2019c5305724832b9a20a267ebc32a1c38f1124a6d6af80a73",
+        "reference.py": "067035a8dc38e407bbccc5c9d8174e293db3b17335393bbfe5e78ca385282414",
+        "test_visible.py": "b09a712b31bde1f6c86ba02319a43c8e501ea8300aed26ec3226c97b28a2b4ea",
+        "test_hidden.py": "af7b6fcc186779a4ae49c3ec16b13d75d6222b4c5b20fca275e37b74a912b503",
+        "requirement.txt": "415a82fdfd6bb545602771271469cfa065044a50bb4efbecf010848aedb1eb33"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_documented_contract",
+        "family": "form_decode",
+        "url": "https://docs.python.org/3.12/library/urllib.parse.html",
+        "production_bug": false,
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "stdlib_ieee_remainder",
+      "family": "ieee_remainder",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return IEEE 754 remainder: x minus nearest integer multiple of y, ties to even. Preserve solve signature.",
+      "code_file": "data/holdout100_v1/cases/stdlib_ieee_remainder/input.py",
+      "test_file": "data/holdout100_v1/cases/stdlib_ieee_remainder/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/stdlib_ieee_remainder/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/stdlib_ieee_remainder/test_hidden.py",
+      "hashes": {
+        "input.py": "4e942dda236ea032f66e7e4d5329d93c06b99b9ef744e5ec31ac1122fdbf52d6",
+        "reference.py": "7c1a367042cb6282611dd29434fbe4691431dcd86f36aa917fb1cfb3aa8932f6",
+        "test_visible.py": "255aa3f7a78bb25fb432e7cce259f3959d9ba0c49069e26360c2bee1dc387245",
+        "test_hidden.py": "11d6a0e890d3444843d9104ab403b28361564d5105a85c34d8e7f952cd0ae3fd",
+        "requirement.txt": "389bb5d9ac1bf4f101586d3c25be5146227e8e2a4218c37b41a4862f859ce174"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_documented_contract",
+        "family": "ieee_remainder",
+        "url": "https://docs.python.org/3.12/library/math.html",
+        "production_bug": false,
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "stdlib_fractional_parts",
+      "family": "fractional_parts",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return (fractional part, integer part) as floats, both retaining the input sign. Preserve solve signature.",
+      "code_file": "data/holdout100_v1/cases/stdlib_fractional_parts/input.py",
+      "test_file": "data/holdout100_v1/cases/stdlib_fractional_parts/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/stdlib_fractional_parts/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/stdlib_fractional_parts/test_hidden.py",
+      "hashes": {
+        "input.py": "8ae632ada0b0d1fb3b713537b6823d5a7fea949d01198265e72b120ae17449dc",
+        "reference.py": "4ab8c6b8d3aebea9627a1b15f5bdc3c3c8424f49d4001a376704fa1f322fb65d",
+        "test_visible.py": "5eae4c6a935f2e22d4da8de1f65667f5b0b79923124be4a3ef75d790f0b295a8",
+        "test_hidden.py": "dd7b8f298772610e704654d56c94a6fd04b78f907749874f55be4724461000ff",
+        "requirement.txt": "5ec8772400dec990dc6fc27e9fe6f141fe0a2ffc1b85da144cb6f001652bbf73"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_documented_contract",
+        "family": "fractional_parts",
+        "url": "https://docs.python.org/3.12/library/math.html",
+        "production_bug": false,
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "stdlib_binary_decomposition",
+      "family": "binary_decomposition",
+      "category": "api_usage",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return mantissa and exponent such that x=m*2**e, abs(m) in [0.5,1) for nonzero x; zero gives (0,0). Preserve solve signature.",
+      "code_file": "data/holdout100_v1/cases/stdlib_binary_decomposition/input.py",
+      "test_file": "data/holdout100_v1/cases/stdlib_binary_decomposition/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/stdlib_binary_decomposition/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/stdlib_binary_decomposition/test_hidden.py",
+      "hashes": {
+        "input.py": "1ddeb5ceff3423ea467a6de0161487a26243d9e107120175609eb0f70f3ac881",
+        "reference.py": "801b0bc7ae5e00882861e1048e2f4414cd85389ba30a9760937f0686daddd763",
+        "test_visible.py": "330bb5525d9031b5bd7bb6aef6cf87d6ca3999c9ebcfe3aed55e2740ef1e168b",
+        "test_hidden.py": "536780b51fb1bfddd126889ab82db183e68fcf9d1ec1815311239eb2055d69f9",
+        "requirement.txt": "10ef407939b0c97b6e582e34b6ee3d2a319fb8da20322000683268c08b610fe8"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_documented_contract",
+        "family": "binary_decomposition",
+        "url": "https://docs.python.org/3.12/library/math.html",
+        "production_bug": false,
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "stdlib_sign_transfer",
+      "family": "sign_transfer",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return abs(x) with the sign of y, including the sign of negative zero. Preserve solve signature.",
+      "code_file": "data/holdout100_v1/cases/stdlib_sign_transfer/input.py",
+      "test_file": "data/holdout100_v1/cases/stdlib_sign_transfer/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/stdlib_sign_transfer/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/stdlib_sign_transfer/test_hidden.py",
+      "hashes": {
+        "input.py": "b7644998f742f54a628c8e1ccbcca596aa225871a6a320227e912f9eed71bf0c",
+        "reference.py": "948505a9f344e4d6144d4177cb392fed217b022ed87571344e62cfc27ee27f01",
+        "test_visible.py": "0fe57180dcf3ee199c11aeaac8f3995d3324353ae334e99e7bde0a88839ee865",
+        "test_hidden.py": "25abfefb7ce4b0aa02598541e6f779c82788edd1d410ed98eda0074acd1b9e33",
+        "requirement.txt": "677ccc5f05155cf33779791b491852d918d9c1a620884dac9cfee4e47eea5903"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_documented_contract",
+        "family": "sign_transfer",
+        "url": "https://docs.python.org/3.12/library/math.html",
+        "production_bug": false,
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "stdlib_initial_prefix_skip",
+      "family": "initial_prefix_skip",
+      "category": "algorithm",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Skip the initial consecutive values below threshold, then retain every remaining value in original order. Preserve solve signature.",
+      "code_file": "data/holdout100_v1/cases/stdlib_initial_prefix_skip/input.py",
+      "test_file": "data/holdout100_v1/cases/stdlib_initial_prefix_skip/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/stdlib_initial_prefix_skip/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/stdlib_initial_prefix_skip/test_hidden.py",
+      "hashes": {
+        "input.py": "afa90b5a66f42c6f61cc02e2fecf85a5478a1078baea3fcb018a068f0403db62",
+        "reference.py": "687995a9a023febaad70c9ac3e5edc2bbf7628ba64c7e4d22b994ddd8f4bfa75",
+        "test_visible.py": "8792149dcca8959e33179c40a9ca6c6bfe6cd48679c78372b47b7465e6e4df5e",
+        "test_hidden.py": "ea820753700f846254e17c650a2b1f6f41f5d0cf0c3601cf616ef995ece9395a",
+        "requirement.txt": "0140a6feb1b391870fe652dfd4cf33ecd229119d03dab0c2921da6edbffcd1d1"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_documented_contract",
+        "family": "initial_prefix_skip",
+        "url": "https://docs.python.org/3.12/library/itertools.html",
+        "production_bug": false,
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "stdlib_initial_prefix_take",
+      "family": "initial_prefix_take",
+      "category": "algorithm",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return only the initial consecutive values below threshold; stop at the first value reaching threshold. Preserve solve signature.",
+      "code_file": "data/holdout100_v1/cases/stdlib_initial_prefix_take/input.py",
+      "test_file": "data/holdout100_v1/cases/stdlib_initial_prefix_take/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/stdlib_initial_prefix_take/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/stdlib_initial_prefix_take/test_hidden.py",
+      "hashes": {
+        "input.py": "abf80de16552d3f3f4727cc9f5a12e647e5f95604e8cfcda541ca4ec3d1e2562",
+        "reference.py": "2e4662cab1e95c2ec1def07702feef471bc79b309b1b69f46b8f26cff93787e7",
+        "test_visible.py": "a6c378958bceb2b9cd411fd98253bfb8607646e47f1d0f63d8c4347a7c0f8c0a",
+        "test_hidden.py": "1ea75966025bf4419bcf8f4568979aa6ccab4fbc620f099c05a3e58024a8becd",
+        "requirement.txt": "320466e823dc9d81dd8efb234f537c7976310c3a86dd7e4e18edd90aee0ae4eb"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_documented_contract",
+        "family": "initial_prefix_take",
+        "url": "https://docs.python.org/3.12/library/itertools.html",
+        "production_bug": false,
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "stdlib_selector_mask",
+      "family": "selector_mask",
+      "category": "data_processing",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Select data where corresponding selector is truthy. Stop when either input is exhausted. Preserve solve signature.",
+      "code_file": "data/holdout100_v1/cases/stdlib_selector_mask/input.py",
+      "test_file": "data/holdout100_v1/cases/stdlib_selector_mask/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/stdlib_selector_mask/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/stdlib_selector_mask/test_hidden.py",
+      "hashes": {
+        "input.py": "945aaa766e1ebb59c930ced7059f90cfa015c7a63e1ee6a9a5ae47a6c90af2c5",
+        "reference.py": "cd087f4438e34fa99722dc3bfb32e9e8b048572265c615486ec8bafe0e2e3ab5",
+        "test_visible.py": "07cace432c971d348f74d85ce5fdcca3957b2664f043aeb7d5a1d420e3eb7e24",
+        "test_hidden.py": "fcdeea57d1cd1ca860db8902317fe439ee64f616cdf9f6fc6cd30fe3960cf3de",
+        "requirement.txt": "526ada27f7a903759576b65d02383daec7fe006aff1db5df6754e536680b20fe"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_documented_contract",
+        "family": "selector_mask",
+        "url": "https://docs.python.org/3.12/library/itertools.html",
+        "production_bug": false,
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "stdlib_repeated_combinations",
+      "family": "repeated_combinations",
+      "category": "api_usage",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return all length-r combinations with repetition in input order. Input elements are distinct. Preserve solve signature.",
+      "code_file": "data/holdout100_v1/cases/stdlib_repeated_combinations/input.py",
+      "test_file": "data/holdout100_v1/cases/stdlib_repeated_combinations/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/stdlib_repeated_combinations/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/stdlib_repeated_combinations/test_hidden.py",
+      "hashes": {
+        "input.py": "1dd754850d6ac205e90183ef21a4cb243648cd36c9ad9c544009acac28e70a9c",
+        "reference.py": "7c3eb326d5c68b52072c2ec395a73cd6a6b39433ee3b8dcfefe470b848981fab",
+        "test_visible.py": "e76b00c413a0cb777b885bce7c13a4f48e0a49bb32d675750fce46a7b2ccdb28",
+        "test_hidden.py": "2aa9bca4f9547fcbc61024b13b1f404829fdcd10c5c252c5c1a06c16b0bd3ec3",
+        "requirement.txt": "6bb11d0c64e597a353e124fb2c7f2fae0f77d2619786c4075c1732872c5996f9"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_documented_contract",
+        "family": "repeated_combinations",
+        "url": "https://docs.python.org/3.12/library/itertools.html",
+        "production_bug": false,
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "stdlib_power_pairs",
+      "family": "power_pairs",
+      "category": "api_usage",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "For each (base, exponent) pair return base raised to exponent, preserving order. Empty input returns empty list. Preserve solve signature.",
+      "code_file": "data/holdout100_v1/cases/stdlib_power_pairs/input.py",
+      "test_file": "data/holdout100_v1/cases/stdlib_power_pairs/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/stdlib_power_pairs/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/stdlib_power_pairs/test_hidden.py",
+      "hashes": {
+        "input.py": "207b1e445ff0ca68639a5d844bd8480395d9470e60c70389a0dc831aaab706fe",
+        "reference.py": "7c5508a731924e1777fb08f642bc48842c195bc9ad080e3cff9da4e8b362475b",
+        "test_visible.py": "77662251811a7b7077e2d629febfe41246bfb8e07755484cfefc462cc7e01470",
+        "test_hidden.py": "fa3048d5871c087b91734b45c74b7bf8b547eb2ef6579cb1e795a2c04a33041b",
+        "requirement.txt": "e1bcdd3419b0d8479e9d954125cbf2c19092b83fb25bc743ff7e6dfcba84b34b"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_documented_contract",
+        "family": "power_pairs",
+        "url": "https://docs.python.org/3.12/library/itertools.html",
+        "production_bug": false,
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "stdlib_consecutive_groups",
+      "family": "consecutive_groups",
+      "category": "data_processing",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return (value, run length) pairs for consecutive equal values; separated runs stay separate. Preserve solve signature.",
+      "code_file": "data/holdout100_v1/cases/stdlib_consecutive_groups/input.py",
+      "test_file": "data/holdout100_v1/cases/stdlib_consecutive_groups/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/stdlib_consecutive_groups/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/stdlib_consecutive_groups/test_hidden.py",
+      "hashes": {
+        "input.py": "885abad5ca9c0383f57054602971c60d8d8f8613acd4df6966492e965fb8e1eb",
+        "reference.py": "785381c26bc1afdfc3ad4ade049393b878a7c3c6886fd06418ab2dca9839ee8c",
+        "test_visible.py": "bc342359429956f94e56b208d1a3d2f3b53dbc729f8672c6059edda3402eece3",
+        "test_hidden.py": "49d460551960bf5f9d14ccb1983275d687eadde1281d1c1403f45c0b27978f69",
+        "requirement.txt": "931b11b10990395b33d776a5b4d5338e6cdbb110bec23e07f5770f6bf05a45e8"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_documented_contract",
+        "family": "consecutive_groups",
+        "url": "https://docs.python.org/3.12/library/itertools.html",
+        "production_bug": false,
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "stdlib_merge_sorted_streams",
+      "family": "merge_sorted_streams",
+      "category": "data_processing",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Merge two sorted ascending sequences, retaining duplicates. Preserve solve signature.",
+      "code_file": "data/holdout100_v1/cases/stdlib_merge_sorted_streams/input.py",
+      "test_file": "data/holdout100_v1/cases/stdlib_merge_sorted_streams/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/stdlib_merge_sorted_streams/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/stdlib_merge_sorted_streams/test_hidden.py",
+      "hashes": {
+        "input.py": "5ebd75dba3500f540d3186a576eaecb463e740a0f0b36ae274ff518cf80bfbb2",
+        "reference.py": "bb8357ebf69f04ec288a3d43c2659db12164b0a1cd03612645521069c44b423c",
+        "test_visible.py": "6cfbf9ae93200041c39a501df6fed85619c8b9d94389447d44f1d7d4ac6a57ec",
+        "test_hidden.py": "b9251657a1aa95f4d621d3f7b015252b67dbb14f3242f67e5a8fcf1b50222653",
+        "requirement.txt": "6460e31c12c5a51ddbf75d93b1212dd5d062e036394db15093e5f20ed0b7e7c6"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_documented_contract",
+        "family": "merge_sorted_streams",
+        "url": "https://docs.python.org/3.12/library/heapq.html",
+        "production_bug": false,
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "stdlib_iso_calendar_inverse",
+      "family": "iso_calendar_inverse",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Convert ISO week year, week and weekday (Monday=1) into Gregorian YYYY-MM-DD. Preserve solve signature.",
+      "code_file": "data/holdout100_v1/cases/stdlib_iso_calendar_inverse/input.py",
+      "test_file": "data/holdout100_v1/cases/stdlib_iso_calendar_inverse/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/stdlib_iso_calendar_inverse/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/stdlib_iso_calendar_inverse/test_hidden.py",
+      "hashes": {
+        "input.py": "ff0dd066122694d4f9e9e90dff9598cbd69dd252b5e2292c830e250f7b3d11ec",
+        "reference.py": "ce75f9b7acc7155ca3a6907a86dab80093eec93b7d140980c77d26b800ca832f",
+        "test_visible.py": "5bebb76bb531f39b844470ded494b351cdb9886f29e0969b481f6790f5b902d5",
+        "test_hidden.py": "4f42f246d372b488c35379698977d2b4589e2391b45c1b714e0ff67a6f603d1a",
+        "requirement.txt": "49a96d15a52d0c4853f34c858dc74e2a2faaf2dcfed4088f806a022ddaae9a5d"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_documented_contract",
+        "family": "iso_calendar_inverse",
+        "url": "https://docs.python.org/3.12/library/datetime.html",
+        "production_bug": false,
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "stdlib_json_prefix",
+      "family": "json_prefix",
+      "category": "data_processing",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Parse a JSON value starting at character zero, allowing trailing data; return (value, end index). Input has no leading whitespace. Preserve solve signature.",
+      "code_file": "data/holdout100_v1/cases/stdlib_json_prefix/input.py",
+      "test_file": "data/holdout100_v1/cases/stdlib_json_prefix/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/stdlib_json_prefix/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/stdlib_json_prefix/test_hidden.py",
+      "hashes": {
+        "input.py": "a739146e807d0f987d6131d184d13a2fb7103454adca3ff66f4f2787d6504f2d",
+        "reference.py": "63cda4e63e5ecdde7eea77e345da426191bae607caf0759b57f283ca6792dfb3",
+        "test_visible.py": "b13b0b6bb66c7df276acec418c7cc75c866e564b978120212228f935445b4e25",
+        "test_hidden.py": "c54f2f83d86da36180be3cc03f95695a1aa49067794b30cd0486ba55e70826db",
+        "requirement.txt": "1b25084333d3eee4b793deda872ef17c02c26820dcaa92aff5fa4a6b95f1dc29"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_documented_contract",
+        "family": "json_prefix",
+        "url": "https://docs.python.org/3.12/library/json.html",
+        "production_bug": false,
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "stdlib_regex_spans",
+      "family": "regex_spans",
+      "category": "api_usage",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return start/end spans of all non-overlapping digit runs in a string. Preserve solve signature.",
+      "code_file": "data/holdout100_v1/cases/stdlib_regex_spans/input.py",
+      "test_file": "data/holdout100_v1/cases/stdlib_regex_spans/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/stdlib_regex_spans/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/stdlib_regex_spans/test_hidden.py",
+      "hashes": {
+        "input.py": "6c13eeb69ac2315d466a52564dfc4a9892d6965006d855138449b4d3f66434f5",
+        "reference.py": "3ee086aa2b87fd89f03f2f12c03f7bc36c670c105cca657c415f06cfe84a4cb0",
+        "test_visible.py": "83aced8fb3a0667e398fec62747684b7ac1401d98afed303e95c7d02b74b3a39",
+        "test_hidden.py": "27efc218152ec5aac72c4006415583ff7489687e8319a4df2cdd201c66d1df03",
+        "requirement.txt": "63041e52d38cb96173f2a9005e08d972fc4cef6d19715f2b353074e79728f616"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_documented_contract",
+        "family": "regex_spans",
+        "url": "https://docs.python.org/3.12/library/re.html",
+        "production_bug": false,
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "stdlib_path_suffix_chain",
+      "family": "path_suffix_chain",
+      "category": "data_processing",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return the list of all suffixes of a POSIX filename, treating a leading dot alone as a hidden-name prefix. Preserve solve signature.",
+      "code_file": "data/holdout100_v1/cases/stdlib_path_suffix_chain/input.py",
+      "test_file": "data/holdout100_v1/cases/stdlib_path_suffix_chain/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/stdlib_path_suffix_chain/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/stdlib_path_suffix_chain/test_hidden.py",
+      "hashes": {
+        "input.py": "460c316e5b432e105a09b6b4793b1ca0e6ad27c7bf22cdeff023237f967c978a",
+        "reference.py": "d28fcbbf8758da4a52e1028870e9dfbc99353362a3db2597ba9a436179329a07",
+        "test_visible.py": "cb4b21f926fc5a67ed6a8be96d87fcdd67ade2ecb5932ee673bde67c80122b2f",
+        "test_hidden.py": "33baa416098df0410e597c33114b686487c15d1e46d2a46335dbb49a62dcb0e3",
+        "requirement.txt": "b0b1761acbf22d2b0b4aa7d798364614ff550cf860ca93d91a6c532d9f1b2747"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_documented_contract",
+        "family": "path_suffix_chain",
+        "url": "https://docs.python.org/3.12/library/pathlib.html",
+        "production_bug": false,
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "stdlib_decimal_scale",
+      "family": "decimal_scale",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Scale a decimal string by ten raised to integer exponent n, returning an exact decimal string. Preserve solve signature.",
+      "code_file": "data/holdout100_v1/cases/stdlib_decimal_scale/input.py",
+      "test_file": "data/holdout100_v1/cases/stdlib_decimal_scale/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/stdlib_decimal_scale/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/stdlib_decimal_scale/test_hidden.py",
+      "hashes": {
+        "input.py": "08b0e0d3ad1e0ba8c5d55149ba582e5f0df99d5104d72a1c1f08726446975c39",
+        "reference.py": "b065658662bff261a11fd4538646059e362d8463c969120ebdd03c689955d9c7",
+        "test_visible.py": "87b3b62401d92e83d838d54054f772cddcab4f98f7aa8ac985a382b0c052d084",
+        "test_hidden.py": "0584ca9fc9ca5c5c7dadeaeb68222dfa16caf982d5851ac809da21b731bab43c",
+        "requirement.txt": "693b5beb32923a09509ce03549745ff8970c604fc4c780bd439ffe8872368229"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_documented_contract",
+        "family": "decimal_scale",
+        "url": "https://docs.python.org/3.12/library/decimal.html",
+        "production_bug": false,
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "stdlib_complex_polar",
+      "family": "complex_polar",
+      "category": "api_usage",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Return magnitude and phase angle in radians for a complex number. Preserve solve signature.",
+      "code_file": "data/holdout100_v1/cases/stdlib_complex_polar/input.py",
+      "test_file": "data/holdout100_v1/cases/stdlib_complex_polar/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/stdlib_complex_polar/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/stdlib_complex_polar/test_hidden.py",
+      "hashes": {
+        "input.py": "d00b01600f14b3ed9da9780ff81e8bdfc0d1e66e0ee87cc8c9d7d9902aa0db68",
+        "reference.py": "ef6534f7651bc8bbf99b844c03aa9b43303cc3762536722c7dbc62e78b60e105",
+        "test_visible.py": "bfdb224160dc259b260a33c854e5744ac7cbd661fe8cf4b486cf535ae1c2cc16",
+        "test_hidden.py": "8a869e47cd2b431d7a3b5bbf521579f1be4806bf2a480b2c4317568c0e1231be",
+        "requirement.txt": "1777c7d7b606628b45e536ebe770199574835de8bf24fd071e02840cb4082ee2"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_documented_contract",
+        "family": "complex_polar",
+        "url": "https://docs.python.org/3.12/library/cmath.html",
+        "production_bug": false,
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    },
+    {
+      "id": "stdlib_fraction_decimal_string",
+      "family": "fraction_decimal_string",
+      "category": "boundary",
+      "cohort": "hard",
+      "is_control": false,
+      "requirement": "Convert a decimal string to its exact numerator and denominator, returned as a tuple; do not round through a binary float. Preserve solve signature.",
+      "code_file": "data/holdout100_v1/cases/stdlib_fraction_decimal_string/input.py",
+      "test_file": "data/holdout100_v1/cases/stdlib_fraction_decimal_string/test_visible.py",
+      "reference_file": "data/holdout100_v1/cases/stdlib_fraction_decimal_string/reference.py",
+      "hidden_test_file": "data/holdout100_v1/cases/stdlib_fraction_decimal_string/test_hidden.py",
+      "hashes": {
+        "input.py": "ba6274a96f358810a4e45e4de548026e2f137198fc4b5dfe2bd524754f8b8579",
+        "reference.py": "5bde96308673a8a0efa88a5755b86a0649df08bb1d0476cc6f606c6bd5399557",
+        "test_visible.py": "f3fab4a8455e35b6610559b586fe5732f87192a0e188cadeffd7aa9a6c92ad9d",
+        "test_hidden.py": "7784905d4770bef7eae77c231725812f8a17f6df8d8d73a77847c829aa0f7542",
+        "requirement.txt": "df60351478656ca54340aa10305fa5c8f8107d22e5bc51b08e21f3cf7c447f49"
+      },
+      "required_checks": [
+        "validate_packages",
+        "validate_apis",
+        "execute",
+        "run_pytest"
+      ],
+      "provenance": {
+        "kind": "authored_documented_contract",
+        "family": "fraction_decimal_string",
+        "url": "https://docs.python.org/3.12/library/fractions.html",
+        "production_bug": false,
+        "license": "project-authored fixture"
+      },
+      "control_parent": null
+    }
+  ],
+  "configs": {
+    "configs/m7_qwen3_30b.json": "e698013c4528f2d4a9c554681be7b1d69f4f556ff60fe92eb982166f4e4d1916"
+  }
+}

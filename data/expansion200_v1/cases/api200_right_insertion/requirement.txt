@@ -1,0 +1,1 @@
+Return the insertion index after existing equal elements in an ascending sorted sequence. Preserve solve signature.

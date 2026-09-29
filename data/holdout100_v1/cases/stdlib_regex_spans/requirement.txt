@@ -1,0 +1,1 @@
+Return start/end spans of all non-overlapping digit runs in a string. Preserve solve signature.

@@ -1,0 +1,17 @@
+Repair bitcount to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.
+
+Bitcount
+bitcount
+
+
+Input:
+    n: a nonnegative int
+
+Output:
+    The number of 1-bits in the binary encoding of n
+
+Examples:
+    >>> bitcount(127)
+    7
+    >>> bitcount(128)
+    1

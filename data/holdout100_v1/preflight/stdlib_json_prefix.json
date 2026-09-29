@@ -1,0 +1,366 @@
+{
+  "valid": true,
+  "evidence": {
+    "bug_visible": {
+      "status": "failed",
+      "return_code": 1,
+      "stdout": "FF                                                                       [100%]\n================================== FAILURES ===================================\n_______________________________ test_contract_0 _______________________________\n\n    def test_contract_0():\n>       assert solution.solve('123 tail') == (123, 3)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n\ntest_solution.py:4: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nsolution.py:4: in solve\n    return json.loads(text)\n           ^^^^^^^^^^^^^^^^\n..\\..\\..\\..\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\json\\__init__.py:346: in loads\n    return _default_decoder.decode(s)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <json.decoder.JSONDecoder object at 0x000002381C5BE0F0>, s = '123 tail'\n_w = <built-in method match of re.Pattern object at 0x000002381C58E190>\n\n    def decode(self, s, _w=WHITESPACE.match):\n        \"\"\"Return the Python representation of ``s`` (a ``str`` instance\n        containing a JSON document).\n    \n        \"\"\"\n        obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n        end = _w(s, end).end()\n        if end != len(s):\n>           raise JSONDecodeError(\"Extra data\", s, end)\nE           json.decoder.JSONDecodeError: Extra data: line 1 column 5 (char 4)\n\n..\\..\\..\\..\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\json\\decoder.py:341: JSONDecodeError\n_______________________________ test_contract_1 _______________________________\n\n    def test_contract_1():\n>       assert solution.solve('[1,2]x') == ([1, 2], 5)\n               ^^^^^^^^^^^^^^^^^^^^^^^^\n\ntest_solution.py:7: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nsolution.py:4: in solve\n    return json.loads(text)\n           ^^^^^^^^^^^^^^^^\n..\\..\\..\\..\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\json\\__init__.py:346: in loads\n    return _default_decoder.decode(s)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <json.decoder.JSONDecoder object at 0x000002381C5BE0F0>, s = '[1,2]x'\n_w = <built-in method match of re.Pattern object at 0x000002381C58E190>\n\n    def decode(self, s, _w=WHITESPACE.match):\n        \"\"\"Return the Python representation of ``s`` (a ``str`` instance\n        containing a JSON document).\n    \n        \"\"\"\n        obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n        end = _w(s, end).end()\n        if end != len(s):\n>           raise JSONDecodeError(\"Extra data\", s, end)\nE           json.decoder.JSONDecodeError: Extra data: line 1 column 6 (char 5)\n\n..\\..\\..\\..\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\json\\decoder.py:341: JSONDecodeError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_contract_0 - json.decoder.JSONDecodeError: Extr...\nFAILED test_solution.py::test_contract_1 - json.decoder.JSONDecodeError: Extr...\n2 failed in 0.06s\n",
+      "stderr": "",
+      "error_type": null,
+      "error_category": "unknown",
+      "execution_time": 0.27248340006917715,
+      "timed_out": false
+    },
+    "bug_hidden": {
+      "status": "failed",
+      "return_code": 1,
+      "stdout": "FFF                                                                      [100%]\n================================== FAILURES ===================================\n_______________________________ test_contract_0 _______________________________\n\n    def test_contract_0():\n>       assert solution.solve('true!') == (True, 4)\n               ^^^^^^^^^^^^^^^^^^^^^^^\n\ntest_solution.py:4: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nsolution.py:4: in solve\n    return json.loads(text)\n           ^^^^^^^^^^^^^^^^\n..\\..\\..\\..\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\json\\__init__.py:346: in loads\n    return _default_decoder.decode(s)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <json.decoder.JSONDecoder object at 0x0000027823D4E0F0>, s = 'true!'\n_w = <built-in method match of re.Pattern object at 0x0000027823D1E190>\n\n    def decode(self, s, _w=WHITESPACE.match):\n        \"\"\"Return the Python representation of ``s`` (a ``str`` instance\n        containing a JSON document).\n    \n        \"\"\"\n        obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n        end = _w(s, end).end()\n        if end != len(s):\n>           raise JSONDecodeError(\"Extra data\", s, end)\nE           json.decoder.JSONDecodeError: Extra data: line 1 column 5 (char 4)\n\n..\\..\\..\\..\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\json\\decoder.py:341: JSONDecodeError\n_______________________________ test_contract_1 _______________________________\n\n    def test_contract_1():\n>       assert solution.solve('null') == (None, 4)\nE       AssertionError: assert None == (None, 4)\nE        +  where None = <function solve at 0x00000278260DC4A0>('null')\nE        +    where <function solve at 0x00000278260DC4A0> = solution.solve\n\ntest_solution.py:7: AssertionError\n_______________________________ test_contract_2 _______________________________\n\n    def test_contract_2():\n>       assert solution.solve('{} {}') == ({}, 2)\n               ^^^^^^^^^^^^^^^^^^^^^^^\n\ntest_solution.py:10: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nsolution.py:4: in solve\n    return json.loads(text)\n           ^^^^^^^^^^^^^^^^\n..\\..\\..\\..\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\json\\__init__.py:346: in loads\n    return _default_decoder.decode(s)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <json.decoder.JSONDecoder object at 0x0000027823D4E0F0>, s = '{} {}'\n_w = <built-in method match of re.Pattern object at 0x0000027823D1E190>\n\n    def decode(self, s, _w=WHITESPACE.match):\n        \"\"\"Return the Python representation of ``s`` (a ``str`` instance\n        containing a JSON document).\n    \n        \"\"\"\n        obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n        end = _w(s, end).end()\n        if end != len(s):\n>           raise JSONDecodeError(\"Extra data\", s, end)\nE           json.decoder.JSONDecodeError: Extra data: line 1 column 4 (char 3)\n\n..\\..\\..\\..\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\json\\decoder.py:341: JSONDecodeError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_contract_0 - json.decoder.JSONDecodeError: Extr...\nFAILED test_solution.py::test_contract_1 - AssertionError: assert None == (No...\nFAILED test_solution.py::test_contract_2 - json.decoder.JSONDecodeError: Extr...\n3 failed in 0.06s\n",
+      "stderr": "",
+      "error_type": "AssertionError",
+      "error_category": "runtime_error",
+      "execution_time": 0.2891905000433326,
+      "timed_out": false
+    },
+    "reference_visible": {
+      "status": "passed",
+      "return_code": 0,
+      "stdout": "..                                                                       [100%]\n2 passed in 0.01s\n",
+      "stderr": "",
+      "error_type": null,
+      "error_category": "unknown",
+      "execution_time": 0.2210258999839425,
+      "timed_out": false
+    },
+    "reference_hidden": {
+      "status": "passed",
+      "return_code": 0,
+      "stdout": "...                                                                      [100%]\n3 passed in 0.01s\n",
+      "stderr": "",
+      "error_type": null,
+      "error_category": "unknown",
+      "execution_time": 0.22070780000649393,
+      "timed_out": false
+    }
+  },
+  "reference_host": {
+    "visible": {
+      "required_checks": [
+        "execute",
+        "run_pytest",
+        "validate_apis",
+        "validate_packages"
+      ],
+      "missing_checks": [],
+      "candidate_version": "0:63cda4e63e5ecdde7eea77e345da426191bae607caf0759b57f283ca6792dfb3",
+      "context_version": "747899d1c1885af9db6faea7e3491028e8107bb3cca99ae8c1d35e5dde3f98e7",
+      "regression_guard": {
+        "blocked": false,
+        "findings": [],
+        "changed_lines": 0,
+        "changed_files": 0,
+        "heuristic": true
+      },
+      "host_status": "PASS",
+      "checks": {
+        "execute": {
+          "status": "success",
+          "message": "Execution completed",
+          "evidence": {
+            "passed": true,
+            "execution": {
+              "status": "passed",
+              "return_code": 0,
+              "stdout": "",
+              "stderr": "",
+              "error_type": null,
+              "error_category": "unknown",
+              "execution_time": 0.028192900121212006,
+              "timed_out": false
+            },
+            "validation_state": {
+              "candidate_version": "0:63cda4e63e5ecdde7eea77e345da426191bae607caf0759b57f283ca6792dfb3",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "missing",
+                "validate_apis": "missing",
+                "validate_packages": "missing"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:63cda4e63e5ecdde7eea77e345da426191bae607caf0759b57f283ca6792dfb3",
+          "cached": false
+        },
+        "run_pytest": {
+          "status": "success",
+          "message": "Execution completed",
+          "evidence": {
+            "passed": true,
+            "execution": {
+              "status": "passed",
+              "return_code": 0,
+              "stdout": "..                                                                       [100%]\n2 passed in 0.01s\n",
+              "stderr": "",
+              "error_type": null,
+              "error_category": "unknown",
+              "execution_time": 0.22615370014682412,
+              "timed_out": false
+            },
+            "validation_state": {
+              "candidate_version": "0:63cda4e63e5ecdde7eea77e345da426191bae607caf0759b57f283ca6792dfb3",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "missing",
+                "validate_packages": "missing"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:63cda4e63e5ecdde7eea77e345da426191bae607caf0759b57f283ca6792dfb3",
+          "cached": false
+        },
+        "validate_apis": {
+          "status": "success",
+          "message": "API validation",
+          "evidence": {
+            "passed": true,
+            "syntax_error": null,
+            "results": [
+              {
+                "reference": {
+                  "canonical_path": "json.JSONDecoder",
+                  "package": "json",
+                  "module": "json",
+                  "object_path": "JSONDecoder",
+                  "call_type": "function_or_attribute",
+                  "line_number": 4,
+                  "source": "json.JSONDecoder",
+                  "receiver": "json",
+                  "arg_count": 0,
+                  "keyword_names": [],
+                  "is_call": true
+                },
+                "package_valid": true,
+                "module_valid": true,
+                "api_valid": true,
+                "status": "valid",
+                "reason": null,
+                "resolved_module": "json",
+                "suggestions": []
+              }
+            ],
+            "validation_state": {
+              "candidate_version": "0:63cda4e63e5ecdde7eea77e345da426191bae607caf0759b57f283ca6792dfb3",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "passed",
+                "validate_packages": "missing"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:63cda4e63e5ecdde7eea77e345da426191bae607caf0759b57f283ca6792dfb3",
+          "cached": false
+        },
+        "validate_packages": {
+          "status": "success",
+          "message": "Package validation",
+          "evidence": {
+            "passed": true,
+            "syntax_error": null,
+            "results": [
+              {
+                "package": "json",
+                "exists": true,
+                "status": "valid",
+                "version": null,
+                "reason": null
+              }
+            ],
+            "validation_state": {
+              "candidate_version": "0:63cda4e63e5ecdde7eea77e345da426191bae607caf0759b57f283ca6792dfb3",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "passed",
+                "validate_packages": "passed"
+              },
+              "ready_to_finish_successfully": true,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:63cda4e63e5ecdde7eea77e345da426191bae607caf0759b57f283ca6792dfb3",
+          "cached": false
+        }
+      }
+    },
+    "hidden": {
+      "required_checks": [
+        "execute",
+        "run_pytest",
+        "validate_apis",
+        "validate_packages"
+      ],
+      "missing_checks": [],
+      "candidate_version": "0:63cda4e63e5ecdde7eea77e345da426191bae607caf0759b57f283ca6792dfb3",
+      "context_version": "951a8444e1560dde4099c1f0826e8764a147a8d987fa03b1c67adbbee712dbc5",
+      "regression_guard": {
+        "blocked": false,
+        "findings": [],
+        "changed_lines": 0,
+        "changed_files": 0,
+        "heuristic": true
+      },
+      "host_status": "PASS",
+      "checks": {
+        "execute": {
+          "status": "success",
+          "message": "Execution completed",
+          "evidence": {
+            "passed": true,
+            "execution": {
+              "status": "passed",
+              "return_code": 0,
+              "stdout": "",
+              "stderr": "",
+              "error_type": null,
+              "error_category": "unknown",
+              "execution_time": 0.028007699875161052,
+              "timed_out": false
+            },
+            "validation_state": {
+              "candidate_version": "0:63cda4e63e5ecdde7eea77e345da426191bae607caf0759b57f283ca6792dfb3",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "missing",
+                "validate_apis": "missing",
+                "validate_packages": "missing"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:63cda4e63e5ecdde7eea77e345da426191bae607caf0759b57f283ca6792dfb3",
+          "cached": false
+        },
+        "run_pytest": {
+          "status": "success",
+          "message": "Execution completed",
+          "evidence": {
+            "passed": true,
+            "execution": {
+              "status": "passed",
+              "return_code": 0,
+              "stdout": "...                                                                      [100%]\n3 passed in 0.01s\n",
+              "stderr": "",
+              "error_type": null,
+              "error_category": "unknown",
+              "execution_time": 0.22635379992425442,
+              "timed_out": false
+            },
+            "validation_state": {
+              "candidate_version": "0:63cda4e63e5ecdde7eea77e345da426191bae607caf0759b57f283ca6792dfb3",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "missing",
+                "validate_packages": "missing"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:63cda4e63e5ecdde7eea77e345da426191bae607caf0759b57f283ca6792dfb3",
+          "cached": false
+        },
+        "validate_apis": {
+          "status": "success",
+          "message": "API validation",
+          "evidence": {
+            "passed": true,
+            "syntax_error": null,
+            "results": [
+              {
+                "reference": {
+                  "canonical_path": "json.JSONDecoder",
+                  "package": "json",
+                  "module": "json",
+                  "object_path": "JSONDecoder",
+                  "call_type": "function_or_attribute",
+                  "line_number": 4,
+                  "source": "json.JSONDecoder",
+                  "receiver": "json",
+                  "arg_count": 0,
+                  "keyword_names": [],
+                  "is_call": true
+                },
+                "package_valid": true,
+                "module_valid": true,
+                "api_valid": true,
+                "status": "valid",
+                "reason": null,
+                "resolved_module": "json",
+                "suggestions": []
+              }
+            ],
+            "validation_state": {
+              "candidate_version": "0:63cda4e63e5ecdde7eea77e345da426191bae607caf0759b57f283ca6792dfb3",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "passed",
+                "validate_packages": "missing"
+              },
+              "ready_to_finish_successfully": false,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:63cda4e63e5ecdde7eea77e345da426191bae607caf0759b57f283ca6792dfb3",
+          "cached": false
+        },
+        "validate_packages": {
+          "status": "success",
+          "message": "Package validation",
+          "evidence": {
+            "passed": true,
+            "syntax_error": null,
+            "results": [
+              {
+                "package": "json",
+                "exists": true,
+                "status": "valid",
+                "version": null,
+                "reason": null
+              }
+            ],
+            "validation_state": {
+              "candidate_version": "0:63cda4e63e5ecdde7eea77e345da426191bae607caf0759b57f283ca6792dfb3",
+              "required_checks": {
+                "execute": "passed",
+                "run_pytest": "passed",
+                "validate_apis": "passed",
+                "validate_packages": "passed"
+              },
+              "ready_to_finish_successfully": true,
+              "regression_blocked": false
+            }
+          },
+          "candidate_version": "0:63cda4e63e5ecdde7eea77e345da426191bae607caf0759b57f283ca6792dfb3",
+          "cached": false
+        }
+      }
+    }
+  },
+  "input_hashes": {
+    "input.py": "a739146e807d0f987d6131d184d13a2fb7103454adca3ff66f4f2787d6504f2d",
+    "reference.py": "63cda4e63e5ecdde7eea77e345da426191bae607caf0759b57f283ca6792dfb3",
+    "test_visible.py": "b13b0b6bb66c7df276acec418c7cc75c866e564b978120212228f935445b4e25",
+    "test_hidden.py": "c54f2f83d86da36180be3cc03f95695a1aa49067794b30cd0486ba55e70826db",
+    "requirement.txt": "1b25084333d3eee4b793deda872ef17c02c26820dcaa92aff5fa4a6b95f1dc29"
+  }
+}

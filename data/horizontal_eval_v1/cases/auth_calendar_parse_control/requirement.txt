@@ -1,0 +1,1 @@
+Parse an ISO calendar date and return its ordinal; reject impossible dates with ValueError. Preserve the solve signature; do not mutate caller inputs.

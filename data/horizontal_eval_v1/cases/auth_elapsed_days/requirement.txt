@@ -1,0 +1,1 @@
+Return elapsed time in seconds between two ISO datetimes, including days and negative differences. Preserve the solve signature; do not mutate caller inputs.

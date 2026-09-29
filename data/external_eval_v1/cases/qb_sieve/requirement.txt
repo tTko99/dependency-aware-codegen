@@ -1,0 +1,10 @@
+Repair sieve to satisfy the following upstream contract and supplied tests. Preserve public function signatures and documented behavior.
+
+Sieve of Eratosthenes
+prime-sieve
+
+Input:
+    max: A positive int representing an upper bound.
+
+Output:
+    A list containing all primes up to and including max

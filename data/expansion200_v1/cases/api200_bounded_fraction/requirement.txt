@@ -1,0 +1,1 @@
+Approximate a decimal string by a Fraction whose denominator is at most the provided positive bound; return numerator and denominator. Preserve solve signature.

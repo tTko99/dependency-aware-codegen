@@ -1,0 +1,1 @@
+Round a decimal string to exactly two decimal places using half-up rounding; return a string. Preserve the solve signature; do not mutate caller inputs.

@@ -1,0 +1,328 @@
+{
+  "case_id": "api200_integer_square_root",
+  "input_hashes": {
+    "input.py": "68419d1ff04195dc75d1aa34f1940deb477444a3c8231b71f7208348fe42c48a",
+    "reference.py": "9069fefeab644b9523158d1ba4519a3433697b312c347ea7f6eb32e3027c6c3f",
+    "test_input.py": "1a258c6dea57d03f122499feaf57dea1a2d037c544c4ec92d8c81a172acb1995",
+    "requirement.txt": "c750813d58b8b3aa044b995c85f74d0afa39c7e31984c9091389e12ca2417f30"
+  },
+  "valid": true,
+  "initial": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [
+      "run_pytest",
+      "validate_apis"
+    ],
+    "candidate_version": "0:68419d1ff04195dc75d1aa34f1940deb477444a3c8231b71f7208348fe42c48a",
+    "context_version": "fb6b7bf9fc53d19b66463a19b3a0665787f42ee8bddcd5ee5140bc02d721e141",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "FAIL",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.02289959997870028,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:68419d1ff04195dc75d1aa34f1940deb477444a3c8231b71f7208348fe42c48a",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:68419d1ff04195dc75d1aa34f1940deb477444a3c8231b71f7208348fe42c48a",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": false,
+          "execution": {
+            "status": "failed",
+            "return_code": 1,
+            "stdout": "FFFF                                                                     [100%]\n================================== FAILURES ===================================\n___________________________ test_contract[args0-0] ____________________________\n\nargs = (0,), expected = 0\n\n    @pytest.mark.parametrize('args, expected', [((0,), 0), ((15,), 3), ((16,), 4), ((9999999999999999999999999999999999999999,), 99999999999999999999)])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nn = 0\n\n    def solve(n):\n>       return math.integer_sqrt(n)\n               ^^^^^^^^^^^^^^^^^\nE       AttributeError: module 'math' has no attribute 'integer_sqrt'\n\nsolution.py:4: AttributeError\n___________________________ test_contract[args1-3] ____________________________\n\nargs = (15,), expected = 3\n\n    @pytest.mark.parametrize('args, expected', [((0,), 0), ((15,), 3), ((16,), 4), ((9999999999999999999999999999999999999999,), 99999999999999999999)])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nn = 15\n\n    def solve(n):\n>       return math.integer_sqrt(n)\n               ^^^^^^^^^^^^^^^^^\nE       AttributeError: module 'math' has no attribute 'integer_sqrt'\n\nsolution.py:4: AttributeError\n___________________________ test_contract[args2-4] ____________________________\n\nargs = (16,), expected = 4\n\n    @pytest.mark.parametrize('args, expected', [((0,), 0), ((15,), 3), ((16,), 4), ((9999999999999999999999999999999999999999,), 99999999999999999999)])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nn = 16\n\n    def solve(n):\n>       return math.integer_sqrt(n)\n               ^^^^^^^^^^^^^^^^^\nE       AttributeError: module 'math' has no attribute 'integer_sqrt'\n\nsolution.py:4: AttributeError\n__________________ test_contract[args3-99999999999999999999] __________________\n\nargs = (9999999999999999999999999999999999999999,)\nexpected = 99999999999999999999\n\n    @pytest.mark.parametrize('args, expected', [((0,), 0), ((15,), 3), ((16,), 4), ((9999999999999999999999999999999999999999,), 99999999999999999999)])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nn = 9999999999999999999999999999999999999999\n\n    def solve(n):\n>       return math.integer_sqrt(n)\n               ^^^^^^^^^^^^^^^^^\nE       AttributeError: module 'math' has no attribute 'integer_sqrt'\n\nsolution.py:4: AttributeError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_contract[args0-0] - AttributeError: module 'mat...\nFAILED test_solution.py::test_contract[args1-3] - AttributeError: module 'mat...\nFAILED test_solution.py::test_contract[args2-4] - AttributeError: module 'mat...\nFAILED test_solution.py::test_contract[args3-99999999999999999999] - Attribut...\n4 failed in 0.07s\n",
+            "stderr": "",
+            "error_type": "AttributeError",
+            "error_category": "attribute_error",
+            "execution_time": 0.31883869995363057,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:68419d1ff04195dc75d1aa34f1940deb477444a3c8231b71f7208348fe42c48a",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:68419d1ff04195dc75d1aa34f1940deb477444a3c8231b71f7208348fe42c48a",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": false,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "math.integer_sqrt",
+                "package": "math",
+                "module": "math",
+                "object_path": "integer_sqrt",
+                "call_type": "function_or_attribute",
+                "line_number": 4,
+                "source": "math.integer_sqrt",
+                "receiver": "math",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": false,
+              "status": "hallucinated_function",
+              "reason": "attribute_not_found:integer_sqrt",
+              "resolved_module": "math",
+              "suggestions": [
+                "math.isqrt",
+                "math.sqrt"
+              ]
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:68419d1ff04195dc75d1aa34f1940deb477444a3c8231b71f7208348fe42c48a",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "failed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:68419d1ff04195dc75d1aa34f1940deb477444a3c8231b71f7208348fe42c48a",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "math",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:68419d1ff04195dc75d1aa34f1940deb477444a3c8231b71f7208348fe42c48a",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "failed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:68419d1ff04195dc75d1aa34f1940deb477444a3c8231b71f7208348fe42c48a",
+        "cached": false
+      }
+    }
+  },
+  "reference": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "0:9069fefeab644b9523158d1ba4519a3433697b312c347ea7f6eb32e3027c6c3f",
+    "context_version": "d981347082b1335afe1878c95e32860c32d397baf8a366ec8e4b74b55a4f5657",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "PASS",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.022554200142621994,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:9069fefeab644b9523158d1ba4519a3433697b312c347ea7f6eb32e3027c6c3f",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:9069fefeab644b9523158d1ba4519a3433697b312c347ea7f6eb32e3027c6c3f",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "....                                                                     [100%]\n4 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.26407289993949234,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:9069fefeab644b9523158d1ba4519a3433697b312c347ea7f6eb32e3027c6c3f",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:9069fefeab644b9523158d1ba4519a3433697b312c347ea7f6eb32e3027c6c3f",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "math.isqrt",
+                "package": "math",
+                "module": "math",
+                "object_path": "isqrt",
+                "call_type": "function_or_attribute",
+                "line_number": 4,
+                "source": "math.isqrt",
+                "receiver": "math",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "math",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:9069fefeab644b9523158d1ba4519a3433697b312c347ea7f6eb32e3027c6c3f",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:9069fefeab644b9523158d1ba4519a3433697b312c347ea7f6eb32e3027c6c3f",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "math",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:9069fefeab644b9523158d1ba4519a3433697b312c347ea7f6eb32e3027c6c3f",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": true,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:9069fefeab644b9523158d1ba4519a3433697b312c347ea7f6eb32e3027c6c3f",
+        "cached": false
+      }
+    }
+  }
+}

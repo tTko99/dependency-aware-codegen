@@ -1,0 +1,362 @@
+{
+  "case_id": "qb_lcs_length",
+  "valid": true,
+  "initial": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [
+      "run_pytest"
+    ],
+    "candidate_version": "0:ab35b03aa24601348e41e39b70514c9837d5d029009862c0b1d9c90e09b9f532",
+    "context_version": "8d060c493cf41493dd68632ffba3a1264ce5c7b497a1f1530d49ffda037f1c5f",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "FAIL",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.024986099917441607,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:ab35b03aa24601348e41e39b70514c9837d5d029009862c0b1d9c90e09b9f532",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:ab35b03aa24601348e41e39b70514c9837d5d029009862c0b1d9c90e09b9f532",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": false,
+          "execution": {
+            "status": "failed",
+            "return_code": 1,
+            "stdout": "FF.FFFFFF                                                                [100%]\n================================== FAILURES ===================================\n________________________ test_contract[input_data0-2] _________________________\n\ninput_data = ['witch', 'sandwich'], expected = 2\n\n    @pytest.mark.parametrize('input_data,expected', [(['witch', 'sandwich'], 2), (['meow', 'homeowner'], 4), (['fun', ''], 0), (['fun', 'function'], 3), (['cyborg', 'cyber'], 3), (['physics', 'physics'], 7), (['space age', 'pace a'], 6), (['flippy', 'floppy'], 3), (['acbdegcedbg', 'begcfeubk'], 3)])\n    def test_contract(input_data, expected):\n>       assert lcs_length(*input_data) == expected\nE       AssertionError: assert 1 == 2\nE        +  where 1 = lcs_length(*['witch', 'sandwich'])\n\ntest_solution.py:7: AssertionError\n________________________ test_contract[input_data1-4] _________________________\n\ninput_data = ['meow', 'homeowner'], expected = 4\n\n    @pytest.mark.parametrize('input_data,expected', [(['witch', 'sandwich'], 2), (['meow', 'homeowner'], 4), (['fun', ''], 0), (['fun', 'function'], 3), (['cyborg', 'cyber'], 3), (['physics', 'physics'], 7), (['space age', 'pace a'], 6), (['flippy', 'floppy'], 3), (['acbdegcedbg', 'begcfeubk'], 3)])\n    def test_contract(input_data, expected):\n>       assert lcs_length(*input_data) == expected\nE       AssertionError: assert 1 == 4\nE        +  where 1 = lcs_length(*['meow', 'homeowner'])\n\ntest_solution.py:7: AssertionError\n________________________ test_contract[input_data3-3] _________________________\n\ninput_data = ['fun', 'function'], expected = 3\n\n    @pytest.mark.parametrize('input_data,expected', [(['witch', 'sandwich'], 2), (['meow', 'homeowner'], 4), (['fun', ''], 0), (['fun', 'function'], 3), (['cyborg', 'cyber'], 3), (['physics', 'physics'], 7), (['space age', 'pace a'], 6), (['flippy', 'floppy'], 3), (['acbdegcedbg', 'begcfeubk'], 3)])\n    def test_contract(input_data, expected):\n>       assert lcs_length(*input_data) == expected\nE       AssertionError: assert 1 == 3\nE        +  where 1 = lcs_length(*['fun', 'function'])\n\ntest_solution.py:7: AssertionError\n________________________ test_contract[input_data4-3] _________________________\n\ninput_data = ['cyborg', 'cyber'], expected = 3\n\n    @pytest.mark.parametrize('input_data,expected', [(['witch', 'sandwich'], 2), (['meow', 'homeowner'], 4), (['fun', ''], 0), (['fun', 'function'], 3), (['cyborg', 'cyber'], 3), (['physics', 'physics'], 7), (['space age', 'pace a'], 6), (['flippy', 'floppy'], 3), (['acbdegcedbg', 'begcfeubk'], 3)])\n    def test_contract(input_data, expected):\n>       assert lcs_length(*input_data) == expected\nE       AssertionError: assert 1 == 3\nE        +  where 1 = lcs_length(*['cyborg', 'cyber'])\n\ntest_solution.py:7: AssertionError\n________________________ test_contract[input_data5-7] _________________________\n\ninput_data = ['physics', 'physics'], expected = 7\n\n    @pytest.mark.parametrize('input_data,expected', [(['witch', 'sandwich'], 2), (['meow', 'homeowner'], 4), (['fun', ''], 0), (['fun', 'function'], 3), (['cyborg', 'cyber'], 3), (['physics', 'physics'], 7), (['space age', 'pace a'], 6), (['flippy', 'floppy'], 3), (['acbdegcedbg', 'begcfeubk'], 3)])\n    def test_contract(input_data, expected):\n>       assert lcs_length(*input_data) == expected\nE       AssertionError: assert 1 == 7\nE        +  where 1 = lcs_length(*['physics', 'physics'])\n\ntest_solution.py:7: AssertionError\n________________________ test_contract[input_data6-6] _________________________\n\ninput_data = ['space age', 'pace a'], expected = 6\n\n    @pytest.mark.parametrize('input_data,expected', [(['witch', 'sandwich'], 2), (['meow', 'homeowner'], 4), (['fun', ''], 0), (['fun', 'function'], 3), (['cyborg', 'cyber'], 3), (['physics', 'physics'], 7), (['space age', 'pace a'], 6), (['flippy', 'floppy'], 3), (['acbdegcedbg', 'begcfeubk'], 3)])\n    def test_contract(input_data, expected):\n>       assert lcs_length(*input_data) == expected\nE       AssertionError: assert 1 == 6\nE        +  where 1 = lcs_length(*['space age', 'pace a'])\n\ntest_solution.py:7: AssertionError\n________________________ test_contract[input_data7-3] _________________________\n\ninput_data = ['flippy', 'floppy'], expected = 3\n\n    @pytest.mark.parametrize('input_data,expected', [(['witch', 'sandwich'], 2), (['meow', 'homeowner'], 4), (['fun', ''], 0), (['fun', 'function'], 3), (['cyborg', 'cyber'], 3), (['physics', 'physics'], 7), (['space age', 'pace a'], 6), (['flippy', 'floppy'], 3), (['acbdegcedbg', 'begcfeubk'], 3)])\n    def test_contract(input_data, expected):\n>       assert lcs_length(*input_data) == expected\nE       AssertionError: assert 2 == 3\nE        +  where 2 = lcs_length(*['flippy', 'floppy'])\n\ntest_solution.py:7: AssertionError\n________________________ test_contract[input_data8-3] _________________________\n\ninput_data = ['acbdegcedbg', 'begcfeubk'], expected = 3\n\n    @pytest.mark.parametrize('input_data,expected', [(['witch', 'sandwich'], 2), (['meow', 'homeowner'], 4), (['fun', ''], 0), (['fun', 'function'], 3), (['cyborg', 'cyber'], 3), (['physics', 'physics'], 7), (['space age', 'pace a'], 6), (['flippy', 'floppy'], 3), (['acbdegcedbg', 'begcfeubk'], 3)])\n    def test_contract(input_data, expected):\n>       assert lcs_length(*input_data) == expected\nE       AssertionError: assert 1 == 3\nE        +  where 1 = lcs_length(*['acbdegcedbg', 'begcfeubk'])\n\ntest_solution.py:7: AssertionError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_contract[input_data0-2] - AssertionError: asser...\nFAILED test_solution.py::test_contract[input_data1-4] - AssertionError: asser...\nFAILED test_solution.py::test_contract[input_data3-3] - AssertionError: asser...\nFAILED test_solution.py::test_contract[input_data4-3] - AssertionError: asser...\nFAILED test_solution.py::test_contract[input_data5-7] - AssertionError: asser...\nFAILED test_solution.py::test_contract[input_data6-6] - AssertionError: asser...\nFAILED test_solution.py::test_contract[input_data7-3] - AssertionError: asser...\nFAILED test_solution.py::test_contract[input_data8-3] - AssertionError: asser...\n8 failed, 1 passed in 0.08s\n",
+            "stderr": "",
+            "error_type": "AssertionError",
+            "error_category": "runtime_error",
+            "execution_time": 0.34288250003010035,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:ab35b03aa24601348e41e39b70514c9837d5d029009862c0b1d9c90e09b9f532",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:ab35b03aa24601348e41e39b70514c9837d5d029009862c0b1d9c90e09b9f532",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "collections.Counter",
+                "package": "collections",
+                "module": "collections",
+                "object_path": "Counter",
+                "call_type": "import_object",
+                "line_number": 2,
+                "source": "Counter",
+                "receiver": "Counter",
+                "arg_count": null,
+                "keyword_names": [],
+                "is_call": false
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "collections",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "collections.Counter",
+                "package": "collections",
+                "module": "collections",
+                "object_path": "Counter",
+                "call_type": "imported_callable",
+                "line_number": 4,
+                "source": "Counter",
+                "receiver": "Counter",
+                "arg_count": 0,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "collections",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:ab35b03aa24601348e41e39b70514c9837d5d029009862c0b1d9c90e09b9f532",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:ab35b03aa24601348e41e39b70514c9837d5d029009862c0b1d9c90e09b9f532",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "collections",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:ab35b03aa24601348e41e39b70514c9837d5d029009862c0b1d9c90e09b9f532",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:ab35b03aa24601348e41e39b70514c9837d5d029009862c0b1d9c90e09b9f532",
+        "cached": false
+      }
+    }
+  },
+  "reference": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "0:c0c66a9a499e75814743654a7a5403dc9d826ebdd0a151859047f66ddfa0fc27",
+    "context_version": "e6cfce47e0df2075bdd5dea378db5982500fcf49ab920dc509eb06caad53d29f",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "PASS",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.023124600062146783,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:c0c66a9a499e75814743654a7a5403dc9d826ebdd0a151859047f66ddfa0fc27",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:c0c66a9a499e75814743654a7a5403dc9d826ebdd0a151859047f66ddfa0fc27",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": ".........                                                                [100%]\n9 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.27363190008327365,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:c0c66a9a499e75814743654a7a5403dc9d826ebdd0a151859047f66ddfa0fc27",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:c0c66a9a499e75814743654a7a5403dc9d826ebdd0a151859047f66ddfa0fc27",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "collections.Counter",
+                "package": "collections",
+                "module": "collections",
+                "object_path": "Counter",
+                "call_type": "import_object",
+                "line_number": 3,
+                "source": "Counter",
+                "receiver": "Counter",
+                "arg_count": null,
+                "keyword_names": [],
+                "is_call": false
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "collections",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "collections.Counter",
+                "package": "collections",
+                "module": "collections",
+                "object_path": "Counter",
+                "call_type": "imported_callable",
+                "line_number": 5,
+                "source": "Counter",
+                "receiver": "Counter",
+                "arg_count": 0,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "collections",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:c0c66a9a499e75814743654a7a5403dc9d826ebdd0a151859047f66ddfa0fc27",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:c0c66a9a499e75814743654a7a5403dc9d826ebdd0a151859047f66ddfa0fc27",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "collections",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:c0c66a9a499e75814743654a7a5403dc9d826ebdd0a151859047f66ddfa0fc27",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": true,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:c0c66a9a499e75814743654a7a5403dc9d826ebdd0a151859047f66ddfa0fc27",
+        "cached": false
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+Return the product of numeric values. The empty product is 1. Preserve solve signature.

@@ -1,0 +1,1 @@
+Return lines without line terminators, recognizing LF, CRLF and CR; do not add a final empty line for a terminal line ending. Preserve the solve signature; do not mutate caller inputs.

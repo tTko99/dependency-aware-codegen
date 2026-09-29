@@ -1,0 +1,5 @@
+Repair the Python function according to this contract. Preserve its signature.
+Write a Python function `triangle_area(a, h)` to solve the following problem:
+Given length of a side and high return area for a triangle.
+>>> triangle_area(5, 3)
+7.5

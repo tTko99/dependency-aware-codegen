@@ -1,0 +1,1 @@
+Remove prefix exactly once only when text starts with that complete prefix; an empty prefix changes nothing. Preserve the solve signature; do not mutate caller inputs.

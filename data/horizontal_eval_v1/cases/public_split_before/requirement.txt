@@ -1,0 +1,1 @@
+Split a sequence before each negative number, preserving order and all values. maxsplit limits splits; -1 is unlimited. Empty input yields no groups when maxsplit is not zero; maxsplit zero returns the unsplit sequence as one group.

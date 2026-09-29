@@ -1,0 +1,9 @@
+Repair the Python function according to this contract. Preserve its signature.
+Write a Python function `monotonic(l: list)` to solve the following problem:
+Return True is list elements are monotonically increasing or decreasing.
+>>> monotonic([1, 2, 4, 20])
+True
+>>> monotonic([1, 20, 4, 10])
+False
+>>> monotonic([4, 1, 0, -10])
+True

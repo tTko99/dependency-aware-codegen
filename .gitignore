@@ -49,3 +49,6 @@ checkpoints/*
 *.ckpt
 wandb/
 runs/
+
+# Keep project documentation local
+/docs/

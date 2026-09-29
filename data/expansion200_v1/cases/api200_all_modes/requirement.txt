@@ -1,0 +1,1 @@
+Return every most frequent value, ordered by first occurrence; empty input returns an empty list. Preserve solve signature.

@@ -1,0 +1,324 @@
+{
+  "case_id": "hep_039",
+  "input_hashes": {
+    "input.py": "835c1fde3275b1fd17bd200fd46814c688276c4898d58f5900608f707a62158c",
+    "reference.py": "7d9bd9210048f684fc65f70e291a55d0811ccf776e75b1e81ced03439b3c9782",
+    "test_input.py": "9c99b1c317d016a8647793cbc7080fdd604bebadde60260ad17ccaad814490e0",
+    "requirement.txt": "1badf85ee113c0e043c1cead1dd2e63680f1c694c981ee692714c4be952bbd38"
+  },
+  "valid": true,
+  "initial": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [
+      "run_pytest"
+    ],
+    "candidate_version": "0:835c1fde3275b1fd17bd200fd46814c688276c4898d58f5900608f707a62158c",
+    "context_version": "94f4339b2549725c5b97272ebee8ac024ec5ab292490edb7943f076d24403bca",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "FAIL",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.023474999936297536,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:835c1fde3275b1fd17bd200fd46814c688276c4898d58f5900608f707a62158c",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:835c1fde3275b1fd17bd200fd46814c688276c4898d58f5900608f707a62158c",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": false,
+          "execution": {
+            "status": "failed",
+            "return_code": 2,
+            "stdout": "\n=================================== ERRORS ====================================\n______________________ ERROR collecting test_solution.py ______________________\ntest_solution.py:22: in <module>\n    check(prime_fib)\ntest_solution.py:14: in check\n    assert prime_fib(4) == 13\nE   assert 8 == 13\nE    +  where 8 = <function prime_fib at 0x000001475A69C4A0>(4)\n=========================== short test summary info ===========================\nERROR test_solution.py - assert 8 == 13\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.12s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.3719488999340683,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:835c1fde3275b1fd17bd200fd46814c688276c4898d58f5900608f707a62158c",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:835c1fde3275b1fd17bd200fd46814c688276c4898d58f5900608f707a62158c",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "math.sqrt",
+                "package": "math",
+                "module": "math",
+                "object_path": "sqrt",
+                "call_type": "function_or_attribute",
+                "line_number": 22,
+                "source": "math.sqrt",
+                "receiver": "math",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "math",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:835c1fde3275b1fd17bd200fd46814c688276c4898d58f5900608f707a62158c",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:835c1fde3275b1fd17bd200fd46814c688276c4898d58f5900608f707a62158c",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "math",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:835c1fde3275b1fd17bd200fd46814c688276c4898d58f5900608f707a62158c",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:835c1fde3275b1fd17bd200fd46814c688276c4898d58f5900608f707a62158c",
+        "cached": false
+      }
+    }
+  },
+  "reference": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "0:7d9bd9210048f684fc65f70e291a55d0811ccf776e75b1e81ced03439b3c9782",
+    "context_version": "16953bfc0248d21b772b62ea1f64a4bad332e345999404db4d430e1516e0014a",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "PASS",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.02221510000526905,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:7d9bd9210048f684fc65f70e291a55d0811ccf776e75b1e81ced03439b3c9782",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:7d9bd9210048f684fc65f70e291a55d0811ccf776e75b1e81ced03439b3c9782",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": ".                                                                        [100%]\n1 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.2705652001313865,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:7d9bd9210048f684fc65f70e291a55d0811ccf776e75b1e81ced03439b3c9782",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:7d9bd9210048f684fc65f70e291a55d0811ccf776e75b1e81ced03439b3c9782",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "math.sqrt",
+                "package": "math",
+                "module": "math",
+                "object_path": "sqrt",
+                "call_type": "function_or_attribute",
+                "line_number": 22,
+                "source": "math.sqrt",
+                "receiver": "math",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "math",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:7d9bd9210048f684fc65f70e291a55d0811ccf776e75b1e81ced03439b3c9782",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:7d9bd9210048f684fc65f70e291a55d0811ccf776e75b1e81ced03439b3c9782",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "math",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:7d9bd9210048f684fc65f70e291a55d0811ccf776e75b1e81ced03439b3c9782",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": true,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:7d9bd9210048f684fc65f70e291a55d0811ccf776e75b1e81ced03439b3c9782",
+        "cached": false
+      }
+    }
+  }
+}

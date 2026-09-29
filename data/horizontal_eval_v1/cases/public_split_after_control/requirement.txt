@@ -1,0 +1,1 @@
+Split a sequence after each zero. maxsplit limits splits, -1 is unlimited. Do not emit a trailing empty group when the last value ends the last allowed split; maxsplit zero returns one unsplit group.

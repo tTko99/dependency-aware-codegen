@@ -1,0 +1,1 @@
+Replace all occurrences matching a regex with literal replacement text; backslashes in replacement text are not group references. Preserve the solve signature; do not mutate caller inputs.

@@ -1,0 +1,1 @@
+Return the arithmetic mean of a nonempty numeric sequence. Preserve the solve signature; do not mutate caller inputs.

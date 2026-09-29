@@ -1,0 +1,328 @@
+{
+  "case_id": "api200_common_indentation",
+  "input_hashes": {
+    "input.py": "56e7d0d969738e0ececf81eda8f99178162452fea65bf1674c4cd8e7650ad763",
+    "reference.py": "1655c96e90b9edd5409f629986d9f69e972aa3fc67635de579ce4e66de661ac5",
+    "test_input.py": "3782617104841ab023e320755e3c043ce6abf0fc3415fe01a371ceec8fb87a28",
+    "requirement.txt": "bea7a2a598fdc26e5f94c26edf1b557a342db2f95426a160444da08c6309ff4a"
+  },
+  "valid": true,
+  "initial": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [
+      "run_pytest",
+      "validate_apis"
+    ],
+    "candidate_version": "0:56e7d0d969738e0ececf81eda8f99178162452fea65bf1674c4cd8e7650ad763",
+    "context_version": "ac6cbcb4bfbf8970d281d5d099f41b8994d8409da7c45e045446ba4c13c654c1",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "FAIL",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.030539300059899688,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:56e7d0d969738e0ececf81eda8f99178162452fea65bf1674c4cd8e7650ad763",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:56e7d0d969738e0ececf81eda8f99178162452fea65bf1674c4cd8e7650ad763",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": false,
+          "execution": {
+            "status": "failed",
+            "return_code": 1,
+            "stdout": "FFFF                                                                     [100%]\n================================== FAILURES ===================================\n________________________ test_contract[args0-a\\n  b\\n] ________________________\n\nargs = ('  a\\n    b\\n',), expected = 'a\\n  b\\n'\n\n    @pytest.mark.parametrize('args, expected', [(('  a\\n    b\\n',), 'a\\n  b\\n'), (('x',), 'x'), (('',), ''), (('    a\\n    b',), 'a\\nb')])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ntext = '  a\\n    b\\n'\n\n    def solve(text):\n>       return textwrap.unindent(text)\n               ^^^^^^^^^^^^^^^^^\nE       AttributeError: module 'textwrap' has no attribute 'unindent'. Did you mean: 'indent'?\n\nsolution.py:4: AttributeError\n___________________________ test_contract[args1-x] ____________________________\n\nargs = ('x',), expected = 'x'\n\n    @pytest.mark.parametrize('args, expected', [(('  a\\n    b\\n',), 'a\\n  b\\n'), (('x',), 'x'), (('',), ''), (('    a\\n    b',), 'a\\nb')])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ntext = 'x'\n\n    def solve(text):\n>       return textwrap.unindent(text)\n               ^^^^^^^^^^^^^^^^^\nE       AttributeError: module 'textwrap' has no attribute 'unindent'. Did you mean: 'indent'?\n\nsolution.py:4: AttributeError\n____________________________ test_contract[args2-] ____________________________\n\nargs = ('',), expected = ''\n\n    @pytest.mark.parametrize('args, expected', [(('  a\\n    b\\n',), 'a\\n  b\\n'), (('x',), 'x'), (('',), ''), (('    a\\n    b',), 'a\\nb')])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ntext = ''\n\n    def solve(text):\n>       return textwrap.unindent(text)\n               ^^^^^^^^^^^^^^^^^\nE       AttributeError: module 'textwrap' has no attribute 'unindent'. Did you mean: 'indent'?\n\nsolution.py:4: AttributeError\n__________________________ test_contract[args3-a\\nb] __________________________\n\nargs = ('    a\\n    b',), expected = 'a\\nb'\n\n    @pytest.mark.parametrize('args, expected', [(('  a\\n    b\\n',), 'a\\n  b\\n'), (('x',), 'x'), (('',), ''), (('    a\\n    b',), 'a\\nb')])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ntext = '    a\\n    b'\n\n    def solve(text):\n>       return textwrap.unindent(text)\n               ^^^^^^^^^^^^^^^^^\nE       AttributeError: module 'textwrap' has no attribute 'unindent'. Did you mean: 'indent'?\n\nsolution.py:4: AttributeError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_contract[args0-a\\n  b\\n] - AttributeError: modu...\nFAILED test_solution.py::test_contract[args1-x] - AttributeError: module 'tex...\nFAILED test_solution.py::test_contract[args2-] - AttributeError: module 'text...\nFAILED test_solution.py::test_contract[args3-a\\nb] - AttributeError: module '...\n4 failed in 0.07s\n",
+            "stderr": "",
+            "error_type": "AttributeError",
+            "error_category": "attribute_error",
+            "execution_time": 0.32304279995150864,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:56e7d0d969738e0ececf81eda8f99178162452fea65bf1674c4cd8e7650ad763",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:56e7d0d969738e0ececf81eda8f99178162452fea65bf1674c4cd8e7650ad763",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": false,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "textwrap.unindent",
+                "package": "textwrap",
+                "module": "textwrap",
+                "object_path": "unindent",
+                "call_type": "function_or_attribute",
+                "line_number": 4,
+                "source": "textwrap.unindent",
+                "receiver": "textwrap",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": false,
+              "status": "hallucinated_function",
+              "reason": "attribute_not_found:unindent",
+              "resolved_module": "textwrap",
+              "suggestions": [
+                "textwrap.indent",
+                "textwrap.dedent"
+              ]
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:56e7d0d969738e0ececf81eda8f99178162452fea65bf1674c4cd8e7650ad763",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "failed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:56e7d0d969738e0ececf81eda8f99178162452fea65bf1674c4cd8e7650ad763",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "textwrap",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:56e7d0d969738e0ececf81eda8f99178162452fea65bf1674c4cd8e7650ad763",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "failed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:56e7d0d969738e0ececf81eda8f99178162452fea65bf1674c4cd8e7650ad763",
+        "cached": false
+      }
+    }
+  },
+  "reference": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "0:1655c96e90b9edd5409f629986d9f69e972aa3fc67635de579ce4e66de661ac5",
+    "context_version": "ca353e615b5a12bb39f7e8dfabb708d2f4c9f497555cb62e556a2e47368a1a0c",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "PASS",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.029117000056430697,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:1655c96e90b9edd5409f629986d9f69e972aa3fc67635de579ce4e66de661ac5",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:1655c96e90b9edd5409f629986d9f69e972aa3fc67635de579ce4e66de661ac5",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "....                                                                     [100%]\n4 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.26457379991188645,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:1655c96e90b9edd5409f629986d9f69e972aa3fc67635de579ce4e66de661ac5",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:1655c96e90b9edd5409f629986d9f69e972aa3fc67635de579ce4e66de661ac5",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "textwrap.dedent",
+                "package": "textwrap",
+                "module": "textwrap",
+                "object_path": "dedent",
+                "call_type": "function_or_attribute",
+                "line_number": 4,
+                "source": "textwrap.dedent",
+                "receiver": "textwrap",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "textwrap",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:1655c96e90b9edd5409f629986d9f69e972aa3fc67635de579ce4e66de661ac5",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:1655c96e90b9edd5409f629986d9f69e972aa3fc67635de579ce4e66de661ac5",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "textwrap",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:1655c96e90b9edd5409f629986d9f69e972aa3fc67635de579ce4e66de661ac5",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": true,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:1655c96e90b9edd5409f629986d9f69e972aa3fc67635de579ce4e66de661ac5",
+        "cached": false
+      }
+    }
+  }
+}

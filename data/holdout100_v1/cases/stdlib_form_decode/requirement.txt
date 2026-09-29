@@ -1,0 +1,1 @@
+Decode form-encoded text: plus means space, percent escapes decode as UTF-8. Preserve solve signature.

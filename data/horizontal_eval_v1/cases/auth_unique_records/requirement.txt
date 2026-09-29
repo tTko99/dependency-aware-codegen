@@ -1,0 +1,1 @@
+Keep the first record for each id, preserving first-seen order. IDs are hashable. Preserve the solve signature; do not mutate caller inputs.

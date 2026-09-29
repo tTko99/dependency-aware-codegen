@@ -21,7 +21,7 @@ The work followed one continuous engineering path rather than starting directly 
 | **0.5B feasibility baseline** | Built the dataset, deterministic validation pipeline and controlled repair evaluation with a small CPU-friendly code model. This established that structured dependency/API evidence could improve repair prompts, while also exposing the limits of a weak base model. |
 | **0.5B LoRA adaptation** | Fine-tuned the small model with PEFT/LoRA using leakage-aware train/validation/test splits. Execution/test passes improved from **77/210** for the generic 0.5B condition to **127/210** for the selected LoRA condition. |
 | **7B engineering workflow** | Moved from an experiment-oriented model to local Qwen2.5-Coder 7B through Ollama, then built an external-file CLI with deterministic triggering, structured evidence, one repair attempt and host revalidation. It reached **197/210** on the controlled set and **8/8 repairs + 2/2 controls** on the engineering sanity set. |
-| **30B Agent loop** | Upgraded to Qwen3-Coder 30B with native tool calling, memory patches, repeated validation and host-controlled finish. The final frozen evaluation passed **15/15**, including **1/1 strict multi-turn rescue** and **5/5 unchanged controls**. |
+| **30B Agent loop** | Upgraded to Qwen3-Coder 30B with native tool calling, memory patches, repeated validation and host-controlled finish. Historical M7.2 passed **15/15**, including **1/1 strict multi-turn rescue** and **5/5 unchanged controls**; these development-exposed cases are now retained as regression tests. |
 
 The historical experiments show how the project reached its current design; they are not a claim that model size, fine-tuning and Agent architecture were isolated in one controlled ablation. Backends, model sizes and evaluation sets changed across stages.
 
@@ -105,9 +105,26 @@ python -m depguard.cli run --config configs/engineering_7b_ollama.yaml --require
 
 For a model-free Agent demonstration, use `configs/m5_scripted.json`. It drives real tools with scripted decisions and is useful for testing orchestration, but it is excluded from model-quality metrics.
 
-## Frozen Agent evaluation
+## Evaluation: 200 single-file defect tasks
 
-The final comparison used the same Qwen3-Coder 30B digest, parameters, requirements, source files and formal tests for one-shot and Agent conditions. The 15 one-shot artifacts were reused unchanged for the final Agent retest.
+The same local Qwen3-Coder 30B was evaluated with one-shot repair and Agent tools on **200 frozen defect tasks**. Correct-code samples are excluded from this count. Sources, inputs, tests and configurations are recorded; every outcome, including interruptions, is retained.
+
+| Source | Defects | One-shot passes | Agent passes | Agent outcomes unknown |
+| --- | ---: | ---: | ---: | ---: |
+| QuixBugs public algorithm defects | 29 | 25 | 22 | 1 |
+| Public library defect adaptations | 4 | 3 | 2 | 1 |
+| HumanEvalPack public authored bugs | 100 | 95 | 63 | 1 |
+| Authored general scenarios | 36 | 27 | 27 | 0 |
+| Authored API scenarios | 31 | 29 | 20 | 0 |
+
+HumanEvalPack contains human-inserted bugs, not production incidents. Project-authored tasks are also synthetic. Public benchmarks may appear in training data; formal tests were visible, with no independent hidden-test or human-acceptance measurement. These groups are not pooled into a production success rate.
+The Agent is not assumed to outperform one-shot repair. Reports retain paired outcomes, strict multi-round rescues, patch rejection reasons and measured costs. Twenty related correct-code samples in the earlier batches remained unchanged; they are separate from the 200 defects.
+
+[Complete task index](results/expansion200_v1/coverage_200.json) · [131-task extension report](results/expansion200_v1/report.md) · [Statistics](results/expansion200_v1/summary.json) · [Earlier public benchmark](results/external_eval_v1/report.md) · [Earlier mixed-source report](results/horizontal_eval_v1/report.md) · [Method](docs/EVALUATION_200_PLAN.md)
+
+## Historical Agent evaluation (M7.2)
+
+The M7.2 comparison used the same Qwen3-Coder 30B digest, parameters, requirements, source files and formal tests for one-shot and Agent conditions. The 15 one-shot artifacts were reused unchanged for that Agent retest. These cases informed development and are not an independent test of generalization.
 
 | Metric | Result |
 | --- | ---: |
@@ -143,6 +160,6 @@ python -m pytest
 python -m ruff check .
 ```
 
-Latest verification: **241 passed, 1 skipped** because Windows did not grant symlink creation; ruff passed.
+Latest full verification: **252 passed, 1 skipped**, plus **3 reporting-recovery tests passed**. The skip is due to Windows symlink permissions; ruff passed.
 
 The current scope is single-file Python repair, not autonomous repository-wide development. Correctness depends on formal test quality and validator coverage. Static risk analysis and regression checks are conservative heuristics. Subprocesses, temporary directories and timeouts provide process/time boundaries, **not a hardened security sandbox for untrusted code**. Real public deployment would require stronger isolation, authentication, resource limits and task scheduling.

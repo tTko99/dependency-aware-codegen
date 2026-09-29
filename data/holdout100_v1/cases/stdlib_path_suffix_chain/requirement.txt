@@ -1,0 +1,1 @@
+Return the list of all suffixes of a POSIX filename, treating a leading dot alone as a hidden-name prefix. Preserve solve signature.

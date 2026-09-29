@@ -1,0 +1,1 @@
+Return a new mapping without entries whose values are None, preserving false and zero values and leaving the original unchanged. Preserve the solve signature; do not mutate caller inputs.

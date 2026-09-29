@@ -1,0 +1,1 @@
+Parse a flat JSON object into an ordered list of key/value tuples, retaining duplicate keys. Preserve solve signature.

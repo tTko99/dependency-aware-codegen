@@ -1,0 +1,1 @@
+Return number of capacity-sized batches required for n items, n >= 0 and capacity > 0, using exact integer arithmetic. Preserve the solve signature; do not mutate caller inputs.

@@ -1,0 +1,1 @@
+Return just the URL before the fragment separator, preserving the query and encoded characters. Preserve solve signature.

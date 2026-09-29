@@ -1,0 +1,456 @@
+{
+  "case_id": "hep_099",
+  "input_hashes": {
+    "input.py": "e1aeed6961d7c0459959a400eed44a66caa9f5125bd695feb26b1da61f84c6c2",
+    "reference.py": "a4c72d6c199693ee7b3779f6a13deb1bd86c62499128eb375939ada141123df6",
+    "test_input.py": "af4c46631c8784ddc4b76828765e78edc8200155265db1b776f0d9242a481be3",
+    "requirement.txt": "cc9d1f8c8543e78c8a68ac14cd9e675d75b747f14aa840a6e1e92b17c038ab5b"
+  },
+  "valid": true,
+  "initial": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [
+      "run_pytest"
+    ],
+    "candidate_version": "0:e1aeed6961d7c0459959a400eed44a66caa9f5125bd695feb26b1da61f84c6c2",
+    "context_version": "e859580158699922dac553d6135f322b5a4694f37d00365e2978caf5db321bbb",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "FAIL",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.02321400004439056,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:e1aeed6961d7c0459959a400eed44a66caa9f5125bd695feb26b1da61f84c6c2",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:e1aeed6961d7c0459959a400eed44a66caa9f5125bd695feb26b1da61f84c6c2",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": false,
+          "execution": {
+            "status": "failed",
+            "return_code": 2,
+            "stdout": "\n=================================== ERRORS ====================================\n______________________ ERROR collecting test_solution.py ______________________\ntest_solution.py:16: in <module>\n    check(closest_integer)\ntest_solution.py:9: in check\n    assert closest_integer(\"14.5\") == 15, \"Test 2\"\nE   AssertionError: Test 2\nE   assert 14 == 15\nE    +  where 14 = <function closest_integer at 0x00000209872EC4A0>('14.5')\n=========================== short test summary info ===========================\nERROR test_solution.py - AssertionError: Test 2\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n",
+            "stderr": "",
+            "error_type": "AssertionError",
+            "error_category": "runtime_error",
+            "execution_time": 0.36808540020138025,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:e1aeed6961d7c0459959a400eed44a66caa9f5125bd695feb26b1da61f84c6c2",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:e1aeed6961d7c0459959a400eed44a66caa9f5125bd695feb26b1da61f84c6c2",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "math.floor",
+                "package": "math",
+                "module": "math",
+                "object_path": "floor",
+                "call_type": "import_object",
+                "line_number": 20,
+                "source": "floor",
+                "receiver": "floor",
+                "arg_count": null,
+                "keyword_names": [],
+                "is_call": false
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "math",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "math.ceil",
+                "package": "math",
+                "module": "math",
+                "object_path": "ceil",
+                "call_type": "import_object",
+                "line_number": 20,
+                "source": "ceil",
+                "receiver": "ceil",
+                "arg_count": null,
+                "keyword_names": [],
+                "is_call": false
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "math",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "math.floor",
+                "package": "math",
+                "module": "math",
+                "object_path": "floor",
+                "call_type": "imported_callable",
+                "line_number": 30,
+                "source": "floor",
+                "receiver": "floor",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "math",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "math.ceil",
+                "package": "math",
+                "module": "math",
+                "object_path": "ceil",
+                "call_type": "imported_callable",
+                "line_number": 32,
+                "source": "ceil",
+                "receiver": "ceil",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "math",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:e1aeed6961d7c0459959a400eed44a66caa9f5125bd695feb26b1da61f84c6c2",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:e1aeed6961d7c0459959a400eed44a66caa9f5125bd695feb26b1da61f84c6c2",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "math",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:e1aeed6961d7c0459959a400eed44a66caa9f5125bd695feb26b1da61f84c6c2",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:e1aeed6961d7c0459959a400eed44a66caa9f5125bd695feb26b1da61f84c6c2",
+        "cached": false
+      }
+    }
+  },
+  "reference": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "0:a4c72d6c199693ee7b3779f6a13deb1bd86c62499128eb375939ada141123df6",
+    "context_version": "3e814a07b4e64dd9338746a3c4255e33d358f748a25ea0b49ea371dceccf0c7a",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "PASS",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.024435800034552813,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:a4c72d6c199693ee7b3779f6a13deb1bd86c62499128eb375939ada141123df6",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:a4c72d6c199693ee7b3779f6a13deb1bd86c62499128eb375939ada141123df6",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": ".                                                                        [100%]\n1 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.2615892000030726,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:a4c72d6c199693ee7b3779f6a13deb1bd86c62499128eb375939ada141123df6",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:a4c72d6c199693ee7b3779f6a13deb1bd86c62499128eb375939ada141123df6",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "math.floor",
+                "package": "math",
+                "module": "math",
+                "object_path": "floor",
+                "call_type": "import_object",
+                "line_number": 20,
+                "source": "floor",
+                "receiver": "floor",
+                "arg_count": null,
+                "keyword_names": [],
+                "is_call": false
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "math",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "math.ceil",
+                "package": "math",
+                "module": "math",
+                "object_path": "ceil",
+                "call_type": "import_object",
+                "line_number": 20,
+                "source": "ceil",
+                "receiver": "ceil",
+                "arg_count": null,
+                "keyword_names": [],
+                "is_call": false
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "math",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "math.ceil",
+                "package": "math",
+                "module": "math",
+                "object_path": "ceil",
+                "call_type": "imported_callable",
+                "line_number": 30,
+                "source": "ceil",
+                "receiver": "ceil",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "math",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "math.floor",
+                "package": "math",
+                "module": "math",
+                "object_path": "floor",
+                "call_type": "imported_callable",
+                "line_number": 32,
+                "source": "floor",
+                "receiver": "floor",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "math",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:a4c72d6c199693ee7b3779f6a13deb1bd86c62499128eb375939ada141123df6",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:a4c72d6c199693ee7b3779f6a13deb1bd86c62499128eb375939ada141123df6",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "math",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:a4c72d6c199693ee7b3779f6a13deb1bd86c62499128eb375939ada141123df6",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": true,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:a4c72d6c199693ee7b3779f6a13deb1bd86c62499128eb375939ada141123df6",
+        "cached": false
+      }
+    }
+  }
+}

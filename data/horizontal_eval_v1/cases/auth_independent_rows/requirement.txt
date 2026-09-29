@@ -1,0 +1,1 @@
+Build an n by m zero matrix whose rows are independent mutable lists; dimensions are nonnegative. Preserve the solve signature; do not mutate caller inputs.

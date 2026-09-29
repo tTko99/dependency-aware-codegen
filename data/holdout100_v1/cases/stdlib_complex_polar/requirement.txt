@@ -1,0 +1,1 @@
+Return magnitude and phase angle in radians for a complex number. Preserve solve signature.

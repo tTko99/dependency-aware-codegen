@@ -1,0 +1,1 @@
+Encode a sequence of key/value pairs as a URL query, expanding list values into repeated keys and omitting empty lists. Preserve solve signature.

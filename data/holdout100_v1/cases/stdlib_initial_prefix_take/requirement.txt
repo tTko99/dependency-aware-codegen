@@ -1,0 +1,1 @@
+Return only the initial consecutive values below threshold; stop at the first value reaching threshold. Preserve solve signature.

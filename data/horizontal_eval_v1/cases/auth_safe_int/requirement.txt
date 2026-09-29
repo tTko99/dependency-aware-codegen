@@ -1,0 +1,1 @@
+Convert valid integer strings to int; return the supplied default on TypeError or ValueError. Preserve the solve signature; do not mutate caller inputs.

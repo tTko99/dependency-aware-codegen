@@ -1,0 +1,1 @@
+Zip input objects, broadcasting scalar numbers and strings across iterables. All scalars yield one tuple. strict=True must raise ValueError on unequal iterable lengths, regardless of argument order. No objects yields no tuples.

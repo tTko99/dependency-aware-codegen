@@ -1,0 +1,12 @@
+Repair the Python function according to this contract. Preserve its signature.
+Write a Python function `correct_bracketing(brackets: str)` to solve the following problem:
+brackets is a string of "<" and ">".
+return True if every opening bracket has a corresponding closing bracket.
+>>> correct_bracketing("<")
+False
+>>> correct_bracketing("<>")
+True
+>>> correct_bracketing("<<><>>")
+True
+>>> correct_bracketing("><<>")
+False

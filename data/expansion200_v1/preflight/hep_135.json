@@ -1,0 +1,262 @@
+{
+  "case_id": "hep_135",
+  "input_hashes": {
+    "input.py": "c75cf97f5994f58b91e9ea1f1a13dbce3e462c08f38ea557e894ceb44bfbabc9",
+    "reference.py": "b7d4e85e0e7bbbefb2915edddb2efab144ac70e4ec534b0dfdc4a229cda9b376",
+    "test_input.py": "37899abd60aeb5989ba88e471ce04d14dee9be278608b9e73fe1b8bc91e76670",
+    "requirement.txt": "dbcd61de70dc5cf3fe060fd2d0d6a1c8f55a7080c37afb8919a6655fb0960e6e"
+  },
+  "valid": true,
+  "initial": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [
+      "run_pytest"
+    ],
+    "candidate_version": "0:c75cf97f5994f58b91e9ea1f1a13dbce3e462c08f38ea557e894ceb44bfbabc9",
+    "context_version": "15332634ab84f3ea0c6e9f116dc8fba262743534d8daef4fe0e675299717813c",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "FAIL",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.023127799853682518,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:c75cf97f5994f58b91e9ea1f1a13dbce3e462c08f38ea557e894ceb44bfbabc9",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:c75cf97f5994f58b91e9ea1f1a13dbce3e462c08f38ea557e894ceb44bfbabc9",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": false,
+          "execution": {
+            "status": "failed",
+            "return_code": 2,
+            "stdout": "\n=================================== ERRORS ====================================\n______________________ ERROR collecting test_solution.py ______________________\ntest_solution.py:16: in <module>\n    check(can_arrange)\ntest_solution.py:8: in check\n    assert can_arrange([1,2,4,3,5])==3\nE   assert 1 == 3\nE    +  where 1 = <function can_arrange at 0x000001E33FCBC540>([1, 2, 4, 3, 5])\n=========================== short test summary info ===========================\nERROR test_solution.py - assert 1 == 3\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.36681989999487996,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:c75cf97f5994f58b91e9ea1f1a13dbce3e462c08f38ea557e894ceb44bfbabc9",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:c75cf97f5994f58b91e9ea1f1a13dbce3e462c08f38ea557e894ceb44bfbabc9",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [],
+          "validation_state": {
+            "candidate_version": "0:c75cf97f5994f58b91e9ea1f1a13dbce3e462c08f38ea557e894ceb44bfbabc9",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:c75cf97f5994f58b91e9ea1f1a13dbce3e462c08f38ea557e894ceb44bfbabc9",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [],
+          "validation_state": {
+            "candidate_version": "0:c75cf97f5994f58b91e9ea1f1a13dbce3e462c08f38ea557e894ceb44bfbabc9",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:c75cf97f5994f58b91e9ea1f1a13dbce3e462c08f38ea557e894ceb44bfbabc9",
+        "cached": false
+      }
+    }
+  },
+  "reference": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "0:b7d4e85e0e7bbbefb2915edddb2efab144ac70e4ec534b0dfdc4a229cda9b376",
+    "context_version": "ce26a46ec8c944fd527a41937ace8fc3578ce851c9fdc76b67d78e4ec9b2853b",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "PASS",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.021464399993419647,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:b7d4e85e0e7bbbefb2915edddb2efab144ac70e4ec534b0dfdc4a229cda9b376",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:b7d4e85e0e7bbbefb2915edddb2efab144ac70e4ec534b0dfdc4a229cda9b376",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": ".                                                                        [100%]\n1 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.26663270010612905,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:b7d4e85e0e7bbbefb2915edddb2efab144ac70e4ec534b0dfdc4a229cda9b376",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:b7d4e85e0e7bbbefb2915edddb2efab144ac70e4ec534b0dfdc4a229cda9b376",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [],
+          "validation_state": {
+            "candidate_version": "0:b7d4e85e0e7bbbefb2915edddb2efab144ac70e4ec534b0dfdc4a229cda9b376",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:b7d4e85e0e7bbbefb2915edddb2efab144ac70e4ec534b0dfdc4a229cda9b376",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [],
+          "validation_state": {
+            "candidate_version": "0:b7d4e85e0e7bbbefb2915edddb2efab144ac70e4ec534b0dfdc4a229cda9b376",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": true,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:b7d4e85e0e7bbbefb2915edddb2efab144ac70e4ec534b0dfdc4a229cda9b376",
+        "cached": false
+      }
+    }
+  }
+}

@@ -1,0 +1,328 @@
+{
+  "case_id": "api200_binomial",
+  "input_hashes": {
+    "input.py": "248370560f891f156135ee471308324ca210e9d4cb414d007fd3fa5f68b83cce",
+    "reference.py": "21fe324eee9922615c72656e4cb2589cb09c748e3f4505b5dac0b8efbff0067f",
+    "test_input.py": "6bbbcf649ba25e11a3ed26e60d8021e4ce3262df006c9bc89bcd7a2042df0569",
+    "requirement.txt": "f235d8c99dfc17c77f900ccb745536de3062f2f2ad023b273a7fd3e7dcb24fc3"
+  },
+  "valid": true,
+  "initial": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [
+      "run_pytest",
+      "validate_apis"
+    ],
+    "candidate_version": "0:248370560f891f156135ee471308324ca210e9d4cb414d007fd3fa5f68b83cce",
+    "context_version": "44f6a6c1668aaa9a6bb250e51ed0204b080cf505d726e994f1d00b63b1c3de95",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "FAIL",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.022734800120815635,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:248370560f891f156135ee471308324ca210e9d4cb414d007fd3fa5f68b83cce",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:248370560f891f156135ee471308324ca210e9d4cb414d007fd3fa5f68b83cce",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": false,
+          "execution": {
+            "status": "failed",
+            "return_code": 1,
+            "stdout": "FFFFF                                                                    [100%]\n================================== FAILURES ===================================\n___________________________ test_contract[args0-10] ___________________________\n\nargs = (5, 2), expected = 10\n\n    @pytest.mark.parametrize('args, expected', [((5, 2), 10), ((0, 0), 1), ((8, 0), 1), ((8, 8), 1), ((10, 3), 120)])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nn = 5, k = 2\n\n    def solve(n, k):\n>       return math.binomial(n, k)\n               ^^^^^^^^^^^^^\nE       AttributeError: module 'math' has no attribute 'binomial'\n\nsolution.py:4: AttributeError\n___________________________ test_contract[args1-1] ____________________________\n\nargs = (0, 0), expected = 1\n\n    @pytest.mark.parametrize('args, expected', [((5, 2), 10), ((0, 0), 1), ((8, 0), 1), ((8, 8), 1), ((10, 3), 120)])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nn = 0, k = 0\n\n    def solve(n, k):\n>       return math.binomial(n, k)\n               ^^^^^^^^^^^^^\nE       AttributeError: module 'math' has no attribute 'binomial'\n\nsolution.py:4: AttributeError\n___________________________ test_contract[args2-1] ____________________________\n\nargs = (8, 0), expected = 1\n\n    @pytest.mark.parametrize('args, expected', [((5, 2), 10), ((0, 0), 1), ((8, 0), 1), ((8, 8), 1), ((10, 3), 120)])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nn = 8, k = 0\n\n    def solve(n, k):\n>       return math.binomial(n, k)\n               ^^^^^^^^^^^^^\nE       AttributeError: module 'math' has no attribute 'binomial'\n\nsolution.py:4: AttributeError\n___________________________ test_contract[args3-1] ____________________________\n\nargs = (8, 8), expected = 1\n\n    @pytest.mark.parametrize('args, expected', [((5, 2), 10), ((0, 0), 1), ((8, 0), 1), ((8, 8), 1), ((10, 3), 120)])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nn = 8, k = 8\n\n    def solve(n, k):\n>       return math.binomial(n, k)\n               ^^^^^^^^^^^^^\nE       AttributeError: module 'math' has no attribute 'binomial'\n\nsolution.py:4: AttributeError\n__________________________ test_contract[args4-120] ___________________________\n\nargs = (10, 3), expected = 120\n\n    @pytest.mark.parametrize('args, expected', [((5, 2), 10), ((0, 0), 1), ((8, 0), 1), ((8, 8), 1), ((10, 3), 120)])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nn = 10, k = 3\n\n    def solve(n, k):\n>       return math.binomial(n, k)\n               ^^^^^^^^^^^^^\nE       AttributeError: module 'math' has no attribute 'binomial'\n\nsolution.py:4: AttributeError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_contract[args0-10] - AttributeError: module 'ma...\nFAILED test_solution.py::test_contract[args1-1] - AttributeError: module 'mat...\nFAILED test_solution.py::test_contract[args2-1] - AttributeError: module 'mat...\nFAILED test_solution.py::test_contract[args3-1] - AttributeError: module 'mat...\nFAILED test_solution.py::test_contract[args4-120] - AttributeError: module 'm...\n5 failed in 0.09s\n",
+            "stderr": "",
+            "error_type": "AttributeError",
+            "error_category": "attribute_error",
+            "execution_time": 0.34171369997784495,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:248370560f891f156135ee471308324ca210e9d4cb414d007fd3fa5f68b83cce",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:248370560f891f156135ee471308324ca210e9d4cb414d007fd3fa5f68b83cce",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": false,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "math.binomial",
+                "package": "math",
+                "module": "math",
+                "object_path": "binomial",
+                "call_type": "function_or_attribute",
+                "line_number": 4,
+                "source": "math.binomial",
+                "receiver": "math",
+                "arg_count": 2,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": false,
+              "status": "hallucinated_function",
+              "reason": "attribute_not_found:binomial",
+              "resolved_module": "math",
+              "suggestions": [
+                "math.factorial",
+                "math.isnan"
+              ]
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:248370560f891f156135ee471308324ca210e9d4cb414d007fd3fa5f68b83cce",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "failed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:248370560f891f156135ee471308324ca210e9d4cb414d007fd3fa5f68b83cce",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "math",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:248370560f891f156135ee471308324ca210e9d4cb414d007fd3fa5f68b83cce",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "failed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:248370560f891f156135ee471308324ca210e9d4cb414d007fd3fa5f68b83cce",
+        "cached": false
+      }
+    }
+  },
+  "reference": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "0:21fe324eee9922615c72656e4cb2589cb09c748e3f4505b5dac0b8efbff0067f",
+    "context_version": "318cb0189a112fca01b3fc6d973e262157f070ceae86716e8e5f2cf9bb04a6e2",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "PASS",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.022217500023543835,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:21fe324eee9922615c72656e4cb2589cb09c748e3f4505b5dac0b8efbff0067f",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:21fe324eee9922615c72656e4cb2589cb09c748e3f4505b5dac0b8efbff0067f",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": ".....                                                                    [100%]\n5 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.2604374000802636,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:21fe324eee9922615c72656e4cb2589cb09c748e3f4505b5dac0b8efbff0067f",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:21fe324eee9922615c72656e4cb2589cb09c748e3f4505b5dac0b8efbff0067f",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "math.comb",
+                "package": "math",
+                "module": "math",
+                "object_path": "comb",
+                "call_type": "function_or_attribute",
+                "line_number": 4,
+                "source": "math.comb",
+                "receiver": "math",
+                "arg_count": 2,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "math",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:21fe324eee9922615c72656e4cb2589cb09c748e3f4505b5dac0b8efbff0067f",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:21fe324eee9922615c72656e4cb2589cb09c748e3f4505b5dac0b8efbff0067f",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "math",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:21fe324eee9922615c72656e4cb2589cb09c748e3f4505b5dac0b8efbff0067f",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": true,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:21fe324eee9922615c72656e4cb2589cb09c748e3f4505b5dac0b8efbff0067f",
+        "cached": false
+      }
+    }
+  }
+}

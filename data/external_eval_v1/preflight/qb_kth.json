@@ -1,0 +1,256 @@
+{
+  "case_id": "qb_kth",
+  "valid": true,
+  "initial": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [
+      "run_pytest"
+    ],
+    "candidate_version": "0:505b7d8079de35173a8371dc40e6064d12f597441e1e7c49b782ed3892c37e7b",
+    "context_version": "e85aa07307177e6eee130fb9ea7a15ffce7ea4f61a65ad20a6cc635d2e83f180",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "FAIL",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.0237487000413239,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:505b7d8079de35173a8371dc40e6064d12f597441e1e7c49b782ed3892c37e7b",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:505b7d8079de35173a8371dc40e6064d12f597441e1e7c49b782ed3892c37e7b",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": false,
+          "execution": {
+            "status": "failed",
+            "return_code": 1,
+            "stdout": "FF...FF                                                                  [100%]\n================================== FAILURES ===================================\n________________________ test_contract[input_data0-5] _________________________\n\ninput_data = [[1, 2, 3, 4, 5, 6, ...], 4], expected = 5\n\n    @pytest.mark.parametrize('input_data,expected', [([[1, 2, 3, 4, 5, 6, 7], 4], 5), ([[3, 6, 7, 1, 6, 3, 8, 9], 5], 7), ([[3, 6, 7, 1, 6, 3, 8, 9], 2], 3), ([[2, 6, 8, 3, 5, 7], 0], 2), ([[34, 25, 7, 1, 9], 4], 34), ([[45, 2, 6, 8, 42, 90, 322], 1], 6), ([[45, 2, 6, 8, 42, 90, 322], 6], 322)])\n    def test_contract(input_data, expected):\n>       assert kth(*input_data) == expected\n               ^^^^^^^^^^^^^^^^\n\ntest_solution.py:7: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nsolution.py:12: in kth\n    return kth(above, k)\n           ^^^^^^^^^^^^^\nsolution.py:12: in kth\n    return kth(above, k)\n           ^^^^^^^^^^^^^\nsolution.py:12: in kth\n    return kth(above, k)\n           ^^^^^^^^^^^^^\nsolution.py:12: in kth\n    return kth(above, k)\n           ^^^^^^^^^^^^^\nsolution.py:12: in kth\n    return kth(above, k)\n           ^^^^^^^^^^^^^\nsolution.py:12: in kth\n    return kth(above, k)\n           ^^^^^^^^^^^^^\nsolution.py:12: in kth\n    return kth(above, k)\n           ^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\narr = [], k = 4\n\n    def kth(arr, k):\n>       pivot = arr[0]\n                ^^^^^^\nE       IndexError: list index out of range\n\nsolution.py:2: IndexError\n________________________ test_contract[input_data1-7] _________________________\n\ninput_data = [[3, 6, 7, 1, 6, 3, ...], 5], expected = 7\n\n    @pytest.mark.parametrize('input_data,expected', [([[1, 2, 3, 4, 5, 6, 7], 4], 5), ([[3, 6, 7, 1, 6, 3, 8, 9], 5], 7), ([[3, 6, 7, 1, 6, 3, 8, 9], 2], 3), ([[2, 6, 8, 3, 5, 7], 0], 2), ([[34, 25, 7, 1, 9], 4], 34), ([[45, 2, 6, 8, 42, 90, 322], 1], 6), ([[45, 2, 6, 8, 42, 90, 322], 6], 322)])\n    def test_contract(input_data, expected):\n>       assert kth(*input_data) == expected\n               ^^^^^^^^^^^^^^^^\n\ntest_solution.py:7: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nsolution.py:12: in kth\n    return kth(above, k)\n           ^^^^^^^^^^^^^\nsolution.py:12: in kth\n    return kth(above, k)\n           ^^^^^^^^^^^^^\nsolution.py:12: in kth\n    return kth(above, k)\n           ^^^^^^^^^^^^^\nsolution.py:12: in kth\n    return kth(above, k)\n           ^^^^^^^^^^^^^\nsolution.py:12: in kth\n    return kth(above, k)\n           ^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\narr = [], k = 5\n\n    def kth(arr, k):\n>       pivot = arr[0]\n                ^^^^^^\nE       IndexError: list index out of range\n\nsolution.py:2: IndexError\n________________________ test_contract[input_data5-6] _________________________\n\ninput_data = [[45, 2, 6, 8, 42, 90, ...], 1], expected = 6\n\n    @pytest.mark.parametrize('input_data,expected', [([[1, 2, 3, 4, 5, 6, 7], 4], 5), ([[3, 6, 7, 1, 6, 3, 8, 9], 5], 7), ([[3, 6, 7, 1, 6, 3, 8, 9], 2], 3), ([[2, 6, 8, 3, 5, 7], 0], 2), ([[34, 25, 7, 1, 9], 4], 34), ([[45, 2, 6, 8, 42, 90, 322], 1], 6), ([[45, 2, 6, 8, 42, 90, 322], 6], 322)])\n    def test_contract(input_data, expected):\n>       assert kth(*input_data) == expected\n               ^^^^^^^^^^^^^^^^\n\ntest_solution.py:7: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nsolution.py:10: in kth\n    return kth(below, k)\n           ^^^^^^^^^^^^^\nsolution.py:12: in kth\n    return kth(above, k)\n           ^^^^^^^^^^^^^\nsolution.py:12: in kth\n    return kth(above, k)\n           ^^^^^^^^^^^^^\nsolution.py:12: in kth\n    return kth(above, k)\n           ^^^^^^^^^^^^^\nsolution.py:12: in kth\n    return kth(above, k)\n           ^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\narr = [], k = 1\n\n    def kth(arr, k):\n>       pivot = arr[0]\n                ^^^^^^\nE       IndexError: list index out of range\n\nsolution.py:2: IndexError\n_______________________ test_contract[input_data6-322] ________________________\n\ninput_data = [[45, 2, 6, 8, 42, 90, ...], 6], expected = 322\n\n    @pytest.mark.parametrize('input_data,expected', [([[1, 2, 3, 4, 5, 6, 7], 4], 5), ([[3, 6, 7, 1, 6, 3, 8, 9], 5], 7), ([[3, 6, 7, 1, 6, 3, 8, 9], 2], 3), ([[2, 6, 8, 3, 5, 7], 0], 2), ([[34, 25, 7, 1, 9], 4], 34), ([[45, 2, 6, 8, 42, 90, 322], 1], 6), ([[45, 2, 6, 8, 42, 90, 322], 6], 322)])\n    def test_contract(input_data, expected):\n>       assert kth(*input_data) == expected\n               ^^^^^^^^^^^^^^^^\n\ntest_solution.py:7: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nsolution.py:12: in kth\n    return kth(above, k)\n           ^^^^^^^^^^^^^\nsolution.py:12: in kth\n    return kth(above, k)\n           ^^^^^^^^^^^^^\nsolution.py:12: in kth\n    return kth(above, k)\n           ^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\narr = [], k = 6\n\n    def kth(arr, k):\n>       pivot = arr[0]\n                ^^^^^^\nE       IndexError: list index out of range\n\nsolution.py:2: IndexError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_contract[input_data0-5] - IndexError: list inde...\nFAILED test_solution.py::test_contract[input_data1-7] - IndexError: list inde...\nFAILED test_solution.py::test_contract[input_data5-6] - IndexError: list inde...\nFAILED test_solution.py::test_contract[input_data6-322] - IndexError: list in...\n4 failed, 3 passed in 0.09s\n",
+            "stderr": "",
+            "error_type": "IndexError",
+            "error_category": "runtime_error",
+            "execution_time": 0.3481208998709917,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:505b7d8079de35173a8371dc40e6064d12f597441e1e7c49b782ed3892c37e7b",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:505b7d8079de35173a8371dc40e6064d12f597441e1e7c49b782ed3892c37e7b",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [],
+          "validation_state": {
+            "candidate_version": "0:505b7d8079de35173a8371dc40e6064d12f597441e1e7c49b782ed3892c37e7b",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:505b7d8079de35173a8371dc40e6064d12f597441e1e7c49b782ed3892c37e7b",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [],
+          "validation_state": {
+            "candidate_version": "0:505b7d8079de35173a8371dc40e6064d12f597441e1e7c49b782ed3892c37e7b",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:505b7d8079de35173a8371dc40e6064d12f597441e1e7c49b782ed3892c37e7b",
+        "cached": false
+      }
+    }
+  },
+  "reference": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "0:1a744253b219bf9fee54fbe5f612ac3c6d186cd38f442b57c41736d102524252",
+    "context_version": "439b694d76611c379167acfeca5b54b54170dda624861640efd176be5f6471d2",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "PASS",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.02353250002488494,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:1a744253b219bf9fee54fbe5f612ac3c6d186cd38f442b57c41736d102524252",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:1a744253b219bf9fee54fbe5f612ac3c6d186cd38f442b57c41736d102524252",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": ".......                                                                  [100%]\n7 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.2806788000743836,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:1a744253b219bf9fee54fbe5f612ac3c6d186cd38f442b57c41736d102524252",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:1a744253b219bf9fee54fbe5f612ac3c6d186cd38f442b57c41736d102524252",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [],
+          "validation_state": {
+            "candidate_version": "0:1a744253b219bf9fee54fbe5f612ac3c6d186cd38f442b57c41736d102524252",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:1a744253b219bf9fee54fbe5f612ac3c6d186cd38f442b57c41736d102524252",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [],
+          "validation_state": {
+            "candidate_version": "0:1a744253b219bf9fee54fbe5f612ac3c6d186cd38f442b57c41736d102524252",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": true,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:1a744253b219bf9fee54fbe5f612ac3c6d186cd38f442b57c41736d102524252",
+        "cached": false
+      }
+    }
+  }
+}

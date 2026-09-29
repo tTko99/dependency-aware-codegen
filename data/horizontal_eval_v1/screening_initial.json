@@ -1,0 +1,412 @@
+{
+  "before_model_calls": true,
+  "candidates": [
+    {
+      "id": "auth_mean_api",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_population_variance",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_prefix_totals",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_query_parameters",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_whole_identifier",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_top_counts",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_calendar_parse",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_money_rounding",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_json_boolean",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_nested_lookup",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_record_grouping",
+      "risks": {
+        "source": [],
+        "reference": [
+          {
+            "line": 6,
+            "reason": "unresolved_call",
+            "detail": "result.setdefault(record.get('kind'), []).append"
+          }
+        ],
+        "tests": []
+      },
+      "included": false
+    },
+    {
+      "id": "auth_merge_defaults",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_numeric_record_order",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_unique_records",
+      "risks": {
+        "source": [
+          {
+            "line": 4,
+            "reason": "unresolved_call",
+            "detail": "{r['id']: r for r in records}.values"
+          }
+        ],
+        "reference": [],
+        "tests": []
+      },
+      "included": false
+    },
+    {
+      "id": "auth_pair_transpose",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_literal_prefix",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_literal_separator",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_casefold_match",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_line_endings",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_quoted_tokens",
+      "risks": {
+        "source": [],
+        "reference": [
+          {
+            "line": 20,
+            "reason": "unresolved_call",
+            "detail": "''.join"
+          },
+          {
+            "line": 15,
+            "reason": "unresolved_call",
+            "detail": "''.join"
+          }
+        ],
+        "tests": []
+      },
+      "included": false
+    },
+    {
+      "id": "auth_regex_replacement_literal",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_word_frequencies",
+      "risks": {
+        "source": [
+          {
+            "line": 5,
+            "reason": "unresolved_call",
+            "detail": "text.lower().split"
+          }
+        ],
+        "reference": [
+          {
+            "line": 5,
+            "reason": "unresolved_call",
+            "detail": "text.casefold().split"
+          }
+        ],
+        "tests": []
+      },
+      "included": false
+    },
+    {
+      "id": "auth_elapsed_days",
+      "risks": {
+        "source": [],
+        "reference": [
+          {
+            "line": 4,
+            "reason": "unresolved_call",
+            "detail": "(datetime.fromisoformat(end) - datetime.fromisoformat(start)).total_seconds"
+          }
+        ],
+        "tests": []
+      },
+      "included": false
+    },
+    {
+      "id": "auth_leap_century",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_next_calendar_day",
+      "risks": {
+        "source": [],
+        "reference": [
+          {
+            "line": 4,
+            "reason": "unresolved_call",
+            "detail": "(date.fromisoformat(text) + timedelta(days=1)).isoformat"
+          }
+        ],
+        "tests": []
+      },
+      "included": false
+    },
+    {
+      "id": "auth_ceil_batches",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_clamp_bounds",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_decimal_total",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_rational_ratio",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_fresh_accumulator",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_safe_int",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_first_present",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_immutable_sort",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_independent_rows",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_drain_iterator",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "auth_filter_mapping",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "public_partition",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "public_split_before",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "public_split_after",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    },
+    {
+      "id": "public_zip_broadcast",
+      "risks": {
+        "source": [],
+        "reference": [],
+        "tests": []
+      },
+      "included": true
+    }
+  ]
+}

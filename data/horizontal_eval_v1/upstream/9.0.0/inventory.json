@@ -1,0 +1,25 @@
+{
+  "project": "more-itertools",
+  "version": "9.0.0",
+  "metadata_url": "https://pypi.org/pypi/more-itertools/9.0.0/json",
+  "archive_url": "https://files.pythonhosted.org/packages/13/b3/397aa9668da8b1f0c307bc474608653d46122ae0563d1d32f60e24fa0cbd/more-itertools-9.0.0.tar.gz",
+  "archive_sha256": "5a6257e40878ef0520b1803990e3e22303a41b5714006c32a3fd8304b26ea1ab",
+  "files": {
+    "LICENSE.txt": "09f1c8c9e941af3e584d59641ea9b87d83c0cb0fd007eb5ef391a7e2643c1a46",
+    "README.rst.txt": "ace43262b22256875c254baa2751cce362abe038a5912f932ac4f4173f098f38",
+    "docs/api.rst.txt": "512d7eabfb54650236d74a8a199da39b2c13d95eb24acbb9083f62f5ef60a173",
+    "docs/conf.py.txt": "bee696882eae515450b7fd40fc0127050a92f48934308a06a4d6271fa922510c",
+    "docs/index.rst.txt": "43f95dd57fe85bf3356cb938271deb383c825c6edfd1ad226d913c312a95514b",
+    "docs/license.rst.txt": "f4a8d4c0f47ec36904fba4fb1f7be3fcaa045cc3fdd4766200ba755d892f0d18",
+    "docs/testing.rst.txt": "d6bce97abf158183c0f853a64b68b170a567474331f02b20bcd9797ae6f8a80c",
+    "docs/versions.rst.txt": "c2a6cf54620677f0489ded5b3571e4c6134b47c0f66080629e83b91118531e9d",
+    "more_itertools/__init__.py.txt": "e4f350329cb8d34b39181de3716c338ded110b0f24d1bbd4f56fc2e3d5747ddd",
+    "more_itertools/more.py.txt": "1669ad913fa3ebda882e4c4410b939651a192bc4add5583f7ce196d2c4c577b8",
+    "more_itertools/recipes.py.txt": "657e3ed887db64a94f2156832131f66ee5ff7cfb8c0ded4455ce9ed974ac0b3f",
+    "setup.py.txt": "843ac26c38a41abae578250bc0f9419194b320a0f67327d941037a4268f6cfe7",
+    "tests/__init__.py.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/test_more.py.txt": "6e2ba0a8c994e12a7c36638088e17c48202bd66e5455dbfbeab368b4fbbf93a8",
+    "tests/test_recipes.py.txt": "baf19ea5eac51b219d59aea9b6e7a9ad4fd98f38f96bc3c1afa52f1a7cb11dfe"
+  },
+  "release_notes": "https://more-itertools.readthedocs.io/en/v10.5.0/versions.html"
+}

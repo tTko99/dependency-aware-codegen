@@ -1,0 +1,458 @@
+{
+  "case_id": "auth_next_calendar_day",
+  "input_hashes": {
+    "input.py": "3d56a8f53787c2741783f6ea5bd1693ef09db1bc0e8a6d49003cecaec8f954a2",
+    "reference.py": "362fa7e830fff94f8c0c01d0e31344ceaf87e3df377f3e8328da5e8af547e118",
+    "test_input.py": "1d375f70acf6aad16bed33f45a79f320ed16172e16255545b6716643c51e3bf4",
+    "requirement.txt": "d828c78b260789a27a8a37deb30e505ed7f969801b8f0f75caa5ff754d487518"
+  },
+  "valid": true,
+  "initial": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [
+      "run_pytest"
+    ],
+    "candidate_version": "0:3d56a8f53787c2741783f6ea5bd1693ef09db1bc0e8a6d49003cecaec8f954a2",
+    "context_version": "66a56b3faaf771e8f7662e42243d2f1701dbf0d34a6ad474e0311194e3433d34",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "FAIL",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.022298699943348765,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:3d56a8f53787c2741783f6ea5bd1693ef09db1bc0e8a6d49003cecaec8f954a2",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:3d56a8f53787c2741783f6ea5bd1693ef09db1bc0e8a6d49003cecaec8f954a2",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": false,
+          "execution": {
+            "status": "failed",
+            "return_code": 1,
+            "stdout": ".FF                                                                      [100%]\n================================== FAILURES ===================================\n_______________________ test_contract[args1-2024-03-01] _______________________\n\nargs = ('2024-02-29',), expected = '2024-03-01'\n\n    @pytest.mark.parametrize('args, expected', [(('2024-02-28',), '2024-02-29'), (('2024-02-29',), '2024-03-01'), (('2023-12-31',), '2024-01-01')])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ntext = '2024-02-29'\n\n    def solve(text):\n        value = date.fromisoformat(text)\n>       return date(value.year, value.month, value.day + 1).isoformat()\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       ValueError: day is out of range for month\n\nsolution.py:5: ValueError\n_______________________ test_contract[args2-2024-01-01] _______________________\n\nargs = ('2023-12-31',), expected = '2024-01-01'\n\n    @pytest.mark.parametrize('args, expected', [(('2024-02-28',), '2024-02-29'), (('2024-02-29',), '2024-03-01'), (('2023-12-31',), '2024-01-01')])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ntext = '2023-12-31'\n\n    def solve(text):\n        value = date.fromisoformat(text)\n>       return date(value.year, value.month, value.day + 1).isoformat()\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       ValueError: day is out of range for month\n\nsolution.py:5: ValueError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_contract[args1-2024-03-01] - ValueError: day is...\nFAILED test_solution.py::test_contract[args2-2024-01-01] - ValueError: day is...\n2 failed, 1 passed in 0.05s\n",
+            "stderr": "",
+            "error_type": "ValueError",
+            "error_category": "value_error",
+            "execution_time": 0.282068699831143,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:3d56a8f53787c2741783f6ea5bd1693ef09db1bc0e8a6d49003cecaec8f954a2",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:3d56a8f53787c2741783f6ea5bd1693ef09db1bc0e8a6d49003cecaec8f954a2",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "datetime.date",
+                "package": "datetime",
+                "module": "datetime",
+                "object_path": "date",
+                "call_type": "import_object",
+                "line_number": 1,
+                "source": "date",
+                "receiver": "date",
+                "arg_count": null,
+                "keyword_names": [],
+                "is_call": false
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "datetime",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "datetime.timedelta",
+                "package": "datetime",
+                "module": "datetime",
+                "object_path": "timedelta",
+                "call_type": "import_object",
+                "line_number": 1,
+                "source": "timedelta",
+                "receiver": "timedelta",
+                "arg_count": null,
+                "keyword_names": [],
+                "is_call": false
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "datetime",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "datetime.date.fromisoformat",
+                "package": "datetime",
+                "module": "datetime.date",
+                "object_path": "fromisoformat",
+                "call_type": "function_or_attribute",
+                "line_number": 4,
+                "source": "date.fromisoformat",
+                "receiver": "date",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "datetime",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "datetime.date",
+                "package": "datetime",
+                "module": "datetime",
+                "object_path": "date",
+                "call_type": "imported_callable",
+                "line_number": 5,
+                "source": "date",
+                "receiver": "date",
+                "arg_count": 3,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "datetime",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:3d56a8f53787c2741783f6ea5bd1693ef09db1bc0e8a6d49003cecaec8f954a2",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:3d56a8f53787c2741783f6ea5bd1693ef09db1bc0e8a6d49003cecaec8f954a2",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "datetime",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:3d56a8f53787c2741783f6ea5bd1693ef09db1bc0e8a6d49003cecaec8f954a2",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:3d56a8f53787c2741783f6ea5bd1693ef09db1bc0e8a6d49003cecaec8f954a2",
+        "cached": false
+      }
+    }
+  },
+  "reference": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "0:362fa7e830fff94f8c0c01d0e31344ceaf87e3df377f3e8328da5e8af547e118",
+    "context_version": "b026571528405651014cec1ea02d1ca4cd2a7883bda3f97d7388c5fb913b7c1f",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "PASS",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.0199734999332577,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:362fa7e830fff94f8c0c01d0e31344ceaf87e3df377f3e8328da5e8af547e118",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:362fa7e830fff94f8c0c01d0e31344ceaf87e3df377f3e8328da5e8af547e118",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "...                                                                      [100%]\n3 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.22961109993048012,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:362fa7e830fff94f8c0c01d0e31344ceaf87e3df377f3e8328da5e8af547e118",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:362fa7e830fff94f8c0c01d0e31344ceaf87e3df377f3e8328da5e8af547e118",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "datetime.date",
+                "package": "datetime",
+                "module": "datetime",
+                "object_path": "date",
+                "call_type": "import_object",
+                "line_number": 1,
+                "source": "date",
+                "receiver": "date",
+                "arg_count": null,
+                "keyword_names": [],
+                "is_call": false
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "datetime",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "datetime.timedelta",
+                "package": "datetime",
+                "module": "datetime",
+                "object_path": "timedelta",
+                "call_type": "import_object",
+                "line_number": 1,
+                "source": "timedelta",
+                "receiver": "timedelta",
+                "arg_count": null,
+                "keyword_names": [],
+                "is_call": false
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "datetime",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "datetime.date.fromisoformat",
+                "package": "datetime",
+                "module": "datetime.date",
+                "object_path": "fromisoformat",
+                "call_type": "function_or_attribute",
+                "line_number": 4,
+                "source": "date.fromisoformat",
+                "receiver": "date",
+                "arg_count": 1,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "datetime",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "datetime.timedelta",
+                "package": "datetime",
+                "module": "datetime",
+                "object_path": "timedelta",
+                "call_type": "imported_callable",
+                "line_number": 4,
+                "source": "timedelta",
+                "receiver": "timedelta",
+                "arg_count": 0,
+                "keyword_names": [
+                  "days"
+                ],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "datetime",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:362fa7e830fff94f8c0c01d0e31344ceaf87e3df377f3e8328da5e8af547e118",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:362fa7e830fff94f8c0c01d0e31344ceaf87e3df377f3e8328da5e8af547e118",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "datetime",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:362fa7e830fff94f8c0c01d0e31344ceaf87e3df377f3e8328da5e8af547e118",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": true,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:362fa7e830fff94f8c0c01d0e31344ceaf87e3df377f3e8328da5e8af547e118",
+        "cached": false
+      }
+    }
+  }
+}

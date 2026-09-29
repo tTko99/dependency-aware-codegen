@@ -1,0 +1,1 @@
+Return records ordered by numeric score ascending, preserving ties; scores are numeric strings. Preserve the solve signature; do not mutate caller inputs.

@@ -1,0 +1,1 @@
+Return up to k (item,count) pairs by descending frequency, preserving first-seen tie order; k=0 returns empty. Preserve the solve signature; do not mutate caller inputs.

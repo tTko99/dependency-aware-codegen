@@ -1,0 +1,1 @@
+Convert a decimal string to its exact numerator and denominator, returned as a tuple; do not round through a binary float. Preserve solve signature.

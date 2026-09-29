@@ -1,0 +1,426 @@
+{
+  "case_id": "api200_reduce_empty_sum",
+  "input_hashes": {
+    "input.py": "7e9d08b67309f98c95a6a41d74e40f122c96f1711cf5959232ed48e12f078130",
+    "reference.py": "58f74e497c74a212f97ddbeef4eb98e50b8a5c279d042a1015771104c4722010",
+    "test_input.py": "682b407815d94658e535884fd7d78f688040fe23c2bbc3934b8d42be4bb69177",
+    "requirement.txt": "3d682c4456a7790f52a6f7664d689b8806e8c6022bcc0f849abcde7a1c0f956e"
+  },
+  "valid": true,
+  "initial": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [
+      "run_pytest"
+    ],
+    "candidate_version": "0:7e9d08b67309f98c95a6a41d74e40f122c96f1711cf5959232ed48e12f078130",
+    "context_version": "56f2211f5c52b9123ba85c5a580232c342d89ca38d5d87c691b7e54754e8f0fc",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "FAIL",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.025936299934983253,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:7e9d08b67309f98c95a6a41d74e40f122c96f1711cf5959232ed48e12f078130",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:7e9d08b67309f98c95a6a41d74e40f122c96f1711cf5959232ed48e12f078130",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": false,
+          "execution": {
+            "status": "failed",
+            "return_code": 1,
+            "stdout": "F...                                                                     [100%]\n================================== FAILURES ===================================\n___________________________ test_contract[args0-0] ____________________________\n\nargs = ([],), expected = 0\n\n    @pytest.mark.parametrize('args, expected', [(([],), 0), (([1, 2, 3],), 6), (([-1, 1],), 0), (([8],), 8)])\n    def test_contract(args, expected):\n>       assert solve(*args) == expected\n               ^^^^^^^^^^^^\n\ntest_solution.py:6: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nvalues = []\n\n    def solve(values):\n>       return reduce(add, values)\n               ^^^^^^^^^^^^^^^^^^^\nE       TypeError: reduce() of empty iterable with no initial value\n\nsolution.py:5: TypeError\n=========================== short test summary info ===========================\nFAILED test_solution.py::test_contract[args0-0] - TypeError: reduce() of empt...\n1 failed, 3 passed in 0.06s\n",
+            "stderr": "",
+            "error_type": "TypeError",
+            "error_category": "type_error",
+            "execution_time": 0.31218829983845353,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:7e9d08b67309f98c95a6a41d74e40f122c96f1711cf5959232ed48e12f078130",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:7e9d08b67309f98c95a6a41d74e40f122c96f1711cf5959232ed48e12f078130",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "functools.reduce",
+                "package": "functools",
+                "module": "functools",
+                "object_path": "reduce",
+                "call_type": "import_object",
+                "line_number": 1,
+                "source": "reduce",
+                "receiver": "reduce",
+                "arg_count": null,
+                "keyword_names": [],
+                "is_call": false
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "functools",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "operator.add",
+                "package": "operator",
+                "module": "operator",
+                "object_path": "add",
+                "call_type": "import_object",
+                "line_number": 2,
+                "source": "add",
+                "receiver": "add",
+                "arg_count": null,
+                "keyword_names": [],
+                "is_call": false
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "operator",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "functools.reduce",
+                "package": "functools",
+                "module": "functools",
+                "object_path": "reduce",
+                "call_type": "imported_callable",
+                "line_number": 5,
+                "source": "reduce",
+                "receiver": "reduce",
+                "arg_count": 2,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "functools",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:7e9d08b67309f98c95a6a41d74e40f122c96f1711cf5959232ed48e12f078130",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:7e9d08b67309f98c95a6a41d74e40f122c96f1711cf5959232ed48e12f078130",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "functools",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            },
+            {
+              "package": "operator",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:7e9d08b67309f98c95a6a41d74e40f122c96f1711cf5959232ed48e12f078130",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "failed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:7e9d08b67309f98c95a6a41d74e40f122c96f1711cf5959232ed48e12f078130",
+        "cached": false
+      }
+    }
+  },
+  "reference": {
+    "required_checks": [
+      "execute",
+      "run_pytest",
+      "validate_apis",
+      "validate_packages"
+    ],
+    "missing_checks": [],
+    "candidate_version": "0:58f74e497c74a212f97ddbeef4eb98e50b8a5c279d042a1015771104c4722010",
+    "context_version": "216aaf88b0d573ffdf4e80ffbc360350f970a04f5eecd7528f50a9520a59c9d7",
+    "regression_guard": {
+      "blocked": false,
+      "findings": [],
+      "changed_lines": 0,
+      "changed_files": 0,
+      "heuristic": true
+    },
+    "host_status": "PASS",
+    "checks": {
+      "execute": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.024573500035330653,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:58f74e497c74a212f97ddbeef4eb98e50b8a5c279d042a1015771104c4722010",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "missing",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:58f74e497c74a212f97ddbeef4eb98e50b8a5c279d042a1015771104c4722010",
+        "cached": false
+      },
+      "run_pytest": {
+        "status": "success",
+        "message": "Execution completed",
+        "evidence": {
+          "passed": true,
+          "execution": {
+            "status": "passed",
+            "return_code": 0,
+            "stdout": "....                                                                     [100%]\n4 passed in 0.01s\n",
+            "stderr": "",
+            "error_type": null,
+            "error_category": "unknown",
+            "execution_time": 0.2619398001115769,
+            "timed_out": false
+          },
+          "validation_state": {
+            "candidate_version": "0:58f74e497c74a212f97ddbeef4eb98e50b8a5c279d042a1015771104c4722010",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "missing",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:58f74e497c74a212f97ddbeef4eb98e50b8a5c279d042a1015771104c4722010",
+        "cached": false
+      },
+      "validate_apis": {
+        "status": "success",
+        "message": "API validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "reference": {
+                "canonical_path": "functools.reduce",
+                "package": "functools",
+                "module": "functools",
+                "object_path": "reduce",
+                "call_type": "import_object",
+                "line_number": 1,
+                "source": "reduce",
+                "receiver": "reduce",
+                "arg_count": null,
+                "keyword_names": [],
+                "is_call": false
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "functools",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "operator.add",
+                "package": "operator",
+                "module": "operator",
+                "object_path": "add",
+                "call_type": "import_object",
+                "line_number": 2,
+                "source": "add",
+                "receiver": "add",
+                "arg_count": null,
+                "keyword_names": [],
+                "is_call": false
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "operator",
+              "suggestions": []
+            },
+            {
+              "reference": {
+                "canonical_path": "functools.reduce",
+                "package": "functools",
+                "module": "functools",
+                "object_path": "reduce",
+                "call_type": "imported_callable",
+                "line_number": 5,
+                "source": "reduce",
+                "receiver": "reduce",
+                "arg_count": 3,
+                "keyword_names": [],
+                "is_call": true
+              },
+              "package_valid": true,
+              "module_valid": true,
+              "api_valid": true,
+              "status": "valid",
+              "reason": null,
+              "resolved_module": "functools",
+              "suggestions": []
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:58f74e497c74a212f97ddbeef4eb98e50b8a5c279d042a1015771104c4722010",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "missing"
+            },
+            "ready_to_finish_successfully": false,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:58f74e497c74a212f97ddbeef4eb98e50b8a5c279d042a1015771104c4722010",
+        "cached": false
+      },
+      "validate_packages": {
+        "status": "success",
+        "message": "Package validation",
+        "evidence": {
+          "passed": true,
+          "syntax_error": null,
+          "results": [
+            {
+              "package": "functools",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            },
+            {
+              "package": "operator",
+              "exists": true,
+              "status": "valid",
+              "version": null,
+              "reason": null
+            }
+          ],
+          "validation_state": {
+            "candidate_version": "0:58f74e497c74a212f97ddbeef4eb98e50b8a5c279d042a1015771104c4722010",
+            "required_checks": {
+              "execute": "passed",
+              "run_pytest": "passed",
+              "validate_apis": "passed",
+              "validate_packages": "passed"
+            },
+            "ready_to_finish_successfully": true,
+            "regression_blocked": false
+          }
+        },
+        "candidate_version": "0:58f74e497c74a212f97ddbeef4eb98e50b8a5c279d042a1015771104c4722010",
+        "cached": false
+      }
+    }
+  }
+}

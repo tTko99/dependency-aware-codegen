@@ -1,0 +1,1 @@
+Select the values at exactly two given indices, returning a tuple in the requested index order. Preserve solve signature.

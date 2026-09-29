@@ -1,0 +1,858 @@
+{
+  "policy": "100 eligible public tasks sorted by SHA256(expansion200-selection-v1:ID), plus 31 authored API contracts; no model inference used.",
+  "public_eligible": 142,
+  "public_decisions": [
+    {
+      "id": "hep_000",
+      "preflight_valid": true,
+      "selection_key": "46b36644ade89511cf0320736a8b560ba7b373f5ce92c7cf38d763138cd4c063",
+      "selected": true
+    },
+    {
+      "id": "hep_002",
+      "preflight_valid": true,
+      "selection_key": "531da43f97562f57c63a4007ade823d411dfd069f7eca2576a4bbfb8109902cb",
+      "selected": true
+    },
+    {
+      "id": "hep_003",
+      "preflight_valid": true,
+      "selection_key": "e30dafb5a18b7ef2d904deb947ff0e2cd5659523253d3fd0175b418c432bf3ab",
+      "selected": false
+    },
+    {
+      "id": "hep_004",
+      "preflight_valid": true,
+      "selection_key": "35c6735f31dabec72efdecfea02307a10dcec7fe1a3b64a7950ed3f9c1146190",
+      "selected": true
+    },
+    {
+      "id": "hep_005",
+      "preflight_valid": true,
+      "selection_key": "9d6a4f58b778d800688f972cc8baea53bf66e1e68e7bcdad931171d13a0ae35f",
+      "selected": true
+    },
+    {
+      "id": "hep_006",
+      "preflight_valid": true,
+      "selection_key": "8fc6f7b600e51b51fb1b2717b72f9e597f66edda92d303bb0e4e475d72a8a76f",
+      "selected": true
+    },
+    {
+      "id": "hep_007",
+      "preflight_valid": true,
+      "selection_key": "802b5193d8b3dd26c163092b8c17d2df3f567ff02aa200952d163af7eaeae0e2",
+      "selected": true
+    },
+    {
+      "id": "hep_008",
+      "preflight_valid": true,
+      "selection_key": "999f3665dc89a6b80057bfbc9c49c4cb3f975f470553930ea6a8bbb1cd2abd30",
+      "selected": true
+    },
+    {
+      "id": "hep_009",
+      "preflight_valid": true,
+      "selection_key": "afd7abb31f4a09a40f15ae5e6bc82909f202664ea6ddac1718789c781189068a",
+      "selected": false
+    },
+    {
+      "id": "hep_010",
+      "preflight_valid": true,
+      "selection_key": "59f1a967a6a42db86f158416adc8cfcae36a095d5ba9c32ef148c70727f5f8ed",
+      "selected": true
+    },
+    {
+      "id": "hep_012",
+      "preflight_valid": true,
+      "selection_key": "06713ba57ab4705c10036a4c4aa10480a2c7a3712f2177c4d0a49fdadb384f6b",
+      "selected": true
+    },
+    {
+      "id": "hep_013",
+      "preflight_valid": true,
+      "selection_key": "944d2f1f4def092ee0f8c8323837d28b5e6b2a35b86f7178a8085907bd7fed2a",
+      "selected": true
+    },
+    {
+      "id": "hep_014",
+      "preflight_valid": true,
+      "selection_key": "52c3f6f22578dfb0943be0c35a233b0227fb5889a19f4e4a3cc59802819520e5",
+      "selected": true
+    },
+    {
+      "id": "hep_016",
+      "preflight_valid": true,
+      "selection_key": "34d4837187c6962fdf6aa67a9063df487f4febef815d2c9745606ae800e7d843",
+      "selected": true
+    },
+    {
+      "id": "hep_017",
+      "preflight_valid": true,
+      "selection_key": "d69421acf5deca3c069d0a854aef6a45998952fdd9a5f853cd0c74af802fce12",
+      "selected": false
+    },
+    {
+      "id": "hep_018",
+      "preflight_valid": true,
+      "selection_key": "abe98a3021df2ee6a409aa1aa3d100e4f114669732bd9aefb9e0dcf867909295",
+      "selected": true
+    },
+    {
+      "id": "hep_020",
+      "preflight_valid": true,
+      "selection_key": "b088331abd8d48dce1196ce982f80a4bb6149dfb7cc09ac71ad13180990fe563",
+      "selected": false
+    },
+    {
+      "id": "hep_021",
+      "preflight_valid": true,
+      "selection_key": "1aaa841f5ac50fcde6c7d91398347313def92c004e1aad270ce2ed05378e9c3d",
+      "selected": true
+    },
+    {
+      "id": "hep_022",
+      "preflight_valid": true,
+      "selection_key": "2e39932e868a4a5fddf4fd4fc2f694e1cbd3a512796aa890a36b04dad2ab05ae",
+      "selected": true
+    },
+    {
+      "id": "hep_023",
+      "preflight_valid": true,
+      "selection_key": "9ea49b405993f864ea5375ac488e94bddef7581264649c14caaacb673e27bf7a",
+      "selected": true
+    },
+    {
+      "id": "hep_024",
+      "preflight_valid": true,
+      "selection_key": "45496dddd09ba76401e71c5849717c8e30bcc7daf5d4eb7ef79c54bc3cb79267",
+      "selected": true
+    },
+    {
+      "id": "hep_025",
+      "preflight_valid": true,
+      "selection_key": "f61377e33b2f8b05c0f64a512f81e83ab869fe56c49f4e02875628a74627f197",
+      "selected": false
+    },
+    {
+      "id": "hep_026",
+      "preflight_valid": true,
+      "selection_key": "e68d5172182cd9c50a065fae3e3577b5007a4cdb18e54d3b7934714780053f95",
+      "selected": false
+    },
+    {
+      "id": "hep_027",
+      "preflight_valid": true,
+      "selection_key": "64152e92e4f4dd3d6d764805f2ec2e973dcc5e3a3d5a8200dbe257e8810e5a47",
+      "selected": true
+    },
+    {
+      "id": "hep_029",
+      "preflight_valid": true,
+      "selection_key": "1124b5accf96a7c8403fade7dbb84c7e24c0641e650a281660c2dd6af2eef02b",
+      "selected": true
+    },
+    {
+      "id": "hep_030",
+      "preflight_valid": true,
+      "selection_key": "e870d013988454691840d7ba2b323f6a2b8cf6e2b82c8c033e32c37afb385741",
+      "selected": false
+    },
+    {
+      "id": "hep_031",
+      "preflight_valid": true,
+      "selection_key": "c3ee5262de9c35d999c551944b27c5fbceda4420e4881565c0a26ffdc718bf60",
+      "selected": false
+    },
+    {
+      "id": "hep_033",
+      "preflight_valid": true,
+      "selection_key": "44c755b75502720c98adcf97ce4f22662d18ea31d164f7d244789e432cd115fa",
+      "selected": true
+    },
+    {
+      "id": "hep_034",
+      "preflight_valid": true,
+      "selection_key": "6190d151fbeeb5a454a20ff286d2ebd8188adf4b23aac7c91006d8dd7919d148",
+      "selected": true
+    },
+    {
+      "id": "hep_035",
+      "preflight_valid": true,
+      "selection_key": "4a51db6e42c568880607968cad8b98ad11fed31d55e076b866b171c4d99f78aa",
+      "selected": true
+    },
+    {
+      "id": "hep_037",
+      "preflight_valid": true,
+      "selection_key": "d56c76f55565230495113478947cd4a3fcb92a5de86ea0ebb174d15b8fbd1dba",
+      "selected": false
+    },
+    {
+      "id": "hep_039",
+      "preflight_valid": true,
+      "selection_key": "6c36118be04ebac5ba3439f1d47b75bcbe43511432f6deacd894bbd06fb8dcf3",
+      "selected": true
+    },
+    {
+      "id": "hep_040",
+      "preflight_valid": true,
+      "selection_key": "62bc9fddd8a3248333f00eb09f8595a2ff241fd41e13d8b44a301158a0e529f6",
+      "selected": true
+    },
+    {
+      "id": "hep_041",
+      "preflight_valid": true,
+      "selection_key": "01e72adbdcf2c20463cfa8ff40fed5c9d95826d907b562ef5e7392b27f504dc9",
+      "selected": true
+    },
+    {
+      "id": "hep_042",
+      "preflight_valid": true,
+      "selection_key": "f32ea3abc243c1e797b5e4909576f80decd731f94c5daeeb4e684b749e2aeb4a",
+      "selected": false
+    },
+    {
+      "id": "hep_043",
+      "preflight_valid": true,
+      "selection_key": "874a60ccf56eaf5cca95ef9a918d0a8aff10b5ad11c856e4431244014dc9d487",
+      "selected": true
+    },
+    {
+      "id": "hep_044",
+      "preflight_valid": true,
+      "selection_key": "8f2ef53f369763f6d33c4bfd200967e164bc76557ea5bf9134ae32a3d436ee8b",
+      "selected": true
+    },
+    {
+      "id": "hep_045",
+      "preflight_valid": true,
+      "selection_key": "ac293b71acca5e317d7cf1d726ab567455076883e38f7c585bcf75e7d3248489",
+      "selected": true
+    },
+    {
+      "id": "hep_046",
+      "preflight_valid": true,
+      "selection_key": "d4e9477b8b7730a0d4f5cf9a8958cc3aa32b0a282e6067d648137826f5f146d6",
+      "selected": false
+    },
+    {
+      "id": "hep_047",
+      "preflight_valid": true,
+      "selection_key": "949e629d44f62d2d98fba7797cbc901feb5a8a7f9ca1f4bf564bb55be0e7b170",
+      "selected": true
+    },
+    {
+      "id": "hep_048",
+      "preflight_valid": true,
+      "selection_key": "30d31b76b7a8a504194e60cdda0c75471355a937e5159103be8784edf8970038",
+      "selected": true
+    },
+    {
+      "id": "hep_049",
+      "preflight_valid": true,
+      "selection_key": "748f2f6c42946ce5ca31f70b7c5e99927b132c354fd4fcab02fc82dc531eebb5",
+      "selected": true
+    },
+    {
+      "id": "hep_052",
+      "preflight_valid": true,
+      "selection_key": "1a4bb93a51901a148950e9efa8c67a98d3b0dbdeae6792033805166b24b5055c",
+      "selected": true
+    },
+    {
+      "id": "hep_053",
+      "preflight_valid": true,
+      "selection_key": "44cab3aa526583b75998fe97bc7ab22cf5c8fcf1fd4d777b18b7bd72c6fdf145",
+      "selected": true
+    },
+    {
+      "id": "hep_054",
+      "preflight_valid": true,
+      "selection_key": "66dcd8f6461674efe4a916f539c578c6adce64904725a56b4a252a0bb4d560d7",
+      "selected": true
+    },
+    {
+      "id": "hep_055",
+      "preflight_valid": true,
+      "selection_key": "edb79af67eef3bf7dc6837553806d7ce6acd1e62cb545df2a69ee29707b7750f",
+      "selected": false
+    },
+    {
+      "id": "hep_056",
+      "preflight_valid": true,
+      "selection_key": "53fb127ba74f57987824a983bd51f8ad9f88a11c6c6f071b0917e3f410e9a9aa",
+      "selected": true
+    },
+    {
+      "id": "hep_057",
+      "preflight_valid": true,
+      "selection_key": "549661d132b9740ae40dc51914dfa52ff08d577dfde304c940a275c3a540f149",
+      "selected": true
+    },
+    {
+      "id": "hep_058",
+      "preflight_valid": true,
+      "selection_key": "271dc7cfd89c6f7bf0f492d6e6181f710f27fb52bbc8edefd376cf3c45746e7c",
+      "selected": true
+    },
+    {
+      "id": "hep_059",
+      "preflight_valid": true,
+      "selection_key": "719d2f5eda85fcd783b359034e1dd85a845fbb3927385fd24a392501326e9164",
+      "selected": true
+    },
+    {
+      "id": "hep_060",
+      "preflight_valid": true,
+      "selection_key": "7f079c10f3289ba49df5b93527f9878f5b2173a19ea895e6603cfc49e28ff1e8",
+      "selected": true
+    },
+    {
+      "id": "hep_061",
+      "preflight_valid": true,
+      "selection_key": "b3c834d86aff1fa821d4c7a904a4aa4abaca7a9a9bfc4e5d97a0ffff1329221d",
+      "selected": false
+    },
+    {
+      "id": "hep_062",
+      "preflight_valid": true,
+      "selection_key": "94c5e4edb8cd08c7109458420df4a99276a7bc528a5da78179b59c6b5061e1ea",
+      "selected": true
+    },
+    {
+      "id": "hep_063",
+      "preflight_valid": true,
+      "selection_key": "06aebd00a05b9a27b39d3f720d01a4e0c6ae04c9c0292f8254699495e49ecc80",
+      "selected": true
+    },
+    {
+      "id": "hep_064",
+      "preflight_valid": true,
+      "selection_key": "1fba778818631cc801d286b95f46ad60c339ec0644217cb10b45ba6799755b44",
+      "selected": true
+    },
+    {
+      "id": "hep_065",
+      "preflight_valid": true,
+      "selection_key": "1ff6845f4a6adc2b8a5bae511ab2e781dfb331dc8a0daf5babb67ee4dfb04993",
+      "selected": true
+    },
+    {
+      "id": "hep_066",
+      "preflight_valid": true,
+      "selection_key": "464b34631c362bf3f1d61025e96ad48d4eb83b61dc7ec77062a90e2a489a8d96",
+      "selected": true
+    },
+    {
+      "id": "hep_067",
+      "preflight_valid": true,
+      "selection_key": "047f39e8cd18afed386638a2384297762a94bcec3bf5d2174354de2c64fa453a",
+      "selected": true
+    },
+    {
+      "id": "hep_068",
+      "preflight_valid": true,
+      "selection_key": "c97ba745571f86f4a36998ecc4e8f8aea39b6711f5680f03dceceb021ce1a568",
+      "selected": false
+    },
+    {
+      "id": "hep_069",
+      "preflight_valid": true,
+      "selection_key": "13781cb6da5c8cbb3fd36f864e2769aa2310955cdd49a6fbc0b3a71c068ed28b",
+      "selected": true
+    },
+    {
+      "id": "hep_070",
+      "preflight_valid": true,
+      "selection_key": "572902c43320d3267b6678b5d0078e05279dba655e0bc39e81ae1cd993e08c8e",
+      "selected": true
+    },
+    {
+      "id": "hep_071",
+      "preflight_valid": true,
+      "selection_key": "16cf11c102b28a6ec6998bbfc62e349616fa1255ed2333fcb216745d4f923319",
+      "selected": true
+    },
+    {
+      "id": "hep_072",
+      "preflight_valid": true,
+      "selection_key": "f6ba4aa8b52090eb198845707d14e598d81732f09275cbb7a5fd2398a58e489e",
+      "selected": false
+    },
+    {
+      "id": "hep_073",
+      "preflight_valid": true,
+      "selection_key": "d86077c237fe51af01c10a8534267d192ffcd7a40479bb7eff34a16fec5fd448",
+      "selected": false
+    },
+    {
+      "id": "hep_074",
+      "preflight_valid": true,
+      "selection_key": "99cb5827788e17ea225eb2ce1400c7a3668767c7435f658f26a7c3ff765d9b0c",
+      "selected": true
+    },
+    {
+      "id": "hep_075",
+      "preflight_valid": true,
+      "selection_key": "c8b9a3574fe8471e75816ada2c8d107443e175456cabf695c63f0c9efba2997e",
+      "selected": false
+    },
+    {
+      "id": "hep_076",
+      "preflight_valid": true,
+      "selection_key": "44e15f1cc8bc55c1cce46108bb8b3c4dd089b86bc23fd93c27231869882fff4f",
+      "selected": true
+    },
+    {
+      "id": "hep_077",
+      "preflight_valid": true,
+      "selection_key": "e866f4d77a82619f8fcbd67db85343c8d761dd95891002c5ec64f5990c0066b0",
+      "selected": false
+    },
+    {
+      "id": "hep_078",
+      "preflight_valid": true,
+      "selection_key": "f2cd46b7ae5202cfd1c48ab85ccce58b81d67af9511bf32d851554cdf0c358ab",
+      "selected": false
+    },
+    {
+      "id": "hep_079",
+      "preflight_valid": true,
+      "selection_key": "27cf244c1c938a4db601735680ac75c90e02e7fcb6e9b2c6a5da1d3b08c91829",
+      "selected": true
+    },
+    {
+      "id": "hep_080",
+      "preflight_valid": true,
+      "selection_key": "9dce08dd95d945139af59115e859c88c1153d3d0ed42fa60dcd3eec1bf4546a6",
+      "selected": true
+    },
+    {
+      "id": "hep_081",
+      "preflight_valid": true,
+      "selection_key": "8a07793dfffb61f2609ed8ca862492f47d14bb0c21904946d08f9a5c595086d1",
+      "selected": true
+    },
+    {
+      "id": "hep_082",
+      "preflight_valid": true,
+      "selection_key": "9c5edfb7a9f88e2f27b8c8422aa3745dab9461635deae34affac9b611483a9bf",
+      "selected": true
+    },
+    {
+      "id": "hep_083",
+      "preflight_valid": true,
+      "selection_key": "7d7d8b8d0cbd75b97aff22d29ccf0d2d5573ce49bfdbf37113f1b1c59ff1eb5c",
+      "selected": true
+    },
+    {
+      "id": "hep_084",
+      "preflight_valid": true,
+      "selection_key": "0a2f8ba593e721d1c6d238e97160ffbbfcd5900bbe4bdc590ca7f9cfdea32a9e",
+      "selected": true
+    },
+    {
+      "id": "hep_085",
+      "preflight_valid": true,
+      "selection_key": "4af8750f2eaa8c1273d3337104c80a50250a76aa3447435021a74b386b317ef8",
+      "selected": true
+    },
+    {
+      "id": "hep_087",
+      "preflight_valid": true,
+      "selection_key": "3a7a5a28b7e46e0bfccabd844506d6f01e9cbbcaf2a9fc08b8cec95a1a844527",
+      "selected": true
+    },
+    {
+      "id": "hep_088",
+      "preflight_valid": true,
+      "selection_key": "865651133e1e3849028497a0d6333af3659c6c39732d3c8acf709eda129d0a0e",
+      "selected": true
+    },
+    {
+      "id": "hep_089",
+      "preflight_valid": true,
+      "selection_key": "9359dcb4d9c83e728b0b3fe543908c9eeffd22bbd7be399574fb3ca59f64beb6",
+      "selected": true
+    },
+    {
+      "id": "hep_090",
+      "preflight_valid": true,
+      "selection_key": "3da2e92e8d06e9f7c7ed97aaaea58d452950ea5e8e7d31fcac9577290c223f36",
+      "selected": true
+    },
+    {
+      "id": "hep_091",
+      "preflight_valid": true,
+      "selection_key": "32d06e253a60d795c258d96ad03b8f2491bc604f2f86b484824c9609f4c77161",
+      "selected": true
+    },
+    {
+      "id": "hep_092",
+      "preflight_valid": true,
+      "selection_key": "28fea327d04d966a5c25f6fdd1e47630792e0d63b63a92d024e4a3b079379707",
+      "selected": true
+    },
+    {
+      "id": "hep_094",
+      "preflight_valid": true,
+      "selection_key": "df1282c163b06b4a89d2a3097f7888e02e50f0524d00f9bb02fc991652587809",
+      "selected": false
+    },
+    {
+      "id": "hep_095",
+      "preflight_valid": true,
+      "selection_key": "1f39737a79a1522d67f09ac1429aa393433ef6dd2ed286d03e768efa886cbb88",
+      "selected": true
+    },
+    {
+      "id": "hep_096",
+      "preflight_valid": true,
+      "selection_key": "9fbd4fe606cf7052ea936c32618ea433d549676fcbc8bbe293ab8201f5b86a41",
+      "selected": true
+    },
+    {
+      "id": "hep_097",
+      "preflight_valid": true,
+      "selection_key": "80bb5a7edd6d54b353e53b817f8278aebe33cbd92a7140d78c64811b8c797ce9",
+      "selected": true
+    },
+    {
+      "id": "hep_098",
+      "preflight_valid": true,
+      "selection_key": "2a5d66f29fc48b1d0ac3a2617c9aaf2b4a60ad15bca1bc6173d3feeab339917d",
+      "selected": true
+    },
+    {
+      "id": "hep_099",
+      "preflight_valid": true,
+      "selection_key": "4fb2ee6d7f9faa870b754728486a440bc5239d50f6c3c81234580436e801759a",
+      "selected": true
+    },
+    {
+      "id": "hep_100",
+      "preflight_valid": true,
+      "selection_key": "3291921a67866e21318fb0cd235256a32c773864b9c64e79a9d249395a36225d",
+      "selected": true
+    },
+    {
+      "id": "hep_102",
+      "preflight_valid": true,
+      "selection_key": "d65beefdeabcb9708ecc7306a5ebc01caf924b2d03df2d07187b7cdf4041e07b",
+      "selected": false
+    },
+    {
+      "id": "hep_103",
+      "preflight_valid": true,
+      "selection_key": "7ce7b323603f8eb7712829ac32900d1998b6dfe09ec1cda6d385ff5b2e1ecb96",
+      "selected": true
+    },
+    {
+      "id": "hep_104",
+      "preflight_valid": true,
+      "selection_key": "3fc10d7fbc3f5735596f826a4f167305aa9b1a826c42e8104b8ed9d2c68e8572",
+      "selected": true
+    },
+    {
+      "id": "hep_105",
+      "preflight_valid": true,
+      "selection_key": "d8736eddd79d12b3d36b8f6e604c71ca1b1445bab9877468cfdd58b6ef578107",
+      "selected": false
+    },
+    {
+      "id": "hep_106",
+      "preflight_valid": true,
+      "selection_key": "f3eaf9c593064999937dac80f3c956d72020a44598c565449c24d34e6d706345",
+      "selected": false
+    },
+    {
+      "id": "hep_107",
+      "preflight_valid": true,
+      "selection_key": "b1bc9e6bf557ddc8e4bbc21d013b19e73b00071ef8c708ac1941abb29b4e1e81",
+      "selected": false
+    },
+    {
+      "id": "hep_108",
+      "preflight_valid": true,
+      "selection_key": "10e05a04d672b6a4f5bfce8de84f6dd792c275d70bda81ef352263ee39ee8dae",
+      "selected": true
+    },
+    {
+      "id": "hep_109",
+      "preflight_valid": true,
+      "selection_key": "f446634b149794c99ad440980054e63fa5b36c533b341e88e12404326f643910",
+      "selected": false
+    },
+    {
+      "id": "hep_110",
+      "preflight_valid": true,
+      "selection_key": "ae8b23cb349ee5ff43aef3f70ca2824eb5b3e4d3b3fa4216607822bcdf68aeb2",
+      "selected": true
+    },
+    {
+      "id": "hep_111",
+      "preflight_valid": true,
+      "selection_key": "0030ce43fac48f1f0da5cc23fe2a12353303dc4b56d440a43962aee031506184",
+      "selected": true
+    },
+    {
+      "id": "hep_113",
+      "preflight_valid": true,
+      "selection_key": "c7b646d6c36824b0803fadda81ad3f1f165f7266a798e30ed152b438b8e110e4",
+      "selected": false
+    },
+    {
+      "id": "hep_114",
+      "preflight_valid": true,
+      "selection_key": "12beb1e5f282076f0c3d3f076eeef3594a328726f7023120e0b148a4a217ed09",
+      "selected": true
+    },
+    {
+      "id": "hep_115",
+      "preflight_valid": true,
+      "selection_key": "70a6a0eaf827089df1bec749297fa3f6de46134f12f994175f40ace72752f58c",
+      "selected": true
+    },
+    {
+      "id": "hep_118",
+      "preflight_valid": true,
+      "selection_key": "7105706e26599e85272ef845faca055c040a4aec933f0d78f8c9c4f2f143ca25",
+      "selected": true
+    },
+    {
+      "id": "hep_119",
+      "preflight_valid": true,
+      "selection_key": "1b3bdf28785f670372664e891784c6b48d10433c94530170960d7b118d315490",
+      "selected": true
+    },
+    {
+      "id": "hep_120",
+      "preflight_valid": true,
+      "selection_key": "c1548218e97192f8ab8da0e4b4c42328109282ba2b2d260a0f7c0d18d201e9d5",
+      "selected": false
+    },
+    {
+      "id": "hep_121",
+      "preflight_valid": true,
+      "selection_key": "72cd81c049275048696a1fd5479b32179189f7ac18a9d1577a3bcad70b33e311",
+      "selected": true
+    },
+    {
+      "id": "hep_122",
+      "preflight_valid": true,
+      "selection_key": "b4065165dd69af59b83835d63067a915c8a39e77f224a5621bc2e9ddcf224f3f",
+      "selected": false
+    },
+    {
+      "id": "hep_123",
+      "preflight_valid": true,
+      "selection_key": "b01caaa1bb11e50d476e8cbdd17de2094142b5a6525ebdb72ef4a944cb5dd857",
+      "selected": false
+    },
+    {
+      "id": "hep_124",
+      "preflight_valid": true,
+      "selection_key": "b949ad5cd180f2f094e727c24f05f2d72e57b7b6112280e5c53250e85d93bc55",
+      "selected": false
+    },
+    {
+      "id": "hep_126",
+      "preflight_valid": true,
+      "selection_key": "2563c4d310be2990ecdc8e4c77a4497296b989a694f191c4062a3b807bb7893e",
+      "selected": true
+    },
+    {
+      "id": "hep_127",
+      "preflight_valid": true,
+      "selection_key": "bfa921c1c9c0aa6587592fcc221d18acc7116d6bc19bc0c1783c951ed8beee65",
+      "selected": false
+    },
+    {
+      "id": "hep_128",
+      "preflight_valid": true,
+      "selection_key": "746ab259a86e8350933302a7db3dbe69f3c9c82b1a8fa28913e6e769cbb015bf",
+      "selected": true
+    },
+    {
+      "id": "hep_129",
+      "preflight_valid": true,
+      "selection_key": "e85be43eeb2ed914a9ddef6287b55f843f59847cabf27ed984ae80aa7c233af0",
+      "selected": false
+    },
+    {
+      "id": "hep_130",
+      "preflight_valid": true,
+      "selection_key": "98640e931bee9ec74ed678de02a61d5fe0e8748f6b6083172e83891c4eb2ae51",
+      "selected": true
+    },
+    {
+      "id": "hep_131",
+      "preflight_valid": true,
+      "selection_key": "4c765a9ced9a961db6b22f11fd6e48847124c974915332243f382a21c6a57a43",
+      "selected": true
+    },
+    {
+      "id": "hep_132",
+      "preflight_valid": true,
+      "selection_key": "4505da64678c9566091254795d32456736517d34bfeab8bdd04804b40120711b",
+      "selected": true
+    },
+    {
+      "id": "hep_133",
+      "preflight_valid": true,
+      "selection_key": "e7c914b65cfee69e3c9a115c5c3bae00b4d2fe5f8c6ca731b9df59ea6c5e25f7",
+      "selected": false
+    },
+    {
+      "id": "hep_134",
+      "preflight_valid": true,
+      "selection_key": "f1237de8b84955c81d7f3b3fe25342ecc04019a3f9cec854b1a585017c0a6727",
+      "selected": false
+    },
+    {
+      "id": "hep_135",
+      "preflight_valid": true,
+      "selection_key": "e8362d01c3b3e9d1c836c8a114c3e21b5a12d469e6432832d816fb753229e096",
+      "selected": false
+    },
+    {
+      "id": "hep_136",
+      "preflight_valid": true,
+      "selection_key": "360d1e87665a6050a7e83864b15130429e4105593035bb88e0f2f2a48afe0d50",
+      "selected": true
+    },
+    {
+      "id": "hep_138",
+      "preflight_valid": true,
+      "selection_key": "9038ad00a4cc53032ea429db46b5253815bd3c1b2a247aa7ec1d00b5cee13141",
+      "selected": true
+    },
+    {
+      "id": "hep_139",
+      "preflight_valid": true,
+      "selection_key": "69e02006eff9cfd2200e817671fb1036fe02ad59637c6d73b638816d11e3a165",
+      "selected": true
+    },
+    {
+      "id": "hep_140",
+      "preflight_valid": true,
+      "selection_key": "e41fcbb1265f4bf00cb0f3c2abd7c0ce68683ad734cc6ae3849fb81177354f27",
+      "selected": false
+    },
+    {
+      "id": "hep_142",
+      "preflight_valid": true,
+      "selection_key": "62f5eb4e34164c795fca5562bdb184f0a745e2e376cdeb20a13b48004ecaa7aa",
+      "selected": true
+    },
+    {
+      "id": "hep_144",
+      "preflight_valid": true,
+      "selection_key": "dd94216f220bfea68539b2330286c510595be590d77aef15b566fece2eeda53b",
+      "selected": false
+    },
+    {
+      "id": "hep_145",
+      "preflight_valid": true,
+      "selection_key": "eb2e9b92cf73106c472ff502071585941831719928a2959a121e277fe6183c01",
+      "selected": false
+    },
+    {
+      "id": "hep_146",
+      "preflight_valid": true,
+      "selection_key": "62890bc2f7be2216be1740bd7c5f7d1a162b2b5462a724a01f5d7c6861b122f9",
+      "selected": true
+    },
+    {
+      "id": "hep_147",
+      "preflight_valid": true,
+      "selection_key": "b6ea70b4de9f9015503a2a083081ed2cb8f820b8fed16f499416d3053d119550",
+      "selected": false
+    },
+    {
+      "id": "hep_148",
+      "preflight_valid": true,
+      "selection_key": "321a740a77cb88cc5b98f531ad4264dcc74cd21ca4899e020126726d0681e256",
+      "selected": true
+    },
+    {
+      "id": "hep_149",
+      "preflight_valid": true,
+      "selection_key": "62914e7c6f79e6a05caaab46d40afae4a23d29f5c2cd083677d0fe7999920417",
+      "selected": true
+    },
+    {
+      "id": "hep_150",
+      "preflight_valid": true,
+      "selection_key": "3981734c3d7e09a0323bf9a0ddc30992d320b37645b4edf5e7dd477020240645",
+      "selected": true
+    },
+    {
+      "id": "hep_151",
+      "preflight_valid": true,
+      "selection_key": "888cd76ad908533b18bfaa2a3410fe6c80a3840d84dbfde1cd59a25dea5ac06d",
+      "selected": true
+    },
+    {
+      "id": "hep_152",
+      "preflight_valid": true,
+      "selection_key": "0279f71275ec553893c1988a58ba7bccb1742998d93e74cb6255f8591d626aa8",
+      "selected": true
+    },
+    {
+      "id": "hep_153",
+      "preflight_valid": true,
+      "selection_key": "46148eb06efd4004b7ad4eb5db57a1556ec33ed16e71ca4bc3e76fc09eba2d04",
+      "selected": true
+    },
+    {
+      "id": "hep_154",
+      "preflight_valid": true,
+      "selection_key": "517a3f2dcceac239485c3a1422d7f36570d2d6669e5960b88803a811a98670a4",
+      "selected": true
+    },
+    {
+      "id": "hep_155",
+      "preflight_valid": true,
+      "selection_key": "8f1d9ca5d2e4526820d36bfc0598c5ba42fc72069ce2062bd70e00756ee7cba9",
+      "selected": true
+    },
+    {
+      "id": "hep_156",
+      "preflight_valid": true,
+      "selection_key": "1037e8f0d1c33881452853a27694fbd640a5f06a46fa3841704070497690b893",
+      "selected": true
+    },
+    {
+      "id": "hep_157",
+      "preflight_valid": true,
+      "selection_key": "91e2b4be702f0b685cbe4b10b8b0b6e16d31a115cbe82508da8cb8674e136713",
+      "selected": true
+    },
+    {
+      "id": "hep_158",
+      "preflight_valid": true,
+      "selection_key": "2d5c9c4bc3fca53d25c9eba7e024f748356cfa7a84e9e3a00c4d677f776907e9",
+      "selected": true
+    },
+    {
+      "id": "hep_159",
+      "preflight_valid": true,
+      "selection_key": "c3e05d61a241c84e23734b72aab5279e56783c6fe9126c02aac40d352be7dcb3",
+      "selected": false
+    },
+    {
+      "id": "hep_161",
+      "preflight_valid": true,
+      "selection_key": "e08d054dc4000b0060ca4225aa442829b0e71ccfb590f366adfaf38d9fe5bb13",
+      "selected": false
+    },
+    {
+      "id": "hep_163",
+      "preflight_valid": true,
+      "selection_key": "e784339cc26dffe45d704f1efc8a82c255246441557f161ed74dfd7ec8e4dc88",
+      "selected": false
+    }
+  ]
+}

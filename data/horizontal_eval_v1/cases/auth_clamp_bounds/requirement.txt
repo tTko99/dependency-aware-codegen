@@ -1,0 +1,1 @@
+Clamp value to the inclusive lower/upper interval; reject lower > upper with ValueError. Preserve the solve signature; do not mutate caller inputs.

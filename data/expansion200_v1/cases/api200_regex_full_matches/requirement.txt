@@ -1,0 +1,1 @@
+Return each complete ASCII letter-plus-digit token matched by [A-Za-z]+[0-9]+, in order, not separate capture groups. Preserve solve signature.

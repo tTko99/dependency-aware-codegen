@@ -1,0 +1,1 @@
+Transpose a rectangular list of rows to lists of columns; empty input returns []; reject ragged rows with ValueError. Preserve the solve signature; do not mutate caller inputs.

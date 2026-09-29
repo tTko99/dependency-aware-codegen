@@ -1,0 +1,1 @@
+Group record dictionaries by their kind field, preserving group and record order; missing kind belongs to None. Preserve the solve signature; do not mutate caller inputs.

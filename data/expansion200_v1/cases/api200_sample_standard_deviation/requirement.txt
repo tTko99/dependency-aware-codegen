@@ -1,0 +1,1 @@
+Return the sample standard deviation of at least two numeric values, rounded to six decimal places, using the n-1 denominator. Preserve solve signature.

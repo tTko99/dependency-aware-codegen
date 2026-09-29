@@ -1,0 +1,1 @@
+Substitute known dollar-template names and preserve unknown placeholders literally; escaped $$ becomes $. Inputs use valid template syntax. Preserve solve signature.

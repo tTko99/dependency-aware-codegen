@@ -1,0 +1,7 @@
+Repair the Python function according to this contract. Preserve its signature.
+Write a Python function `strlen(string: str) -> int` to solve the following problem:
+Return length of given string
+>>> strlen('')
+0
+>>> strlen('abc')
+3
