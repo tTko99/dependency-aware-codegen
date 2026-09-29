@@ -52,3 +52,5 @@ runs/
 
 # Keep project documentation local
 /docs/
+
+/.tools/
